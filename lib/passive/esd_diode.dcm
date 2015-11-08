@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ESD_DIODE
+D ESD diode
+$ENDCMP
+#
+#End Doc Library
