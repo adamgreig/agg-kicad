@@ -29,7 +29,7 @@ Directory      |  Contents
 
 ## Associated Documentation
 
-* Link to datasheet
+* Link to datasheet/web page
 * Common supplier order codes
 * Names of available footprints
 * Has the symbol been validated in practice? Where?
