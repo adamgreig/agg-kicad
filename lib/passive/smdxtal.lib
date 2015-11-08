@@ -7,12 +7,12 @@ DEF Crystal_SMD Y 0 40 Y N 1 F N
 F0 "Y" 0 100 50 H V C CNN
 F1 "Crystal_SMD" 0 -200 50 H V C CNN
 F2 "agg:XTAL20x16" 0 -300 50 H I C CNN
-F3 "" 0 0 60 H V C CNN
+F3 "" 0 0 50 H V C CNN
 $FPLIST
  Crystal_
 $ENDFPLIST
 DRAW
-S -30 -60 30 60 0 1 0 N
+S -30 -60 30 50 0 1 0 N
 P 2 0 1 0  -50 -100  50 -100 N
 P 2 0 1 0  -50 -30  -50 30 N
 P 2 0 1 0  0 -75  30 -75 N
