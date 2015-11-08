@@ -11,7 +11,7 @@ To use, add relevant `.lib` files to your project libraries. There is one
 Each part contains supplier order codes and manufacturer part numbers where 
 possible and sensible. Parts are drawn as per the KiCAD library conventions.
 
-Check the README in each library folder for details and notes one each part.
+Check the README in each library folder for details and notes on each part.
 
 ## PCB Footprints
 
