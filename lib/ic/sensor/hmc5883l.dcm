@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HMC5883L
+D Magnetometer
+$ENDCMP
+#
+#End Doc Library
