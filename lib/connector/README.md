@@ -1,0 +1,34 @@
+# Connectors
+
+### MicroSD
+* [MicroSD 
+  holder](http://www.molex.com/molex/products/datasheet.jsp?part=active/5033981892_MEMORY_CARD_SOCKET.xml)
+* Farnell 2358234
+* Used with MICROSD_MOLEX_503398-1892 footprint on M2FC successfully
+
+### SMA
+* SMA socket
+* Board edge mount, 1.6mm PCB thickness, female:
+    * Farnell 1608592
+    * Used with footprint SMA-142-0701-801 on M2R successfully
+
+### SWD
+* Serial wire debug connector
+* 2x5 pin 0.05" pitch
+* Recommended part FTSH-105-01-F-D-K, sold by Toby and others
+* Recommended footprint agg:FTSH-105-01-F-D-K, used on M2FC, M2R, Supervide
+* Alternative non-polarised header Farnell 1865285 (same footprint)
+* Alternative non-polarised surface mount Farnell 1865279 (different footprint)
+
+### SWD-TC
+* Serial wire debug connector, TagConnect version
+* No fitted part
+* Mates with TagConnect TC2030(-NL)
+* Tested with Supervide r2 successfully
+* Double check pin and footprint when next used
+
+### UFL
+* u.Fl coaxial connector
+* Footprint uFL-R-SMT used on shrew-u r1 successfully
+* DigiKey H9161CT-ND
+
