@@ -17,3 +17,5 @@
 * Has the footprint been validated in practice? With what symbol? Where?
 * Link to any specific layout recommendations or requirements
 * Any other notes / gotchas
+
+_None of these footprints have been standardised or documented here yet._
