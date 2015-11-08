@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADP3338
+D High current LDO voltage regulator
+$ENDCMP
+#
+#End Doc Library
