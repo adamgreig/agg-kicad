@@ -1,0 +1,16 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# PART
+#
+DEF PART X 0 40 Y Y 1 F N
+F0 "X" 50 0 60 H V C CNN
+F1 "PART" 100 100 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S -50 150 400 -50 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+#End Library

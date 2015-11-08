@@ -1,0 +1,9 @@
+agg-kicad.kicad_pcb
+agg-kicad.sch
+agg-kicad.pro
+agg-kicad.bak
+agg-kicad-cache.lib
+fp-lib-table
+
+*.bak
+*.bck

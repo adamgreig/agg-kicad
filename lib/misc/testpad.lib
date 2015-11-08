@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# TESTPAD
+#
+DEF ~TESTPAD TP 0 40 N N 1 F N
+F0 "TP" 30 -40 30 H V C CNN
+F1 "TESTPAD" 0 50 60 H I C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 50 0 5 0 1 0 N
+C 50 0 10 0 1 0 N
+C 50 0 15 0 1 0 N
+C 50 0 20 0 1 0 N
+X TP 1 0 0 50 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
