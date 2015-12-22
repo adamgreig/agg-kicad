@@ -1,6 +1,6 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP TCXO
+$CMP TCXO_EN
 D TCXO with Enable pin
 $ENDCMP
 #
