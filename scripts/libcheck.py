@@ -96,7 +96,7 @@ def checkfields(contents, errs):
     refn_y = refn_f[0][2]
     name_y = name_f[0][2]
 
-    if refn_y < name_y:
+    if refn_y <= name_y:
         errs.append("Component reference not above component name")
 
 
