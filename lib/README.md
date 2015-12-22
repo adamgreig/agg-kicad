@@ -1,13 +1,13 @@
 # Schematic Symbols
 
-Directory      |  Contents
----------------|----------
-`connector`    | Connectors
-`ic`           | ICs including microcontrollers, amplifiers, sensors, etc
-`misc`         | Other parts including generic/drawing symbols
-`module`       | PCB subassemblies and modules
-`passive`      | Passive and other two-terminal devices including crystals, etc
-`ui`           | User interface elements including buzzers, switches, etc
+Directory                |  Contents
+-------------------------|----------
+[`connector`](connector) | Connectors
+[`ic`](ic)               | ICs including microcontrollers, amplifiers, sensors,etc
+[`misc`](misc)           | Other parts including generic/drawing symbols
+[`module`](module)       | PCB subassemblies and modules
+[`passive`](passive)     | Passive and other two-terminal devices including crystals, etc
+[`ui`](ui)               | User interface elements including buzzers, switches, etc
 
 
 ## General Guidelines
