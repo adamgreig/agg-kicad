@@ -3,6 +3,8 @@
 This repository contains my personal collection of KiCAD symbols, footprints, 
 and related files.
 
+[![Build Status](https://travis-ci.org/adamgreig/agg-kicad.svg?branch=master)](https://travis-ci.org/adamgreig/agg-kicad)
+
 ## Schematic Symbols
 
 To use, add relevant `.lib` files to your project libraries. There is one 
