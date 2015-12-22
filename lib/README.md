@@ -12,7 +12,7 @@ Directory      |  Contents
 
 ## General Guidelines
 
-* One symbol per library
+* One symbol per library (exception for parameterised symbols like connectors)
 * Library filename the same as the part name
 * Part name follows the manufacturer designator or common generic name
 * All pins on 100mil grid

@@ -4,8 +4,4 @@ $CMP SWD
 D Serial Wire Debug Port
 $ENDCMP
 #
-$CMP SWD_TC
-D SWD TagConnect
-$ENDCMP
-#
 #End Doc Library

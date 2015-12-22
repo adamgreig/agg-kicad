@@ -21,3 +21,11 @@ schematic symbols in all the individual `.lib` files.
 ```
 python3 compilelib.py ../lib ../agg-kicad.lib
 ```
+
+## connectorlib.py
+
+This script generates `conn.lib` containing a number of similar connectors with 
+different numbers of pins.
+
+`python3 connectorlib.py ../lib/connectors/conn.lib`
+
