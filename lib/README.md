@@ -12,24 +12,34 @@ Directory      |  Contents
 
 ## General Guidelines
 
+### Enforced automatically
+
 * One symbol per library
     * Exception for automatically generated libraries such as `conn.lib`
 * Library filename the same as the part name
-* Part name follows the manufacturer designator or common generic name
 * All pins on 100mil grid
-* Origin on centre of part
 * 100mil pin length for ICs and similar symbols
 * Text size 50mil (fields, pin names, pin numbers)
     * Exception for pin numbers that are words, e.g. "PAD"
 * Part reference above the part
 * Part name (value field) below the part
-* Fields left-aligned with left-edge of part drawing
+* Fields left-aligned
 * ICs and similar symbols to be filled with background colour
-* Include Farnell order code if possible
-* Include DigiKey and RS order codes if desired
+
+### Must be checked manually
+
+* Part name follows the manufacturer or common generic name
+* Part designator follows IEEE 315 where possible
+* Origin on centre of part
+* Name and reference left-aligned with left-edge of part drawing
+
+### Helpful but not mandatory
+
+* Include Farnell order code where applicable
+* Include DigiKey and RS order codes where applicable and useful
 * Pre-fill with a footprint field if one is very commonly used
 
-## Associated Documentation
+## Associated documentation to include in README
 
 * Link to datasheet/web page
 * Common supplier order codes
