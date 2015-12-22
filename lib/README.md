@@ -19,6 +19,7 @@ Directory                |  Contents
 * Library filename the same as the part name
 * All pins on 100mil grid
 * 100mil pin length for ICs and similar symbols
+* No missing numbers in pin numbering sequence
 * Text size 50mil (fields, pin names, pin numbers)
     * Exception for pin numbers that are words, e.g. "PAD"
 * Part reference above the part
