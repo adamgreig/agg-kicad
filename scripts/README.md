@@ -9,18 +9,14 @@ This script converts a KiCAD `.xml` BOM into a text file containing:
 
 To use, add this line to your BOM scripts:
 
-```
-python3 "/path/to/agg-kicad/scripts/xml2bom.py" "%I" "%O.bom"
-```
+`python3 "/path/to/agg-kicad/scripts/xml2bom.py" "%I" "%O.bom"`
 
 ## compilelib.py
 
 This script generates a single `agg-kicad.lib` file containing all the 
 schematic symbols in all the individual `.lib` files.
 
-```
-python3 compilelib.py ../lib ../agg-kicad.lib
-```
+`python3 compilelib.py ../lib ../agg-kicad.lib`
 
 ## connectorlib.py
 
@@ -29,3 +25,9 @@ different numbers of pins.
 
 `python3 connectorlib.py ../lib/connectors/conn.lib`
 
+## libcheck.py
+
+This script checks all the `.lib` files in a directory and validates that they 
+conform to as many of the rules as can reasonably be automatically checked.
+
+`python3 libcheck.py ../lib`
