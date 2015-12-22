@@ -12,13 +12,15 @@ Directory      |  Contents
 
 ## General Guidelines
 
-* One symbol per library (exception for parameterised symbols like connectors)
+* One symbol per library
+    * Exception for automatically generated libraries such as `conn.lib`
 * Library filename the same as the part name
 * Part name follows the manufacturer designator or common generic name
 * All pins on 100mil grid
 * Origin on centre of part
 * 100mil pin length for ICs and similar symbols
 * Text size 50mil (fields, pin names, pin numbers)
+    * Exception for pin numbers that are words, e.g. "PAD"
 * Part reference above the part
 * Part name (value field) below the part
 * Fields left-aligned with left-edge of part drawing

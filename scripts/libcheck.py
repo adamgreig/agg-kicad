@@ -12,7 +12,7 @@ EXCLUSIONS = ("agg-kicad.lib", "conn.lib")
 re_defs = re.compile("^DEF (?P<name>[^ ]*) (?P<des>[A-Z]*) ", re.MULTILINE)
 re_pins = re.compile("^X (?P<name>[^ ]*) (?P<num>[^ ]*)"
                      " (?P<x>[0-9\-]*) (?P<y>[0-9\-]*) (?P<len>[0-9]*)"
-                     " [A-Z] (?P<namesize>[0-9]*) (?P<numsize>[0-9]*)",
+                     " [A-Z] (?P<numsize>[0-9]*) (?P<namesize>[0-9]*)",
                      re.MULTILINE)
 re_refn = re.compile("^F0 (?P<value>[^ ]*) (?P<x>[0-9\-]*) (?P<y>[0-9\-]*)"
                      " (?P<size>[0-9]*) (?P<orient>[VH]) (?P<visible>[IV])"
@@ -47,7 +47,7 @@ def checkdefs(contents, libf, errs):
 
 def checkpins(contents, designator, errs):
     pins = re_pins.findall(contents)
-    for name, num, x, y, length, namesize, numsize in pins:
+    for name, num, x, y, length, numsize, namesize in pins:
         # Check pins lie on 100mil grid
         if int(x) % 100 != 0 or int(y) % 100 != 0:
             errs.append("Pin '{}' not on 100mil grid".format(name))
@@ -56,7 +56,7 @@ def checkpins(contents, designator, errs):
             errs.append("Pin '{}' not 100mil long, but part is IC or U"
                         .format(name))
         # Check pin text fields are 50mil sized
-        if int(namesize) != 50 or int(numsize) != 50:
+        if int(namesize) != 50 or (int(numsize) != 50 and num.isdigit()):
             errs.append("Pin '{}' font size not 50mil".format(name))
 
 
