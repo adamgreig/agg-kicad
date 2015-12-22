@@ -113,21 +113,27 @@ def checklib(libf):
 
     if len(errs) == 0:
         print(" OK")
+        return True
     else:
         print(" ERR:")
         for err in errs:
             print("    " + err)
         print()
+        return False
 
 
 def main(libpath):
+    ok = True
     for dirpath, dirnames, files in os.walk(libpath):
         for f in fnmatch.filter(files, "*.lib"):
             path = os.path.join(dirpath, f)
             if f not in EXCLUSIONS:
-                checklib(path)
+                result = checklib(path)
+                if not result:
+                    ok = False
             else:
                 print("Skipping '{}'".format(path))
+    return ok
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -135,4 +141,8 @@ if __name__ == "__main__":
         sys.exit(1)
     else:
         libpath = sys.argv[1]
-        main(libpath)
+        success = main(libpath)
+        if success:
+            sys.exit(0)
+        else:
+            sys.exit(1)
