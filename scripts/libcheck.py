@@ -74,7 +74,8 @@ def checkfields(contents, errs):
     for field, fn in (refn_f, "reference"), (name_f, "name"):
         for value, x, y, size, orient, visible, hjust, vjust in field:
             if visible != "V":
-                errs.append("Component {} field not visible".format(fn))
+                if "#invisible{}".format(fn) not in contents:
+                    errs.append("Component {} field not visible".format(fn))
             if hjust != "L":
                 errs.append("Component {} field not left-aligned".format(fn))
             if orient != "H":

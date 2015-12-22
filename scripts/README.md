@@ -30,4 +30,12 @@ different numbers of pins.
 This script checks all the `.lib` files in a directory and validates that they 
 conform to as many of the rules as can reasonably be automatically checked.
 
+The top of the file includes a list of library files to skip, which is set to 
+the automatically-generated files that will contain presumably-valid symbols 
+(but typically also many symbols, such as the compiled and connector 
+libraries).
+
+Some exclusions can be enabled inside a library file, for example 
+`#invisiblename` for parts where the name is allowed to be invisible.
+
 `python3 libcheck.py ../lib`

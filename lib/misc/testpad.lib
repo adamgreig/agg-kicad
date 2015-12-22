@@ -2,9 +2,10 @@ EESchema-LIBRARY Version 2.3
 #encoding utf-8
 #
 # TESTPAD
+# #invisiblename
 #
-DEF ~TESTPAD TP 0 40 N N 1 F N
-F0 "TP" 0 50 30 H V L CNN
+DEF TESTPAD TP 0 40 N N 1 F N
+F0 "TP" 0 50 50 H V L CNN
 F1 "TESTPAD" 0 -75 50 H I L CNN
 F2 "agg:TESTPAD" 0 -150 50 H I L CNN
 F3 "" 0 0 60 H V C CNN
