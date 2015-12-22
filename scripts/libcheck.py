@@ -23,17 +23,7 @@ re_name = re.compile("^F1 (?P<value>[^ ]*) (?P<x>[0-9\-]*) (?P<y>[0-9\-]*)"
 re_poly = re.compile("^[SP] .* (?P<fill>[NfF])$", re.MULTILINE)
 
 
-def checklib(libf):
-    print("Checking '{}'...".format(libf), end='')
-    errs = []
-
-    # Check if there's a corresponding .dcm file
-    dcmpath = ".".join(libf.split(".")[:-1]) + ".dcm"
-    if not os.path.isfile(dcmpath):
-        errs.append("No corresponding DCM found")
-
-    f = open(libf)
-    contents = f.read()
+def checkdefs(contents, libf, errs):
 
     # Check there's only one symbol in the library
     n_defs = re_defs.findall(contents)
@@ -44,13 +34,16 @@ def checklib(libf):
 
     # Check symbol name matches library name
     partname = n_defs[0][0]
+    designator = n_defs[0][1]
     libname = os.path.split(libf)[-1].split(".")[0]
     if partname.lower() != libname:
         errs.append("Part name '{}' does not match library name '{}'"
                     .format(partname, libname))
 
-    # Check pins
-    designator = n_defs[0][1]
+    return partname, designator
+
+
+def checkpins(contents, designator, errs):
     pins = re_pins.findall(contents)
     for name, num, x, y, length, namesize, numsize in pins:
         # Check pins lie on 100mil grid
@@ -64,41 +57,59 @@ def checklib(libf):
         if int(namesize) != 50 or int(numsize) != 50:
             errs.append("Pin '{}' font size not 50mil".format(name))
 
-    # If part is an IC check at least one filled box/polyline is present
+
+def checkboxes(contents, designator, errs):
     if designator == "IC":
         boxes = re_poly.findall(contents)
         if "f" not in boxes:
             errs.append("No background-filled box/poly found, but part is IC")
 
-    # Check fields
+
+def checkfields(contents, errs):
     refn_f = re_refn.findall(contents)
     name_f = re_name.findall(contents)
 
-    for value, x, y, size, orient, visible, hjust, vjust in refn_f:
-        if visible != "V":
-            errs.append("Component reference not visible")
-        if hjust != "L":
-            errs.append("Component reference not left-aligned")
-        if orient != "H":
-            errs.append("Component reference not horizontal")
-        if size != "50":
-            errs.append("Component reference font size not 50mil")
-
-    for value, x, y, size, orient, visible, hjust, vjust in name_f:
-        if visible != "V":
-            errs.append("Component name not visible")
-        if hjust != "L":
-            errs.append("Component name not left-aligned")
-        if orient != "H":
-            errs.append("Component name not horizontal")
-        if size != "50":
-            errs.append("Component name font size not 50mil")
+    for field, fn in (refn_f, "reference"), (name_f, "name"):
+        for value, x, y, size, orient, visible, hjust, vjust in field:
+            if visible != "V":
+                errs.append("Component {} field not visible".format(fn))
+            if hjust != "L":
+                errs.append("Component {} field not left-aligned".format(fn))
+            if orient != "H":
+                errs.append("Component {} field not horizontal".format(fn))
+            if size != "50":
+                errs.append("Component {} field font size not 50".format(fn))
 
     refn_y = refn_f[0][2]
     name_y = name_f[0][2]
 
     if refn_y < name_y:
         errs.append("Component reference not above component name")
+
+
+def checklib(libf):
+    print("Checking '{}'...".format(libf), end='')
+    errs = []
+
+    # Check if there's a corresponding .dcm file
+    dcmpath = ".".join(libf.split(".")[:-1]) + ".dcm"
+    if not os.path.isfile(dcmpath):
+        errs.append("No corresponding DCM found")
+
+    f = open(libf)
+    contents = f.read()
+
+    # Check there's only one symbol and its name matches the library file
+    partname, designator = checkdefs(contents, libf, errs)
+
+    # Check pins
+    checkpins(contents, designator, errs)
+
+    # If part is an IC check at least one filled box/polyline is present
+    checkboxes(contents, designator, errs)
+
+    # Check fields
+    checkfields(contents, errs)
 
     if len(errs) == 0:
         print(" OK")
