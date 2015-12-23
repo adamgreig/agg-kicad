@@ -10,6 +10,8 @@ Directory                |  Contents
 [`ui`](ui)               | User interface elements including buzzers, switches, etc
 
 
+The file `agg-kicad.lib` contains all of the symbols in this library.
+
 ## General Guidelines
 
 ### Enforced automatically
