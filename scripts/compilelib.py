@@ -23,8 +23,9 @@ def git_version(libpath):
 
 
 def writelib(libpath, outpath):
+    newlib = compilelib(libpath)
     with open(outpath, "w") as f:
-        f.write(compilelib(libpath))
+        f.write(newlib)
 
 
 def checklib(libpath, outpath):
