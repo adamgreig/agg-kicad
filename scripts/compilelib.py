@@ -33,7 +33,7 @@ def checklib(libpath, outpath):
         old = f.read().split("\n")
         new = compilelib(libpath).split("\n")
         # Don't compare the date or git commit strings
-        old[4] = old[5] = new[4] = new[5] = None
+        old[5] = old[6] = new[5] = new[6] = None
         return old == new
 
 
