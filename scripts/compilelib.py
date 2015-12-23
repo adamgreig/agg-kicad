@@ -9,6 +9,8 @@ With --verify, checks that <outfile> matches the library that would be
 generated, exits with 0 if match and 1 otherwise.
 """
 
+from __future__ import print_function
+
 import sys
 import os
 import fnmatch
@@ -17,8 +19,16 @@ import subprocess
 
 
 def git_version(libpath):
+    # Handle running inside a git hook where the presence of these environment
+    # variables will cause problems
+    env = os.environ.copy()
+    if 'GIT_DIR' in env:
+        del env['GIT_DIR']
+    if 'GIT_INDEX_FILE' in env:
+        del env['GIT_INDEX_FILE']
+
     args = ["git", "describe", "--abbrev=8", "--dirty=-dirty", "--always"]
-    git = subprocess.Popen(args, cwd=libpath, stdout=subprocess.PIPE)
+    git = subprocess.Popen(args, cwd=libpath, env=env, stdout=subprocess.PIPE)
     return git.stdout.read().decode().strip()
 
 
