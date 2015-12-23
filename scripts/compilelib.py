@@ -91,8 +91,9 @@ if __name__ == "__main__":
                 sys.exit(0)
             else:
                 print("Error: '{}' is not up-to-date with '{}'."
-                      .format(outpath, libpath))
-                print("Please run compilelib.py to regenerate.")
+                      .format(outpath, libpath), file=sys.stderr)
+                print("Please run compilelib.py to regenerate.",
+                      file=sys.stderr)
                 sys.exit(1)
         else:
             usage()

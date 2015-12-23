@@ -101,7 +101,6 @@ def checkfields(contents, errs):
 
 
 def checklib(libf):
-    print("Checking '{}'...".format(libf), end='')
     errs = []
 
     # Check if there's a corresponding .dcm file
@@ -125,13 +124,13 @@ def checklib(libf):
     checkfields(contents, errs)
 
     if len(errs) == 0:
-        print(" OK")
+        print("Checked '{}': OK".format(libf))
         return True
     else:
-        print(" ERR:")
+        print("Checked '{}': Error:".format(libf), file=sys.stderr)
         for err in errs:
-            print("    " + err)
-        print()
+            print("    " + err, file=sys.stderr)
+        print("", file=sys.stderr)
         return False
 
 

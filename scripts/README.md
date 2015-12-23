@@ -42,3 +42,9 @@ Some exclusions can be enabled inside a library file, for example
 `#invisiblename` for parts where the name is allowed to be invisible.
 
 `python3 libcheck.py ../lib`
+
+## pre-commit
+
+This script is a Git hook that should be placed in `.git/hooks`. Whenever you 
+commit it will check that the compiled library file `lib/agg-kicad.lib` is 
+up-to-date and if not will recompile it and add it to the commit.
