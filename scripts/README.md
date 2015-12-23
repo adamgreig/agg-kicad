@@ -16,6 +16,9 @@ To use, add this line to your BOM scripts:
 This script generates a single `agg-kicad.lib` file containing all the 
 schematic symbols in all the individual `.lib` files.
 
+Run with `--verify` as the final argument to instead verify that the existing 
+compiled library is up-to-date.
+
 `python3 compilelib.py ../lib ../agg-kicad.lib`
 
 ## connectorlib.py
