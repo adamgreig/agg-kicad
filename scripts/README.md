@@ -28,6 +28,13 @@ different numbers of pins.
 
 `python3 connectorlib.py ../lib/connectors/conn.lib`
 
+## powerlib.py
+
+This script generates `power.lib` containing a number of power symbols with 
+different names, such as `VCC`, `VDD`, `3v3`, `GND`, `DGND`, etc.
+
+`python3 powerlib.py ../lib/power/power.lib`
+
 ## libcheck.py
 
 This script checks all the `.lib` files in a directory and validates that they 

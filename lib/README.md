@@ -6,6 +6,7 @@ Directory                |  Contents
 [`ic`](ic)               | ICs including microcontrollers, amplifiers, sensors,etc
 [`misc`](misc)           | Other parts including generic/drawing symbols
 [`module`](module)       | PCB subassemblies and modules
+[`power`](power)         | Power symbols
 [`passive`](passive)     | Passive and other two-terminal devices including crystals, etc
 [`ui`](ui)               | User interface elements including buzzers, switches, etc
 
