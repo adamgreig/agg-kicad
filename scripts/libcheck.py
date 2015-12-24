@@ -9,7 +9,7 @@ import re
 EXCLUSIONS = ("agg-kicad.lib", "conn.lib")
 
 
-re_defs = re.compile("^DEF (?P<name>[^ ]*) (?P<des>[A-Z]*) ", re.MULTILINE)
+re_defs = re.compile("^DEF (?P<name>[^ ]*) (?P<des>[^ ]*) ", re.MULTILINE)
 re_pins = re.compile("^X (?P<name>[^ ]*) (?P<num>[^ ]*)"
                      " (?P<x>[0-9\-]*) (?P<y>[0-9\-]*) (?P<len>[0-9]*)"
                      " [A-Z] (?P<numsize>[0-9]*) (?P<namesize>[0-9]*)",

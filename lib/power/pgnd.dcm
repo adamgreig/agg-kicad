@@ -1,0 +1,6 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PGND
+D Power ground
+$ENDCMP
+#End Doc Library
