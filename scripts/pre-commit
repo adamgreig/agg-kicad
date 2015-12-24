@@ -7,7 +7,7 @@ then
     exit 1
 fi
 
-python scripts/compilelib.py lib/ lib/agg-kicad.lib --verify > /dev/null
+python scripts/compilelib.py lib/ lib/agg-kicad.lib --verify > /dev/null 2>&1
 if [ $? -ne 0 ]
 then
     echo "Note: recompiled agg-kicad.lib and added to commit."
