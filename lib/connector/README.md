@@ -6,11 +6,16 @@
 * Farnell 2358234
 * Used with MICROSD_MOLEX_503398-1892 footprint on M2FC successfully
 
-### SMA
-* SMA socket
-* Board edge mount, 1.6mm PCB thickness, female:
-    * Farnell 1608592
-    * Used with footprint SMA-142-0701-801 on M2R successfully
+### Coax
+* Two-pin ground+signal device
+* Example:
+    * SMA socket
+        * Board edge mount, 1.6mm PCB thickness, female:
+            * Farnell 1608592
+            * Used with footprint SMA-142-0701-801 on M2R successfully
+    * u.Fl coaxial connector
+        * Footprint uFL-R-SMT used on shrew-u r1 successfully
+            * DigiKey H9161CT-ND
 
 ### SWD
 * Serial wire debug connector
@@ -26,11 +31,6 @@
 * Mates with TagConnect TC2030(-NL)
 * Tested with Supervide r2 successfully
 * Double check pin and footprint when next used
-
-### UFL
-* u.Fl coaxial connector
-* Footprint uFL-R-SMT used on shrew-u r1 successfully
-* DigiKey H9161CT-ND
 
 ### CONN_??x??
 * Generic connector symbol

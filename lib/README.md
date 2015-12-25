@@ -27,15 +27,17 @@ The file `agg-kicad.lib` contains all of the symbols in this library.
     * Exception for pin numbers that are words, e.g. "PAD"
 * Part reference above the part
 * Part name (value field) below the part
-* Fields left-aligned
+* Name and reference must be horizontal
+* Name and reference must be visible unless explicitly overridden
 * ICs and similar symbols to be filled with background colour
 
 ### Must be checked manually
 
 * Part name follows the manufacturer or common generic name
 * Part designator follows IEEE 315 where possible
-* Origin on centre of part
-* Name and reference left-aligned with left-edge of part drawing
+* Origin on/close to centre of part
+* Name and reference left-aligned with left edge on non-symmetrical symbols
+* Name and reference centre-aligned on symmetrical symbols
 
 ### Helpful but not mandatory
 

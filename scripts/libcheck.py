@@ -1,3 +1,11 @@
+"""
+libcheck.py
+Copyright 2015 Adam Greig
+
+Check all library files in a directory against a set of consistency rules.
+"""
+
+
 from __future__ import print_function
 
 import sys
@@ -86,15 +94,13 @@ def checkfields(contents, errs):
             if visible != "V":
                 if "#invisible{}".format(fn) not in contents:
                     errs.append("Component {} field not visible".format(fn))
-            if hjust != "L":
-                errs.append("Component {} field not left-aligned".format(fn))
             if orient != "H":
                 errs.append("Component {} field not horizontal".format(fn))
             if size != "50":
                 errs.append("Component {} field font size not 50".format(fn))
 
-    refn_y = refn_f[0][2]
-    name_y = name_f[0][2]
+    refn_y = int(refn_f[0][2])
+    name_y = int(name_f[0][2])
 
     if refn_y <= name_y:
         errs.append("Component reference not above component name")
@@ -138,8 +144,8 @@ def main(libpath):
     ok = True
     for dirpath, dirnames, files in os.walk(libpath):
         for f in fnmatch.filter(files, "*.lib"):
-            path = os.path.join(dirpath, f)
             if f not in EXCLUSIONS:
+                path = os.path.join(dirpath, f)
                 result = checklib(path)
                 if not result:
                     ok = False

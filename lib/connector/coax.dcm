@@ -1,7 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP uFL
-D u.Fl Coax Connector
+$CMP COAX
+D Coaxial connection
 $ENDCMP
 #
 #End Doc Library

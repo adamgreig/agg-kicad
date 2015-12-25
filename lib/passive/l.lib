@@ -4,8 +4,8 @@ EESchema-LIBRARY Version 2.3
 # L
 #
 DEF L L 0 40 N N 1 F N
-F0 "L" 0 50 50 H V L CNN
-F1 "L" 0 -50 50 H V L CNN
+F0 "L" 50 50 50 H V C CNN
+F1 "L" 50 -50 50 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
