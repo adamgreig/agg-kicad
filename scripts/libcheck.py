@@ -144,8 +144,8 @@ def main(libpath):
     ok = True
     for dirpath, dirnames, files in os.walk(libpath):
         for f in fnmatch.filter(files, "*.lib"):
+            path = os.path.join(dirpath, f)
             if f not in EXCLUSIONS:
-                path = os.path.join(dirpath, f)
                 result = checklib(path)
                 if not result:
                     ok = False

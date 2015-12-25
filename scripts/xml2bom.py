@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 """
 xml2bom.py
+Copyright 2015 Adam Greig
+
 Convert Farnell BOM XMLs to a useful text report, including sanity checking,
 and outputting quickpaste formats for Farnell, RS and DigiKey.
-
-Adam Greig, July 2015
 """
 
 from __future__ import print_function

@@ -1,3 +1,11 @@
+"""
+connectorlib.py
+Copyright 2015 Adam Greig
+
+Generate conn.lib, generic multi-pin connector symbols,
+in a range of number of rows and pins.
+"""
+
 import sys
 import datetime
 import subprocess

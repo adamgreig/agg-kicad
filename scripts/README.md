@@ -55,3 +55,11 @@ Some exclusions can be enabled inside a library file, for example
 This script is a Git hook that should be placed in `.git/hooks`. Whenever you 
 commit it will check that the compiled library file `lib/agg-kicad.lib` is 
 up-to-date and if not will recompile it and add it to the commit.
+
+## genproject.py
+
+This script creates a blank KiCAD project file containing all the schematic 
+libraries in the given directory. Useful for generating a development project 
+for editing schematic symbols.
+
+`python3 scripts/genproject.py lib agg-kicad.pro`

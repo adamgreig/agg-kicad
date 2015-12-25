@@ -1,5 +1,6 @@
 """
 compilelib.py
+Copyright 2015 Adam Greig
 
 Build a single KiCAD component library from multiple input libraries.
 

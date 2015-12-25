@@ -1,3 +1,9 @@
+"""
+powerlib.py
+Copyright 2015 Adam Greig
+
+Generate generic power symbols for supply and ground nets.
+"""
 import sys
 import datetime
 import subprocess
