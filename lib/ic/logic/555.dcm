@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 555
+D 555 timer
+$ENDCMP
+#
+#End Doc Library
