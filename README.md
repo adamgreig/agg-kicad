@@ -11,10 +11,12 @@ To use, add relevant `.lib` files to your project libraries. There is one
 `.lib` file per symbol.
 
 Alternatively add `agg-kicad.lib` from the `lib` directory, which includes all 
-symbols. This file is built using `scripts/compilelib.py`.
+symbols. This file is built using `scripts/compilelib.py` and kept up-to-date 
+automatically.
 
 Each part contains supplier order codes and manufacturer part numbers where 
-possible and sensible. Parts are drawn as per the KiCAD library conventions.
+possible and sensible. Parts are drawn as per the conventions in 
+`lib/README.md`, based on the KiCAD project conventions.
 
 Check the README in each library folder for details and notes on each part.
 
@@ -24,8 +26,14 @@ To use, add `agg.pretty` to your project libraries, with nickname `agg`
 recommended for compatibility with the schematic symbols.
 
 Where possible footprints are based on the appropriate standards and follow the 
-KiCAD library conventions.
+conventions in `agg.pretty/README.md`, based on the KiCAD project conventions.
 
 ## Scripts
 
 See the README in the scripts folder for detailed information on each script.
+
+## Licence
+
+Until a reasonable level of stability is reached, this library is "all rights 
+reserved". I intend to release it under an open source licence once I've 
+completed a project using just this library.
