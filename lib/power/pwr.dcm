@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PWR
+D Power flag. Adds a power output to power nets.
+$ENDCMP
+#
+#End Doc Library
