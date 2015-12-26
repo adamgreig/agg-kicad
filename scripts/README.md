@@ -53,8 +53,14 @@ Some exclusions can be enabled inside a library file, for example
 ## pre-commit
 
 This script is a Git hook that should be placed in `.git/hooks`. Whenever you 
-commit it will check that the compiled library file `lib/agg-kicad.lib` is 
-up-to-date and if not will recompile it and add it to the commit.
+commit it will check all the library files in `lib/` with `libcheck.py` and 
+stop the commit if any errors are found.
+
+## post-commit
+
+This script is a Git hook that should be placed in `.git/hooks`. After any 
+commit it will check if `lib/agg-kicad.lib` is up-to-date, and if not, it will 
+rebuild it and commit the result.
 
 ## genproject.py
 

@@ -6,11 +6,3 @@ then
     echo "Error: Library checker found errors, please fix and retry."
     exit 1
 fi
-
-python scripts/compilelib.py lib/ lib/agg-kicad.lib --verify > /dev/null 2>&1
-if [ $? -ne 0 ]
-then
-    echo "Note: recompiled agg-kicad.lib and added to commit."
-    python scripts/compilelib.py lib/ lib/agg-kicad.lib
-    git add lib/agg-kicad.lib
-fi
