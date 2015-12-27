@@ -41,6 +41,8 @@ def checkrefval(mod, errs):
     for fp_text in (node for node in mod if node[0] == "fp_text"):
         if fp_text[1] not in ("reference", "value"):
             continue
+        if "hide" in fp_text:
+            errs.append("Value and Reference fields must be visible")
         layer = [n for n in fp_text if n[0] == "layer"][0]
         if layer[1] != "F.Fab":
             errs.append("Value and Reference fields must be on F.Fab")
