@@ -53,8 +53,9 @@ Some exclusions can be enabled inside a library file, for example
 ## pre-commit
 
 This script is a Git hook that should be placed in `.git/hooks`. Whenever you 
-commit it will check all the library files in `lib/` with `libcheck.py` and 
-stop the commit if any errors are found.
+commit it will check all the library files in `lib/` with `libcheck.py`, and 
+all the footprints in `agg.pretty/` with `fpcheck.py`, and stop the commit if 
+any errors are found.
 
 ## post-commit
 

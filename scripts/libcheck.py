@@ -5,7 +5,6 @@ Copyright 2015 Adam Greig
 Check all library files in a directory against a set of consistency rules.
 """
 
-
 from __future__ import print_function
 
 import sys
@@ -114,8 +113,8 @@ def checklib(libf):
     if not os.path.isfile(dcmpath):
         errs.append("No corresponding DCM found")
 
-    f = open(libf)
-    contents = f.read()
+    with open(libf) as f:
+        contents = f.read()
 
     # Check there's only one symbol and its name matches the library file
     partname, designator = checkdefs(contents, libf, errs)
@@ -143,6 +142,8 @@ def checklib(libf):
 def main(libpath):
     ok = True
     for dirpath, dirnames, files in os.walk(libpath):
+        dirnames.sort()
+        files.sort()
         for f in fnmatch.filter(files, "*.lib"):
             path = os.path.join(dirpath, f)
             if f not in EXCLUSIONS:

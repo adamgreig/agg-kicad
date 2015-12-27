@@ -4,9 +4,9 @@
 * Origin on part centre
 * Pad 1 on top left
 * Ensure rotational symmetry for symmetric parts
-* Text has size 1mm x 1mm
-* Silk lines are 0.15mm thick
-* Courtyard is 0.01mm thick on 0.05mm grid
+* Text has size 1mm x 1mm and thickness 0.15mm (checked automatically)
+* Silk lines are 0.15mm thick (checked automatically)
+* Courtyard is 0.01mm thick on 0.05mm grid (checked automatically)
 * Courtyard clearance:
     * 0.20mm normally
     * 0.50mm for connectors

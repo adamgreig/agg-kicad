@@ -6,3 +6,11 @@ then
     echo "Error: Library checker found errors, please fix and retry."
     exit 1
 fi
+
+python scripts/fpcheck.py agg.pretty/ >/dev/null
+
+if [ $? -ne 0 ]
+then
+    echo "Error: Footprint checker found errors, please fix and retry."
+    exit 1
+fi
