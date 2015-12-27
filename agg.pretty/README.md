@@ -66,18 +66,15 @@ Imperial sized chip device.
     * Amber 2290330 ("yellow")
     * Blue 1686062
 
-### SOIC8, SOIC16
+### SOIC, MSOP
 
-Standard SOIC footprints.
+Standard footprints. Generated automatically by `scripts/icmod.py`.
 
- * Used successfully
+ * Following have been used successfully:
+    * SOIC-8
+    * SOIC-16-W
+    * MSOP-8
  * `-W` for wide variant
-
-### MSOP8
-
-Standard MSOP footprints.
-
- * Used successfully
 
 ### M3_HOLE, M3_MOUNT
 
