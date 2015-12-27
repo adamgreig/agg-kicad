@@ -31,3 +31,15 @@ Imperial sized chip device.
  * Clearance and courtyards are all 0.2mm from the pad edges
  * Fabrication layer shows typical device and terminal size
  * Generally all tested in production but are by no means process-optimised
+
+### LED0603
+
+0603 (aka 1.6mm x 0.8mm) sized LED.
+
+ * Standard 0603 footprint pads
+ * LED polarity arrow with pin 1 as cathode
+ * Farnell codes:
+    * Red 2290329
+    * Green 2290328
+    * Orange 2290330 ("yellow")
+    * Blue 1686062
