@@ -1,7 +1,7 @@
 
 (module "MSOP-8" 
   (layer F.Cu) 
-  (tedit 5680434A) 
+  (tedit 56807325) 
   (fp_text reference "MSOP-8" 
     (at 0 -2.5000) 
     (layer F.Fab) 

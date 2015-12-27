@@ -1,7 +1,7 @@
 
 (module "SOIC-16-W" 
   (layer F.Cu) 
-  (tedit 5680434A) 
+  (tedit 56807325) 
   (fp_text reference "SOIC-16-W" 
     (at 0 -6.1500) 
     (layer F.Fab) 

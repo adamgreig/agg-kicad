@@ -77,6 +77,33 @@ config = {
         "chip_shape": (3.2, 3.2),
         "pin_shape": (1.0, 0.3),
     },
+    "LQFP-48": {
+        "rows": 4,
+        "pins": 48,
+        "pin_pitch": 0.5,
+        "row_pitch": 8.5,
+        "pad_shape": (1.2, 0.3),
+        "chip_shape": (7.0, 7.0),
+        "pin_shape": (1.0, 0.22),
+    },
+    "LQFP-64": {
+        "rows": 4,
+        "pins": 64,
+        "pin_pitch": 0.5,
+        "row_pitch": 11.5,
+        "pad_shape": (1.2, 0.3),
+        "chip_shape": (10.0, 10.0),
+        "pin_shape": (1.0, 0.22),
+    },
+    "LQFP-100": {
+        "rows": 4,
+        "pins": 100,
+        "pin_pitch": 0.5,
+        "row_pitch": 15.5,
+        "pad_shape": (1.2, 0.3),
+        "chip_shape": (14.0, 14.0),
+        "pin_shape": (1.0, 0.22),
+    },
 }
 
 
