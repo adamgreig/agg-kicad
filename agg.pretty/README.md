@@ -26,6 +26,7 @@
       impede close packing or soldering
     * All lines 0.15mm thick (checked automatically)
     * Provide pin 1 indicator where applicable
+    * No silk over exposed copper
     * Internal drawings where possible
         * Not for ICs with exposed pads
         * Be careful of situations where the height of the silk could cause 
