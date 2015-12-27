@@ -88,3 +88,13 @@ M3 sized mounting holes.
  * The `M3_HOLE` courtyard does _not_ include space for a bolt head or washer 
    (as it may not always be required) so be sure to check this or use the 
    `M3_MOUNT` variant. 
+
+### MICROUSB_MOLEX_47589-0001
+
+MicroUSB connector.
+
+ * Farnell 1568023
+ * Not tested yet
+ * Bottom mount (so USB cables will be upside down if footprint is on top)
+ * Footprint uses round drill hits for oblong slots
+ * Probably wants hand soldering the through connections
