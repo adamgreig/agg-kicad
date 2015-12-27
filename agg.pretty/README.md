@@ -24,8 +24,9 @@ Footprints in `unchecked/` have not been standardised or documented yet.
 ### 0201, 0402, 0603, 0805, 1206
 
 Imperial sized chip device.
-    * Pads are half the width of the device
-    * Pads are the same or slightly taller than the device
-    * Clearance and courtyards are all 0.2mm from the pad edges
-    * Fabrication layer shows typical device and terminal size
-    * Generally all tested in production but are by no means process-optimised
+
+ * Pads are half the width of the device
+ * Pads are the same or slightly taller than the device
+ * Clearance and courtyards are all 0.2mm from the pad edges
+ * Fabrication layer shows typical device and terminal size
+ * Generally all tested in production but are by no means process-optimised
