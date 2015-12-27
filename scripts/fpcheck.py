@@ -37,6 +37,15 @@ def sexpparse(sexp):
     return r[0][0]
 
 
+def checkrefval(mod, errs):
+    for fp_text in (node for node in mod if node[0] == "fp_text"):
+        if fp_text[1] not in ("reference", "value"):
+            continue
+        layer = [n for n in fp_text if n[0] == "layer"][0]
+        if layer[1] != "F.Fab":
+            errs.append("Value and Reference fields must be on F.Fab")
+
+
 def checkfont(mod, errs):
     for fp_text in (node for node in mod if node[0] == "fp_text"):
         effects = [n for n in fp_text if n[0] == "effects"][0]
@@ -91,6 +100,7 @@ def checkmod(path):
     with open(path) as f:
         mod = sexpparse(f.read())
 
+    checkrefval(mod, errs)
     checkfont(mod, errs)
     checksilk(mod, errs)
     checkctyd(mod, errs)
