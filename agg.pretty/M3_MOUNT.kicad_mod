@@ -1,8 +1,8 @@
-(module M3_MOUNT (layer F.Cu) (tedit 567F72C3)
-  (fp_text reference M3_MOUNT (at 0 -4.1) (layer F.Fab)
+(module M3_MOUNT (layer F.Cu) (tedit 567F7428)
+  (fp_text reference M3_MOUNT (at 0 -4.1) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value VAL** (at 0 4.1) (layer F.Fab)
+  (fp_text value VAL** (at 0 4.1) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start -3.4 3.4) (end -3.4 -3.4) (layer F.CrtYd) (width 0.01))

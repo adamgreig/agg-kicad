@@ -7,7 +7,7 @@
 * Text has size 1mm x 1mm and thickness 0.15mm (checked automatically)
 * Reference and Value fields:
     * On the `F.Fab` layer (checked automatically)
-    * Not hidden (checked automatically)
+    * May only be hidden for non-functional parts such as mounting holes
     * As close as possible to the part without overlapping
     * If the part is usually arrayed vertically, place on left and right
     * If the part is usually arrayed horizontally, place on top and bottom
@@ -19,11 +19,11 @@
     * Lines 0.01mm thick on 0.05mm grid (checked automatically)
     * Clearance:
         * 0.20mm normally
-        * 0.50mm for connectors
         * Other clearances as applicable per-package
 * Silkscreen:
     * May be omitted only for very small footprints where inclusion would 
-      impede close packing or soldering
+      impede close packing or soldering, or for non-functional parts such as 
+      mounting holes
     * All lines 0.15mm thick (checked automatically)
     * Provide pin 1 indicator where applicable
     * No silk over exposed copper
