@@ -1,8 +1,8 @@
 # PCB Footprints
 
 ## Common Guidelines
-* Origin on part centre
-* Pad 1 on top left
+* Origin/anchor on part centre
+* Pad 1 on the left and then at the top
 * Ensure rotational symmetry for symmetric parts
 * Text has size 1mm x 1mm and thickness 0.15mm (checked automatically)
 * Reference and Value fields:
@@ -22,8 +22,17 @@
         * 0.50mm for connectors
         * Other clearances as applicable per-package
 * Silkscreen:
+    * May be omitted only for very small footprints where inclusion would 
+      impede close packing or soldering
     * All lines 0.15mm thick (checked automatically)
+    * Provide pin 1 indicator where applicable
     * Internal drawings where possible
+        * Not for ICs with exposed pads
+        * Be careful of situations where the height of the silk could cause 
+          soldering issues
+        * Placement alignment indications for no-lead packages will need to be 
+          external
+        * In general prefer less silk visible post-assembly
 
 ## Associated Documentation
 * Has the footprint been validated in practice? With what symbol? Where?

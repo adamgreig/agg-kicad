@@ -62,17 +62,13 @@ def checkfont(mod, errs):
 
 def checksilk(mod, errs):
     silk_types = ("fp_line", "fp_circle", "fp_arc", "fp_poly", "fp_curve")
-    found_silk = False
     for silk in (node for node in mod if node[0] in silk_types):
         layer = [n for n in silk if n[0] == "layer"][0]
         width = [n for n in silk if n[0] == "width"][0]
         silk_layers = ("F.SilkS", "B.SilkS")
         if layer[1] in silk_layers:
-            found_silk = True
             if Decimal(width[1]) != Decimal("0.15"):
                 errs.append("Silk lines must be 0.15mm wide")
-    if not found_silk:
-        errs.append("No silkscreen found")
 
 
 def checkctyd(mod, errs):
