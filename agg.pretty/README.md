@@ -54,7 +54,7 @@ Imperial sized chip device.
  * Fabrication layer shows typical device and terminal size
  * Generally all tested in production but are by no means process-optimised
 
-### LED0603
+### 0603LED
 
 0603 (aka 1.6mm x 0.8mm) sized LED.
 
@@ -72,3 +72,16 @@ Standard SOIC footprints.
 
  * Used successfully
  * `-W` for wide variant
+
+### MSOP8
+
+Standard MSOP footprints.
+
+ * Used successfully
+
+### M3_HOLE, M3_MOUNT
+
+M3 sized mounting holes. The `M3_MOUNT` variant includes a no-mask region with 
+extra drill hits for a locking washer. The `M3_HOLE` courtyard does _not_ 
+include space for a bolt head or washer (as it may not always be required) so 
+be sure to check this or use the `M3_MOUNT` variant. 
