@@ -63,7 +63,7 @@ Imperial sized chip device.
  * Farnell codes:
     * Red 2290329
     * Green 2290328
-    * Orange 2290330 ("yellow")
+    * Amber 2290330 ("yellow")
     * Blue 1686062
 
 ### SOIC8, SOIC16
@@ -81,7 +81,10 @@ Standard MSOP footprints.
 
 ### M3_HOLE, M3_MOUNT
 
-M3 sized mounting holes. The `M3_MOUNT` variant includes a no-mask region with 
-extra drill hits for a locking washer. The `M3_HOLE` courtyard does _not_ 
-include space for a bolt head or washer (as it may not always be required) so 
-be sure to check this or use the `M3_MOUNT` variant. 
+M3 sized mounting holes.
+
+ * The `M3_MOUNT` variant includes a no-mask region with extra drill hits for a 
+   locking washer.
+ * The `M3_HOLE` courtyard does _not_ include space for a bolt head or washer 
+   (as it may not always be required) so be sure to check this or use the 
+   `M3_MOUNT` variant. 
