@@ -56,8 +56,9 @@ Imperial sized chip device.
     * Orange 2290330 ("yellow")
     * Blue 1686062
 
-### SOIC8
+### SOIC8, SOIC16
 
 Standard SOIC footprints.
 
  * Used successfully
+ * `-W` for wide variant
