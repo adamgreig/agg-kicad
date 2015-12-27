@@ -7,7 +7,7 @@ then
     exit 1
 fi
 
-python scripts/fpcheck.py agg.pretty/ >/dev/null
+python scripts/modcheck.py agg.pretty/ >/dev/null
 
 if [ $? -ne 0 ]
 then

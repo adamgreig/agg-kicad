@@ -2,4 +2,4 @@ language: generic
 script:
   - python scripts/libcheck.py lib/
   - python scripts/compilelib.py lib/ lib/agg-kicad.lib --verify
-  - python scripts/fpcheck.py agg.pretty/
+  - python scripts/modcheck.py agg.pretty/

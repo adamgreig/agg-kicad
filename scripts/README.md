@@ -45,7 +45,7 @@ the automatically-generated files that will contain presumably-valid symbols
 (but typically also many symbols, such as the compiled and connector 
 libraries).
 
-Some exclusions can be enabled inside a library file, for example 
+Some exceptions can be enabled inside a library file, for example 
 `#invisiblename` for parts where the name is allowed to be invisible.
 
 `python3 libcheck.py ../lib`
@@ -54,7 +54,7 @@ Some exclusions can be enabled inside a library file, for example
 
 This script is a Git hook that should be placed in `.git/hooks`. Whenever you 
 commit it will check all the library files in `lib/` with `libcheck.py`, and 
-all the footprints in `agg.pretty/` with `fpcheck.py`, and stop the commit if 
+all the footprints in `agg.pretty/` with `modcheck.py`, and stop the commit if 
 any errors are found.
 
 ## post-commit
@@ -70,3 +70,10 @@ libraries in the given directory. Useful for generating a development project
 for editing schematic symbols.
 
 `python3 scripts/genproject.py lib agg-kicad.pro`
+
+## modcheck.py
+
+This script checks footprint module files in a directory against consistency 
+rules.
+
+`python3 scripts/modcheck.py agg.pretty`

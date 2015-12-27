@@ -1,5 +1,5 @@
 """
-fpcheck.py
+modcheck.py
 Copyright 2015 Adam Greig
 
 Check all footprint files in a directory against a set of consistency fules.
