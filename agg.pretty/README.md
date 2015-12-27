@@ -5,13 +5,25 @@
 * Pad 1 on top left
 * Ensure rotational symmetry for symmetric parts
 * Text has size 1mm x 1mm and thickness 0.15mm (checked automatically)
-* Reference and Value fields go on the `F.Fab` layer (checked automatically)
-* Silk lines are 0.15mm thick (checked automatically)
-* Courtyard is 0.01mm thick on 0.05mm grid (checked automatically)
-* Courtyard clearance:
-    * 0.20mm normally
-    * 0.50mm for connectors
-    * Other clearances as applicable per-package
+* Reference and Value fields:
+    * On the `F.Fab` layer (checked automatically)
+    * Not hidden (checked automatically)
+    * As close as possible to the part without overlapping
+    * If the part is usually arrayed vertically, place on left and right
+    * If the part is usually arrayed horizontally, place on top and bottom
+    * Otherwise, prefer top and bottom
+    * Reference on top or left
+* Fabrication Layer:
+    * Include reasonably accurate part drawing
+* Courtyard:
+    * Lines 0.01mm thick on 0.05mm grid (checked automatically)
+    * Clearance:
+        * 0.20mm normally
+        * 0.50mm for connectors
+        * Other clearances as applicable per-package
+* Silkscreen:
+    * All lines 0.15mm thick (checked automatically)
+    * Internal drawings where possible
 
 ## Associated Documentation
 * Has the footprint been validated in practice? With what symbol? Where?
@@ -43,3 +55,9 @@ Imperial sized chip device.
     * Green 2290328
     * Orange 2290330 ("yellow")
     * Blue 1686062
+
+### SOIC8
+
+Standard SOIC footprints.
+
+ * Used successfully
