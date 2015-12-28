@@ -210,6 +210,17 @@ config = {
         "chip_shape": (3.1, 3.1),
         "pin_shape": (-0.325, 0.25),
     },
+
+    # LGA-16L for ST MEMS sensors
+    "LGA-16L-ST": {
+        "rows": 4,
+        "pins": 16,
+        "pin_pitch": 0.65,
+        "row_pitch": 3.40,
+        "pad_shape": (0.40, 0.30),
+        "chip_shape": (4.1, 4.1),
+        "pin_shape": (-0.5, 0.3),
+    },
 }
 
 
