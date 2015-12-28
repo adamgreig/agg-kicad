@@ -144,6 +144,26 @@ config = {
         "chip_shape": (7.1, 7.1),
         "pin_shape": (-0.4, 0.3),
     },
+
+    # QFN-40 from JEDEC MO-220
+    # Modified to meet the UBLOX recommended footprint:
+    #   * Pads are 0.5mm long instead of 1.0mm
+    #   * Row pitch is 4.8mm instead of 4.9mm
+    #   * EP is 3.7mm instead of 3.4mm
+    #   * EP mask and paste defined by 16 0.55x0.55mm apertures
+    # IPC-7351B: QFN40P500X500X80-41N (modified)
+    "QFN-40-EP-UBLOX": {
+        "rows": 4,
+        "pins": 40,
+        "pin_pitch": 0.4,
+        "row_pitch": 4.8,
+        "pad_shape": (0.5, 0.2),
+        "ep_shape": (3.7, 3.7),
+        "ep_mask_shape": (0.55, 0.55, 0.5, 0.5),
+        "ep_paste_shape": (0.55, 0.55, 0.5, 0.5),
+        "chip_shape": (5.1, 5.1),
+        "pin_shape": (-0.35, 0.2),
+    },
 }
 
 
@@ -279,11 +299,16 @@ def fp_text(texttype, text, at, layer, size, thickness):
               ["thickness", thickness]]]]
 
 
-def pad(num, padtype, shape, at, size, layers):
-    return ["pad", num, padtype, shape,
-            ["at", at[0], at[1]],
-            ["size", size[0], size[1]],
-            ["layers"] + layers]
+def pad(num, padtype, shape, at, size, layers, m_mask=None, m_paste=None):
+    pad = ["pad", num, padtype, shape,
+           ["at", at[0], at[1]],
+           ["size", size[0], size[1]],
+           ["layers"] + layers]
+    if m_mask is not None:
+        pad.append(["solder_mask_margin", m_mask])
+    if m_paste is not None:
+        pad.append(["solder_paste_margin", m_paste])
+    return pad
 
 
 def draw_square(width, height, centre, layer, thickness):
@@ -342,10 +367,11 @@ def inner_apertures(ep, apertures):
     ep_w, ep_h = ep
     a_w, a_h, a_wg, a_hg = apertures
 
-    n_x = int(ep_w // (a_w + a_wg))
-    n_y = int(ep_h // (a_h + a_hg))
+    n_x = int((ep_w - a_w) // (a_w + a_wg)) + 1
+    n_y = int((ep_h - a_h) // (a_h + a_hg)) + 1
 
     x = -((n_x - 1)*(a_w + a_wg)/2.0)
+
     for ix in range(n_x):
         y = -((n_y - 1)*(a_h + a_hg)/2.0)
         for iy in range(n_y):
@@ -364,28 +390,35 @@ def exposed_pad(conf):
     out = []
     ep_shape = conf['ep_shape']
     ep_layers = ["F.Cu"]
+    ep_m_mask = None
+    ep_m_paste = None
 
     # Mask apertures
     if "ep_mask_shape" not in conf:
         ep_layers.append("F.Mask")
+        ep_m_mask = 0.001
     else:
         mask_shape = conf['ep_mask_shape']
         apertures = inner_apertures(ep_shape, mask_shape)
-        print("apertures=", apertures)
+        layer = ["F.Mask"]
         for ap in apertures:
-            out.append(pad("~", "smd", "rect", ap, mask_shape, ["F.Mask"]))
+            out.append(pad("~", "smd", "rect", ap, mask_shape, layer, .001))
 
     # Paste apertures
     if "ep_paste_shape" not in conf:
         ep_layers.append("F.Paste")
+        ep_m_paste = 0.001
     else:
         paste_shape = conf['ep_paste_shape']
         apertures = inner_apertures(ep_shape, paste_shape)
+        layer = ["F.Paste"]
         for ap in apertures:
-            out.append(pad("~", "smd", "rect", ap, paste_shape, ["F.Paste"]))
+            out.append(
+                pad("~", "smd", "rect", ap, paste_shape, layer, None, .001))
 
     out.append(
-        pad("EP", "smd", "rect", (0, 0), ep_shape, ep_layers))
+        pad("EP", "smd", "rect", (0, 0),
+            ep_shape, ep_layers, ep_m_mask, ep_m_paste))
     return out
 
 
@@ -624,11 +657,15 @@ def main(prettypath):
 
         # Check if we've changed anything except the timestamp,
         # and skip updating if we haven't.
-        with open(path) as f:
-            old = f.read()
-        old = [n for n in sexp_parse(old) if n[0] != "tedit"]
-        new = [n for n in sexp_parse(fp) if n[0] != "tedit"]
-        if new != old:
+        if os.path.isfile(path):
+            with open(path) as f:
+                old = f.read()
+            old = [n for n in sexp_parse(old) if n[0] != "tedit"]
+            new = [n for n in sexp_parse(fp) if n[0] != "tedit"]
+            if new != old:
+                with open(path, "w") as f:
+                    f.write(fp)
+        else:
             with open(path, "w") as f:
                 f.write(fp)
 
