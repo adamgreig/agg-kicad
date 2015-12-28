@@ -285,9 +285,9 @@ def refs(conf):
 
     y = ctyd_h/2.0 + font_halfheight
 
-    out.append(fp_text("reference", conf['name'], (0, -y),
+    out.append(fp_text("reference", "REF**", (0, -y),
                "F.Fab", font_size, font_thickness))
-    out.append(fp_text("value", "VAL**", (0, y),
+    out.append(fp_text("value", conf['name'], (0, y),
                "F.Fab", font_size, font_thickness))
 
     return out

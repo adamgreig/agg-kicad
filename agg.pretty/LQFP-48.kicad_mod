@@ -1,15 +1,15 @@
 
 (module "LQFP-48" 
   (layer F.Cu) 
-  (tedit 56809C5C) 
-  (fp_text reference "LQFP-48" 
+  (tedit 56809DB0) 
+  (fp_text reference REF** 
     (at 0 -5.9000) 
     (layer F.Fab) 
     (effects 
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (fp_text value VAL** 
+  (fp_text value "LQFP-48" 
     (at 0 5.9000) 
     (layer F.Fab) 
     (effects 
