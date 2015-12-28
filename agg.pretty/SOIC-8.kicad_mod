@@ -1,16 +1,16 @@
 
 (module "SOIC-8" 
   (layer F.Cu) 
-  (tedit 56807325) 
+  (tedit 56809C5C) 
   (fp_text reference "SOIC-8" 
-    (at 0 -3.4000) 
+    (at 0 -3.4500) 
     (layer F.Fab) 
     (effects 
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
   (fp_text value VAL** 
-    (at 0 3.4000) 
+    (at 0 3.4500) 
     (layer F.Fab) 
     (effects 
       (font 
@@ -162,80 +162,80 @@
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -1.0000 -1.9050) 
-    (end 1.0000 -1.9050) 
+    (start -1.4250 -1.9050) 
+    (end 1.4250 -1.9050) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start 1.0000 -1.9050) 
-    (end 1.0000 1.9050) 
+    (start 1.4250 -1.9050) 
+    (end 1.4250 1.9050) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start 1.0000 1.9050) 
-    (end -1.0000 1.9050) 
+    (start 1.4250 1.9050) 
+    (end -1.4250 1.9050) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start -1.0000 1.9050) 
-    (end -1.0000 -1.9050) 
+    (start -1.4250 1.9050) 
+    (end -1.4250 -1.9050) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_arc 
-    (start -1.0000 -1.9050) 
-    (end -0.4000 -1.9050) 
+    (start -1.4250 -1.9050) 
+    (end -0.8250 -1.9050) 
     (angle 90) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start -3.9000 -2.7000) 
-    (end 3.9000 -2.7000) 
+    (start -3.7500 -2.7500) 
+    (end 3.7500 -2.7500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 3.9000 -2.7000) 
-    (end 3.9000 2.7000) 
+    (start 3.7500 -2.7500) 
+    (end 3.7500 2.7500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 3.9000 2.7000) 
-    (end -3.9000 2.7000) 
+    (start 3.7500 2.7500) 
+    (end -3.7500 2.7500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start -3.9000 2.7000) 
-    (end -3.9000 -2.7000) 
+    (start -3.7500 2.7500) 
+    (end -3.7500 -2.7500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (pad 1 smd rect 
-    (at -2.6000 -1.9050) 
-    (size 2.2000 0.6000) 
+    (at -2.7000 -1.9050) 
+    (size 1.5500 0.6000) 
     (layers F.Cu F.Paste F.Mask)) 
   (pad 2 smd rect 
-    (at -2.6000 -0.6350) 
-    (size 2.2000 0.6000) 
+    (at -2.7000 -0.6350) 
+    (size 1.5500 0.6000) 
     (layers F.Cu F.Paste F.Mask)) 
   (pad 3 smd rect 
-    (at -2.6000 0.6350) 
-    (size 2.2000 0.6000) 
+    (at -2.7000 0.6350) 
+    (size 1.5500 0.6000) 
     (layers F.Cu F.Paste F.Mask)) 
   (pad 4 smd rect 
-    (at -2.6000 1.9050) 
-    (size 2.2000 0.6000) 
+    (at -2.7000 1.9050) 
+    (size 1.5500 0.6000) 
     (layers F.Cu F.Paste F.Mask)) 
   (pad 5 smd rect 
-    (at 2.6000 1.9050) 
-    (size 2.2000 0.6000) 
+    (at 2.7000 1.9050) 
+    (size 1.5500 0.6000) 
     (layers F.Cu F.Paste F.Mask)) 
   (pad 6 smd rect 
-    (at 2.6000 0.6350) 
-    (size 2.2000 0.6000) 
+    (at 2.7000 0.6350) 
+    (size 1.5500 0.6000) 
     (layers F.Cu F.Paste F.Mask)) 
   (pad 7 smd rect 
-    (at 2.6000 -0.6350) 
-    (size 2.2000 0.6000) 
+    (at 2.7000 -0.6350) 
+    (size 1.5500 0.6000) 
     (layers F.Cu F.Paste F.Mask)) 
   (pad 8 smd rect 
-    (at 2.6000 -1.9050) 
-    (size 2.2000 0.6000) 
+    (at 2.7000 -1.9050) 
+    (size 1.5500 0.6000) 
     (layers F.Cu F.Paste F.Mask)))

@@ -16,109 +16,162 @@ TODO:
     * Support choosing internal or external silk
 """
 
-import os
-import re
-import sys
-import time
-import subprocess
+# Package configuration =======================================================
+# Dictionary of dictionaries.
+# Top keys are package names, in the following format:
+#   FAMILY-PINS[-MOD][-EP][-SPECIAL]
+# MOD might be "W" for wide.
+# SPECIAL might refer to a manufacturer's specific modified footprint.
+# Examples: SOIC-8, SOIC-16-W, QFN48-EP
+#
+# Unless otherwise noted, all pad dimensions are as per IPC-7351B nominal,
+# while fab layer annotatons are as per IPC-7351B package maximums.
+#
+# Valid inner keys are:
+#   rows: either 2 or 4, for dual or quad packages
+#   pins: total number of pins
+#   pin_pitch: spacing between adjacent pins
+#   row_pitch: spacing between rows of pins
+#   pad_shape: (width, height) of a pad for a pin
+#   pin_shape: (width, height) of the chip package pins (for Fab layer)
+#   chip_shape: (width, height) of the actual chip package (for Fab layer)
+#
+# All lengths are in millimetres.
 
-
-"""
-Package configuration.
-Dictionary of dictionary. Top keys are package names, in the following format:
-    FAMILY-PINS[-MOD][-EP][-SPECIAL]
-Examples: SOIC-8, SOIC-16-W, QFN48-EP
-
-Valid inner keys are:
-    rows: either 2 or 4, for dual or quad packages
-    pins: total number of pins
-    pin_pitch: spacing between adjacent pins
-    row_pitch: spacing between rows of pins
-    pad_shape: (width, height) of a pad for a pin
-    pin_shape: (width, height) of the chip package pins (for Fab layer)
-    chip_shape: (width, height) of the actual chip package (for Fab layer)
-
-All lengths are in millimetres.
-"""
 config = {
+
+    # SOIC-8 from JEDEC MS-012AA
+    # IPC-7351B: SOIC127P600X175-8N
     "SOIC-8": {
         "rows": 2,
         "pins": 8,
         "pin_pitch": 1.27,
-        "row_pitch": 5.2,
-        "pad_shape": (2.2, 0.6),
+        "row_pitch": 5.4,
+        "pad_shape": (1.55, 0.6),
         "chip_shape": (4.0, 5.0),
         "pin_shape": (1.1, 0.5),
     },
+
+    # SOIC-16 from JEDEC MS-012AC
+    # IPC-7351B: SOIC127P600X175-16N
     "SOIC-16": {
         "rows": 2,
         "pins": 16,
         "pin_pitch": 1.27,
-        "row_pitch": 5.2,
-        "pad_shape": (2.2, 0.6),
+        "row_pitch": 5.4,
+        "pad_shape": (1.55, 0.6),
         "chip_shape": (4.0, 10.0),
         "pin_shape": (1.1, 0.5),
     },
+
+    # SOIC-16-W from JEDEC MS-013AA
+    # IPC-7351B: SOIC127P1030X265-16N
     "SOIC-16-W": {
         "rows": 2,
         "pins": 16,
         "pin_pitch": 1.27,
-        "row_pitch": 9.4,
-        "pad_shape": (2.2, 0.6),
+        "row_pitch": 9.3,
+        "pad_shape": (2.0, 0.6),
         "chip_shape": (7.6, 10.5),
-        "pin_shape": (1.1, 0.5),
+        "pin_shape": (1.5, 0.5),
     },
+
+    # MSOP-8 from JEDEC MO-187AA
+    # IPC-7351B: SOP65P490X110-8N
     "MSOP-8": {
         "rows": 2,
         "pins": 8,
         "pin_pitch": 0.65,
         "row_pitch": 4.4,
-        "pad_shape": (1.4, 0.4),
-        "chip_shape": (3.2, 3.2),
-        "pin_shape": (1.0, 0.3),
+        "pad_shape": (1.45, 0.45),
+        "chip_shape": (3.1, 3.1),
+        "pin_shape": (1.0, 0.38),
     },
+
+    # LQFP-48 from JEDEC MS-026BBC
+    # IPC-7351B: QFP50P900X900X160-48N
     "LQFP-48": {
         "rows": 4,
         "pins": 48,
         "pin_pitch": 0.5,
-        "row_pitch": 8.5,
-        "pad_shape": (1.2, 0.3),
-        "chip_shape": (7.0, 7.0),
-        "pin_shape": (1.0, 0.22),
+        "row_pitch": 8.4,
+        "pad_shape": (1.5, 0.3),
+        "chip_shape": (7.2, 7.2),
+        "pin_shape": (1.0, 0.27),
     },
+
+    # LQFP-64 from JEDEC MS-026BCD
+    # IPC-7351B: QFP50P1200X1200X160-64N
     "LQFP-64": {
         "rows": 4,
         "pins": 64,
         "pin_pitch": 0.5,
-        "row_pitch": 11.5,
-        "pad_shape": (1.2, 0.3),
-        "chip_shape": (10.0, 10.0),
-        "pin_shape": (1.0, 0.22),
+        "row_pitch": 11.4,
+        "pad_shape": (1.5, 0.3),
+        "chip_shape": (10.2, 10.2),
+        "pin_shape": (1.0, 0.27),
     },
+
+    # LQFP-100 from JEDEC MS-026BED
+    # IPC-7351B: QFP50P1600X1600X160-100N
     "LQFP-100": {
         "rows": 4,
         "pins": 100,
         "pin_pitch": 0.5,
-        "row_pitch": 15.5,
-        "pad_shape": (1.2, 0.3),
-        "chip_shape": (14.0, 14.0),
-        "pin_shape": (1.0, 0.22),
+        "row_pitch": 15.4,
+        "pad_shape": (1.5, 0.3),
+        "chip_shape": (14.2, 14.2),
+        "pin_shape": (1.0, 0.27),
     },
 }
 
 
-# Other constants
-ctyd_gap = 0.2
+# Other constants =============================================================
+
+# Courtyard clearance
+# Use 0.25 for IPC nominal and 0.10 for IPC least.
+ctyd_gap = 0.25
+
+# Courtyard grid
+ctyd_grid = 0.05
+
+# Courtyard line width
 ctyd_width = 0.01
-fab_width = 0.01
+
+# Silk clearance from pads
 silk_pad_gap = 0.5
+
+# Silk line width
 silk_width = 0.15
+
+# Silk pin1 arc radius
 silk_pin1_r = 0.6
+
+# Fab layer line width
+fab_width = 0.01
+
+# Fab layer pin1 circle radius
 fab_pin1_r = 0.4
+
+# Fab layer pin1 corner offset
 fab_pin1_offset = 0.8
+
+# Ref/Val font size (width x height)
 font_size = (1.0, 1.0)
+
+# Ref/Val font thickness
 font_thickness = 0.15
+
+# Ref/Val font spacing from centre to top/bottom edge
 font_halfheight = 0.7
+
+# End Constants ===============================================================
+
+import os
+import re
+import sys
+import time
+import subprocess
 
 
 def sexp_generate(sexp, depth=0):
@@ -320,6 +373,18 @@ def ctyd(conf):
         height = chip_h + 2 * ctyd_gap
     elif conf['rows'] == 4:
         height = width
+
+    # Ensure courtyard lies on a specified grid
+    # (double the grid since we halve the width/height)
+    width_um = int(width * 1000)
+    height_um = int(height * 1000)
+    grid_um = int(ctyd_grid * 2 * 1000)
+
+    width_um += width_um % grid_um
+    height_um += height_um % grid_um
+
+    width = width_um / 1000.0
+    height = height_um / 1000.0
 
     _, _, _, _, sq = draw_square(width, height, (0, 0), "F.CrtYd", ctyd_width)
     return sq
