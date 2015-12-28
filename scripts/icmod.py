@@ -221,6 +221,18 @@ config = {
         "chip_shape": (4.1, 4.1),
         "pin_shape": (-0.5, 0.3),
     },
+
+    # MS5611 sensor
+    "MS5611": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 1.25,
+        "row_pitch": 2.20,
+        "pad_shape": (1.1, 0.6),
+        "chip_shape": (3.0, 5.0),
+        "pin_shape": (-0.9, 0.50),
+        "silk": "external",
+    },
 }
 
 
