@@ -1,0 +1,392 @@
+
+(module "LPCC-16-HMC5883L" 
+  (layer F.Cu) 
+  (tedit 5680DBCC) 
+  (fp_text reference REF** 
+    (at 0 -2.4500) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "LPCC-16-HMC5883L" 
+    (at 0 2.4500) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_line 
+    (start -1.5500 -1.5500) 
+    (end 1.5500 -1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.5500 -1.5500) 
+    (end 1.5500 1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.5500 1.5500) 
+    (end -1.5500 1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.5500 1.5500) 
+    (end -1.5500 -1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.7500 -0.7500) 
+    (end -0.7500 -0.3500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2250 -0.8750) 
+    (end -1.5500 -0.8750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.5500 -0.6250) 
+    (end -1.2250 -0.6250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2250 -0.6250) 
+    (end -1.2250 -0.8750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2250 -0.3750) 
+    (end -1.5500 -0.3750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.5500 -0.1250) 
+    (end -1.2250 -0.1250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2250 -0.1250) 
+    (end -1.2250 -0.3750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2250 0.1250) 
+    (end -1.5500 0.1250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.5500 0.3750) 
+    (end -1.2250 0.3750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2250 0.3750) 
+    (end -1.2250 0.1250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2250 0.6250) 
+    (end -1.5500 0.6250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.5500 0.8750) 
+    (end -1.2250 0.8750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2250 0.8750) 
+    (end -1.2250 0.6250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.5500 0.6250) 
+    (end 1.2250 0.6250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2250 0.6250) 
+    (end 1.2250 0.8750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2250 0.8750) 
+    (end 1.5500 0.8750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.5500 0.1250) 
+    (end 1.2250 0.1250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2250 0.1250) 
+    (end 1.2250 0.3750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2250 0.3750) 
+    (end 1.5500 0.3750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.5500 -0.3750) 
+    (end 1.2250 -0.3750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2250 -0.3750) 
+    (end 1.2250 -0.1250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2250 -0.1250) 
+    (end 1.5500 -0.1250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.5500 -0.8750) 
+    (end 1.2250 -0.8750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2250 -0.8750) 
+    (end 1.2250 -0.6250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2250 -0.6250) 
+    (end 1.5500 -0.6250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.6250 -1.2250) 
+    (end 0.8750 -1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.8750 -1.2250) 
+    (end 0.8750 -1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.6250 -1.5500) 
+    (end 0.6250 -1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.1250 -1.2250) 
+    (end 0.3750 -1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.3750 -1.2250) 
+    (end 0.3750 -1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.1250 -1.5500) 
+    (end 0.1250 -1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.3750 -1.2250) 
+    (end -0.1250 -1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.1250 -1.2250) 
+    (end -0.1250 -1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.3750 -1.5500) 
+    (end -0.3750 -1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.8750 -1.2250) 
+    (end -0.6250 -1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.6250 -1.2250) 
+    (end -0.6250 -1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.8750 -1.5500) 
+    (end -0.8750 -1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.6250 1.5500) 
+    (end -0.6250 1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.6250 1.2250) 
+    (end -0.8750 1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.8750 1.2250) 
+    (end -0.8750 1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.1250 1.5500) 
+    (end -0.1250 1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.1250 1.2250) 
+    (end -0.3750 1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.3750 1.2250) 
+    (end -0.3750 1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.3750 1.5500) 
+    (end 0.3750 1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.3750 1.2250) 
+    (end 0.1250 1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.1250 1.2250) 
+    (end 0.1250 1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.8750 1.5500) 
+    (end 0.8750 1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.8750 1.2250) 
+    (end 0.6250 1.2250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.6250 1.2250) 
+    (end 0.6250 1.5500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.0500 -0.5500) 
+    (end 0.5500 -0.5500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 0.5500 -0.5500) 
+    (end 0.5500 0.5500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 0.5500 0.5500) 
+    (end -0.5500 0.5500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -0.5500 0.5500) 
+    (end -0.5500 0.0500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -0.5500 0.0500) 
+    (end 0.0500 -0.5500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -1.7500 -1.7500) 
+    (end 1.7500 -1.7500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.7500 -1.7500) 
+    (end 1.7500 1.7500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.7500 1.7500) 
+    (end -1.7500 1.7500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.7500 1.7500) 
+    (end -1.7500 -1.7500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (pad 1 smd rect 
+    (at -1.2750 -0.7500) 
+    (size 0.4500 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 2 smd rect 
+    (at -1.2750 -0.2500) 
+    (size 0.4500 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 3 smd rect 
+    (at -1.2750 0.2500) 
+    (size 0.4500 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 4 smd rect 
+    (at -1.2750 0.7500) 
+    (size 0.4500 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 5 smd rect 
+    (at -0.7500 1.2750) 
+    (size 0.3000 0.4500) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 6 smd rect 
+    (at -0.2500 1.2750) 
+    (size 0.3000 0.4500) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 7 smd rect 
+    (at 0.2500 1.2750) 
+    (size 0.3000 0.4500) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 8 smd rect 
+    (at 0.7500 1.2750) 
+    (size 0.3000 0.4500) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 9 smd rect 
+    (at 1.2750 0.7500) 
+    (size 0.4500 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 10 smd rect 
+    (at 1.2750 0.2500) 
+    (size 0.4500 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 11 smd rect 
+    (at 1.2750 -0.2500) 
+    (size 0.4500 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 12 smd rect 
+    (at 1.2750 -0.7500) 
+    (size 0.4500 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 13 smd rect 
+    (at 0.7500 -1.2750) 
+    (size 0.3000 0.4500) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 14 smd rect 
+    (at 0.2500 -1.2750) 
+    (size 0.3000 0.4500) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 15 smd rect 
+    (at -0.2500 -1.2750) 
+    (size 0.3000 0.4500) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 16 smd rect 
+    (at -0.7500 -1.2750) 
+    (size 0.3000 0.4500) 
+    (layers F.Cu F.Mask F.Paste)))

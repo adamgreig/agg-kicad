@@ -199,6 +199,17 @@ config = {
         "chip_shape": (3.1, 3.1),
         "pin_shape": (-0.40, 0.30),
     },
+
+    # LPCC-16 for HMC5883L
+    "LPCC-16-HMC5883L": {
+        "rows": 4,
+        "pins": 16,
+        "pin_pitch": 0.50,
+        "row_pitch": 2.55,
+        "pad_shape": (0.45, 0.30),
+        "chip_shape": (3.1, 3.1),
+        "pin_shape": (-0.325, 0.25),
+    },
 }
 
 
