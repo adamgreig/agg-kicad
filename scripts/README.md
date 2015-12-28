@@ -77,3 +77,11 @@ This script checks footprint module files in a directory against consistency
 rules.
 
 `python3 scripts/modcheck.py agg.pretty`
+
+## icmod.py
+
+Generate IC footprints for dual and quad packages.
+
+## moddraw.py
+
+Render `.kicad_mod` files to PNGs.
