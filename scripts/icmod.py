@@ -166,6 +166,21 @@ config = {
         "chip_shape": (5.1, 5.1),
         "pin_shape": (-0.35, 0.2),
     },
+
+    # QFN-20 from JEDEC MO-220VGGD-8
+    # For Si4460
+    # IPC-7351B: QFN50P400X400X85-21V8N
+    "QFN-20-EP-SI4060": {
+        "rows": 4,
+        "pins": 20,
+        "pin_pitch": 0.5,
+        "row_pitch": 4.0,
+        "pad_shape": (0.75, 0.30),
+        "ep_shape": (2.6, 2.6),
+        "ep_paste_shape": (1.1, 1.1, 0.2, 0.2),
+        "chip_shape": (4.1, 4.1),
+        "pin_shape": (-.50, 0.30),
+    },
 }
 
 
