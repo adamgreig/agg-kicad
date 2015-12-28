@@ -44,6 +44,10 @@ def checkrefval(mod, errs):
         layer = [n for n in fp_text if n[0] == "layer"][0]
         if layer[1] != "F.Fab":
             errs.append("Value and Reference fields must be on F.Fab")
+        if fp_text[1] == "reference" and fp_text[2] != "REF**":
+            errs.append("Reference field must contain REF**")
+        if fp_text[1] == "value" and not mod[1].startswith(fp_text[2]):
+            errs.append("Value field must contain module name")
 
 
 def checkfont(mod, errs):
