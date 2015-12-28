@@ -39,8 +39,9 @@ TODO:
 #   chip_shape: (width, height) of the actual chip package (for Fab layer).
 #   pin_shape: (width, height) of the chip package pins (for Fab layer).
 #              Use negative widths for internal pins (e.g., QFNs).
-#   silk: "internal" or "external". Default is "internal" unless ep_shape
-#         is given in which case default is "external".
+#   silk: "internal" or "external" or None.
+#          Default is "internal" unless ep_shape is given in which case
+#          default is "external".
 #
 # All lengths are in millimetres.
 
@@ -131,19 +132,21 @@ config = {
     },
 
     # UFQFPN-48 from JEDEC MO-220
-    # Approximates the ST ECOPACK package of the same name, but has
-    # a smaller exposed pad (5.3 instead of 5.6).
+    # Modified to meet the ST ECOPACK package of the same name:
+    #   * Row pitch is 6.75mm instead of 7.0mm
+    #   * Pads are 0.55mm long instead of 0.8mm
+    #   * EP is 5.6mm
     # IPC-7351B: QFN50P700X700X80-49N
-    "UFQFPN-48-EP": {
+    "QFN-48-EP-ST": {
         "rows": 4,
         "pins": 48,
         "pin_pitch": 0.5,
-        "row_pitch": 7.0,
-        "pad_shape": (0.8, 0.3),
-        "ep_shape": (5.30, 5.30),
-        "ep_paste_shape": (1.66, 1.66, 0.64, 0.64),
+        "row_pitch": 6.75,
+        "pad_shape": (0.55, 0.30),
+        "ep_shape": (5.6, 5.6),
+        "ep_paste_shape": (2.0, 2.0, 0.5, 0.5),
         "chip_shape": (7.1, 7.1),
-        "pin_shape": (-0.4, 0.3),
+        "pin_shape": (-0.5, 0.3),
     },
 
     # QFN-40 from JEDEC MO-220
@@ -170,7 +173,7 @@ config = {
     # QFN-20 from JEDEC MO-220VGGD-8
     # For Si4460
     # IPC-7351B: QFN50P400X400X85-21V8N
-    "QFN-20-EP-SI4060": {
+    "QFN-20-EP-SI": {
         "rows": 4,
         "pins": 20,
         "pin_pitch": 0.5,
@@ -605,10 +608,14 @@ def external_silk(conf):
 
 
 def silk(conf):
-    if "ep_shape" in conf or conf.get('silk') == "external":
+    default = 'internal' if 'ep_shape' not in conf else 'external'
+    silk = conf.get('silk', default)
+    if silk == 'external':
         return external_silk(conf)
-    else:
+    elif silk == 'internal':
         return internal_silk(conf)
+    else:
+        return []
 
 
 def ctyd(conf):

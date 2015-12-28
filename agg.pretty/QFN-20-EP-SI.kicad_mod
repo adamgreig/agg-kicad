@@ -1,7 +1,7 @@
 
-(module "QFN-20-EP-SI4060" 
+(module "QFN-20-EP-SI" 
   (layer F.Cu) 
-  (tedit 5680D3AD) 
+  (tedit 5680DA76) 
   (fp_text reference REF** 
     (at 0 -3.3250) 
     (layer F.Fab) 
@@ -9,7 +9,7 @@
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (fp_text value "QFN-20-EP-SI4060" 
+  (fp_text value "QFN-20-EP-SI" 
     (at 0 3.3250) 
     (layer F.Fab) 
     (effects 
