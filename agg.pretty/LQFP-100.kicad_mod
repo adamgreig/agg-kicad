@@ -1,7 +1,7 @@
 
 (module "LQFP-100" 
   (layer F.Cu) 
-  (tedit 5680BCD7) 
+  (tedit 5680BDC3) 
   (fp_text reference REF** 
     (at 0 -9.4000) 
     (layer F.Fab) 

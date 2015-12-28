@@ -625,9 +625,10 @@ def main(prettypath):
         # Check if we've changed anything except the timestamp,
         # and skip updating if we haven't.
         with open(path) as f:
-            old = sexp_parse(f.read())
-        old = [n for n in old if n[0] != "tedit"]
-        if fp != old:
+            old = f.read()
+        old = [n for n in sexp_parse(old) if n[0] != "tedit"]
+        new = [n for n in sexp_parse(fp) if n[0] != "tedit"]
+        if new != old:
             with open(path, "w") as f:
                 f.write(fp)
 
