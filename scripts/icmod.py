@@ -181,6 +181,21 @@ config = {
         "chip_shape": (4.1, 4.1),
         "pin_shape": (-.50, 0.30),
     },
+
+    # DFN-10 from JEDEC MO-229WEED-2
+    # For LTC3105 / LT package DD
+    # IPC-7351B: DFN50P300X300X75-11N
+    "DFN-10-EP-LT": {
+        "rows": 2,
+        "pins": 10,
+        "pin_pitch": 0.5,
+        "row_pitch": 2.85,
+        "pad_shape": (0.70, 0.25),
+        "ep_shape": (1.65, 2.38),
+        "ep_paste_shape": (1.2, 0.8, 0, 0.4),
+        "chip_shape": (3.1, 3.1),
+        "pin_shape": (-0.40, 0.30),
+    },
 }
 
 
