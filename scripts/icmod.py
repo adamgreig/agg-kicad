@@ -5,7 +5,6 @@ Copyright 2015 Adam Greig
 Create a range of dual and quad SMD IC packages.
 
 TODO:
-    * Support internal vias on exposed pads
     * Support non-square 4-row packages
     * Support other pad shapes, e.g. oval/half-oval
 """
@@ -35,6 +34,8 @@ TODO:
 #   ep_paste_shape: (width, height, w_gap, h_gap) of paste apertures on EP.
 #                   Multiple apertures will be created to fill.
 #                   Leave out this parameter to cover the EP in paste aperture.
+#   ep_vias: (drill, size, gap) of via hits to put in the EP.
+#            Leave out this parameter to not place any vias.
 #   chip_shape: (width, height) of the actual chip package (for Fab layer).
 #   pin_shape: (width, height) of the chip package pins (for Fab layer).
 #              Use negative widths for internal pins (e.g., QFNs).
@@ -161,6 +162,7 @@ config = {
         "ep_shape": (3.7, 3.7),
         "ep_mask_shape": (0.55, 0.55, 0.5, 0.5),
         "ep_paste_shape": (0.55, 0.55, 0.5, 0.5),
+        "ep_vias": (0.4, 0.6, 0.45),
         "chip_shape": (5.1, 5.1),
         "pin_shape": (-0.35, 0.2),
     },
@@ -415,6 +417,16 @@ def exposed_pad(conf):
         for ap in apertures:
             out.append(
                 pad("~", "smd", "rect", ap, paste_shape, layer, None, .001))
+
+    # Vias
+    if "ep_vias" in conf:
+        v_d, v_s, v_g = conf['ep_vias']
+        centres = inner_apertures(ep_shape, (v_s, v_s, v_g, v_g))
+        layers = ["*.Cu"]
+        for c in centres:
+            p = pad("EP", "thru_hole", "circle", c, (v_s, v_s), layers)
+            p.append(["drill", v_d])
+            out.append(p)
 
     out.append(
         pad("EP", "smd", "rect", (0, 0),
