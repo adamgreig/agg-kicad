@@ -1,7 +1,7 @@
 
 (module "MSOP-8" 
   (layer F.Cu) 
-  (tedit 56809DB0) 
+  (tedit 5680BCD7) 
   (fp_text reference REF** 
     (at 0 -2.5000) 
     (layer F.Fab) 
@@ -162,7 +162,7 @@
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -0.9750 -0.9750) 
+    (start -0.3750 -0.9750) 
     (end 0.9750 -0.9750) 
     (layer F.SilkS) 
     (width 0.1500)) 
@@ -178,13 +178,12 @@
     (width 0.1500)) 
   (fp_line 
     (start -0.9750 0.9750) 
-    (end -0.9750 -0.9750) 
+    (end -0.9750 -0.3750) 
     (layer F.SilkS) 
     (width 0.1500)) 
-  (fp_arc 
-    (start -0.9750 -0.9750) 
+  (fp_line 
+    (start -0.9750 -0.3750) 
     (end -0.3750 -0.9750) 
-    (angle 90) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
@@ -210,32 +209,32 @@
   (pad 1 smd rect 
     (at -2.2000 -0.9750) 
     (size 1.4500 0.4500) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 2 smd rect 
     (at -2.2000 -0.3250) 
     (size 1.4500 0.4500) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 3 smd rect 
     (at -2.2000 0.3250) 
     (size 1.4500 0.4500) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 4 smd rect 
     (at -2.2000 0.9750) 
     (size 1.4500 0.4500) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 5 smd rect 
     (at 2.2000 0.9750) 
     (size 1.4500 0.4500) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 6 smd rect 
     (at 2.2000 0.3250) 
     (size 1.4500 0.4500) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 7 smd rect 
     (at 2.2000 -0.3250) 
     (size 1.4500 0.4500) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 8 smd rect 
     (at 2.2000 -0.9750) 
     (size 1.4500 0.4500) 
-    (layers F.Cu F.Paste F.Mask)))
+    (layers F.Cu F.Mask F.Paste)))

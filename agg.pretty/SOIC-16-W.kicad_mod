@@ -1,7 +1,7 @@
 
 (module "SOIC-16-W" 
   (layer F.Cu) 
-  (tedit 56809DB0) 
+  (tedit 5680BCD7) 
   (fp_text reference REF** 
     (at 0 -6.2000) 
     (layer F.Fab) 
@@ -282,7 +282,7 @@
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -3.1500 -4.4450) 
+    (start -2.5500 -4.4450) 
     (end 3.1500 -4.4450) 
     (layer F.SilkS) 
     (width 0.1500)) 
@@ -298,13 +298,12 @@
     (width 0.1500)) 
   (fp_line 
     (start -3.1500 4.4450) 
-    (end -3.1500 -4.4450) 
+    (end -3.1500 -3.8450) 
     (layer F.SilkS) 
     (width 0.1500)) 
-  (fp_arc 
-    (start -3.1500 -4.4450) 
+  (fp_line 
+    (start -3.1500 -3.8450) 
     (end -2.5500 -4.4450) 
-    (angle 90) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
@@ -330,64 +329,64 @@
   (pad 1 smd rect 
     (at -4.6500 -4.4450) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 2 smd rect 
     (at -4.6500 -3.1750) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 3 smd rect 
     (at -4.6500 -1.9050) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 4 smd rect 
     (at -4.6500 -0.6350) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 5 smd rect 
     (at -4.6500 0.6350) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 6 smd rect 
     (at -4.6500 1.9050) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 7 smd rect 
     (at -4.6500 3.1750) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 8 smd rect 
     (at -4.6500 4.4450) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 9 smd rect 
     (at 4.6500 4.4450) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 10 smd rect 
     (at 4.6500 3.1750) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 11 smd rect 
     (at 4.6500 1.9050) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 12 smd rect 
     (at 4.6500 0.6350) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 13 smd rect 
     (at 4.6500 -0.6350) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 14 smd rect 
     (at 4.6500 -1.9050) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 15 smd rect 
     (at 4.6500 -3.1750) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)) 
+    (layers F.Cu F.Mask F.Paste)) 
   (pad 16 smd rect 
     (at 4.6500 -4.4450) 
     (size 2.0000 0.6000) 
-    (layers F.Cu F.Paste F.Mask)))
+    (layers F.Cu F.Mask F.Paste)))

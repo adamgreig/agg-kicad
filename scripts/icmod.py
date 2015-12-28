@@ -5,15 +5,9 @@ Copyright 2015 Adam Greig
 Create a range of dual and quad SMD IC packages.
 
 TODO:
-    * Support exposed pads
-        * Defined by width, height
-        * Support multiple mask openings
-        * Support multiple paste apertures
-        * Support included vias
-        * Needs external silk
+    * Support internal vias on exposed pads
     * Support non-square 4-row packages
     * Support other pad shapes, e.g. oval/half-oval
-    * Support choosing internal or external silk
 """
 
 # Package configuration =======================================================
@@ -28,13 +22,24 @@ TODO:
 # while fab layer annotatons are as per IPC-7351B package maximums.
 #
 # Valid inner keys are:
-#   rows: either 2 or 4, for dual or quad packages
-#   pins: total number of pins
-#   pin_pitch: spacing between adjacent pins
-#   row_pitch: spacing between rows of pins
-#   pad_shape: (width, height) of a pad for a pin
-#   pin_shape: (width, height) of the chip package pins (for Fab layer)
-#   chip_shape: (width, height) of the actual chip package (for Fab layer)
+#   rows: either 2 or 4, for dual or quad packages.
+#   pins: total number of pins.
+#   pin_pitch: spacing between adjacent pins.
+#   row_pitch: spacing between rows of pins.
+#   pad_shape: (width, height) of a pad for a pin.
+#   ep_shape: (width, height) of an exposed pad underneath the chip.
+#             Leave out this parameter to skip the exposed pad.
+#   ep_mask_shape: (width, height, w_gap, h_gap) of mask apertures on EP.
+#                  Multiple apertures will be created to fill.
+#                  Leave out this parameter to cover the EP in mask aperture.
+#   ep_paste_shape: (width, height, w_gap, h_gap) of paste apertures on EP.
+#                   Multiple apertures will be created to fill.
+#                   Leave out this parameter to cover the EP in paste aperture.
+#   chip_shape: (width, height) of the actual chip package (for Fab layer).
+#   pin_shape: (width, height) of the chip package pins (for Fab layer).
+#              Use negative widths for internal pins (e.g., QFNs).
+#   silk: "internal" or "external". Default is "internal" unless ep_shape
+#         is given in which case default is "external".
 #
 # All lengths are in millimetres.
 
@@ -123,6 +128,22 @@ config = {
         "chip_shape": (14.2, 14.2),
         "pin_shape": (1.0, 0.27),
     },
+
+    # UFQFPN-48 from JEDEC MO-220
+    # Approximates the ST ECOPACK package of the same name, but has
+    # a smaller exposed pad (5.3 instead of 5.6).
+    # IPC-7351B: QFN50P700X700X80-49N
+    "UFQFPN-48-EP": {
+        "rows": 4,
+        "pins": 48,
+        "pin_pitch": 0.5,
+        "row_pitch": 7.0,
+        "pad_shape": (0.8, 0.3),
+        "ep_shape": (5.30, 5.30),
+        "ep_paste_shape": (1.66, 1.66, 0.64, 0.64),
+        "chip_shape": (7.1, 7.1),
+        "pin_shape": (-0.4, 0.3),
+    },
 }
 
 
@@ -138,14 +159,20 @@ ctyd_grid = 0.05
 # Courtyard line width
 ctyd_width = 0.01
 
-# Silk clearance from pads
-silk_pad_gap = 0.5
+# Internal silk clearance from pads
+silk_pad_igap = 0.5
+
+# External silk clearance from pads
+silk_pad_egap = 0.4
 
 # Silk line width
 silk_width = 0.15
 
-# Silk pin1 arc radius
-silk_pin1_r = 0.6
+# Internal silk pin1 arc radius
+silk_pin1_ir = 0.6
+
+# External two-row silk pin1 arc radius
+silk_pin1_er = 0.3
 
 # Fab layer line width
 fab_width = 0.01
@@ -191,6 +218,30 @@ def sexp_generate(sexp, depth=0):
             node = sexp_generate(node, depth+1)
         parts.append(node)
     return "\n{}({})".format(" "*depth*2, " ".join(parts))
+
+
+def sexp_parse(sexp):
+    """
+    Parse an S-expression into Python lists.
+    """
+    r = [[]]
+    token = ''
+    quote = False
+    for c in sexp:
+        if c == '(' and not quote:
+            r.append([])
+        elif c in (')', ' ', '\n') and not quote:
+            if token:
+                r[-1].append(token)
+            token = ''
+            if c == ')':
+                t = r.pop()
+                r[-1].append(t)
+        elif c == '"':
+            quote = not quote
+        else:
+            token += c
+    return r[0][0]
 
 
 def fp_line(start, end, layer, width):
@@ -275,6 +326,69 @@ def pin_centres(conf):
     return left_row, bottom_row, right_row, top_row
 
 
+def inner_apertures(ep, apertures):
+    """
+    Compute the position of apertures inside a pad,
+    with:
+        ep: (width, height) of pad
+        apertures: (width, height, w_gap, h_gap) of apertures
+    w_gap is the spacing in the x-axis between apertures.
+
+    Fits as many apertures inside the pad as possible.
+
+    Returns a list of (x,y) aperture centres.
+    """
+    out = []
+    ep_w, ep_h = ep
+    a_w, a_h, a_wg, a_hg = apertures
+
+    n_x = int(ep_w // (a_w + a_wg))
+    n_y = int(ep_h // (a_h + a_hg))
+
+    x = -((n_x - 1)*(a_w + a_wg)/2.0)
+    for ix in range(n_x):
+        y = -((n_y - 1)*(a_h + a_hg)/2.0)
+        for iy in range(n_y):
+            out.append((x, y))
+            y += a_h + a_hg
+        x += a_w + a_wg
+
+    return out
+
+
+def exposed_pad(conf):
+    """
+    Compute pads for an exposed pad, which might have separate mask and paste
+    apertures.
+    """
+    out = []
+    ep_shape = conf['ep_shape']
+    ep_layers = ["F.Cu"]
+
+    # Mask apertures
+    if "ep_mask_shape" not in conf:
+        ep_layers.append("F.Mask")
+    else:
+        mask_shape = conf['ep_mask_shape']
+        apertures = inner_apertures(ep_shape, mask_shape)
+        print("apertures=", apertures)
+        for ap in apertures:
+            out.append(pad("~", "smd", "rect", ap, mask_shape, ["F.Mask"]))
+
+    # Paste apertures
+    if "ep_paste_shape" not in conf:
+        ep_layers.append("F.Paste")
+    else:
+        paste_shape = conf['ep_paste_shape']
+        apertures = inner_apertures(ep_shape, paste_shape)
+        for ap in apertures:
+            out.append(pad("~", "smd", "rect", ap, paste_shape, ["F.Paste"]))
+
+    out.append(
+        pad("EP", "smd", "rect", (0, 0), ep_shape, ep_layers))
+    return out
+
+
 def refs(conf):
     out = []
 
@@ -334,7 +448,7 @@ def fab(conf):
     return out
 
 
-def innersilk(conf):
+def internal_silk(conf):
     """
     Generate an internal silkscreen, with an outline of the part and a pin1
     indicator.
@@ -347,20 +461,79 @@ def innersilk(conf):
     row_pitch = conf['row_pitch']
     pad_shape = conf['pad_shape']
 
-    width = row_pitch - pad_shape[0] - 2 * silk_pad_gap
+    width = row_pitch - pad_shape[0] - 2 * silk_pad_igap
     if rows == 2:
         height = (((pins / rows) - 1) * pin_pitch)
     elif rows == 4:
         height = width
 
-    nw, _, _, _, sq = draw_square(width, height, (0, 0), "F.SilkS", silk_width)
-    out += sq
+    c = (0, 0)
+    layer = "F.SilkS"
+    nw, ne, se, sw, sq = draw_square(width, height, c, layer, silk_width)
+    out.append(fp_line((nw[0] + silk_pin1_ir, nw[1]), ne, layer, silk_width))
+    out.append(fp_line(ne, se, layer, silk_width))
+    out.append(fp_line(se, sw, layer, silk_width))
+    out.append(fp_line(sw, (nw[0], nw[1] + silk_pin1_ir), layer, silk_width))
+    start = (nw[0], nw[1] + silk_pin1_ir)
+    end = (nw[0] + silk_pin1_ir, nw[1])
+    out.append(fp_line(start, end, "F.SilkS", silk_width))
 
-    start = nw
-    end = (start[0] + silk_pin1_r, start[1])
-    out.append(fp_arc(start, end, 90, "F.SilkS", silk_width))
+    # Old circular pin1 indicator:
+    # out += sq
+    # start = nw
+    # end = (start[0] + silk_pin1_ir, start[1])
+    # out.append(fp_arc(start, end, 90, "F.SilkS", silk_width))
 
     return out
+
+
+def external_silk(conf):
+    """
+    Generate an external silkscreen.
+    For two row devices: Horizontal lines top and bottom, semicircle pin 1
+    For four row devices: Three sharp corners and a cut corner for pin 1
+    """
+    out = []
+
+    rows = conf['rows']
+    chip_shape = conf['chip_shape']
+    w = silk_width
+    l = "F.SilkS"
+    x = chip_shape[0]/2.0
+    y = chip_shape[1]/2.0
+
+    if rows == 2:
+        r = silk_pin1_er
+        out.append(fp_line((-x+2*r, -y), (x, -y), l, w))
+        out.append(fp_line((-x, y), (x, y), l, w))
+        out.append(fp_arc((-x+r, -y), (-x, -y), 180, l, w))
+    elif rows == 4:
+        pins = conf['pins'] / rows
+        pin_y = ((pins - 1) * conf['pin_pitch']) / 2.0
+        chip_y = chip_shape[1] / 2.0
+        delta_y = chip_y - pin_y
+        r = delta_y - silk_pad_egap
+
+        # NW
+        out.append(fp_line((-x, -y+r), (-x+r, -y), l, w))
+        # NE
+        out.append(fp_line((x-r, -y), (x, -y), l, w))
+        out.append(fp_line((x, -y), (x, -y+r), l, w))
+        # SE
+        out.append(fp_line((x-r, y), (x, y), l, w))
+        out.append(fp_line((x, y), (x, y-r), l, w))
+        # SW
+        out.append(fp_line((-x+r, y), (-x, y), l, w))
+        out.append(fp_line((-x, y), (-x, y-r), l, w))
+
+    return out
+
+
+def silk(conf):
+    if "ep_shape" in conf or conf.get('silk') == "external":
+        return external_silk(conf)
+    else:
+        return internal_silk(conf)
 
 
 def ctyd(conf):
@@ -392,27 +565,31 @@ def ctyd(conf):
 
 def pads(conf):
     out = []
-    layers = ["F.Cu", "F.Paste", "F.Mask"]
+    layers = ["F.Cu", "F.Mask", "F.Paste"]
     size_lr = conf['pad_shape']
     size_tb = size_lr[1], size_lr[0]
-    padtype = "smd"
     shape = "rect"
     leftr, bottomr, rightr, topr = pin_centres(conf)
     num = 1
     for pin in leftr:
-        out.append(pad(num, padtype, shape, pin, size_lr, layers))
+        out.append(pad(num, "smd", shape, pin, size_lr, layers))
         num += 1
     if conf['rows'] == 4:
         for pin in bottomr:
-            out.append(pad(num, padtype, shape, pin, size_tb, layers))
+            out.append(pad(num, "smd", shape, pin, size_tb, layers))
             num += 1
     for pin in rightr:
-        out.append(pad(num, padtype, shape, pin, size_lr, layers))
+        out.append(pad(num, "smd", shape, pin, size_lr, layers))
         num += 1
     if conf['rows'] == 4:
         for pin in topr:
-            out.append(pad(num, padtype, shape, pin, size_tb, layers))
+            out.append(pad(num, "smd", shape, pin, size_tb, layers))
             num += 1
+
+    # Exposed pad (potentially with separate mask/paste apertures)
+    if "ep_shape" in conf:
+        out += exposed_pad(conf)
+
     return out
 
 
@@ -421,7 +598,7 @@ def footprint(conf):
     sexp = ["module", conf['name'], ("layer", "F.Cu"), ("tedit", tedit)]
     sexp += refs(conf)
     sexp += fab(conf)
-    sexp += innersilk(conf)
+    sexp += silk(conf)
     sexp += ctyd(conf)
     sexp += pads(conf)
     return sexp_generate(sexp)
@@ -443,8 +620,16 @@ def main(prettypath):
         assert conf['pins'] % conf['rows'] == 0, \
             "Pins must equally divide among rows"
         fp = footprint(conf)
-        with open(os.path.join(prettypath, name+".kicad_mod"), "w") as f:
-            f.write(fp)
+        path = os.path.join(prettypath, name+".kicad_mod")
+
+        # Check if we've changed anything except the timestamp,
+        # and skip updating if we haven't.
+        with open(path) as f:
+            old = sexp_parse(f.read())
+        old = [n for n in old if n[0] != "tedit"]
+        if fp != old:
+            with open(path, "w") as f:
+                f.write(fp)
 
 
 if __name__ == "__main__":
