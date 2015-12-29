@@ -9,6 +9,8 @@ import sys
 import math
 import cairo
 
+from sexp import sexp_parse
+
 # Settings ====================================================================
 
 # Gap between courtyard and image edge, in fraction of axis length
@@ -38,34 +40,6 @@ layer_stack = [
     "F.Cu", "F.Mask", "F.Paste", "F.SilkS", "F.Fab", "F.CrtYd", "Drill"]
 
 # End Settings ================================================================
-
-
-def sexpparse(sexp):
-    """
-    Parse an S-expression into Python lists.
-    """
-    r = [[]]
-    token = None
-    quote = False
-    for c in sexp:
-        if c == '(' and not quote:
-            r.append([])
-        elif c in (')', ' ', '\n') and not quote:
-            if token is not None:
-                r[-1].append(token)
-            token = None
-            if c == ')':
-                t = r.pop()
-                r[-1].append(t)
-        elif c == '"':
-            quote = not quote
-            if not token and not quote:
-                token = "~"
-        else:
-            if token is None:
-                token = ''
-            token += c
-    return r[0][0]
 
 
 def find_size(mod):
@@ -251,7 +225,7 @@ def draw(mod):
 
 def main(modpath, outpath):
     with open(modpath) as f:
-        sexp = sexpparse(f.read())
+        sexp = sexp_parse(f.read())
     img = draw(sexp)
     img.write_to_png(outpath)
 

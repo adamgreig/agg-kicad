@@ -284,53 +284,11 @@ font_halfheight = 0.7
 # End Constants ===============================================================
 
 import os
-import re
 import sys
 import time
 import subprocess
 
-
-def sexp_generate(sexp, depth=0):
-    """Turn a list of lists into an s-expression."""
-    single_word = re.compile("^-?[a-zA-Z0-9_*\.]*$")
-    parts = []
-    for node in sexp:
-        if isinstance(node, str) and not single_word.match(node):
-            node.replace("\"", "\\\"")
-            node.replace("\n", "\\n")
-            node = "\"{}\"".format(node)
-        if isinstance(node, int):
-            node = str(node)
-        if isinstance(node, float):
-            node = "{:.4f}".format(node)
-        if isinstance(node, (list, tuple)):
-            node = sexp_generate(node, depth+1)
-        parts.append(node)
-    return "\n{}({})".format(" "*depth*2, " ".join(parts))
-
-
-def sexp_parse(sexp):
-    """
-    Parse an S-expression into Python lists.
-    """
-    r = [[]]
-    token = ''
-    quote = False
-    for c in sexp:
-        if c == '(' and not quote:
-            r.append([])
-        elif c in (')', ' ', '\n') and not quote:
-            if token:
-                r[-1].append(token)
-            token = ''
-            if c == ')':
-                t = r.pop()
-                r[-1].append(t)
-        elif c == '"':
-            quote = not quote
-        else:
-            token += c
-    return r[0][0]
+from sexp import sexp_parse, sexp_generate
 
 
 def fp_line(start, end, layer, width):

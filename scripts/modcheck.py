@@ -12,33 +12,7 @@ import os
 import glob
 from decimal import Decimal
 
-
-def sexpparse(sexp):
-    """
-    Parse an S-expression into Python lists.
-    """
-    r = [[]]
-    token = None
-    quote = False
-    for c in sexp:
-        if c == '(' and not quote:
-            r.append([])
-        elif c in (')', ' ', '\n') and not quote:
-            if token is not None:
-                r[-1].append(token)
-            token = None
-            if c == ')':
-                t = r.pop()
-                r[-1].append(t)
-        elif c == '"':
-            quote = not quote
-            if not token and not quote:
-                token = "~"
-        else:
-            if token is None:
-                token = ''
-            token += c
-    return r[0][0]
+from sexp import sexp_parse
 
 
 def checkrefval(mod, errs):
@@ -102,7 +76,7 @@ def checkmod(path):
     errs = []
 
     with open(path) as f:
-        mod = sexpparse(f.read())
+        mod = sexp_parse(f.read())
 
     checkrefval(mod, errs)
     checkfont(mod, errs)
