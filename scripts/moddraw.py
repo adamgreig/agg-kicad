@@ -127,36 +127,53 @@ def hatch(positive, rgba):
     return hpat
 
 
-def draw_pad(ctxs, pad):
-    # name = pad[1]
-    # padtype = pad[2]
-    shape = pad[3]
-    layers = [n for n in pad if n[0] == "layers"][0][1:]
+hatch_mask = hatch(True, colours["F.Mask"])
+hatch_paste = hatch(False, colours["F.Paste"])
+
+
+def pad_all_layers_front(layers):
     for idx, layer in enumerate(layers):
         if layer[0] == "*":
             layers[idx] = "F" + layer[1:]
-    centre = [float(v) for v in [n for n in pad if n[0] == "at"][0][1:]]
-    size = [float(v) for v in [n for n in pad if n[0] == "size"][0][1:]]
-    drill = [n for n in pad if n[0] == "drill"]
-    if drill:
-        try:
-            drill_size = float(drill[0][1])
-            ctx = ctxs['Drill']
-            ctx.arc(centre[0], centre[1], drill_size/2.0, 0, 2*math.pi)
-            ctx.set_source_rgba(*drill_colour)
-            ctx.fill()
-        except ValueError:
-            pass
-        offset = [n for n in drill[0] if n[0] == "offset"]
-        if offset:
-            centre[0] += float(offset[0][1])
-            centre[1] += float(offset[0][2])
+
+
+def pad_drill(drill, centre, ctx):
+    try:
+        drill_size = float(drill[0][1])
+    except ValueError:
+        pass
+    else:
+        ctx.arc(centre[0], centre[1], drill_size/2.0, 0, 2*math.pi)
+        ctx.set_source_rgba(*drill_colour)
+        ctx.fill()
+    offset = [n for n in drill[0] if n[0] == "offset"]
+    if offset:
+        centre[0] += float(offset[0][1])
+        centre[1] += float(offset[0][2])
+
+
+def pad_margins(pad):
     mask_margin = [n for n in pad if n[0] == "solder_mask_margin"]
     paste_margin = [n for n in pad if n[0] == "solder_paste_margin"]
     paste_ratio = [n for n in pad if n[0] == "solder_paste_ratio"]
     mask_margin = float(mask_margin[0][1]) if mask_margin else 0
     paste_margin = float(paste_margin[0][1]) if paste_margin else 0
     paste_ratio = float(paste_ratio[0][1]) if paste_ratio else 0
+    return mask_margin, paste_margin, paste_ratio
+
+
+def draw_pad(ctxs, pad):
+    shape = pad[3]
+    layers = [n for n in pad if n[0] == "layers"][0][1:]
+    pad_all_layers_front(layers)
+    centre = [float(v) for v in [n for n in pad if n[0] == "at"][0][1:]]
+    size = [float(v) for v in [n for n in pad if n[0] == "size"][0][1:]]
+
+    drill = [n for n in pad if n[0] == "drill"]
+    if drill:
+        pad_drill(drill, centre, ctxs['Drill'])
+    mask_margin, paste_margin, paste_ratio = pad_margins(pad)
+
     for layer in ["F.Cu", "F.Mask", "F.Paste"]:
         if layer in layers and layer in ctxs:
             ctx = ctxs[layer]
@@ -164,11 +181,16 @@ def draw_pad(ctxs, pad):
             if layer.endswith("Mask"):
                 size[0] += 2*mask_margin
                 size[1] += 2*mask_margin
+                ctx.set_source(hatch_mask)
             elif layer.endswith("Paste"):
                 size[0] += 2*paste_margin
                 size[1] += 2*paste_margin
                 size[0] += 2*paste_ratio*size[0]
                 size[1] += 2*paste_ratio*size[1]
+                ctx.set_source(hatch_paste)
+            elif layer.endswith("Cu"):
+                ctx.set_source_rgba(*rgba)
+
             if shape == "rect":
                 x = centre[0] - size[0]/2.0
                 y = centre[1] - size[1]/2.0
@@ -177,13 +199,8 @@ def draw_pad(ctxs, pad):
                 ctx.arc(centre[0], centre[1], size[0]/2.0, 0, 2*math.pi)
             else:
                 return
-            if layer.endswith("Cu"):
-                ctx.set_source_rgba(*rgba)
-                ctx.fill()
-            else:
-                hpat = hatch(layer.endswith("Mask"), rgba)
-                ctx.set_source(hpat)
-                ctx.fill()
+
+            ctx.fill()
 
 
 def draw(mod):

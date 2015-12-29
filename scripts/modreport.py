@@ -19,16 +19,18 @@ def main(prettypath, outpath):
 
     for f in glob.glob(os.path.join(prettypath, "*.kicad_mod")):
         modname = os.path.splitext(os.path.basename(f))[0]
+        print("Processing", modname)
         moddraw.main(f, os.path.join(imgpath, modname + ".png"))
         mods.append(modname)
 
-    with open(os.path.join(outpath, "report.html"), "w") as f:
+    with open(os.path.join(outpath, "index.html"), "w") as f:
         f.write("<!doctype html>\n")
         f.write("<table border=1>\n")
         for mod in mods:
             f.write("<tr><td><a href=img/{}.png>".format(mod))
             f.write("<img src=img/{}.png width=256 height=256>".format(mod))
-            f.write("</a></td><td>{}</td></tr>".format(mod))
+            f.write("</a></td><td>{}</td></tr>\n".format(mod))
+        f.write("</table>\n")
 
 
 if __name__ == "__main__":
@@ -36,3 +38,5 @@ if __name__ == "__main__":
         prettypath = sys.argv[1]
         outpath = sys.argv[2]
         main(prettypath, outpath)
+    else:
+        print("Usage: {} <.pretty path> <report path>".format(sys.argv[0]))
