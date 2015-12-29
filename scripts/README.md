@@ -85,3 +85,8 @@ Generate IC footprints for dual and quad packages.
 ## moddraw.py
 
 Render `.kicad_mod` files to PNGs.
+
+## modreport.py
+
+Generate an HMTL report of all the modules in a library, including rendered 
+images.
