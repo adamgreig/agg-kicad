@@ -20,6 +20,9 @@ image_size = 512
 # Background colour
 bg_colour = (1, 1, 1, 1)
 
+# Drill/hole colour
+drill_colour = (0, 1, 1, .7)
+
 # Colour mapping
 colours = {
     "F.CrtYd": (0, 0, 0, 1),
@@ -31,7 +34,8 @@ colours = {
 }
 
 # Layer stack (bottom first)
-layer_stack = ["F.Cu", "F.Mask", "F.Paste", "F.SilkS", "F.Fab", "F.CrtYd"]
+layer_stack = [
+    "F.Cu", "F.Mask", "F.Paste", "F.SilkS", "F.Fab", "F.CrtYd", "Drill"]
 
 # End Settings ================================================================
 
@@ -41,21 +45,25 @@ def sexpparse(sexp):
     Parse an S-expression into Python lists.
     """
     r = [[]]
-    token = ''
+    token = None
     quote = False
     for c in sexp:
         if c == '(' and not quote:
             r.append([])
         elif c in (')', ' ', '\n') and not quote:
-            if token:
+            if token is not None:
                 r[-1].append(token)
-            token = ''
+            token = None
             if c == ')':
                 t = r.pop()
                 r[-1].append(t)
         elif c == '"':
             quote = not quote
+            if not token and not quote:
+                token = "~"
         else:
+            if token is None:
+                token = ''
             token += c
     return r[0][0]
 
@@ -126,43 +134,80 @@ def draw_line(ctxs, draw):
         ctx.stroke()
 
 
+def hatch(positive, rgba):
+    hs = 64
+    hatch = cairo.ImageSurface(cairo.FORMAT_ARGB32, hs, hs)
+    hctx = cairo.Context(hatch)
+    if positive:
+        hctx.move_to(0, 0)
+        hctx.line_to(hs, hs)
+    else:
+        hctx.move_to(0, hs)
+        hctx.line_to(hs, 0)
+    hctx.set_line_width(16)
+    hctx.set_source_rgba(*rgba)
+    hctx.stroke()
+    hpat = cairo.SurfacePattern(hatch)
+    hpat.set_extend(cairo.EXTEND_REPEAT)
+    hpat.set_matrix(cairo.Matrix(xx=image_size, yy=image_size))
+    return hpat
+
+
 def draw_pad(ctxs, pad):
     # name = pad[1]
-    padtype = pad[2]
+    # padtype = pad[2]
     shape = pad[3]
     layers = [n for n in pad if n[0] == "layers"][0][1:]
+    for idx, layer in enumerate(layers):
+        if layer[0] == "*":
+            layers[idx] = "F" + layer[1:]
     centre = [float(v) for v in [n for n in pad if n[0] == "at"][0][1:]]
     size = [float(v) for v in [n for n in pad if n[0] == "size"][0][1:]]
-    if padtype != "smd":
-        return
-    if shape != "rect":
-        return
+    drill = [n for n in pad if n[0] == "drill"]
+    if drill:
+        try:
+            drill_size = float(drill[0][1])
+            ctx = ctxs['Drill']
+            ctx.arc(centre[0], centre[1], drill_size/2.0, 0, 2*math.pi)
+            ctx.set_source_rgba(*drill_colour)
+            ctx.fill()
+        except ValueError:
+            pass
+        offset = [n for n in drill[0] if n[0] == "offset"]
+        if offset:
+            centre[0] += float(offset[0][1])
+            centre[1] += float(offset[0][2])
+    mask_margin = [n for n in pad if n[0] == "solder_mask_margin"]
+    paste_margin = [n for n in pad if n[0] == "solder_paste_margin"]
+    paste_ratio = [n for n in pad if n[0] == "solder_paste_ratio"]
+    mask_margin = float(mask_margin[0][1]) if mask_margin else 0
+    paste_margin = float(paste_margin[0][1]) if paste_margin else 0
+    paste_ratio = float(paste_ratio[0][1]) if paste_ratio else 0
     for layer in ["F.Cu", "F.Mask", "F.Paste"]:
         if layer in layers and layer in ctxs:
             ctx = ctxs[layer]
             rgba = colours[layer]
-            x = centre[0] - size[0]/2.0
-            y = centre[1] - size[1]/2.0
-            ctx.rectangle(x, y, size[0], size[1])
+            if layer.endswith("Mask"):
+                size[0] += 2*mask_margin
+                size[1] += 2*mask_margin
+            elif layer.endswith("Paste"):
+                size[0] += 2*paste_margin
+                size[1] += 2*paste_margin
+                size[0] += 2*paste_ratio*size[0]
+                size[1] += 2*paste_ratio*size[1]
+            if shape == "rect":
+                x = centre[0] - size[0]/2.0
+                y = centre[1] - size[1]/2.0
+                ctx.rectangle(x, y, size[0], size[1])
+            elif shape == "circle":
+                ctx.arc(centre[0], centre[1], size[0]/2.0, 0, 2*math.pi)
+            else:
+                return
             if layer.endswith("Cu"):
                 ctx.set_source_rgba(*rgba)
                 ctx.fill()
             else:
-                hs = 64
-                hatch = cairo.ImageSurface(cairo.FORMAT_ARGB32, hs, hs)
-                hctx = cairo.Context(hatch)
-                if layer.endswith("Mask"):
-                    hctx.move_to(0, 0)
-                    hctx.line_to(hs, hs)
-                elif layer.endswith("Paste"):
-                    hctx.move_to(0, hs)
-                    hctx.line_to(hs, 0)
-                hctx.set_line_width(16)
-                hctx.set_source_rgba(*rgba)
-                hctx.stroke()
-                hpat = cairo.SurfacePattern(hatch)
-                hpat.set_extend(cairo.EXTEND_REPEAT)
-                hpat.set_matrix(cairo.Matrix(xx=image_size, yy=image_size))
+                hpat = hatch(layer.endswith("Mask"), rgba)
                 ctx.set_source(hpat)
                 ctx.fill()
 

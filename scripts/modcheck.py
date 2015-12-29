@@ -18,21 +18,25 @@ def sexpparse(sexp):
     Parse an S-expression into Python lists.
     """
     r = [[]]
-    token = ''
+    token = None
     quote = False
     for c in sexp:
         if c == '(' and not quote:
             r.append([])
         elif c in (')', ' ', '\n') and not quote:
-            if token:
+            if token is not None:
                 r[-1].append(token)
-            token = ''
+            token = None
             if c == ')':
                 t = r.pop()
                 r[-1].append(t)
         elif c == '"':
             quote = not quote
+            if not token and not quote:
+                token = "~"
         else:
+            if token is None:
+                token = ''
             token += c
     return r[0][0]
 

@@ -1,4 +1,4 @@
-(module M3_MOUNT (layer F.Cu) (tedit 56809E2C)
+(module M3_MOUNT (layer F.Cu) (tedit 5681D0FF)
   (fp_text reference REF** (at 0 -4.1) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -9,7 +9,7 @@
   (fp_line (start 3.4 3.4) (end -3.4 3.4) (layer F.CrtYd) (width 0.01))
   (fp_line (start 3.4 -3.4) (end 3.4 3.4) (layer F.CrtYd) (width 0.01))
   (fp_line (start -3.4 -3.4) (end 3.4 -3.4) (layer F.CrtYd) (width 0.01))
-  (pad "" np_thru_hole circle (at 0 0) (size 3.3 3.3) (drill 3.3) (layers *.Cu *.Mask F.Paste F.SilkS)
+  (pad "" np_thru_hole circle (at 0 0) (size 3.3 3.3) (drill 3.3) (layers *.Cu *.Mask F.SilkS)
     (solder_mask_margin 1.5) (clearance 1.65))
   (pad "" np_thru_hole circle (at 0 -2.5) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
   (pad "" np_thru_hole circle (at 2.5 0) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
