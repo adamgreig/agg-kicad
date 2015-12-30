@@ -45,7 +45,7 @@ Footprints in `unchecked/` have not been standardised or documented yet.
 
 ## Footprints
 
-### 0201, 0402, 0402-L, 0603, 0603-L, 0805, 1206
+### 0201, 0201-L, 0402, 0402-L, 0603, 0603-L, 0805, 1206
 
 Imperial sized chip device.
 

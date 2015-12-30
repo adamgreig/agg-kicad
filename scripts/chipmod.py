@@ -34,6 +34,16 @@ config = {
         "silk": None,
     },
 
+    # 0201-L from IPC-7351B: CAPC0603X33L
+    "0201-L": {
+        "pad_shape": (0.36, 0.32),
+        "pitch": 0.56,
+        "chip_shape": (0.6, 0.3),
+        "pin_shape": (-0.15, 0.3),
+        "silk": None,
+        "courtyard_gap": 0.10,
+    },
+
     # 0402 from IPC-7351B: CAPC1005X55N
     "0402": {
         "pad_shape": (0.62, 0.62),
