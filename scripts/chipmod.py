@@ -65,6 +65,16 @@ config = {
         "terminal": 0.50,
     },
 
+    # 0805-LED from IPC-7351B: CAPC2013X100N
+    # Modified silkscreen to indicate LED polarity.
+    "0805-LED": {
+        "pad_shape": (1.15, 1.45),
+        "pitch": 1.80,
+        "chip_shape": (2.00, 1.25),
+        "terminal": 0.50,
+        "silk": "triangle",
+    },
+
     # 1206 from IPC-7351B: CAPC3216X130N
     "1206": {
         "pad_shape": (1.15, 1.80),

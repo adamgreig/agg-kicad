@@ -67,6 +67,19 @@ Imperial sized chip device.
     * Amber 2290330 ("yellow")
     * Blue 1686062
 
+### 0805-LED
+
+0805 (aka 2.0mm x 1.25mm) sized LED.
+
+ * Standard 0805 footprint pads
+ * LED polarity arrow with pin 1 as cathode
+ * Farnell codes:
+    * Red 5790840
+    * Green 5790852
+    * Yellow 5790876
+    * Orange 5790864
+    * Blue 8554749
+
 ### SOIC, MSOP, LQFP, QFN, DFN, LGA, LPCC, others
 
 Standard footprints, either from IPC-7351B in nominal environments or otherwise 
