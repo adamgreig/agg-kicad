@@ -5,6 +5,7 @@
 * Pad 1 on the left and then at the top
 * Ensure rotational symmetry for symmetric parts
 * Text has size 1mm x 1mm and thickness 0.15mm (checked automatically)
+* Aim to conform to IPC-7351B footprint design
 * Reference and Value fields:
     * On the `F.Fab` layer (checked automatically)
     * May only be hidden for non-functional parts such as mounting holes
@@ -44,17 +45,17 @@ Footprints in `unchecked/` have not been standardised or documented yet.
 
 ## Footprints
 
-### 0201, 0402, 0603, 0805, 1206
+### 0201, 0402, 0402-L, 0603, 0603-L, 0805, 1206
 
 Imperial sized chip device.
 
- * Pads are half the width of the device
- * Pads are the same or slightly taller than the device
- * Clearance and courtyards are all 0.2mm from the pad edges
+ * Footprints are IPC-7351B compliant
+ * Default NOMINAL environment, `-L` parts in LEAST environment
+ * Clearance and courtyards are all 0.25mm from the pad edges
  * Fabrication layer shows typical device and terminal size
  * Generally all tested in production but are by no means process-optimised
 
-### 0603LED
+### 0603-LED
 
 0603 (aka 1.6mm x 0.8mm) sized LED.
 
@@ -66,25 +67,13 @@ Imperial sized chip device.
     * Amber 2290330 ("yellow")
     * Blue 1686062
 
-### SOIC, MSOP
+### SOIC, MSOP, LQFP, QFN, DFN, LGA, LPCC, others
 
-Standard footprints. Generated automatically by `scripts/icmod.py`.
+Standard footprints, either from IPC-7351B in nominal environments or otherwise 
+modified for a specific package or device.
 
- * Following have been used successfully:
-    * SOIC-8
-    * SOIC-16-W
-    * MSOP-8
- * `-W` for wide variant
-
-### M3_HOLE, M3_MOUNT
-
-M3 sized mounting holes.
-
- * The `M3_MOUNT` variant includes a no-mask region with extra drill hits for a 
-   locking washer.
- * The `M3_HOLE` courtyard does _not_ include space for a bolt head or washer 
-   (as it may not always be required) so be sure to check this or use the 
-   `M3_MOUNT` variant. 
+Generated automatically by `scripts/icmod.py`. Please see the notes by each 
+footprint in that script for further details.
 
 ### MICROUSB_MOLEX_47589-0001
 
@@ -95,3 +84,20 @@ MicroUSB connector.
  * Bottom mount (so USB cables will be upside down if footprint is on top)
  * Footprint uses round drill hits for oblong slots
  * Probably wants hand soldering the through connections
+
+### MICROSD_MOLEX_503398-1892
+
+MicroSD card holder.
+
+ * Farnell 2358234
+ * Used successfully
+
+### M3_HOLE, M3_MOUNT
+
+M3 sized mounting holes.
+
+ * The `M3_MOUNT` variant includes a no-mask region with extra drill hits for a 
+   locking washer.
+ * The `M3_HOLE` courtyard does _not_ include space for a bolt head or washer 
+   (as it may not always be required) so be sure to check this or use the 
+   `M3_MOUNT` variant. 
