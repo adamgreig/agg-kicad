@@ -24,7 +24,7 @@ def gnd(f, name):
     f.write('DRAW\n')
     f.write('P 2 0 1 0 0 0 0 -30 N\n')
     f.write('P 4 0 1 0 -30 -30 30 -30 0 -60 -30 -30 f\n')
-    f.write('X {} 1 0 0 0 L 50 50 1 1 W N\n')
+    f.write('X {} 1 0 0 0 L 50 50 1 1 W N\n'.format(name))
     f.write('ENDDRAW\nENDDEF\n#\n\n')
 
 
