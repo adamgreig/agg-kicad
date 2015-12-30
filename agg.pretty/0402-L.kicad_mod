@@ -1,16 +1,16 @@
 
-(module 0402 
+(module "0402-L" 
   (layer F.Cu) 
   (tedit 56836635) 
   (fp_text reference REF** 
-    (at -1.7100 0 90) 
+    (at -1.6100 0 90) 
     (layer F.Fab) 
     (effects 
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (fp_text value 0402 
-    (at 1.7100 0 90) 
+  (fp_text value "0402-L" 
+    (at 1.6100 0 90) 
     (layer F.Fab) 
     (effects 
       (font 
@@ -47,30 +47,30 @@
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -1.0500 -0.6000) 
-    (end 1.0500 -0.6000) 
+    (start -0.9500 -0.5500) 
+    (end 0.9500 -0.5500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 1.0500 -0.6000) 
-    (end 1.0500 0.6000) 
+    (start 0.9500 -0.5500) 
+    (end 0.9500 0.5500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 1.0500 0.6000) 
-    (end -1.0500 0.6000) 
+    (start 0.9500 0.5500) 
+    (end -0.9500 0.5500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start -1.0500 0.6000) 
-    (end -1.0500 -0.6000) 
+    (start -0.9500 0.5500) 
+    (end -0.9500 -0.5500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (pad 1 smd rect 
-    (at -0.4500 0) 
-    (size 0.6200 0.6200) 
+    (at -0.4000 0) 
+    (size 0.5200 0.5200) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 2 smd rect 
-    (at 0.4500 0) 
-    (size 0.6200 0.6200) 
+    (at 0.4000 0) 
+    (size 0.5200 0.5200) 
     (layers F.Cu F.Mask F.Paste)))

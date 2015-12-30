@@ -17,6 +17,7 @@ Create two-terminal chip packages.
 #           What sort of silk to draw. Default is "internal".
 #
 # Except where otherwise noted, all packages are in IPC nominal environment.
+# Chip drawings are nominal sizes rather than maximum sizes.
 # All lengths are in millimetres.
 
 config = {
@@ -24,8 +25,8 @@ config = {
     "0201": {
         "pad_shape": (0.46, 0.42),
         "pitch": 0.66,
-        "chip_shape": (0.63, 0.33),
-        "terminal": 0.20,
+        "chip_shape": (0.6, 0.3),
+        "terminal": 0.15,
         "silk": None,
     },
 
@@ -33,7 +34,7 @@ config = {
     "0402": {
         "pad_shape": (0.62, 0.62),
         "pitch": 0.90,
-        "chip_shape": (1.05, 0.55),
+        "chip_shape": (1.00, 0.50),
         "terminal": 0.30,
         "silk": None,
     },
@@ -42,24 +43,53 @@ config = {
     "0603": {
         "pad_shape": (0.95, 1.00),
         "pitch": 1.60,
-        "chip_shape": (1.75, 0.95),
-        "terminal": 0.50,
+        "chip_shape": (1.60, 0.80),
+        "terminal": 0.35,
+    },
+
+    # 0603-LED from IPC-7351B: CAPC1608X90N
+    # Modified silkscreen to indicate LED polarity.
+    "0603-LED": {
+        "pad_shape": (0.95, 1.00),
+        "pitch": 1.60,
+        "chip_shape": (1.60, 0.80),
+        "terminal": 0.25,
+        "silk": "triangle",
     },
 
     # 0805 from IPC-7351B: CAPC2013X100N
     "0805": {
         "pad_shape": (1.15, 1.45),
         "pitch": 1.80,
-        "chip_shape": (2.20, 1.45),
-        "terminal": 0.75,
+        "chip_shape": (2.00, 1.25),
+        "terminal": 0.50,
     },
 
     # 1206 from IPC-7351B: CAPC3216X130N
     "1206": {
         "pad_shape": (1.15, 1.80),
         "pitch": 3.00,
-        "chip_shape": (3.40, 1.80),
-        "terminal": 0.75,
+        "chip_shape": (3.20, 1.60),
+        "terminal": 0.60,
+    },
+
+    # 0402-L from IPC-7351B: CAPC1005X55L
+    # This is a LEAST environment
+    "0402-L": {
+        "pad_shape": (0.52, 0.52),
+        "pitch": 0.80,
+        "chip_shape": (1.00, 0.50),
+        "terminal": 0.30,
+        "silk": None,
+    },
+
+    # 0603-L from IPC-7351B: CAPC1608X90L
+    # This is a LEAST environment
+    "0603-L": {
+        "pad_shape": (0.75, 0.90),
+        "pitch": 1.40,
+        "chip_shape": (1.60, 0.80),
+        "terminal": 0.35,
     },
 }
 
@@ -76,10 +106,10 @@ ctyd_grid = 0.05
 ctyd_width = 0.01
 
 # Internal silk clearance from pads
-silk_pad_igap = 0.3
+silk_pad_igap = 0.2
 
 # External silk clearance from pads
-silk_pad_egap = 0.3
+silk_pad_egap = 0.2
 
 # Silk line width
 silk_width = 0.15
@@ -101,9 +131,10 @@ font_halfheight = 0.7
 import os
 import sys
 import time
+import math
 
 from sexp import sexp_parse, sexp_generate
-from kicad_mod import fp_line, fp_arc, fp_circle, fp_text, pad, draw_square
+from kicad_mod import fp_line, fp_arc, fp_text, pad, draw_square
 
 
 def refs(conf):
@@ -132,8 +163,10 @@ def fab(conf):
 
 def internal_silk(conf):
     """Draw internal silkscreen."""
-    out = []
-    return out
+    w = conf['pitch'] - conf['pad_shape'][0] - 2*silk_pad_igap
+    h = conf['chip_shape'][1] - silk_width
+    _, _, _, _, sq = draw_square(w, h, (0, 0), "F.SilkS", silk_width)
+    return sq
 
 
 def external_silk(conf):
@@ -145,6 +178,11 @@ def external_silk(conf):
 def triangle_silk(conf):
     """Draw a triangle silkscreen pointing to pin 1."""
     out = []
+    w = conf['pitch'] - conf['pad_shape'][0] - 2*silk_pad_igap
+    h = conf['chip_shape'][1] - silk_width
+    out.append(fp_line((-w/2, 0), (w/2, -h/2), "F.SilkS", silk_width))
+    out.append(fp_line((-w/2, 0), (w/2, +h/2), "F.SilkS", silk_width))
+    out.append(fp_line((w/2, -h/2), (w/2, +h/2), "F.SilkS", silk_width))
     return out
 
 
@@ -176,15 +214,9 @@ def ctyd(conf):
 
     # Ensure courtyard lies on a specified grid
     # (double the grid since we halve the width/height)
-    width_um = int(width * 1000)
-    height_um = int(height * 1000)
-    grid_um = int(ctyd_grid * 2 * 1000)
-
-    width_um += width_um % grid_um
-    height_um += height_um % grid_um
-
-    width = width_um / 1000.0
-    height = height_um / 1000.0
+    grid = 2*ctyd_grid
+    width = grid * int(math.ceil(width / (2*ctyd_grid)))
+    height = grid * int(math.ceil(height / (2*ctyd_grid)))
 
     # Render courtyard
     _, _, _, _, sq = draw_square(width, height, (0, 0), "F.CrtYd", ctyd_width)

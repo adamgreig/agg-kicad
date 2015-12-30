@@ -80,13 +80,20 @@ rules.
 
 ## icmod.py
 
-Generate IC footprints for dual and quad packages.
+Generate IC footprints for dual and quad packages. The list of packages to 
+generate and their parameters are specified at the start of the file.
 
 ## moddraw.py
 
-Render `.kicad_mod` files to PNGs.
+Render `.kicad_mod` files to PNGs. Used by `modreport.py` to generate images 
+for the report.
 
 ## modreport.py
 
 Generate an HMTL report of all the modules in a library, including rendered 
-images.
+images. Not currently very sophisticated or automated.
+
+## chipmod.py
+
+Generate IPC-compliant chip packages. The list of packages to generate and 
+their parameters are specified at the start of the file.
