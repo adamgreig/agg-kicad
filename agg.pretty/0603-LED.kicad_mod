@@ -1,7 +1,7 @@
 
 (module "0603-LED" 
   (layer F.Cu) 
-  (tedit 56836635) 
+  (tedit 568457C2) 
   (fp_text reference REF** 
     (at -2.2250 0 90) 
     (layer F.Fab) 
@@ -34,6 +34,11 @@
   (fp_line 
     (start -0.8000 0.4000) 
     (end -0.8000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.4000 -0.4000) 
+    (end -0.4000 0.4000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 

@@ -1,7 +1,7 @@
 
 (module "0402-L" 
   (layer F.Cu) 
-  (tedit 56836635) 
+  (tedit 568455D1) 
   (fp_text reference REF** 
     (at -1.6100 0 90) 
     (layer F.Fab) 
@@ -47,23 +47,23 @@
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -0.9500 -0.5500) 
-    (end 0.9500 -0.5500) 
+    (start -0.8000 -0.4000) 
+    (end 0.8000 -0.4000) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 0.9500 -0.5500) 
-    (end 0.9500 0.5500) 
+    (start 0.8000 -0.4000) 
+    (end 0.8000 0.4000) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 0.9500 0.5500) 
-    (end -0.9500 0.5500) 
+    (start 0.8000 0.4000) 
+    (end -0.8000 0.4000) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start -0.9500 0.5500) 
-    (end -0.9500 -0.5500) 
+    (start -0.8000 0.4000) 
+    (end -0.8000 -0.4000) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (pad 1 smd rect 

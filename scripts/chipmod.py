@@ -11,10 +11,14 @@ Create two-terminal chip packages.
 # Valid inner keys are:
 #   * pad_shape: (width, height) of the pads
 #   * pitch: spacing between pad centres
-#   * chip_shape: (width, height) of the chip
-#   * terminal: width of terminal metallisation
-#   * silk: "internal", "external", "triangle", "pin1", None.
+#   * chip_shape: (width, height) of the chip (for Fab layer)
+#   * pin_shape: (width, height) of chip pins (for Fab layer).
+#                Use negative widths for internal pins (e.g., chip resistors)
+#   * silk: "internal", "external", "triangle",
+#           "internal_pin1", "external_pin1", or None.
 #           What sort of silk to draw. Default is "internal".
+#   * courtyard_gap: minimum distance from footprint extreme to courtyard.
+#                    If not specified, the default ctyd_gap set below is used.
 #
 # Except where otherwise noted, all packages are in IPC nominal environment.
 # Chip drawings are nominal sizes rather than maximum sizes.
@@ -26,7 +30,7 @@ config = {
         "pad_shape": (0.46, 0.42),
         "pitch": 0.66,
         "chip_shape": (0.6, 0.3),
-        "terminal": 0.15,
+        "pin_shape": (-0.15, 0.3),
         "silk": None,
     },
 
@@ -35,52 +39,8 @@ config = {
         "pad_shape": (0.62, 0.62),
         "pitch": 0.90,
         "chip_shape": (1.00, 0.50),
-        "terminal": 0.30,
+        "pin_shape": (-0.30, 0.50),
         "silk": None,
-    },
-
-    # 0603 from IPC-7351B: CAPC1608X90N
-    "0603": {
-        "pad_shape": (0.95, 1.00),
-        "pitch": 1.60,
-        "chip_shape": (1.60, 0.80),
-        "terminal": 0.35,
-    },
-
-    # 0603-LED from IPC-7351B: CAPC1608X90N
-    # Modified silkscreen to indicate LED polarity.
-    "0603-LED": {
-        "pad_shape": (0.95, 1.00),
-        "pitch": 1.60,
-        "chip_shape": (1.60, 0.80),
-        "terminal": 0.25,
-        "silk": "triangle",
-    },
-
-    # 0805 from IPC-7351B: CAPC2013X100N
-    "0805": {
-        "pad_shape": (1.15, 1.45),
-        "pitch": 1.80,
-        "chip_shape": (2.00, 1.25),
-        "terminal": 0.50,
-    },
-
-    # 0805-LED from IPC-7351B: CAPC2013X100N
-    # Modified silkscreen to indicate LED polarity.
-    "0805-LED": {
-        "pad_shape": (1.15, 1.45),
-        "pitch": 1.80,
-        "chip_shape": (2.00, 1.25),
-        "terminal": 0.50,
-        "silk": "triangle",
-    },
-
-    # 1206 from IPC-7351B: CAPC3216X130N
-    "1206": {
-        "pad_shape": (1.15, 1.80),
-        "pitch": 3.00,
-        "chip_shape": (3.20, 1.60),
-        "terminal": 0.60,
     },
 
     # 0402-L from IPC-7351B: CAPC1005X55L
@@ -89,8 +49,17 @@ config = {
         "pad_shape": (0.52, 0.52),
         "pitch": 0.80,
         "chip_shape": (1.00, 0.50),
-        "terminal": 0.30,
+        "pin_shape": (-0.30, 0.50),
         "silk": None,
+        "courtyard_gap": 0.10,
+    },
+
+    # 0603 from IPC-7351B: CAPC1608X90N
+    "0603": {
+        "pad_shape": (0.95, 1.00),
+        "pitch": 1.60,
+        "chip_shape": (1.60, 0.80),
+        "pin_shape": (-0.35, 0.80),
     },
 
     # 0603-L from IPC-7351B: CAPC1608X90L
@@ -99,8 +68,54 @@ config = {
         "pad_shape": (0.75, 0.90),
         "pitch": 1.40,
         "chip_shape": (1.60, 0.80),
-        "terminal": 0.35,
+        "pin_shape": (-0.35, 0.80),
+        "courtyard_gap": 0.10,
     },
+
+    # 0603-LED from IPC-7351B: CAPC1608X90N
+    # Modified silkscreen to indicate LED polarity.
+    "0603-LED": {
+        "pad_shape": (0.95, 1.00),
+        "pitch": 1.60,
+        "chip_shape": (1.60, 0.80),
+        "pin_shape": (-0.25, 0.80),
+        "silk": "triangle",
+    },
+
+    # 0805 from IPC-7351B: CAPC2013X100N
+    "0805": {
+        "pad_shape": (1.15, 1.45),
+        "pitch": 1.80,
+        "chip_shape": (2.00, 1.25),
+        "pin_shape": (-0.50, 1.25),
+    },
+
+    # 0805-LED from IPC-7351B: CAPC2013X100N
+    # Modified silkscreen to indicate LED polarity.
+    "0805-LED": {
+        "pad_shape": (1.15, 1.45),
+        "pitch": 1.80,
+        "chip_shape": (2.00, 1.25),
+        "pin_shape": (-0.50, 1.25),
+        "silk": "triangle",
+    },
+
+    # 1206 from IPC-7351B: CAPC3216X130N
+    "1206": {
+        "pad_shape": (1.15, 1.80),
+        "pitch": 3.00,
+        "chip_shape": (3.20, 1.60),
+        "pin_shape": (-0.60, 1.60),
+    },
+
+    # SOD-323 from IPC-7351B: SOD2513X100L
+    "SOD-323": {
+        "pad_shape": (0.90, 0.50),
+        "pitch": 2.60,
+        "chip_shape": (1.80, 1.35),
+        "pin_shape": (0.45, 0.40),
+        "silk": "internal_pin1",
+    }
 }
 
 # Other constants =============================================================
@@ -144,7 +159,7 @@ import time
 import math
 
 from sexp import sexp_parse, sexp_generate
-from kicad_mod import fp_line, fp_arc, fp_text, pad, draw_square
+from kicad_mod import fp_line, fp_text, pad, draw_square
 
 
 def refs(conf):
@@ -161,13 +176,31 @@ def refs(conf):
 def fab(conf):
     """Generate a drawing of the chip on the Fab layer."""
     out = []
-    w, h = conf['chip_shape']
-    t = conf['terminal']
+    cw, ch = conf['chip_shape']
+    pw, ph = conf['pin_shape']
+    w = fab_width
 
-    nw, ne, se, sw, sq = draw_square(w, h, (0, 0), "F.Fab", fab_width)
+    # Chip body
+    _, _, _, _, sq = draw_square(cw, ch, (0, 0), "F.Fab", w)
     out += sq
-    out.append(fp_line((nw[0]+t, -h/2), (nw[0]+t, h/2), "F.Fab", fab_width))
-    out.append(fp_line((ne[0]-t, -h/2), (ne[0]-t, h/2), "F.Fab", fab_width))
+
+    # Pin 1 indicator
+    if conf.get('silk') in ("triangle", "internal_pin1", "external_pin1"):
+        out.append(fp_line(
+            (-cw/4, -ch/2), (-cw/4, ch/2), "F.Fab", w))
+
+    # Left pin
+    out.append(fp_line((-cw/2 - pw, -ph/2), (-cw/2 - pw, ph/2), "F.Fab", w))
+    if ph != ch:
+        out.append(fp_line((-cw/2 - pw, -ph/2), (-cw/2, -ph/2), "F.Fab", w))
+        out.append(fp_line((-cw/2 - pw, ph/2), (-cw/2, ph/2), "F.Fab", w))
+
+    # Right pin
+    out.append(fp_line((cw/2 + pw, -ph/2), (cw/2 + pw, ph/2), "F.Fab", w))
+    if ph != ch:
+        out.append(fp_line((cw/2 + pw, -ph/2), (cw/2, -ph/2), "F.Fab", w))
+        out.append(fp_line((cw/2 + pw, ph/2), (cw/2, ph/2), "F.Fab", w))
+
     return out
 
 
@@ -198,8 +231,9 @@ def triangle_silk(conf):
 
 def pin1_silk(conf):
     """Draw a small pin1 indicator on the silkscreen."""
-    out = []
-    return out
+    w = conf['pitch'] - conf['pad_shape'][0] - 2*silk_pad_igap
+    h = conf['chip_shape'][1] - silk_width
+    return [fp_line((-w/4, -h/2), (-w/4, h/2), "F.SilkS", silk_width)]
 
 
 def silk(conf):
@@ -210,17 +244,21 @@ def silk(conf):
         return external_silk(conf)
     elif s == "triangle":
         return triangle_silk(conf)
-    elif s == "pin1":
-        return pin1_silk(conf)
+    elif s == "internal_pin1":
+        return internal_silk(conf) + pin1_silk(conf)
+    elif s == "external_pin1":
+        return external_silk(conf) + pin1_silk(conf)
     else:
         return []
 
 
 def ctyd(conf):
     """Draw a courtyard around the part."""
+    gap = conf.get('courtyard_gap', ctyd_gap)
+
     # Compute width and height of courtyard
-    width = conf['pad_shape'][0] + conf['pitch'] + 2*ctyd_gap
-    height = conf['pad_shape'][1] + 2*ctyd_gap
+    width = conf['pad_shape'][0] + conf['pitch'] + 2*gap
+    height = conf['pad_shape'][1] + 2*gap
 
     # Ensure courtyard lies on a specified grid
     # (double the grid since we halve the width/height)
