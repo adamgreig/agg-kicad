@@ -286,6 +286,7 @@ font_halfheight = 0.7
 import os
 import sys
 import time
+import math
 import subprocess
 
 from sexp import sexp_parse, sexp_generate
@@ -564,15 +565,9 @@ def ctyd(conf):
 
     # Ensure courtyard lies on a specified grid
     # (double the grid since we halve the width/height)
-    width_um = int(width * 1000)
-    height_um = int(height * 1000)
-    grid_um = int(ctyd_grid * 2 * 1000)
-
-    width_um += width_um % grid_um
-    height_um += height_um % grid_um
-
-    width = width_um / 1000.0
-    height = height_um / 1000.0
+    grid = 2*ctyd_grid
+    width = grid * int(math.ceil(width / (2*ctyd_grid)))
+    height = grid * int(math.ceil(height / (2*ctyd_grid)))
 
     _, _, _, _, sq = draw_square(width, height, (0, 0), "F.CrtYd", ctyd_width)
     return sq
