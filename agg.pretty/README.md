@@ -19,7 +19,7 @@
 * Courtyard:
     * Lines 0.01mm thick on 0.05mm grid (checked automatically)
     * Clearance:
-        * 0.20mm normally
+        * 0.25mm normally
         * Other clearances as applicable per-package
 * Silkscreen:
     * May be omitted only for very small footprints where inclusion would 
