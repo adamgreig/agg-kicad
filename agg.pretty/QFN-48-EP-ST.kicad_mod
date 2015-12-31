@@ -1,7 +1,7 @@
 
 (module "QFN-48-EP-ST" 
   (layer F.Cu) 
-  (tedit 5680DAAA) 
+  (tedit 56849699) 
   (fp_text reference REF** 
     (at 0 -4.6000) 
     (layer F.Fab) 
@@ -1008,26 +1008,71 @@
     (at -2.7500 -3.3750) 
     (size 0.3000 0.5500) 
     (layers F.Cu F.Mask F.Paste)) 
-  (pad "~" smd rect 
+  (pad EP smd rect 
     (at -1.2500 -1.2500) 
     (size 2.0000 2.0000) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad "~" smd rect 
+  (pad EP smd rect 
     (at -1.2500 1.2500) 
     (size 2.0000 2.0000) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad "~" smd rect 
+  (pad EP smd rect 
     (at 1.2500 -1.2500) 
     (size 2.0000 2.0000) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad "~" smd rect 
+  (pad EP smd rect 
     (at 1.2500 1.2500) 
     (size 2.0000 2.0000) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
+  (pad EP thru_hole circle 
+    (at -2.5000 -2.5000) 
+    (size 0.6000 0.6000) 
+    (layers *.Cu) 
+    (drill 0.4000)) 
+  (pad EP thru_hole circle 
+    (at -2.5000 0.0000) 
+    (size 0.6000 0.6000) 
+    (layers *.Cu) 
+    (drill 0.4000)) 
+  (pad EP thru_hole circle 
+    (at -2.5000 2.5000) 
+    (size 0.6000 0.6000) 
+    (layers *.Cu) 
+    (drill 0.4000)) 
+  (pad EP thru_hole circle 
+    (at 0.0000 -2.5000) 
+    (size 0.6000 0.6000) 
+    (layers *.Cu) 
+    (drill 0.4000)) 
+  (pad EP thru_hole circle 
+    (at 0.0000 0.0000) 
+    (size 0.6000 0.6000) 
+    (layers *.Cu) 
+    (drill 0.4000)) 
+  (pad EP thru_hole circle 
+    (at 0.0000 2.5000) 
+    (size 0.6000 0.6000) 
+    (layers *.Cu) 
+    (drill 0.4000)) 
+  (pad EP thru_hole circle 
+    (at 2.5000 -2.5000) 
+    (size 0.6000 0.6000) 
+    (layers *.Cu) 
+    (drill 0.4000)) 
+  (pad EP thru_hole circle 
+    (at 2.5000 0.0000) 
+    (size 0.6000 0.6000) 
+    (layers *.Cu) 
+    (drill 0.4000)) 
+  (pad EP thru_hole circle 
+    (at 2.5000 2.5000) 
+    (size 0.6000 0.6000) 
+    (layers *.Cu) 
+    (drill 0.4000)) 
   (pad EP smd rect 
     (at 0 0) 
     (size 5.6000 5.6000) 

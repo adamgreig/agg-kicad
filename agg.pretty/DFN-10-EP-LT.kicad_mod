@@ -1,7 +1,7 @@
 
 (module "DFN-10-EP-LT" 
   (layer F.Cu) 
-  (tedit 5680D67C) 
+  (tedit 56849699) 
   (fp_text reference REF** 
     (at 0 -2.5000) 
     (layer F.Fab) 
@@ -267,12 +267,12 @@
     (at 1.4250 -1.0000) 
     (size 0.7000 0.2500) 
     (layers F.Cu F.Mask F.Paste)) 
-  (pad "~" smd rect 
+  (pad EP smd rect 
     (at -0.0000 -0.6000) 
     (size 1.2000 0.8000) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad "~" smd rect 
+  (pad EP smd rect 
     (at -0.0000 0.6000) 
     (size 1.2000 0.8000) 
     (layers F.Paste) 

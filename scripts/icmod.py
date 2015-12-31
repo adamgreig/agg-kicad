@@ -145,6 +145,7 @@ config = {
         "pad_shape": (0.55, 0.30),
         "ep_shape": (5.6, 5.6),
         "ep_paste_shape": (2.0, 2.0, 0.5, 0.5),
+        "ep_vias": (0.4, 0.6, 1.9),
         "chip_shape": (7.1, 7.1),
         "pin_shape": (-0.5, 0.3),
     },
@@ -370,7 +371,7 @@ def exposed_pad(conf):
         apertures = inner_apertures(ep_shape, mask_shape)
         layer = ["F.Mask"]
         for ap in apertures:
-            out.append(pad("~", "smd", "rect", ap, mask_shape, layer, .001))
+            out.append(pad("EP", "smd", "rect", ap, mask_shape, layer, .001))
 
     # Paste apertures
     if "ep_paste_shape" not in conf:
@@ -382,7 +383,7 @@ def exposed_pad(conf):
         layer = ["F.Paste"]
         for ap in apertures:
             out.append(
-                pad("~", "smd", "rect", ap, paste_shape, layer, None, .001))
+                pad("EP", "smd", "rect", ap, paste_shape, layer, None, .001))
 
     # Vias
     if "ep_vias" in conf:
