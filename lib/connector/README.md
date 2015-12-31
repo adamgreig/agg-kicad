@@ -6,6 +6,12 @@
 * Farnell 2358234
 * Used with MICROSD_MOLEX_503398-1892 footprint on M2FC successfully
 
+### MicroUSB
+* [MicroUSB 
+  connector](http://www.molex.com/molex/products/datasheet.jsp?part=active/0475890001_IO_CONNECTORS.xml)
+* Farnell 1568023
+* Use with MICROUSB_MOLEX_47589-0001, not yet tested
+
 ### Coax
 * Two-pin ground+signal device
 * Example:
