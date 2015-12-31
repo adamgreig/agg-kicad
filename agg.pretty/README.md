@@ -114,3 +114,8 @@ M3 sized mounting holes.
  * The `M3_HOLE` courtyard does _not_ include space for a bolt head or washer 
    (as it may not always be required) so be sure to check this or use the 
    `M3_MOUNT` variant. 
+
+### WIREPAD
+
+3mm diameter circular copper pad. Useful for particularly large testpoints and 
+pads for soldering wires to.

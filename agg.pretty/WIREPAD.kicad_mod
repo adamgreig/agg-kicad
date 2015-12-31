@@ -1,0 +1,13 @@
+(module WIREPAD (layer F.Cu) (tedit 5684A84E)
+  (fp_text reference REF** (at 0 2.75) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value WIREPAD (at 0 -2.75) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start -2 -2) (end 2 -2) (layer F.CrtYd) (width 0.01))
+  (fp_line (start -2 2) (end -2 -2) (layer F.CrtYd) (width 0.01))
+  (fp_line (start 2 2) (end -2 2) (layer F.CrtYd) (width 0.01))
+  (fp_line (start 2 -2) (end 2 2) (layer F.CrtYd) (width 0.01))
+  (pad 1 smd circle (at 0 0) (size 3 3) (layers F.Cu F.Mask))
+)
