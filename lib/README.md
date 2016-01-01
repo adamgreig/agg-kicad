@@ -27,8 +27,9 @@ The file `agg-kicad.lib` contains all of the symbols in this library.
     * Exception for pin numbers that are words, e.g. "PAD"
 * Part reference above the part
 * Part name (value field) below the part
-* Name and reference must be horizontal
-* Name and reference must be visible unless explicitly overridden
+* Fields must be horizontal
+* Name and reference fields must be visible unless explicitly overridden
+* Other fields (footprint, datasheet, order codes) must be invisible
 * ICs and similar symbols to be filled with background colour
 
 ### Must be checked manually

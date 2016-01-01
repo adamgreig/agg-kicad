@@ -23,12 +23,19 @@ re_pins = re.compile("^X (?P<name>[^ ]*) (?P<num>[^ ]*)"
                      re.MULTILINE)
 re_refn = re.compile("^F0 (?P<value>[^ ]*) (?P<x>[0-9\-]*) (?P<y>[0-9\-]*)"
                      " (?P<size>[0-9]*) (?P<orient>[VH]) (?P<visible>[IV])"
-                     " (?P<hjust>[LRC]) (?P<vjust>[TBC]{1,3})",
-                     re.MULTILINE)
+                     " (?P<hjust>[LRC]) (?P<vjust>[TBC]{1,3})", re.MULTILINE)
 re_name = re.compile("^F1 (?P<value>[^ ]*) (?P<x>[0-9\-]*) (?P<y>[0-9\-]*)"
                      " (?P<size>[0-9]*) (?P<orient>[VH]) (?P<visible>[IV])"
-                     " (?P<hjust>[LRC]) (?P<vjust>[TBC]{1,3})",
-                     re.MULTILINE)
+                     " (?P<hjust>[LRC]) (?P<vjust>[TBC]{1,3})", re.MULTILINE)
+re_fp = re.compile("^F2 (?P<value>[^ ]*) (?P<x>[0-9\-]*) (?P<y>[0-9\-]*)"
+                   " (?P<size>[0-9]*) (?P<orient>[VH]) (?P<visible>[IV])"
+                   " (?P<hjust>[LRC]) (?P<vjust>[TBC]{1,3})", re.MULTILINE)
+re_ds = re.compile("^F3 (?P<value>[^ ]*) (?P<x>[0-9\-]*) (?P<y>[0-9\-]*)"
+                   " (?P<size>[0-9]*) (?P<orient>[VH]) (?P<visible>[IV])"
+                   " (?P<hjust>[LRC]) (?P<vjust>[TBC]{1,3})", re.MULTILINE)
+re_oc = re.compile("^F[4-9] (?P<value>[^ ]*) (?P<x>[0-9\-]*) (?P<y>[0-9\-]*)"
+                   " (?P<size>[0-9]*) (?P<orient>[VH]) (?P<visible>[IV])"
+                   " (?P<hjust>[LRC]) (?P<vjust>[TBC]{1,3})", re.MULTILINE)
 re_poly = re.compile("^[SP] .* (?P<fill>[NfF])$", re.MULTILINE)
 
 
@@ -87,16 +94,26 @@ def checkboxes(contents, designator, errs):
 def checkfields(contents, errs):
     refn_f = re_refn.findall(contents)
     name_f = re_name.findall(contents)
+    foot_f = re_fp.findall(contents)
+    data_f = re_ds.findall(contents)
+    code_f = re_oc.findall(contents)
 
-    for field, fn in (refn_f, "reference"), (name_f, "name"):
+    fields = ((refn_f, "reference"), (name_f, "name"), (foot_f, "footprint"),
+              (data_f, "datasheet"), (code_f, "order code"))
+
+    for field, fn in fields:
         for value, x, y, size, orient, visible, hjust, vjust in field:
-            if visible != "V":
-                if "#invisible{}".format(fn) not in contents:
-                    errs.append("Component {} field not visible".format(fn))
+            if fn in ("reference", "name"):
+                if visible != "V":
+                    if "#invisible{}".format(fn) not in contents:
+                        errs.append("Field {} not visible".format(fn))
+            else:
+                if visible != "I":
+                    errs.append("Field {} visible".format(fn))
             if orient != "H":
-                errs.append("Component {} field not horizontal".format(fn))
+                errs.append("Field {} not horizontal".format(fn))
             if size != "50":
-                errs.append("Component {} field font size not 50".format(fn))
+                errs.append("Field {} font size not 50".format(fn))
 
     refn_y = int(refn_f[0][2])
     name_y = int(name_f[0][2])
