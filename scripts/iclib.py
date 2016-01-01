@@ -606,13 +606,14 @@ def library(conf):
 
     out.append("EESchema-LIBRARY Version 2.3")
     out.append("#encoding utf-8")
+    out.append("#\n# {}\n#".format(conf['name']))
     out.append("DEF {} {} 0 40 Y Y 1 F N".format(
         conf['name'], conf.get('designator', 'IC')))
 
     out += fields(conf)
     out += draw(conf)
 
-    out.append("ENDDEF\n")
+    out.append("ENDDEF\n#\n#End Library\n")
     return "\n".join(out)
 
 
