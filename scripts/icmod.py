@@ -23,6 +23,8 @@ TODO:
 # Valid inner keys are:
 #   rows: either 2 or 4, for dual or quad packages.
 #   pins: total number of pins.
+#   skip_pins: optional, list of pin numbers to skip (leaving remaining pins in
+#              sequential order). Generates packages like SOT-23-3.
 #   pin_pitch: spacing between adjacent pins.
 #   row_pitch: spacing between rows of pins.
 #   pad_shape: (width, height) of a pad for a pin.
@@ -234,6 +236,47 @@ config = {
         "pin_shape": (-0.9, 0.50),
         "silk": "external",
     },
+
+    # SOT-23-3
+    # JEDEC TO-236AB
+    # IPC-7351B: SOT95P230X110-3N
+    "SOT-23": {
+        "rows": 2,
+        "pins": 6,
+        "skip_pins": (2, 4, 6),
+        "pin_pitch": 0.95,
+        "row_pitch": 2.30,
+        "pad_shape": (1.0, 0.6),
+        "chip_shape": (1.4, 3.0),
+        "pin_shape": (0.55, 0.48),
+    },
+
+    # SOT-23-5
+    # JEDEC MO-178
+    # IPC-7351B: SOT95P280X135-5N
+    "SOT-23-5": {
+        "rows": 2,
+        "pins": 6,
+        "skip_pins": (5,),
+        "pin_pitch": 0.95,
+        "row_pitch": 2.60,
+        "pad_shape": (1.10, 0.60),
+        "chip_shape": (1.70, 3.00),
+        "pin_shape": (0.75, 0.50),
+    },
+
+    # SOT-23-6
+    # JEDEC MO-178AB
+    # IPC-7351B: SOT95P280X145-6N
+    "SOT-23-6": {
+        "rows": 2,
+        "pins": 6,
+        "pin_pitch": 0.95,
+        "row_pitch": 2.60,
+        "pad_shape": (1.10, 0.60),
+        "chip_shape": (1.75, 3.05),
+        "pin_shape": (0.62, 0.50),
+    },
 }
 
 
@@ -440,20 +483,33 @@ def fab(conf):
 
     # Pins
     leftr, bottomr, rightr, topr = pin_centres(conf)
+    idx = 1
     for pin in leftr:
+        idx += 1
+        if idx - 1 in conf.get('skip_pins', []):
+            continue
         xy = -(chip_w + pin_w) / 2.0, pin[1]
         _, _, _, _, sq = draw_square(pin_w, pin_h, xy, "F.Fab", fab_width)
         out += [sq[0], sq[2], sq[3]]
     for pin in rightr:
+        idx += 1
+        if idx - 1 in conf.get('skip_pins', []):
+            continue
         xy = (chip_w + pin_w) / 2.0, pin[1]
         _, _, _, _, sq = draw_square(pin_w, pin_h, xy, "F.Fab", fab_width)
         out += [sq[0], sq[1], sq[2]]
     if conf['rows'] == 4:
         for pin in topr:
+            idx += 1
+            if idx - 1 in conf.get('skip_pins', []):
+                continue
             xy = pin[0], -(chip_h + pin_w) / 2.0
             _, _, _, _, sq = draw_square(pin_h, pin_w, xy, "F.Fab", fab_width)
             out += [sq[0], sq[1], sq[3]]
         for pin in bottomr:
+            idx += 1
+            if idx - 1 in conf.get('skip_pins', []):
+                continue
             xy = pin[0], (chip_h + pin_w) / 2.0
             _, _, _, _, sq = draw_square(pin_h, pin_w, xy, "F.Fab", fab_width)
             out += [sq[1], sq[2], sq[3]]
@@ -480,15 +536,19 @@ def internal_silk(conf):
     elif rows == 4:
         height = width
 
+    ir = silk_pin1_ir
+    if ir > width:
+        ir = width
+
     c = (0, 0)
     layer = "F.SilkS"
     nw, ne, se, sw, sq = draw_square(width, height, c, layer, silk_width)
-    out.append(fp_line((nw[0] + silk_pin1_ir, nw[1]), ne, layer, silk_width))
+    out.append(fp_line((nw[0] + ir, nw[1]), ne, layer, silk_width))
     out.append(fp_line(ne, se, layer, silk_width))
     out.append(fp_line(se, sw, layer, silk_width))
-    out.append(fp_line(sw, (nw[0], nw[1] + silk_pin1_ir), layer, silk_width))
-    start = (nw[0], nw[1] + silk_pin1_ir)
-    end = (nw[0] + silk_pin1_ir, nw[1])
+    out.append(fp_line(sw, (nw[0], nw[1] + ir), layer, silk_width))
+    start = (nw[0], nw[1] + ir)
+    end = (nw[0] + ir, nw[1])
     out.append(fp_line(start, end, "F.SilkS", silk_width))
 
     # Old circular pin1 indicator:
@@ -574,28 +634,41 @@ def ctyd(conf):
     return sq
 
 
+def pad_row(centres, num, idx, shape, size, layers, skip):
+    out = []
+    for centre in centres:
+        idx += 1
+        if idx - 1 in skip:
+            continue
+        out.append(pad(num, "smd", shape, centre, size, layers))
+        num += 1
+    return num, idx, out
+
+
 def pads(conf):
     out = []
     layers = ["F.Cu", "F.Mask", "F.Paste"]
     size_lr = conf['pad_shape']
     size_tb = size_lr[1], size_lr[0]
     shape = "rect"
-    leftr, bottomr, rightr, topr = pin_centres(conf)
+    skip = conf.get('skip_pins', [])
+    leftr, btmr, rightr, topr = pin_centres(conf)
     num = 1
-    for pin in leftr:
-        out.append(pad(num, "smd", shape, pin, size_lr, layers))
-        num += 1
+    idx = 1
+
+    num, idx, pins = pad_row(leftr, num, idx, shape, size_lr, layers, skip)
+    out += pins
+
     if conf['rows'] == 4:
-        for pin in bottomr:
-            out.append(pad(num, "smd", shape, pin, size_tb, layers))
-            num += 1
-    for pin in rightr:
-        out.append(pad(num, "smd", shape, pin, size_lr, layers))
-        num += 1
+        num, idx, pins = pad_row(btmr, num, idx, shape, size_tb, layers, skip)
+        out += pins
+
+    num, idx, pins = pad_row(rightr, num, idx, shape, size_lr, layers, skip)
+    out += pins
+
     if conf['rows'] == 4:
-        for pin in topr:
-            out.append(pad(num, "smd", shape, pin, size_tb, layers))
-            num += 1
+        num, idx, pins = pad_row(topr, num, idx, shape, size_tb, layers, skip)
+        out += pins
 
     # Exposed pad (potentially with separate mask/paste apertures)
     if "ep_shape" in conf:
