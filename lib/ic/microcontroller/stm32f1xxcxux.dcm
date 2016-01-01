@@ -1,0 +1,4 @@
+EESchema-DOCLIB	Version 2.0
+$CMP STM32F1xxCxUx
+D STM32F1 48 pin UFQFPN package
+$ENDCMP
