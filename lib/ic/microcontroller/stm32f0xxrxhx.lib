@@ -8,7 +8,7 @@ F0 "IC" -300 1900 50 H V L CNN
 F1 "STM32F0xxRxHx" -300 -1900 50 H V L CNN
 F2 "agg:UFBGA-64" -300 -2000 50 H I L CNN
 F3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00115237.pdf" -300 -2100 50 H I L CNN
-F4 "2503242" -300 -2200 50 H I L CNN Farnell
+F4 "2503242" -300 -2200 50 H I L CNN "Farnell"
 DRAW
 S -300 1850 300 -1850 0 1 0 f
 X VBAT B2 -400 1800 100 R 50 50 0 0 W

@@ -8,7 +8,7 @@ F0 "IC" -300 1800 50 H V L CNN
 F1 "STM32F1xxCxUx" -300 -1800 50 H V L CNN
 F2 "agg:QFN-48-EP-ST" -300 -1900 50 H I L CNN
 F3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" -300 -2000 50 H I L CNN
-F4 "2060891" -300 -2100 50 H I L CNN Farnell
+F4 "2060891" -300 -2100 50 H I L CNN "Farnell"
 DRAW
 S -300 1750 300 -1750 0 1 0 f
 X VBAT 1 -400 1700 100 R 50 50 0 0 W

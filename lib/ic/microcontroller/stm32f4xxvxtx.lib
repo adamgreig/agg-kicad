@@ -8,7 +8,7 @@ F0 "IC" -300 3100 50 H V L CNN
 F1 "STM32F4xxVxTx" -300 -3100 50 H V L CNN
 F2 "agg:LQFP-100" -300 -3200 50 H I L CNN
 F3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" -300 -3300 50 H I L CNN
-F4 "2215224" -300 -3400 50 H I L CNN Farnell
+F4 "2215224" -300 -3400 50 H I L CNN "Farnell"
 DRAW
 S -300 3050 300 -3050 0 1 0 f
 X VBAT 6 -400 3000 100 R 50 50 0 0 W

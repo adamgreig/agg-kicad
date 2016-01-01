@@ -563,7 +563,7 @@ def fields(conf):
 
     # Order codes
     for idx, (supplier, code) in enumerate(conf.get("ordercodes", {}).items()):
-        out.append("F{} \"{}\" {} {} 50 H I L CNN {}".format(
+        out.append("F{} \"{}\" {} {} 50 H I L CNN \"{}\"".format(
             idx+4, code, field_x, -field_y-(300+idx*100), supplier))
 
     return out
