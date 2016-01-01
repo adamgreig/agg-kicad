@@ -1,7 +1,7 @@
 
 (module "SOD-323" 
   (layer F.Cu) 
-  (tedit 56845822) 
+  (tedit 56870592) 
   (fp_text reference REF** 
     (at -2.7000 0 90) 
     (layer F.Fab) 
@@ -97,23 +97,23 @@
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start -2.0000 -0.5000) 
-    (end 2.0000 -0.5000) 
+    (start -2.0000 -0.9500) 
+    (end 2.0000 -0.9500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 2.0000 -0.5000) 
-    (end 2.0000 0.5000) 
+    (start 2.0000 -0.9500) 
+    (end 2.0000 0.9500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 2.0000 0.5000) 
-    (end -2.0000 0.5000) 
+    (start 2.0000 0.9500) 
+    (end -2.0000 0.9500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start -2.0000 0.5000) 
-    (end -2.0000 -0.5000) 
+    (start -2.0000 0.9500) 
+    (end -2.0000 -0.9500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (pad 1 smd rect 

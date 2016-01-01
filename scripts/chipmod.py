@@ -125,7 +125,15 @@ config = {
         "chip_shape": (1.80, 1.35),
         "pin_shape": (0.45, 0.40),
         "silk": "internal_pin1",
-    }
+    },
+
+    # 5.0 x 3.2 mm 2-pin crystal
+    "XTAL-50x32": {
+        "pad_shape": (1.9, 2.4),
+        "pitch": 4.1,
+        "chip_shape": (5.0, 3.2),
+        "pin_shape": (-1.3, 2.0),
+    },
 }
 
 # Other constants =============================================================
@@ -267,8 +275,11 @@ def ctyd(conf):
     gap = conf.get('courtyard_gap', ctyd_gap)
 
     # Compute width and height of courtyard
-    width = conf['pad_shape'][0] + conf['pitch'] + 2*gap
-    height = conf['pad_shape'][1] + 2*gap
+    width = max(conf['pad_shape'][0] + conf['pitch'], conf['chip_shape'][0])
+    height = max(conf['pad_shape'][1], conf['chip_shape'][1])
+
+    width += 2 * gap
+    height += 2 * gap
 
     # Ensure courtyard lies on a specified grid
     # (double the grid since we halve the width/height)
