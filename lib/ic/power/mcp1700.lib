@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# MCP1700
+#
+DEF MCP1700 IC 0 40 Y Y 1 F N
+F0 "IC" -200 100 50 H V L CNN
+F1 "MCP1700" -200 -200 50 H V L CNN
+F2 "agg:SOT-23" -200 -300 50 H I L CNN
+F3 "http://www.farnell.com/datasheets/1784514.pdf" -200 -400 50 H I L CNN
+F4 "1296592" -200 -500 50 H I L CNN "Farnell"
+DRAW
+S -200 50 300 -150 0 1 0 f
+X GND 1 -300 -100 100 R 50 50 1 1 W
+X VOUT 2 400 0 100 L 50 50 1 1 w
+X VIN 3 -300 0 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

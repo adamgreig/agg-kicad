@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP1700
+D LDO Voltage Regulator
+$ENDCMP
+#
+#End Doc Library
