@@ -27,3 +27,7 @@
 * 4-pin TCXO with enable pin
 * e.g. Digikey 535-12686-ND
 * Used with the ASTXR-12 footprint on shrew-u r1 successfully
+
+### NFET, QFET
+* Generic FETs
+* Gate is pin 1, Source is pin 2, Drain is pin 3

@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NFET
+D Generic N-channel FET
+$ENDCMP
+#
+#End Doc Library
