@@ -38,7 +38,7 @@ def sexp_parse(sexp):
 
 def sexp_generate(sexp, depth=0):
     """Turn a list of lists into an s-expression."""
-    single_word = re.compile("^-?[a-zA-Z0-9_*\.]*$")
+    single_word = re.compile("^-?[a-zA-Z0-9_*\.]+$")
     parts = []
     for node in sexp:
         if isinstance(node, str) and not single_word.match(node):

@@ -1,0 +1,223 @@
+
+(module "S02B-PASK-2" 
+  (layer F.Cu) 
+  (tedit 56873FC2) 
+  (fp_text reference REF** 
+    (at 0 -9.1500) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "S02B-PASK-2" 
+    (at 0 4.4500) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_line 
+    (start -3.0000 -8.2000) 
+    (end 3.0000 -8.2000) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 3.0000 -8.2000) 
+    (end 3.0000 3.5000) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 3.0000 3.5000) 
+    (end 2.0000 3.5000) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 2.0000 3.5000) 
+    (end 2.0000 -0.5000) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -3.0000 -8.2000) 
+    (end -3.0000 3.5000) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -3.0000 3.5000) 
+    (end -2.0000 3.5000) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -2.0000 3.5000) 
+    (end -2.0000 -0.5000) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -3.0000 -8.2000) 
+    (end 3.0000 -8.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.0000 -8.2000) 
+    (end 3.0000 3.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.0000 3.5000) 
+    (end 2.0000 3.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.0000 3.5000) 
+    (end 2.0000 -0.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.0000 -0.5000) 
+    (end -2.0000 -0.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.0000 -8.2000) 
+    (end -3.0000 3.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.0000 3.5000) 
+    (end -2.0000 3.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.0000 3.5000) 
+    (end -2.0000 -0.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.4000 -2.5000) 
+    (end 3.0000 -2.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.0000 -2.5000) 
+    (end 3.0000 -1.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.0000 -1.7000) 
+    (end 2.4000 -1.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.4000 -1.7000) 
+    (end 2.4000 -2.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.0000 -2.5000) 
+    (end -2.4000 -2.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.4000 -2.5000) 
+    (end -2.4000 -1.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.4000 -1.7000) 
+    (end -3.0000 -1.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.0000 -1.7000) 
+    (end -3.0000 -2.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.7500 -0.5000) 
+    (end 1.2500 -0.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2500 -0.5000) 
+    (end 1.2500 0.2500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2500 0.2500) 
+    (end 0.7500 0.2500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.7500 0.2500) 
+    (end 0.7500 -0.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.7500 -0.2500) 
+    (end 1.2500 -0.2500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2500 -0.5000) 
+    (end -0.7500 -0.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.7500 -0.5000) 
+    (end -0.7500 0.2500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.7500 0.2500) 
+    (end -1.2500 0.2500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2500 0.2500) 
+    (end -1.2500 -0.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2500 -0.2500) 
+    (end -0.7500 -0.2500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.2500 -8.4500) 
+    (end 3.2500 -8.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.2500 -8.4500) 
+    (end 3.2500 3.7500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.2500 3.7500) 
+    (end -3.2500 3.7500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.2500 3.7500) 
+    (end -3.2500 -8.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (pad "" np_thru_hole circle 
+    (at 2.5000 -2.1000) 
+    (size 1.2000 1.2000) 
+    (layers *.Mask) 
+    (drill 1.2000)) 
+  (pad "" np_thru_hole circle 
+    (at -2.5000 -2.1000) 
+    (size 1.2000 1.2000) 
+    (layers *.Mask) 
+    (drill 1.2000)) 
+  (pad 1 thru_hole circle 
+    (at 1 0) 
+    (size 1.6000 1.6000) 
+    (layers *.Cu *.Mask) 
+    (drill 0.8000)) 
+  (pad 2 thru_hole circle 
+    (at -1.0000 0) 
+    (size 1.6000 1.6000) 
+    (layers *.Cu *.Mask) 
+    (drill 0.8000)))

@@ -41,11 +41,19 @@ def fp_text(texttype, text, at, layer, size, thickness):
               ["thickness", thickness]]]]
 
 
-def pad(num, padtype, shape, at, size, layers, m_mask=None, m_paste=None):
+def pad(num, padtype, shape, at, size, layers, drill=None, offset=None,
+        m_mask=None, m_paste=None):
     pad = ["pad", num, padtype, shape,
            ["at", at[0], at[1]],
-           ["size", size[0], size[1]],
-           ["layers"] + layers]
+           ["size"] + list(size),
+           ["layers"] + list(layers)]
+    if drill is not None or offset is not None:
+        d = ["drill"]
+        if drill is not None:
+            d.append(drill)
+        if offset is not None:
+            d.append(["offset"] + offset)
+        pad.append(d)
     if m_mask is not None:
         pad.append(["solder_mask_margin", m_mask])
     if m_paste is not None:

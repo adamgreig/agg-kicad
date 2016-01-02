@@ -414,7 +414,8 @@ def exposed_pad(conf):
         apertures = inner_apertures(ep_shape, mask_shape)
         layer = ["F.Mask"]
         for ap in apertures:
-            out.append(pad("EP", "smd", "rect", ap, mask_shape, layer, .001))
+            out.append(pad("EP", "smd", "rect", ap, mask_shape[:2], layer,
+                           m_mask=.001))
 
     # Paste apertures
     if "ep_paste_shape" not in conf:
@@ -426,7 +427,8 @@ def exposed_pad(conf):
         layer = ["F.Paste"]
         for ap in apertures:
             out.append(
-                pad("EP", "smd", "rect", ap, paste_shape, layer, None, .001))
+                pad("EP", "smd", "rect", ap, paste_shape[:2], layer,
+                    m_paste=.001))
 
     # Vias
     if "ep_vias" in conf:
@@ -434,13 +436,13 @@ def exposed_pad(conf):
         centres = inner_apertures(ep_shape, (v_s, v_s, v_g, v_g))
         layers = ["*.Cu"]
         for c in centres:
-            p = pad("EP", "thru_hole", "circle", c, (v_s, v_s), layers)
-            p.append(["drill", v_d])
+            p = pad("EP", "thru_hole", "circle", c, (v_s, v_s), layers,
+                    drill=v_d)
             out.append(p)
 
     out.append(
         pad("EP", "smd", "rect", (0, 0),
-            ep_shape, ep_layers, ep_m_mask, ep_m_paste))
+            ep_shape, ep_layers, m_mask=ep_m_mask, m_paste=ep_m_paste))
     return out
 
 
