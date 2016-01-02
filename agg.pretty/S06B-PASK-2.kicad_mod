@@ -1,7 +1,7 @@
 
 (module "S06B-PASK-2" 
   (layer F.Cu) 
-  (tedit 56873FC3) 
+  (tedit 56875938) 
   (fp_text reference REF** 
     (at 0 -9.1500) 
     (layer F.Fab) 
@@ -317,27 +317,27 @@
     (layers *.Cu *.Mask) 
     (drill 0.8000)) 
   (pad 2 thru_hole circle 
-    (at 3.0000 0) 
+    (at 3 0) 
     (size 1.6000 1.6000) 
     (layers *.Cu *.Mask) 
     (drill 0.8000)) 
   (pad 3 thru_hole circle 
-    (at 1.0000 0) 
+    (at 1 0) 
     (size 1.6000 1.6000) 
     (layers *.Cu *.Mask) 
     (drill 0.8000)) 
   (pad 4 thru_hole circle 
-    (at -1.0000 0) 
+    (at -1 0) 
     (size 1.6000 1.6000) 
     (layers *.Cu *.Mask) 
     (drill 0.8000)) 
   (pad 5 thru_hole circle 
-    (at -3.0000 0) 
+    (at -3 0) 
     (size 1.6000 1.6000) 
     (layers *.Cu *.Mask) 
     (drill 0.8000)) 
   (pad 6 thru_hole circle 
-    (at -5.0000 0) 
+    (at -5 0) 
     (size 1.6000 1.6000) 
     (layers *.Cu *.Mask) 
     (drill 0.8000)))

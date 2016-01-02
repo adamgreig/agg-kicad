@@ -1,7 +1,7 @@
 
 (module "S02B-PASK-2" 
   (layer F.Cu) 
-  (tedit 56873FC2) 
+  (tedit 56875926) 
   (fp_text reference REF** 
     (at 0 -9.1500) 
     (layer F.Fab) 
@@ -217,7 +217,7 @@
     (layers *.Cu *.Mask) 
     (drill 0.8000)) 
   (pad 2 thru_hole circle 
-    (at -1.0000 0) 
+    (at -1 0) 
     (size 1.6000 1.6000) 
     (layers *.Cu *.Mask) 
     (drill 0.8000)))
