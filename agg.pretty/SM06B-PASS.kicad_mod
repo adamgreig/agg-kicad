@@ -1,7 +1,7 @@
 
 (module "SM06B-PASS" 
   (layer F.Cu) 
-  (tedit 5687633F) 
+  (tedit 5688CAC8) 
   (fp_text reference REF** 
     (at 0 -8.9000) 
     (layer F.Fab) 
@@ -264,11 +264,11 @@
     (size 0.9000 0.9000) 
     (layers *.Mask) 
     (drill 0.9000)) 
-  (pad "" np_thru_hole circle 
+  (pad "" np_thru_hole oval 
     (at -7.2000 0) 
-    (size 1.9000 1.9000) 
+    (size 1.9000 0.9000) 
     (layers *.Mask) 
-    (drill 1.9000)) 
+    (drill oval 1.9000 0.9000)) 
   (pad 1 smd rect 
     (at 5 1.3500) 
     (size 1 3) 

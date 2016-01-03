@@ -125,8 +125,8 @@ def side_smd_mount(pins):
                        ["F.Cu", "F.Mask", "F.Paste"]))
     out.append(pad("", "np_thru_hole", "circle", (x+2.2, 0), (.9, .9),
                    ["*.Mask"], drill=0.9))
-    out.append(pad("", "np_thru_hole", "circle", (-x-2.2, 0), (1.9, 1.9),
-                   ["*.Mask"], drill=1.9))
+    out.append(pad("", "np_thru_hole", "oval", (-x-2.2, 0), (1.9, 0.9),
+                   ["*.Mask"], drill=("oval", 1.9, 0.9)))
     return out
 
 

@@ -50,7 +50,10 @@ def pad(num, padtype, shape, at, size, layers, drill=None, offset=None,
     if drill is not None or offset is not None:
         d = ["drill"]
         if drill is not None:
-            d.append(drill)
+            if isinstance(drill, (float, int)):
+                d.append(drill)
+            else:
+                d += drill
         if offset is not None:
             d.append(["offset"] + offset)
         pad.append(d)
