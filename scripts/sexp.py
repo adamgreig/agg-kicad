@@ -6,6 +6,7 @@ S-Expression parser/emitter
 """
 
 import re
+from decimal import Decimal
 
 
 def sexp_parse(sexp):
@@ -45,7 +46,7 @@ def sexp_generate(sexp, depth=0):
             node.replace("\"", "\\\"")
             node.replace("\n", "\\n")
             node = "\"{}\"".format(node)
-        if isinstance(node, int):
+        if isinstance(node, (int, Decimal)):
             node = str(node)
         if isinstance(node, float):
             node = "{:.4f}".format(node)

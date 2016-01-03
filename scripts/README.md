@@ -97,3 +97,15 @@ images. Not currently very sophisticated or automated.
 
 Generate IPC-compliant chip packages. The list of packages to generate and 
 their parameters are specified at the start of the file.
+
+## jstpamod.py
+
+Generate JST-PA connector footprints in top/side entry, pth and smd, in 
+different pin counts.
+
+## panelise.py
+
+Step-repeat a `.kicad_pcb` PCB with a given pitch and number of repeats, 
+generating a new `.kicad_pcb` file.
+
+`python3 panelise.py /tmp/in.kicad_pcb 2 30 2 10 /tmp/out.kicad_pcb`
