@@ -1,7 +1,7 @@
 
 (module "QFN-48-EP-ST" 
   (layer F.Cu) 
-  (tedit 5687759E) 
+  (tedit 5688C961) 
   (fp_text reference REF** 
     (at 0 -4.6000) 
     (layer F.Fab) 
@@ -1011,6 +1011,26 @@
   (pad EP smd rect 
     (at -1.2500 -1.2500) 
     (size 2.0000 2.0000) 
+    (layers F.Cu F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad EP smd rect 
+    (at -1.2500 1.2500) 
+    (size 2.0000 2.0000) 
+    (layers F.Cu F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad EP smd rect 
+    (at 1.2500 -1.2500) 
+    (size 2.0000 2.0000) 
+    (layers F.Cu F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad EP smd rect 
+    (at 1.2500 1.2500) 
+    (size 2.0000 2.0000) 
+    (layers F.Cu F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad EP smd rect 
+    (at -1.2500 -1.2500) 
+    (size 2.0000 2.0000) 
     (layers F.Cu F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad EP smd rect 
@@ -1076,5 +1096,4 @@
   (pad EP smd rect 
     (at 0 0) 
     (size 5.6000 5.6000) 
-    (layers F.Cu F.Mask) 
-    (solder_mask_margin 0.0010)))
+    (layers F.Cu)))
