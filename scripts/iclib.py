@@ -184,7 +184,7 @@ config = {
     # STM32F0xxRxHx, in UFBGA64 package
     "STM32F0xxRxHx": {
         "path": "ic/microcontroller",
-        "footprint": "agg:UFBGA-64",
+        "footprint": "agg:BGA-64-P05-ST",
         "datasheet": "http://www.st.com/st-web-ui/static/active/en"
                      "/resource/technical/document/datasheet/DM00115237.pdf",
         "ordercodes": {
@@ -592,7 +592,7 @@ config = {
     # STM32F4xxZxJx, in UFBGA144 10x10 package
     "STM32F4xxZxJx": {
         "path": "ic/microcontroller",
-        "footprint": "agg:UFBGA-144",
+        "footprint": "agg:BGA-144-P08-ST",
         "datasheet": "http://www.st.com/st-web-ui/static/active/en"
                      "/resource/technical/document/datasheet/DM00141306.pdf",
         "ordercodes": {
