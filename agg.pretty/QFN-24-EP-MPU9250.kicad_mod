@@ -1,5 +1,5 @@
 
-(module "QFN-28-EP-MPU9250" 
+(module "QFN-24-EP-MPU9250" 
   (layer F.Cu) 
   (tedit 568EE0DA) 
   (fp_text reference REF** 
@@ -9,7 +9,7 @@
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (fp_text value "QFN-28-EP-MPU9250" 
+  (fp_text value "QFN-24-EP-MPU9250" 
     (at 0 2.6500) 
     (layer F.Fab) 
     (effects 
