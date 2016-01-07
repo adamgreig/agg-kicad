@@ -67,8 +67,8 @@ def checkpins(contents, designator, errs):
         if int(x) % 100 != 0 or int(y) % 100 != 0:
             errs.append("Pin '{}' not on 100mil grid".format(name))
         # Check pins in IC and U parts are 100mil long
-        if designator in ("IC", "U") and int(length) != 100:
-            errs.append("Pin '{}' not 100mil long, but part is IC or U"
+        if designator in ("IC", "U") and int(length) not in (100, 150):
+            errs.append("Pin '{}' not 100 or 150mil long, but part is IC or U"
                         .format(name))
         # Check pin text fields are 50mil sized
         if int(namesize) != 50 or (int(numsize) != 50 and num.isdigit()):

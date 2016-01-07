@@ -589,6 +589,181 @@ config = {
         ],
     },
 
+    # STM32F4xxZxJx, in UFBGA144 10x10 package
+    "STM32F4xxZxJx": {
+        "path": "ic/microcontroller",
+        "footprint": "agg:UFBGA-144",
+        "datasheet": "http://www.st.com/st-web-ui/static/active/en"
+                     "/resource/technical/document/datasheet/DM00141306.pdf",
+        "ordercodes": {
+            "Farnell": "2488316",
+        },
+        "description": "STM32F4 144 pin 10x10 UFBGA package",
+        "pins": [
+            [
+                [
+                    ("VDD", "D3", "pwrin"),
+                    ("VDD", "F10", "pwrin"),
+                    ("VDD", "F4", "pwrin"),
+                    ("VDD", "F5", "pwrin"),
+                    ("VDD", "F6", "pwrin"),
+                    ("VDD", "F7", "pwrin"),
+                    ("VDD", "F8", "pwrin"),
+                    ("VDD", "F9", "pwrin"),
+                    ("VDD", "G5", "pwrin"),
+                    ("VDD", "G6", "pwrin"),
+                    ("VDD", "G7", "pwrin"),
+                    ("VBAT", "C2", "pwrin"),
+                    ("VDDUSB", "C11", "pwrin"),
+                ], [
+                    ("VSS", "D2", "pwrin"),
+                    ("VSS", "E6", "pwrin"),
+                    ("VSS", "E7", "pwrin"),
+                    ("VSS", "G10", "pwrin"),
+                    ("VSS", "G4", "pwrin"),
+                    ("VSS", "G8", "pwrin"),
+                    ("VSS", "H6", "pwrin"),
+                ], [
+                    ("VDDA", "M1", "pwrin"),
+                    ("VREF+", "L1", "in"),
+                    ("VREF-", "K1", "in"),
+                    ("VSSA", "J1", "pwrin"),
+                ], [
+                    ("VCAP_1", "H7", "passive"),
+                    ("VCAP_2", "G9", "passive"),
+                ], [
+                    ("PDR_ON", "E5", "in"),
+                    ("BOOT0", "D5", "in"),
+                    ("BYPASS_REG", "H5", "in"),
+                    ("NRST", "F1", "in"),
+                ], [
+                    ("PA0", "J2", "bidi"),
+                    ("PA1", "K2", "bidi"),
+                    ("PA2", "L2", "bidi"),
+                    ("PA3", "M2", "bidi"),
+                    ("PA4", "J3", "bidi"),
+                    ("PA5", "K3", "bidi"),
+                    ("PA6", "L3", "bidi"),
+                    ("PA7", "M3", "bidi"),
+                    ("PA8", "E12", "bidi"),
+                    ("PA9", "D12", "bidi"),
+                    ("PA10", "D11", "bidi"),
+                    ("PA11", "C12", "bidi"),
+                    ("PA12", "B12", "bidi"),
+                    ("PA13", "A12", "bidi"),
+                    ("PA14", "A11", "bidi"),
+                    ("PA15", "A10", "bidi"),
+                ], [
+                    ("PB0", "L4", "bidi"),
+                    ("PB1", "M4", "bidi"),
+                    ("PB2", "J5", "bidi"),
+                    ("PB3", "A7", "bidi"),
+                    ("PB4", "A6", "bidi"),
+                    ("PB5", "B6", "bidi"),
+                    ("PB6", "C6", "bidi"),
+                    ("PB7", "D6", "bidi"),
+                    ("PB8", "C5", "bidi"),
+                    ("PB9", "B5", "bidi"),
+                    ("PB10", "M9", "bidi"),
+                    ("PB11", "M10", "bidi"),
+                    ("PB12", "M11", "bidi"),
+                    ("PB13", "M12", "bidi"),
+                    ("PB14", "L11", "bidi"),
+                    ("PB15", "L12", "bidi"),
+                ], [
+                    ("PC0", "H1", "bidi"),
+                    ("PC1", "H2", "bidi"),
+                    ("PC2", "H3", "bidi"),
+                    ("PC3", "H4", "bidi"),
+                    ("PC4", "J4", "bidi"),
+                    ("PC5", "K4", "bidi"),
+                    ("PC6", "G12", "bidi"),
+                    ("PC7", "F12", "bidi"),
+                    ("PC8", "F11", "bidi"),
+                    ("PC9", "E11", "bidi"),
+                    ("PC10", "B11", "bidi"),
+                    ("PC11", "B10", "bidi"),
+                    ("PC12", "C10", "bidi"),
+                    ("PC13", "A1", "bidi"),
+                    ("PC14", "B1", "bidi"),
+                    ("PC15", "C1", "bidi"),
+                ],
+            ], [
+                [
+                    ("PD0", "E10", "bidi"),
+                    ("PD1", "D10", "bidi"),
+                    ("PD2", "E9", "bidi"),
+                    ("PD3", "D9", "bidi"),
+                    ("PD4", "C9", "bidi"),
+                    ("PD5", "B9", "bidi"),
+                    ("PD6", "A8", "bidi"),
+                    ("PD7", "A9", "bidi"),
+                    ("PD8", "L9", "bidi"),
+                    ("PD9", "K9", "bidi"),
+                    ("PD10", "J9", "bidi"),
+                    ("PD11", "H9", "bidi"),
+                    ("PD12", "L10", "bidi"),
+                    ("PD13", "K10", "bidi"),
+                    ("PD14", "K11", "bidi"),
+                    ("PD15", "K12", "bidi"),
+                ], [
+                    ("PE0", "A5", "bidi"),
+                    ("PE1", "A4", "bidi"),
+                    ("PE2", "A3", "bidi"),
+                    ("PE3", "A2", "bidi"),
+                    ("PE4", "B2", "bidi"),
+                    ("PE5", "B3", "bidi"),
+                    ("PE6", "B4", "bidi"),
+                    ("PE7", "M7", "bidi"),
+                    ("PE8", "L7", "bidi"),
+                    ("PE9", "K7", "bidi"),
+                    ("PE10", "J7", "bidi"),
+                    ("PE11", "H8", "bidi"),
+                    ("PE12", "J8", "bidi"),
+                    ("PE13", "K8", "bidi"),
+                    ("PE14", "L8", "bidi"),
+                    ("PE15", "M8", "bidi"),
+                ], [
+                    ("PF0", "C3", "bidi"),
+                    ("PF1", "C4", "bidi"),
+                    ("PF2", "D4", "bidi"),
+                    ("PF3", "E2", "bidi"),
+                    ("PF4", "E3", "bidi"),
+                    ("PF5", "E4", "bidi"),
+                    ("PF6", "F3", "bidi"),
+                    ("PF7", "F2", "bidi"),
+                    ("PF8", "G3", "bidi"),
+                    ("PF9", "G2", "bidi"),
+                    ("PF10", "G1", "bidi"),
+                    ("PF11", "M5", "bidi"),
+                    ("PF12", "L5", "bidi"),
+                    ("PF13", "K5", "bidi"),
+                    ("PF14", "M6", "bidi"),
+                    ("PF15", "L6", "bidi"),
+                ], [
+                    ("PG0", "K6", "bidi"),
+                    ("PG1", "J6", "bidi"),
+                    ("PG2", "J12", "bidi"),
+                    ("PG3", "J11", "bidi"),
+                    ("PG4", "J10", "bidi"),
+                    ("PG5", "H12", "bidi"),
+                    ("PG6", "H11", "bidi"),
+                    ("PG7", "H10", "bidi"),
+                    ("PG8", "G11", "bidi"),
+                    ("PG9", "E8", "bidi"),
+                    ("PG10", "D8", "bidi"),
+                    ("PG11", "C8", "bidi"),
+                    ("PG12", "B8", "bidi"),
+                    ("PG13", "D7", "bidi"),
+                    ("PG14", "C7", "bidi"),
+                    ("PG15", "B7", "bidi"),
+                ], [
+                    ("PH0", "D1", "bidi"),
+                    ("PH1", "E1", "bidi"),
+                ],
+            ],
+        ],
+    },
 }
 
 # Other Constants =============================================================
@@ -618,8 +793,10 @@ pin_types = {
 
 def geometry(conf):
     # width is twice the width required to accommodate the longest name
-    longest_name = max(max(len(pin[0]) for pin in grp) for grp in conf['pins'])
-    width = 2 * (longest_name + 3) * 50
+    longest_name = max(max(max(len(pin[0]) for pin in grp) for grp in side)
+                       for side in conf['pins'])
+    width = 2 * (longest_name + 1) * 50
+    width += width % 200
 
     # height is the maximum required on either side
     left_pins = sum(len(x) for x in conf['pins'][0])
@@ -634,11 +811,19 @@ def geometry(conf):
     if (height // 100) % 2 == 0:
         height += 100
 
-    return width, height, left_groups
+    # Pin length based on maximum pin number length
+    longest_num = max(max(max(len(str(pin[1])) for pin in grp) for grp in side)
+                      for side in conf['pins'])
+    length = max(100, longest_num*50)
+    # Ensure pins will align to a 100mil grid by making the part wider
+    if length % 100 != 0:
+        width += 100
+
+    return width, height, length, left_groups
 
 
 def fields(conf):
-    width, height, lgroups = geometry(conf)
+    width, height, _, lgroups = geometry(conf)
     field_x = -width//2
     field_y = height//2 + 50
     out = []
@@ -673,21 +858,21 @@ def fields(conf):
     return out
 
 
-def draw_pins(groups, x0, y0, direction):
+def draw_pins(groups, x0, y0, direction, length):
     out = []
     pin_x = x0
     pin_y = y0
     for group in groups:
         for (name, num, t) in group:
-            out.append("X {} {} {} {} 100 {} 50 50 0 0 {}".format(
-                name, num, pin_x, pin_y, direction, pin_types[t]))
+            out.append("X {} {} {} {} {} {} 50 50 0 0 {}".format(
+                name, num, pin_x, pin_y, length, direction, pin_types[t]))
             pin_y -= 100
         pin_y -= 100
     return out
 
 
 def draw(conf):
-    width, height, lgroups = geometry(conf)
+    width, height, length, lgroups = geometry(conf)
     out = []
     out.append("DRAW")
 
@@ -696,10 +881,10 @@ def draw(conf):
         -width//2, height//2, width//2, -height//2))
 
     # Pins
-    x0 = -width//2 - 100
+    x0 = -width//2 - length
     y0 = height//2 - 50
-    out += draw_pins(conf['pins'][0], x0, y0, "R")
-    out += draw_pins(conf['pins'][1], -x0, y0, "L")
+    out += draw_pins(conf['pins'][0], x0, y0, "R", length)
+    out += draw_pins(conf['pins'][1], -x0, y0, "L", length)
 
     out.append("ENDDRAW")
     return out
