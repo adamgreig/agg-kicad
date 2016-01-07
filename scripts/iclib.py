@@ -764,6 +764,56 @@ config = {
             ],
         ],
     },
+
+    # MPU-9250 9DoF IMU
+    "MPU-9250": {
+        "path": "ic/sensor",
+        "footprint": "QFN-24-EP-IS",
+        "datasheet": "http://43zrtwysvxb2gf29r5o0athu.wpengine.netdna-cdn.com"
+                     "/wp-content/uploads/2015/02/MPU-9250-Datasheet.pdf",
+        "ordercodes": {
+            "RS": "883-7942",
+            "DigiKey": "1428-1019-1-ND",
+        },
+        "description": "MPU-9250 9DoF IMU from InvenSense",
+        "pins": [
+            [
+                [
+                    ("VDD", 13, "pwrin"),
+                    ("VDDIO", 8, "pwrin"),
+                    ("RESV_VDDIO", 1, "in"),
+                ], [
+                    ("GND", 18, "pwrin"),
+                    ("RESV_GND", 20, "in"),
+                ], [
+                    ("NC", 2, "nc"),
+                    ("NC", 3, "nc"),
+                    ("NC", 4, "nc"),
+                    ("NC", 5, "nc"),
+                    ("NC", 6, "nc"),
+                    ("NC", 14, "nc"),
+                    ("NC", 15, "nc"),
+                    ("NC", 16, "nc"),
+                    ("NC", 17, "nc"),
+                    ("RESV_NC", 19, "nc"),
+                ],
+            ], [
+                [
+                    ("~CS", 22, "in"),
+                    ("AD0/SD0", 9, "bidi"),
+                    ("SCL/SCLK", 23, "in"),
+                    ("SDA/SDI", 24, "in")
+                ], [
+                    ("REGOUT", 10, "passive"),
+                    ("INT", 12, "oc"),
+                    ("FSYNC", 11, "in"),
+                ], [
+                    ("AUX_CL", 7, "tri"),
+                    ("AUX_DA", 21, "tri"),
+                ],
+            ],
+        ],
+    },
 }
 
 # Other Constants =============================================================
