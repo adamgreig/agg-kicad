@@ -6,7 +6,7 @@ EESchema-LIBRARY Version 2.3
 DEF MPU-9250 IC 0 40 Y Y 1 F N
 F0 "IC" -600 900 50 H V L CNN
 F1 "MPU-9250" -600 -900 50 H V L CNN
-F2 "QFN-24-EP-IS" -600 -1000 50 H I L CNN
+F2 "QFN-24-EP-MPU9250" -600 -1000 50 H I L CNN
 F3 "http://43zrtwysvxb2gf29r5o0athu.wpengine.netdna-cdn.com/wp-content/uploads/2015/02/MPU-9250-Datasheet.pdf" -600 -1100 50 H I L CNN
 F4 "883-7942" -600 -1200 50 H I L CNN "RS"
 F5 "1428-1019-1-ND" -600 -1300 50 H I L CNN "DigiKey"

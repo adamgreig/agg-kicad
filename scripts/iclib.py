@@ -768,7 +768,7 @@ config = {
     # MPU-9250 9DoF IMU
     "MPU-9250": {
         "path": "ic/sensor",
-        "footprint": "QFN-24-EP-IS",
+        "footprint": "QFN-24-EP-MPU9250",
         "datasheet": "http://43zrtwysvxb2gf29r5o0athu.wpengine.netdna-cdn.com"
                      "/wp-content/uploads/2015/02/MPU-9250-Datasheet.pdf",
         "ordercodes": {

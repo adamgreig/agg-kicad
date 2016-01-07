@@ -189,6 +189,20 @@ config = {
         "pin_shape": (-.50, 0.30),
     },
 
+    # QFN-24 from MPU-9250 datasheet
+    # For MPU-9250
+    # IPC-7351B: QFN40P300X300X100-24N
+    "QFN-28-EP-MPU9250": {
+        "rows": 4,
+        "pins": 24,
+        "pin_pitch": 0.4,
+        "row_pitch": 2.9,
+        "pad_shape": (0.5, 0.2),
+        "ep_shape": (1.7, 1.54),
+        "chip_shape": (3.0, 3.0),
+        "pin_shape": (-0.3, 0.2),
+    },
+
     # DFN-10 from JEDEC MO-229WEED-2
     # For LTC3105 / LT package DD
     # IPC-7351B: DFN50P300X300X75-11N
