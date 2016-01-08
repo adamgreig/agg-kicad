@@ -134,6 +134,14 @@ config = {
         "chip_shape": (5.0, 3.2),
         "pin_shape": (-1.3, 2.0),
     },
+
+    # Panasonic ELL-VGG Inductor
+    "ELLVGG": {
+        "pad_shape": (1.4, 3.2),
+        "pitch": 2.0,
+        "chip_shape": (3, 3),
+        "pin_shape": (-1.1, 3),
+    },
 }
 
 # Other constants =============================================================
