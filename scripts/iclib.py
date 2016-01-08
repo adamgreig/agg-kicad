@@ -814,6 +814,41 @@ config = {
             ],
         ],
     },
+
+    # LTC3535 Dual DC-DC Converter
+    "LTC3535": {
+        "path": "ic/power",
+        "footprint": "DFN-12-EP-LT",
+        "datasheet": "http://cds.linear.com/docs/en/datasheet/3535fa.pdf",
+        "ordercodes": {
+            "Farnell": "1947922",
+        },
+        "description": "LTC3535 Dual DC-DC Converter",
+        "pins": [
+            [
+                [
+                    ("VIN1", 10, "pwrin"),
+                    ("SW1", 2, "passive"),
+                    ("~SHDN1", 11, "in"),
+                ], [
+                    ("VIN2", 7, "pwrin"),
+                    ("SW2", 5, "passive"),
+                    ("~SHDN2", 8, "in"),
+                ], [
+                    ("GND", 6, "pwrin"),
+                    ("GND", 3, "pwrin"),
+                ]
+            ], [
+                [
+                    ("VOUT1", 1, "pwrout"),
+                    ("FB1", 12, "in"),
+                ], [
+                    ("VOUT2", 4, "pwrout"),
+                    ("FB2", 9, "in"),
+                ],
+            ]
+        ],
+    },
 }
 
 # Other Constants =============================================================

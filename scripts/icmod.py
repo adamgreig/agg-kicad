@@ -218,6 +218,21 @@ config = {
         "pin_shape": (-0.40, 0.30),
     },
 
+    # DFN-12
+    # For LTC3535 / LT package DD
+    # IPC-7351B: DFN45P300X300X75-13N
+    "DFN-12-EP-LT": {
+        "rows": 2,
+        "pins": 12,
+        "pin_pitch": 0.45,
+        "row_pitch": 2.8,
+        "pad_shape": (0.70, 0.25),
+        "ep_shape": (1.65, 2.38),
+        "ep_paste_shape": (1.2, 0.8, 0, 0.4),
+        "chip_shape": (3.1, 3.1),
+        "pin_shape": (-0.40, 0.23),
+    },
+
     # LPCC-16 for HMC5883L
     "LPCC-16-HMC5883L": {
         "rows": 4,
