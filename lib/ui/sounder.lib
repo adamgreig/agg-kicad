@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# SOUNDER
+#
+DEF SOUNDER LS 0 0 Y N 1 F N
+F0 "LS" 0 85 50 H V C CNN
+F1 "SOUNDER" 0 -100 50 H V C CNN
+F2 "" 0 20 50 H I C CNN
+F3 "" 0 20 50 H I C CNN
+DRAW
+S -25 -5 25 20 0 1 0 F
+P 4 0 1 0  -25 20  -50 45  50 45  25 20 F
+X ~ 1 -100 0 80 R 50 50 1 1 P
+X ~ 2 100 0 80 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
