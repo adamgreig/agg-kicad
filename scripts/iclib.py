@@ -837,6 +837,7 @@ config = {
                 ], [
                     ("GND", 6, "pwrin"),
                     ("GND", 3, "pwrin"),
+                    ("GND", "EP", "pwrin"),
                 ]
             ], [
                 [
