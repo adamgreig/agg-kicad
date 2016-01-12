@@ -71,7 +71,7 @@ def main(libpath):
     f.write("# See github.com/adamgreig/agg-kicad\n")
     f.write("#=====================================================\n\n")
 
-    for pincount in range(1, 11):
+    for pincount in range(1, 17):
         onerow(f, pincount)
         tworow(f, pincount)
 
