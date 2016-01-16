@@ -192,13 +192,12 @@ config = {
     # QFN-24 from MPU-9250 datasheet
     # For MPU-9250
     # IPC-7351B: QFN40P300X300X100-24N
-    "QFN-24-EP-MPU9250": {
+    "QFN-24-MPU9250": {
         "rows": 4,
         "pins": 24,
         "pin_pitch": 0.4,
         "row_pitch": 3.0,
         "pad_shape": (0.4, 0.2),
-        "ep_shape": (1.7, 1.54),
         "chip_shape": (3.0, 3.0),
         "pin_shape": (-0.3, 0.2),
     },
