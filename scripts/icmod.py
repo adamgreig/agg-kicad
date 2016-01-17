@@ -467,6 +467,7 @@ def exposed_pad(conf):
         for c in centres:
             p = pad("EP", "thru_hole", "circle", c, (v_s, v_s), layers,
                     drill=v_d)
+            p.append(("zone_connect", 2))
             out.append(p)
 
     out.append(
