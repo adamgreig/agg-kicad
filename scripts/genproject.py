@@ -12,8 +12,6 @@ import os
 import fnmatch
 import datetime
 
-EXCLUSIONS = ("agg-kicad.lib",)
-
 tpl = """update={date}
 version=1
 last_client=kicad
@@ -48,27 +46,50 @@ LibDir=
 """
 
 
-def main(libpath, prjpath):
+def makeprj(libpath):
     prj = tpl.format(
         date=datetime.datetime.utcnow().strftime("%a %d %b %Y %H:%M:%S GMT"))
     count = 1
     for dirpath, dirnames, files in os.walk(libpath):
         dirnames.sort()
         for f in fnmatch.filter(sorted(files), "*.lib"):
-            if f not in EXCLUSIONS:
-                path = os.path.splitext(os.path.join(dirpath, f))[0]
-                prj += "LibName{}={}\n".format(count, path)
-                count += 1
+            path = os.path.splitext(os.path.join(dirpath, f))[0]
+            prj += "LibName{}={}\n".format(count, path)
+            count += 1
+    return prj
 
+
+def writeprj(libpath, prjpath):
+    prj = makeprj(libpath)
     with open(prjpath, "w") as f:
         f.write(prj)
 
 
+def checkprj(libpath, prjpath):
+    prj = makeprj(libpath).splitlines()
+    with open(prjpath, "r") as f:
+        oldprj = f.read().splitlines()
+    return prj[1:] == oldprj[1:]
+
+
 if __name__ == "__main__":
-    if len(sys.argv) == 3:
+    if len(sys.argv) in (3, 4):
         libpath = sys.argv[1]
         prjpath = sys.argv[2]
-        main(libpath, prjpath)
+        if len(sys.argv) == 3:
+            writeprj(libpath, prjpath)
+        elif len(sys.argv) == 4 and sys.argv[3] == "--verify":
+            if checkprj(libpath, prjpath):
+                print("OK: '{}' is up-to-date with '{}'."
+                      .format(prjpath, libpath))
+                sys.exit(0)
+            else:
+                print("Error: '{}' is not up-to-date with '{}'."
+                      .format(prjpath, libpath), file=sys.stderr)
+                print("Please run genproject.py to regenerate.",
+                      file=sys.stderr)
+                sys.exit(1)
     else:
-        print("Usage: {} <lib dir path>".format(sys.argv[0]))
+        print("Usage: {} <lib dir path> <.pro file path> [--verify]"
+              .format(sys.argv[0]))
         sys.exit(1)

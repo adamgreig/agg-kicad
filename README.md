@@ -32,6 +32,13 @@ conventions in `agg.pretty/README.md`, based on the KiCAD project conventions.
 
 See the README in the scripts folder for detailed information on each script.
 
+## Makefile
+
+You can use the Makefile to regenerate all automatically-generated files with 
+`make build`, and to run all the automatic checks with `make check`. Travis-CI 
+is configured to run `make check` to report on build status, and there is a
+`pre-commit` hook in `scripts/` to run `check` locally.
+
 ## Licence
 
 Until a reasonable level of stability is reached, this library is "all rights 
