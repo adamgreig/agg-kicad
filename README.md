@@ -10,7 +10,7 @@ and related files.
 To use, add relevant `.lib` files to your project libraries. There is one 
 `.lib` file per symbol.
 
-Alternatively add `agg-kicad.lib` from the `lib` directory, which includes all 
+Alternatively add `agg-kicad.lib` from the root directory, which includes all 
 symbols. This file is built using `scripts/compilelib.py` and kept up-to-date 
 automatically.
 
