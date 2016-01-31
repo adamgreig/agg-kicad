@@ -5,7 +5,7 @@
   Regulator](http://www.analog.com/en/products/power-management/linear-regulators/adp3335.html)
 * Use Farnell 2067775 for 3.3v version
 * Pricey but basically good
-* Used with MSOP8 footprint on Supervide and M2FC successfully
+* Used with MSOP-8 footprint on Supervide and M2FC successfully
 
 ### ADP3338
 * [High current LDO 
