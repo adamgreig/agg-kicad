@@ -40,22 +40,19 @@ different names, such as `VCC`, `VDD`, `3v3`, `GND`, `DGND`, etc.
 This script checks all the `.lib` files in a directory and validates that they 
 conform to as many of the rules as can reasonably be automatically checked.
 
-The top of the file includes a list of library files to skip, which is set to 
-the automatically-generated files that will contain presumably-valid symbols 
-(but typically also many symbols, such as the compiled and connector 
-libraries).
+The top of the file includes a list of library files that are automatically 
+generated, which may include more than one part per library.
 
 Some exceptions can be enabled inside a library file, for example 
-`#invisiblename` for parts where the name is allowed to be invisible.
+`#invisiblename` for parts where the name is allowed to be invisible and 
+`#invisiblereference` where the reference may be invisible.
 
 `python3 libcheck.py ../lib`
 
 ## pre-commit
 
 This script is a Git hook that should be placed in `.git/hooks`. Whenever you 
-commit it will check all the library files in `lib/` with `libcheck.py`, and 
-all the footprints in `agg.pretty/` with `modcheck.py`, and stop the commit if 
-any errors are found.
+commit it will run `make check` and stop the commit if any errors are found.
 
 ## post-commit
 
