@@ -146,7 +146,7 @@ config = {
         "row_pitch": 6.75,
         "pad_shape": (0.55, 0.30),
         "ep_shape": (5.6, 5.6),
-        "ep_paste_shape": (2.0, 2.0, 0.5, 0.5),
+        "ep_paste_shape": (1.0, 1.0, 1.5, 1.5),
         "ep_mask_shape": (2.0, 2.0, 0.5, 0.5),
         "ep_vias": (0.4, 0.6, 1.9),
         "chip_shape": (7.1, 7.1),
