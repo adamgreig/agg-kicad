@@ -1,9 +1,11 @@
 """
-modreport.py
+report_mod.py
 Copyright 2015 Adam Greig
 
 Generate a report of all available footprints.
 """
+
+from __future__ import print_function, division
 
 import sys
 import os

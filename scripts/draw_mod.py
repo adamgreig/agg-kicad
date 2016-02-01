@@ -1,9 +1,11 @@
 """
-moddraw.py
+draw_mod.py
 Copyright 2015 Adam Greig
 
 Render a .kicad_mod file to a PNG.
 """
+
+from __future__ import print_function, division
 
 import sys
 import math

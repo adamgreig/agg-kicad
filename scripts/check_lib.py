@@ -1,11 +1,11 @@
 """
-libcheck.py
+check_lib.py
 Copyright 2015 Adam Greig
 
 Check all library files in a directory against a set of consistency rules.
 """
 
-from __future__ import print_function
+from __future__ import print_function, division
 
 import sys
 import os

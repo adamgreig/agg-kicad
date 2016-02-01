@@ -1,9 +1,11 @@
 """
-jstpamod.py
+build_mod_jstpa.py
 Copyright 2016 Adam Greig
 
 Generate footprints for JST-PA connectors.
 """
+
+from __future__ import print_function, division
 
 # Settings ====================================================================
 
@@ -319,7 +321,7 @@ def side_smd_fp(pins):
     return name, sexp_generate(sexp)
 
 
-def main(prettypath):
+def main(prettypath, verify=False):
     for pins in range(2, 9):
         for generator in (top_pth_fp, side_pth_fp, side_smd_fp):
             # Generate the footprint
@@ -335,14 +337,29 @@ def main(prettypath):
                 if new == old:
                     continue
 
-            # Write the new file
-            with open(path, "w") as f:
-                f.write(fp)
+            # If not, either verification failed or we should output the new fp
+            if verify:
+                return False
+            else:
+                with open(path, "w") as f:
+                    f.write(fp)
+
+    # If we finished and didn't return yet, verification has succeeded
+    if verify:
+        return True
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
         prettypath = sys.argv[1]
         main(prettypath)
+    elif len(sys.argv) == 3 and sys.argv[2] == "--verify":
+        prettypath = sys.argv[1]
+        if main(prettypath, verify=True):
+            print("OK: all footprints up-to-date.")
+            sys.exit(0)
+        else:
+            print("Error: footprints not up-to-date.", file=sys.stderr)
+            sys.exit(1)
     else:
         print("Usage: {} <.pretty path>".format(sys.argv[0]))
         sys.exit(0)

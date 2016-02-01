@@ -1,12 +1,12 @@
 """
-genproject.py
+compile_pro.py
 Copyright 2015 Adam Greig
 
 Generate a kicad .pro project file containing all the libraries in a given
 directory and otherwise empty.
 """
 
-from __future__ import print_function
+from __future__ import print_function, division
 import sys
 import os
 import fnmatch

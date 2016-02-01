@@ -5,6 +5,8 @@ Copyright 2015 Adam Greig
 S-Expression parser/emitter
 """
 
+from __future__ import print_function, division
+
 import re
 from decimal import Decimal
 

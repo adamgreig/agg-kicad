@@ -1,45 +1,75 @@
-all: check build
+all: build
 
-build: genproject compilelib build-libs build-mods
+build: build-libs build-mods
 
-build-libs: connectorlib iclib powerlib
+build-libs: build-lib-connector build-lib-ic build-lib-power
 
-build-mods: chipmod icmod jstpamod
+build-mods: build-mod-chip build-mod-ic build-mod-jstpa
 
-check: libcheck modcheck genproject-verify compilelib-verify
+build-verify: verify-libs verify-mods
 
-genproject:
-	python scripts/genproject.py lib/ agg-kicad.pro
+verify-libs: verify-lib-connector verify-lib-ic verify-lib-power
 
-compilelib:
-	python scripts/compilelib.py lib/ agg-kicad.lib
+verify-mods: verify-mod-chip verify-mod-ic verify-mod-jstpa
 
-connectorlib:
-	python scripts/connectorlib.py lib/connector/conn.lib
+compile: compile-lib compile-pro
 
-iclib:
-	python scripts/iclib.py lib/
+compile-verify: verify-lib verify-pro
 
-powerlib:
-	python scripts/powerlib.py lib/power/power.lib
+check: check-lib check-mod
 
-chipmod:
-	python scripts/chipmod.py agg.pretty/
+verify: build-verify compile-verify
 
-icmod:
-	python scripts/icmod.py agg.pretty/
+build-lib-connector:
+	python scripts/build_lib_connector.py lib/connector/conn.lib
 
-jstpamod:
-	python scripts/jstpamod.py agg.pretty/
+verify-lib-connector:
+	python scripts/build_lib_connector.py lib/connector/conn.lib --verify
 
-libcheck:
-	python scripts/libcheck.py lib/
+build-lib-ic:
+	python scripts/build_lib_ic.py lib/
 
-modcheck:
-	python scripts/modcheck.py agg.pretty/
+verify-lib-ic:
+	python scripts/build_lib_ic.py lib/ --verify
 
-genproject-verify:
-	python scripts/genproject.py lib/ agg-kicad.pro --verify
+build-lib-power:
+	python scripts/build_lib_power.py lib/power/power.lib
 
-compilelib-verify:
-	python scripts/compilelib.py lib/ agg-kicad.lib --verify
+verify-lib-power:
+	python scripts/build_lib_power.py lib/power/power.lib --verify
+
+build-mod-chip:
+	python scripts/build_mod_chip.py agg.pretty/
+
+verify-mod-chip:
+	python scripts/build_mod_chip.py agg.pretty/ --verify
+
+build-mod-ic:
+	python scripts/build_mod_ic.py agg.pretty/
+
+verify-mod-ic:
+	python scripts/build_mod_ic.py agg.pretty/ --verify
+
+build-mod-jstpa:
+	python scripts/build_mod_jstpa.py agg.pretty/
+
+verify-mod-jstpa:
+	python scripts/build_mod_jstpa.py agg.pretty/ --verify
+
+compile-lib:
+	python scripts/compile_lib.py lib/ agg-kicad.lib
+
+verify-lib:
+	python scripts/compile_lib.py lib/ agg-kicad.lib --verify
+
+compile-pro:
+	python scripts/compile_pro.py pro/ agg-kicad.pro
+
+verify-pro:
+	python scripts/compile_pro.py pro/ agg-kicad.pro --verify
+
+check-lib:
+	python scripts/check_lib.py lib/
+
+check-mod:
+	python scripts/check_mod.py agg.pretty/

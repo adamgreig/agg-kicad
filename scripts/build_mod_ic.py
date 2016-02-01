@@ -1,5 +1,5 @@
 """
-icmod.py
+build_mod_ic.py
 Copyright 2015 Adam Greig
 
 Create a range of dual and quad SMD IC packages.
@@ -8,6 +8,8 @@ TODO:
     * Support non-square 4-row packages
     * Support other pad shapes, e.g. oval/half-oval
 """
+
+from __future__ import print_function, division
 
 # Package configuration =======================================================
 # Dictionary of dictionaries.
@@ -726,9 +728,7 @@ def git_version(libpath):
     return git.stdout.read().decode().strip()
 
 
-def main(prettypath):
-    # TODO imbed version and timestamp somehow
-    # version = git_version(prettypath)
+def main(prettypath, verify=False):
     for name, conf in config.items():
         conf['name'] = name
         assert conf['rows'] in (2, 4), \
@@ -738,25 +738,39 @@ def main(prettypath):
         fp = footprint(conf)
         path = os.path.join(prettypath, name+".kicad_mod")
 
-        # Check if we've changed anything except the timestamp,
-        # and skip updating if we haven't.
+        # Check if an identical part already exists
         if os.path.isfile(path):
             with open(path) as f:
                 old = f.read()
             old = [n for n in sexp_parse(old) if n[0] != "tedit"]
             new = [n for n in sexp_parse(fp) if n[0] != "tedit"]
-            if new != old:
-                with open(path, "w") as f:
-                    f.write(fp)
+            if new == old:
+                continue
+
+        # If not, either verification failed or we should output the new fp
+        if verify:
+            return False
         else:
             with open(path, "w") as f:
                 f.write(fp)
 
+    # If we finished and didn't return yet, verification has succeeded.
+    if verify:
+        return True
+
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: {} <.pretty path>".format(sys.argv[0]))
-        sys.exit(1)
-    else:
+    if len(sys.argv) == 2:
         prettypath = sys.argv[1]
         main(prettypath)
+    elif len(sys.argv) == 3 and sys.argv[2] == "--verify":
+        prettypath = sys.argv[1]
+        if main(prettypath, verify=True):
+            print("OK: all footprints up-to-date.")
+            sys.exit(0)
+        else:
+            print("Error: footprints not up-to-date.", file=sys.stderr)
+            sys.exit(1)
+    else:
+        print("Usage: {} <.pretty path> [--verify]".format(sys.argv[0]))
+        sys.exit(1)

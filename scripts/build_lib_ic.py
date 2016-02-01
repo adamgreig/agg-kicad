@@ -1,9 +1,11 @@
 """
-iclib.py
+build_lib_ic.py
 Copyright 2016 Adam Greig
 
 Generate symbols for generic black-box ICs etc.
 """
+
+from __future__ import print_function, division
 
 # Symbols configuration =======================================================
 # Dictionary of dictionaries.
@@ -13,7 +15,7 @@ Generate symbols for generic black-box ICs etc.
 # designator: optional, default "IC", the default reference designator
 # footprint: optional, an associated footprint to autofill
 # datasheet: optional, a URL or path to a datasheet
-# ordercodes: optional, dict of supplier:code for supplier order codes
+# ordercodes: optional, list of (supplier, code) for supplier order codes
 # description: description of the part, placed in the .dcm file
 # pins: list of lists of left and right pin groups
 #           (blocks of related pins with a space in-between).
@@ -34,9 +36,7 @@ config = {
         "footprint": "agg:QFN-48-EP-ST",
         "datasheet": "http://www.st.com/st-web-ui/static/active/en"
                      "/resource/technical/document/datasheet/CD00161566.pdf",
-        "ordercodes": {
-            "Farnell": "2060891",
-        },
+        "ordercodes": [("Farnell", "2060891")],
         "description": "STM32F1 48 pin UFQFPN package",
         "pins": [
             [
@@ -111,9 +111,7 @@ config = {
         "footprint": "agg:LQFP-48",
         "datasheet": "http://www.st.com/st-web-ui/static/active/en"
                      "/resource/technical/document/datasheet/DM00090510.pdf",
-        "ordercodes": {
-            "Farnell": "2432094",
-        },
+        "ordercodes": [("Farnell", "2432094")],
         "description": "STM32F0 48 pin LQFP package",
         "pins": [
             [
@@ -187,9 +185,7 @@ config = {
         "footprint": "agg:BGA-64-P05-ST",
         "datasheet": "http://www.st.com/st-web-ui/static/active/en"
                      "/resource/technical/document/datasheet/DM00115237.pdf",
-        "ordercodes": {
-            "Farnell": "2503242",
-        },
+        "ordercodes": [("Farnell", "2503242")],
         "description": "STM32F0 64 pin UFBGA package",
         "pins": [
             [
@@ -281,9 +277,7 @@ config = {
         "footprint": "agg:LQFP-48",
         "datasheet": "http://www.st.com/st-web-ui/static/active/en"
                      "/resource/technical/document/datasheet/DM00058181.pdf",
-        "ordercodes": {
-            "Farnell": "2333254",
-        },
+        "ordercodes": [("Farnell", "2333254")],
         "description": "STM32F3 48 pin LQFP package",
         "pins": [
             [
@@ -357,9 +351,7 @@ config = {
         "footprint": "agg:LQFP-100",
         "datasheet": "http://www.st.com/st-web-ui/static/active/en"
                      "/resource/technical/document/datasheet/DM00037051.pdf",
-        "ordercodes": {
-            "Farnell": "2215224",
-        },
+        "ordercodes": [("Farnell", "2215224")],
         "description": "STM32F4 100 pin LQFP package",
         "pins": [
             [
@@ -491,9 +483,7 @@ config = {
         "footprint": "agg:WLCSP72",
         "datasheet": "http://www.st.com/st-web-ui/static/active/en"
                      "/resource/technical/document/datasheet/DM00108833.pdf",
-        "ordercodes": {
-            "Farnell": "2503302",
-        },
+        "ordercodes": [("Farnell", "2503302")],
         "description": "STM32L4 72 pin WLCSP package",
         "pins": [
             [
@@ -595,9 +585,7 @@ config = {
         "footprint": "agg:BGA-144-08P-ST",
         "datasheet": "http://www.st.com/st-web-ui/static/active/en"
                      "/resource/technical/document/datasheet/DM00141306.pdf",
-        "ordercodes": {
-            "Farnell": "2488316",
-        },
+        "ordercodes": [("Farnell", "2488316")],
         "description": "STM32F4 144 pin 10x10 UFBGA package",
         "pins": [
             [
@@ -771,10 +759,10 @@ config = {
         "footprint": "QFN-24-EP-MPU9250",
         "datasheet": "http://43zrtwysvxb2gf29r5o0athu.wpengine.netdna-cdn.com"
                      "/wp-content/uploads/2015/02/MPU-9250-Datasheet.pdf",
-        "ordercodes": {
-            "RS": "883-7942",
-            "DigiKey": "1428-1019-1-ND",
-        },
+        "ordercodes": [
+            ("RS", "883-7942"),
+            ("DigiKey", "1428-1019-1-ND"),
+        ],
         "description": "MPU-9250 9DoF IMU from InvenSense",
         "pins": [
             [
@@ -820,9 +808,7 @@ config = {
         "path": "ic/power",
         "footprint": "DFN-12-EP-LT",
         "datasheet": "http://cds.linear.com/docs/en/datasheet/3535fa.pdf",
-        "ordercodes": {
-            "Farnell": "1947922",
-        },
+        "ordercodes": [("Farnell", "1947922")],
         "description": "LTC3535 Dual DC-DC Converter",
         "pins": [
             [
@@ -937,7 +923,7 @@ def fields(conf):
         out.append("F3 \"\" {} {} 50 H I L CNN".format(field_x, -field_y-200))
 
     # Order codes
-    for idx, (supplier, code) in enumerate(conf.get("ordercodes", {}).items()):
+    for idx, (supplier, code) in enumerate(conf.get("ordercodes", [])):
         out.append("F{} \"{}\" {} {} 50 H I L CNN \"{}\"".format(
             idx+4, code, field_x, -field_y-(300+idx*100), supplier))
 
@@ -1001,7 +987,7 @@ def documentation(conf):
     return "\n".join(out)
 
 
-def main(libpath):
+def main(libpath, verify=False):
     for name, conf in config.items():
         conf['name'] = name
         path = os.path.join(libpath, conf.get("path", ""), name.lower()+".lib")
@@ -1017,22 +1003,35 @@ def main(libpath):
             if os.path.isfile(dcmpath):
                 with open(dcmpath) as f:
                     olddcm = f.read()
-            else:
-                olddcm = ""
-            if lib == oldlib and dcm == olddcm:
-                continue
+                if lib == oldlib and dcm == olddcm:
+                    continue
 
-        # If we've made changes, write them
-        with open(path, "w") as f:
-            f.write(lib)
-        with open(dcmpath, "w") as f:
-            f.write(dcm)
+        # If so, either verification failed or write the new files
+        if verify:
+            return False
+        else:
+            with open(path, "w") as f:
+                f.write(lib)
+            with open(dcmpath, "w") as f:
+                f.write(dcm)
+
+    # If we finished and didn't return yet, verification has succeeded
+    if verify:
+        return True
 
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
         libpath = sys.argv[1]
         main(libpath)
+    elif len(sys.argv) == 3 and sys.argv[2] == "--verify":
+        libpath = sys.argv[1]
+        if main(libpath, verify=True):
+            print("OK: all libs up-to-date.")
+            sys.exit(0)
+        else:
+            print("Error: libs not up-to-date.", file=sys.stderr)
+            sys.exit(1)
     else:
         print("Usage: {} <lib path>".format(sys.argv[0]))
         sys.exit(1)

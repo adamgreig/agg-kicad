@@ -5,6 +5,17 @@ Copyright 2015 Adam Greig
 Helper functions for generating KiCAD footprint files.
 """
 
+from __future__ import print_function, division
+
+CTYD_GAP = 0.25
+CTYD_GRID = 0.05
+CTYD_WIDTH = 0.01
+SILK_WIDTH = 0.15
+FAB_WIDTH = 0.01
+FONT_SIZE = (1.0, 1.0)
+FONT_THICKNESS = 0.15
+FONT_HALFHEIGHT = 0.7
+
 
 def fp_line(start, end, layer, width):
     return ["fp_line",

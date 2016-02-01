@@ -7,7 +7,7 @@ Convert Farnell BOM XMLs to a useful text report, including sanity checking,
 and outputting quickpaste formats for Farnell, RS and DigiKey.
 """
 
-from __future__ import print_function
+from __future__ import print_function, division
 import sys
 import os.path
 import datetime

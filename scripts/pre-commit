@@ -6,3 +6,11 @@ then
     echo "Error: 'make check' found errors, please fix and retry."
     exit 1
 fi
+
+make build-verify >/dev/null
+
+if [ $? -ne 0 ]
+then
+    echo "Error: 'make verify' found outdated files, please fix and retry."
+    exit 1
+fi

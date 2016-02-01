@@ -1,9 +1,10 @@
 #!/bin/bash
-python scripts/compilelib.py lib/ agg-kicad.lib --verify > /dev/null 2>&1
+make compile-verify
 if [ $? -ne 0 ]
 then
-    echo "Note: recompiled agg-kicad.lib and committed."
-    python scripts/compilelib.py lib/ agg-kicad.lib
+    echo "Note: Compiled files outdated, recompiling and committing."
+    make compile
     git add agg-kicad.lib
-    git commit -m "Rebuild agg-kicad.lib"
+    git add agg-kicad.pro
+    git commit -m "Rebuild compiled files"
 fi

@@ -1,11 +1,11 @@
 """
-modcheck.py
+check_mod.py
 Copyright 2015 Adam Greig
 
 Check all footprint files in a directory against a set of consistency fules.
 """
 
-from __future__ import print_function
+from __future__ import print_function, division
 
 import sys
 import os
