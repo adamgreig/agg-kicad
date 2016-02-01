@@ -1,5 +1,5 @@
 #!/bin/bash
-make compile-verify
+make compile-verify > /dev/null
 if [ $? -ne 0 ]
 then
     echo "Note: Compiled files outdated, recompiling and committing."
