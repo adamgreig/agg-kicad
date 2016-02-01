@@ -69,6 +69,17 @@ def side_pth_refs(name):
     return out
 
 
+def top_smd_refs(name):
+    out = []
+    ctyd_h = 3.0 + 5.0 + 2 * ctyd_gap
+    y = ctyd_h / 2.0 + font_halfheight
+    out.append(fp_text("reference", "REF**", (0, -y+2.50),
+               "F.Fab", font_size, font_thickness))
+    out.append(fp_text("value", name, (0, y+2.50),
+               "F.Fab", font_size, font_thickness))
+    return out
+
+
 def side_smd_refs(name):
     out = []
     ctyd_h = 3.0 + 7.8 + 2*ctyd_gap
@@ -80,7 +91,7 @@ def side_smd_refs(name):
     return out
 
 
-def pads_pth(pins):
+def pth_pads(pins):
     x = pins - 1
     pads = []
     for pin in range(pins):
@@ -90,11 +101,21 @@ def pads_pth(pins):
     return pads
 
 
-def pads_smd(pins):
+def top_smd_pads(pins):
     x = pins - 1
     pads = []
     for pin in range(pins):
-        pads.append(pad(pin+1, "smd", "rect", (x, 1.5-0.15), [1, 3],
+        pads.append(pad(pin+1, "smd", "rect", (x, 0), [1, 3.0],
+                        ["F.Cu", "F.Mask", "F.Paste"]))
+        x -= 2
+    return pads
+
+
+def side_smd_pads(pins):
+    x = pins - 1
+    pads = []
+    for pin in range(pins):
+        pads.append(pad(pin+1, "smd", "rect", (x, 1.5-0.15), [1, 2.7+2*0.15],
                         ["F.Cu", "F.Mask", "F.Paste"]))
         x -= 2
     return pads
@@ -119,16 +140,21 @@ def side_pth_mount(pins):
     ]
 
 
+def top_smd_mount(pins):
+    out = []
+    x = pins - 1
+    for xx in (x+2.35, -x-2.35):
+        out.append(pad("", "smd", "rect", (xx, 4.7), (1.8, 3.6),
+                       ["F.Cu", "F.Mask", "F.Paste"]))
+    return out
+
+
 def side_smd_mount(pins):
     out = []
     x = pins - 1
     for xx in (x+2.35, -x-2.35):
         out.append(pad("", "smd", "rect", (xx, -3.25), (1.8, 3.8),
                        ["F.Cu", "F.Mask", "F.Paste"]))
-    out.append(pad("", "np_thru_hole", "circle", (x+2.2, 0), (.9, .9),
-                   ["*.Mask"], drill=0.9))
-    out.append(pad("", "np_thru_hole", "oval", (-x-2.2, 0), (1.9, 0.9),
-                   ["*.Mask"], drill=("oval", 1.9, 0.9)))
     return out
 
 
@@ -152,11 +178,27 @@ def side_pth_silk(pins):
     return out
 
 
+def top_smd_silk(pins):
+    out = []
+    w = silk_width
+    l = "F.SilkS"
+    nw, ne, se, sw, _ = draw_square(2*pins+4, 5.7, (0, 3.35), l, w)
+    # Top left corner
+    out.append(fp_line((nw[0], nw[1]+2.4), (nw[0], nw[1]), l, w))
+    out.append(fp_line((nw[0], nw[1]), (nw[0]+2.3, nw[1]), l, w))
+    # Top right corner
+    out.append(fp_line((ne[0], ne[1]+2.4), (ne[0], ne[1]), l, w))
+    out.append(fp_line((ne[0], ne[1]), (ne[0]-2.3, ne[1]), l, w))
+    # Bottom
+    out.append(fp_line((sw[0]+1.8, sw[1]), (se[0]-1.8, se[1]), l, w))
+    return out
+
+
 def side_smd_silk(pins):
     out = []
     w = silk_width
     l = "F.SilkS"
-    nw, ne, se, sw, sq = draw_square(2*(pins-1)+6, 8.9, (0, -3.5), l, w)
+    nw, ne, se, sw, _ = draw_square(2*pins+4, 8.9, (0, -3.5), l, w)
     out.append(fp_line(nw, (nw[0]+3, nw[1]), l, w))
     out.append(fp_line((nw[0]+3, nw[1]), (nw[0]+3, nw[1]+1.4), l, w))
     out.append(fp_line((nw[0]+3, nw[1]+1.4), (ne[0]-3, ne[1]+1.4), l, w))
@@ -226,12 +268,30 @@ def side_pth_fab(pins):
     return out
 
 
+def top_smd_fab(pins):
+    out = []
+    w = fab_width
+
+    # Outline
+    _, _, _, _, sq = draw_square(2*pins+4, 5.7, (0, 3.35), "F.Fab", w)
+    out += sq
+
+    # Pins
+    x = pins - 1
+    for pin in range(pins):
+        _, _, _, _, sq = draw_square(0.5, 2.5, (x, -0), "F.Fab", w)
+        out += sq
+        x -= 2
+
+    return out
+
+
 def side_smd_fab(pins):
     out = []
     w = fab_width
 
     # Draw outline
-    nw, ne, se, sw, sq = draw_square(2*(pins-1)+6, 8.9, (0, -3.5), "F.Fab", w)
+    nw, ne, se, sw, sq = draw_square(2*pins+4, 8.9, (0, -3.5), "F.Fab", w)
     out.append(fp_line(nw, (nw[0]+3, nw[1]), "F.Fab", w))
     out.append(fp_line((nw[0]+3, nw[1]), (nw[0]+3, nw[1]+1.4), "F.Fab", w))
     out.append(fp_line((nw[0]+3, nw[1]+1.4), (ne[0]-3, ne[1]+1.4), "F.Fab", w))
@@ -271,6 +331,17 @@ def side_pth_ctyd(pins):
     return sq
 
 
+def top_smd_ctyd(pins):
+    w = 2 * (pins - 1 + 1.45 + 1.8 + ctyd_gap)
+    h = 3.0 + 5.0 + 2 * ctyd_gap
+    grid = 2 * ctyd_grid
+    w = grid * int(math.ceil(w / (2*ctyd_grid)))
+    h = grid * int(math.ceil(h / (2*ctyd_grid)))
+    centre = (0, 2.50)
+    _, _, _, _, sq = draw_square(w, h, centre, "F.CrtYd", ctyd_width)
+    return sq
+
+
 def side_smd_ctyd(pins):
     w = 2 * (pins - 1 + 1.45 + 1.8 + ctyd_gap)
     h = 3.0 + 7.8 + 2*ctyd_gap
@@ -291,7 +362,7 @@ def top_pth_fp(pins):
     sexp += top_pth_fab(pins)
     sexp += top_pth_ctyd(pins)
     sexp += top_pth_mount(pins)
-    sexp += pads_pth(pins)
+    sexp += pth_pads(pins)
     return name, sexp_generate(sexp)
 
 
@@ -304,7 +375,20 @@ def side_pth_fp(pins):
     sexp += side_pth_fab(pins)
     sexp += side_pth_ctyd(pins)
     sexp += side_pth_mount(pins)
-    sexp += pads_pth(pins)
+    sexp += pth_pads(pins)
+    return name, sexp_generate(sexp)
+
+
+def top_smd_fp(pins):
+    name = "BM{:02d}B-PASS".format(pins)
+    tedit = format(int(time.time()), 'X')
+    sexp = ["module", name, ("layer", "F.Cu"), ("tedit", tedit)]
+    sexp += top_smd_refs(name)
+    sexp += top_smd_silk(pins)
+    sexp += top_smd_fab(pins)
+    sexp += top_smd_ctyd(pins)
+    sexp += top_smd_mount(pins)
+    sexp += top_smd_pads(pins)
     return name, sexp_generate(sexp)
 
 
@@ -317,13 +401,13 @@ def side_smd_fp(pins):
     sexp += side_smd_fab(pins)
     sexp += side_smd_ctyd(pins)
     sexp += side_smd_mount(pins)
-    sexp += pads_smd(pins)
+    sexp += side_smd_pads(pins)
     return name, sexp_generate(sexp)
 
 
 def main(prettypath, verify=False):
     for pins in range(2, 9):
-        for generator in (top_pth_fp, side_pth_fp, side_smd_fp):
+        for generator in (top_pth_fp, side_pth_fp, top_smd_fp, side_smd_fp):
             # Generate the footprint
             name, fp = generator(pins)
             path = os.path.join(prettypath, name + ".kicad_mod")

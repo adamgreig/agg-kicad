@@ -1,7 +1,7 @@
 
 (module "SM03B-PASS" 
   (layer F.Cu) 
-  (tedit 5688CAC8) 
+  (tedit 56AEDC68) 
   (fp_text reference REF** 
     (at 0 -8.9000) 
     (layer F.Fab) 
@@ -199,25 +199,15 @@
     (at -4.3500 -3.2500) 
     (size 1.8000 3.8000) 
     (layers F.Cu F.Mask F.Paste)) 
-  (pad "" np_thru_hole circle 
-    (at 4.2000 0) 
-    (size 0.9000 0.9000) 
-    (layers *.Mask) 
-    (drill 0.9000)) 
-  (pad "" np_thru_hole oval 
-    (at -4.2000 0) 
-    (size 1.9000 0.9000) 
-    (layers *.Mask) 
-    (drill oval 1.9000 0.9000)) 
   (pad 1 smd rect 
     (at 2 1.3500) 
-    (size 1 3) 
+    (size 1 3.0000) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 2 smd rect 
     (at 0 1.3500) 
-    (size 1 3) 
+    (size 1 3.0000) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 3 smd rect 
     (at -2 1.3500) 
-    (size 1 3) 
+    (size 1 3.0000) 
     (layers F.Cu F.Mask F.Paste)))
