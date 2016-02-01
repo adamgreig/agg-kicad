@@ -19,6 +19,8 @@ def onerow(pincount):
     out.append('F0 "J" -50 100 50 H V L CNN')
     name_y = -pincount * 100
     out.append('F1 "{}" -50 {} 50 H V L CNN'.format(name, name_y))
+    out.append('F2 "" 0 0 50 H I C CNN')
+    out.append('F3 "" 0 0 50 H I C CNN')
     out.append('DRAW')
     box_y = -(((pincount - 1) * 100) + 50)
     out.append('S 0 50 -50 {} 0 1 0 f'.format(box_y))
@@ -39,6 +41,8 @@ def tworow(pincount):
     out.append('F0 "J" -100 100 50 H V L CNN')
     name_y = -pincount * 100
     out.append('F1 "{}" -100 {} 50 H V L CNN'.format(name, name_y))
+    out.append('F2 "" 0 0 50 H I C CNN')
+    out.append('F3 "" 0 0 50 H I C CNN')
     out.append('DRAW')
     box_y = -(((pincount - 1) * 100) + 50)
     out.append('S 0 50 -100 {} 0 1 0 f'.format(box_y))

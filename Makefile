@@ -63,10 +63,10 @@ verify-lib:
 	python scripts/compile_lib.py lib/ agg-kicad.lib --verify
 
 compile-pro:
-	python scripts/compile_pro.py pro/ agg-kicad.pro
+	python scripts/compile_pro.py lib/ agg-kicad.pro
 
 verify-pro:
-	python scripts/compile_pro.py pro/ agg-kicad.pro --verify
+	python scripts/compile_pro.py lib/ agg-kicad.pro --verify
 
 check-lib:
 	python scripts/check_lib.py lib/
