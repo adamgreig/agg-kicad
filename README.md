@@ -34,13 +34,32 @@ See the README in the scripts folder for detailed information on each script.
 
 ## Makefile
 
-You can use the Makefile to regenerate all automatically-generated files with 
-`make build`, and to run all the automatic checks with `make check`. Travis-CI 
-is configured to run `make check` to report on build status, and there is a
-`pre-commit` hook in `scripts/` to run `check` locally.
+You can use the Makefile to:
+* Rebuild all built-from-parameter files with `make build`
+    * Just libraries with `make build-libs`
+    * Just modules (footprints) with `make build-mods`
+* Verify all built-from-parameter files are up-to-date with `make build-verify`
+* Recompile all compiled outputs (the combined `.lib` and the `.pro`) with 
+  `make compile`
+* Verify all compiled outputs are up-to-date with `make compile-verify`
+* Verify both built and compiled outputs with `make verify`
+* Check all files against rules with `make check`
+    * Just libraries with `make check-lib`
+    * Just modules with `make check-mod`
+
+Travis-CI is configured to run `make check` and `make verify` and reports the 
+resulting status as the build status:
+[![Build 
+Status](https://travis-ci.org/adamgreig/agg-kicad.svg?branch=master)](https://travis-ci.org/adamgreig/agg-kicad)
+
+Additionally in `scripts/` is `pre-commit` that stops any commits that do not 
+pass `make check` and `make build-verify`, and `post-commit` that runs `make 
+compile-verify` and if any compiled files are not up to date, recompiles them 
+and commits the result. Copy these to `.git/hooks` for use.
 
 ## Licence
 
 Until a reasonable level of stability is reached, this library is "all rights 
 reserved". I intend to release it under an open source licence once I've 
-completed a project using just this library.
+completed a project using just this library and am reasonably confident it is 
+stable.
