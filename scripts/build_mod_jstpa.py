@@ -412,6 +412,9 @@ def main(prettypath, verify=False):
             name, fp = generator(pins)
             path = os.path.join(prettypath, name + ".kicad_mod")
 
+            if verify:
+                print("Verifying", path)
+
             # Check if the file already exists and isn't changed
             if os.path.isfile(path):
                 with open(path) as f:

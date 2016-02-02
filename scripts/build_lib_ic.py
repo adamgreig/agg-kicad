@@ -996,6 +996,9 @@ def main(libpath, verify=False):
         lib = library(conf)
         dcm = documentation(conf)
 
+        if verify:
+            print("Verifying", path)
+
         # Check if anything has changed
         if os.path.isfile(path):
             with open(path) as f:

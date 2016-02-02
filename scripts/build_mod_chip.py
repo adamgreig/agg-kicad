@@ -329,6 +329,9 @@ def main(prettypath, verify=False):
         fp = footprint(conf)
         path = os.path.join(prettypath, name+".kicad_mod")
 
+        if verify:
+            print("Verifying", path)
+
         # Check if an identical part already exists
         if os.path.isfile(path):
             with open(path) as f:
