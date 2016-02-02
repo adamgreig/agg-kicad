@@ -11,7 +11,7 @@ To use, add relevant `.lib` files to your project libraries. There is one
 `.lib` file per symbol.
 
 Alternatively add `agg-kicad.lib` from the root directory, which includes all 
-symbols. This file is built using `scripts/compilelib.py` and kept up-to-date 
+symbols. This file is built using `scripts/compile_lib.py` and kept up-to-date 
 automatically.
 
 Each part contains supplier order codes and manufacturer part numbers where 
