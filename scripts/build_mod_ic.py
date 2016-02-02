@@ -308,6 +308,20 @@ config = {
         "chip_shape": (1.75, 3.05),
         "pin_shape": (0.62, 0.50),
     },
+
+    # SC-70-5
+    # JEDEC MO-203-AA
+    # IPC-7351B: SOT65P210X110-5N
+    "SC-70-5": {
+        "rows": 2,
+        "pins": 6,
+        "skip_pins": (5,),
+        "pin_pitch": 0.65,
+        "row_pitch": 2.20,
+        "pad_shape": (0.95, 0.40),
+        "chip_shape": (1.4, 2.15),
+        "pin_shape": (0.5, 0.3),
+    },
 }
 
 

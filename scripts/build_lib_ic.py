@@ -182,7 +182,7 @@ config = {
     # STM32F0xxRxHx, in UFBGA64 package
     "STM32F0xxRxHx": {
         "path": "ic/microcontroller",
-        "footprint": "agg:BGA-64-P05-ST",
+        "footprint": "agg:BGA-64-05P-ST",
         "datasheet": "http://www.st.com/st-web-ui/static/active/en"
                      "/resource/technical/document/datasheet/DM00115237.pdf",
         "ordercodes": [("Farnell", "2503242")],

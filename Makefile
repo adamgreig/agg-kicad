@@ -69,7 +69,7 @@ verify-pro:
 	python scripts/compile_pro.py lib/ agg-kicad.pro --verify
 
 check-lib:
-	python scripts/check_lib.py lib/
+	python scripts/check_lib.py lib/ agg.pretty/
 
 check-mod:
 	python scripts/check_mod.py agg.pretty/

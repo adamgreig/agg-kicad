@@ -91,7 +91,7 @@ def checkboxes(contents, designator, errs):
             errs.append("No background-filled box/poly found, but part is IC")
 
 
-def checkfields(contents, errs):
+def checkfields(contents, errs, prettypath):
     refn_f = re_refn.findall(contents)
     name_f = re_name.findall(contents)
     foot_f = re_fp.findall(contents)
@@ -121,8 +121,16 @@ def checkfields(contents, errs):
     if refn_y <= name_y:
         errs.append("Component reference not above component name")
 
+    fp = foot_f[0][0][1:-1]
+    if fp.startswith("agg:"):
+        fp = fp.split(":")[1] + ".kicad_mod"
+        path = os.path.join(prettypath, fp)
+        if not os.path.exists(path):
+            errs.append("Component references non-existent footprint {}"
+                        .format(fp))
 
-def checklib(libf):
+
+def checklib(libf, prettypath):
     errs = []
 
     # Check if there's a corresponding .dcm file
@@ -143,7 +151,7 @@ def checklib(libf):
     checkboxes(contents, designator, errs)
 
     # Check fields
-    checkfields(contents, errs)
+    checkfields(contents, errs, prettypath)
 
     if len(errs) == 0:
         print("Checked '{}': OK".format(libf))
@@ -156,7 +164,7 @@ def checklib(libf):
         return False
 
 
-def main(libpath):
+def main(libpath, prettypath):
     ok = True
     for dirpath, dirnames, files in os.walk(libpath):
         dirnames.sort()
@@ -164,7 +172,7 @@ def main(libpath):
         for f in fnmatch.filter(files, "*.lib"):
             path = os.path.join(dirpath, f)
             if f not in EXCLUSIONS:
-                result = checklib(path)
+                result = checklib(path, prettypath)
                 if not result:
                     ok = False
             else:
@@ -172,12 +180,13 @@ def main(libpath):
     return ok
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: {} <lib path>".format(sys.argv[0]))
+    if len(sys.argv) != 3:
+        print("Usage: {} <lib path> <prettypath>".format(sys.argv[0]))
         sys.exit(1)
     else:
         libpath = sys.argv[1]
-        success = main(libpath)
+        prettypath = sys.argv[2]
+        success = main(libpath, prettypath)
         if success:
             sys.exit(0)
         else:
