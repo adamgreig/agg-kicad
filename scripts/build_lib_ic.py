@@ -927,6 +927,7 @@ config = {
                     ("VIO", 5, "pwrin"),
                     ("VDD", 3, "pwrin"),
                     ("VSS", 2, "pwrin"),
+                    ("VSS", "EP", "pwrin"),
                     ("STBY", 8, "in"),
                 ]
             ], [
