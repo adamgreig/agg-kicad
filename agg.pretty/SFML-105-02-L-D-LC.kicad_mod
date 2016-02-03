@@ -1,0 +1,208 @@
+
+(module "SFML-105-02-L-D-LC" 
+  (layer F.Cu) 
+  (tedit 56B16747) 
+  (pad 1 smd rect 
+    (at -2.5400 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 2 smd rect 
+    (at -2.5400 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 3 smd rect 
+    (at -1.2700 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 4 smd rect 
+    (at -1.2700 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 5 smd rect 
+    (at 0.0000 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 6 smd rect 
+    (at 0.0000 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 7 smd rect 
+    (at 1.2700 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 8 smd rect 
+    (at 1.2700 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 9 smd rect 
+    (at 2.5400 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 10 smd rect 
+    (at 2.5400 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (fp_line 
+    (start -3.3650 -1.5250) 
+    (end 3.3650 -1.5250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.3650 -1.5250) 
+    (end 3.3650 -0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.3650 -0.7600) 
+    (end 5.1450 -0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 5.1450 -0.7600) 
+    (end 5.1450 0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 5.1450 0.7600) 
+    (end 3.3650 0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.3650 0.7600) 
+    (end 3.3650 1.5250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.3650 1.5250) 
+    (end -3.3650 1.5250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.3650 1.5250) 
+    (end -3.3650 0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.3650 0.7600) 
+    (end -5.1450 0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -5.1450 0.7600) 
+    (end -5.1450 -0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -5.1450 -0.7600) 
+    (end -3.3650 -0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.3650 -0.7600) 
+    (end -3.3650 -1.5250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -5.4000 -3.4500) 
+    (end 5.4000 -3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 5.4000 -3.4500) 
+    (end 5.4000 3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 5.4000 3.4500) 
+    (end -5.4000 3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -5.4000 3.4500) 
+    (end -5.4000 -3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.2900 -1.4500) 
+    (end 3.2900 -0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 3.2900 -0.6850) 
+    (end 5.0700 -0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 5.0700 -0.6850) 
+    (end 5.0700 0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 5.0700 0.6850) 
+    (end 3.2900 0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 3.2900 0.6850) 
+    (end 3.2900 1.4500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 3.2900 1.4500) 
+    (end 2.9900 1.4500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -2.9900 1.4500) 
+    (end -3.2900 1.4500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -3.2900 1.4500) 
+    (end -3.2900 0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -3.2900 0.6850) 
+    (end -5.0700 0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -5.0700 0.6850) 
+    (end -5.0700 -0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -5.0700 -0.6850) 
+    (end -3.2900 -0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -3.2900 -0.6850) 
+    (end -3.2900 -1.4500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_text reference REF** 
+    (at 0 -4.1250) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "SFML-105-02-L-D-LC" 
+    (at 0 4.1250) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (pad "" np_thru_hole circle 
+    (at 4.1300 0) 
+    (size 1.2000 1.2000) 
+    (layers *.Mask) 
+    (drill 1.2000)) 
+  (pad "" np_thru_hole circle 
+    (at -4.1300 0) 
+    (size 1.2000 1.2000) 
+    (layers *.Mask) 
+    (drill 1.2000)))

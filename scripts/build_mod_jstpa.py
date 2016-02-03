@@ -314,8 +314,8 @@ def top_pth_ctyd(pins):
     w = 2*(pins-1)+4 + 2*ctyd_gap
     h = 5.3 + 2*ctyd_gap
     grid = 2*ctyd_grid
-    w = grid * int(math.ceil(w / (2*ctyd_grid)))
-    h = grid * int(math.ceil(h / (2*ctyd_grid)))
+    w = grid * int(math.ceil(w / grid))
+    h = grid * int(math.ceil(h / grid))
     _, _, _, _, sq = draw_square(w, h, (0, 0), "F.CrtYd", ctyd_width)
     return sq
 

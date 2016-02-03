@@ -1,0 +1,128 @@
+
+(module "TFML-105-02-L-D" 
+  (layer F.Cu) 
+  (tedit 56B15E0A) 
+  (pad 1 smd rect 
+    (at -2.5400 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 2 smd rect 
+    (at -2.5400 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 3 smd rect 
+    (at -1.2700 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 4 smd rect 
+    (at -1.2700 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 5 smd rect 
+    (at 0.0000 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 6 smd rect 
+    (at 0.0000 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 7 smd rect 
+    (at 1.2700 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 8 smd rect 
+    (at 1.2700 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 9 smd rect 
+    (at 2.5400 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 10 smd rect 
+    (at 2.5400 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (fp_line 
+    (start -4.7650 -2.8600) 
+    (end 4.7650 -2.8600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 4.7650 -2.8600) 
+    (end 4.7650 2.8600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 4.7650 2.8600) 
+    (end -4.7650 2.8600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -4.7650 2.8600) 
+    (end -4.7650 -2.8600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -5.4000 -3.4500) 
+    (end 5.4000 -3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 5.4000 -3.4500) 
+    (end 5.4000 3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 5.4000 3.4500) 
+    (end -5.4000 3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -5.4000 3.4500) 
+    (end -5.4000 -3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.1900 -2.7850) 
+    (end -4.6900 -2.7850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -4.6900 -2.7850) 
+    (end -4.6900 2.7850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -4.6900 2.7850) 
+    (end -3.1900 2.7850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 3.1900 2.7850) 
+    (end 4.6900 1.2850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 4.6900 1.2850) 
+    (end 4.6900 -1.2850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 4.6900 -1.2850) 
+    (end 3.1900 -2.7850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_text reference REF** 
+    (at 0 -4.1250) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "TFML-105-02-L-D" 
+    (at 0 4.1250) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))))

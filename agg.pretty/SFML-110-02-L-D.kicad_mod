@@ -1,0 +1,238 @@
+
+(module "SFML-110-02-L-D" 
+  (layer F.Cu) 
+  (tedit 56B16628) 
+  (pad 1 smd rect 
+    (at -5.7150 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 2 smd rect 
+    (at -5.7150 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 3 smd rect 
+    (at -4.4450 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 4 smd rect 
+    (at -4.4450 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 5 smd rect 
+    (at -3.1750 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 6 smd rect 
+    (at -3.1750 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 7 smd rect 
+    (at -1.9050 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 8 smd rect 
+    (at -1.9050 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 9 smd rect 
+    (at -0.6350 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 10 smd rect 
+    (at -0.6350 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 11 smd rect 
+    (at 0.6350 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 12 smd rect 
+    (at 0.6350 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 13 smd rect 
+    (at 1.9050 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 14 smd rect 
+    (at 1.9050 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 15 smd rect 
+    (at 3.1750 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 16 smd rect 
+    (at 3.1750 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 17 smd rect 
+    (at 4.4450 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 18 smd rect 
+    (at 4.4450 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 19 smd rect 
+    (at 5.7150 -1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 20 smd rect 
+    (at 5.7150 1.3650) 
+    (size 0.7400 2.2200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (fp_line 
+    (start -6.5400 -1.5250) 
+    (end 6.5400 -1.5250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 6.5400 -1.5250) 
+    (end 6.5400 -0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 6.5400 -0.7600) 
+    (end 8.3200 -0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 8.3200 -0.7600) 
+    (end 8.3200 0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 8.3200 0.7600) 
+    (end 6.5400 0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 6.5400 0.7600) 
+    (end 6.5400 1.5250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 6.5400 1.5250) 
+    (end -6.5400 1.5250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -6.5400 1.5250) 
+    (end -6.5400 0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -6.5400 0.7600) 
+    (end -8.3200 0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -8.3200 0.7600) 
+    (end -8.3200 -0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -8.3200 -0.7600) 
+    (end -6.5400 -0.7600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -6.5400 -0.7600) 
+    (end -6.5400 -1.5250) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -8.6000 -3.4500) 
+    (end 8.6000 -3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 8.6000 -3.4500) 
+    (end 8.6000 3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 8.6000 3.4500) 
+    (end -8.6000 3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -8.6000 3.4500) 
+    (end -8.6000 -3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 6.4650 -1.4500) 
+    (end 6.4650 -0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 6.4650 -0.6850) 
+    (end 8.2450 -0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 8.2450 -0.6850) 
+    (end 8.2450 0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 8.2450 0.6850) 
+    (end 6.4650 0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 6.4650 0.6850) 
+    (end 6.4650 1.4500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 6.4650 1.4500) 
+    (end 6.1650 1.4500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -6.1650 1.4500) 
+    (end -6.4650 1.4500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -6.4650 1.4500) 
+    (end -6.4650 0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -6.4650 0.6850) 
+    (end -8.2450 0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -8.2450 0.6850) 
+    (end -8.2450 -0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -8.2450 -0.6850) 
+    (end -6.4650 -0.6850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -6.4650 -0.6850) 
+    (end -6.4650 -1.4500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_text reference REF** 
+    (at 0 -4.1250) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "SFML-110-02-L-D" 
+    (at 0 4.1250) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))))
