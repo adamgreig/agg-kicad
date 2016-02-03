@@ -322,6 +322,21 @@ config = {
         "chip_shape": (1.4, 2.15),
         "pin_shape": (0.5, 0.3),
     },
+
+    # DFN-8
+    # IPC-7351B: DFN65P300X300X90-9N
+    "DFN-8-EP-MICROCHIP": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 0.65,
+        "row_pitch": 3.10,
+        "pad_shape": (0.65, 0.35),
+        "ep_shape": (1.55, 2.4),
+        "ep_mask_shape": (0.8, 0.8, 0, 0.4),
+        "ep_paste_shape": (0.8, 0.8, 0, 0.4),
+        "chip_shape": (3.1, 3.1),
+        "pin_shape": (-0.3, 0.30)
+    },
 }
 
 

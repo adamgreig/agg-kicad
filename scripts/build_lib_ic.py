@@ -912,6 +912,33 @@ config = {
             ]
         ],
     },
+
+    # MCP2562 CAN Transceiver
+    "MCP2562": {
+        "path": "ic/interface",
+        "footprint": "agg:DFN-8-EP-MICROCHIP",
+        "datasheet": "http://ww1.microchip.com/downloads/en"
+                     "/DeviceDoc/20005167C.pdf",
+        "ordercodes": [("Farnell", ""), ("RS", "824-3135")],
+        "description": "High Speed CAN Transceiver",
+        "pins": [
+            [
+                [
+                    ("VIO", 5, "pwrin"),
+                    ("VDD", 3, "pwrin"),
+                    ("VSS", 2, "pwrin"),
+                    ("STBY", 8, "in"),
+                ]
+            ], [
+                [
+                    ("CANH", 7, "tri"),
+                    ("CANL", 6, "tri"),
+                    ("TXD", 1, "in"),
+                    ("RXD", 4, "out"),
+                ]
+            ]
+        ]
+    },
 }
 
 # Other Constants =============================================================
