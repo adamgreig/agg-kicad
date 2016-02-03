@@ -11,17 +11,18 @@ Directory                |  Contents
 [`ui`](ui)               | User interface elements including buzzers, switches, etc
 
 
-The file `agg-kicad.lib` contains all of the symbols in this library.
+The file `agg-kicad.lib` in the root directory contains all of the symbols in 
+this library.
 
 ## General Guidelines
 
 ### Enforced automatically
 
-* One symbol per library
-    * Exception for automatically generated libraries such as `conn.lib`
-* Library filename the same as the part name
+* One symbol per library, except for automatically generated libraries
+* Library filename the same as the part name, except for multi-symbol libraries
 * All pins on 100mil grid
 * 100mil pin length for ICs and similar symbols
+    * Increment by 50mil when required; all pins must be the same length
 * No missing numbers in pin numbering sequence
 * Text size 50mil (fields, pin names, pin numbers)
     * Exception for pin numbers that are words, e.g. "PAD"
@@ -31,10 +32,14 @@ The file `agg-kicad.lib` contains all of the symbols in this library.
 * Name and reference fields must be visible unless explicitly overridden
 * Other fields (footprint, datasheet, order codes) must be invisible
 * ICs and similar symbols to be filled with background colour
+* The following custom fields must be present, in order:
+    * MFN (Manufacturer)
+    * MPN (Manufacturer's Part Number)
+    * SKU (Supplier Order Code)
 
 ### Must be checked manually
 
-* Part name follows the manufacturer or common generic name
+* Part name follows the manufacturer's part name or common generic name
 * Part designator follows IEEE 315 where possible
 * Origin on/close to centre of part
 * Name and reference left-aligned with left edge on non-symmetrical symbols
@@ -42,14 +47,11 @@ The file `agg-kicad.lib` contains all of the symbols in this library.
 
 ### Helpful but not mandatory
 
-* Include Farnell order code where applicable
-* Include DigiKey and RS order codes where applicable and useful
-* Pre-fill with a footprint field if one is very commonly used
+* Populate MFN and MPN if part is not generic
+* Include Farnell SKU if available
+* Include link to datasheet if available
+* Pre-fill with a footprint field if one is typical for the part
 
-## Associated documentation to include in README
+### Other Notes
 
-* Link to datasheet/web page
-* Common supplier order codes
-* Names of available footprints
-* Has the symbol been validated in practice? Where?
-* Any other notes / gotchas
+Place any other notes in the `.lib` file prefixed with `# NOTE:`.
