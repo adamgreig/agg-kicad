@@ -829,6 +829,96 @@ config = {
         ]
     },
 
+    # STM32F405RxTx
+    "STM32F405RxTx": {
+        "path": "ic/microcontroller",
+        "footprint": "agg:LQFP-64",
+        "datasheet": "http://www.st.com/st-web-ui/static/active/en"
+                     "/resource/technical/document/datasheet/DM00037051.pdf",
+        "ordercodes": [("Farnell", "2064363")],
+        "description": "STM32F4 64 pin TQFP package",
+        "pins": [
+            [
+                [
+                    ("VBAT", 1, "pwrin"),
+                    ("VDD", 19, "pwrin"),
+                    ("VDD", 32, "pwrin"),
+                    ("VDD", 48, "pwrin"),
+                    ("VDD", 64, "pwrin"),
+                    ("VDDA", 13, "pwrin"),
+                ], [
+                    ("VSSA", 12, "pwrin"),
+                    ("VSS", 18, "pwrin"),
+                    ("VSS", 63, "pwrin"),
+                ], [
+                    ("VCAP_1", 31, "passive"),
+                    ("VCAP_2", 47, "passive"),
+                ], [
+                    ("NRST", 7, "in"),
+                    ("BOOT0", 60, "in"),
+                ], [
+                    ("PH0", 5, "bidi"),
+                    ("PH1", 6, "bidi"),
+                ], [
+                    ("PA0", 14, "bidi"),
+                    ("PA1", 15, "bidi"),
+                    ("PA2", 16, "bidi"),
+                    ("PA3", 17, "bidi"),
+                    ("PA4", 20, "bidi"),
+                    ("PA5", 21, "bidi"),
+                    ("PA6", 22, "bidi"),
+                    ("PA7", 23, "bidi"),
+                    ("PA8", 41, "bidi"),
+                    ("PA9", 42, "bidi"),
+                    ("PA10", 43, "bidi"),
+                    ("PA11", 44, "bidi"),
+                    ("PA12", 45, "bidi"),
+                    ("PA13", 46, "bidi"),
+                    ("PA14", 49, "bidi"),
+                    ("PA15", 50, "bidi"),
+                ],
+            ], [
+                [
+                    ("PB0", 26, "bidi"),
+                    ("PB1", 27, "bidi"),
+                    ("PB2", 28, "bidi"),
+                    ("PB3", 55, "bidi"),
+                    ("PB4", 56, "bidi"),
+                    ("PB5", 57, "bidi"),
+                    ("PB6", 58, "bidi"),
+                    ("PB7", 59, "bidi"),
+                    ("PB8", 61, "bidi"),
+                    ("PB9", 62, "bidi"),
+                    ("PB10", 29, "bidi"),
+                    ("PB11", 30, "bidi"),
+                    ("PB12", 33, "bidi"),
+                    ("PB13", 34, "bidi"),
+                    ("PB14", 35, "bidi"),
+                    ("PB15", 36, "bidi"),
+                ], [
+                    ("PC0", 8, "bidi"),
+                    ("PC1", 9, "bidi"),
+                    ("PC2", 10, "bidi"),
+                    ("PC3", 11, "bidi"),
+                    ("PC4", 24, "bidi"),
+                    ("PC5", 25, "bidi"),
+                    ("PC6", 37, "bidi"),
+                    ("PC7", 38, "bidi"),
+                    ("PC8", 39, "bidi"),
+                    ("PC9", 40, "bidi"),
+                    ("PC10", 51, "bidi"),
+                    ("PC11", 52, "bidi"),
+                    ("PC12", 53, "bidi"),
+                    ("PC13", 2, "bidi"),
+                    ("PC14", 3, "bidi"),
+                    ("PC15", 4, "bidi"),
+                ], [
+                    ("PD2", 54, "bidi"),
+                ]
+            ]
+        ]
+    },
+
     # MPU-9250 9DoF IMU
     "MPU-9250": {
         "path": "ic/sensor",
@@ -938,6 +1028,28 @@ config = {
                     ("RXD", 4, "out"),
                 ]
             ]
+        ]
+    },
+
+    # ADL5324 RF Driver Amplifier
+    "ADL5324": {
+        "path": "ic/radio",
+        "footprint": "agg-unchecked:SOT-89",
+        "datasheet": "http://www.analog.com/media/en"
+                     "/technical-documentation/data-sheets/ADL5324.pdf",
+        "ordercodes": [("Farnell", "2099794")],
+        "description": "0.5W 400MHz-4GHz RF Driver Amplifier",
+        "pins": [
+            [
+                [
+                    ("RF_IN", 1, "in"),
+                    ("GND", 2, "pwrin"),
+                ],
+            ], [
+                [
+                    ("RF_OUT", 3, "out"),
+                ],
+            ],
         ]
     },
 }
