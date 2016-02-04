@@ -1052,6 +1052,28 @@ config = {
             ],
         ]
     },
+
+    # ADL5320 RF Driver Amplifier
+    "ADL5320": {
+        "path": "ic/radio",
+        "footprint": "agg-unchecked:SOT-89",
+        "datasheet": "http://www.analog.com/media/en"
+                     "/technical-documentation/data-sheets/ADL5320.pdf",
+        "ordercodes": [("Farnell", "2377141")],
+        "description": "0.5W 400MHz-2.7GHz RF Driver Amplifier",
+        "pins": [
+            [
+                [
+                    ("RF_IN", 1, "in"),
+                    ("GND", 2, "pwrin"),
+                ],
+            ], [
+                [
+                    ("RF_OUT", 3, "out"),
+                ],
+            ],
+        ]
+    },
 }
 
 # Other Constants =============================================================
