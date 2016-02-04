@@ -220,6 +220,23 @@ config = {
         "ep_vias": (0.3, 0.4, 0.2),
     },
 
+    # QFN-40 from LTC3887 datasheet
+    # JEDEC WJJD-2 VARIANT
+    # IPC-7351B: QFN50P600X600X75-40N
+    "QFN-40-EP-LTC-UJ": {
+        "rows": 4,
+        "pins": 40,
+        "pin_pitch": 0.50,
+        "row_pitch": 5.80,
+        "pad_shape": (0.7, 0.25),
+        "ep_shape": (4.42, 4.42),
+        "ep_mask_shape": (0.73, 0.73, 0.5, 0.5),
+        "ep_paste_shape": (0.73, 0.73, 0.5, 0.5),
+        "ep_vias": (0.4, 0.8, 0.43),
+        "chip_shape": (6.0, 6.0),
+        "pin_shape": (0.4, 0.25),
+    },
+
     # DFN-10 from JEDEC MO-229WEED-2
     # For LTC3105 / LT package DD
     # IPC-7351B: DFN50P300X300X75-11N
