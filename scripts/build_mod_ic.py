@@ -204,6 +204,22 @@ config = {
         "pin_shape": (-0.3, 0.2),
     },
 
+    # QFN-16 from SKY65111-348LF datasheet
+    # For SKY65111-348LF
+    # IPC-7351B: QFN50P300X300X100-16N
+    "QFN-16-EP-SKYWORKS": {
+        "rows": 4,
+        "pins": 16,
+        "pin_pitch": 0.50,
+        "row_pitch": 2.86,
+        "pad_shape": (0.78, 0.26),
+        "chip_shape": (3.0, 3.0),
+        "pin_shape": (-0.3, 0.25),
+        "ep_shape": (1.78, 1.78),
+        "ep_paste_shape": (0.7, 0.7, 0.3, 0.3),
+        "ep_vias": (0.3, 0.4, 0.2),
+    },
+
     # DFN-10 from JEDEC MO-229WEED-2
     # For LTC3105 / LT package DD
     # IPC-7351B: DFN50P300X300X75-11N

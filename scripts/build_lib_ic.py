@@ -1034,7 +1034,7 @@ config = {
     # ADL5324 RF Driver Amplifier
     "ADL5324": {
         "path": "ic/radio",
-        "footprint": "agg-unchecked:SOT-89",
+        "footprint": "agg:SOT-89-3",
         "datasheet": "http://www.analog.com/media/en"
                      "/technical-documentation/data-sheets/ADL5324.pdf",
         "ordercodes": [("Farnell", "2099794")],
@@ -1056,7 +1056,7 @@ config = {
     # ADL5320 RF Driver Amplifier
     "ADL5320": {
         "path": "ic/radio",
-        "footprint": "agg-unchecked:SOT-89",
+        "footprint": "agg:SOT-89-3",
         "datasheet": "http://www.analog.com/media/en"
                      "/technical-documentation/data-sheets/ADL5320.pdf",
         "ordercodes": [("Farnell", "2377141")],
@@ -1070,6 +1070,46 @@ config = {
             ], [
                 [
                     ("RF_OUT", 3, "out"),
+                ],
+            ],
+        ]
+    },
+
+    # SKYWORKS SKY65111-348LF RF Driver Amplifier
+    "SKY65111-348LF": {
+        "path": "ic/radio",
+        "footprint": "agg:QFN-16-EP-SKYWORKS",
+        "datasheet": "http://www.skyworksinc.com/uploads"
+                     "/documents/200428E.pdf",
+        "ordercodes": [("Farnell", "1753773")],
+        "description": "2W 600-1100MHz RF Power Amplifier",
+        "pins": [
+            [
+                [
+                    ("VCC1", 4, "pwrin"),
+                    ("VCC2", 15, "pwrin"),
+                    ("VCC2", 16, "pwrin"),
+                    ("VAPC1", 5, "pwrin"),
+                    ("VAPC2", 6, "pwrin"),
+                ], [
+                    ("GND", 1, "pwrin"),
+                    ("GND", 3, "pwrin"),
+                    ("GND", 8, "pwrin"),
+                    ("GND", 14, "pwrin"),
+                    ("GND", "EP", "pwrin"),
+                ], [
+                    ("VREF", 7, "in"),
+                ], [
+                    ("RFIN", 2, "in"),
+                ]
+            ], [
+                [
+                    ("RFOUT/VCC3", 9, "out"),
+                    ("RFOUT/VCC3", 10, "out"),
+                    ("RFOUT/VCC3", 11, "out"),
+                    ("RFOUT/VCC3", 12, "out"),
+                ], [
+                    ("OPEN", 13, "nc"),
                 ],
             ],
         ]
