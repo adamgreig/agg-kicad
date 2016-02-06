@@ -420,9 +420,9 @@ def main(xmlpath, pdfpath):
                              spacing_x, spacing_y)
 
     for line, label in zip(bom.lines, labels):
-        line.render(cr, label, label_width, 14)
-        pcb.render(cr, (label[0], label[1]+14),
-                   label_width, label_height-14, line.refs)
+        line.render(cr, (label[0]+1, label[1]), label_width-2, 14)
+        pcb.render(cr, (label[0]+1, label[1]+14), label_width-2,
+                   label_height-14, line.refs)
     cr.show_page()
 
 
