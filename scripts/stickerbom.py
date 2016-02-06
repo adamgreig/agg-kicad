@@ -181,10 +181,10 @@ class PCB:
         bound_centre_x = hl_bounds[0] + bound_width/2
         bound_centre_y = hl_bounds[1] + bound_height/2
 
-        # Scale to either 1:1 or smaller if necessary to fit bounds
+        # Scale to either 1.5:1 or smaller if necessary to fit bounds
         scale_x = max_w / bound_width
         scale_y = max_h / bound_height
-        scale = min(min(1, scale_x), min(1, scale_y))
+        scale = min(min(1.5, scale_x), min(1.5, scale_y))
         cr.scale(scale, scale)
 
         # Can we shift the top edge of the PCB to the top and not cut off
