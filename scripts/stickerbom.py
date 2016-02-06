@@ -38,8 +38,8 @@ class Module:
                 cr.line_to(*line[1])
                 cr.stroke()
             for circ in self.fab_circs:
-                r = max(abs(circ[0][0] - circ[1][0]),
-                        abs(circ[0][1] - circ[1][1]))
+                r = math.sqrt((circ[0][0] - circ[1][0])**2 +
+                              (circ[0][1] - circ[1][1])**2)
                 cr.new_sub_path()
                 cr.arc(circ[0][0], circ[0][1], r, 0, 2*math.pi)
         else:
@@ -48,8 +48,8 @@ class Module:
                 cr.line_to(*line[1])
                 cr.stroke()
             for circ in self.silk_circs:
-                r = max(abs(circ[0][0] - circ[1][0]),
-                        abs(circ[0][1] - circ[1][1]))
+                r = math.sqrt((circ[0][0] - circ[1][0])**2 +
+                              (circ[0][1] - circ[1][1])**2)
                 cr.new_sub_path()
                 cr.arc(circ[0][0], circ[0][1], r, 0, 2*math.pi)
                 cr.stroke()
@@ -132,6 +132,7 @@ class Module:
         if pad_type not in ("smd", "thru_hole"):
             return
         at = [float(x) for x in sexp.find(pad, "at")[1:]]
+        self._update_bounds(at)
         size = [float(x) for x in sexp.find(pad, "size")[1:]]
         drill = sexp.find(pad, "drill")
         if drill:
@@ -285,8 +286,8 @@ class PCB:
             elif graphic[0] == "gr_arc":
                 center = [float(x) for x in sexp.find(graphic, "start")[1:]]
                 start = [float(x) for x in sexp.find(graphic, "end")[1:]]
-                r = max(abs(center[0] - start[0]),
-                        abs(center[1] - start[1]))
+                r = math.sqrt((center[0] - start[0])**2 +
+                              (center[1] - start[1])**2)
                 angle = float(sexp.find(graphic, "angle")[1]) * math.pi/180.0
                 dx = start[0] - center[0]
                 dy = start[1] - center[1]
