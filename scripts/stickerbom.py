@@ -20,6 +20,11 @@ spacing_y = 2.0
 page_width = 297
 page_height = 210
 
+# Suppliers to output stickers for
+# (Note: this really means 'custom schematic symbol property field names' to
+#  output stickers for).
+suppliers_to_output = ["Farnell", "RS", "DigiKey"]
+
 ###############################################################################
 
 import sys
@@ -428,9 +433,10 @@ def main(xmlpath, pdfpath):
                              spacing_x, spacing_y)
 
     for line, label in zip(bom.lines, labels):
-        line.render(cr, (label[0]+1, label[1]), label_width-2, 14)
-        pcb.render(cr, (label[0]+1, label[1]+14), label_width-2,
-                   label_height-14, line.refs)
+        if line.supplier in suppliers_to_output:
+            line.render(cr, (label[0]+1, label[1]), label_width-2, 14)
+            pcb.render(cr, (label[0]+1, label[1]+14), label_width-2,
+                       label_height-14, line.refs)
     cr.show_page()
 
 
