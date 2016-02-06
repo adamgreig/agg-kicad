@@ -185,7 +185,7 @@ import sys
 import time
 import math
 
-from sexp import sexp_parse, sexp_generate
+from sexp import parse as sexp_parse, generate as sexp_generate
 from kicad_mod import fp_line, fp_text, pad, draw_square
 
 

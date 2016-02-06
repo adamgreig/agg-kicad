@@ -12,7 +12,7 @@ import os
 import glob
 from decimal import Decimal
 
-from sexp import sexp_parse
+from sexp import parse as sexp_parse
 
 
 def checkrefval(mod, errs):

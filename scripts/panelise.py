@@ -11,7 +11,7 @@ import copy
 import datetime
 from decimal import Decimal
 
-from sexp import sexp_parse, sexp_generate
+from sexp import parse as sexp_parse, generate as sexp_generate
 
 
 def simples(n, out, xr, xp, yr, yp):

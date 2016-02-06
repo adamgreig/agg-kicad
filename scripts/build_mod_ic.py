@@ -426,7 +426,7 @@ import time
 import math
 import subprocess
 
-from sexp import sexp_parse, sexp_generate
+from sexp import parse as sexp_parse, generate as sexp_generate
 from kicad_mod import fp_line, fp_arc, fp_circle, fp_text, pad, draw_square
 
 

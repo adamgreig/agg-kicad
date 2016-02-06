@@ -8,7 +8,6 @@ from __future__ import print_function, division
 import sys
 import math
 import cairo
-import os.path
 import xml.etree.ElementTree as ET
 
 import sexp

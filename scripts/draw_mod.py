@@ -11,7 +11,7 @@ import sys
 import math
 import cairo
 
-from sexp import sexp_parse
+from sexp import parse as sexp_parse
 
 # Settings ====================================================================
 
