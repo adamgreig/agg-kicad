@@ -6,6 +6,22 @@ Copyright 2016 Adam Greig
 
 from __future__ import print_function, division
 
+# SETTINGS ====================================================================
+
+# Label settings (all dimensions in mm)
+label_width = 72
+label_height = 63.5
+labels_x = 4
+labels_y = 3
+margin_top = 7.75
+margin_left = 4.5
+spacing_x = 0.0
+spacing_y = 2.0
+page_width = 297
+page_height = 210
+
+###############################################################################
+
 import sys
 import math
 import cairo
@@ -400,21 +416,12 @@ def main(xmlpath, pdfpath):
     with open(xmlpath[:-3] + "kicad_pcb") as f:
         pcb = PCB(sexp.parse(f.read()))
 
-    ps = cairo.PDFSurface(pdfpath, 842, 595)
+    mm_to_pt = 2.835
+    ps = cairo.PDFSurface(pdfpath, page_width*mm_to_pt, page_height*mm_to_pt)
     cr = cairo.Context(ps)
 
     # Scale user units to millimetres
     cr.scale(1/0.3528, 1/0.3528)
-
-    # Label settings
-    label_width = 72
-    label_height = 63.5
-    labels_x = 4
-    labels_y = 3
-    margin_top = 7.75
-    margin_left = 4.5
-    spacing_x = 0.0
-    spacing_y = 2.0
 
     labels = sheet_positions(cr, label_width, label_height,
                              labels_x, labels_y, margin_top, margin_left,
