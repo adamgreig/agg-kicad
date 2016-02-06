@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 stickerbom.py
 Copyright 2016 Adam Greig
