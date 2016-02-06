@@ -11,7 +11,7 @@ import re
 from decimal import Decimal
 
 
-def sexp_parse(sexp):
+def parse(sexp):
     """
     Parse an S-expression into Python lists.
     """
@@ -39,7 +39,7 @@ def sexp_parse(sexp):
     return r[0][0]
 
 
-def sexp_generate(sexp, depth=0):
+def generate(sexp, depth=0):
     """Turn a list of lists into an s-expression."""
     single_word = re.compile("^-?[a-zA-Z0-9_*\.]+$")
     parts = []
@@ -53,6 +53,20 @@ def sexp_generate(sexp, depth=0):
         if isinstance(node, float):
             node = "{:.4f}".format(node)
         if isinstance(node, (list, tuple)):
-            node = sexp_generate(node, depth+1)
+            node = generate(node, depth+1)
         parts.append(node)
     return "\n{}({})".format(" "*depth*2, " ".join(parts))
+
+
+def find(sexp, *names):
+    """Return the first node in `sexp` whose name is in `names`"""
+    for child in sexp:
+        if child[0] in names:
+            return child
+
+
+def find_all(sexp, *names):
+    """Yield all nodes in `sexp` whose name is in `names`."""
+    for child in sexp:
+        if child[0] in names:
+            yield child

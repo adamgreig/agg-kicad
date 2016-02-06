@@ -1,189 +1,431 @@
 """
 stickerbom.py
-Copyright 2015 Adam Greig
+Copyright 2016 Adam Greig
 """
 
 from __future__ import print_function, division
 
 import sys
 import math
-import svgwrite
-from xml.etree import ElementTree
+import cairo
+import os.path
+import xml.etree.ElementTree as ET
 
-from sexp import sexp_parse
-
-
-def find_bounds(board):
-    for node in board:
-        if node[0] == "general":
-            for child in node:
-                if child[0] == "area":
-                    return [float(x) for x in child[1:]]
+import sexp
 
 
-def draw_board(inpath, outpath):
-    with open(inpath) as f:
-        board = sexp_parse(f.read())
-    dwg = svgwrite.Drawing(outpath, profile='tiny')
+class Module:
+    def __init__(self, mod):
+        self.fab_lines = []
+        self.fab_circs = []
+        self.silk_lines = []
+        self.silk_circs = []
+        self.rect_pads = []
+        self.circ_pads = []
+        self._parse(mod)
 
-    x1, y1, x2, y2 = find_bounds(board)
-    dwg.viewbox(x1, y1, x2-x1, y2-y1)
+    def render(self, cr):
+        """"
+        Render the footprint in the board coordinate system.
+        """
+        cr.save()
+        cr.translate(self.at[0], self.at[1])
+        cr.set_line_width(0.1)
+        if len(self.at) == 3:
+            cr.rotate(-self.at[2] * math.pi/180)
+        if self.fab_lines or self.fab_circs:
+            for line in self.fab_lines:
+                cr.move_to(*line[0])
+                cr.line_to(*line[1])
+                cr.stroke()
+            for circ in self.fab_circs:
+                r = max(abs(circ[0][0] - circ[1][0]),
+                        abs(circ[0][1] - circ[1][1]))
+                cr.new_sub_path()
+                cr.arc(circ[0][0], circ[0][1], r, 0, 2*math.pi)
+        else:
+            for line in self.silk_lines:
+                cr.move_to(*line[0])
+                cr.line_to(*line[1])
+                cr.stroke()
+            for circ in self.silk_circs:
+                r = max(abs(circ[0][0] - circ[1][0]),
+                        abs(circ[0][1] - circ[1][1]))
+                cr.new_sub_path()
+                cr.arc(circ[0][0], circ[0][1], r, 0, 2*math.pi)
+                cr.stroke()
+            for rect in self.rect_pads:
+                cr.rectangle(rect[0][0], rect[0][1], rect[1][0], rect[1][1])
+                cr.fill()
+            for circ in self.circ_pads:
+                cr.new_sub_path()
+                cr.arc(circ[0][0], circ[0][1], circ[1], 0, 2*math.pi)
+                cr.fill()
+        cr.restore()
 
-    parts = {}
-    highlights = {}
-    edges = dwg.g()
+    def render_highlight(self, cr):
+        """
+        Render a highlight at the footprint's position and of its size.
+        """
+        cr.save()
+        cr.translate(self.at[0], self.at[1])
+        if len(self.at) == 3:
+            cr.rotate(-self.at[2] * math.pi/180)
+        x1, y1, x2, y2 = self.bounds
+        a = 0.2
+        x1 -= a
+        y1 -= a
+        x2 += a
+        y2 += a
+        r = 0.5
+        pi2 = math.pi / 2.0
+        cr.new_sub_path()
+        cr.arc(x1+r, y1+r, r, 2*pi2, 3*pi2)
+        cr.arc(x2-r, y1+r, r, 3*pi2, 4*pi2)
+        cr.arc(x2-r, y2-r, r, 0*pi2, 1*pi2)
+        cr.arc(x1+r, y2-r, r, 1*pi2, 2*pi2)
+        cr.close_path()
+        cr.fill()
+        cr.restore()
 
-    for node in board:
-        if node[0] == "module":
-            min_x = float("+inf")
-            max_x = float("-inf")
-            min_y = float("+inf")
-            max_y = float("-inf")
-            at = [float(x) for x in [x for x in node if x[0] == "at"][0][1:]]
-            ref = [x for x in node if x[1] == "reference"][0][2]
-            grp = dwg.g(id=ref)
-            fab_drawings = []
-            silk_drawings = []
-            for child in node:
-                if child[0] not in ("fp_line", "fp_circle"):
-                    continue
-                layer = [x for x in child if x[0] == "layer"][0]
-                if layer[1] in ("F.Fab", "F.SilkS"):
-                    if child[0] == "fp_line":
-                        start = [x for x in child if x[0] == "start"][0][1:]
-                        end = [x for x in child if x[0] == "end"][0][1:]
-                        min_x = min(float(start[0]), min_x)
-                        max_x = max(float(start[0]), max_x)
-                        min_y = min(float(start[1]), min_y)
-                        max_y = max(float(start[1]), max_y)
-                        min_x = min(float(end[0]), min_x)
-                        max_x = max(float(end[0]), max_x)
-                        min_y = min(float(end[1]), min_y)
-                        max_y = max(float(end[1]), max_y)
-                        line = dwg.line(start, end, stroke='black',
-                                        stroke_width=0.1)
-                        if layer[1] == "F.Fab":
-                            fab_drawings.append(line)
-                        elif layer[1] == "F.SilkS":
-                            silk_drawings.append(line)
-                    elif child[0] == "fp_circle":
-                        center = [x for x in child if x[0] == "center"][0][1:]
-                        end = [x for x in child if x[0] == "end"][0][1:]
-                        r = max(abs(float(center[0]) - float(end[0])),
-                                abs(float(center[1]) - float(end[1])))
-                        min_x = min(float(start[0])-r, min_x)
-                        max_x = max(float(start[0])+r, max_x)
-                        min_y = min(float(start[1])-r, min_y)
-                        max_y = max(float(start[1])+r, max_y)
-                        circle = dwg.circle(center, r, stroke='black',
-                                            stroke_width=0.1, fill='none')
-                        if layer[1] == "F.Fab":
-                            fab_drawings.append(circle)
-                        elif layer[1] == "F.SilkS":
-                            silk_drawings.append(circle)
-            pads = []
-            for child in node:
-                if child[0] != "pad":
-                    continue
-                layers = [x for x in child if x[0] == "layers"][0][1:]
-                if "F.Cu" not in layers and "*.Cu" not in layers:
-                    continue
-                pad_type = child[2]
-                if pad_type not in ("smd", "thru_hole"):
-                    continue
-                pad_at = [x for x in child if x[0] == "at"][0][1:]
-                pad_at = [float(x) for x in pad_at]
-                pad_size = [x for x in child if x[0] == "size"][0][1:]
-                pad_size = [float(x) for x in pad_size]
-                pad_drill = [x for x in child if x[0] == "drill"]
-                if pad_drill:
-                    pad_offset = [x for x in pad_drill if x[0] == "offset"]
-                    if pad_offset:
-                        at[0] += float(pad_offset[1])
-                        at[1] += float(pad_offset[2])
-                insert = pad_at[0]-pad_size[0]/2, pad_at[1]-pad_size[1]/2
-                shape = child[3]
-                if shape in ("rect", "oval"):
-                    if shape == "oval":
-                        rx = pad_size[0]/2
-                        ry = pad_size[1]/2
-                    else:
-                        rx = 0
-                        ry = 0
-                    pad = dwg.rect(insert, pad_size, rx, ry, stroke='none',
-                                   fill='black')
-                    pads.append(pad)
-                elif shape == "circle":
-                    pads.append(dwg.circle((pad_at[0], pad_at[1]),
-                                           r=pad_size[0]/2))
-            if min_x != float("inf"):
-                min_x -= 0.5
-                max_x += 0.5
-                min_y -= 0.5
-                max_y += 0.5
-                highlight = dwg.rect((min_x, min_y),
-                                     (max_x-min_x, max_y-min_y),
-                                     rx=0.5, ry=0.5,
-                                     stroke='none',
-                                     fill='#ff8888', visibility='hidden',
-                                     id="highlight-{}".format(ref))
-                if len(at) == 3:
-                    highlight.rotate(angle=-float(at[2]),
-                                     center=(at[0], at[1]))
-                highlight.translate(at[0], at[1])
-                highlights[ref] = highlight
-            if fab_drawings:
-                for drawing in fab_drawings:
-                    grp.add(drawing)
-            else:
-                for drawing in silk_drawings:
-                    grp.add(drawing)
-                for pad in pads:
-                    grp.add(pad)
-            if len(at) == 3:
-                grp.rotate(angle=-float(at[2]), center=(at[0], at[1]))
-            grp.translate(at[0], at[1])
-            parts[ref] = grp
-        elif node[0] == "gr_line":
-            layer = [x for x in node if x[0] == "layer"][0]
-            if layer[1] == "Edge.Cuts":
-                start = [x for x in node if x[0] == "start"][0][1:]
-                end = [x for x in node if x[0] == "end"][0][1:]
-                edges.add(dwg.line(start, end,
-                                   stroke='black',
-                                   stroke_width=0.1))
-        elif node[0] == "gr_arc":
-            layer = [x for x in node if x[0] == "layer"][0]
-            if layer[1] == "Edge.Cuts":
-                center = [x for x in node if x[0] == "start"][0][1:]
-                center = [float(x) for x in center]
-                start = [x for x in node if x[0] == "end"][0][1:]
-                start = [float(x) for x in start]
+    def _parse(self, mod):
+        self.at = [float(x) for x in sexp.find(mod, "at")[1:]]
+        self.bounds = [0, 0, 0, 0]
+        for text in sexp.find_all(mod, "fp_text"):
+            if text[1] == "reference":
+                self.ref = text[2]
+            elif text[1] == "value":
+                self.val = text[2]
+
+        for graphic in sexp.find_all(mod, "fp_line", "fp_circle"):
+            self._parse_graphic(graphic)
+
+        for pad in sexp.find_all(mod, "pad"):
+            self._parse_pad(pad)
+
+    def _parse_graphic(self, graphic):
+        layer = sexp.find(graphic, "layer")[1]
+        if graphic[0] == "fp_line":
+            start = [float(x) for x in sexp.find(graphic, "start")[1:]]
+            self._update_bounds(start)
+        elif graphic[0] == "fp_circle":
+            center = [float(x) for x in sexp.find(graphic, "center")[1:]]
+            self._update_bounds(center)
+        end = [float(x) for x in sexp.find(graphic, "end")[1:]]
+        self._update_bounds(end)
+
+        if layer == "F.Fab":
+            if graphic[0] == "fp_line":
+                self.fab_lines.append((start, end))
+            elif graphic[0] == "fp_circle":
+                self.fab_circs.append((center, end))
+        elif layer == "F.SilkS":
+            if graphic[0] == "fp_line":
+                self.silk_lines.append((start, end))
+            elif graphic[0] == "fp_circle":
+                self.silk_circs.append((center, end))
+
+    def _parse_pad(self, pad):
+        layers = sexp.find(pad, "layers")[1]
+        if "F.Cu" not in layers and "*.Cu" not in layers:
+            return
+        pad_type = pad[2]
+        if pad_type not in ("smd", "thru_hole"):
+            return
+        at = [float(x) for x in sexp.find(pad, "at")[1:]]
+        size = [float(x) for x in sexp.find(pad, "size")[1:]]
+        drill = sexp.find(pad, "drill")
+        if drill:
+            offset = sexp.find(drill, "offset")
+            if offset:
+                at[0] += float(offset[1])
+                at[1] += float(offset[2])
+        topleft = at[0] - size[0]/2, at[1] - size[1]/2
+        shape = pad[3]
+        if shape in ("rect", "oval"):
+            self.rect_pads.append((topleft, size))
+        elif shape == "circle":
+            self.circ_pads.append((at, size[0]/2))
+
+    def _update_bounds(self, at):
+        self.bounds[0] = min(self.bounds[0], at[0])
+        self.bounds[1] = min(self.bounds[1], at[1])
+        self.bounds[2] = max(self.bounds[2], at[0])
+        self.bounds[3] = max(self.bounds[3], at[1])
+
+
+class PCB:
+    def __init__(self, board):
+        self.modules = []
+        self.edge_lines = []
+        self.edge_arcs = []
+        self._parse(board)
+
+    def render(self, cr, where, max_w, max_h, highlights=None):
+        """
+        Render the PCB, with the top left corner at `where`,
+        occupying at most `max_w` width and `max_h` height,
+        and draw a highlight under parts whose reference is in `highlights`.
+        """
+        cr.save()
+        cr.set_line_width(0.1)
+
+        # Set a clip to ensure we occupy at most max_w and max_h
+        cr.rectangle(where[0], where[1], max_w, max_h)
+        cr.clip()
+
+        # Find bounds on highlighted modules
+        hl_bounds = self._find_highlighted_bounds(highlights)
+        bound_width = hl_bounds[2] - hl_bounds[0]
+        bound_height = hl_bounds[3] - hl_bounds[1]
+        bound_centre_x = hl_bounds[0] + bound_width/2
+        bound_centre_y = hl_bounds[1] + bound_height/2
+
+        # Scale to either 1:1 or smaller if necessary to fit bounds
+        scale_x = max_w / bound_width
+        scale_y = max_h / bound_height
+        scale = min(min(1, scale_x), min(1, scale_y))
+        cr.scale(scale, scale)
+
+        # Can we shift the top edge of the PCB to the top and not cut off
+        # the bottom of the highlight?
+        if hl_bounds[3] - self.bounds[1] < max_h/scale:
+            shift_y = -self.bounds[1]
+
+        # Can we shift the bottom edge of the PCB to the bottom and not cut off
+        # the top of the highlight?
+        elif self.bounds[3] - hl_bounds[1] < max_h/scale:
+            shift_y = -self.bounds[3] + max_h/scale
+
+        # Otherwise centre the highlighted region vertically
+        else:
+            shift_y = (max_h/(2*scale))-bound_centre_y
+
+        # Can we shift the left edge of the PCB to the left and not cut off
+        # the right of the highlight?
+        if hl_bounds[2] - self.bounds[0] < max_w/scale:
+            shift_x = -self.bounds[0]
+
+        # Can we shift the right edge of the PCB to the right and not cut off
+        # the left of the highlight?
+        elif self.bounds[2] - hl_bounds[0] < max_w/scale:
+            shift_x = -self.bounds[2] + max_w/scale
+
+        # Otherwise centre the highlighted region horizontally
+        else:
+            shift_x = (max_w/(2*scale))-bound_centre_x
+
+        cr.translate(shift_x, shift_y)
+
+        # Translate our origin to desired position on page
+        cr.translate(where[0]/scale, where[1]/scale)
+
+        # Render highlights below everything else
+        cr.set_source_rgb(1.0, 0.5, 0.5)
+        for module in self.modules:
+            if module.ref in highlights:
+                module.render_highlight(cr)
+
+        # Render modules
+        cr.set_source_rgb(0, 0, 0)
+        for module in self.modules:
+            module.render(cr)
+
+        # Render edge lines
+        for line in self.edge_lines:
+            cr.move_to(*line[0])
+            cr.line_to(*line[1])
+            cr.stroke()
+
+        # Render edge arcs
+        for arc in self.edge_arcs:
+            cr.new_sub_path()
+            cr.arc(*arc)
+            cr.stroke()
+
+        cr.restore()
+
+    def _find_highlighted_bounds(self, highlights):
+        # Find bounds on highlighted modules
+        # TODO: Deal with rotation in modules in a more elegant fashion
+        # (Rotation includes bounds, so here we just take the biggest bound,
+        #  which is both wasteful for high aspect ratio parts, and wrong for
+        #  parts not on a 90' rotation).
+        hl_bounds = [self.bounds[2], self.bounds[3],
+                     self.bounds[0], self.bounds[1]]
+        for module in self.modules:
+            if module.ref not in highlights:
+                continue
+            a = max(module.bounds) * 2
+            hl_bounds[0] = min(hl_bounds[0], module.at[0] - a)
+            hl_bounds[1] = min(hl_bounds[1], module.at[1] - a)
+            hl_bounds[2] = max(hl_bounds[2], module.at[0] + a)
+            hl_bounds[3] = max(hl_bounds[3], module.at[1] + a)
+        return hl_bounds
+
+    def _parse(self, board):
+        general = sexp.find(board, "general")
+        self.bounds = [float(x) for x in sexp.find(general, "area")[1:]]
+        self.width = self.bounds[2] - self.bounds[0]
+        self.height = self.bounds[3] - self.bounds[1]
+
+        for module in sexp.find_all(board, "module"):
+            self.modules.append(Module(module))
+
+        self._parse_edges(board)
+
+    def _parse_edges(self, board):
+        for graphic in sexp.find_all(board, "gr_line", "gr_arc"):
+            layer = sexp.find(graphic, "layer")[1]
+            if layer != "Edge.Cuts":
+                continue
+            if graphic[0] == "gr_line":
+                start = [float(x) for x in sexp.find(graphic, "start")[1:]]
+                end = [float(x) for x in sexp.find(graphic, "end")[1:]]
+                self.edge_lines.append((start, end))
+            elif graphic[0] == "gr_arc":
+                center = [float(x) for x in sexp.find(graphic, "start")[1:]]
+                start = [float(x) for x in sexp.find(graphic, "end")[1:]]
                 r = max(abs(center[0] - start[0]),
                         abs(center[1] - start[1]))
-                angle = float([x for x in node if x[0] == "angle"][0][1])
+                angle = float(sexp.find(graphic, "angle")[1]) * math.pi/180.0
                 dx = start[0] - center[0]
                 dy = start[1] - center[1]
                 start_angle = math.atan2(dy, dx)
-                end_angle = (start_angle + angle * (math.pi/180.0))
-                end_x = center[0] + r * math.cos(end_angle)
-                end_y = center[1] + r * math.sin(end_angle)
-                path = "M {} {} A {} {} 0 0 1 {} {}".format(
-                    start[0], start[1], r, r, end_x, end_y)
-                edges.add(dwg.path(path, fill='none',
-                                   stroke='black', stroke_width=0.1))
-    for highlight in highlights.values():
-        dwg.add(highlight)
-    for part in parts.values():
-        dwg.add(part)
-    dwg.add(edges)
-    dwg.save()
-    xml = dwg.get_xml()
+                end_angle = start_angle + angle
+                self.edge_arcs.append((center[0], center[1], r,
+                                       start_angle, end_angle))
 
-    h = xml.find("rect[@id='highlight-IC1']")
-    h.set('visibility', 'visible')
-    et = ElementTree.ElementTree(element=xml)
-    et.write(outpath+"-IC1.svg")
+
+class BOM:
+    def __init__(self, xmlpath):
+        self.tree = ET.parse(xmlpath)
+        self.lines = []
+        self.suppliers = {}
+        self._find_parts()
+        self._generate_lines()
+
+    def _find_parts(self):
+        for comp in self.tree.getroot().iter('comp'):
+            ref = comp.get('ref')
+            val = comp.findtext('value')
+            ftp = comp.findtext('footprint')
+            fields = {}
+            part = {"ref": ref, "val": val, "ftp": ftp, "fields": fields}
+            for field in comp.iter('field'):
+                supplier = field.get('name')
+                code = field.text
+                fields[supplier] = code
+
+                if supplier not in self.suppliers:
+                    self.suppliers[supplier] = {}
+                if code not in self.suppliers[supplier]:
+                    self.suppliers[supplier][code] = []
+                self.suppliers[supplier][code].append(part)
+
+    def _generate_lines(self):
+        for supplier in self.suppliers:
+            for code in self.suppliers[supplier]:
+                part = self.suppliers[supplier][code][0]
+                refs = []
+                for part in self.suppliers[supplier][code]:
+                    refs.append(part['ref'])
+                line = Line(refs, part['val'], part['ftp'], supplier, code)
+                self.lines.append(line)
+
+
+class Line:
+    def __init__(self, refs, value, footprint, supplier, code):
+        self.refs = refs
+        self.value = value
+        self.footprint = footprint
+        self.supplier = supplier
+        self.code = code
+
+    def render(self, cr, where, w, h):
+        cr.save()
+
+        # Clip to permissible area
+        cr.rectangle(where[0], where[1], w, h)
+        cr.clip()
+
+        # Draw first line
+        cr.set_source_rgb(0, 0, 0)
+        cr.select_font_face("Sans", cairo.FONT_SLANT_NORMAL,
+                            cairo.FONT_WEIGHT_BOLD)
+        cr.set_font_size(3.0)
+        cr.move_to(where[0]+3, where[1]+5)
+        cr.show_text(" ".join(self.refs))
+
+        # Draw second line
+        cr.select_font_face("Sans", cairo.FONT_SLANT_NORMAL,
+                            cairo.FONT_WEIGHT_NORMAL)
+        cr.set_font_size(3.0)
+        cr.move_to(where[0]+3, where[1]+9)
+        cr.show_text("{}x  {}  {}"
+                     .format(len(self.refs), self.value, self.footprint))
+
+        # Draw third line
+        cr.select_font_face("Sans", cairo.FONT_SLANT_NORMAL,
+                            cairo.FONT_WEIGHT_NORMAL)
+        cr.set_font_size(3.0)
+        cr.move_to(where[0]+3, where[1]+12)
+        cr.show_text("{} {}".format(self.supplier, self.code))
+
+        cr.restore()
+
+
+# Forever yields a new (x, y) of successive label top-left positions,
+# calling cr.show_page() when the current page is exhausted.
+def sheet_positions(cr, label_width, label_height, labels_x, labels_y,
+                    margin_top, margin_left, spacing_x, spacing_y):
+    while True:
+        for x in range(labels_x):
+            for y in range(labels_y):
+                xx = margin_left + x*(label_width + spacing_x)
+                yy = margin_top + y*(label_height + spacing_y)
+                yield (xx, yy)
+        cr.show_page()
+
+
+def main(xmlpath, pdfpath):
+    bom = BOM(xmlpath)
+
+    with open(xmlpath[:-3] + "kicad_pcb") as f:
+        pcb = PCB(sexp.parse(f.read()))
+
+    ps = cairo.PDFSurface(pdfpath, 842, 595)
+    cr = cairo.Context(ps)
+
+    # Scale user units to millimetres
+    cr.scale(1/0.3528, 1/0.3528)
+
+    # Label settings
+    label_width = 72
+    label_height = 63.5
+    labels_x = 4
+    labels_y = 3
+    margin_top = 7.75
+    margin_left = 4.5
+    spacing_x = 0.0
+    spacing_y = 2.0
+
+    labels = sheet_positions(cr, label_width, label_height,
+                             labels_x, labels_y, margin_top, margin_left,
+                             spacing_x, spacing_y)
+
+    for line, label in zip(bom.lines, labels):
+        line.render(cr, label, label_width, 14)
+        pcb.render(cr, (label[0], label[1]+14),
+                   label_width, label_height-14, line.refs)
+    cr.show_page()
+
 
 if __name__ == "__main__":
-    draw_board(sys.argv[1], sys.argv[2])
+    if len(sys.argv) == 3:
+        xmlpath = sys.argv[1]
+        pdfpath = sys.argv[2]
+        main(xmlpath, pdfpath)
+    else:
+        print("Usage: {} <bompath.xml> <outpath.pdf>".format(sys.argv[0]))
+        sys.exit(1)
