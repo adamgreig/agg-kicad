@@ -342,6 +342,11 @@ class Line:
         self.supplier = supplier
         self.code = code
 
+        if self.footprint is not None:
+            self.footprint = self.footprint.split(":")[1]
+        else:
+            self.footprint = ""
+
     def render(self, cr, where, w, h):
         cr.save()
 
