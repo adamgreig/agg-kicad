@@ -1186,6 +1186,46 @@ config = {
             ]
         ]
     },
+    
+    # LTC4353 Dual Low Voltage Ideal Diode Controller
+    "LTC4353": {
+        "path": "ic/power",
+        "footprint": "agg:DFN-16-EP-LTC-DE",
+        "datasheet": "https://cds.linear.com/docs/en/datasheet/4353f.pdf",
+        "ordercodes": [("Farnell", "2115909")],
+        "description": "Dual Output Low Voltage Ideal Diode Controller",
+        "pins": [
+            [
+                [
+                    ("VCC", 14, "pwrin"),
+                ], [
+                    ("~EN1", 16, "in"),
+                    ("~EN2", 1, "in"),
+                ], [
+                    ("NC", 2, "nc"),
+                    ("NC", 3, "nc"),
+                ], [
+                    ("~ON_STAT1", 9, "out"),
+                    ("~ON_STAT2", 8, "out"),
+                ], [
+                    ("GND", 15, "pwrin"),
+                    ("GND", "EP", "pwrin"),
+                ]
+            ], [
+                [
+                    ("CPO1", 11, "passive"),
+                    ("VIN1", 13, "pwrin"),
+                    ("GATE1", 12, "out"),
+                    ("OUT1", 10, "in"),
+                ], [
+                    ("CPO2", 6, "passive"),
+                    ("VIN2", 4, "pwrin"),
+                    ("GATE2", 5, "out"),
+                    ("OUT2", 7, "in"),
+                ]
+            ]
+        ]
+    },
 }
 
 # Other Constants =============================================================

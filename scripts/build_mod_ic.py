@@ -370,6 +370,21 @@ config = {
         "chip_shape": (3.1, 3.1),
         "pin_shape": (-0.3, 0.30)
     },
+    
+    # DFN-16 from LTC4353
+    # IPC-7351B: DFN45P300X400X75-17N
+    "DFN-16-EP-LTC-DE": {
+        "rows": 2,
+        "pins": 16,
+        "pin_pitch": 0.45,
+        "row_pitch": 2.60,
+        "pad_shape": (0.40, 0.23),
+        "ep_shape": (1.70, 3.30),
+        "ep_mask_shape": (0.8, 0.8, 0.2, 0.4),
+        "ep_paste_shape": (0.8, 0.8, 0.2, 0.4),
+        "chip_shape": (3.1, 4.1),
+        "pin_shape": (-0.41, 0.28)
+    },
 }
 
 
