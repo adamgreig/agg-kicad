@@ -1186,6 +1186,53 @@ config = {
             ]
         ]
     },
+    
+    # MAX17435 Multi-chemistry Battery Charger with SMBus Communication
+    "MAX17435": {
+        "path": "ic/power",
+        "footprint": "agg:QFN-24-EP-MAX",
+        "datasheet": "https://datasheets.maximintegrated.com/en/ds/MAX17435-MAX17535.pdf",
+        "ordercodes": [("Farnell", "2516688")],
+        "description": "Multi-chemistry battery charger with SMBus communication",
+        "pins": [
+            [
+                [
+                    ("~ACOK", 10, "out"),
+                    ("LDO", 4, "pwrout"),
+                    ("EN", 24, "in"),
+                    ("ADAPTLIM", 6, "out"),
+                    ("ITHR", 20, "in"),
+                    ("VCC", 20, "pwrin")
+                ], [
+                    ("SCL", 1, "oc"),
+                    ("SDA", 2, "oc")
+                ], [
+                    ("CC", 17, "passive"),
+                    ("IINP", 18, "out"),
+                    ("VAA", 21, "passive"),
+                    ("GND", 23, "pwrin"),
+                    ("GND", "EP", "pwrin")
+                ]
+            ], [
+                [
+                    ("ACIN", 19, "in"),
+                    ("DCIN", 3, "pwrin"),
+                    ("PDSL", 14, "out"),
+                    ("CSSP", 16, "in"),
+                    ("CSSN", 15, "in")
+                ], [
+                    ("DHI", 9, "out"),
+                    ("BST", 7, "passive"),
+                    ("LX", 8, "passive"),
+                    ("DLO", 5, "out")
+                ], [
+                    ("CSIP", 12, "in"),
+                    ("CSIN", 11, "in"),
+                    ("BATT", 13, "in")
+                ]
+            ]
+        ]
+    },
 }
 
 # Other Constants =============================================================

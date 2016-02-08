@@ -1,0 +1,4 @@
+EESchema-DOCLIB	Version 2.0
+$CMP MAX17435
+D Multi-chemistry battery charger with SMBus communication
+$ENDCMP

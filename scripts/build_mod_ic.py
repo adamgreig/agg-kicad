@@ -203,6 +203,21 @@ config = {
         "chip_shape": (3.0, 3.0),
         "pin_shape": (-0.3, 0.2),
     },
+    
+    # QFN-24 from MAXIM. Doc no. 21-0139
+    # For MAX17435
+    "QFN-24-EP-MAX": {
+        "rows": 4,
+        "pins": 24,
+        "pin_pitch": 0.5,
+        "row_pitch": 3.91,
+        "pad_shape": (0.8, 0.3),
+        "chip_shape": (4.0, 4.0),
+        "pin_shape": (-0.4, 0.23),
+        "ep_shape": (2.6, 2.6),
+        "ep_mask_shape": (0.9,0.9,0.4,0.4),
+        "ep_paste_shape": (0.9,0.9,0.4,0.4),
+    },
 
     # QFN-16 from SKY65111-348LF datasheet
     # For SKY65111-348LF
