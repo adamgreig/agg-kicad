@@ -297,7 +297,7 @@ class PCB:
         self._parse_edges(board)
 
     def _parse_edges(self, board):
-        for graphic in sexp.find_all(board, "gr_line", "gr_arc"):
+        for graphic in sexp.find_all(board, "gr_line", "gr_arc", "gr_circle"):
             layer = sexp.find(graphic, "layer")[1]
             if layer != "Edge.Cuts":
                 continue
@@ -317,6 +317,12 @@ class PCB:
                 end_angle = start_angle + angle
                 self.edge_arcs.append((center[0], center[1], r,
                                        start_angle, end_angle))
+            elif graphic[0] == "gr_circle":
+                center = [float(x) for x in sexp.find(graphic, "center")[1:]]
+                end = [float(x) for x in sexp.find(graphic, "end")[1:]]
+                r = math.sqrt((center[0] - end[0])**2 +
+                              (center[1] - end[1])**2)
+                self.edge_arcs.append((center[0], center[1], r, 0, 2*math.pi))
 
 
 class BOM:
