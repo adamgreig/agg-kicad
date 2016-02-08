@@ -1202,7 +1202,7 @@ config = {
                     ("EN", 24, "in"),
                     ("ADAPTLIM", 6, "out"),
                     ("ITHR", 20, "in"),
-                    ("VCC", 20, "pwrin")
+                    ("VCC", 22, "pwrin")
                 ], [
                     ("SCL", 1, "oc"),
                     ("SDA", 2, "oc")
