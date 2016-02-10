@@ -1,4 +1,4 @@
-update=Mon 08 Feb 2016 22:14:20 GMT
+update=Wed 10 Feb 2016 02:27:44 GMT
 version=1
 last_client=kicad
 [pcbnew]
@@ -104,3 +104,4 @@ LibName72=lib/power/power
 LibName73=lib/power/pwr
 LibName74=lib/ui/rotenc
 LibName75=lib/ui/sounder
+LibName76=lib/ui/switch

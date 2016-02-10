@@ -2,7 +2,7 @@ all: build
 
 build: build-libs build-mods
 
-build-libs: build-lib-connector build-lib-ic build-lib-power
+build-libs: build-lib-connector build-lib-ic build-lib-power build-lib-switch
 
 build-mods: build-mod-chip build-mod-ic build-mod-jstpa
 
@@ -25,6 +25,12 @@ build-lib-connector:
 
 verify-lib-connector:
 	python scripts/build_lib_connector.py lib/connector/conn.lib --verify
+
+build-lib-switch:
+	python scripts/build_lib_switch.py lib/ui/switch.lib
+
+verify-lib-switch:
+	python scripts/build_lib_switch.py lib/ui/switch.lib --verify
 
 build-lib-ic:
 	python scripts/build_lib_ic.py lib/

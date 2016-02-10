@@ -13,7 +13,7 @@ import fnmatch
 import re
 
 
-EXCLUSIONS = ("agg-kicad.lib", "conn.lib", "power.lib")
+EXCLUSIONS = ("agg-kicad.lib", "conn.lib", "power.lib", "switch.lib")
 
 
 re_defs = re.compile("^DEF (?P<name>[^ ]*) (?P<des>[^ ]*) ", re.MULTILINE)
