@@ -1,6 +1,7 @@
 """
 build_mod_tfml_sfml.py
 Copyright 2016 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Generate footprints for Samtec TFML and SFML connectors.
 """

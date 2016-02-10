@@ -1,6 +1,7 @@
 """
 panelise.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 """
 
 from __future__ import print_function, division

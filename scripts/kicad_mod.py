@@ -1,6 +1,7 @@
 """
 kicad_mod.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Helper functions for generating KiCAD footprint files.
 """

@@ -1,6 +1,7 @@
 """
 build_lib_connector.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Generate conn.lib, generic multi-pin connector symbols,
 in a range of number of rows and pins.

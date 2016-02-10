@@ -1,6 +1,7 @@
 """
 build_lib_power.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Generate generic power symbols for supply and ground nets.
 """

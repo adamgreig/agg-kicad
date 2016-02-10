@@ -1,6 +1,7 @@
 """
 compile_pro.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Generate a kicad .pro project file containing all the libraries in a given
 directory and otherwise empty.

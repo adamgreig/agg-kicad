@@ -2,6 +2,7 @@
 """
 xml2bom.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Convert Farnell BOM XMLs to a useful text report, including sanity checking,
 and outputting quickpaste formats for Farnell, RS and DigiKey.

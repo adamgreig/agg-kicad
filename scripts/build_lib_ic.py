@@ -1,6 +1,7 @@
 """
 build_lib_ic.py
 Copyright 2016 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Generate symbols for generic black-box ICs etc.
 """

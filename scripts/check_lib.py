@@ -1,6 +1,7 @@
 """
 check_lib.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Check all library files in a directory against a set of consistency rules.
 """

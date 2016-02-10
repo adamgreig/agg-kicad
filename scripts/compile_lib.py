@@ -1,6 +1,7 @@
 """
 compile_lib.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Build a single KiCAD component library from multiple input libraries.
 

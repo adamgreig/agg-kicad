@@ -1,6 +1,7 @@
 """
 report_mod.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Generate a report of all available footprints.
 """

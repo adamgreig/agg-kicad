@@ -1,6 +1,7 @@
 """
 build_lib_switch.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Generate switch.lib, generic nPmT switch symbols.
 """
