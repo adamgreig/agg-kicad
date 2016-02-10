@@ -1019,22 +1019,22 @@ config = {
                     ("VDD", 8, "pwrin"),
                     ("VDD", 45, "pwrin"),
                 ], [
-                    ("VREFOUT", 13, "pwrout"),
-                    ("VREFRP", 14, "pwrin"),
-                    ("VREFBYP", 11, "pwrout"),
+                    ("VREF_OUT", 13, "pwrout"),
+                    ("VREF_P", 14, "pwrin"),
+                    ("VREF_BYP", 11, "pwrout"),
                     ("LDO", 43, "pwrout"),
                 ], [
-                    ("RESET", 42, "out"),
+                    ("~RESET", 42, "in"),
                     ("INT", 37, "out"),
-                    ("SCK", 38, "out"),
-                    ("SDA", 39, "out"),
-                    ("SDI", 40, "out"),
-                    ("CS", 41, "out"),
+                    ("SCK", 38, "in"),
+                    ("SDO", 39, "out"),
+                    ("SDI", 40, "in"),
+                    ("~CS", 41, "in"),
                    
                 ], [
                     ("NC", 10, "nc"),
                 ], [
-                    ("COM", 36, "pwrin"),
+                    ("COM", 36, "in"),
                     ("GND", 1, "pwrin"),
                     ("GND", 3, "pwrin"),
                     ("GND", 5, "pwrin"),
@@ -1046,9 +1046,9 @@ config = {
                 ]
             ], [
                 [
-                    ("Q1", 46, "pwrout"),
+                    ("Q1", 48, "pwrout"),
                     ("Q2", 47, "pwrout"),
-                    ("Q3", 48, "pwrout"),
+                    ("Q3", 46, "pwrout"),
                 ], [
                     ("CH1", 16, "in"),
                     ("CH2", 17, "in"),
