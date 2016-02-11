@@ -59,7 +59,4 @@ and commits the result. Copy these to `.git/hooks` for use.
 
 ## Licence
 
-Until a reasonable level of stability is reached, this library is "all rights 
-reserved". I intend to release it under an open source licence once I've 
-completed a project using just this library and am reasonably confident it is 
-stable.
+All content licensed under the MIT licence. See `LICENSE`.

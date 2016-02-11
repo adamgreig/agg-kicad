@@ -1,6 +1,7 @@
 """
 compile_pro.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Generate a kicad .pro project file containing all the libraries in a given
 directory and otherwise empty.
@@ -53,7 +54,8 @@ def makeprj(libpath):
     for dirpath, dirnames, files in os.walk(libpath):
         dirnames.sort()
         for f in fnmatch.filter(sorted(files), "*.lib"):
-            path = os.path.splitext(os.path.join(dirpath, f))[0]
+            path = os.path.join(dirpath, os.path.splitext(f)[0])
+            path = path.replace("\\", "/")
             prj += "LibName{}={}\n".format(count, path)
             count += 1
     return prj
@@ -86,7 +88,7 @@ if __name__ == "__main__":
             else:
                 print("Error: '{}' is not up-to-date with '{}'."
                       .format(prjpath, libpath), file=sys.stderr)
-                print("Please run genproject.py to regenerate.",
+                print("Please run compile_pro.py to regenerate.",
                       file=sys.stderr)
                 sys.exit(1)
     else:

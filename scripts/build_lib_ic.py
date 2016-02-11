@@ -1,6 +1,7 @@
 """
 build_lib_ic.py
 Copyright 2016 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Generate symbols for generic black-box ICs etc.
 """
@@ -1002,6 +1003,79 @@ config = {
             ]
         ],
     },
+    
+    # LTC2983 Multi-Sensor High Accuracy Digital Temperature Measurement System
+    "LTC2983": {
+        "path": "ic/analogue",
+        "footprint": "LQFP-48",
+        "datasheet": "http://cds.linear.com/docs/en/datasheet/2983fc.pdf",
+        "ordercodes": [("Farnell", "2461149")],
+        "description": "Digital Temperature Measurement System",
+        "pins": [
+            [
+                [
+                    ("VDD", 2, "pwrin"),
+                    ("VDD", 4, "pwrin"),
+                    ("VDD", 6, "pwrin"),
+                    ("VDD", 8, "pwrin"),
+                    ("VDD", 45, "pwrin"),
+                ], [
+                    ("VREF_OUT", 13, "pwrout"),
+                    ("VREF_P", 14, "pwrin"),
+                    ("VREF_BYP", 11, "pwrout"),
+                    ("LDO", 43, "pwrout"),
+                ], [
+                    ("~RESET", 42, "in"),
+                    ("INT", 37, "out"),
+                    ("SCK", 38, "in"),
+                    ("SDO", 39, "out"),
+                    ("SDI", 40, "in"),
+                    ("~CS", 41, "in"),
+                   
+                ], [
+                    ("NC", 10, "nc"),
+                ], [
+                    ("COM", 36, "in"),
+                    ("GND", 1, "pwrin"),
+                    ("GND", 3, "pwrin"),
+                    ("GND", 5, "pwrin"),
+                    ("GND", 7, "pwrin"),
+                    ("GND", 9, "pwrin"),
+                    ("GND", 12, "pwrin"),
+                    ("GND", 15, "pwrin"),
+                    ("GND", 44, "pwrin"),
+                ]
+            ], [
+                [
+                    ("Q1", 48, "pwrout"),
+                    ("Q2", 47, "pwrout"),
+                    ("Q3", 46, "pwrout"),
+                ], [
+                    ("CH1", 16, "in"),
+                    ("CH2", 17, "in"),
+                    ("CH3", 18, "in"),
+                    ("CH4", 19, "in"),
+                    ("CH5", 20, "in"),
+                    ("CH6", 21, "in"),
+                    ("CH7", 22, "in"),
+                    ("CH8", 23, "in"),
+                    ("CH9", 24, "in"),
+                    ("CH10", 25, "in"),
+                    ("CH11", 26, "in"),
+                    ("CH12", 27, "in"),
+                    ("CH13", 28, "in"),
+                    ("CH14", 29, "in"),
+                    ("CH15", 30, "in"),
+                    ("CH16", 31, "in"),
+                    ("CH17", 32, "in"),
+                    ("CH18", 33, "in"),
+                    ("CH19", 34, "in"),
+                    ("CH20", 35, "in"),
+                ],
+            ]
+        ],
+    },
+    
 
     # MCP2562 CAN Transceiver
     "MCP2562": {
@@ -1186,7 +1260,7 @@ config = {
             ]
         ]
     },
-    
+
     # LTC4353 Dual Low Voltage Ideal Diode Controller
     "LTC4353": {
         "path": "ic/power",
@@ -1246,6 +1320,55 @@ config = {
                     ("SDA", 3, "tri"),
                     ("SCL", 1, "tri"),
                     ("WP", 5, "in"),
+                ]
+            ]
+        ]
+    },
+
+    # MAX17435 Multi-chemistry Battery Charger with SMBus Communication
+    "MAX17435": {
+        "path": "ic/power",
+        "footprint": "agg:QFN-24-EP-MAX",
+        "datasheet": "https://datasheets.maximintegrated.com/en"
+                     "/ds/MAX17435-MAX17535.pdf",
+        "ordercodes": [("Farnell", "2516688")],
+        "description": "Multi-chemistry battery charger with"
+                       " SMBus communication",
+        "pins": [
+            [
+                [
+                    ("~ACOK", 10, "out"),
+                    ("LDO", 4, "pwrout"),
+                    ("EN", 24, "in"),
+                    ("ADAPTLIM", 6, "out"),
+                    ("ITHR", 20, "in"),
+                    ("VCC", 22, "pwrin")
+                ], [
+                    ("SCL", 1, "oc"),
+                    ("SDA", 2, "oc")
+                ], [
+                    ("CC", 17, "passive"),
+                    ("IINP", 18, "out"),
+                    ("VAA", 21, "passive"),
+                    ("GND", 23, "pwrin"),
+                    ("GND", "EP", "pwrin")
+                ]
+            ], [
+                [
+                    ("ACIN", 19, "in"),
+                    ("DCIN", 3, "pwrin"),
+                    ("PDSL", 14, "out"),
+                    ("CSSP", 16, "in"),
+                    ("CSSN", 15, "in")
+                ], [
+                    ("DHI", 9, "out"),
+                    ("BST", 7, "passive"),
+                    ("LX", 8, "passive"),
+                    ("DLO", 5, "out")
+                ], [
+                    ("CSIP", 12, "in"),
+                    ("CSIN", 11, "in"),
+                    ("BATT", 13, "in")
                 ]
             ]
         ]

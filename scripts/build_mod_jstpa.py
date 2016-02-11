@@ -1,6 +1,7 @@
 """
 build_mod_jstpa.py
 Copyright 2016 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Generate footprints for JST-PA connectors.
 """

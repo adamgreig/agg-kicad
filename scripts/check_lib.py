@@ -1,6 +1,7 @@
 """
 check_lib.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Check all library files in a directory against a set of consistency rules.
 """
@@ -13,7 +14,7 @@ import fnmatch
 import re
 
 
-EXCLUSIONS = ("agg-kicad.lib", "conn.lib", "power.lib")
+EXCLUSIONS = ("agg-kicad.lib", "conn.lib", "power.lib", "switch.lib")
 
 
 re_defs = re.compile("^DEF (?P<name>[^ ]*) (?P<des>[^ ]*) ", re.MULTILINE)

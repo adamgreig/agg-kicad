@@ -1,6 +1,7 @@
 """
 build_mod_chip.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Create two-terminal chip packages.
 """

@@ -1,6 +1,7 @@
 """
 draw_mod.py
 Copyright 2015 Adam Greig
+Licensed under the MIT licence, see LICENSE file for details.
 
 Render a .kicad_mod file to a PNG.
 """
