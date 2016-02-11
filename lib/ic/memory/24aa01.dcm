@@ -1,0 +1,4 @@
+EESchema-DOCLIB	Version 2.0
+$CMP 24AA01
+D 1K I2C Serial EEPROM
+$ENDCMP
