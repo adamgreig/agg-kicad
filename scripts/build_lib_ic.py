@@ -1300,6 +1300,30 @@ config = {
             ]
         ]
     },
+    
+    # 24AA01 1K I2C Serial EEPROM   
+    "24AA01": {
+        "path": "ic/memory",
+        "footprint": "agg:SOT-23-5",
+        "datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/21711c.pdf",
+        "ordercodes": [("Farnell", "1331269")],
+        "description": "1K I2C Serial EEPROM",
+        "pins": [
+            [
+                [
+                    ("VCC", 4, "pwrin"),
+                ], [
+                    ("GND", 2, "pwrin"),
+                ]
+            ], [
+                [
+                    ("SDA", 3, "tri"),
+                    ("SCL", 1, "tri"),
+                    ("WP", 5, "in"),
+                ]
+            ]
+        ]
+    },
 
     # MAX17435 Multi-chemistry Battery Charger with SMBus Communication
     "MAX17435": {
