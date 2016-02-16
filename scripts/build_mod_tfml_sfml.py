@@ -47,6 +47,7 @@ import math
 from sexp import parse as sexp_parse, generate as sexp_generate
 from kicad_mod import fp_line, fp_text, pad, draw_square
 
+
 def tfml_pads(pins):
     pads = []
     x = -((pins - 1) / 2.0) * 1.27
@@ -57,6 +58,7 @@ def tfml_pads(pins):
                         ["F.Cu", "F.Mask", "F.Paste"]))
         x += 1.27
     return pads
+
 
 def sfml_pads(pins):
     pads = []
@@ -69,6 +71,7 @@ def sfml_pads(pins):
         x += 1.27
     return pads
 
+
 def locking_clip(pins):
     x = (pins * 1.27 + 1.91) / 2.0
     size = [1.2, 1.2]
@@ -78,10 +81,12 @@ def locking_clip(pins):
     pads.append(pad("", "np_thru_hole", "circle", (-x, 0), size, l, drill=1.2))
     return pads
 
+
 def tfml_fab(pins):
     _, _, _, _, sq = draw_square(
         pins * 1.27 + 3.18, 5.72, (0, 0), "F.Fab", fab_width)
     return sq
+
 
 def sfml_fab(pins):
     out = []
@@ -105,6 +110,7 @@ def sfml_fab(pins):
     out.append(fp_line((nw[0], nw[1]+a_y), nw, l, w))
     return out
 
+
 def tfml_silk(pins):
     out = []
     l = "F.SilkS"
@@ -118,6 +124,7 @@ def tfml_silk(pins):
     out.append(fp_line((se[0], se[1]-1.5), (ne[0], ne[1]+1.5), l, w))
     out.append(fp_line((ne[0], ne[1]+1.5), (ne[0]-1.5, ne[1]), l, w))
     return out
+
 
 def sfml_silk(pins):
     out = []
@@ -143,6 +150,7 @@ def sfml_silk(pins):
     out.append(fp_line((nw[0], nw[1]+a_y), nw, l, w))
     return out
 
+
 def ctyd(pins):
     w = pins * 1.27 + 3.94 + 2 * ctyd_gap
     h = 6.35 + 2 * ctyd_gap
@@ -151,6 +159,7 @@ def ctyd(pins):
     h = grid * int(math.ceil(h / grid))
     _, _, _, _, sq = draw_square(w, h, (0, 0), "F.CrtYd", ctyd_width)
     return sq
+
 
 def refs(name):
     out = []
@@ -162,6 +171,7 @@ def refs(name):
                "F.Fab", font_size, font_thickness))
     return out
 
+
 def tfml_base(name, pins):
     tedit = format(int(time.time()), 'X')
     sexp = ["module", name, ("layer", "F.Cu"), ("tedit", tedit)]
@@ -172,16 +182,19 @@ def tfml_base(name, pins):
     sexp += refs(name)
     return sexp
 
+
 def tfml(pins):
     name = "TFML-1{:02d}-02-L-D".format(pins)
     sexp = tfml_base(name, pins)
     return name, sexp_generate(sexp)
+
 
 def tfml_lc(pins):
     name = "TFML-1{:02d}-02-L-D-LC".format(pins)
     sexp = tfml_base(name, pins)
     sexp += locking_clip(pins)
     return name, sexp_generate(sexp)
+
 
 def sfml_base(name, pins):
     tedit = format(int(time.time()), 'X')
@@ -193,16 +206,19 @@ def sfml_base(name, pins):
     sexp += refs(name)
     return sexp
 
+
 def sfml(pins):
     name = "SFML-1{:02d}-02-L-D".format(pins)
     sexp = sfml_base(name, pins)
     return name, sexp_generate(sexp)
+
 
 def sfml_lc(pins):
     name = "SFML-1{:02d}-02-L-D-LC".format(pins)
     sexp = sfml_base(name, pins)
     sexp += locking_clip(pins)
     return name, sexp_generate(sexp)
+
 
 def main(prettypath, verify=False):
     for pins in (5, 7, 10):
