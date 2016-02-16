@@ -1,0 +1,93 @@
+
+(module "SIL-254P-03" 
+  (layer F.Cu) 
+  (tedit 56C298A0) 
+  (pad 1 thru_hole rect 
+    (at -2.5400 0) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 2 thru_hole circle 
+    (at 0.0000 0) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 3 thru_hole circle 
+    (at 2.5400 0) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (fp_line 
+    (start -3.8100 -1.2700) 
+    (end 3.8100 -1.2700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.8100 -1.2700) 
+    (end 3.8100 1.2700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.8100 1.2700) 
+    (end -3.8100 1.2700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.8100 1.2700) 
+    (end -3.8100 -1.2700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.8100 -1.2700) 
+    (end 3.8100 -1.2700) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 3.8100 -1.2700) 
+    (end 3.8100 1.2700) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 3.8100 1.2700) 
+    (end -3.8100 1.2700) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -3.8100 1.2700) 
+    (end -3.8100 -1.2700) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -4.1000 -1.5500) 
+    (end 4.1000 -1.5500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 4.1000 -1.5500) 
+    (end 4.1000 1.5500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 4.1000 1.5500) 
+    (end -4.1000 1.5500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -4.1000 1.5500) 
+    (end -4.1000 -1.5500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_text reference REF** 
+    (at 0 -2.2200) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "SIL-254P-03" 
+    (at 0 2.2200) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))))

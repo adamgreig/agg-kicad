@@ -1,0 +1,143 @@
+
+(module "DIL-254P-12" 
+  (layer F.Cu) 
+  (tedit 56C29F99) 
+  (pad 1 thru_hole rect 
+    (at -6.3500 1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 2 thru_hole circle 
+    (at -6.3500 -1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 3 thru_hole circle 
+    (at -3.8100 1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 4 thru_hole circle 
+    (at -3.8100 -1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 5 thru_hole circle 
+    (at -1.2700 1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 6 thru_hole circle 
+    (at -1.2700 -1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 7 thru_hole circle 
+    (at 1.2700 1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 8 thru_hole circle 
+    (at 1.2700 -1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 9 thru_hole circle 
+    (at 3.8100 1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 10 thru_hole circle 
+    (at 3.8100 -1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 11 thru_hole circle 
+    (at 6.3500 1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (pad 12 thru_hole circle 
+    (at 6.3500 -1.2700) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (fp_line 
+    (start -7.6200 -2.5400) 
+    (end 7.6200 -2.5400) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 7.6200 -2.5400) 
+    (end 7.6200 2.5400) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 7.6200 2.5400) 
+    (end -7.6200 2.5400) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -7.6200 2.5400) 
+    (end -7.6200 -2.5400) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -7.6200 -2.5400) 
+    (end 7.6200 -2.5400) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 7.6200 -2.5400) 
+    (end 7.6200 2.5400) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 7.6200 2.5400) 
+    (end 1.2700 2.5400) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -1.2700 2.5400) 
+    (end -7.6200 2.5400) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -7.6200 2.5400) 
+    (end -7.6200 -2.5400) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -7.9000 -2.8000) 
+    (end 7.9000 -2.8000) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 7.9000 -2.8000) 
+    (end 7.9000 2.8000) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 7.9000 2.8000) 
+    (end -7.9000 2.8000) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -7.9000 2.8000) 
+    (end -7.9000 -2.8000) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_text reference REF** 
+    (at 0 -3.4900) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "DIL-254P-12" 
+    (at 0 3.4900) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))))

@@ -1,0 +1,83 @@
+
+(module "SIL-254P-01" 
+  (layer F.Cu) 
+  (tedit 56C298A0) 
+  (pad 1 thru_hole rect 
+    (at -0.0000 0) 
+    (size 1.9000 1.9000) 
+    (layers F.Cu F.Mask F.Paste) 
+    (drill 1.0000)) 
+  (fp_line 
+    (start -1.2700 -1.2700) 
+    (end 1.2700 -1.2700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2700 -1.2700) 
+    (end 1.2700 1.2700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.2700 1.2700) 
+    (end -1.2700 1.2700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2700 1.2700) 
+    (end -1.2700 -1.2700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.2700 -1.2700) 
+    (end 1.2700 -1.2700) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 1.2700 -1.2700) 
+    (end 1.2700 1.2700) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 1.2700 1.2700) 
+    (end -1.2700 1.2700) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -1.2700 1.2700) 
+    (end -1.2700 -1.2700) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -1.5500 -1.5500) 
+    (end 1.5500 -1.5500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.5500 -1.5500) 
+    (end 1.5500 1.5500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.5500 1.5500) 
+    (end -1.5500 1.5500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.5500 1.5500) 
+    (end -1.5500 -1.5500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_text reference REF** 
+    (at 0 -2.2200) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "SIL-254P-01" 
+    (at 0 2.2200) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))))
