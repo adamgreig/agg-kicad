@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# PNP
+#
+DEF PNP Q 0 0 Y N 1 F N
+F0 "Q" 130 20 50 H V L BNN
+F1 "PNP" 130 -20 50 H V L TNN
+F2 "" 30 -80 50 H I C CNN
+F3 "" 130 20 50 H I C CNN
+DRAW
+C 0 0 110 0 1 0 N
+P 2 0 1 0  -100 0  -60 0 N
+P 2 0 1 0  -60 -50  -60 50 N
+P 2 0 1 0  0 -80  -60 -20 N
+P 2 0 1 0  0 80  -60 20 N
+P 4 0 1 0  0 50  -30 80  -40 40  0 50 F
+X B 1 -200 0 100 R 50 50 1 1 P
+X E 2 0 200 120 D 50 50 1 1 P
+X C 3 0 -200 120 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
