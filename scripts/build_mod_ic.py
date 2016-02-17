@@ -401,6 +401,21 @@ config = {
         "chip_shape": (3.1, 4.1),
         "pin_shape": (-0.41, 0.28)
     },
+    
+    # HVQFN24 from PCA9502
+    # IPC-7351B: QFN50P430X430X100-25N
+    "HVQFN24-NXP": {
+        "rows": 4,
+        "pins": 24,
+        "pin_pitch": 0.5,
+        "row_pitch": 4.10,
+        "pad_shape": (0.90, 0.24),
+        "ep_shape": (2.10, 2.10),
+        "ep_mask_shape": (0.45, 0.45, 0.4, 0.4),
+        "ep_paste_shape": (0.45, 0.45, 0.4, 0.4),
+        "chip_shape": (4.3, 4.3),
+        "pin_shape": (0.475, 0.45)
+    },
 }
 
 

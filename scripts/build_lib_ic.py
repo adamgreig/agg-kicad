@@ -1373,6 +1373,54 @@ config = {
             ]
         ]
     },
+    
+    # 24AA01 1K I2C Serial EEPROM   
+    "PCA9502": {
+        "path": "ic/interface",
+        "footprint": "agg:HVQFN24-NXP",
+        "datasheet": "http://cache.nxp.com/documents/data_sheet/PCA9502.pdf",
+        "ordercodes": [("Farnell", "2212086")],
+        "description": "I2C 8-bit Port Expander",
+        "pins": [
+            [
+                [
+                    ("VDD", 2, "pwrin"),
+                    ("VDD", 3, "pwrin"),
+                    ("VDD", 11, "pwrin"),
+                    ("VDD", 22, "pwrin"),
+                    ("VDD", 24, "pwrin"),
+                ], [
+                    ("A0/~CS", 5, "in"),
+                    ("A1/MOSI", 6, "in"),
+                    ("MISO", 7, "out"),
+                    ("SDA", 9, "oc"),
+                    ("SCL/SCLK", 8, "oc"),
+                ], [
+                    ("~IRQ", 12, "oc"),
+                ], [
+                    ("I2C/~SPI", 4, "in"),
+                ]
+            ], [
+                [
+                    ("~RESET", 1, "in"),
+                ], [
+                    ("GPIO0", 13, "bidi"),
+                    ("GPIO1", 14, "bidi"),
+                    ("GPIO2", 15, "tri"),
+                    ("GPIO3", 16, "tri"),
+                    ("GPIO4", 18, "tri"),
+                    ("GPIO5", 19, "tri"),
+                    ("GPIO6", 20, "tri"),
+                    ("GPIO7", 21, "tri"),
+                ], [
+                    ("VSS", 10, "pwrin"),
+                    ("VSS", 17, "pwrin"),
+                    ("VSS", 23, "pwrin"),
+                    ("VSS", "EP", "pwrin"),
+                ]
+            ]
+        ]
+    },
 }
 
 # Other Constants =============================================================
