@@ -54,7 +54,7 @@ def sil_pads(pins):
     for pin in range(pins):
         shape = "rect" if pin == 0 else "circle"
         pads.append(pad(pin + 1, "thru_hole", shape, (x, 0), [1.9, 1.9],
-                        ["F.Cu", "F.Mask", "F.Paste"], drill=[1.0]))
+                        ["*.Cu", "F.SilkS", "F.Mask", "B.Mask"], drill=[1.0]))
         x += 2.54
     return pads
 
@@ -65,9 +65,9 @@ def dil_pads(pins):
     for pin in range(pins):
         shape = "rect" if 2*pin+1 == 1 else "circle"
         pads.append(pad(2*pin + 1, "thru_hole", shape, (x, 1.27), [1.9, 1.9],
-                        ["F.Cu", "F.Mask", "F.Paste"], drill=[1.0]))
+                        ["*.Cu", "F.SilkS", "F.Mask", "B.Mask"], drill=[1.0]))
         pads.append(pad(2*pin + 2, "thru_hole", "circle", (x, -1.27),
-                        [1.9, 1.9], ["F.Cu", "F.Mask", "F.Paste"],
+                        [1.9, 1.9], ["*.Cu", "F.SilkS", "F.Mask", "B.Mask"],
                         drill=[1.0]))
         x += 2.54
     return pads

@@ -1,71 +1,71 @@
 
 (module "SIL-254P-13" 
   (layer F.Cu) 
-  (tedit 56C298A0) 
+  (tedit 56C3F8AB) 
   (pad 1 thru_hole rect 
     (at -15.2400 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 2 thru_hole circle 
     (at -12.7000 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 3 thru_hole circle 
     (at -10.1600 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 4 thru_hole circle 
     (at -7.6200 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 5 thru_hole circle 
     (at -5.0800 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 6 thru_hole circle 
     (at -2.5400 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 7 thru_hole circle 
     (at 0.0000 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 8 thru_hole circle 
     (at 2.5400 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 9 thru_hole circle 
     (at 5.0800 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 10 thru_hole circle 
     (at 7.6200 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 11 thru_hole circle 
     (at 10.1600 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 12 thru_hole circle 
     (at 12.7000 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 13 thru_hole circle 
     (at 15.2400 0) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (fp_line 
     (start -16.5100 -1.2700) 

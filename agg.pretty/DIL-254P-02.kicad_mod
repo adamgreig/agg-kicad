@@ -1,16 +1,16 @@
 
 (module "DIL-254P-02" 
   (layer F.Cu) 
-  (tedit 56C29F99) 
+  (tedit 56C3F8AA) 
   (pad 1 thru_hole rect 
     (at -0.0000 1.2700) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 2 thru_hole circle 
     (at -0.0000 -1.2700) 
     (size 1.9000 1.9000) 
-    (layers F.Cu F.Mask F.Paste) 
+    (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (fp_line 
     (start -1.2700 -2.5400) 
