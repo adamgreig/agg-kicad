@@ -255,6 +255,7 @@ config = {
 
     # DFN-10 from JEDEC MO-229WEED-2
     # For LTC3105 / LT package DD
+    # For LTC4151
     # IPC-7351B: DFN50P300X300X75-11N
     "DFN-10-EP-LT": {
         "rows": 2,

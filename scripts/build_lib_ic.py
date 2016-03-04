@@ -1301,7 +1301,7 @@ config = {
         ]
     },
     
-    # 24AA01 1K I2C Serial EEPROM   
+    # 24AA01 1K I2C Serial EEPROM
     "24AA01": {
         "path": "ic/memory",
         "footprint": "agg:SOT-23-5",
@@ -1374,7 +1374,7 @@ config = {
         ]
     },
     
-    # 24AA01 1K I2C Serial EEPROM   
+    # PCA9502 I2C Port Expander
     "PCA9502": {
         "path": "ic/interface",
         "footprint": "agg:HVQFN24-NXP",
@@ -1417,6 +1417,39 @@ config = {
                     ("VSS", 17, "pwrin"),
                     ("VSS", 23, "pwrin"),
                     ("VSS", "EP", "pwrin"),
+                ]
+            ]
+        ]
+    },
+
+    # LTC4151 I2C Power Monitor
+    "LTC4151": {
+        "path": "ic/power",
+        "footprint": "agg:DFN-10-EP-LT",
+        "datasheet": "https://cds.linear.com/docs/en/datasheet/4151ff.pdf",
+        "ordercodes": [("Farnell", "2295457")],
+        "description": "I2C Power Monitor",
+        "pins": [
+            [
+                [
+                    ("VIN", 2, "pwrin"),
+                ], [
+                    ("ADR1", 3, "in"),
+                    ("ADR0", 4, "in"),
+                ], [
+                    ("GND", 9, "pwrin"),
+                    ("GND", "EP", "pwrin"),
+                ],
+            ], [
+                [
+                    ("SENSE+", 1, "in"),
+                    ("SENSE-", 10, "in"),
+                ], [
+                    ("SDA", 7, "oc"),
+                    ("SCL", 6, "oc"),
+                ], [
+                    ("~SHDN", 8, "in"),
+                    ("ADIN", 5, "in"),
                 ]
             ]
         ]
