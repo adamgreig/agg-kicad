@@ -1406,12 +1406,12 @@ config = {
                 ], [
                     ("GPIO0", 13, "bidi"),
                     ("GPIO1", 14, "bidi"),
-                    ("GPIO2", 15, "tri"),
-                    ("GPIO3", 16, "tri"),
-                    ("GPIO4", 18, "tri"),
-                    ("GPIO5", 19, "tri"),
-                    ("GPIO6", 20, "tri"),
-                    ("GPIO7", 21, "tri"),
+                    ("GPIO2", 15, "bidi"),
+                    ("GPIO3", 16, "bidi"),
+                    ("GPIO4", 18, "bidi"),
+                    ("GPIO5", 19, "bidi"),
+                    ("GPIO6", 20, "bidi"),
+                    ("GPIO7", 21, "bidi"),
                 ], [
                     ("VSS", 10, "pwrin"),
                     ("VSS", 17, "pwrin"),
