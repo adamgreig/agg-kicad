@@ -1373,6 +1373,46 @@ config = {
             ]
         ]
     },
+	
+	# PCAL9538A Low-voltage 8-bit I2C-bus and SMBus low power I/O port with interrupt, reset, and Agile I/O
+    "PCAL9538A": {
+        "path": "ic/interface",
+        "footprint": "agg:HVQFN-16-NXP",
+        "datasheet": "http://www.nxp.com/documents/data_sheet/PCAL9538A.pdf",
+        "ordercodes": [("Farnell", "2428172")],
+        "description": "Low-voltage and power 8-bit I2C SMBus expander",
+        "pins": [
+            [
+                [
+                    ("VDD", 14, "pwrout")
+				], [
+                    ("~RESET", 1, "in")
+                ], [
+                    ("~INT", 11, "oc"),
+                    ("SCL", 12, "oc"),
+                    ("SDA", 13, "oc")
+                ], [
+                    ("A0", 15, "in"),
+                    ("A1", 16, "in")
+                ], [
+                    ("VSS", 6, "pwrin"),
+                    ("VSS", "EP", "pwrin")
+                ]
+            ], [
+                [
+                    ("P0", 2, "bidi"),
+                    ("P1", 3, "bidi"),
+                    ("P2", 4, "bidi"),
+                    ("P3", 5, "bidi"),
+                ], [
+                    ("P4", 7, "bidi"),
+                    ("P5", 8, "bidi"),
+                    ("P6", 9, "bidi"),
+                    ("P7", 10, "bidi")
+                ]
+            ]
+        ]
+    },
 }
 
 # Other Constants =============================================================

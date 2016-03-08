@@ -401,6 +401,21 @@ config = {
         "chip_shape": (3.1, 4.1),
         "pin_shape": (-0.41, 0.28)
     },
+    
+    # HVQFN-16 from PCAL9538A
+    # IPC-7351B: DFN26P300X300X100-17N
+    "HVQFN-16-NXP": {
+        "rows": 4,
+        "pins": 16,
+        "pin_pitch": 0.5,
+        "row_pitch": 3.10,
+        "pad_shape": (0.90, 0.24),
+        "ep_shape": (1.50, 1.50),
+        "ep_mask_shape": (0.30, 0.30, 0.31, 0.31),
+        "ep_paste_shape": (0.30, 0.30, 0.31, 0.31),
+        "chip_shape": (3.0, 3.0),
+        "pin_shape": (-0.4, 0.24)
+    },
 }
 
 
