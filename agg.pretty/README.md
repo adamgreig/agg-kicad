@@ -119,3 +119,44 @@ M3 sized mounting holes.
 
 3mm diameter circular copper pad. Useful for particularly large testpoints and 
 pads for soldering wires to.
+
+### PowerFLAT5x6
+
+Dual switching N-MOSFET (not linked), 9mΩ Rdson.
+
+ * STL15DN4F5
+ * Farnell 2098274
+ * http://www.farnell.com/datasheets/1897891.pdf
+
+### PowerPair3x3
+
+Dual switching N-MOSFET totem pole, 14mΩ (upper) and 7mΩ (lower) Rdson.
+
+ * SiZ340DT
+ * Farnell 2422226
+ * http://www.farnell.com/datasheets/1912218.pdf
+
+### PowerPAK SC-75-6L-Single
+
+Single switching N/P MOSFET.
+
+ * SiB452DK, SiB433EDK
+ * Farnell 2364070, 2335393 respectively
+ * http://www.farnell.com/datasheets/1760643.pdf
+ * http://www.farnell.com/datasheets/1719666.pdf
+
+### PowerPAK-SO-8
+
+Single switching P-MOSFET, 3mΩ Rdson.
+
+ * Si7157DP
+ * Farnell 2471947
+ * http://www.farnell.com/datasheets/1897538.pdf
+
+### WSON
+
+Single switching P-MOSFET, 59mΩ Rdson.
+
+ * CSD25310Q2
+ * Farnell 2501102
+ * http://www.farnell.com/datasheets/1969766.pdf
