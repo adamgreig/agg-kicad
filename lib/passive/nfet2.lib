@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# NFET2
+#
+DEF NFET2 Q 0 1 Y N 2 F N
+F0 "Q" -250 30 50 H V L CNN
+F1 "NFET2" -300 -150 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -30 -45 70 0 1 0 N
+P 2 0 1 0  -150 -100  -50 -100 N
+P 2 0 1 0  -50 -100  -50 10 N
+P 2 0 1 0  -40 -85  0 -85 N
+P 2 0 1 0  -40 -70  -40 -100 N
+P 2 0 1 0  -40 -30  -40 -60 N
+P 2 0 1 0  -40 10  -40 -20 N
+P 3 0 1 0  -40 -45  0 -45  0 -150 N
+P 3 0 1 0  -40 -5  0 -5  0 50 N
+P 4 0 1 0  -40 -45  -15 -30  -15 -60  -40 -45 F
+X D D1 0 100 50 D 50 50 1 1 P
+X G G1 -200 -100 50 R 50 50 1 1 P
+X S S1 0 -200 50 U 50 50 1 1 P
+X D D2 0 100 50 D 50 50 2 1 P
+X G G2 -200 -100 50 R 50 50 2 1 P
+X S S2 0 -200 50 U 50 50 2 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
