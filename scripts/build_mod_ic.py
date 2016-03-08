@@ -403,7 +403,7 @@ config = {
     },
     
     # HVQFN-16 from PCAL9538A
-    # IPC-7351B: DFN26P300X300X100-17N
+    # IPC-7351B: QFN26P300X300X100-17N
     "HVQFN-16-NXP": {
         "rows": 4,
         "pins": 16,
