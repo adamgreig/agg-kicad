@@ -120,6 +120,14 @@ config = {
         "pin_shape": (-0.60, 1.60),
     },
 
+    # 1210 from IPC-7351B: CAPC3225X230N
+    "1210": {
+        "pad_shape": (1.15, 2.70),
+        "pitch": 3.0,
+        "chip_shape": (3.20, 2.50),
+        "pin_shape": (-0.60, 2.30),
+    },
+
     # SOD-323 from IPC-7351B: SOD2513X100L
     "SOD-323": {
         "pad_shape": (0.90, 0.50),
