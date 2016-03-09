@@ -125,38 +125,46 @@ pads for soldering wires to.
 Dual switching N-MOSFET (not linked), 9mΩ Rdson.
 
  * STL15DN4F5
- * Farnell 2098274
- * http://www.farnell.com/datasheets/1897891.pdf
+ * http://www.st.com/web/en/resource/technical/document/datasheet/CD00279555.pdf
 
 ### PowerPair3x3
 
 Dual switching N-MOSFET totem pole, 14mΩ (upper) and 7mΩ (lower) Rdson.
 
  * SiZ340DT
- * Farnell 2422226
- * http://www.farnell.com/datasheets/1912218.pdf
+ * http://www.vishay.com/docs/62877/siz340dt.pdf
 
 ### PowerPAK SC-75-6L-Single
 
 Single switching N/P MOSFET.
 
  * SiB452DK, SiB433EDK
- * Farnell 2364070, 2335393 respectively
- * http://www.farnell.com/datasheets/1760643.pdf
- * http://www.farnell.com/datasheets/1719666.pdf
+ * http://www.vishay.com/docs/68832/sib452dk.pdf
+ * http://www.vishay.com/docs/65652/sib433ed.pdf
 
 ### PowerPAK-SO-8
 
 Single switching P-MOSFET, 3mΩ Rdson.
 
  * Si7157DP
- * Farnell 2471947
- * http://www.farnell.com/datasheets/1897538.pdf
+ * http://www.vishay.com/docs/62860/si7157dp.pdf
 
-### WSON
+### SON2x2
 
 Single switching P-MOSFET, 59mΩ Rdson.
 
  * CSD25310Q2
- * Farnell 2501102
- * http://www.farnell.com/datasheets/1969766.pdf
+ * http://www.ti.com/lit/ds/symlink/csd25310q2.pdf
+
+### VML1006
+
+Single switching N MOSFET.
+
+ * RV2C010UN
+ * http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rv2c010unt2l-e.pdf
+
+### VLS201610HBX-1
+
+VLS201610HBX-1 Inductor series.
+
+ * https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_vls201610hbx-1_en.pdf

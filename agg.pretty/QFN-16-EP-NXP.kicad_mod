@@ -1,7 +1,7 @@
 
-(module "HVQFN-16-NXP" 
+(module "QFN-16-EP-NXP" 
   (layer F.Cu) 
-  (tedit 56DF1924) 
+  (tedit 56E08897) 
   (fp_text reference REF** 
     (at 0 -2.9500) 
     (layer F.Fab) 
@@ -9,7 +9,7 @@
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (fp_text value "HVQFN-16-NXP" 
+  (fp_text value "QFN-16-EP-NXP" 
     (at 0 2.9500) 
     (layer F.Fab) 
     (effects 
@@ -403,26 +403,6 @@
   (pad EP smd rect 
     (at -0.3050 -0.3050) 
     (size 0.3000 0.3000) 
-    (layers F.Cu F.Mask) 
-    (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
-    (at -0.3050 0.3050) 
-    (size 0.3000 0.3000) 
-    (layers F.Cu F.Mask) 
-    (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
-    (at 0.3050 -0.3050) 
-    (size 0.3000 0.3000) 
-    (layers F.Cu F.Mask) 
-    (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
-    (at 0.3050 0.3050) 
-    (size 0.3000 0.3000) 
-    (layers F.Cu F.Mask) 
-    (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
-    (at -0.3050 -0.3050) 
-    (size 0.3000 0.3000) 
     (layers F.Cu F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad EP smd rect 
@@ -443,4 +423,5 @@
   (pad EP smd rect 
     (at 0 0) 
     (size 1.5000 1.5000) 
-    (layers F.Cu)))
+    (layers F.Cu F.Mask) 
+    (solder_mask_margin 0.0010)))

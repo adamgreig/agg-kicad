@@ -1377,14 +1377,14 @@ config = {
 	# PCAL9538A Low-voltage 8-bit I2C-bus and SMBus low power I/O port with interrupt, reset, and Agile I/O
     "PCAL9538A": {
         "path": "ic/interface",
-        "footprint": "agg:HVQFN-16-NXP",
+        "footprint": "agg:QFN-16-EP-NXP",
         "datasheet": "http://www.nxp.com/documents/data_sheet/PCAL9538A.pdf",
         "ordercodes": [("Farnell", "2428172")],
         "description": "Low-voltage and power 8-bit I2C SMBus expander",
         "pins": [
             [
                 [
-                    ("VDD", 14, "pwrout")
+                    ("VDD", 14, "pwrin")
 				], [
                     ("~RESET", 1, "in")
                 ], [
@@ -1409,6 +1409,44 @@ config = {
                     ("P5", 8, "bidi"),
                     ("P6", 9, "bidi"),
                     ("P7", 10, "bidi")
+                ]
+            ]
+        ]
+    },
+    
+    # TPS62152 Small Buck converter 3-17V in, fixed 3.3V 1A out, 2.5MHz
+    "TPS62152": {
+        "path": "ic/power",
+        "footprint": "agg:QFN-16-EP-TI",
+        "datasheet": "http://www.ti.com/lit/ds/symlink/tps62152.pdf",
+        "ordercodes": [("Farnell", "2382918")],
+        "description": "3.3Vout 1A, fixed, Buck Converter",
+        "pins": [
+            [
+                [
+                    ("PVIN", 11, "pwrin"),
+                    ("PVIN", 12, "pwrin"),
+                    ("AVIN", 10, "pwrin"),
+                    ("EN", 13, "pwrin")
+				], [
+                    ("SS/TR", 9, "passive")
+                ], [
+                    ("DEF", 8, "in"),
+                    ("FB", 5, "unspec"),
+                    ("AGND", 6, "pwrin"),
+                    ("PGND", 15, "pwrin"),
+                    ("PGND", 16, "pwrin"),
+                    ("EP", "EP", "pwrin")
+                ]
+            ], [
+                [
+                    ("SW", 1, "pwrout"),
+                    ("SW", 2, "pwrout"),
+                    ("SW", 3, "pwrout")
+                ], [
+                    ("FSW", 7, "in"),
+                    ("VOS", 14, "in"),
+                    ("PG", 4, "out")
                 ]
             ]
         ]

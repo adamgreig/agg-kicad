@@ -403,18 +403,32 @@ config = {
     },
     
     # HVQFN-16 from PCAL9538A
-    # IPC-7351B: QFN26P300X300X100-17N
-    "HVQFN-16-NXP": {
+    # IPC-7351B: QFN50P300X300X100-17N
+    "QFN-16-EP-NXP": {
         "rows": 4,
         "pins": 16,
         "pin_pitch": 0.5,
         "row_pitch": 3.10,
         "pad_shape": (0.90, 0.24),
         "ep_shape": (1.50, 1.50),
-        "ep_mask_shape": (0.30, 0.30, 0.31, 0.31),
         "ep_paste_shape": (0.30, 0.30, 0.31, 0.31),
         "chip_shape": (3.0, 3.0),
         "pin_shape": (-0.4, 0.24)
+    },
+    
+    # VQFN-16 from TPS6215
+    # IPC-7351B: QFN26P300X300X100-17N
+    "QFN-16-EP-TI": {
+        "rows": 4,
+        "pins": 16,
+        "pin_pitch": 0.5,
+        "row_pitch": 2.8,
+        "pad_shape": (0.6, 0.25),
+        "ep_shape": (1.7, 1.7),
+        "ep_paste_shape": (1.5, 1.5, 0.2, 0.2),
+        "ep_vias": (0.2, 0.3, 0.9),
+        "chip_shape": (3.0, 3.0),
+        "pin_shape": (-0.4, 0.25)
     },
 }
 
