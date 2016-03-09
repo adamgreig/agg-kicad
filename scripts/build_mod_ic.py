@@ -410,12 +410,12 @@ config = {
         "pins": 24,
         "pin_pitch": 0.5,
         "row_pitch": 4.10,
-        "pad_shape": (0.50, 0.24),
+        "pad_shape": (0.90, 0.24),
         "ep_shape": (2.10, 2.10),
         "ep_mask_shape": (0.45, 0.45, 0.4, 0.4),
         "ep_paste_shape": (0.45, 0.45, 0.4, 0.4),
         "chip_shape": (4.3, 4.3),
-        "pin_shape": (0.475, 0.45)
+        "pin_shape": (-0.5, 0.3)
     },
 }
 
