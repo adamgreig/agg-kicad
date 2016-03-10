@@ -250,7 +250,7 @@ config = {
         "ep_paste_shape": (0.73, 0.73, 0.5, 0.5),
         "ep_vias": (0.4, 0.8, 0.43),
         "chip_shape": (6.0, 6.0),
-        "pin_shape": (0.4, 0.25),
+        "pin_shape": (-0.4, 0.25),
     },
 
     # DFN-10 from JEDEC MO-229WEED-2
