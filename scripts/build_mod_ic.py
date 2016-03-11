@@ -204,7 +204,7 @@ config = {
         "chip_shape": (3.0, 3.0),
         "pin_shape": (-0.3, 0.2),
     },
-    
+
     # QFN-24 from MAXIM. Doc no. 21-0139
     # For MAX17435
     "QFN-24-EP-MAX": {
@@ -216,8 +216,8 @@ config = {
         "chip_shape": (4.0, 4.0),
         "pin_shape": (-0.4, 0.23),
         "ep_shape": (2.6, 2.6),
-        "ep_mask_shape": (0.9,0.9,0.4,0.4),
-        "ep_paste_shape": (0.9,0.9,0.4,0.4),
+        "ep_mask_shape": (0.9, 0.9, 0.4, 0.4),
+        "ep_paste_shape": (0.9, 0.9, 0.4, 0.4),
     },
 
     # QFN-16 from SKY65111-348LF datasheet
@@ -386,7 +386,7 @@ config = {
         "chip_shape": (3.1, 3.1),
         "pin_shape": (-0.3, 0.30)
     },
-    
+
     # DFN-16 from LTC4353
     # IPC-7351B: DFN45P300X400X75-17N
     "DFN-16-EP-LTC-DE": {
@@ -401,7 +401,7 @@ config = {
         "chip_shape": (3.1, 4.1),
         "pin_shape": (-0.41, 0.28)
     },
-    
+
     # HVQFN-16 from PCAL9538A
     # IPC-7351B: QFN50P300X300X100-17N
     "QFN-16-EP-NXP": {
@@ -415,7 +415,7 @@ config = {
         "chip_shape": (3.0, 3.0),
         "pin_shape": (-0.4, 0.24)
     },
-    
+
     # VQFN-16 from TPS6215
     # IPC-7351B: QFN26P300X300X100-17N
     "QFN-16-EP-TI": {

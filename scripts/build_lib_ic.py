@@ -1003,7 +1003,7 @@ config = {
             ]
         ],
     },
-    
+
     # LTC2983 Multi-Sensor High Accuracy Digital Temperature Measurement System
     "LTC2983": {
         "path": "ic/analogue",
@@ -1031,7 +1031,6 @@ config = {
                     ("SDO", 39, "out"),
                     ("SDI", 40, "in"),
                     ("~CS", 41, "in"),
-                   
                 ], [
                     ("NC", 10, "nc"),
                 ], [
@@ -1075,7 +1074,6 @@ config = {
             ]
         ],
     },
-    
 
     # MCP2562 CAN Transceiver
     "MCP2562": {
@@ -1300,12 +1298,13 @@ config = {
             ]
         ]
     },
-    
-    # 24AA01 1K I2C Serial EEPROM   
+
+    # 24AA01 1K I2C Serial EEPROM
     "24AA01": {
         "path": "ic/memory",
         "footprint": "agg:SOT-23-5",
-        "datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/21711c.pdf",
+        "datasheet": "http://ww1.microchip.com/downloads/en"
+                     "/DeviceDoc/21711c.pdf",
         "ordercodes": [("Farnell", "1331269")],
         "description": "1K I2C Serial EEPROM",
         "pins": [
@@ -1373,8 +1372,9 @@ config = {
             ]
         ]
     },
-	
-	# PCAL9538A Low-voltage 8-bit I2C-bus and SMBus low power I/O port with interrupt, reset, and Agile I/O
+
+    # PCAL9538A Low-voltage 8-bit I2C-bus and SMBus low power
+    # I/O port with interrupt, reset, and Agile I/O
     "PCAL9538A": {
         "path": "ic/interface",
         "footprint": "agg:QFN-16-EP-NXP",
@@ -1385,7 +1385,7 @@ config = {
             [
                 [
                     ("VDD", 14, "pwrin")
-				], [
+                ], [
                     ("~RESET", 1, "in")
                 ], [
                     ("~INT", 11, "oc"),
@@ -1413,7 +1413,7 @@ config = {
             ]
         ]
     },
-    
+
     # TPS62152 Small Buck converter 3-17V in, fixed 3.3V 1A out, 2.5MHz
     "TPS62152": {
         "path": "ic/power",
@@ -1428,7 +1428,7 @@ config = {
                     ("PVIN", 12, "pwrin"),
                     ("AVIN", 10, "pwrin"),
                     ("EN", 13, "pwrin")
-				], [
+                ], [
                     ("SS/TR", 9, "passive")
                 ], [
                     ("DEF", 8, "in"),
