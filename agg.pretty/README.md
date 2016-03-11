@@ -119,3 +119,52 @@ M3 sized mounting holes.
 
 3mm diameter circular copper pad. Useful for particularly large testpoints and 
 pads for soldering wires to.
+
+### PowerFLAT5x6
+
+Dual switching N-MOSFET (not linked), 9mΩ Rdson.
+
+ * STL15DN4F5
+ * http://www.st.com/web/en/resource/technical/document/datasheet/CD00279555.pdf
+
+### PowerPair3x3
+
+Dual switching N-MOSFET totem pole, 14mΩ (upper) and 7mΩ (lower) Rdson.
+
+ * SiZ340DT
+ * http://www.vishay.com/docs/62877/siz340dt.pdf
+
+### PowerPAK SC-75-6L-Single
+
+Single switching N/P MOSFET.
+
+ * SiB452DK, SiB433EDK
+ * http://www.vishay.com/docs/68832/sib452dk.pdf
+ * http://www.vishay.com/docs/65652/sib433ed.pdf
+
+### PowerPAK-SO-8
+
+Single switching P-MOSFET, 3mΩ Rdson.
+
+ * Si7157DP
+ * http://www.vishay.com/docs/62860/si7157dp.pdf
+
+### SON2x2
+
+Single switching P-MOSFET, 59mΩ Rdson.
+
+ * CSD25310Q2
+ * http://www.ti.com/lit/ds/symlink/csd25310q2.pdf
+
+### VML1006
+
+Single switching N MOSFET.
+
+ * RV2C010UN
+ * http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rv2c010unt2l-e.pdf
+
+### VLS201610HBX-1
+
+VLS201610HBX-1 Inductor series.
+
+ * https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_vls201610hbx-1_en.pdf

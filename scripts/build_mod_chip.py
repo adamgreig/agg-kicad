@@ -168,6 +168,14 @@ config = {
         "chip_shape": (5.2, 5.2),
         "pin_shape": (0.25, 1.5),
     },
+
+    # TDK VLS-201610HBX-1 series Inductor
+    "VLS201610HBX-1": {
+        "pad_shape": (0.5, 1.6),
+        "pitch": 1.5,
+        "chip_shape": (2, 1.6),
+        "pin_shape": (-0.5, 1.6),
+    },
 }
 
 # Other constants =============================================================

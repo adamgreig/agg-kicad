@@ -204,7 +204,7 @@ config = {
         "chip_shape": (3.0, 3.0),
         "pin_shape": (-0.3, 0.2),
     },
-    
+
     # QFN-24 from MAXIM. Doc no. 21-0139
     # For MAX17435
     "QFN-24-EP-MAX": {
@@ -216,8 +216,8 @@ config = {
         "chip_shape": (4.0, 4.0),
         "pin_shape": (-0.4, 0.23),
         "ep_shape": (2.6, 2.6),
-        "ep_mask_shape": (0.9,0.9,0.4,0.4),
-        "ep_paste_shape": (0.9,0.9,0.4,0.4),
+        "ep_mask_shape": (0.9, 0.9, 0.4, 0.4),
+        "ep_paste_shape": (0.9, 0.9, 0.4, 0.4),
     },
 
     # QFN-16 from SKY65111-348LF datasheet
@@ -250,7 +250,7 @@ config = {
         "ep_paste_shape": (0.73, 0.73, 0.5, 0.5),
         "ep_vias": (0.4, 0.8, 0.43),
         "chip_shape": (6.0, 6.0),
-        "pin_shape": (0.4, 0.25),
+        "pin_shape": (-0.4, 0.25),
     },
 
     # DFN-10 from JEDEC MO-229WEED-2
@@ -387,7 +387,7 @@ config = {
         "chip_shape": (3.1, 3.1),
         "pin_shape": (-0.3, 0.30)
     },
-    
+
     # DFN-16 from LTC4353
     # IPC-7351B: DFN45P300X400X75-17N
     "DFN-16-EP-LTC-DE": {
@@ -402,7 +402,7 @@ config = {
         "chip_shape": (3.1, 4.1),
         "pin_shape": (-0.41, 0.28)
     },
-    
+
     # HVQFN24 from PCA9502
     # IPC-7351B: QFN50P430X430X100-25N
     "HVQFN24-NXP": {
@@ -416,6 +416,35 @@ config = {
         "ep_paste_shape": (0.45, 0.45, 0.4, 0.4),
         "chip_shape": (4.3, 4.3),
         "pin_shape": (-0.5, 0.3)
+    },
+
+    # HVQFN-16 from PCAL9538A
+    # IPC-7351B: QFN50P300X300X100-17N
+    "QFN-16-EP-NXP": {
+        "rows": 4,
+        "pins": 16,
+        "pin_pitch": 0.5,
+        "row_pitch": 3.10,
+        "pad_shape": (0.90, 0.24),
+        "ep_shape": (1.50, 1.50),
+        "ep_paste_shape": (0.30, 0.30, 0.31, 0.31),
+        "chip_shape": (3.0, 3.0),
+        "pin_shape": (-0.4, 0.24)
+    },
+
+    # VQFN-16 from TPS6215
+    # IPC-7351B: QFN26P300X300X100-17N
+    "QFN-16-EP-TI": {
+        "rows": 4,
+        "pins": 16,
+        "pin_pitch": 0.5,
+        "row_pitch": 2.8,
+        "pad_shape": (0.6, 0.25),
+        "ep_shape": (1.7, 1.7),
+        "ep_paste_shape": (1.5, 1.5, 0.2, 0.2),
+        "ep_vias": (0.2, 0.3, 0.9),
+        "chip_shape": (3.0, 3.0),
+        "pin_shape": (-0.4, 0.25)
     },
 }
 

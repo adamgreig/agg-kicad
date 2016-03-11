@@ -47,7 +47,7 @@ def main(libpath, verify=False):
     out.append("# See github.com/adamgreig/agg-kicad")
     out.append("#========================================================\n")
 
-    for name in ("VCC", "VDD", "AVCC", "1v8", "3v3", "5v", "VBATT"):
+    for name in ("VCC", "VDD", "AVCC", "1v8", "3v3", "5v", "VBATT", "VSHORE"):
         out += pwr(name)
     for name in ("GND", "AGND", "DGND", "PGND"):
         out += gnd(name)

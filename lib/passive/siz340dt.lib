@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# SiZ340DT
+#
+DEF SiZ340DT Q 0 1 Y N 2 L N
+F0 "Q" -250 50 50 H V L CNN
+F1 "SiZ340DT" 50 -100 50 H V L CNN
+F2 "agg:PowerPair-3x3" 0 -300 50 H I C CNN
+F3 "http://www.vishay.com/docs/62877/siz340dt.pdf" -250 50 50 H I C CNN
+F4 "2422226" -50 200 50 H I C CNN "Farnell"
+DRAW
+C -30 -45 70 0 1 0 N
+P 2 0 1 0  -150 -100  -50 -100 N
+P 2 0 1 0  -50 -100  -50 10 N
+P 2 0 1 0  -40 -85  0 -85 N
+P 2 0 1 0  -40 -70  -40 -100 N
+P 2 0 1 0  -40 -30  -40 -60 N
+P 2 0 1 0  -40 10  -40 -20 N
+P 3 0 1 0  -40 -45  0 -45  0 -150 N
+P 3 0 1 0  -40 -5  0 -5  0 50 N
+P 4 0 1 0  -40 -45  -15 -30  -15 -60  -40 -45 F
+X S1D2 D1 0 100 50 D 50 50 1 1 P
+X G1 G1 -200 -100 50 R 50 50 1 1 P
+X S1D2 S1D2 0 -200 50 U 50 50 1 1 P
+X G2 G2 -200 -100 50 R 50 50 2 1 P
+X S2 S2 0 -200 50 U 50 50 2 1 P
+X S1D2 S1D2 0 100 50 D 50 50 2 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

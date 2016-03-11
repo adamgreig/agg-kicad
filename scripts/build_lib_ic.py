@@ -1003,7 +1003,7 @@ config = {
             ]
         ],
     },
-    
+
     # LTC2983 Multi-Sensor High Accuracy Digital Temperature Measurement System
     "LTC2983": {
         "path": "ic/analogue",
@@ -1031,7 +1031,6 @@ config = {
                     ("SDO", 39, "out"),
                     ("SDI", 40, "in"),
                     ("~CS", 41, "in"),
-                   
                 ], [
                     ("NC", 10, "nc"),
                 ], [
@@ -1075,7 +1074,6 @@ config = {
             ]
         ],
     },
-    
 
     # MCP2562 CAN Transceiver
     "MCP2562": {
@@ -1300,12 +1298,13 @@ config = {
             ]
         ]
     },
-    
+
     # 24AA01 1K I2C Serial EEPROM
     "24AA01": {
         "path": "ic/memory",
         "footprint": "agg:SOT-23-5",
-        "datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/21711c.pdf",
+        "datasheet": "http://ww1.microchip.com/downloads/en"
+                     "/DeviceDoc/21711c.pdf",
         "ordercodes": [("Farnell", "1331269")],
         "description": "1K I2C Serial EEPROM",
         "pins": [
@@ -1373,7 +1372,7 @@ config = {
             ]
         ]
     },
-    
+
     # PCA9502 I2C Port Expander
     "PCA9502": {
         "path": "ic/interface",
@@ -1422,6 +1421,47 @@ config = {
         ]
     },
 
+    # PCAL9538A Low-voltage 8-bit I2C-bus and SMBus low power
+    # I/O port with interrupt, reset, and Agile I/O
+    "PCAL9538A": {
+        "path": "ic/interface",
+        "footprint": "agg:QFN-16-EP-NXP",
+        "datasheet": "http://www.nxp.com/documents/data_sheet/PCAL9538A.pdf",
+        "ordercodes": [("Farnell", "2428172")],
+        "description": "Low-voltage and power 8-bit I2C SMBus expander",
+        "pins": [
+            [
+                [
+                    ("VDD", 14, "pwrin")
+                ], [
+                    ("~RESET", 1, "in")
+                ], [
+                    ("~INT", 11, "oc"),
+                    ("SCL", 12, "oc"),
+                    ("SDA", 13, "oc")
+                ], [
+                    ("A0", 15, "in"),
+                    ("A1", 16, "in")
+                ], [
+                    ("VSS", 6, "pwrin"),
+                    ("VSS", "EP", "pwrin")
+                ]
+            ], [
+                [
+                    ("P0", 2, "bidi"),
+                    ("P1", 3, "bidi"),
+                    ("P2", 4, "bidi"),
+                    ("P3", 5, "bidi"),
+                ], [
+                    ("P4", 7, "bidi"),
+                    ("P5", 8, "bidi"),
+                    ("P6", 9, "bidi"),
+                    ("P7", 10, "bidi")
+                ]
+            ]
+        ]
+    },
+
     # LTC4151 I2C Power Monitor
     "LTC4151": {
         "path": "ic/power",
@@ -1450,6 +1490,44 @@ config = {
                 ], [
                     ("~SHDN", 8, "in"),
                     ("ADIN", 5, "in"),
+                ]
+            ]
+        ]
+    },
+
+    # TPS62152 Small Buck converter 3-17V in, fixed 3.3V 1A out, 2.5MHz
+    "TPS62152": {
+        "path": "ic/power",
+        "footprint": "agg:QFN-16-EP-TI",
+        "datasheet": "http://www.ti.com/lit/ds/symlink/tps62152.pdf",
+        "ordercodes": [("Farnell", "2382918")],
+        "description": "3.3Vout 1A, fixed, Buck Converter",
+        "pins": [
+            [
+                [
+                    ("PVIN", 11, "pwrin"),
+                    ("PVIN", 12, "pwrin"),
+                    ("AVIN", 10, "pwrin"),
+                    ("EN", 13, "pwrin")
+                ], [
+                    ("SS/TR", 9, "passive")
+                ], [
+                    ("DEF", 8, "in"),
+                    ("FB", 5, "passive"),
+                    ("AGND", 6, "pwrin"),
+                    ("PGND", 15, "pwrin"),
+                    ("PGND", 16, "pwrin"),
+                    ("EP", "EP", "pwrin")
+                ]
+            ], [
+                [
+                    ("SW", 1, "pwrout"),
+                    ("SW", 2, "pwrout"),
+                    ("SW", 3, "pwrout")
+                ], [
+                    ("FSW", 7, "in"),
+                    ("VOS", 14, "in"),
+                    ("PG", 4, "out")
                 ]
             ]
         ]
