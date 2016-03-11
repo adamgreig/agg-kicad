@@ -1301,7 +1301,7 @@ config = {
         ]
     },
     
-    # 24AA01 1K I2C Serial EEPROM   
+    # 24AA01 1K I2C Serial EEPROM
     "24AA01": {
         "path": "ic/memory",
         "footprint": "agg:SOT-23-5",
@@ -1369,6 +1369,87 @@ config = {
                     ("CSIP", 12, "in"),
                     ("CSIN", 11, "in"),
                     ("BATT", 13, "in")
+                ]
+            ]
+        ]
+    },
+    
+    # PCA9502 I2C Port Expander
+    "PCA9502": {
+        "path": "ic/interface",
+        "footprint": "agg:HVQFN24-NXP",
+        "datasheet": "http://cache.nxp.com/documents/data_sheet/PCA9502.pdf",
+        "ordercodes": [("Farnell", "2212086")],
+        "description": "I2C 8-bit Port Expander",
+        "pins": [
+            [
+                [
+                    ("VDD", 2, "pwrin"),
+                    ("VDD", 3, "pwrin"),
+                    ("VDD", 11, "pwrin"),
+                    ("VDD", 22, "pwrin"),
+                    ("VDD", 24, "pwrin"),
+                ], [
+                    ("A0/~CS", 5, "in"),
+                    ("A1/MOSI", 6, "in"),
+                    ("MISO", 7, "out"),
+                    ("SDA", 9, "oc"),
+                    ("SCL/SCLK", 8, "oc"),
+                ], [
+                    ("~IRQ", 12, "oc"),
+                ], [
+                    ("I2C/~SPI", 4, "in"),
+                ]
+            ], [
+                [
+                    ("~RESET", 1, "in"),
+                ], [
+                    ("GPIO0", 13, "bidi"),
+                    ("GPIO1", 14, "bidi"),
+                    ("GPIO2", 15, "bidi"),
+                    ("GPIO3", 16, "bidi"),
+                    ("GPIO4", 18, "bidi"),
+                    ("GPIO5", 19, "bidi"),
+                    ("GPIO6", 20, "bidi"),
+                    ("GPIO7", 21, "bidi"),
+                ], [
+                    ("VSS", 10, "pwrin"),
+                    ("VSS", 17, "pwrin"),
+                    ("VSS", 23, "pwrin"),
+                    ("VSS", "EP", "pwrin"),
+                ]
+            ]
+        ]
+    },
+
+    # LTC4151 I2C Power Monitor
+    "LTC4151": {
+        "path": "ic/power",
+        "footprint": "agg:DFN-10-EP-LT",
+        "datasheet": "https://cds.linear.com/docs/en/datasheet/4151ff.pdf",
+        "ordercodes": [("Farnell", "2295457")],
+        "description": "I2C Power Monitor",
+        "pins": [
+            [
+                [
+                    ("VIN", 2, "pwrin"),
+                ], [
+                    ("ADR1", 3, "in"),
+                    ("ADR0", 4, "in"),
+                ], [
+                    ("GND", 9, "pwrin"),
+                    ("GND", "EP", "pwrin"),
+                ],
+            ], [
+                [
+                    ("SENSE+", 1, "in"),
+                    ("SENSE-", 10, "in"),
+                ], [
+                    ("SDA", 7, "oc"),
+                    ("SCL", 6, "oc"),
+                ], [
+                    ("~SHDN", 8, "in"),
+                    ("ADIN", 5, "in"),
                 ]
             ]
         ]

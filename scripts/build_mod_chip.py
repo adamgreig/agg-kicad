@@ -152,6 +152,22 @@ config = {
         "chip_shape": (3, 3),
         "pin_shape": (-1.1, 3),
     },
+
+    # Laird TYS5040 Inductor
+    "TYS5040": {
+        "pad_shape": (1.4, 4.2),
+        "pitch": 3.7,
+        "chip_shape": (5.0, 5.0),
+        "pin_shape": (-1.25, 4.0),
+    },
+
+    # Bourns SRP5030T Inductor
+    "SRP5030T": {
+        "pad_shape": (1.8, 2.0),
+        "pitch": 4.5,
+        "chip_shape": (5.2, 5.2),
+        "pin_shape": (0.25, 1.5),
+    },
 }
 
 # Other constants =============================================================

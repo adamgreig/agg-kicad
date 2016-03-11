@@ -1,7 +1,7 @@
 
 (module "DFN-16-EP-LTC-DE" 
   (layer F.Cu) 
-  (tedit 56B8C8CE) 
+  (tedit 56C4C75B) 
   (fp_text reference REF** 
     (at 0 -3.0000) 
     (layer F.Fab) 
