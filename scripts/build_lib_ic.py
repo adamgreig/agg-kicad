@@ -1432,7 +1432,7 @@ config = {
                     ("SS/TR", 9, "passive")
                 ], [
                     ("DEF", 8, "in"),
-                    ("FB", 5, "unspec"),
+                    ("FB", 5, "passive"),
                     ("AGND", 6, "pwrin"),
                     ("PGND", 15, "pwrin"),
                     ("PGND", 16, "pwrin"),
