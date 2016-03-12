@@ -155,7 +155,6 @@ class Module:
         if pad_type not in ("smd", "thru_hole"):
             return
         at = [float(x) for x in sexp.find(pad, "at")[1:]]
-        self._update_bounds(at)
         size = [float(x) for x in sexp.find(pad, "size")[1:]]
         drill = sexp.find(pad, "drill")
         if drill:
@@ -167,14 +166,18 @@ class Module:
         shape = pad[3]
         if shape in ("rect", "oval"):
             self.rect_pads.append((topleft, size))
+            self._update_bounds(at, dx=size[0]/2, dy=size[1]/2)
         elif shape == "circle":
             self.circ_pads.append((at, size[0]/2))
+            self._update_bounds(at, dx=size[0]/2, dy=size[0]/2)
+        else:
+            self._update_bounds(at)
 
-    def _update_bounds(self, at):
-        self.bounds[0] = min(self.bounds[0], at[0])
-        self.bounds[1] = min(self.bounds[1], at[1])
-        self.bounds[2] = max(self.bounds[2], at[0])
-        self.bounds[3] = max(self.bounds[3], at[1])
+    def _update_bounds(self, at, dx=0, dy=0):
+        self.bounds[0] = min(self.bounds[0], at[0] - dx)
+        self.bounds[1] = min(self.bounds[1], at[1] - dy)
+        self.bounds[2] = max(self.bounds[2], at[0] + dx)
+        self.bounds[3] = max(self.bounds[3], at[1] + dy)
 
 
 class PCB:
