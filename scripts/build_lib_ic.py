@@ -1555,6 +1555,31 @@ config = {
         ]
     },
 
+    # SN74LVC1G07DBVR Open Drain Non-Inverting Single Buffer
+    "SN74LVC1G07": {
+        "path": "ic/logic",
+        "footprint": "agg:SOT-23-5",
+        "datasheet": "http://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf",
+        "ordercodes": [("Farnell", "1102969")],
+        "description": "Buffer / Line Driver, Non-Inverting, 1 Gate, 1 Input,"
+                       " 1.65V to 5.5V",
+        "pins": [
+            [
+                [
+                    ("VCC", 5, "pwrin"),
+                    ("A", 2, "in"),
+                    ("GND", 3, "pwrin"),
+                ]
+            ], [
+                [
+                    ("Y", 4, "oc"),
+                ], [
+                    ("NC", 1, "nc"),
+                ]
+            ]
+        ]
+    },
+
     # CHIP v1.0
     "CHIPv1_0": {
         "path": "module",
