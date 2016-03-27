@@ -156,6 +156,26 @@ config = {
         "pin_shape": (-0.5, 0.3),
     },
 
+    # UFQFPN-32 from JEDEC MO-220
+    # Modified to meet the ST ECOPACK package of the same name:
+    #   * Row pitch is 6.75mm instead of 7.0mm
+    #   * Pads are 0.55mm long instead of 0.8mm
+    #   * EP is 5.6mm
+    # IPC-7351B: QFN50P700X700X80-33N
+    "QFN-32-EP-ST": {
+        "rows": 4,
+        "pins": 32,
+        "pin_pitch": 0.5,
+        "row_pitch": 4.7,
+        "pad_shape": (0.60, 0.30),
+        "ep_shape": (3.45, 3.45),
+        "ep_paste_shape": (1.0, 1.0, 1.5, 1.5),
+        "ep_mask_shape": (2.0, 2.0, 0.5, 0.5),
+        "ep_vias": (0.4, 0.6, 1.9),
+        "chip_shape": (5.1, 5.1),
+        "pin_shape": (-0.5, 0.28),
+    },
+
     # QFN-40 from JEDEC MO-220
     # Modified to meet the UBLOX recommended footprint:
     #   * Pads are 0.5mm long instead of 1.0mm
@@ -371,6 +391,19 @@ config = {
         "pad_shape": (0.95, 0.40),
         "chip_shape": (1.4, 2.15),
         "pin_shape": (0.5, 0.3),
+    },
+
+    # SOT-323
+    # IPC-7351B: SOT65P210X110-3N
+    "SOT-323": {
+        "rows": 2,
+        "pins": 6,
+        "skip_pins": (2, 4, 6),
+        "pin_pitch": 0.65,
+        "row_pitch": 2.10,
+        "pad_shape": (0.85, 0.55),
+        "chip_shape": (1.35, 2.10),
+        "pin_shape": (0.4, 0.3),
     },
 
     # DFN-8
