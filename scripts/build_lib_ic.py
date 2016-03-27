@@ -1533,6 +1533,28 @@ config = {
         ]
     },
 
+    # TRACO POWER PSR1 Series
+    "TSR1": {
+        "path": "ic/power",
+        "footprint": "agg:TSR1",
+        "datasheet": "http://www.tracopower.com/products/tsr1.pdf",
+        "ordercodes": [],
+        "description": "TSR1 Switch Mode Regulators",
+        "pins": [
+            [
+                [
+                    ("VIN", 1, "pwrin"),
+                ], [
+                    ("GND", 2, "pwrin"),
+                ]
+            ], [
+                [
+                    ("VOUT", 3, "pwrout"),
+                ]
+            ],
+        ]
+    },
+
     # CHIP v1.0
     "CHIPv1_0": {
         "path": "module",
