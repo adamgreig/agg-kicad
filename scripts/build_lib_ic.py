@@ -1567,7 +1567,6 @@ config = {
                 [
                     ("CHG-IN", "L2", "pwrin"),
                     ("BAT", "L8", "pwrin"),
-                    ("GND", "L1", "pwrin"),
                 ], [
                     ("X1", "L13", "in"),
                     ("X2", "L14", "in"),
@@ -1610,14 +1609,15 @@ config = {
                     ("CSID6", "R37", "bidi"),
                     ("CSID7", "R38", "bidi"),
                 ], [
-                    ("GND", "L4", "pwrout"),
-                    ("GND", "L12", "pwrout"),
-                    ("GND", "L39", "pwrout"),
-                    ("GND", "R1", "pwrout"),
-                    ("GND", "R21", "pwrout"),
-                    ("GND", "R22", "pwrout"),
-                    ("GND", "R39", "pwrout"),
-                    ("GND", "R40", "pwrout"),
+                    ("GND", "L1", "pwrin"),
+                    ("GND", "L4", "pwrin"),
+                    ("GND", "L12", "pwrin"),
+                    ("GND", "L39", "pwrin"),
+                    ("GND", "R1", "pwrin"),
+                    ("GND", "R21", "pwrin"),
+                    ("GND", "R22", "pwrin"),
+                    ("GND", "R39", "pwrin"),
+                    ("GND", "R40", "pwrin"),
                 ]
             ],
             [
