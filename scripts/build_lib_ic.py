@@ -923,7 +923,7 @@ config = {
     # MPU-9250 9DoF IMU
     "MPU-9250": {
         "path": "ic/sensor",
-        "footprint": "QFN-24-EP-MPU9250",
+        "footprint": "agg:QFN-24-MPU9250",
         "datasheet": "http://43zrtwysvxb2gf29r5o0athu.wpengine.netdna-cdn.com"
                      "/wp-content/uploads/2015/02/MPU-9250-Datasheet.pdf",
         "ordercodes": [
@@ -973,7 +973,7 @@ config = {
     # LTC3535 Dual DC-DC Converter
     "LTC3535": {
         "path": "ic/power",
-        "footprint": "DFN-12-EP-LT",
+        "footprint": "agg:DFN-12-EP-LT",
         "datasheet": "http://cds.linear.com/docs/en/datasheet/3535fa.pdf",
         "ordercodes": [("Farnell", "1947922")],
         "description": "LTC3535 Dual DC-DC Converter",
@@ -1007,7 +1007,7 @@ config = {
     # LTC2983 Multi-Sensor High Accuracy Digital Temperature Measurement System
     "LTC2983": {
         "path": "ic/analogue",
-        "footprint": "LQFP-48",
+        "footprint": "agg:LQFP-48",
         "datasheet": "http://cds.linear.com/docs/en/datasheet/2983fc.pdf",
         "ordercodes": [("Farnell", "2461149")],
         "description": "Digital Temperature Measurement System",

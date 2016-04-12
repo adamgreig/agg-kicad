@@ -129,6 +129,9 @@ def checkfields(contents, errs, prettypath):
         if not os.path.exists(path):
             errs.append("Component references non-existent footprint {}"
                         .format(fp))
+    elif len(fp) > 0 and ":" not in fp:
+        errs.append("Footprint '{}' does not specify a library name"
+                    .format(fp))
 
 
 def checklib(libf, prettypath):
