@@ -62,7 +62,7 @@ def checkdefs(contents, libf, errs):
 
 def checkpins(contents, designator, errs):
     pins = re_pins.findall(contents)
-    nums = set()
+    nums = []
     for name, num, x, y, length, numsize, namesize in pins:
         # Check pins lie on 100mil grid
         if int(x) % 100 != 0 or int(y) % 100 != 0:
@@ -76,13 +76,17 @@ def checkpins(contents, designator, errs):
             errs.append("Pin '{}' font size not 50mil".format(name))
         # Collect numeric pins
         if num.isdigit():
-            nums.add(int(num))
+            nums.append(int(num))
 
     if nums:
         expected = set(range(min(nums), max(nums)+1))
-        if nums != expected:
+        if set(nums) != expected:
             missing = [str(x) for x in set(expected) - set(nums)]
             errs.append("Missing pins {}".format(", ".join(missing)))
+
+        duplicates = set([str(x) for x in nums if nums.count(x) > 1])
+        if duplicates:
+            errs.append("Duplicated pins {}".format(", ".join(duplicates)))
 
 
 def checkboxes(contents, designator, errs):
