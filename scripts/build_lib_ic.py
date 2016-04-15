@@ -30,13 +30,12 @@ from __future__ import print_function, division
 #           open_emitter, and not_connected. They should be given as strings.
 
 config = {
-    # STM32F042FxP6, in TSSOP20 package
-    "STM32F042FxP6": {
+    # STM32F0xxFxPx, in TSSOP20 package
+    "STM32F0xxFxPx": {
         "path": "ic/microcontroller",
-        "footprint": "TSSOP20",
-        "datasheet": "http://www2.st.com/content/ccc/resource/technical/document/"
-                     "datasheet/52/ad/d0/80/e6/be/40/ad/DM00105814.pdf/files/DM00105814.pdf"
-                     "/jcr:content/translations/en.DM00105814.pdf",
+        "footprint": "agg:TSSOP20",
+        "datasheet": "http://www.st.com/st-web-ui/static/active/en"
+                     "/resource/technical/document/datasheet/DM00105814.pdf",
         "ordercodes": [("Farnell", "2469549")],
         "description": "STM32F042 in TSSOP20 package",
         "pins": [
@@ -49,10 +48,10 @@ config = {
                     ("NRST", 4, "in"),
                 ], [
                     ("PB1", 14, "bidi"),
-                    ("PB8-BOOT0", 1, "bidi"),
+                    ("PB8/BOOT0", 1, "bidi"),
                 ], [
-                    ("PF0-OSC_IN", 2, "bidi"),
-                    ("PF1-OSC_OUT", 3, "bidi"),
+                    ("PF0", 2, "bidi"),
+                    ("PF1", 3, "bidi"),
                 ],
             ], [
                 [
@@ -65,8 +64,8 @@ config = {
                     ("PA6", 12, "bidi"),
                     ("PA7", 13, "bidi"),
                 ], [
-                    ("PA9/PA12", 17, "bidi"),
-                    ("PA10/PA11", 18, "bidi"),
+                    ("PA9/PA11", 17, "bidi"),
+                    ("PA10/PA12", 18, "bidi"),
                     ("PA13", 19, "bidi"),
                     ("PA14", 20, "bidi"),
                 ],
