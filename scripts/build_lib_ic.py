@@ -30,6 +30,49 @@ from __future__ import print_function, division
 #           open_emitter, and not_connected. They should be given as strings.
 
 config = {
+    # STM32F042FxP6, in TSSOP20 package
+    "STM32F042FxP6": {
+        "path": "ic/microcontroller",
+        "footprint": "TSSOP20",
+        "datasheet": "http://www2.st.com/content/ccc/resource/technical/document/"
+                     "datasheet/52/ad/d0/80/e6/be/40/ad/DM00105814.pdf/files/DM00105814.pdf"
+                     "/jcr:content/translations/en.DM00105814.pdf",
+        "ordercodes": [("Farnell", "2469549")],
+        "description": "STM32F042 in TSSOP20 package",
+        "pins": [
+            [
+                [
+                    ("VDD", 16, "pwrin"),
+                    ("VDDA", 5, "pwrin"),
+                    ("VSS", 15, "pwrin"),
+                ], [
+                    ("NRST", 4, "in"),
+                ], [
+                    ("PB1", 14, "bidi"),
+                    ("PB8-BOOT0", 1, "bidi"),
+                ], [
+                    ("PF0-OSC_IN", 2, "bidi"),
+                    ("PF1-OSC_OUT", 3, "bidi"),
+                ],
+            ], [
+                [
+                    ("PA0", 6, "bidi"),
+                    ("PA1", 7, "bidi"),
+                    ("PA2", 8, "bidi"),
+                    ("PA3", 9, "bidi"),
+                    ("PA4", 10, "bidi"),
+                    ("PA5", 11, "bidi"),
+                    ("PA6", 12, "bidi"),
+                    ("PA7", 13, "bidi"),
+                ], [
+                    ("PA9/PA12", 17, "bidi"),
+                    ("PA10/PA11", 18, "bidi"),
+                    ("PA13", 19, "bidi"),
+                    ("PA14", 20, "bidi"),
+                ],
+            ],
+        ],
+    },
 
     # STM32F1xxCxUx, in UFQFPN48 package
     "STM32F1xxCxUx": {
