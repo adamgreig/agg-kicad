@@ -30,14 +30,14 @@ from __future__ import print_function, division
 #           open_emitter, and not_connected. They should be given as strings.
 
 config = {
-    # STM32F0xxFxPx, in TSSOP20 package
+    # STM32F0xxFxPx, in TSSOP-20 package
     "STM32F0xxFxPx": {
         "path": "ic/microcontroller",
-        "footprint": "agg:TSSOP20",
+        "footprint": "agg:TSSOP-20",
         "datasheet": "http://www.st.com/st-web-ui/static/active/en"
                      "/resource/technical/document/datasheet/DM00105814.pdf",
         "ordercodes": [("Farnell", "2469549")],
-        "description": "STM32F042 in TSSOP20 package",
+        "description": "STM32F042 in TSSOP-20 package",
         "pins": [
             [
                 [
