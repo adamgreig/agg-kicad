@@ -100,6 +100,18 @@ config = {
         "pin_shape": (1.0, 0.38),
     },
 
+    # TSSOP-20 from JEDEC MO-153AC
+    # IPC-7351B: SOP65P640X120-20N
+    "TSSOP-20": {
+        "rows": 2,
+        "pins": 20,
+        "pin_pitch": 0.65,
+        "row_pitch": 5.75,
+        "pad_shape": (1.35, 0.45),
+        "chip_shape": (4.5, 6.6),
+        "pin_shape": (0.95, .30),
+    },
+
     # LQFP-48 from JEDEC MS-026BBC
     # IPC-7351B: QFP50P900X900X160-48N
     "LQFP-48": {
