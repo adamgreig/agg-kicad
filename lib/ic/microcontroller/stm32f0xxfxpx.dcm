@@ -1,0 +1,4 @@
+EESchema-DOCLIB	Version 2.0
+$CMP STM32F0xxFxPx
+D STM32F042 in TSSOP-20 package
+$ENDCMP

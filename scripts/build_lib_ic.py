@@ -30,6 +30,48 @@ from __future__ import print_function, division
 #           open_emitter, and not_connected. They should be given as strings.
 
 config = {
+    # STM32F0xxFxPx, in TSSOP-20 package
+    "STM32F0xxFxPx": {
+        "path": "ic/microcontroller",
+        "footprint": "agg:TSSOP-20",
+        "datasheet": "http://www.st.com/st-web-ui/static/active/en"
+                     "/resource/technical/document/datasheet/DM00105814.pdf",
+        "ordercodes": [("Farnell", "2469549")],
+        "description": "STM32F042 in TSSOP-20 package",
+        "pins": [
+            [
+                [
+                    ("VDD", 16, "pwrin"),
+                    ("VDDA", 5, "pwrin"),
+                    ("VSS", 15, "pwrin"),
+                ], [
+                    ("NRST", 4, "in"),
+                ], [
+                    ("PB1", 14, "bidi"),
+                    ("PB8/BOOT0", 1, "bidi"),
+                ], [
+                    ("PF0", 2, "bidi"),
+                    ("PF1", 3, "bidi"),
+                ],
+            ], [
+                [
+                    ("PA0", 6, "bidi"),
+                    ("PA1", 7, "bidi"),
+                    ("PA2", 8, "bidi"),
+                    ("PA3", 9, "bidi"),
+                    ("PA4", 10, "bidi"),
+                    ("PA5", 11, "bidi"),
+                    ("PA6", 12, "bidi"),
+                    ("PA7", 13, "bidi"),
+                ], [
+                    ("PA9/PA11", 17, "bidi"),
+                    ("PA10/PA12", 18, "bidi"),
+                    ("PA13", 19, "bidi"),
+                    ("PA14", 20, "bidi"),
+                ],
+            ],
+        ],
+    },
 
     # STM32F1xxCxUx, in UFQFPN48 package
     "STM32F1xxCxUx": {
