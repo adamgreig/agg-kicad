@@ -1732,6 +1732,286 @@ config = {
             ]
         ]
     },
+
+    "USB-A-SS": {
+        "path": "connector",
+        "footprint": "",
+        "datasheet": "http://www.te.com/usa-en/product-1932258-1.html",
+        "ordercodes": [("Farnell", "1841902")],
+        "description": "USB Type A SuperSpeed Connector",
+        "pins": [
+            [
+                [
+                    ("VBUS", 1, "pwrin"),
+                    ("D-", 2, "bidi"),
+                    ("D+", 3, "bidi"),
+                    ("GND", 4, "pwrin"),
+                    ("SHIELD", "S", "passive"),
+                ]
+            ], [
+                [
+                    ("SSRX-", 5, "bidi"),
+                    ("SSRX+", 6, "bidi"),
+                    ("GND_DRAIN", 7, "pwrin"),
+                    ("SSTX-", 8, "bidi"),
+                    ("SSTX+", 9, "bidi"),
+                ]
+            ]
+        ]
+    },
+
+    # USB Type C Connector
+    "USB-C": {
+        "path": "connector",
+        "footprint": "",
+        "datasheet": "http://www.te.com/usa-en/product-2129691-1.html",
+        "ordercodes": [("Farnell", "2518075")],
+        "description": "USB Type C Connector",
+        "pins": [
+            [
+                [
+                    ("GND", "A1", "pwrin"),
+                    ("SSTXp1", "A2", "bidi"),
+                    ("SSTXn1", "A3", "bidi"),
+                    ("VBUS", "A4", "pwrin"),
+                    ("CC1", "A5", "pwrin"),
+                    ("Dp1", "A6", "bidi"),
+                    ("Dn1", "A7", "bidi"),
+                    ("SBU1", "A8", "bidi"),
+                    ("VBUS", "A9", "pwrin"),
+                    ("SSRXn2", "A10", "bidi"),
+                    ("SSRXp2", "A11", "bidi"),
+                    ("GND", "A12", "pwrin"),
+                    ("SHIELD", "S", "passive"),
+                ]
+            ], [
+                [
+                    ("GND", "B1", "pwrin"),
+                    ("SSRXp1", "B2", "bidi"),
+                    ("SSRXn1", "B3", "bidi"),
+                    ("VBUS", "B4", "pwrin"),
+                    ("SBU2", "B5", "bidi"),
+                    ("Dn2", "B6", "bidi"),
+                    ("Dp2", "B7", "bidi"),
+                    ("CC2", "B8", "bidi"),
+                    ("VBUS", "B9", "pwrin"),
+                    ("SSTXn2", "B10", "bidi"),
+                    ("SSTXp2", "B11", "bidi"),
+                    ("GND", "B12", "pwrin"),
+                ]
+            ]
+        ]
+    },
+
+    # USB SuperSpeed ESD Protection (2 lines)
+    "PD2EUSB30": {
+        "path": "passive",
+        "footprint": "",
+        "datasheet": "http://www.ti.com/lit/gpn/tpd2eusb30",
+        "ordercodes": [("Farnell", "1869645")],
+        "description": "2-Channel ESD Solution for "
+                       "SuperSpeed USB 3.0 Interface",
+        "pins": [
+            [
+                [
+                    ("D+", 1, "passive"),
+                    ("D-", 2, "passive"),
+                ]
+            ], [
+                [
+                    ("GND", 3, "passive"),
+                ]
+            ]
+        ]
+    },
+
+    "USB5534B": {
+        "path": "ic/interface",
+        "footprint": "",
+        "datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/"
+                     "00001681C.pdf",
+        "ordercodes": [("Farnell", "2361137")],
+        "description": "4-Port SS/HS USB Hub Controller",
+        "pins": [
+            [
+                [
+                    ("VDD33", 16, "pwrin"),
+                    ("VDD33", 34, "pwrin"),
+                    ("VDD33", 52, "pwrin"),
+                    ("VDD33", 63, "pwrin"),
+                    ("VDD12", 5, "pwrin"),
+                    ("VDD12", 8, "pwrin"),
+                    ("VDD12", 13, "pwrin"),
+                    ("VDD12", 21, "pwrin"),
+                    ("VDD12", 28, "pwrin"),
+                    ("VDD12", 31, "pwrin"),
+                    ("VDD12", 51, "pwrin"),
+                    ("VDD12", 57, "pwrin"),
+                    ("VSS", "EP", "pwrin"),
+                ], [
+                    ("VBUS", 48, "in"),
+                    ("USB2DP_UP", 53, "bidi"),
+                    ("USB2DM_UP", 54, "bidi"),
+                    ("USB3DP_TXUP", 55, "bidi"),
+                    ("USB3DM_TXUP", 56, "bidi"),
+                    ("USB3DP_RXUP", 58, "bidi"),
+                    ("USB3DM_RXUP", 59, "bidi"),
+                ], [
+                    ("SPI_~CE", 39, "out"),
+                    ("SPI_CLK", 40, "out"),
+                    ("SPI_DO", 41, "out"),
+                    ("SPI_DI", 42, "in"),
+                ], [
+                    ("~RESET", 50, "in"),
+                    ("XTALIN/CLK_IN", 62, "in"),
+                    ("XTALOUT", 61, "out"),
+                    ("TEST", 49, "in"),
+                    ("RBIAS", 64, "passive"),
+                    ("ATEST", 60, "passive"),
+                    ("SM_CLK", 38, "bidi"),
+                    ("SM_DAT", 37, "bidi"),
+                ]
+            ], [
+                [
+                    ("USB2DP_DN1", 1, "bidi"),
+                    ("USB2DM_DN1", 2, "bidi"),
+                    ("USB3DP_TXDN1", 3, "bidi"),
+                    ("USB3DM_TXDN1", 4, "bidi"),
+                    ("USB3DP_RXDN1", 6, "bidi"),
+                    ("USB3DM_RXDN1", 7, "bidi"),
+                ], [
+                    ("USB2DP_DN2", 9, "bidi"),
+                    ("USB2DM_DN2", 10, "bidi"),
+                    ("USB3DP_TXDN2", 11, "bidi"),
+                    ("USB3DM_TXDN2", 12, "bidi"),
+                    ("USB3DP_RXDN2", 14, "bidi"),
+                    ("USB3DM_RXDN2", 15, "bidi"),
+                ], [
+                    ("USB2DP_DN3", 17, "bidi"),
+                    ("USB2DM_DN3", 18, "bidi"),
+                    ("USB3DP_TXDN3", 19, "bidi"),
+                    ("USB3DM_TXDN3", 20, "bidi"),
+                    ("USB3DP_RXDN3", 22, "bidi"),
+                    ("USB3DM_RXDN3", 23, "bidi"),
+                ], [
+                    ("USB2DP_DN4", 24, "bidi"),
+                    ("USB2DM_DN4", 25, "bidi"),
+                    ("USB3DP_TXDN4", 26, "bidi"),
+                    ("USB3DM_TXDN4", 27, "bidi"),
+                    ("USB3DP_RXDN4", 29, "bidi"),
+                    ("USB3DM_RXDN4", 30, "bidi"),
+                ], [
+                    ("PRT_PWR1/PRT_CTL1", 36, "out"),
+                    ("PRT_PWR2/PRT_CTL2", 35, "out"),
+                    ("PRT_PWR3/PRT_CTL3", 33, "out"),
+                    ("PRT_PWR4/PRT_CTL4", 32, "out"),
+                ], [
+                    ("TRST/~DYNCDIS~/~UCS_SMBALERT~", 45, "in"),
+                    ("TCK/OCS1", 46, "in"),
+                    ("TMS/OCS2", 47, "in"),
+                    ("TDI/OCS3", 44, "in"),
+                    ("TDO/OCS4", 43, "bidi"),
+                ]
+            ]
+        ]
+    },
+
+    "UCS1002": {
+        "path": "ic/power",
+        "footprint": "",
+        "datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/"
+                     "UCS1002-1%20Data%20Sheet.pdf",
+        "ordercodes": [("Farnell", "2292594")],
+        "description": "Programmable USB Port Power Controller"
+                       "with Charger Emulation",
+        "pins": [
+            [
+                [
+                    ("VS1", 7, "pwrin"),
+                    ("VS2", 8, "pwrin"),
+                    ("VDD", 9, "pwrin"),
+                    ("GND", 20, "pwrin"),
+                    ("GND", "EP", "pwrin"),
+                ], [
+                    ("M1", 1, "in"),
+                    ("M2", 2, "in"),
+                    ("EM_EN", 19, "in"),
+                    ("PWR_EN", 10, "in"),
+                ], [
+                    ("COMM_SEL/ILIM", 5, "passive"),
+                    ("SEL", 6, "passive"),
+                ]
+            ], [
+                [
+                    ("VBUS1", 3, "pwrout"),
+                    ("VBUS2", 4, "pwrout"),
+                ], [
+                    ("DPIN", 14, "bidi"),
+                    ("DMIN", 15, "bidi"),
+                    ("DMOUT", 16, "bidi"),
+                    ("DPOUT", 17, "bidi"),
+                ], [
+                    ("SMDATA/LATCH", 11, "bidi"),
+                    ("SMCLK/S0", 12, "bidi"),
+                    ("~ALERT", 13, "oc"),
+                    ("~A_DET", 18, "oc"),
+                ]
+            ]
+        ]
+    },
+
+    "HD3SS3220": {
+        "path": "ic/interface",
+        "footprint": "",
+        "datasheet": "http://www.ti.com/lit/gpn/hd3ss3220",
+        "ordercodes": [("Farnell", "2526568")],
+        "description": "USB Type-C DRP Port Controller "
+                       "with SuperSpeed 2:1 MUX",
+        "pins": [
+            [
+                [
+                    ("VDD5", 30, "pwrin"),
+                    ("VCC33", 8, "pwrin"),
+                    ("GND", 13, "pwrin"),
+                    ("GND", 28, "pwrin"),
+                    ("GND", "EP", "pwrin"),
+                ], [
+                    ("VBUS_DET", 5, "in"),
+                    ("CC1", 2, "bidi"),
+                    ("CC2", 1, "bidi"),
+                ], [
+                    ("RX1n", 14, "bidi"),
+                    ("RX1p", 15, "bidi"),
+                    ("TX1n", 16, "bidi"),
+                    ("TX1p", 17, "bidi"),
+                    ("RX2n", 18, "bidi"),
+                    ("RX2p", 19, "bidi"),
+                    ("TX2n", 20, "bidi"),
+                    ("TX2p", 21, "bidi"),
+                ]
+            ], [
+                [
+                    ("TXp", 6, "bidi"),
+                    ("TXn", 7, "bidi"),
+                    ("RXp", 9, "bidi"),
+                    ("RXn", 10, "bidi"),
+                ], [
+                    ("PORT", 4, "in"),
+                    ("CURRENT_MODE", 3, "in"),
+                    ("ADDR", 22, "in"),
+                    ("~EN~_MUX", 12, "in"),
+                    ("~EN~_CC", 29, "in"),
+                    ("~VCONN_FAULT", 24, "out"),
+                    ("DIR", 11, "out"),
+                    ("ID", 27, "out"),
+                ], [
+                    ("SDA/OUT1", 25, "bidi"),
+                    ("SCL/OUT2", 26, "bidi"),
+                    ("~INT~/OUT3", 23, "out"),
+                ]
+            ]
+        ]
+    },
 }
 
 # Other Constants =============================================================
