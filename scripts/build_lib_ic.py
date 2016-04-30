@@ -24,7 +24,8 @@ from __future__ import print_function, division
 #           (pin name, pin number, electrical type).
 #       Number and name may be given as a string or an integer.
 #       Electrical type must be a string out of:
-#           in, out, bidi, tri, passive, unspec, pwrin, pwrout, oc, oe, nc.
+#           in, out, bidi, tri, passive, unspec, pwrin, pwrout,
+#           oc, od, oe, os, nc.
 #       These correspond to input, output, bidirectional, tristate, passive,
 #           unspecified, power_input, power_output, open_collector,
 #           open_emitter, and not_connected. They should be given as strings.
@@ -2034,7 +2035,9 @@ pin_types = {
     "pwrin": "W",
     "pwrout": "w",
     "oc": "C",
+    "od": "C",
     "oe": "E",
+    "os": "E",
     "nc": "N",
 }
 
