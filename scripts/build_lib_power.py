@@ -9,6 +9,14 @@ from __future__ import print_function, division
 import sys
 import os.path
 
+PWR_NAMES = [
+    "VCC", "VDD", "AVCC", "1v2", "1v8", "3v3", "5v", "VBATT", "VSHORE",
+]
+
+GND_NAMES = [
+    "GND", "AGND", "DGND", "PGND",
+]
+
 
 def gnd(name):
     out = []
@@ -47,9 +55,9 @@ def main(libpath, verify=False):
     out.append("# See github.com/adamgreig/agg-kicad")
     out.append("#========================================================\n")
 
-    for name in ("VCC", "VDD", "AVCC", "1v8", "3v3", "5v", "VBATT", "VSHORE"):
+    for name in PWR_NAMES:
         out += pwr(name)
-    for name in ("GND", "AGND", "DGND", "PGND"):
+    for name in GND_NAMES:
         out += gnd(name)
 
     out.append('# End Library\n')
