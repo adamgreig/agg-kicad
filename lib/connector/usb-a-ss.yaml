@@ -1,5 +1,6 @@
 datasheet: http://www.te.com/usa-en/product-1932258-1.html
 description: USB Type A SuperSpeed Connector
+designator: P
 footprint: ''
 name: USB-A-SS
 ordercodes:

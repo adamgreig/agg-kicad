@@ -1,5 +1,6 @@
 datasheet: http://www.te.com/usa-en/product-2129691-1.html
 description: USB Type C Connector
+designator: P
 footprint: ''
 name: USB-C
 ordercodes:

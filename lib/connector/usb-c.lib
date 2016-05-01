@@ -3,8 +3,8 @@ EESchema-LIBRARY Version 2.3
 #
 # USB-C
 #
-DEF USB-C IC 0 40 Y Y 1 F N
-F0 "IC" -450 700 50 H V L CNN
+DEF USB-C P 0 40 Y Y 1 F N
+F0 "P" -450 700 50 H V L CNN
 F1 "USB-C" -450 -700 50 H V L CNN
 F2 "" -450 -800 50 H I L CNN
 F3 "http://www.te.com/usa-en/product-2129691-1.html" -450 -900 50 H I L CNN
