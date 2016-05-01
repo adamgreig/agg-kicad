@@ -1,0 +1,24 @@
+datasheet: http://www.skyworksinc.com/uploads/documents/200428E.pdf
+description: 2W 600-1100MHz RF Power Amplifier
+footprint: agg:QFN-16-EP-SKYWORKS
+name: SKY65111-348LF
+ordercodes:
+- [Farnell, '1753773']
+pins:
+- - - [VCC1, 4, pwrin]
+    - [VCC2, 15, pwrin]
+    - [VCC2, 16, pwrin]
+    - [VAPC1, 5, pwrin]
+    - [VAPC2, 6, pwrin]
+  - - [GND, 1, pwrin]
+    - [GND, 3, pwrin]
+    - [GND, 8, pwrin]
+    - [GND, 14, pwrin]
+    - [GND, EP, pwrin]
+  - - [VREF, 7, in]
+  - - [RFIN, 2, in]
+- - - [RFOUT/VCC3, 9, out]
+    - [RFOUT/VCC3, 10, out]
+    - [RFOUT/VCC3, 11, out]
+    - [RFOUT/VCC3, 12, out]
+  - - [OPEN, 13, nc]

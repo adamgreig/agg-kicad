@@ -1,0 +1,12 @@
+datasheet: http://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf
+description: Buffer / Line Driver, Non-Inverting, 1 Gate, 1 Input, 1.65V to 5.5V
+footprint: agg:SOT-23-5
+name: SN74LVC1G07
+ordercodes:
+- [Farnell, '1102969']
+pins:
+- - - [VCC, 5, pwrin]
+    - [A, 2, in]
+    - [GND, 3, pwrin]
+- - - [Y, 4, oc]
+  - - [NC, 1, nc]

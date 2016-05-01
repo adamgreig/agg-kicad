@@ -1,0 +1,9 @@
+datasheet: http://www.tracopower.com/products/tsr1.pdf
+description: TSR1 Switch Mode Regulators
+footprint: agg:TSR1
+name: TSR1
+ordercodes: []
+pins:
+- - - [VIN, 1, pwrin]
+  - - [GND, 2, pwrin]
+- - - [VOUT, 3, pwrout]

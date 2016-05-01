@@ -1,0 +1,17 @@
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/20005167C.pdf
+description: High Speed CAN Transceiver
+footprint: agg:DFN-8-EP-MICROCHIP
+name: MCP2562
+ordercodes:
+- [Farnell, '']
+- [RS, 824-3135]
+pins:
+- - - [VIO, 5, pwrin]
+    - [VDD, 3, pwrin]
+    - [VSS, 2, pwrin]
+    - [VSS, EP, pwrin]
+    - [STBY, 8, in]
+- - - [CANH, 7, tri]
+    - [CANL, 6, tri]
+    - [TXD, 1, in]
+    - [RXD, 4, out]

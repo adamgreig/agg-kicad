@@ -1,0 +1,18 @@
+datasheet: https://cds.linear.com/docs/en/datasheet/4151ff.pdf
+description: I2C Power Monitor
+footprint: agg:DFN-10-EP-LT
+name: LTC4151
+ordercodes:
+- [Farnell, '2295457']
+pins:
+- - - [VIN, 2, pwrin]
+  - - [ADR1, 3, in]
+    - [ADR0, 4, in]
+  - - [GND, 9, pwrin]
+    - [GND, EP, pwrin]
+- - - [SENSE+, 1, in]
+    - [SENSE-, 10, in]
+  - - [SDA, 7, oc]
+    - [SCL, 6, oc]
+  - - [~SHDN, 8, in]
+    - [ADIN, 5, in]

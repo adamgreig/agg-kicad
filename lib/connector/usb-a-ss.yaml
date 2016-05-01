@@ -1,0 +1,17 @@
+datasheet: http://www.te.com/usa-en/product-1932258-1.html
+description: USB Type A SuperSpeed Connector
+footprint: ''
+name: USB-A-SS
+ordercodes:
+- [Farnell, '1841902']
+pins:
+- - - [VBUS, 1, pwrin]
+    - [D-, 2, bidi]
+    - [D+, 3, bidi]
+    - [GND, 4, pwrin]
+    - [SHIELD, S, passive]
+- - - [SSRX-, 5, bidi]
+    - [SSRX+, 6, bidi]
+    - [GND_DRAIN, 7, pwrin]
+    - [SSTX-, 8, bidi]
+    - [SSTX+, 9, bidi]

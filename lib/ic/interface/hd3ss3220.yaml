@@ -1,0 +1,38 @@
+datasheet: http://www.ti.com/lit/gpn/hd3ss3220
+description: USB Type-C DRP Port Controller with SuperSpeed 2:1 MUX
+footprint: ''
+name: HD3SS3220
+ordercodes:
+- [Farnell, '2526568']
+pins:
+- - - [VDD5, 30, pwrin]
+    - [VCC33, 8, pwrin]
+    - [GND, 13, pwrin]
+    - [GND, 28, pwrin]
+    - [GND, EP, pwrin]
+  - - [VBUS_DET, 5, in]
+    - [CC1, 2, bidi]
+    - [CC2, 1, bidi]
+  - - [RX1n, 14, bidi]
+    - [RX1p, 15, bidi]
+    - [TX1n, 16, bidi]
+    - [TX1p, 17, bidi]
+    - [RX2n, 18, bidi]
+    - [RX2p, 19, bidi]
+    - [TX2n, 20, bidi]
+    - [TX2p, 21, bidi]
+- - - [TXp, 6, bidi]
+    - [TXn, 7, bidi]
+    - [RXp, 9, bidi]
+    - [RXn, 10, bidi]
+  - - [PORT, 4, in]
+    - [CURRENT_MODE, 3, in]
+    - [ADDR, 22, in]
+    - [~EN~_MUX, 12, in]
+    - [~EN~_CC, 29, in]
+    - [~VCONN_FAULT, 24, out]
+    - [DIR, 11, out]
+    - [ID, 27, out]
+  - - [SDA/OUT1, 25, bidi]
+    - [SCL/OUT2, 26, bidi]
+    - [~INT~/OUT3, 23, out]

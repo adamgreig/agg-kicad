@@ -1,0 +1,12 @@
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/21711c.pdf
+description: 1K I2C Serial EEPROM
+footprint: agg:SOT-23-5
+name: 24AA01
+ordercodes:
+- [Farnell, '1331269']
+pins:
+- - - [VCC, 4, pwrin]
+  - - [GND, 2, pwrin]
+- - - [SDA, 3, tri]
+    - [SCL, 1, tri]
+    - [WP, 5, in]

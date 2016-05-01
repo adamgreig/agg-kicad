@@ -1,0 +1,28 @@
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/UCS1002-1%20Data%20Sheet.pdf
+description: Programmable USB Port Power Controllerwith Charger Emulation
+footprint: ''
+name: UCS1002
+ordercodes:
+- [Farnell, '2292594']
+pins:
+- - - [VS1, 7, pwrin]
+    - [VS2, 8, pwrin]
+    - [VDD, 9, pwrin]
+    - [GND, 20, pwrin]
+    - [GND, EP, pwrin]
+  - - [M1, 1, in]
+    - [M2, 2, in]
+    - [EM_EN, 19, in]
+    - [PWR_EN, 10, in]
+  - - [COMM_SEL/ILIM, 5, passive]
+    - [SEL, 6, passive]
+- - - [VBUS1, 3, pwrout]
+    - [VBUS2, 4, pwrout]
+  - - [DPIN, 14, bidi]
+    - [DMIN, 15, bidi]
+    - [DMOUT, 16, bidi]
+    - [DPOUT, 17, bidi]
+  - - [SMDATA/LATCH, 11, bidi]
+    - [SMCLK/S0, 12, bidi]
+    - [~ALERT, 13, oc]
+    - [~A_DET, 18, oc]

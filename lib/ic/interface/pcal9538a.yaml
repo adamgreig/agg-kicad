@@ -1,0 +1,24 @@
+datasheet: http://www.nxp.com/documents/data_sheet/PCAL9538A.pdf
+description: Low-voltage and power 8-bit I2C SMBus expander
+footprint: agg:QFN-16-EP-NXP
+name: PCAL9538A
+ordercodes:
+- [Farnell, '2428172']
+pins:
+- - - [VDD, 14, pwrin]
+  - - [~RESET, 1, in]
+  - - [~INT, 11, oc]
+    - [SCL, 12, oc]
+    - [SDA, 13, oc]
+  - - [A0, 15, in]
+    - [A1, 16, in]
+  - - [VSS, 6, pwrin]
+    - [VSS, EP, pwrin]
+- - - [P0, 2, bidi]
+    - [P1, 3, bidi]
+    - [P2, 4, bidi]
+    - [P3, 5, bidi]
+  - - [P4, 7, bidi]
+    - [P5, 8, bidi]
+    - [P6, 9, bidi]
+    - [P7, 10, bidi]
