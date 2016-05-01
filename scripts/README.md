@@ -1,5 +1,8 @@
 # agg-kicad scripts
 
+You'll probably need to install PyYAML first:
+`sudo apt-get install python-yaml` or `sudo pip install pyyaml` or so on.
+
 
 ## Builders
 
@@ -19,8 +22,8 @@ different numbers of pins.
 
 ### build_lib_ic.py
 
-This script generates multiple `.lib` files, one per IC, configured by a list 
-of pin name/numbers inside the script.
+This script generates multiple `.lib` files, one per IC, configured by `.yaml`
+files inside the library path you point it at.
 
 `python3 build_lib_ic.py ../lib/`
 

@@ -32,6 +32,9 @@ conventions in `agg.pretty/README.md`, based on the KiCAD project conventions.
 
 See the README in the scripts folder for detailed information on each script.
 
+The only requirement is PyYAML for some of the build scripts:
+`sudo pip install pyyaml` or similar.
+
 ## Makefile
 
 You can use the Makefile to:
