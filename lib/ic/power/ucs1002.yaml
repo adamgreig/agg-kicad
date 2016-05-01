@@ -17,7 +17,7 @@ pins:
   - - [COMM_SEL/ILIM, 5, passive]
     - [SEL, 6, passive]
 - - - [VBUS1, 3, pwrout]
-    - [VBUS2, 4, pwrout]
+    - [VBUS2, 4, passive]
   - - [DPIN, 14, bidi]
     - [DMIN, 15, bidi]
     - [DMOUT, 16, bidi]
