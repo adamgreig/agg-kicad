@@ -1,3 +1,7 @@
+addons:
+  apt:
+    packages:
+      - python-yaml
 language: generic
 script:
   - make check
