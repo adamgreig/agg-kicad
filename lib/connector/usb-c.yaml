@@ -10,7 +10,7 @@ pins:
     - [SSTXp1, A2, bidi]
     - [SSTXn1, A3, bidi]
     - [VBUS, A4, pwrin]
-    - [CC1, A5, pwrin]
+    - [CC1, A5, bidi]
     - [Dp1, A6, bidi]
     - [Dn1, A7, bidi]
     - [SBU1, A8, bidi]
