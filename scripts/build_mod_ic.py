@@ -433,6 +433,21 @@ config = {
         "pin_shape": (-0.3, 0.30)
     },
 
+    # DFN-8
+    # IPC-7351B: DFN50P300X300X75-9N
+    "DFN-8-EP-AD": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 0.50,
+        "row_pitch": 3.10,
+        "pad_shape": (0.65, 0.35),
+        "ep_shape": (1.8, 2.5),
+        "ep_mask_shape": (0.8, 0.8, 0, 0.4),
+        "ep_paste_shape": (0.8, 0.8, 0, 0.4),
+        "chip_shape": (3.1, 3.1),
+        "pin_shape": (-0.5, 0.30)
+    },
+
     # DFN-16 from LTC4353
     # IPC-7351B: DFN45P300X400X75-17N
     "DFN-16-EP-LTC-DE": {

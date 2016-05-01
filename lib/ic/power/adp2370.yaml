@@ -1,0 +1,16 @@
+datasheet: http://www.analog.com/media/en/technical-documentation/data-sheets/ADP2370_2371.pdf
+description: 800mA Buck Regulator
+footprint: agg:DFN-8-EP-AD
+name: ADP2370
+ordercodes:
+- [Farnell, '2112679']
+pins:
+- - - [VIN, 1, pwrin]
+    - [FSEL, 2, in]
+    - [EN, 3, in]
+    - [SYNC, 4, in]
+- - - [PG, 6, od]
+    - [FB, 5, in]
+    - [SW, 7, passive]
+    - [PGND, 8, pwrin]
+    - [PGND, EP, pwrin]
