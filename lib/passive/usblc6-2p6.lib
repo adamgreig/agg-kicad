@@ -3,8 +3,8 @@ EESchema-LIBRARY Version 2.3
 #
 # USBLC6-2P6
 #
-DEF USBLC6-2P6 IC 0 40 Y Y 1 F N
-F0 "IC" -300 200 50 H V L CNN
+DEF USBLC6-2P6 D 0 40 Y Y 1 F N
+F0 "D" -300 200 50 H V L CNN
 F1 "USBLC6-2P6" -300 -200 50 H V L CNN
 F2 "agg:SOT-666" -300 -300 50 H I L CNN
 F3 "http://www.st.com/resource/en/datasheet/usblc6-2.pdf" -300 -400 50 H I L CNN

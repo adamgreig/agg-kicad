@@ -1,6 +1,7 @@
 datasheet: http://www.st.com/resource/en/datasheet/usblc6-2.pdf
 description: Single port USB2 ESD protection
 footprint: agg:SOT-666
+designator: D
 name: USBLC6-2P6
 ordercodes:
 - [Farnell, '1295310']
