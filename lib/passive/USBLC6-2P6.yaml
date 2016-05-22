@@ -1,0 +1,13 @@
+datasheet: http://www.st.com/resource/en/datasheet/usblc6-2.pdf
+description: Single port USB2 ESD protection
+footprint: agg:SOT-666
+name: USBLC6-2P6
+ordercodes:
+- [Farnell, '1295310']
+pins:
+- - - [I/O1, 1, passive]
+    - [GND, 2, pwrin]
+    - [I/O2, 3, passive]
+- - - [I/O1, 6, passive]
+    - [VBUS, 5, pwrin]
+    - [I/O2, 4, passive]

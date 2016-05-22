@@ -418,6 +418,21 @@ config = {
         "pin_shape": (0.4, 0.3),
     },
 
+    # SOT-666
+    # IPC-7351B: SOTFL50P162X60-6N
+    # AKA SOT-563
+    # AKA SC-75-6
+    # AKA SC-89-6
+    "SOT-666": {
+        "rows": 2,
+        "pins": 6,
+        "pin_pitch": 0.5,
+        "row_pitch": 1.44,
+        "pad_shape": (.71, .30),
+        "chip_shape": (1.3, 1.7),
+        "pin_shape": (.35, .25),
+    },
+
     # DFN-8
     # IPC-7351B: DFN65P300X300X90-9N
     "DFN-8-EP-MICROCHIP": {
