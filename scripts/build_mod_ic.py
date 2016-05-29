@@ -535,6 +535,18 @@ config = {
         "chip_shape": (3.0, 3.0),
         "pin_shape": (-0.4, 0.25)
     },
+
+    # XTAL 2.0x2.5mm
+    "XTAL-25x20": {
+        "rows": 2,
+        "pins": 4,
+        "pin_pitch": 2.1,
+        "row_pitch": 1.4,
+        "pad_shape": (1.0, 0.8),
+        "chip_shape": (2.0, 2.5),
+        "pin_shape": (-0.7, 0.4),
+        "silk": "external",
+    }
 }
 
 
