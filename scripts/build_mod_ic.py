@@ -316,6 +316,20 @@ config = {
         "pin_shape": (-0.40, 0.23),
     },
 
+    # DFN-6-EP-BGM
+    # For BGM1043N7 and simila
+    "DFN-6-EP-BGM": {
+        "rows": 2,
+        "pins": 6,
+        "pin_pitch": 0.54,
+        "row_pitch": 2.18,
+        "pad_shape": (0.50, 0.28),
+        "ep_shape": (1.28, 1.5),
+        "ep_paste_shape": (0.5, 0.5, 0.2, 0.2),
+        "chip_shape": (2.3, 1.7),
+        "pin_shape": (-0.31, 0.275),
+    },
+
     # LPCC-16 for HMC5883L
     "LPCC-16-HMC5883L": {
         "rows": 4,

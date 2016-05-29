@@ -1,0 +1,14 @@
+name: BGM1043N7
+datasheet: "http://www.infineon.com/dgdl/bgm1043n7.pdf?folderId=db3a30431f848401011fcbf2ab4c04c4&fileId=db3a304336415dec01365e4465443c72"
+description: GPS and GLONASS Front-End Module
+footprint: agg:DFN-6-EP-BGM
+ordercodes:
+  - [DigiKey, 'BGM1043N7E6327XUSA1CT-ND']
+pins:
+- - - [VCC, 1, pwrin]
+    - [PON, 2, in]
+  - - [RFIN, 3, in]
+  - - [GND, EP, pwrin]
+- - - [SO, 4, out]
+    - [AI, 5, in]
+  - - [RFOUT, 6, out]
