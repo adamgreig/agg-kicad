@@ -546,7 +546,18 @@ config = {
         "chip_shape": (2.0, 2.5),
         "pin_shape": (-0.7, 0.4),
         "silk": "external",
-    }
+    },
+
+    # RFM69 and friends
+    "RFM69": {
+        "rows": 2,
+        "pins": 16,
+        "pin_pitch": 2.0,
+        "row_pitch": 18.7,
+        "pad_shape": (3.0, 1.4),
+        "chip_shape": (19.7, 16),
+        "pin_shape": (-2.0, 1.2),
+    },
 }
 
 

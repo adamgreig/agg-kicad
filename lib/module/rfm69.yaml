@@ -1,0 +1,21 @@
+name: RFM69
+description: ISM Transceiver Module from HopeRF
+datasheet: http://www.hoperf.com/upload/rf/RFM69HW-V1.3.pdf
+footprint: agg:RFM69
+pins:
+- - - [RESET, 1, in]
+    - [DIO0, 2, bidi]
+    - [DIO1, 3, bidi]
+    - [DIO2, 4, bidi]
+    - [DIO3, 5, bidi]
+    - [DIO4, 6, bidi]
+    - [DIO5, 7, bidi]
+    - [VCC, 8, pwrin]
+- - - [NC, 16, nc]
+    - [NSS, 15, in]
+    - [MOSI, 14, in]
+    - [MISO, 13, out]
+    - [SCK, 12, in]
+    - [GND, 11, pwrin]
+    - [ANA, 10, out]
+    - [GND, 9, pwrout]
