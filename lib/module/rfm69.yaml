@@ -18,4 +18,4 @@ pins:
     - [SCK, 12, in]
     - [GND, 11, pwrin]
     - [ANA, 10, out]
-    - [GND, 9, pwrout]
+    - [GND, 9, pwrin]
