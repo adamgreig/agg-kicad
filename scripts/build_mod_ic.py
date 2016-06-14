@@ -330,6 +330,20 @@ config = {
         "pin_shape": (-0.31, 0.275),
     },
 
+    # DFN-6-EP-ONSEMI
+    # For NCP380 and others
+    "DFN-6-EP-ONSEMI": {
+        "rows": 2,
+        "pins": 6,
+        "pin_pitch": 0.65,
+        "row_pitch": 1.83,
+        "pad_shape": (.47, .40),
+        "ep_shape": (.95, 1.7),
+        "ep_paste_shape": (.5, .5, .2, .2),
+        "chip_shape": (2., 2.),
+        "pin_shape": (-.35, .35),
+    },
+
     # LPCC-16 for HMC5883L
     "LPCC-16-HMC5883L": {
         "rows": 4,
