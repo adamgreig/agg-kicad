@@ -9,29 +9,56 @@ and outputting quickpaste formats for Farnell, RS and DigiKey.
 """
 
 from __future__ import print_function, division
-import sys
 import os.path
 import datetime
+import argparse
 import xml.etree.ElementTree as ET
 
-if len(sys.argv) == 1:
-    print("Usage: {} <input filename> [output filename]".format(sys.argv[0]))
-    sys.exit()
+parser = argparse.ArgumentParser(
+    prog='xml2bom',
+    description="Convert KiCAD EESchema XML BOMs to an expanded text format")
+parser.add_argument("input", help="input filename")
+parser.add_argument("output", nargs='?', default=None, help="output filename")
+parser.add_argument("-x", "--quantity", type=int, help="quantity multiplier")
+group = parser.add_mutually_exclusive_group()
+group.add_argument("-i", "--include", nargs='+', help="parts to include")
+group.add_argument("-e", "--exclude", nargs='+', help="parts to exclude")
+args = parser.parse_args()
 
-tree = ET.parse(sys.argv[1])
+print(args)
+
+tree = ET.parse(args.input)
 parts = {}
 missing_order_code = []
 missing_footprint = []
 inconsistent_order_code = {}
 filter_parts = False
+included_parts = []
+excluded_parts = []
+quantity_multiplier = 1
 
-if len(sys.argv) > 3:
-    included_parts = sys.argv[3].split(",")
+if args.include:
+    included_parts = args.include
     filter_parts = True
+if args.exclude:
+    excluded_parts = args.exclude
+    filter_parts = True
+if args.quantity:
+    quantity_multiplier = args.quantity
+
+
+def ignore_part(ref):
+    if filter_parts:
+        if included_parts and ref not in included_parts:
+            return True
+        elif excluded_parts and ref in excluded_parts:
+            return True
+    return False
+
 
 for comp in tree.getroot().iter('comp'):
     ref = comp.get('ref')
-    if filter_parts and ref not in included_parts:
+    if ignore_part(ref):
         continue
     val = comp.findtext('value')
     foot = comp.findtext('footprint')
@@ -86,7 +113,7 @@ def farnell_formatter(number, parts):
         str(p['footprint']).split(":")[-1] for p in parts))
     values = " ".join(set(p['value'] for p in parts))
     note = "{}x {} {}".format(qty, values, footprints)
-    return "{},{},{}\n".format(number, qty, note[:30])
+    return "{},{},{}\n".format(number, qty * quantity_multiplier, note[:30])
 
 
 def rs_formatter(number, parts):
@@ -96,7 +123,7 @@ def rs_formatter(number, parts):
         str(p['footprint']).split(":")[-1] for p in parts))
     values = "-".join(set(p['value'] for p in parts))
     return "{},{},,{}x--{}--{}--{}\n".format(
-        number, qty, qty, values, footprints, refs)
+        number, qty * quantity_multiplier, qty, values, footprints, refs)
 
 
 def digikey_formatter(number, parts):
@@ -106,7 +133,7 @@ def digikey_formatter(number, parts):
         str(p['footprint']).split(":")[-1] for p in parts))
     values = " ".join(set(p['value'] for p in parts))
     return "{},{},{}x {} {} {}\n".format(
-        qty, number, qty, values, footprints, refs)
+        qty * quantity_multiplier, number, qty, values, footprints, refs)
 
 
 vendor_bom_formatters = {
@@ -125,7 +152,7 @@ for name in parts:
         else:
             qty = len(parts[name][number])
             bom_text += "{},{},{}x {} {}\n".format(
-                number, qty, qty,
+                number, qty * quantity_multiplier, qty,
                 " ".join(p['ref'] for p in parts[name][number]),
                 ",".join(set(
                     str(p['footprint']).split(":")[-1]
@@ -171,7 +198,7 @@ Assembly BOM
 {assembly_bom}
 
 """.format(
-    source=os.path.basename(sys.argv[1]),
+    source=os.path.basename(args.input),
     date=datetime.datetime.now().isoformat(),
     missing_footprint=missing_footprint_report,
     missing_code=missing_order_code_report,
@@ -180,6 +207,6 @@ Assembly BOM
     assembly_bom=assembly_bom)
 
 print(report)
-if len(sys.argv) == 3:
-    with open(sys.argv[2], 'w') as f:
+if args.output:
+    with open(args.output, 'w') as f:
         f.write(report)
