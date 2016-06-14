@@ -25,8 +25,6 @@ group.add_argument("-i", "--include", nargs='+', help="parts to include")
 group.add_argument("-e", "--exclude", nargs='+', help="parts to exclude")
 args = parser.parse_args()
 
-print(args)
-
 tree = ET.parse(args.input)
 parts = {}
 missing_order_code = []
