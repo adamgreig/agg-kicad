@@ -206,5 +206,8 @@ Assembly BOM
 
 print(report)
 if args.output:
-    with open(args.output, 'w') as f:
+    filename = args.output
+    if filename[-4:].lower() != ".bom":
+        filename += ".bom"
+    with open(filename, 'w') as f:
         f.write(report)

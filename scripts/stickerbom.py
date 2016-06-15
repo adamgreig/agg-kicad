@@ -459,6 +459,8 @@ if __name__ == "__main__":
     if len(sys.argv) == 3:
         xmlpath = sys.argv[1]
         pdfpath = sys.argv[2]
+        if pdfpath[-4:].lower() != ".pdf":
+            pdfpath += ".pdf"
         main(xmlpath, pdfpath)
     else:
         print("Usage: {} <bompath.xml> <outpath.pdf>".format(sys.argv[0]))
