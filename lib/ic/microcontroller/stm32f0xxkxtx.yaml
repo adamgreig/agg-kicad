@@ -1,6 +1,6 @@
 datasheet: http://www.st.com/web/en/resource/technical/document/datasheet/DM00088500.pdf
 description: STM32F0 32 pin LQFP package
-footprint: agg:LQFP-32
+footprint:
 name: STM32F0xxKxTx
 ordercodes:
 - [Farnell, '2432085']
