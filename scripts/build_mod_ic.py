@@ -157,6 +157,12 @@ config = {
         "pad_shape": (1.5, 0.3),
         "chip_shape": (7.2, 7.2),
         "pin_shape": (1.0, 0.27),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-48_7x7mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # LQFP-64 from JEDEC MS-026BCD
@@ -169,6 +175,12 @@ config = {
         "pad_shape": (1.5, 0.3),
         "chip_shape": (10.2, 10.2),
         "pin_shape": (1.0, 0.27),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-64_10x10mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # LQFP-100 from JEDEC MS-026BED
@@ -181,6 +193,12 @@ config = {
         "pad_shape": (1.5, 0.3),
         "chip_shape": (14.2, 14.2),
         "pin_shape": (1.0, 0.27),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-100_14x14mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # UFQFPN-48 from JEDEC MO-220
@@ -254,6 +272,12 @@ config = {
         "ep_vias": (0.4, 0.6, 0.45),
         "chip_shape": (5.1, 5.1),
         "pin_shape": (-0.35, 0.2),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-40-1EP_5x5mm_Pitch0.4mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # QFN-20 from JEDEC MO-220VGGD-8
@@ -303,6 +327,12 @@ config = {
         "ep_shape": (2.6, 2.6),
         "ep_mask_shape": (0.9, 0.9, 0.4, 0.4),
         "ep_paste_shape": (0.9, 0.9, 0.4, 0.4),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # QFN-16 from SKY65111-348LF datasheet
@@ -319,6 +349,12 @@ config = {
         "ep_shape": (1.78, 1.78),
         "ep_paste_shape": (0.7, 0.7, 0.3, 0.3),
         "ep_vias": (0.3, 0.4, 0.2),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-16-1EP_3x3mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # QFN-40 from LTC3887 datasheet
@@ -336,6 +372,12 @@ config = {
         "ep_vias": (0.4, 0.8, 0.43),
         "chip_shape": (6.0, 6.0),
         "pin_shape": (-0.4, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-40-1EP_6x6mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # DFN-10 from JEDEC MO-229WEED-2
@@ -352,6 +394,12 @@ config = {
         "ep_paste_shape": (1.2, 0.8, 0, 0.4),
         "chip_shape": (3.1, 3.1),
         "pin_shape": (-0.40, 0.30),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-10-1EP_3x3mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # DFN-12
@@ -367,6 +415,12 @@ config = {
         "ep_paste_shape": (1.2, 0.8, 0, 0.4),
         "chip_shape": (3.1, 3.1),
         "pin_shape": (-0.40, 0.23),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-12-1EP_3x3mm_Pitch0.45mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # DFN-6-EP-BGM
@@ -395,6 +449,12 @@ config = {
         "ep_paste_shape": (.5, .5, .2, .2),
         "chip_shape": (2., 2.),
         "pin_shape": (-.35, .35),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-6-1EP_2x2mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # LPCC-16 for HMC5883L
@@ -556,7 +616,13 @@ config = {
         "ep_mask_shape": (0.8, 0.8, 0, 0.4),
         "ep_paste_shape": (0.8, 0.8, 0, 0.4),
         "chip_shape": (3.1, 3.1),
-        "pin_shape": (-0.3, 0.30)
+        "pin_shape": (-0.3, 0.30),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # DFN-8
@@ -571,7 +637,13 @@ config = {
         "ep_mask_shape": (0.8, 0.8, 0, 0.4),
         "ep_paste_shape": (0.8, 0.8, 0, 0.4),
         "chip_shape": (3.1, 3.1),
-        "pin_shape": (-0.5, 0.30)
+        "pin_shape": (-0.5, 0.30),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # DFN-16 from LTC4353
@@ -586,7 +658,13 @@ config = {
         "ep_mask_shape": (0.8, 0.8, 0.2, 0.4),
         "ep_paste_shape": (0.8, 0.8, 0.2, 0.4),
         "chip_shape": (3.1, 4.1),
-        "pin_shape": (-0.41, 0.28)
+        "pin_shape": (-0.41, 0.28),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-16-1EP_3x4mm_Pitch0.45mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # HVQFN24 from PCA9502
@@ -601,7 +679,13 @@ config = {
         "ep_mask_shape": (0.45, 0.45, 0.4, 0.4),
         "ep_paste_shape": (0.45, 0.45, 0.4, 0.4),
         "chip_shape": (4.3, 4.3),
-        "pin_shape": (-0.5, 0.3)
+        "pin_shape": (-0.5, 0.3),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # HVQFN-16 from PCAL9538A
@@ -615,7 +699,13 @@ config = {
         "ep_shape": (1.50, 1.50),
         "ep_paste_shape": (0.30, 0.30, 0.31, 0.31),
         "chip_shape": (3.0, 3.0),
-        "pin_shape": (-0.4, 0.24)
+        "pin_shape": (-0.4, 0.24),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-16-1EP_3x3mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # VQFN-16 from TPS6215
@@ -630,7 +720,13 @@ config = {
         "ep_paste_shape": (1.5, 1.5, 0.2, 0.2),
         "ep_vias": (0.2, 0.3, 0.9),
         "chip_shape": (3.0, 3.0),
-        "pin_shape": (-0.4, 0.25)
+        "pin_shape": (-0.4, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-16-1EP_3x3mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # XTAL 2.0x2.5mm

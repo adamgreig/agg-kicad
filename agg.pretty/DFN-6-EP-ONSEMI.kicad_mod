@@ -1,7 +1,7 @@
 
 (module "DFN-6-EP-ONSEMI" 
   (layer F.Cu) 
-  (tedit 57602F7F) 
+  (tedit 5765711F) 
   (fp_text reference REF** 
     (at 0 -1.9500) 
     (layer F.Fab) 
@@ -205,4 +205,11 @@
     (at 0 0) 
     (size 0.9500 1.7000) 
     (layers F.Cu F.Mask) 
-    (solder_mask_margin 0.0010)))
+    (solder_mask_margin 0.0010)) 
+  (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-6-1EP_2x2mm_Pitch0.65mm.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1 1 1)) 
+    (rotate 
+      (xyz 0 0 0))))
