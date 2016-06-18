@@ -34,6 +34,10 @@ config = {
         "chip_shape": (0.6, 0.3),
         "pin_shape": (-0.15, 0.3),
         "silk": None,
+        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0201.wrl",
+                  "offset": (0,0,0),
+                  "scale": (1,1,1),
+                  "rotate": (0,0,0)},
     },
 
     # 0201-L from IPC-7351B: CAPC0603X33L
@@ -44,7 +48,11 @@ config = {
         "pin_shape": (-0.15, 0.3),
         "silk": None,
         "courtyard_gap": 0.10,
-    },
+        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0201.wrl",
+                  "offset": (0,0,0),
+                  "scale": (1,1,1),
+                  "rotate": (0,0,0)},
+   },
 
     # 0402 from IPC-7351B: CAPC1005X55N
     "0402": {
@@ -53,7 +61,11 @@ config = {
         "chip_shape": (1.00, 0.50),
         "pin_shape": (-0.30, 0.50),
         "silk": None,
-    },
+        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0402.wrl",
+                  "offset": (0,0,0),
+                  "scale": (1,1,1),
+                  "rotate": (0,0,0)},
+   },
 
     # 0402-L from IPC-7351B: CAPC1005X55L
     # This is a LEAST environment
@@ -64,7 +76,11 @@ config = {
         "pin_shape": (-0.30, 0.50),
         "silk": None,
         "courtyard_gap": 0.10,
-    },
+        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0402.wrl",
+                  "offset": (0,0,0),
+                  "scale": (1,1,1),
+                  "rotate": (0,0,0)},
+   },
 
     # 0603 from IPC-7351B: CAPC1608X90N
     "0603": {
@@ -72,7 +88,11 @@ config = {
         "pitch": 1.60,
         "chip_shape": (1.60, 0.80),
         "pin_shape": (-0.35, 0.80),
-    },
+        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0603.wrl",
+                  "offset": (0,0,0),
+                  "scale": (1,1,1),
+                  "rotate": (0,0,0)},
+   },
 
     # 0603-L from IPC-7351B: CAPC1608X90L
     # This is a LEAST environment
@@ -82,7 +102,11 @@ config = {
         "chip_shape": (1.60, 0.80),
         "pin_shape": (-0.35, 0.80),
         "courtyard_gap": 0.10,
-    },
+        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0603.wrl",
+                  "offset": (0,0,0),
+                  "scale": (1,1,1),
+                  "rotate": (0,0,0)},
+   },
 
     # 0603-LED from IPC-7351B: CAPC1608X90N
     # Modified silkscreen to indicate LED polarity.
@@ -92,7 +116,11 @@ config = {
         "chip_shape": (1.60, 0.80),
         "pin_shape": (-0.25, 0.80),
         "silk": "triangle",
-    },
+        "model": {"path": "${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl",
+                  "offset": (0,0,0),
+                  "scale": (1,1,1),
+                  "rotate": (0,0,180)},
+   },
 
     # 0805 from IPC-7351B: CAPC2013X100N
     "0805": {
@@ -100,7 +128,11 @@ config = {
         "pitch": 1.80,
         "chip_shape": (2.00, 1.25),
         "pin_shape": (-0.50, 1.25),
-    },
+        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0805.wrl",
+                  "offset": (0,0,0),
+                  "scale": (1,1,1),
+                  "rotate": (0,0,0)},
+   },
 
     # 0805-LED from IPC-7351B: CAPC2013X100N
     # Modified silkscreen to indicate LED polarity.
@@ -110,7 +142,11 @@ config = {
         "chip_shape": (2.00, 1.25),
         "pin_shape": (-0.50, 1.25),
         "silk": "triangle",
-    },
+        "model": {"path": "${KISYS3DMOD}/LEDs.3dshapes/LED_0805.wrl",
+                  "offset": (-0.006,0,0),
+                  "scale": (1,1,1),
+                  "rotate": (0,0,0)},
+   },
 
     # 1206 from IPC-7351B: CAPC3216X130N
     "1206": {
@@ -118,7 +154,11 @@ config = {
         "pitch": 3.00,
         "chip_shape": (3.20, 1.60),
         "pin_shape": (-0.60, 1.60),
-    },
+        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_1206.wrl",
+                  "offset": (0,0,0),
+                  "scale": (1,1,1),
+                  "rotate": (0,0,0)},
+   },
 
     # 1210 from IPC-7351B: CAPC3225X230N
     "1210": {
@@ -126,7 +166,11 @@ config = {
         "pitch": 3.0,
         "chip_shape": (3.20, 2.50),
         "pin_shape": (-0.60, 2.30),
-    },
+        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_1210.wrl",
+                  "offset": (0,0,0),
+                  "scale": (1,1,1),
+                  "rotate": (0,0,0)},
+   },
 
     # SOD-323 from IPC-7351B: SOD2513X100L
     "SOD-323": {
@@ -219,7 +263,7 @@ import time
 import math
 
 from sexp import parse as sexp_parse, generate as sexp_generate
-from kicad_mod import fp_line, fp_text, pad, draw_square
+from kicad_mod import fp_line, fp_text, pad, draw_square, model
 
 
 def refs(conf):
@@ -344,6 +388,14 @@ def pads(conf):
     return out
 
 
+def _3d(conf):
+    """Add 3d model."""
+    if "model" in conf:
+        return [model(**conf['model'])]
+    else:
+        return []
+
+
 def footprint(conf):
     tedit = format(int(time.time()), 'X')
     sexp = ["module", conf['name'], ("layer", "F.Cu"), ("tedit", tedit)]
@@ -352,6 +404,7 @@ def footprint(conf):
     sexp += silk(conf)
     sexp += ctyd(conf)
     sexp += pads(conf)
+    sexp += _3d(conf)
     return sexp_generate(sexp)
 
 

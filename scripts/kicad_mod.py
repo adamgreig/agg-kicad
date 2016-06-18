@@ -88,3 +88,10 @@ def draw_square(width, height, centre, layer, thickness):
     out.append(fp_line(se, sw, layer, thickness))
     out.append(fp_line(sw, nw, layer, thickness))
     return nw, ne, se, sw, out
+
+
+def model(path, offset, scale, rotate):
+    return ["model", path,
+            ["at", ["xyz", offset[0], offset[1], offset[2]]],
+            ["scale", ["xyz", scale[0], scale[1], scale[2]]],
+            ["rotate", ["xyz", rotate[0], rotate[1], rotate[2]]]]
