@@ -45,7 +45,7 @@ import time
 import math
 
 from sexp import parse as sexp_parse, generate as sexp_generate
-from kicad_mod import fp_line, fp_text, pad, draw_square
+from kicad_mod import fp_line, fp_text, pad, draw_square, model
 
 
 def sil_pads(pins):
@@ -147,6 +147,28 @@ def dil_refs(name):
     return out
 
 
+def sil_model(pins):
+    if pins <= 20:
+        return [model("${KISYS3DMOD}/Pin_Headers.3dshapes/" +
+                      "Pin_Header_Straight_1x{:02d}.wrl".format(pins),
+                      (0, 0, 0),
+                      (1, 1, 1),
+                      (0, 0, 0))]
+    else:
+        return []
+
+
+def dil_model(pins):
+    if pins <= 40:
+        return [model("${KISYS3DMOD}/Pin_Headers.3dshapes/" +
+                      "Pin_Header_Straight_2x{:02d}.wrl".format(pins),
+                      (0, 0, 0),
+                      (1, 1, 1),
+                      (0, 0, 0))]
+    else:
+        return []
+
+
 def sil(pins):
     name = "SIL-254P-{:02d}".format(pins)
     tedit = format(int(time.time()), 'X')
@@ -156,6 +178,7 @@ def sil(pins):
     sexp += sil_silk(pins)
     sexp += sil_ctyd(pins)
     sexp += sil_refs(name)
+    sexp += sil_model(pins)
     return name, sexp_generate(sexp)
 
 
@@ -168,6 +191,7 @@ def dil(pins):
     sexp += dil_silk(pins)
     sexp += dil_ctyd(pins)
     sexp += dil_refs(name)
+    sexp += dil_model(pins)
     return name, sexp_generate(sexp)
 
 
