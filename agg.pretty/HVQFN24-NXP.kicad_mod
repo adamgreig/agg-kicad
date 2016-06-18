@@ -1,7 +1,7 @@
 
 (module "HVQFN24-NXP" 
   (layer F.Cu) 
-  (tedit 56E01099) 
+  (tedit 5765711F) 
   (fp_text reference REF** 
     (at 0 -3.4500) 
     (layer F.Fab) 
@@ -595,4 +595,11 @@
   (pad EP smd rect 
     (at 0 0) 
     (size 2.1000 2.1000) 
-    (layers F.Cu)))
+    (layers F.Cu)) 
+  (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_Pitch0.5mm.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1 1 1)) 
+    (rotate 
+      (xyz 0 0 0))))
