@@ -1,7 +1,7 @@
 
 (module "TSSOP-20" 
   (layer F.Cu) 
-  (tedit 57111950) 
+  (tedit 57656747) 
   (fp_text reference REF** 
     (at 0 -4.2500) 
     (layer F.Fab) 
@@ -465,4 +465,11 @@
   (pad 20 smd rect 
     (at 2.8750 -2.9250) 
     (size 1.3500 0.4500) 
-    (layers F.Cu F.Mask F.Paste)))
+    (layers F.Cu F.Mask F.Paste)) 
+  (model "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-20_4.4x6.5mm_Pitch0.65mm.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1 1 1)) 
+    (rotate 
+      (xyz 0 0 0))))

@@ -47,6 +47,11 @@ from __future__ import print_function, division
 #   silk: "internal" or "external" or None.
 #          Default is "internal" unless ep_shape is given in which case
 #          default is "external".
+#   model: {"path": str,
+#           "offset": (x,y,z),
+#           "scale": (x,y,z),
+#           "rotate":(x,y,z)}
+#          Defines which 3D model to associate with the footprint.
 #
 # All lengths are in millimetres.
 
@@ -62,6 +67,12 @@ config = {
         "pad_shape": (1.55, 0.6),
         "chip_shape": (4.0, 5.0),
         "pin_shape": (1.1, 0.5),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-8_3.9x4.9mm_Pitch1.27mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # SOIC-16 from JEDEC MS-012AC
@@ -74,6 +85,12 @@ config = {
         "pad_shape": (1.55, 0.6),
         "chip_shape": (4.0, 10.0),
         "pin_shape": (1.1, 0.5),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-16_3.9x9.9mm_Pitch1.27mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # SOIC-16-W from JEDEC MS-013AA
@@ -86,6 +103,12 @@ config = {
         "pad_shape": (2.0, 0.6),
         "chip_shape": (7.6, 10.5),
         "pin_shape": (1.5, 0.5),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-16_7.5x10.3mm_Pitch1.27mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # MSOP-8 from JEDEC MO-187AA
@@ -98,6 +121,12 @@ config = {
         "pad_shape": (1.45, 0.45),
         "chip_shape": (3.1, 3.1),
         "pin_shape": (1.0, 0.38),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/MSOP-8_3x3mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # TSSOP-20 from JEDEC MO-153AC
@@ -110,6 +139,12 @@ config = {
         "pad_shape": (1.35, 0.45),
         "chip_shape": (4.5, 6.6),
         "pin_shape": (0.95, .30),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-20_4.4x6.5mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # LQFP-48 from JEDEC MS-026BBC
@@ -166,6 +201,12 @@ config = {
         "ep_vias": (0.4, 0.6, 1.9),
         "chip_shape": (7.1, 7.1),
         "pin_shape": (-0.5, 0.3),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-48-1EP_7x7mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # UFQFPN-32 from JEDEC MO-220
@@ -186,6 +227,12 @@ config = {
         "ep_vias": (0.4, 0.6, 1.9),
         "chip_shape": (5.1, 5.1),
         "pin_shape": (-0.5, 0.28),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # QFN-40 from JEDEC MO-220
@@ -222,6 +269,12 @@ config = {
         "ep_paste_shape": (1.1, 1.1, 0.2, 0.2),
         "chip_shape": (4.1, 4.1),
         "pin_shape": (-.50, 0.30),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # QFN-24 from MPU-9250 datasheet
@@ -390,6 +443,12 @@ config = {
         "pad_shape": (1.0, 0.6),
         "chip_shape": (1.4, 3.0),
         "pin_shape": (0.55, 0.48),
+        "model": {
+            "path": "${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-23.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 90),
+        },
     },
 
     # SOT-23-5
@@ -404,6 +463,12 @@ config = {
         "pad_shape": (1.10, 0.60),
         "chip_shape": (1.70, 3.00),
         "pin_shape": (0.75, 0.50),
+        "model": {
+            "path": "${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-23-5.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # SOT-23-6
@@ -417,6 +482,12 @@ config = {
         "pad_shape": (1.10, 0.60),
         "chip_shape": (1.75, 3.05),
         "pin_shape": (0.62, 0.50),
+        "model": {
+            "path": "${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-23-6.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # SC-70-5
@@ -431,6 +502,12 @@ config = {
         "pad_shape": (0.95, 0.40),
         "chip_shape": (1.4, 2.15),
         "pin_shape": (0.5, 0.3),
+        "model": {
+            "path": "${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SC-70-5.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 90),
+        },
     },
 
     # SOT-323
@@ -444,6 +521,12 @@ config = {
         "pad_shape": (0.85, 0.55),
         "chip_shape": (1.35, 2.10),
         "pin_shape": (0.4, 0.3),
+        "model": {
+            "path": "${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-323.wrl",
+            "offset": (0, 0, 0),
+            "scale": (0.4, 0.4, 0.4),
+            "rotate": (0, 0, -90),
+        },
     },
 
     # SOT-666
@@ -629,7 +712,7 @@ import math
 import subprocess
 
 from sexp import parse as sexp_parse, generate as sexp_generate
-from kicad_mod import fp_line, fp_arc, fp_circle, fp_text, pad, draw_square
+from kicad_mod import fp_line, fp_arc, fp_circle, fp_text, pad, draw_square, model
 
 
 def pin_centres(conf):
@@ -975,6 +1058,13 @@ def pads(conf):
     return out
 
 
+def _3d(conf):
+    if "model" in conf:
+        return [model(**conf["model"])]
+    else:
+        return []
+
+
 def footprint(conf):
     tedit = format(int(time.time()), 'X')
     sexp = ["module", conf['name'], ("layer", "F.Cu"), ("tedit", tedit)]
@@ -983,6 +1073,7 @@ def footprint(conf):
     sexp += silk(conf)
     sexp += ctyd(conf)
     sexp += pads(conf)
+    sexp += _3d(conf)
     return sexp_generate(sexp)
 
 
