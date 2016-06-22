@@ -6,6 +6,7 @@ Licensed under the MIT licence, see LICENSE file for details.
 """
 
 from __future__ import print_function, division
+import sys
 
 # SETTINGS ====================================================================
 
@@ -404,15 +405,29 @@ class Line:
                             cairo.FONT_WEIGHT_NORMAL)
         cr.set_font_size(3.0)
         cr.move_to(where[0]+3, where[1]+9)
-        cr.show_text("{}x  {}  {}"
-                     .format(len(self.refs), self.value.encode('utf-8'), self.footprint))
+        if sys.version_info[0] > 2:
+            # python 3.x
+            cr.show_text("{}x  {}  {}".format(len(self.refs),
+                                              self.value,
+                                              self.footprint))
+        else:
+            # python 2.x
+            cr.show_text("{}x  {}  {}".format(len(self.refs),
+                                              self.value.encode('utf-8'),
+                                              self.footprint))
 
         # Draw third line
         cr.select_font_face("Sans", cairo.FONT_SLANT_NORMAL,
                             cairo.FONT_WEIGHT_NORMAL)
         cr.set_font_size(3.0)
         cr.move_to(where[0]+3, where[1]+12)
-        cr.show_text("{} {}".format(self.supplier, self.code.encode('utf-8')))
+        if sys.version_info[0] > 2:
+            # python 3.x
+            cr.show_text("{} {}".format(self.supplier, self.code))
+        else:
+            # python 2.x
+            cr.show_text("{} {}".format(self.supplier,
+                                        self.code.encode('utf-8')))
 
         cr.restore()
 
