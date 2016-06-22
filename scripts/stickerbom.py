@@ -405,14 +405,14 @@ class Line:
         cr.set_font_size(3.0)
         cr.move_to(where[0]+3, where[1]+9)
         cr.show_text("{}x  {}  {}"
-                     .format(len(self.refs), self.value, self.footprint))
+                     .format(len(self.refs), self.value.encode('utf-8'), self.footprint))
 
         # Draw third line
         cr.select_font_face("Sans", cairo.FONT_SLANT_NORMAL,
                             cairo.FONT_WEIGHT_NORMAL)
         cr.set_font_size(3.0)
         cr.move_to(where[0]+3, where[1]+12)
-        cr.show_text("{} {}".format(self.supplier, self.code))
+        cr.show_text("{} {}".format(self.supplier, self.code.encode('utf-8')))
 
         cr.restore()
 
