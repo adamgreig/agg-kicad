@@ -24,7 +24,10 @@ page_height = 210
 # Suppliers to output stickers for
 # (Note: this really means 'custom schematic symbol property field names' to
 #  output stickers for).
-suppliers_to_output = ["Farnell", "RS", "DigiKey"]
+suppliers_to_output = ["Farnell", "RS", "DigiKey", "Digikey", "Mouser"]
+
+# Whether to include parts without a footprint
+include_parts_without_footprint = False
 
 ###############################################################################
 
@@ -32,12 +35,6 @@ import sys
 import math
 import cairo
 import xml.etree.ElementTree as ET
-
-try:
-    from itertools import izip as zip
-except ImportError: # will be 3.x series
-    pass
-
 import sexp
 
 
@@ -441,17 +438,21 @@ def main(xmlpath, pdfpath):
     cr = cairo.Context(ps)
 
     # Scale user units to millimetres
-    cr.scale(1/0.3528, 1/0.3528)
+    cr.scale(mm_to_pt, mm_to_pt)
 
     labels = sheet_positions(cr, label_width, label_height,
                              labels_x, labels_y, margin_top, margin_left,
                              spacing_x, spacing_y)
 
-    for line, label in zip(bom.lines, labels):
-        if line.supplier in suppliers_to_output:
-            line.render(cr, (label[0]+1, label[1]), label_width-2, 14)
-            pcb.render(cr, (label[0]+1, label[1]+14), label_width-2,
-                       label_height-14, line.refs)
+    for line in bom.lines:
+        if line.supplier not in suppliers_to_output:
+            continue
+        if not line.footprint and not include_parts_without_footprint:
+            continue
+        label = next(labels)
+        line.render(cr, (label[0]+1, label[1]), label_width-2, 14)
+        pcb.render(cr, (label[0]+1, label[1]+14), label_width-2,
+                   label_height-14, line.refs)
     cr.show_page()
 
 
