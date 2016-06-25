@@ -31,6 +31,10 @@ from __future__ import print_function, division
 # Chip drawings are nominal sizes rather than maximum sizes.
 # All lengths are in millimetres.
 
+# Model Constants
+# Scale factor for models in mm
+MM_TO_DIN = (0.3937, 0.3937, 0.3937)
+
 config = {
     # 0201 from IPC-7351B: CAPC0603X33N
     "0201": {
@@ -224,6 +228,45 @@ config = {
         "pitch": 1.5,
         "chip_shape": (2, 1.6),
         "pin_shape": (-0.5, 1.6),
+    },
+
+    # DO-214AC (SMA) from Diodes Inc.
+    "DO-214AC-SMA": {
+        "pad_shape": (2.5, 1.7),
+        "pitch": 4.0,
+        "chip_shape": (4.3, 2.6),
+        "pin_shape": (0.45, 1.45),
+        "silk": "triangle",
+        "model": {"path": "${KISYS3DMOD}/Diodes_SMD.3dshapes/SMA_Standard.wrl",
+                  "offset": (0, 0, 0),
+                  "scale": MM_TO_DIN,
+                  "rotate": (0, 0, 180)},
+    },
+
+    # DO-214AA (SMB) from Diodes Inc.
+    "DO-214AA-SMB": {
+        "pad_shape": (2.5, 2.3),
+        "pitch": 4.3,
+        "chip_shape": (4.3, 3.6),
+        "pin_shape": (0.5, 2.1),
+        "silk": "triangle",
+        "model": {"path": "${KISYS3DMOD}/Diodes_SMD.3dshapes/SMB_Standard.wrl",
+                  "offset": (0, 0, 0),
+                  "scale": MM_TO_DIN,
+                  "rotate": (0, 0, 180)},
+    },
+
+    # DO-214AB (SMC) from Diodes Inc.
+    "DO-214AB-SMC": {
+        "pad_shape": (2.5, 3.3),
+        "pitch": 6.9,
+        "chip_shape": (6.9, 5.9),
+        "pin_shape": (0.52, 2.95),
+        "silk": "triangle",
+        "model": {"path": "${KISYS3DMOD}/Diodes_SMD.3dshapes/SMC_Standard.wrl",
+                  "offset": (0, 0, 0),
+                  "scale": MM_TO_DIN,
+                  "rotate": (0, 0, 180)},
     },
 }
 
