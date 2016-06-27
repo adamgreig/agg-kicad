@@ -234,8 +234,8 @@ config = {
     "DO-214AC-SMA": {
         "pad_shape": (2.5, 1.7),
         "pitch": 4.0,
-        "chip_shape": (4.3, 2.6),
-        "pin_shape": (0.45, 1.45),
+        "chip_shape": (4.6, 2.92),
+        "pin_shape": (0.5, 1.63),
         "silk": "triangle",
         "model": {"path": "${KISYS3DMOD}/Diodes_SMD.3dshapes/SMA_Standard.wrl",
                   "offset": (0, 0, 0),
@@ -247,8 +247,8 @@ config = {
     "DO-214AA-SMB": {
         "pad_shape": (2.5, 2.3),
         "pitch": 4.3,
-        "chip_shape": (4.3, 3.6),
-        "pin_shape": (0.5, 2.1),
+        "chip_shape": (4.6, 3.94),
+        "pin_shape": (0.5, 2.21),
         "silk": "triangle",
         "model": {"path": "${KISYS3DMOD}/Diodes_SMD.3dshapes/SMB_Standard.wrl",
                   "offset": (0, 0, 0),
@@ -260,8 +260,8 @@ config = {
     "DO-214AB-SMC": {
         "pad_shape": (2.5, 3.3),
         "pitch": 6.9,
-        "chip_shape": (6.9, 5.9),
-        "pin_shape": (0.52, 2.95),
+        "chip_shape": (7.11, 6.22),
+        "pin_shape": (0.51, 3.18),
         "silk": "triangle",
         "model": {"path": "${KISYS3DMOD}/Diodes_SMD.3dshapes/SMC_Standard.wrl",
                   "offset": (0, 0, 0),
