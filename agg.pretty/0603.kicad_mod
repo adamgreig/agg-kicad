@@ -1,7 +1,7 @@
 
 (module 0603 
   (layer F.Cu) 
-  (tedit 56836635) 
+  (tedit 57654490) 
   (fp_text reference REF** 
     (at -2.2250 0 90) 
     (layer F.Fab) 
@@ -93,4 +93,11 @@
   (pad 2 smd rect 
     (at 0.8000 0) 
     (size 0.9500 1.0000) 
-    (layers F.Cu F.Mask F.Paste)))
+    (layers F.Cu F.Mask F.Paste)) 
+  (model "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0603.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1 1 1)) 
+    (rotate 
+      (xyz 0 0 0))))

@@ -1,7 +1,7 @@
 
 (module "QFN-16-EP-NXP" 
   (layer F.Cu) 
-  (tedit 56E08897) 
+  (tedit 5765711F) 
   (fp_text reference REF** 
     (at 0 -2.9500) 
     (layer F.Fab) 
@@ -424,4 +424,11 @@
     (at 0 0) 
     (size 1.5000 1.5000) 
     (layers F.Cu F.Mask) 
-    (solder_mask_margin 0.0010)))
+    (solder_mask_margin 0.0010)) 
+  (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-16-1EP_3x3mm_Pitch0.5mm.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1 1 1)) 
+    (rotate 
+      (xyz 0 0 0))))

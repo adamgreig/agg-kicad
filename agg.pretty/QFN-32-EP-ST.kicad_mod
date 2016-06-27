@@ -1,7 +1,7 @@
 
 (module "QFN-32-EP-ST" 
   (layer F.Cu) 
-  (tedit 56F82741) 
+  (tedit 57656747) 
   (fp_text reference REF** 
     (at 0 -3.6000) 
     (layer F.Fab) 
@@ -741,4 +741,11 @@
   (pad EP smd rect 
     (at 0 0) 
     (size 3.4500 3.4500) 
-    (layers F.Cu)))
+    (layers F.Cu)) 
+  (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_Pitch0.5mm.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1 1 1)) 
+    (rotate 
+      (xyz 0 0 0))))

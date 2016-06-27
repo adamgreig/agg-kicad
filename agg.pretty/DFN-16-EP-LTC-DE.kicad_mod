@@ -1,7 +1,7 @@
 
 (module "DFN-16-EP-LTC-DE" 
   (layer F.Cu) 
-  (tedit 56C4C75B) 
+  (tedit 5765711F) 
   (fp_text reference REF** 
     (at 0 -3.0000) 
     (layer F.Fab) 
@@ -414,4 +414,11 @@
   (pad EP smd rect 
     (at 0 0) 
     (size 1.7000 3.3000) 
-    (layers F.Cu)))
+    (layers F.Cu)) 
+  (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-16-1EP_3x4mm_Pitch0.45mm.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1 1 1)) 
+    (rotate 
+      (xyz 0 0 0))))

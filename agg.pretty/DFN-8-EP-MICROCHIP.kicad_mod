@@ -1,7 +1,7 @@
 
 (module "DFN-8-EP-MICROCHIP" 
   (layer F.Cu) 
-  (tedit 56B170E7) 
+  (tedit 5765711F) 
   (fp_text reference REF** 
     (at 0 -2.5000) 
     (layer F.Fab) 
@@ -252,4 +252,11 @@
   (pad EP smd rect 
     (at 0 0) 
     (size 1.5500 2.4000) 
-    (layers F.Cu)))
+    (layers F.Cu)) 
+  (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_Pitch0.65mm.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1 1 1)) 
+    (rotate 
+      (xyz 0 0 0))))

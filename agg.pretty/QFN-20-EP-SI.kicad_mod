@@ -1,7 +1,7 @@
 
 (module "QFN-20-EP-SI" 
   (layer F.Cu) 
-  (tedit 5687759E) 
+  (tedit 57656747) 
   (fp_text reference REF** 
     (at 0 -3.3250) 
     (layer F.Fab) 
@@ -500,4 +500,11 @@
     (at 0 0) 
     (size 2.6000 2.6000) 
     (layers F.Cu F.Mask) 
-    (solder_mask_margin 0.0010)))
+    (solder_mask_margin 0.0010)) 
+  (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_Pitch0.5mm.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1 1 1)) 
+    (rotate 
+      (xyz 0 0 0))))

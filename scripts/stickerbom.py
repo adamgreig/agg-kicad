@@ -5,7 +5,7 @@ Copyright 2016 Adam Greig
 Licensed under the MIT licence, see LICENSE file for details.
 """
 
-from __future__ import print_function, division
+from __future__ import print_function, division, unicode_literals
 
 # SETTINGS ====================================================================
 
@@ -24,7 +24,10 @@ page_height = 210
 # Suppliers to output stickers for
 # (Note: this really means 'custom schematic symbol property field names' to
 #  output stickers for).
-suppliers_to_output = ["Farnell", "RS", "DigiKey"]
+suppliers_to_output = ["Farnell", "RS", "DigiKey", "Digikey", "Mouser"]
+
+# Whether to include parts without a footprint
+include_parts_without_footprint = False
 
 ###############################################################################
 
@@ -32,12 +35,6 @@ import sys
 import math
 import cairo
 import xml.etree.ElementTree as ET
-
-try:
-    from itertools import izip as zip
-except ImportError: # will be 3.x series
-    pass
-
 import sexp
 
 
@@ -295,15 +292,30 @@ class PCB:
         return hl_bounds
 
     def _parse(self, board):
-        general = sexp.find(board, "general")
-        self.bounds = [float(x) for x in sexp.find(general, "area")[1:]]
-        self.width = self.bounds[2] - self.bounds[0]
-        self.height = self.bounds[3] - self.bounds[1]
-
         for module in sexp.find_all(board, "module"):
             self.modules.append(Module(module))
 
+        # We compute the PCB bounds ourselves rather than relying on the file's
+        # area tag which seems to sometimes be wrong. First go based on module
+        # positions.
+        self.bounds = [
+            min(m.at[0] for m in self.modules),
+            min(m.at[1] for m in self.modules),
+            max(m.at[0] for m in self.modules),
+            max(m.at[1] for m in self.modules)
+        ]
+
+        # We find all the board edges both for drawing and for bounds
         self._parse_edges(board)
+
+        # Add a slight padding to ensure edge lines are properly drawn
+        self.bounds[0] -= 1
+        self.bounds[1] -= 1
+        self.bounds[2] += 1
+        self.bounds[3] += 1
+
+        self.width = self.bounds[2] - self.bounds[0]
+        self.height = self.bounds[3] - self.bounds[1]
 
     def _parse_edges(self, board):
         for graphic in sexp.find_all(board, "gr_line", "gr_arc", "gr_circle"):
@@ -314,6 +326,8 @@ class PCB:
                 start = [float(x) for x in sexp.find(graphic, "start")[1:]]
                 end = [float(x) for x in sexp.find(graphic, "end")[1:]]
                 self.edge_lines.append((start, end))
+                self._update_bounds(start)
+                self._update_bounds(end)
             elif graphic[0] == "gr_arc":
                 center = [float(x) for x in sexp.find(graphic, "start")[1:]]
                 start = [float(x) for x in sexp.find(graphic, "end")[1:]]
@@ -326,12 +340,20 @@ class PCB:
                 end_angle = start_angle + angle
                 self.edge_arcs.append((center[0], center[1], r,
                                        start_angle, end_angle))
+                self._update_bounds(center, dx=r, dy=r)
             elif graphic[0] == "gr_circle":
                 center = [float(x) for x in sexp.find(graphic, "center")[1:]]
                 end = [float(x) for x in sexp.find(graphic, "end")[1:]]
                 r = math.sqrt((center[0] - end[0])**2 +
                               (center[1] - end[1])**2)
                 self.edge_arcs.append((center[0], center[1], r, 0, 2*math.pi))
+                self._update_bounds(center, dx=r, dy=r)
+
+    def _update_bounds(self, at, dx=0, dy=0):
+        self.bounds[0] = min(self.bounds[0], at[0] - dx)
+        self.bounds[1] = min(self.bounds[1], at[1] - dy)
+        self.bounds[2] = max(self.bounds[2], at[0] + dx)
+        self.bounds[3] = max(self.bounds[3], at[1] + dy)
 
 
 class BOM:
@@ -441,17 +463,21 @@ def main(xmlpath, pdfpath):
     cr = cairo.Context(ps)
 
     # Scale user units to millimetres
-    cr.scale(1/0.3528, 1/0.3528)
+    cr.scale(mm_to_pt, mm_to_pt)
 
     labels = sheet_positions(cr, label_width, label_height,
                              labels_x, labels_y, margin_top, margin_left,
                              spacing_x, spacing_y)
 
-    for line, label in zip(bom.lines, labels):
-        if line.supplier in suppliers_to_output:
-            line.render(cr, (label[0]+1, label[1]), label_width-2, 14)
-            pcb.render(cr, (label[0]+1, label[1]+14), label_width-2,
-                       label_height-14, line.refs)
+    for line in bom.lines:
+        if line.supplier not in suppliers_to_output:
+            continue
+        if not line.footprint and not include_parts_without_footprint:
+            continue
+        label = next(labels)
+        line.render(cr, (label[0]+1, label[1]), label_width-2, 14)
+        pcb.render(cr, (label[0]+1, label[1]+14), label_width-2,
+                   label_height-14, line.refs)
     cr.show_page()
 
 
