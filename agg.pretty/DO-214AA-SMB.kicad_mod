@@ -1,0 +1,123 @@
+
+(module "DO-214AA-SMB" 
+  (layer F.Cu) 
+  (tedit 5770EBF8) 
+  (fp_text reference REF** 
+    (at -4.3500 0 90) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "DO-214AA-SMB" 
+    (at 4.3500 0 90) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_line 
+    (start -2.3000 -1.9700) 
+    (end 2.3000 -1.9700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.3000 -1.9700) 
+    (end 2.3000 1.9700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.3000 1.9700) 
+    (end -2.3000 1.9700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.3000 1.9700) 
+    (end -2.3000 -1.9700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.1500 -1.9700) 
+    (end -1.1500 1.9700) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.8000 -1.1050) 
+    (end -2.8000 1.1050) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.8000 -1.1050) 
+    (end -2.3000 -1.1050) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.8000 1.1050) 
+    (end -2.3000 1.1050) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.8000 -1.1050) 
+    (end 2.8000 1.1050) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.8000 -1.1050) 
+    (end 2.3000 -1.1050) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.8000 1.1050) 
+    (end 2.3000 1.1050) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.7000 0) 
+    (end 0.7000 -1.8950) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -0.7000 0) 
+    (end 0.7000 1.8950) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 0.7000 -1.8950) 
+    (end 0.7000 1.8950) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -3.6500 -2.2500) 
+    (end 3.6500 -2.2500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.6500 -2.2500) 
+    (end 3.6500 2.2500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.6500 2.2500) 
+    (end -3.6500 2.2500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.6500 2.2500) 
+    (end -3.6500 -2.2500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (pad 1 smd rect 
+    (at -2.1500 0) 
+    (size 2.5000 2.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 2 smd rect 
+    (at 2.1500 0) 
+    (size 2.5000 2.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (model "${KISYS3DMOD}/Diodes_SMD.3dshapes/SMB_Standard.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 0.3937 0.3937 0.3937)) 
+    (rotate 
+      (xyz 0 0 180))))
