@@ -88,17 +88,6 @@ config = {
         "pin_shape": (1.5, 0.5),
     },
 
-    # SOP-16
-    "SOP-16": {
-        "rows": 2,
-        "pins": 16,
-        "pin_pitch": 1.27,
-        "row_pitch": 7.05,
-        "pad_shape": (2.9, 0.6),
-        "chip_shape": (5.6, 10.5),
-        "pin_shape": (1.3, 0.51),
-    },
-
     # MSOP-8 from JEDEC MO-187AA
     # IPC-7351B: SOP65P490X110-8N
     "MSOP-8": {
