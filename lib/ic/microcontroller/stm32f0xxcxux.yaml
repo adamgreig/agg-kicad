@@ -1,4 +1,4 @@
-datasheet: http://www.st.com/content/ccc/resource/technical/document/datasheet/55/53/3e/86/29/61/41/d9/DM00039193.pdf/files/DM00039193.pdf/jcr:content/translations/en.DM00039193.pdf
+datasheet: http://www.st.com/resource/en/datasheet/stm32f051c8.pdf
 description: STM32F0 48 pin UFQFPN package
 footprint: agg:QFN-48-EP-ST
 name: STM32F0xxCxUx
