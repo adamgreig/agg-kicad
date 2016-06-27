@@ -762,6 +762,20 @@ config = {
         "chip_shape": (19.7, 16),
         "pin_shape": (-2.0, 1.2),
     },
+
+    # WSON-10 2.0x3.0mm (TI)
+    "WSON-10-1EP-2.0x3.0mm": {
+        "rows": 2,
+        "pins": 10,
+        "pin_pitch": 0.5,
+        "row_pitch": 1.9,
+        "pad_shape": (0.5, 0.25),
+        "ep_shape": (0.84, 2.4),
+        "ep_paste_shape": (0.84, 1.0, 0.0, 0.2),
+        "ep_vias": (0.2, 0.2, 0.75),
+        "chip_shape": (2.0, 3.0),
+        "pin_shape": (-0.3, 0.2),
+    }
 }
 
 
