@@ -1,7 +1,7 @@
 
 (module "LQFP-48" 
   (layer F.Cu) 
-  (tedit 5680BCD7) 
+  (tedit 5765711F) 
   (fp_text reference REF** 
     (at 0 -5.9000) 
     (layer F.Fab) 
@@ -997,4 +997,11 @@
   (pad 48 smd rect 
     (at -2.7500 -4.2000) 
     (size 0.3000 1.5000) 
-    (layers F.Cu F.Mask F.Paste)))
+    (layers F.Cu F.Mask F.Paste)) 
+  (model "${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-48_7x7mm_Pitch0.5mm.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1 1 1)) 
+    (rotate 
+      (xyz 0 0 0))))

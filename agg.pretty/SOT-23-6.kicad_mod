@@ -1,7 +1,7 @@
 
 (module "SOT-23-6" 
   (layer F.Cu) 
-  (tedit 56870086) 
+  (tedit 57656747) 
   (fp_text reference REF** 
     (at 0 -2.4750) 
     (layer F.Fab) 
@@ -199,4 +199,11 @@
   (pad 6 smd rect 
     (at 1.3000 -0.9500) 
     (size 1.1000 0.6000) 
-    (layers F.Cu F.Mask F.Paste)))
+    (layers F.Cu F.Mask F.Paste)) 
+  (model "${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-23-6.wrl" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1 1 1)) 
+    (rotate 
+      (xyz 0 0 0))))
