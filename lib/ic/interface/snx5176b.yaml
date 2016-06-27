@@ -1,4 +1,4 @@
-datasheet: http://www.ti.com.cn/general/cn/docs/lit/getliterature.tsp?genericPartNumber=sn75176b&fileType=pdf
+datasheet: http://www.ti.com.cn/cn/lit/ds/symlink/sn75176b.pdf
 description: Differential bus transceiver
 footprint: agg:SOIC-8
 name: SNx5176B
