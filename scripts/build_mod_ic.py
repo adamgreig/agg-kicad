@@ -147,6 +147,17 @@ config = {
         },
     },
 
+    # LQFP-32 from JEDEC MS-026BBA
+    "LQFP-32": {
+        "rows": 4,
+        "pins": 32,
+        "pin_pitch": 0.8,
+        "row_pitch": 8.4,
+        "pad_shape": (1.2, 0.5),
+        "chip_shape": (7.2, 7.2),
+        "pin_shape": (1.0, 0.4),
+    },
+
     # LQFP-48 from JEDEC MS-026BBC
     # IPC-7351B: QFP50P900X900X160-48N
     "LQFP-48": {

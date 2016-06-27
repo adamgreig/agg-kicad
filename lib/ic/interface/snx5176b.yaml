@@ -1,0 +1,15 @@
+datasheet: http://www.ti.com.cn/cn/lit/ds/symlink/sn75176b.pdf
+description: Differential bus transceiver
+footprint: agg:SOIC-8
+name: SNx5176B
+ordercodes:
+- [Farnell, '2395904']
+pins:
+- - - [VCC, 8, pwrin]
+    - [GND, 5, pwrin]
+  - - [~RE, 2, in]
+    - [DE, 3, in]
+  - - [R, 1, out]
+    - [D, 4, in]
+- - - [A, 6, bidi]
+    - [B, 7, bidi]

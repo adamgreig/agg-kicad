@@ -1,0 +1,15 @@
+datasheet: http://www.ti.com/lit/ds/symlink/lm393.pdf
+description: Dual differential comparator
+footprint: agg:SOIC-8
+name: LMx93
+ordercodes:
+- [Farnell, '2342314']
+pins:
+- - - [VCC, 8, pwrin]
+    - [GND, 4, pwrin]
+  - - [1IN-, 2, in]
+    - [1IN+, 3, in]
+  - - [2IN+, 5, in]
+    - [2IN-, 6, in]
+- - - [1OUT, 1, out]
+    - [2OUT, 7, out]
