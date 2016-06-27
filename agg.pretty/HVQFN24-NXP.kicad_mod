@@ -1,7 +1,7 @@
 
 (module "HVQFN24-NXP" 
   (layer F.Cu) 
-  (tedit 5765711F) 
+  (tedit 5771B7BB) 
   (fp_text reference REF** 
     (at 0 -3.4500) 
     (layer F.Fab) 
@@ -572,25 +572,25 @@
     (size 0.4500 0.4500) 
     (layers F.Cu F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.4250 -0.4250) 
     (size 0.4500 0.4500) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.4250 0.4250) 
     (size 0.4500 0.4500) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 0.4250 -0.4250) 
     (size 0.4500 0.4500) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 0.4250 0.4250) 
     (size 0.4500 0.4500) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad EP smd rect 
     (at 0 0) 

@@ -1,7 +1,7 @@
 
 (module "QFN-16-EP-TI" 
   (layer F.Cu) 
-  (tedit 5765711F) 
+  (tedit 5771B7BB) 
   (fp_text reference REF** 
     (at 0 -2.6500) 
     (layer F.Fab) 
@@ -400,10 +400,10 @@
     (at -0.7500 -1.4000) 
     (size 0.2500 0.6000) 
     (layers F.Cu F.Mask F.Paste)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.0000 -0.0000) 
     (size 1.5000 1.5000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad EP thru_hole circle 
     (at -0.6000 -0.6000) 

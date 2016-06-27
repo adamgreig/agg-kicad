@@ -1,7 +1,7 @@
 
 (module "DFN-8-EP-MICROCHIP" 
   (layer F.Cu) 
-  (tedit 5765711F) 
+  (tedit 5771B7BB) 
   (fp_text reference REF** 
     (at 0 -2.5000) 
     (layer F.Fab) 
@@ -239,15 +239,15 @@
     (size 0.8000 0.8000) 
     (layers F.Cu F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.0000 -0.6000) 
     (size 0.8000 0.8000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.0000 0.6000) 
     (size 0.8000 0.8000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad EP smd rect 
     (at 0 0) 

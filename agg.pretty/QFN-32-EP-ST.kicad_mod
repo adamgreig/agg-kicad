@@ -1,7 +1,7 @@
 
 (module "QFN-32-EP-ST" 
   (layer F.Cu) 
-  (tedit 57656747) 
+  (tedit 5771B7BB) 
   (fp_text reference REF** 
     (at 0 -3.6000) 
     (layer F.Fab) 
@@ -709,10 +709,10 @@
     (size 2.0000 2.0000) 
     (layers F.Cu F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.0000 -0.0000) 
     (size 1.0000 1.0000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad EP thru_hole circle 
     (at -1.2500 -1.2500) 
