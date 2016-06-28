@@ -1,7 +1,7 @@
 
-(module "WSON-10-1EP-2.0x3.0mm" 
+(module "WSON-10-EP-TI-2x3" 
   (layer F.Cu) 
-  (tedit 5771BD64) 
+  (tedit 5771C5C9) 
   (fp_text reference REF** 
     (at 0 -2.4500) 
     (layer F.Fab) 
@@ -9,7 +9,7 @@
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (fp_text value "WSON-10-1EP-2.0x3.0mm" 
+  (fp_text value "WSON-10-EP-TI-2x3" 
     (at 0 2.4500) 
     (layer F.Fab) 
     (effects 

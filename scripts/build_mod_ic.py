@@ -764,7 +764,7 @@ config = {
     },
 
     # WSON-10 2.0x3.0mm (TI)
-    "WSON-10-1EP-2.0x3.0mm": {
+    "WSON-10-EP-TI-2x3": {
         "rows": 2,
         "pins": 10,
         "pin_pitch": 0.5,
