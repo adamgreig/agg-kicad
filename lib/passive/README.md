@@ -28,6 +28,10 @@
 * e.g. Digikey 535-12686-ND
 * Used with the ASTXR-12 footprint on shrew-u r1 successfully
 
-### NFET, QFET
+### NFET, PFET
 * Generic FETs
 * Gate is pin 1, Source is pin 2, Drain is pin 3
+
+### NFET_GDS, PFET_GDS
+* Generic FETs
+* Gate, Source, Drain have pin numbers G, D, S
