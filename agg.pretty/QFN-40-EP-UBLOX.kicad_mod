@@ -1,7 +1,7 @@
 
 (module "QFN-40-EP-UBLOX" 
   (layer F.Cu) 
-  (tedit 5771B7BB) 
+  (tedit 577313DD) 
   (fp_text reference REF** 
     (at 0 -3.6000) 
     (layer F.Fab) 
@@ -856,85 +856,85 @@
     (at -1.8000 -2.4000) 
     (size 0.2000 0.5000) 
     (layers F.Cu F.Mask F.Paste)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -1.5750 -1.5750) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -1.5750 -0.5250) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -1.5750 0.5250) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -1.5750 1.5750) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.5250 -1.5750) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.5250 -0.5250) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.5250 0.5250) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.5250 1.5750) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 0.5250 -1.5750) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 0.5250 -0.5250) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 0.5250 0.5250) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 0.5250 1.5750) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 1.5750 -1.5750) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 1.5750 -0.5250) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 1.5750 0.5250) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 1.5750 1.5750) 
     (size 0.5500 0.5500) 
-    (layers F.Cu F.Mask) 
+    (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
   (pad "" smd rect 
     (at -1.5750 -1.5750) 

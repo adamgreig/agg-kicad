@@ -911,9 +911,9 @@ def exposed_pad(conf):
     else:
         mask_shape = conf['ep_mask_shape']
         apertures = inner_apertures(ep_shape, mask_shape)
-        layers = ["F.Cu", "F.Mask"]
+        layers = ["F.Mask"]
         for ap in apertures:
-            out.append(pad("EP", "smd", "rect", ap, mask_shape[:2], layers,
+            out.append(pad("", "smd", "rect", ap, mask_shape[:2], layers,
                            m_mask=.001))
 
     # Paste apertures
