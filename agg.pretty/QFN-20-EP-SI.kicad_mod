@@ -1,7 +1,7 @@
 
 (module "QFN-20-EP-SI" 
   (layer F.Cu) 
-  (tedit 57656747) 
+  (tedit 5771B7BB) 
   (fp_text reference REF** 
     (at 0 -3.3250) 
     (layer F.Fab) 
@@ -476,25 +476,25 @@
     (at -1.0000 -2.0000) 
     (size 0.3000 0.7500) 
     (layers F.Cu F.Mask F.Paste)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.6500 -0.6500) 
     (size 1.1000 1.1000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.6500 0.6500) 
     (size 1.1000 1.1000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 0.6500 -0.6500) 
     (size 1.1000 1.1000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 0.6500 0.6500) 
     (size 1.1000 1.1000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad EP smd rect 
     (at 0 0) 

@@ -1,7 +1,7 @@
 
 (module "DFN-6-EP-BGM" 
   (layer F.Cu) 
-  (tedit 574B1A21) 
+  (tedit 5771B7BB) 
   (fp_text reference REF** 
     (at 0 -1.8000) 
     (layer F.Fab) 
@@ -191,25 +191,25 @@
     (at 1.0900 -0.5400) 
     (size 0.5000 0.2800) 
     (layers F.Cu F.Mask F.Paste)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.3500 -0.3500) 
     (size 0.5000 0.5000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at -0.3500 0.3500) 
     (size 0.5000 0.5000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 0.3500 -0.3500) 
     (size 0.5000 0.5000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad EP smd rect 
+  (pad "" smd rect 
     (at 0.3500 0.3500) 
     (size 0.5000 0.5000) 
-    (layers F.Cu F.Paste) 
+    (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad EP smd rect 
     (at 0 0) 
