@@ -473,14 +473,11 @@ def get_args():
                         help="Height of a page (mm).")
 
     parser.add_argument("--suppliers",
-                        nargs="*",
-                        default=["Farnell", "RS",
-                                 "DigiKey", "Digikey",
-                                 "Mouser"],
-                        help="Names of suppliers to output stickers for "
-                             "(Note: this really means 'custom schematic "
-                             "symbol property field names' to output "
-                             "stickers for).")
+                        default="Farnell,RS,DigiKey,Digikey,Mouser",
+                        help="Comma seperated list of names of suppliers "
+                             "to output stickers for (Note: this really "
+                             "means 'custom schematic symbol property "
+                             "field names' to output stickers for).")
 
     parser.add_argument("--include-parts-without-footprint",
                         action="store_true",
@@ -511,8 +508,10 @@ def main():
                              args.margin_top, args.margin_left,
                              args.spacing_x, args.spacing_y)
 
+    suppliers = [name.strip() for name in args.suppliers.split(",")]
+
     for line in bom.lines:
-        if line.supplier not in args.suppliers:
+        if line.supplier not in suppliers:
             continue
         if not line.footprint and not args.include_parts_without_footprint:
             continue
