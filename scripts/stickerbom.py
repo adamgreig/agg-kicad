@@ -7,31 +7,9 @@ Licensed under the MIT licence, see LICENSE file for details.
 
 from __future__ import print_function, division, unicode_literals
 
-# SETTINGS ====================================================================
 
-# Label settings (all dimensions in mm)
-label_width = 72
-label_height = 63.5
-labels_x = 4
-labels_y = 3
-margin_top = 7.75
-margin_left = 4.5
-spacing_x = 0.0
-spacing_y = 2.0
-page_width = 297
-page_height = 210
-
-# Suppliers to output stickers for
-# (Note: this really means 'custom schematic symbol property field names' to
-#  output stickers for).
-suppliers_to_output = ["Farnell", "RS", "DigiKey", "Digikey", "Mouser"]
-
-# Whether to include parts without a footprint
-include_parts_without_footprint = False
-
-###############################################################################
-
-import sys
+import argparse
+import os
 import math
 import cairo
 import xml.etree.ElementTree as ET
@@ -452,42 +430,101 @@ def sheet_positions(cr, label_width, label_height, labels_x, labels_y,
         cr.show_page()
 
 
-def main(xmlpath, pdfpath):
-    bom = BOM(xmlpath)
+def xmlpath(path):
+    if os.path.exists(path):
+        return path
+    raise TypeError("XML file must exist.")
 
-    with open(xmlpath[:-3] + "kicad_pcb") as f:
+
+def pdfpath(path):
+    if path[-4:].lower() != ".pdf":
+        return path + ".pdf"
+    return path
+
+
+def get_args():
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument("xmlpath", type=xmlpath,
+                        help="Path to the xml BOM file to be parsed.")
+    parser.add_argument("pdfpath", type=pdfpath,
+                        help="Path to the pdf file that will "
+                             "contain the stickers.")
+
+    parser.add_argument("--label_width", type=int, default=72,
+                        help="Width of a label (mm).")
+    parser.add_argument("--label_height", type=int, default=63.5,
+                        help="Height of a label (mm).")
+    parser.add_argument("--labels-x", type=int, default=4,
+                        help="Number of columns of labels on a page.")
+    parser.add_argument("--labels-y", type=int, default=3,
+                        help="Number of rows of labels on a page.")
+    parser.add_argument("--margin-top", type=int, default=7.75,
+                        help="Margin at the top of the page (mm).")
+    parser.add_argument("--margin-left", type=int, default=4.5,
+                        help="Margin at the left side of the page (mm).")
+    parser.add_argument("--spacing-x", type=int, default=0.0,
+                        help="Gap between columns of labels (mm).")
+    parser.add_argument("--spacing-y", type=int, default=2.0,
+                        help="Gap between rows of labels (mm).")
+    parser.add_argument("--page-width", type=int, default=297,
+                        help="Width of a page (mm).")
+    parser.add_argument("--page-height", type=int, default=210,
+                        help="Height of a page (mm).")
+
+    parser.add_argument("--suppliers",
+                        default="Farnell,RS,DigiKey,Digikey,Mouser",
+                        help="Comma seperated list of names of suppliers "
+                             "to output stickers for (Note: this really "
+                             "means 'custom schematic symbol property "
+                             "field names' to output stickers for).")
+
+    parser.add_argument("--include-parts-without-footprint",
+                        action="store_true",
+                        help="Include parts that do not have a footprint.")
+    return parser.parse_args()
+
+
+def main():
+    args = get_args()
+
+    bom = BOM(args.xmlpath)
+
+    with open(args.xmlpath[:-3] + "kicad_pcb") as f:
         pcb = PCB(sexp.parse(f.read()))
 
     mm_to_pt = 2.835
-    ps = cairo.PDFSurface(pdfpath, page_width*mm_to_pt, page_height*mm_to_pt)
+    ps = cairo.PDFSurface(args.pdfpath,
+                          args.page_width*mm_to_pt,
+                          args.page_height*mm_to_pt)
     cr = cairo.Context(ps)
 
     # Scale user units to millimetres
     cr.scale(mm_to_pt, mm_to_pt)
 
-    labels = sheet_positions(cr, label_width, label_height,
-                             labels_x, labels_y, margin_top, margin_left,
-                             spacing_x, spacing_y)
+    labels = sheet_positions(cr,
+                             args.label_width, args.label_height,
+                             args.labels_x, args.labels_y,
+                             args.margin_top, args.margin_left,
+                             args.spacing_x, args.spacing_y)
+
+    suppliers = [name.strip() for name in args.suppliers.split(",")]
 
     for line in bom.lines:
-        if line.supplier not in suppliers_to_output:
+        if line.supplier not in suppliers:
             continue
-        if not line.footprint and not include_parts_without_footprint:
+        if not line.footprint and not args.include_parts_without_footprint:
             continue
         label = next(labels)
-        line.render(cr, (label[0]+1, label[1]), label_width-2, 14)
-        pcb.render(cr, (label[0]+1, label[1]+14), label_width-2,
-                   label_height-14, line.refs)
+        line.render(cr,
+                    (label[0]+1, label[1]),
+                    args.label_width-2, 14)
+        pcb.render(cr,
+                   (label[0]+1, label[1]+14),
+                   args.label_width-2, args.label_height-14,
+                   line.refs)
     cr.show_page()
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 3:
-        xmlpath = sys.argv[1]
-        pdfpath = sys.argv[2]
-        if pdfpath[-4:].lower() != ".pdf":
-            pdfpath += ".pdf"
-        main(xmlpath, pdfpath)
-    else:
-        print("Usage: {} <bompath.xml> <outpath.pdf>".format(sys.argv[0]))
-        sys.exit(1)
+    main()
