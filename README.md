@@ -28,6 +28,11 @@ recommended for compatibility with the schematic symbols.
 Where possible footprints are based on the appropriate standards and follow the 
 conventions in `agg.pretty/README.md`, based on the KiCAD project conventions.
 
+## StickerBOM
+
+Check the [wiki page](https://github.com/adamgreig/agg-kicad/wiki/StickerBOM) 
+for more information on StickerBOM.
+
 ## Scripts
 
 See the README in the scripts folder for detailed information on each script.
