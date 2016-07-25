@@ -775,6 +775,17 @@ config = {
         "ep_vias": (0.2, 0.2, 0.75),
         "chip_shape": (2.0, 3.0),
         "pin_shape": (-0.3, 0.2),
+    },
+
+    # US8 JEDEC MO-187 Variation CA 3.1mm Wide
+    "US8-3.1mm": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 0.5,
+        "row_pitch": 2.7,
+        "pad_shape": (0.7, 0.3),
+        "chip_shape": (2.3, 2.0),
+        "pin_shape": (0.4, 0.33),
     }
 }
 
