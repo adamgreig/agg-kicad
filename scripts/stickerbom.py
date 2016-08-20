@@ -16,6 +16,8 @@ import xml.etree.ElementTree as ET
 import sexp
 
 
+without_supplier = False
+
 class Module:
     def __init__(self, mod):
         self.fab_lines = []
@@ -339,6 +341,7 @@ class BOM:
         self.tree = ET.parse(xmlpath)
         self.lines = []
         self.suppliers = {}
+        global without_supplier
         self._find_parts()
         self._generate_lines()
 
@@ -349,9 +352,16 @@ class BOM:
             ftp = comp.findtext('footprint')
             fields = {}
             part = {"ref": ref, "val": val, "ftp": ftp, "fields": fields}
-            for field in comp.iter('field'):
+
+            itfield = 'field'
+            if without_supplier:
+                itfield = 'footprint'
+
+            for field in comp.iter(itfield):
                 supplier = field.get('name')
                 code = field.text
+                if(ref.startswith("R") or ref.startswith("C") or ref.startswith("L")):
+                    code = code + val
                 fields[supplier] = code
 
                 if supplier not in self.suppliers:
@@ -455,9 +465,9 @@ def get_args():
                         help="Width of a label (mm).")
     parser.add_argument("--label_height", type=int, default=63.5,
                         help="Height of a label (mm).")
-    parser.add_argument("--labels-x", type=int, default=4,
+    parser.add_argument("--labels-x", type=int, default=3,
                         help="Number of columns of labels on a page.")
-    parser.add_argument("--labels-y", type=int, default=3,
+    parser.add_argument("--labels-y", type=int, default=2,
                         help="Number of rows of labels on a page.")
     parser.add_argument("--margin-top", type=int, default=7.75,
                         help="Margin at the top of the page (mm).")
@@ -482,11 +492,30 @@ def get_args():
     parser.add_argument("--include-parts-without-footprint",
                         action="store_true",
                         help="Include parts that do not have a footprint.")
+
+    parser.add_argument("--include-parts-without-supplier",
+                        action="store_true",
+                        help="Include parts that do not have a supplier.")
+
+    parser.add_argument("--fill-page",
+                        action="store_true",
+                        help="If set label size is ignored and calculated to fill the page with labels-x * labels-y.")
     return parser.parse_args()
 
 
 def main():
+    global without_supplier
+
     args = get_args()
+    without_supplier = args.include_parts_without_supplier
+
+    labelwidth = args.label_width
+    labelheight = args.label_height
+
+    if(args.fill_page):
+        labelwidth = args.page_width / args.labels_x
+        labelheight = args.page_height / args.labels_y
+
 
     bom = BOM(args.xmlpath)
 
@@ -503,7 +532,7 @@ def main():
     cr.scale(mm_to_pt, mm_to_pt)
 
     labels = sheet_positions(cr,
-                             args.label_width, args.label_height,
+                             labelwidth, labelheight,
                              args.labels_x, args.labels_y,
                              args.margin_top, args.margin_left,
                              args.spacing_x, args.spacing_y)
@@ -511,17 +540,17 @@ def main():
     suppliers = [name.strip() for name in args.suppliers.split(",")]
 
     for line in bom.lines:
-        if line.supplier not in suppliers:
+        if line.supplier not in suppliers and not without_supplier:
             continue
         if not line.footprint and not args.include_parts_without_footprint:
             continue
         label = next(labels)
         line.render(cr,
                     (label[0]+1, label[1]),
-                    args.label_width-2, 14)
+                    labelwidth-2, 14)
         pcb.render(cr,
                    (label[0]+1, label[1]+14),
-                   args.label_width-2, args.label_height-14,
+                   labelwidth-2, labelheight-14,
                    line.refs)
     cr.show_page()
 
