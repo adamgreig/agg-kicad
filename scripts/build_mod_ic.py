@@ -129,6 +129,23 @@ config = {
         },
     },
 
+    # TSSOP-16 from JEDEC MO-153AC
+    "TSSOP-16": {
+        "rows": 2,
+        "pins": 16,
+        "pin_pitch": 0.65,
+        "row_pitch": 5.75,
+        "pad_shape": (1.35, 0.45),
+        "chip_shape": (4.5, 5.0),
+        "pin_shape": (0.95, .30),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-16_4.4x5mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # TSSOP-20 from JEDEC MO-153AC
     # IPC-7351B: SOP65P640X120-20N
     "TSSOP-20": {
