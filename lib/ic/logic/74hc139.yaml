@@ -1,0 +1,23 @@
+datasheet: http://cache.nxp.com/documents/data_sheet/74HC_HCT139.pdf
+description: Dual 2-to-4 line decoder/demultiplexer
+footprint: agg:TSSOP-16
+name: 74HC139
+ordercodes:
+- [Farnell, '2444981']
+pins:
+- - - [VCC, 16, pwrin]
+    - [GND, 8, pwrin]
+  - - [1~E, 1, in]
+    - [1A0, 2, in]
+    - [1A1, 3, in]
+  - - [1~Y~0, 4, out]
+    - [1~Y~1, 5, out]
+    - [1~Y~2, 6, out]
+    - [1~Y~3, 7, out]
+- - - [2~E, 15, in]
+    - [2A0, 14, in]
+    - [2A1, 13, in]
+  - - [2~Y~0, 12, out]
+    - [2~Y~1, 11, out]
+    - [2~Y~2, 10, out]
+    - [2~Y~3, 9, out]
