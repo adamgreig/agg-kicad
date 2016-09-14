@@ -129,14 +129,15 @@ config = {
         },
     },
 
-    # TSSOP-16 from JEDEC MO-153AC
+    # TSSOP-16 from JEDEC MO-153AB
+    # IPC-7351B: SOP65P500X120-16N
     "TSSOP-16": {
         "rows": 2,
         "pins": 16,
         "pin_pitch": 0.65,
         "row_pitch": 5.75,
         "pad_shape": (1.35, 0.45),
-        "chip_shape": (4.5, 5.0),
+        "chip_shape": (4.5, 5.1),
         "pin_shape": (0.95, .30),
         "model": {
             "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-16_4.4x5mm_Pitch0.65mm.wrl",
