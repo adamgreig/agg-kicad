@@ -1,0 +1,4 @@
+EESchema-DOCLIB	Version 2.0
+$CMP KSZ8081RNx
+D RMII 100/10Mbps ethernet PHY
+$ENDCMP
