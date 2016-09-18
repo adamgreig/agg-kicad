@@ -1,0 +1,4 @@
+EESchema-DOCLIB	Version 2.0
+$CMP 25AA02E48
+D 2kbit SPI EEPROM with EUI-48 (MAC) address
+$ENDCMP
