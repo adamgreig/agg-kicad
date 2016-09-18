@@ -64,7 +64,6 @@ config = {
         "pin_pitch": 1.27,
         "row_pitch": 8.77,
         "pad_shape": (1.91, 0.64),
-        "chip_shape": (12.7, 8.8),
         "chip_shape": (8.8, 12.7),
         "pin_shape": (0.3, 0.3),
     },
