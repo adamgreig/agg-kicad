@@ -5,9 +5,9 @@ name: 25AA02E48
 ordercodes:
 - [Farnell, '1700995']
 pins:
+- - - [VDD, 6, pwrin]
+    - [VSS, 2, pwrin]
 - - - [~CS, 5, in]
     - [SCK, 1, in]
     - [SO, 4, out]
     - [SI, 3, in]
-- - - [VDD, 6, pwrin]
-    - [VSS, 2, pwrin]
