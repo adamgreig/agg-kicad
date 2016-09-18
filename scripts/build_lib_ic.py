@@ -60,9 +60,8 @@ def geometry(conf):
 
     # height is the maximum required on either side
     if len(conf['pins']) != 2:
-        raise RuntimeError("IC schematic symbols must have at least one pin "
-                           "on the left and right sides and may only have two"
-                           "sides.")
+        raise RuntimeError("IC schematic symbols must list pins on exactly "
+                           "two sides.")
     left_pins = sum(len(x) for x in conf['pins'][0])
     right_pins = sum(len(x) for x in conf['pins'][1])
     left_groups = len(conf['pins'][0])
