@@ -1,0 +1,38 @@
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/KSZ8081RNA_RND.pdf
+description: RMII 100/10Mbps ethernet PHY
+footprint: agg:QFN-24-EP-MICREL
+name: KSZ8081RNx
+ordercodes:
+- [Farnell, '2509802']
+pins:
+# Power supply
+- - - [VDDA_3v3, 2, pwrin]
+    - [VDDIO, 14, pwrin]
+  - - [VDD_1v2, 1, pwrout]
+  - - [GND, 22, pwrin]
+    - [GND, EP, pwrin]
+# Physical layer signals (differential)
+  - - [RXM, 3, bidi]
+    - [RXP, 4, bidi]
+    - [TXM, 5, bidi]
+    - [TXP, 6, bidi]
+# Clocks
+  - - [XO, 7, out]
+    - [XI, 8, in]
+# RMII
+- - - [RXD1, 12, out]
+    - [RXD0, 13, out]
+    - [CRS_DV, 15, bidi]
+    - [REF_CLK, 16, out]
+    - [RXER, 17, out]
+    - [TXEN, 19, in]
+    - [TXD0, 20, in]
+    - [TXD1, 21, in]
+# Management interface
+  - - [MDIO, 10, bidi]
+    - [MDC, 11, in]
+# Misc
+  - - [REXT, 9, in]
+    - [INTRP, 18, out]
+    - [LED0, 23, out]
+    - [~RST, 24, in]
