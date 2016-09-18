@@ -343,6 +343,22 @@ config = {
         "pin_shape": (-0.3, 0.2),
     },
 
+    # QFN-24 from KSZ8081RNx datasheet
+    # For KSZ8081RNx
+    "QFN-24-EP-MICREL": {
+        "rows": 4,
+        "pins": 24,
+        "pin_pitch": 0.5,
+        "row_pitch": 3.72,
+        "pad_shape": (0.48, 0.23),
+        "chip_shape": (4.0, 4.0),
+        "pin_shape": (-0.4, 0.25),
+        "ep_shape": (2.6, 2.6),
+        "ep_mask_shape": (1.0, 1.0, 0.2, 0.2),
+        "ep_paste_shape": (1.0, 1.0, 0.2, 0.2),
+        "ep_vias": (0.35, 0.5, 0.7)
+    },
+
     # QFN-24 from MAXIM. Doc no. 21-0139
     # For MAX17435
     "QFN-24-EP-MAX": {

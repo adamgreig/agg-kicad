@@ -10,7 +10,7 @@ pins:
     - [VDDIO, 14, pwrin]
   - - [VDD_1v2, 1, pwrout]
   - - [GND, 22, pwrin]
-    - [GND, PAD, pwrin]
+    - [GND, EP, pwrin]
 # Physical layer signals (differential)
   - - [RXM, 3, bidi]
     - [RXP, 4, bidi]
