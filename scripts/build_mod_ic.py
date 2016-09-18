@@ -57,6 +57,17 @@ from __future__ import print_function, division
 
 config = {
 
+    # Package for 749010012A ethernet magnetics
+    "749010012A": {
+        "rows": 2,
+        "pins": 16,
+        "pin_pitch": 1.27,
+        "row_pitch": 8.77,
+        "pad_shape": (1.91, 0.64),
+        "chip_shape": (8.8, 12.7),
+        "pin_shape": (0.3, 0.3),
+    },
+
     # SOIC-8 from JEDEC MS-012AA
     # IPC-7351B: SOIC127P600X175-8N
     "SOIC-8": {
