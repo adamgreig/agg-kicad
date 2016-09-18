@@ -1,0 +1,24 @@
+datasheet: http://katalog.we-online.de/pbs/datasheet/749010012A.pdf
+description: 10/100Mbps ethernet magnetics
+footprint: agg:749010012A
+designator: T
+name: 749010012A
+ordercodes:
+- [Farnell, '2422552']
+pins:
+- - - [TD+, 1, passive]
+    - [CTD, 2, passive]
+    - [TD-, 3, passive]
+  - - [RD+, 6, passive]
+    - [CRD, 7, passive]
+    - [RD-, 8, passive]
+  - - [NC, 4, nc]
+    - [NC, 5, nc]
+- - - [TX+, 16, passive]
+    - [CTX, 15, passive]
+    - [TX-, 14, passive]
+  - - [RX+, 11, passive]
+    - [CRX, 10, passive]
+    - [RX-, 9, passive]
+  - - [NC, 12, nc]
+    - [NC, 13, nc]
