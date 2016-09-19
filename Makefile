@@ -1,4 +1,4 @@
-all: build
+all: build compile check verify
 
 build: build-libs build-mods
 
