@@ -12,6 +12,7 @@ import sys
 import os
 import fnmatch
 import re
+import argparse
 
 
 EXCLUSIONS = ("agg-kicad.lib", "conn.lib", "power.lib", "switch.lib")
@@ -138,7 +139,7 @@ def checkfields(contents, errs, prettypath):
                     .format(fp))
 
 
-def checklib(libf, prettypath):
+def checklib(libf, prettypath, verbose=False):
     errs = []
 
     # Check if there's a corresponding .dcm file
@@ -162,7 +163,8 @@ def checklib(libf, prettypath):
     checkfields(contents, errs, prettypath)
 
     if len(errs) == 0:
-        print("Checked '{}': OK".format(libf))
+        if verbose:
+            print("Checked '{}': OK".format(libf))
         return True
     else:
         print("Checked '{}': Error:".format(libf), file=sys.stderr)
@@ -172,7 +174,7 @@ def checklib(libf, prettypath):
         return False
 
 
-def main(libpath, prettypath):
+def main(libpath, prettypath, verbose=False):
     ok = True
     for dirpath, dirnames, files in os.walk(libpath):
         dirnames.sort()
@@ -180,22 +182,23 @@ def main(libpath, prettypath):
         for f in fnmatch.filter(files, "*.lib"):
             path = os.path.join(dirpath, f)
             if f not in EXCLUSIONS:
-                result = checklib(path, prettypath)
+                result = checklib(path, prettypath, verbose)
                 if not result:
                     ok = False
-            else:
+            elif verbose:
                 print("Skipping '{}'".format(path))
     return ok
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: {} <lib path> <prettypath>".format(sys.argv[0]))
-        sys.exit(1)
-    else:
-        libpath = sys.argv[1]
-        prettypath = sys.argv[2]
-        success = main(libpath, prettypath)
-        if success:
-            sys.exit(0)
-        else:
-            sys.exit(1)
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument("libpath", type=str, help=
+                        "Path to libraries")
+    parser.add_argument("prettypath", type=str, help=
+                        "Path to footprints")
+    parser.add_argument("--verbose", action="store_true", help=
+                        "Print out every library checked even if OK or "
+                        "skipped.")
+    args = vars(parser.parse_args())
+    result = main(**args)
+    sys.exit(0 if result else 1)
