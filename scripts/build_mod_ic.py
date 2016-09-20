@@ -86,6 +86,24 @@ config = {
         },
     },
 
+    # SOIC-14 from JEDEC MS-012AB
+    # IPC-7351B: SOIC127P600X175-14N
+    "SOIC-14": {
+        "rows": 2,
+        "pins": 14,
+        "pin_pitch": 1.27,
+        "row_pitch": 5.4,
+        "pad_shape": (1.55, 0.6),
+        "chip_shape": (4.0, 8.8),
+        "pin_shape": (1.1, 0.5),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-14_3.9x8.7mm_Pitch1.27mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # SOIC-16 from JEDEC MS-012AC
     # IPC-7351B: SOIC127P600X175-16N
     "SOIC-16": {
