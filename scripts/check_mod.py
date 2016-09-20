@@ -12,6 +12,7 @@ import sys
 import os
 import glob
 from decimal import Decimal
+import argparse
 
 from sexp import parse as sexp_parse
 
@@ -73,7 +74,7 @@ def checkctyd(mod, errs):
         errs.append("No courtyard found")
 
 
-def checkmod(path):
+def checkmod(path, verbose=False):
     errs = []
 
     with open(path) as f:
@@ -85,7 +86,8 @@ def checkmod(path):
     checkctyd(mod, errs)
 
     if len(errs) == 0:
-        print("Checked '{}': OK".format(path))
+        if verbose:
+            print("Checked '{}': OK".format(path))
         return True
     else:
         print("Checked '{}': Error:".format(path), file=sys.stderr)
@@ -95,23 +97,21 @@ def checkmod(path):
         return False
 
 
-def main(libpath):
+def main(prettypath, verbose=False):
     ok = True
-    for f in glob.glob(os.path.join(libpath, "*.kicad_mod")):
-        result = checkmod(f)
+    for f in glob.glob(os.path.join(prettypath, "*.kicad_mod")):
+        result = checkmod(f, verbose)
         if not result:
             ok = False
     return ok
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: {} <.pretty path>".format(sys.argv[0]))
-        sys.exit(1)
-    else:
-        libpath = sys.argv[1]
-        success = main(libpath)
-        if success:
-            sys.exit(0)
-        else:
-            sys.exit(1)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("prettypath", type=str, help=
+                        "Path to footprints")
+    parser.add_argument("--verbose", action="store_true", help=
+                        "Print out every footprint checked even if OK")
+    args = vars(parser.parse_args())
+    result = main(**args)
+    sys.exit(0 if result else 1)

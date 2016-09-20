@@ -1,4 +1,10 @@
-all: build
+ifeq ("$(V)", "1")
+	verboseflag = --verbose
+else
+	verboseflag =
+endif
+
+all: build compile check verify
 
 build: build-libs build-mods
 
@@ -30,13 +36,13 @@ build-lib-switch:
 	python scripts/build_lib_switch.py lib/ui/switch.lib
 
 verify-lib-switch:
-	python scripts/build_lib_switch.py lib/ui/switch.lib --verify
+	python scripts/build_lib_switch.py lib/ui/switch.lib --verify $(verboseflag)
 
 build-lib-ic:
 	python scripts/build_lib_ic.py lib/
 
 verify-lib-ic:
-	python scripts/build_lib_ic.py lib/ --verify
+	python scripts/build_lib_ic.py lib/ --verify $(verboseflag)
 
 build-lib-power:
 	python scripts/build_lib_power.py lib/power/power.lib
@@ -48,25 +54,25 @@ build-mod-chip:
 	python scripts/build_mod_chip.py agg.pretty/
 
 verify-mod-chip:
-	python scripts/build_mod_chip.py agg.pretty/ --verify
+	python scripts/build_mod_chip.py agg.pretty/ --verify $(verboseflag)
 
 build-mod-ic:
 	python scripts/build_mod_ic.py agg.pretty/
 
 verify-mod-ic:
-	python scripts/build_mod_ic.py agg.pretty/ --verify
+	python scripts/build_mod_ic.py agg.pretty/ --verify $(verboseflag)
 
 build-mod-jstpa:
 	python scripts/build_mod_jstpa.py agg.pretty/
 
 verify-mod-jstpa:
-	python scripts/build_mod_jstpa.py agg.pretty/ --verify
+	python scripts/build_mod_jstpa.py agg.pretty/ --verify $(verboseflag)
 
 build-mod-sil-dil:
 	python scripts/build_mod_sil_dil.py agg.pretty/
 
 verify-mod-sil-dil:
-	python scripts/build_mod_sil_dil.py agg.pretty/ --verify
+	python scripts/build_mod_sil_dil.py agg.pretty/ --verify $(verboseflag)
 
 compile-lib:
 	python scripts/compile_lib.py lib/ agg-kicad.lib
@@ -81,7 +87,7 @@ verify-pro:
 	python scripts/compile_pro.py lib/ agg-kicad.pro --verify
 
 check-lib:
-	python scripts/check_lib.py lib/ agg.pretty/
+	python scripts/check_lib.py lib/ agg.pretty/ $(verboseflag)
 
 check-mod:
-	python scripts/check_mod.py agg.pretty/
+	python scripts/check_mod.py agg.pretty/ $(verboseflag)

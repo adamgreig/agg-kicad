@@ -905,6 +905,7 @@ import sys
 import time
 import math
 import subprocess
+import argparse
 
 from sexp import parse as sexp_parse, generate as sexp_generate
 from kicad_mod import fp_line, fp_arc, fp_circle, fp_text, pad, draw_square, model
@@ -1278,7 +1279,7 @@ def git_version(libpath):
     return git.stdout.read().decode().strip()
 
 
-def main(prettypath, verify=False):
+def main(prettypath, verify=False, verbose=False):
     for name, conf in config.items():
         conf['name'] = name
         assert conf['rows'] in (2, 4), \
@@ -1288,7 +1289,7 @@ def main(prettypath, verify=False):
         fp = footprint(conf)
         path = os.path.join(prettypath, name+".kicad_mod")
 
-        if verify:
+        if verify and verbose:
             print("Verifying", path)
 
         # Check if an identical part already exists
@@ -1313,17 +1314,19 @@ def main(prettypath, verify=False):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 2:
-        prettypath = sys.argv[1]
-        main(prettypath)
-    elif len(sys.argv) == 3 and sys.argv[2] == "--verify":
-        prettypath = sys.argv[1]
-        if main(prettypath, verify=True):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("prettypath", type=str, help=
+                        "Path to footprints to process")
+    parser.add_argument("--verify", action="store_true", help=
+                        "Verify libraries are up to date")
+    parser.add_argument("--verbose", action="store_true", help=
+                        "Print out every library verified")
+    args = vars(parser.parse_args())
+    result = main(**args)
+    if args['verify']:
+        if result:
             print("OK: all footprints up-to-date.")
             sys.exit(0)
         else:
             print("Error: footprints not up-to-date.", file=sys.stderr)
             sys.exit(1)
-    else:
-        print("Usage: {} <.pretty path> [--verify]".format(sys.argv[0]))
-        sys.exit(1)

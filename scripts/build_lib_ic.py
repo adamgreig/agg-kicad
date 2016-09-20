@@ -33,6 +33,7 @@ import os
 import sys
 import yaml
 import fnmatch
+import argparse
 
 pin_types = {
     "in": "I",
@@ -192,7 +193,7 @@ def load_items(libpath):
     return config
 
 
-def main(libpath, verify=False):
+def main(libpath, verify=False, verbose=False):
     config = load_items(libpath)
     for name, conf in config.items():
         conf['name'] = name
@@ -202,7 +203,7 @@ def main(libpath, verify=False):
         lib = library(conf)
         dcm = documentation(conf)
 
-        if verify:
+        if verify and verbose:
             print("Verifying", path)
 
         # Check if anything has changed
@@ -230,17 +231,19 @@ def main(libpath, verify=False):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 2:
-        libpath = sys.argv[1]
-        main(libpath)
-    elif len(sys.argv) == 3 and sys.argv[2] == "--verify":
-        libpath = sys.argv[1]
-        if main(libpath, verify=True):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("libpath", type=str, help=
+                        "Path to libraries to process")
+    parser.add_argument("--verify", action="store_true", help=
+                        "Verify libraries are up to date")
+    parser.add_argument("--verbose", action="store_true", help=
+                        "Print out every library verified")
+    args = vars(parser.parse_args())
+    result = main(**args)
+    if args['verify']:
+        if result:
             print("OK: all libs up-to-date.")
             sys.exit(0)
         else:
             print("Error: libs not up-to-date.", file=sys.stderr)
             sys.exit(1)
-    else:
-        print("Usage: {} <lib path>".format(sys.argv[0]))
-        sys.exit(1)
