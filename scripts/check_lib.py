@@ -190,8 +190,7 @@ def main(libpath, prettypath, verbose=False):
     return ok
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser = argparse.ArgumentParser()
     parser.add_argument("libpath", type=str, help=
                         "Path to libraries")
     parser.add_argument("prettypath", type=str, help=

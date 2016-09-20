@@ -107,8 +107,7 @@ def main(prettypath, verbose=False):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser = argparse.ArgumentParser()
     parser.add_argument("prettypath", type=str, help=
                         "Path to footprints")
     parser.add_argument("--verbose", action="store_true", help=
