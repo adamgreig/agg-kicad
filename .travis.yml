@@ -4,5 +4,5 @@ addons:
       - python-yaml
 language: generic
 script:
-  - make check
-  - make verify
+  - make check V=1
+  - make verify V=1
