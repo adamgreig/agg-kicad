@@ -454,6 +454,27 @@ config = {
         },
     },
 
+    # DFN-10 with EP
+    # For MAX5969x
+    "DFN-10-EP-MAX": {
+        "rows": 2,
+        "pins": 10,
+
+        "pin_pitch": 0.5,
+        "row_pitch": 2.95,
+        "pad_shape": (0.70, 0.30),
+        "ep_shape": (1.58, 2.35),
+        "ep_paste_shape": (1.2, 0.8, 0, 0.4),
+        "chip_shape": (3.0, 3.0),
+        "pin_shape": (-0.40, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-10-1EP_3x3mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # DFN-10 from JEDEC MO-229WEED-2
     # For LTC3105 / LT package DD
     # For LTC4151
