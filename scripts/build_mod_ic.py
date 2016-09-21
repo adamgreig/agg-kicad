@@ -359,6 +359,25 @@ config = {
         },
     },
 
+    # QFN-20-EP-MAX for MAX17503
+    "QFN-20-EP-MAX": {
+        "rows": 4,
+        "pins": 20,
+        "pin_pitch": 0.5,
+        "row_pitch": 3.85,
+        "pad_shape": (0.6, 0.3),
+        "ep_shape": (2.85, 2.85),
+        "ep_paste_shape": (1.1, 1.1, 0.2, 0.2),
+        "chip_shape": (4.0, 4.0),
+        "pin_shape": (-.55, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # QFN-24 from MPU-9250 datasheet
     # For MPU-9250
     # IPC-7351B: QFN40P300X300X100-24N
