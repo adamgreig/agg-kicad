@@ -359,6 +359,27 @@ config = {
         },
     },
 
+    # QFN-20-EP-MAX for MAX17503
+    "QFN-20-EP-MAX": {
+        "rows": 4,
+        "pins": 20,
+        "pin_pitch": 0.5,
+        "row_pitch": 3.85,
+        "pad_shape": (0.6, 0.3),
+        "ep_shape": (2.85, 2.85),
+        "ep_paste_shape": (0.85, 0.85, 0.28, 0.28),
+        "ep_mask_shape": (0.85, 0.85, 0.28, 0.28),
+        "ep_vias": (0.35, 0.5, 0.65),
+        "chip_shape": (4.0, 4.0),
+        "pin_shape": (-.55, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # QFN-24 from MPU-9250 datasheet
     # For MPU-9250
     # IPC-7351B: QFN40P300X300X100-24N
@@ -448,6 +469,27 @@ config = {
         "pin_shape": (-0.4, 0.25),
         "model": {
             "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-40-1EP_6x6mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
+    # DFN-10 with EP
+    # For MAX5969x
+    "DFN-10-EP-MAX": {
+        "rows": 2,
+        "pins": 10,
+
+        "pin_pitch": 0.5,
+        "row_pitch": 2.95,
+        "pad_shape": (0.70, 0.30),
+        "ep_shape": (1.58, 2.35),
+        "ep_paste_shape": (1.2, 0.8, 0, 0.4),
+        "chip_shape": (3.0, 3.0),
+        "pin_shape": (-0.40, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-10-1EP_3x3mm_Pitch0.5mm.wrl",
             "offset": (0, 0, 0),
             "scale": (1, 1, 1),
             "rotate": (0, 0, 0),

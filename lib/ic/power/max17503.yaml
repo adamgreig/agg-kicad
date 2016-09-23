@@ -1,0 +1,37 @@
+datasheet: https://datasheets.maximintegrated.com/en/ds/MAX17503.pdf
+description: Step-down DC-DC converter
+footprint: agg:QFN-20-EP-MAX
+name: MAX17503
+ordercodes:
+- [Farnell, '2514229']
+pins:
+- - - [VIN, 1, pwrin]
+    - [VIN, 2, pwrin]
+    - [VIN, 3, pwrin]
+
+  - - [EN/UVLO, 4, in]
+    - [SYNC, 6, in]
+    - [MODE, 11, in]
+
+  - - [SS, 7, in]
+    - [RT, 10, passive]
+
+  - - [PGND, 14, pwrin]
+    - [PGND, 15, pwrin]
+    - [PGND, 16, pwrin]
+
+- - - [BST, 20, passive]
+
+  - - [LX, 17, pwrout]
+    - [LX, 18, passive]
+    - [LX, 19, passive]
+
+  - - [FB, 9, in]
+
+  - - [CF, 8, passive]
+
+  - - [~RESET, 5, out]
+
+  - - [VCC, 12, pwrout]
+    - [SGND, 13, pwrin]
+    - [SGND, EP, pwrin]

@@ -1,0 +1,4 @@
+EESchema-DOCLIB	Version 2.0
+$CMP MAX5969x
+D MAX5969x 802.3af PoE PD controller
+$ENDCMP
