@@ -367,7 +367,9 @@ config = {
         "row_pitch": 3.85,
         "pad_shape": (0.6, 0.3),
         "ep_shape": (2.85, 2.85),
-        "ep_paste_shape": (1.1, 1.1, 0.2, 0.2),
+        "ep_paste_shape": (0.85, 0.85, 0.28, 0.28),
+        "ep_mask_shape": (0.85, 0.85, 0.28, 0.28),
+        "ep_vias": (0.35, 0.5, 0.65),
         "chip_shape": (4.0, 4.0),
         "pin_shape": (-.55, 0.25),
         "model": {

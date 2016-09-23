@@ -1,7 +1,7 @@
 
 (module "QFN-20-EP-MAX" 
   (layer F.Cu) 
-  (tedit 57E301FD) 
+  (tedit 57E54FC1) 
   (fp_text reference REF** 
     (at 0 -3.1750) 
     (layer F.Fab) 
@@ -477,30 +477,103 @@
     (size 0.3000 0.6000) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad "" smd rect 
-    (at -0.6500 -0.6500) 
-    (size 1.1000 1.1000) 
+    (at -0.5650 -0.5650) 
+    (size 0.8500 0.8500) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at -0.5650 0.5650) 
+    (size 0.8500 0.8500) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.5650 -0.5650) 
+    (size 0.8500 0.8500) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.5650 0.5650) 
+    (size 0.8500 0.8500) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at -0.5650 -0.5650) 
+    (size 0.8500 0.8500) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad "" smd rect 
-    (at -0.6500 0.6500) 
-    (size 1.1000 1.1000) 
+    (at -0.5650 0.5650) 
+    (size 0.8500 0.8500) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad "" smd rect 
-    (at 0.6500 -0.6500) 
-    (size 1.1000 1.1000) 
+    (at 0.5650 -0.5650) 
+    (size 0.8500 0.8500) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad "" smd rect 
-    (at 0.6500 0.6500) 
-    (size 1.1000 1.1000) 
+    (at 0.5650 0.5650) 
+    (size 0.8500 0.8500) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
+  (pad EP thru_hole circle 
+    (at -1.1500 -1.1500) 
+    (size 0.5000 0.5000) 
+    (layers *.Cu) 
+    (drill 0.3500) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at -1.1500 0.0000) 
+    (size 0.5000 0.5000) 
+    (layers *.Cu) 
+    (drill 0.3500) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at -1.1500 1.1500) 
+    (size 0.5000 0.5000) 
+    (layers *.Cu) 
+    (drill 0.3500) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 0.0000 -1.1500) 
+    (size 0.5000 0.5000) 
+    (layers *.Cu) 
+    (drill 0.3500) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 0.0000 0.0000) 
+    (size 0.5000 0.5000) 
+    (layers *.Cu) 
+    (drill 0.3500) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 0.0000 1.1500) 
+    (size 0.5000 0.5000) 
+    (layers *.Cu) 
+    (drill 0.3500) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 1.1500 -1.1500) 
+    (size 0.5000 0.5000) 
+    (layers *.Cu) 
+    (drill 0.3500) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 1.1500 0.0000) 
+    (size 0.5000 0.5000) 
+    (layers *.Cu) 
+    (drill 0.3500) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 1.1500 1.1500) 
+    (size 0.5000 0.5000) 
+    (layers *.Cu) 
+    (drill 0.3500) 
+    (zone_connect 2)) 
   (pad EP smd rect 
     (at 0 0) 
     (size 2.8500 2.8500) 
-    (layers F.Cu F.Mask) 
-    (solder_mask_margin 0.0010)) 
+    (layers F.Cu)) 
   (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_Pitch0.5mm.wrl" 
     (at 
       (xyz 0 0 0)) 
