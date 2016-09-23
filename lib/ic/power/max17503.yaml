@@ -34,4 +34,4 @@ pins:
 
   - - [VCC, 12, pwrout]
     - [SGND, 13, pwrin]
-    - [EP, EP, pwrin]
+    - [SGND, EP, pwrin]

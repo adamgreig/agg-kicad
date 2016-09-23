@@ -7,7 +7,7 @@ ordercodes:
 pins:
 - - - [VDD, 1, pwrin]
     - [VSS, 5, pwrin]
-    - [EP, EP, passive]
+    - [VSS, EP, pwrin]
 
   - - [DET, 2, in]
     - [CLS, 10, in]
