@@ -6,9 +6,9 @@ ordercodes:
 - [Farnell, '2480594']
 pins:
 - - - [VDD, 4, pwrin]
-  - - [GND, 2, pwrin]
-    - [GND, EP, pwrin]
-  - - [RFIN, 5, passive]
-- - - [CTRL, 6, in]
   - - [RF1, 3, passive]
     - [RF2, 1, passive]
+  - - [CTRL, 6, in]
+- - - [RFIN, 5, passive]
+  - - [GND, 2, pwrin]
+    - [GND, EP, pwrin]
