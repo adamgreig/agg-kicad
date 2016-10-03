@@ -1,0 +1,14 @@
+datasheet: http://www.infineon.com/dgdl/Infineon-BGS12AL7_4-DS-v01_03-en.pdf?fileId=db3a30431b3e89eb011b458d7a767d88
+description: SPDT RF Switch
+footprint: agg:TSLP7-4
+name: BGS12AL7
+ordercodes:
+- [Farnell, '2480594']
+pins:
+- - - [VDD, 4, pwrin]
+  - - [RF1, 3, passive]
+    - [RF2, 1, passive]
+  - - [CTRL, 6, in]
+- - - [RFIN, 5, passive]
+  - - [GND, 2, pwrin]
+    - [GND, EP, pwrin]
