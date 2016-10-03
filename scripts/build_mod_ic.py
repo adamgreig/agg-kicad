@@ -573,6 +573,21 @@ config = {
         },
     },
 
+    # TSLP7-4
+    # For BGS12AL7-4
+    "TSLP7-4": {
+        "rows": 2,
+        "pins": 6,
+        "pin_pitch": 0.55,
+        "row_pitch": 1.90,
+        "pad_shape": (0.3, 0.3),
+        "ep_shape": (1.1, 1.4),
+        "ep_mask_shape": (.25, .299, 0.175, 0.25),
+        "ep_paste_shape": (.25, .299, 0.175, 0.25),
+        "chip_shape": (2.3, 1.5),
+        "pin_shape": (-0.35, 0.3),
+    },
+
     # LPCC-16 for HMC5883L
     "LPCC-16-HMC5883L": {
         "rows": 4,

@@ -1,0 +1,287 @@
+
+(module "TSLP7-4" 
+  (layer F.Cu) 
+  (tedit 57F2AB03) 
+  (fp_text reference REF** 
+    (at 0 -1.7000) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "TSLP7-4" 
+    (at 0 1.7000) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_line 
+    (start -1.1500 -0.7500) 
+    (end 1.1500 -0.7500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.1500 -0.7500) 
+    (end 1.1500 0.7500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.1500 0.7500) 
+    (end -1.1500 0.7500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.1500 0.7500) 
+    (end -1.1500 -0.7500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.3500 0.0500) 
+    (end -0.3500 0.4500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.8000 -0.7000) 
+    (end -1.1500 -0.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.1500 -0.4000) 
+    (end -0.8000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.8000 -0.4000) 
+    (end -0.8000 -0.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.8000 -0.1500) 
+    (end -1.1500 -0.1500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.1500 0.1500) 
+    (end -0.8000 0.1500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.8000 0.1500) 
+    (end -0.8000 -0.1500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.8000 0.4000) 
+    (end -1.1500 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.1500 0.7000) 
+    (end -0.8000 0.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.8000 0.7000) 
+    (end -0.8000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.1500 0.4000) 
+    (end 0.8000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.8000 0.4000) 
+    (end 0.8000 0.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.8000 0.7000) 
+    (end 1.1500 0.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.1500 -0.1500) 
+    (end 0.8000 -0.1500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.8000 -0.1500) 
+    (end 0.8000 0.1500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.8000 0.1500) 
+    (end 1.1500 0.1500) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.1500 -0.7000) 
+    (end 0.8000 -0.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.8000 -0.7000) 
+    (end 0.8000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 0.8000 -0.4000) 
+    (end 1.1500 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -0.5500 -0.7500) 
+    (end 1.1500 -0.7500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -1.1500 0.7500) 
+    (end 1.1500 0.7500) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_arc 
+    (start -0.8500 -0.7500) 
+    (end -1.1500 -0.7500) 
+    (angle 180) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -1.3500 -1.0000) 
+    (end 1.3500 -1.0000) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.3500 -1.0000) 
+    (end 1.3500 1.0000) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.3500 1.0000) 
+    (end -1.3500 1.0000) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.3500 1.0000) 
+    (end -1.3500 -1.0000) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (pad 1 smd rect 
+    (at -0.9500 -0.5500) 
+    (size 0.3000 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 2 smd rect 
+    (at -0.9500 0.0000) 
+    (size 0.3000 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 3 smd rect 
+    (at -0.9500 0.5500) 
+    (size 0.3000 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 4 smd rect 
+    (at 0.9500 0.5500) 
+    (size 0.3000 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 5 smd rect 
+    (at 0.9500 0.0000) 
+    (size 0.3000 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 6 smd rect 
+    (at 0.9500 -0.5500) 
+    (size 0.3000 0.3000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad "" smd rect 
+    (at -0.4250 -0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at -0.4250 0.0000) 
+    (size 0.2500 0.2990) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at -0.4250 0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.0000 -0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.0000 0.0000) 
+    (size 0.2500 0.2990) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.0000 0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.4250 -0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.4250 0.0000) 
+    (size 0.2500 0.2990) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.4250 0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Mask) 
+    (solder_mask_margin 0.0010)) 
+  (pad "" smd rect 
+    (at -0.4250 -0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at -0.4250 0.0000) 
+    (size 0.2500 0.2990) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at -0.4250 0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.0000 -0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.0000 0.0000) 
+    (size 0.2500 0.2990) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.0000 0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.4250 -0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.4250 0.0000) 
+    (size 0.2500 0.2990) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.4250 0.5490) 
+    (size 0.2500 0.2990) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad EP smd rect 
+    (at 0 0) 
+    (size 1.1000 1.4000) 
+    (layers F.Cu)))

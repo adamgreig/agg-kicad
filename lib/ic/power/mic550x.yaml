@@ -1,0 +1,12 @@
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf
+description: 300mA LDO
+footprint: agg:SOT-1194-1
+name: MIC550x
+ordercodes:
+  - [Farnell, '2510371']
+pins:
+- - - [VIN, 4, pwrin]
+  - - [EN, 3, in]
+- - - [VOUT, 1, pwrout]
+    - [GND, 2, pwrin]
+    - [GND, EP, pwrin]
