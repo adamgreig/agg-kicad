@@ -1,0 +1,4 @@
+EESchema-DOCLIB	Version 2.0
+$CMP TPS92512
+D 2.5A constant current buck converter / LED driver
+$ENDCMP

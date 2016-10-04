@@ -158,6 +158,24 @@ config = {
         },
     },
 
+    # MSOP-10 with 0.5mm pin pitch and an EP, TI specific
+    # For the TPS92512, from its datasheet
+    # JEDEC MO-187BA-T
+    # IPC-7351B: SOP50P490X110-11N
+    "MSOP-10-EP-TI": {
+        "rows": 2,
+        "pins": 10,
+        "pin_pitch": 0.5,
+        "row_pitch": 4.4,
+        "pad_shape": (1.45, 0.3),
+        "chip_shape": (3.0, 3.0),
+        "pin_shape": (0.95, 0.22),
+        "ep_shape": (2.2, 3.1),
+        "ep_paste_shape": (1.83, 1.89, 0, 0),
+        "ep_mask_shape": (1.83, 1.89, 0, 0),
+        "ep_vias": (0.3, 0.5, 0.3),
+    },
+
     # TSSOP-16 from JEDEC MO-153AB
     # IPC-7351B: SOP65P500X120-16N
     "TSSOP-16": {
