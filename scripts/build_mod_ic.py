@@ -719,6 +719,25 @@ config = {
         },
     },
 
+    # SC-70-6
+    # JEDEC MO-203-AB
+    # IPC-7351B: SOT65P210X110-6N
+    "SC-70-6": {
+        "rows": 2,
+        "pins": 6,
+        "pin_pitch": 0.65,
+        "row_pitch": 2.20,
+        "pad_shape": (0.95, 0.40),
+        "chip_shape": (1.4, 2.15),
+        "pin_shape": (0.5, 0.3),
+        "model": {
+            "path": "${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SC-70-6.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 90),
+        },
+    },
+
     # SOT-323
     # IPC-7351B: SOT65P210X110-3N
     "SOT-323": {
