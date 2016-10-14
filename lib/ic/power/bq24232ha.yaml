@@ -1,0 +1,30 @@
+datasheet: http://www.ti.com/lit/ds/symlink/bq24232ha.pdf
+description: USB-friendly 500mA LiPO charger with power-path management
+footprint: agg:QFN-16-EP-TI
+name: BQ24232HA
+ordercodes:
+- [Farnell, '2576286']
+pins:
+- - - [IN, 13, pwrin]
+    - [VSS, EP, pwrin]
+    - [VSS, 8, pwrin]
+
+  - - [ITERM, 15, in]
+    - [ILIM, 12, in]
+    - [ISET, 16, in]
+
+  - - [EN1, 6, in]
+    - [EN2, 5, in]
+
+  - - [~CE, 4, in]
+    - [TMR, 14, in]
+
+- - - [OUT, 10, pwrout]
+    - [OUT, 11, pwrout]
+
+  - - [BAT, 2, passive]
+    - [BAT, 3, passive]
+    - [TS, 1, in]
+
+  - - [~PGOOD, 7, od]
+    - [~CHG, 9, od]
