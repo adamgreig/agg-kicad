@@ -1,0 +1,13 @@
+datasheet: http://www.ti.com/lit/ds/symlink/tlv61225.pdf
+description: 3.3V 400mA Boost Converter
+footprint: agg:SC-70-6
+name: TLV61225
+ordercodes:
+- [Farnell, '2492362']
+pins:
+- - - [VIN, 1, pwrin]
+    - [EN, 6, in]
+    - [GND, 3, pwrin]
+- - - [VOUT, 4, pwrout]
+    - [FB, 2, in]
+    - [L, 5, passive]
