@@ -13,14 +13,14 @@ pins:
     - [ILIM, 12, in]
     - [ISET, 16, in]
 
-  - - [EN1, 6, in]
-    - [EN2, 5, in]
-
   - - [~CE, 4, in]
     - [TMR, 14, in]
 
 - - - [OUT, 10, pwrout]
     - [OUT, 11, pwrout]
+
+  - - [EN1, 6, in]
+    - [EN2, 5, in]
 
   - - [BAT, 2, passive]
     - [BAT, 3, passive]
