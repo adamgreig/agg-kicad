@@ -943,7 +943,18 @@ config = {
         "pad_shape": (0.7, 0.3),
         "chip_shape": (2.3, 2.0),
         "pin_shape": (0.4, 0.33),
-    }
+    },
+
+    # LAB01
+    "LAB01": {
+        "rows": 2,
+        "pins": 24,
+        "pin_pitch": 2.0,
+        "row_pitch": 19.0,
+        "pad_shape": (3.0, 1.6),
+        "chip_shape": (20, 25),
+        "pin_shape": (-2.0, 1.5),
+    },
 }
 
 
