@@ -1,0 +1,13 @@
+datasheet: http://www.ti.com/lit/ds/symlink/tlv61220.pdf
+description: Adjustable 200mA Boost Converter
+footprint: agg:SOT-23-6
+name: TLV61220
+ordercodes:
+- [Farnell, '2323546']
+pins:
+- - - [VBAT, 6, pwrin]
+    - [EN, 3, in]
+    - [GND, 2, pwrin]
+- - - [VOUT, 5, pwrout]
+    - [FB, 4, in]
+    - [SW, 1, passive]
