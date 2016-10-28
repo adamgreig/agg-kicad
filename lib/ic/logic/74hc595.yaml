@@ -1,0 +1,23 @@
+datasheet: http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf
+description: 8-bit serial-to-parallel shift register
+footprint: agg:TSSOP-16
+name: 74HC595
+ordercodes:
+- [Farnell, '2425499']
+pins:
+- - - [VCC, 16, pwrin]
+    - [GND, 8, pwrin]
+  - - [~MR, 10, in]
+    - [SHCP, 11, in]
+    - [STCP, 12, in]
+    - [~OE, 13, in]
+    - [DS, 14, in]
+- - - [Q0, 15, out]
+    - [Q1, 1, out]
+    - [Q2, 2, out]
+    - [Q3, 3, out]
+    - [Q4, 4, out]
+    - [Q5, 5, out]
+    - [Q6, 6, out]
+    - [Q7, 7, out]
+    - [Q7S, 9, out]
