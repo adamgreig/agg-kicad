@@ -17,7 +17,7 @@ pins:
     - [TMR, 14, in]
 
 - - - [OUT, 10, pwrout]
-    - [OUT, 11, pwrout]
+    - [OUT, 11, passive]
 
   - - [EN1, 6, in]
     - [EN2, 5, in]
