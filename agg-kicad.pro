@@ -1,4 +1,4 @@
-update=Thu 08 Dec 2016 21:24:34 GMT
+update=Thu 08 Dec 2016 22:08:36 GMT
 version=1
 last_client=kicad
 [pcbnew]
@@ -148,10 +148,11 @@ LibName116=lib/passive/siz340dt
 LibName117=lib/passive/smd_xtal
 LibName118=lib/passive/tcxo
 LibName119=lib/passive/tcxo_en
-LibName120=lib/passive/usblc6-2p6
-LibName121=lib/passive/xtal
-LibName122=lib/power/power
-LibName123=lib/power/pwr
-LibName124=lib/ui/rotenc
-LibName125=lib/ui/sounder
-LibName126=lib/ui/switch
+LibName120=lib/passive/transformer_2x2
+LibName121=lib/passive/usblc6-2p6
+LibName122=lib/passive/xtal
+LibName123=lib/power/power
+LibName124=lib/power/pwr
+LibName125=lib/ui/rotenc
+LibName126=lib/ui/sounder
+LibName127=lib/ui/switch
