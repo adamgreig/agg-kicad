@@ -1,0 +1,9 @@
+description: AC/DC PCB Mount Power Supply
+footprint: agg:VTX-214-003-1xx
+name: VTX-214-003-1xx
+ordercodes: [['Farnell', '2401030']]
+pins:
+- - - ["AC (L)", 1, pwrin]
+    - ["AC (N)", 2, pwrin]
+- - - ["DC +", 3, pwrout]
+    - ["DC -", 4, pwrout]
