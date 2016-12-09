@@ -1,0 +1,27 @@
+name: Si3402-B
+datasheet: http://www.silabs.com/Support%20Documents/TechnicalDocs/Si3402-B.pdf
+description: PoE PD interface and switching regulator
+ordercodes: [["Mouser", "634-SI3402-B-GMR"]]
+footprint: agg:QFN-20-EP-SI3402-B
+pins:
+- - - [VPOSF, 12, pwrout]
+    - [VPOSS, 16, nc]
+  - - [SSFT, 2, nc]
+    - [RDET, 6, in]
+    - [RCL, 8, in]
+  - - [VNEG, 9, pwrout]
+    - [VNEG, EP, passive]
+  - - [CT1, 14, pwrin]
+    - [CT2, 13, pwrin]
+    - [SP1, 11, pwrin]
+    - [SP2, 10, pwrin]
+- - - [FB, 20, in]
+    - [SWO, 18, out]
+    - [ISOSSFT, 4, nc]
+  - - [VDD, 3, pwrin]
+  - - [EROUT, 1, out]
+    - [HSO, 7, out]
+    - [~PLOSS, 5, od]
+  - - [VSS1, 17, nc]
+    - [VSS2, 19, pwrin]
+    - [VSSA, 15, pwrin]

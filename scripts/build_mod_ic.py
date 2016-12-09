@@ -402,6 +402,27 @@ config = {
         },
     },
 
+    # QFN-20 from JEDEC MO-220VHHB-1
+    # For Si3402-B
+    # IPC-7351B: QFN80P500X500X85-21N
+    "QFN-20-EP-SI3402-B": {
+        "rows": 4,
+        "pins": 20,
+        "pin_pitch": 0.8,
+        "row_pitch": 4.7,
+        "pad_shape": (0.95, 0.30),
+        "ep_shape": (2.75, 2.75),
+        "ep_paste_shape": (1.1, 1.1, 0.2, 0.2),
+        "chip_shape": (5.0, 5.0),
+        "pin_shape": (-.55, 0.30),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-20-1EP_5x5mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # QFN-20-EP-MAX for MAX17503
     "QFN-20-EP-MAX": {
         "rows": 4,
