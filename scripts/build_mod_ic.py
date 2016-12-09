@@ -955,6 +955,17 @@ config = {
         "chip_shape": (20, 25),
         "pin_shape": (-2.0, 1.5),
     },
+
+    # uBlox MAX-M8Q
+    "MAX-M8Q": {
+        "rows": 2,
+        "pins": 18,
+        "pin_pitch": 1.1,
+        "row_pitch": 9.5,
+        "pad_shape": (1.8, 0.7),
+        "chip_shape": (9.7, 10.1),
+        "pin_shape": (-1.0, 0.7),
+    },
 }
 
 

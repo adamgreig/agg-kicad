@@ -1,0 +1,24 @@
+description: uBlox MAX-M8Q GPS Receiver
+footprint: agg:MAX-M8Q
+name: MAX-M8Q
+ordercodes: []
+datasheet: https://www.u-blox.com/sites/default/files/MAX-M8-FW3_DataSheet_%28UBX-15031506%29.pdf
+pins:
+- - - [VCC, 8, pwrin]
+    - [VCC_IO, 7, pwrin]
+    - [V_BCKP, 6, pwrin]
+    - [GND, 1, pwrin]
+    - [GND, 10, pwrin]
+    - [GND, 12, pwrin]
+  - - [~RESET, 9, in]
+    - [~SAFEBOOT, 18, in]
+    - [EXTINT, 5, in]
+    - [TIMEPULSE, 4, out]
+- - - [SDA, 16, bidi]
+    - [SCL, 17, bidi]
+  - - [RXD, 3, in]
+    - [TXD, 2, in]
+  - - [LNA_EN, 13, out]
+    - [V_ANT, 15, pwrin]
+    - [VCC_RF, 14, pwrout]
+  - - [RF_IN, 11, in]
