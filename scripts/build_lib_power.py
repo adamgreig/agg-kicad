@@ -14,7 +14,7 @@ PWR_NAMES = [
 ]
 
 GND_NAMES = [
-    "GND", "AGND", "DGND", "PGND",
+    "GND", "AGND", "DGND", "PGND", "CHASSIS", "EARTH"
 ]
 
 
