@@ -561,6 +561,17 @@ config = {
         },
     },
 
+    # DFN-10-SL18860DC
+    "DFN-10-SL18860DC": {
+        "rows": 2,
+        "pins": 10,
+        "pin_pitch": 0.4,
+        "row_pitch": 1.2,
+        "pad_shape": (0.6, 0.2),
+        "chip_shape": (1.4, 2.0),
+        "pin_shape": (-0.4, 0.2),
+    },
+
     # DFN-12
     # For LTC3535 / LT package DD
     # IPC-7351B: DFN45P300X300X75-13N

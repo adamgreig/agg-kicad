@@ -1,0 +1,16 @@
+name: SL18860DC
+datasheet: http://www.silabs.com/Support%20Documents/TechnicalDocs/SL18860.pdf
+description: 3-Channel Clock Distribution Buffer
+ordercodes: [["Mouser", "634-SL18860DC"]]
+footprint: agg:DFN-10-SL18860DC
+pins:
+- - - [VDD, 2, pwrin]
+    - [VSS, 1, pwrin]
+  - - [CLKIN, 3, in]
+    - [OE_OSC, 4, out]
+  - - [OE1, 6, in]
+    - [OE2, 7, in]
+    - [OE3, 5, in]
+- - - [CLKOUT1, 8, out]
+    - [CLKOUT2, 9, out]
+    - [CLKOUT3, 10, out]
