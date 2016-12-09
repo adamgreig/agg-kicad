@@ -1,0 +1,16 @@
+name: CS2100-CP
+description: Fractional-N Clock Multiplier
+datasheet: https://www.cirrus.com/en/pubs/proDatasheet/CS2100-CP_F3.pdf
+ordercodes: [["Mouser", "777-CS2100CP-CZZ"]]
+footprint: agg:MSOP-10
+pins:
+- - - [VD, 1, pwrin]
+    - [GND, 2, pwrin]
+  - - [CLK_IN, 5, in]
+  - - [XTO, 6, out]
+    - [XTI/REF_CLK, 7, in]
+- - - [CLK_OUT, 3, out]
+    - [AUX_OUT, 4, out]
+  - - [SDA/CDIN, 10, bidi]
+    - [SCL/CCLK, 9, in]
+    - [AD0/~CS, 8, in]
