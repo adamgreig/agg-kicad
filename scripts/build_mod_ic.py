@@ -1023,6 +1023,17 @@ config = {
         "chip_shape": (9.7, 10.1),
         "pin_shape": (-1.0, 0.7),
     },
+
+    # Coilcraft FA267x
+    "FA267x": {
+        "rows": 2,
+        "pins": 4,
+        "pin_pitch": 2.5,
+        "row_pitch": 14.18,
+        "pad_shape": (2.03, 1.27),
+        "chip_shape": (10.5, 12.7),
+        "pin_shape": (2.37, 0.60),
+    },
 }
 
 
