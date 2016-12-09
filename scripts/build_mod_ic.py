@@ -1034,6 +1034,17 @@ config = {
         "chip_shape": (10.5, 12.7),
         "pin_shape": (2.37, 0.60),
     },
+
+    # Vishay VO718A optocoupler, SMD-4 package, option 7
+    "VO618A-SMD-4-7": {
+        "rows": 2,
+        "pins": 4,
+        "pin_pitch": 2.54,
+        "row_pitch": 9.52,
+        "pad_shape": (1.52, 1.78),
+        "chip_shape": (7.62, 4.58),
+        "pin_shape": (1.27, 1.0),
+    },
 }
 
 
