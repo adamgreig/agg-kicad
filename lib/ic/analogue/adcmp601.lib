@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# ADCMP601
+#
+DEF ADCMP601 IC 0 40 Y N 1 F N
+F0 "IC" 260 240 50 H V L CNN
+F1 "ADCMP601" 270 -110 50 H V L CNN
+F2 "agg:SC-70-6" 0 -420 50 H I C CNN
+F3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP600_601_602.pdf" 0 -350 50 H I C CNN
+F4 "1331025" 0 -280 50 H I C CNN "Farnell"
+DRAW
+T 0 40 80 40 0 0 0 + Normal 0 C C
+T 0 40 -70 40 0 0 0 - Normal 0 C C
+T 900 230 -120 40 0 0 0 GND Normal 0 C C
+T 900 130 -210 40 0 0 0 HYS Normal 0 L C
+T 900 230 130 40 0 0 0 VCC Normal 0 C C
+P 2 0 0 0 200 -100 200 -50 N
+P 2 0 0 0 200 100 200 50 N
+P 4 0 0 0 300 0 0 -150 0 150 300 0 f
+X Q 1 400 0 100 L 50 50 0 1 O
+X GND 2 200 -200 100 U 50 50 0 1 W
+X + 3 -100 100 100 R 50 50 0 1 I
+X - 4 -100 -100 100 R 50 50 0 1 I
+X LE/HYS 5 100 -200 100 U 50 50 0 1 I
+X VCC 6 200 200 100 D 50 50 0 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library
