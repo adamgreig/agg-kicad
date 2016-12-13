@@ -302,6 +302,24 @@ config = {
         },
     },
 
+    # LQFP-144 from JEDEC MS-026BFB
+    # IPC-7351B: QFP50P2200X2200X160-144N
+    "LQFP-144": {
+        "rows": 4,
+        "pins": 144,
+        "pin_pitch": 0.5,
+        "row_pitch": 21.4,
+        "pad_shape": (1.5, 0.3),
+        "chip_shape": (20.2, 20.2),
+        "pin_shape": (1.0, 0.27),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-144_20x20mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # UFQFPN-48 from JEDEC MO-220
     # Modified to meet the ST ECOPACK package of the same name:
     #   * Row pitch is 6.75mm instead of 7.0mm
