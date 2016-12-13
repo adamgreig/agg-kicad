@@ -2,6 +2,7 @@ name: ER-TFT024-3
 datasheet: http://www.buydisplay.com/download/manual/ER-TFT024-3_Datasheet.pdf
 description: "2.4in TFT LCD Display"
 ordercodes: [["BuyDisplay", "ER-TFT024-3"]]
+footprint: agg:ER-CON50HT-1
 pins:
 - - - [VDDI, 40, pwrin]
     - [VDDI, 41, pwrin]
@@ -14,7 +15,7 @@ pins:
     - [LEDK1, 2, pwrin]
     - [LEDK2, 3, pwrin]
     - [LEDK3, 4, pwrin]
-  - - [NC, 5, nc]
+    - [LEDK4, 5, pwrin]
   - - [IM0, 6, in]
     - [IM1, 7, in]
     - [IM2, 8, in]
