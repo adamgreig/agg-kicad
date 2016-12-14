@@ -1,0 +1,15 @@
+name: TPA301
+datasheet: http://www.ti.com/lit/ds/symlink/tpa301.pdf
+description: 350mW Mono Audio Power Amplifier
+ordercodes:
+  - [Farnell, '2342287']
+package: agg:SOIC-8
+pins:
+- - - [VDD, 6, pwrin]
+    - [GND, 7, pwrin]
+  - - [IN-, 4, in]
+    - [IN+, 3, in]
+- - - [VO+, 5, out]
+    - [VO-, 8, out]
+  - - [BYPASS, 2, in]
+    - [SHUTDOWN, 1, in]

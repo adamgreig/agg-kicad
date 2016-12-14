@@ -202,6 +202,15 @@ config = {
         "silk": "internal_pin1",
     },
 
+    # SOD-123 from IPC-7351B: SOD3716X135N
+    "SOD-123": {
+        "pad_shape": (1.0, 0.8),
+        "pitch": 3.6,
+        "chip_shape": (2.8, 1.8),
+        "pin_shape": (.5, .7),
+        "silk": "internal_pin1",
+    },
+
     # 5.0 x 3.2 mm 2-pin crystal
     "XTAL-50x32": {
         "pad_shape": (1.9, 2.4),
