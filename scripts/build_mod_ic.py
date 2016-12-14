@@ -237,6 +237,24 @@ config = {
         },
     },
 
+    # SSOP-20 from JEDEC MO-150AE
+    # IPC-7351B: SOP65P780X200-20N
+    "SSOP-20": {
+        "rows": 2,
+        "pins": 20,
+        "pin_pitch": 0.65,
+        "row_pitch": 7.0,
+        "pad_shape": (1.85, 0.45),
+        "chip_shape": (5.6, 7.2),
+        "pin_shape": (1.3, 0.38),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/SSOP-20_5.3x7.2mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # LQFP-32 from JEDEC MS-026BBA
     "LQFP-32": {
         "rows": 4,

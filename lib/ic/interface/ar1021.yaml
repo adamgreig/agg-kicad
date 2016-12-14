@@ -1,0 +1,27 @@
+name: AR1021
+description: Resistive Touch Screen Controller
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/40001393C.pdf
+footprint: agg:SSOP-20
+ordercodes:
+  - [Farnell, '2218568']
+pins:
+- - - [VDD, 1, pwrin]
+    - [VSS, 20, pwrin]
+  - - [M1, 2, in]
+    - [M2, 4, in]
+  - - [SIQ, 6, out]
+    - [SS, 8, in]
+    - [SDO, 9, out]
+    - [SCK/SCL, 11, in]
+    - [SDI/SDA, 13, bidi]
+  - - [WAKE, 5, out]
+- - - [X+, 18, out]
+    - [SX+, 14, in]
+    - [X-, 19, out]
+    - [5WSX-, 17, in]
+  - - [Y+, 15, out]
+    - [SY+, 7, in]
+    - [Y-, 16, out]
+    - [SY-, 3, in]
+  - - [NC, 12, nc]
+    - [NC, 10, nc]
