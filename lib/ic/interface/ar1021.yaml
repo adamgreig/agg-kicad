@@ -11,7 +11,7 @@ pins:
     - [M2, 4, in]
   - - [SIQ, 6, out]
     - [SS, 8, in]
-    - [SDO, 9, out]
+    - [SDO, 9, tri]
     - [SCK/SCL, 11, in]
     - [SDI/SDA, 13, bidi]
   - - [WAKE, 5, out]
