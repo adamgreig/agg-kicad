@@ -990,6 +990,27 @@ config = {
         },
     },
 
+    # VQFN-32 from BQ40Z60
+    # IPC-7351B: QFN26P500X500X100-33N
+    "QFN-32-EP-TI": {
+        "rows": 4,
+        "pins": 32,
+        "pin_pitch": 0.5,
+        "row_pitch": 2.8,
+        "pad_shape": (0.6, 0.25),
+        "ep_shape": (3.45, 3.45),
+        "ep_paste_shape": (1.5, 1.5, 0.2, 0.2),
+        "ep_vias": (0.2, 0.3, 0.9),
+        "chip_shape": (5.0, 5.0),
+        "pin_shape": (-0.4, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-32-1EP_3x3mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # XTAL 2.0x2.5mm
     "XTAL-25x20": {
         "rows": 2,
