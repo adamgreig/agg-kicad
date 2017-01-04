@@ -1,0 +1,51 @@
+datasheet: http://www.ti.com/lit/ds/symlink/bq40z60.pdf
+description: Programmable Battery Management Unit
+footprint: agg:QFN-32-EP-TI
+name: BQ40Z60
+ordercodes:
+- [Farnell, '2471154']
+pins:
+- - - [ACFET, 29, out]
+    - [ACP, 31, in]
+
+  - - [VCC, 22, pwrin]
+    - [PBI, 2, passive]
+    - [VSS, 9, pwrin]
+    - [VSS, EP, pwrin]
+    - [PGND, 24, pwrin]
+
+  - - [TS1, 10, in]
+    - [TS2, 11, in]
+    - [TS3, 12, in]
+    - [TS4, 13, in]
+
+  - - [ALERT, 14, od]
+    - [SYSPRES, 15, in]
+
+  - - [SMBD, 16, od]
+    - [SMBC, 17, od]
+
+- - - [HIDRV, 27, out]
+    - [PH, 26, in]
+    - [LODRV, 25, out]
+
+  - - [HSRP, 20, in]
+    - [HSRN, 19, in]
+
+  - - [BTST, 28, passive]
+    - [REGN, 23, out]
+    - [VFB, 18, in]
+
+  - - [AFEFUSE, 21, out]
+    - [DSG, 30, out]
+    - [CHG, 32, out]
+
+  - - [BAT, 1, pwrin]
+    - [VC4, 3, in]
+    - [VC3, 4, in]
+    - [VC2, 5, in]
+    - [VC1, 6, in]
+
+  - - [SRP, 8, in]
+    - [SRN, 7, in]
+
