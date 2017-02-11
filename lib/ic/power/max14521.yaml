@@ -3,7 +3,7 @@ description: I2C Quad EL lamp driver
 footprint: agg:QFN-24-EP-MAX
 name: MAX14521
 ordercodes:
-- [Farnell, '']
+- [Farnell, '2514397']
 pins:
 
 - - - [VDD, 9, pwrin]
