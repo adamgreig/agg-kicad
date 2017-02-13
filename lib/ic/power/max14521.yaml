@@ -1,0 +1,39 @@
+datasheet: https://datasheets.maximintegrated.com/en/ds/MAX14521E.pdf
+description: I2C Quad EL lamp driver
+footprint: agg:QFN-24-EP-MAX
+name: MAX14521
+ordercodes:
+- [Farnell, '2514397']
+pins:
+
+- - - [VDD, 9, pwrin]
+    - [GND, 15, pwrin]
+    - [GND, EP, pwrin]
+    - [IC, 14, pwrin]
+
+  - - [SDA, 10, od]
+    - [SCL, 11, in]
+    - [A0, 7, in]
+    - [A1, 8, in]
+
+  - - [RB, 12, in]
+
+  - - [NC, 2, nc]
+    - [NC, 4, nc]
+    - [NC, 16, nc]
+    - [NC, 18, nc]
+    - [NC, 20, nc]
+    - [NC, 22, nc]
+    - [NC, 24, nc]
+
+- - - [CS, 3, passive]
+    - [PGND, 6, pwrin]
+    - [LX, 5, passive]
+
+  - - [EL1, 1, pwrout]
+    - [EL2, 23, pwrout]
+    - [EL3, 19, pwrout]
+    - [EL4, 17, pwrout]
+    - [COM, 21, pwrout]
+
+  - - [AUX, 13, in]
