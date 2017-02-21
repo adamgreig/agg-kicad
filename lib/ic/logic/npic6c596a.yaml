@@ -1,0 +1,27 @@
+datasheet: http://assets.nexperia.com/documents/data-sheet/NPIC6C596A.pdf
+description: 8-bit serial-to-parallel open drain power shift register
+footprint: agg:TSSOP-16
+name: NPIC6C596A
+ordercodes:
+- [Farnell, '2445196']
+pins:
+- - - [VCC, 1, pwrin]
+    - [GND, 16, pwrin]
+
+  - - [~MR, 7, in]
+    - [~OE, 8, in]
+
+  - - [DS, 2, in]
+    - [SHCP, 15, in]
+    - [STCP, 10, in]
+
+- - - [Q0, 3, od]
+    - [Q1, 4, od]
+    - [Q2, 5, od]
+    - [Q3, 6, od]
+    - [Q4, 11, od]
+    - [Q5, 12, od]
+    - [Q6, 13, od]
+    - [Q7, 14, od]
+
+  - - [Q7S, 9, out]
