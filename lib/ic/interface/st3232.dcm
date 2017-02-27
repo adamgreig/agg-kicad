@@ -1,0 +1,4 @@
+EESchema-DOCLIB	Version 2.0
+$CMP ST3232
+D RS-232 driver & receiver
+$ENDCMP

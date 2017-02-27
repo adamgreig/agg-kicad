@@ -1,0 +1,28 @@
+datasheet: www.st.com/resource/en/datasheet/st3232b.pdf
+description: RS-232 driver & receiver
+footprint: agg:TSSOP-16
+name: ST3232
+ordercodes:
+- [Farnell, '1366572']
+pins:
+- - - [VCC, 16, pwrin]
+    - [GND, 15, pwrin]
+
+  - - [V+, 2, pwrout]
+    - [V-, 6, pwrout]
+
+  - - [T1IN, 11, in]
+    - [T2IN, 10, in]
+    - [R1OUT, 12, out]
+    - [R2OUT, 9, out]
+
+- - - [C1+, 1, passive]
+    - [C1-, 3, passive]
+
+  - - [C2+, 4, passive]
+    - [C2-, 5, passive]
+
+  - - [T1OUT, 14, out]
+    - [T2OUT, 7, out]
+    - [R1IN, 13, in]
+    - [R2IN, 8, in]
