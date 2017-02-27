@@ -52,9 +52,9 @@ def side_pth_refs(name):
     out = []
     ctyd_h = 8.2 + 2*ctyd_gap
     y = ctyd_h / 2.0 + font_halfheight
-    out.append(fp_text("reference", "REF**", (0, -y-2.35),
+    out.append(fp_text("reference", "REF**", (0, -y-2.6),
                "F.Fab", font_size, font_thickness))
-    out.append(fp_text("value", name, (0, y-2.35),
+    out.append(fp_text("value", name, (0, y-2.6),
                "F.Fab", font_size, font_thickness))
     return out
 
@@ -63,8 +63,8 @@ def pth_pads(pins):
     x = (pins - 1)*1.25
     pads = []
     for pin in range(pins):
-        pads.append(pad(pin+1, "thru_hole", "circle", (x, 0), [1.6, 1.6],
-                        ["*.Cu", "*.Mask"], drill=0.8))
+        pads.append(pad(pin+1, "thru_hole", "circle", (x, 0), [1.8, 1.8],
+                        ["*.Cu", "*.Mask"], drill=1.0))
         x -= 2.5
     return pads
 
@@ -72,7 +72,7 @@ def pth_pads(pins):
 def side_pth_silk(pins):
     out = []
     w = silk_width
-    centre = (0, -2.35)
+    centre = (0, -2.6)
     nw, ne, se, sw, _ = draw_square(2.5*(pins-1)+5, 8.2, centre, "F.SilkS", w)
     out.append(fp_line(nw, ne, "F.SilkS", w))
     out.append(fp_line(ne, se, "F.SilkS", w))
@@ -87,7 +87,7 @@ def side_pth_silk(pins):
 def side_pth_fab(pins):
     out = []
     w = fab_width
-    centre = (0, -2.35)
+    centre = (0, -2.6)
 
     # Draw outline
     nw, ne, se, sw, _ = draw_square(2.5*(pins-1)+5, 8.2, centre, "F.Fab", w)
@@ -116,7 +116,7 @@ def side_pth_ctyd(pins):
     grid = 2*ctyd_grid
     w = grid * int(math.ceil(w / (2*ctyd_grid)))
     h = grid * int(math.ceil(h / (2*ctyd_grid)))
-    centre = (0, -2.35)
+    centre = (0, -2.6)
     _, _, _, _, sq = draw_square(w, h, centre, "F.CrtYd", ctyd_width)
     return sq
 
