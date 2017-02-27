@@ -575,6 +575,28 @@ config = {
         },
     },
 
+    # QFN-64 from LTC2975 datasheet
+    # IPC-7351B: QFN50P900X900X75-64N
+    "QFN-64-EP-LTC-UP": {
+        "rows": 4,
+        "pins": 64,
+        "pin_pitch": 0.50,
+        "row_pitch": 8.80,
+        "pad_shape": (0.7, 0.25),
+        "ep_shape": (7.15, 7.15),
+        "ep_mask_shape": (0.73, 0.73, 0.5, 0.5),
+        "ep_paste_shape": (0.73, 0.73, 0.5, 0.5),
+        "ep_vias": (0.4, 0.8, 0.43),
+        "chip_shape": (9.0, 9.0),
+        "pin_shape": (-0.4, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # DFN-10 with EP
     # For MAX5969x
     "DFN-10-EP-MAX": {
