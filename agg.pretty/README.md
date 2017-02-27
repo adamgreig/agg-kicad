@@ -149,7 +149,7 @@ Single switching P-MOSFET, 3mΩ Rdson.
  * Si7157DP
  * http://www.vishay.com/docs/62860/si7157dp.pdf
 
-### SON2x2P
+### SON2x2
 
 Single switching P-MOSFET, 59mΩ Rdson.
 
