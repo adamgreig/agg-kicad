@@ -1,9 +1,9 @@
-datasheet: http://www.ti.com/lit/ds/symlink/tps62152.pdf
-description: 3.3Vout 1A, fixed, Buck Converter
+datasheet: http://www.ti.com/lit/ds/symlink/tps62133.pdf
+description: 5Vout 3A, fixed, Buck Converter
 footprint: agg:QFN-16-EP-TI
-name: TPS62152
+name: TPS62133
 ordercodes:
-- [Farnell, '2382918']
+- [Farnell, '2492469']
 pins:
 - - - [PVIN, 11, pwrin]
     - [PVIN, 12, pwrin]
