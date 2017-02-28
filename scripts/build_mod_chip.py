@@ -253,7 +253,7 @@ config = {
 
     # Coilcraft XFL4020 series Inductors
     "XFL4020": {
-        "pad_shape": (0.98, 3.8),
+        "pad_shape": (0.98, 3.4),
         "pitch": 2.37,
         "chip_shape": (4, 4),
         "pin_shape": (-1.5, 4),
