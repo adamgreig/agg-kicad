@@ -1,4 +1,4 @@
-EESchema-DOCLIB	Version 2.0
+EESchema-DOCLIB  Version 2.0
 $CMP MAX14521
 D I2C Quad EL lamp driver
 $ENDCMP

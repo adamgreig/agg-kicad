@@ -172,7 +172,7 @@ def library(conf):
 
 def documentation(conf):
     out = []
-    out.append("EESchema-DOCLIB\tVersion 2.0")
+    out.append("EESchema-DOCLIB  Version 2.0")
     out.append("$CMP {}".format(conf['name']))
     out.append("D {}".format(conf['description']))
     out.append("$ENDCMP\n")

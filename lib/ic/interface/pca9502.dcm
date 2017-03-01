@@ -1,4 +1,4 @@
-EESchema-DOCLIB	Version 2.0
+EESchema-DOCLIB  Version 2.0
 $CMP PCA9502
 D I2C 8-bit Port Expander
 $ENDCMP

@@ -1,4 +1,4 @@
-EESchema-DOCLIB	Version 2.0
+EESchema-DOCLIB  Version 2.0
 $CMP STM32F405RxTx
 D STM32F4 64 pin TQFP package
 $ENDCMP
