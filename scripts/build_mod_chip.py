@@ -251,6 +251,14 @@ config = {
         "pin_shape": (-0.5, 1.6),
     },
 
+    # Coilcraft XFL4020 series Inductors
+    "XFL4020": {
+        "pad_shape": (0.98, 3.4),
+        "pitch": 2.37,
+        "chip_shape": (4, 4),
+        "pin_shape": (-1.5, 4),
+    },
+
     # DO-214AC (SMA) from Diodes Inc.
     "DO-214AC-SMA": {
         "pad_shape": (2.5, 1.7),
