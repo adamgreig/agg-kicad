@@ -1,0 +1,14 @@
+datasheet: http://www.ti.com/lit/ds/symlink/sn74lvc1g0832.pdf
+description: AND / OR Gate
+footprint: agg:SC-70-6
+name: SN74LVC1G0832
+ordercodes:
+- [Farnell, '2406965']
+pins:
+- - - [VCC, 5, pwrin]
+  - - [A, 1, in]
+    - [B, 3, in]
+    - [C, 6, in]
+- - - [Y, 4, out]
+  - - [GND, 2, pwrin]
+
