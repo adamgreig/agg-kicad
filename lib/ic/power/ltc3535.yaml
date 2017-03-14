@@ -1,6 +1,6 @@
 datasheet: http://cds.linear.com/docs/en/datasheet/3535fa.pdf
 description: LTC3535 Dual DC-DC Converter
-footprint: agg:DFN-12-EP-LT
+footprint: agg:DFN-12-EP-LT-DD
 name: LTC3535
 ordercodes:
 - [Farnell, '1947922']
