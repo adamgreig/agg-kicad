@@ -651,10 +651,10 @@ config = {
         "pin_shape": (-0.4, 0.2),
     },
 
-    # DFN-12
+    # DFN-12 3mm x 3mm
     # For LTC3535 / LT package DD
     # IPC-7351B: DFN45P300X300X75-13N
-    "DFN-12-EP-LT": {
+    "DFN-12-EP-LT-DD": {
         "rows": 2,
         "pins": 12,
         "pin_pitch": 0.45,
@@ -668,6 +668,27 @@ config = {
             "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-12-1EP_3x3mm_Pitch0.45mm.wrl",
             "offset": (0, 0, 0),
             "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
+    # DFN-12 4mm x 4mm
+    # For LTC3083 / LT package DF
+    # IPC-7351B: DFN45P400X400X75-13N
+    "DFN-12-EP-LT-DF": {
+        "rows": 2,
+        "pins": 12,
+        "pin_pitch": 0.5,
+        "row_pitch": 3.8,
+        "pad_shape": (0.70, 0.25),
+        "ep_shape": (2.65, 3.38),
+        "ep_paste_shape": (2.2, 1.3, 0, 0.4),
+        "chip_shape": (4.1, 4.1),
+        "pin_shape": (-0.40, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-12-1EP_3x3mm_Pitch0.45mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1.33, 1.33, 1),
             "rotate": (0, 0, 0),
         },
     },
