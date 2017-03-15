@@ -1,0 +1,53 @@
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/00001692C.pdf
+description: USB 2.0 Hi-Speed Hub Controller
+footprint: agg:QFN-36-EP-MICROCHIP-SQFN
+name: USB251xB
+ordercodes:
+  - [Farnell, '2534612']
+pins:
+- - - [VDD33, 15, pwrin]
+    - [VDD33, 23, pwrin]
+    - [VDDA33, 5, pwrin]
+    - [VDDA33, 10, pwrin]
+    - [VDDA33, 29, pwrin]
+    - [VDDA33, 36, pwrin]
+
+  - - [VSS, EP, pwrin]
+
+  - - [VBUS_DET, 27, in]
+    - [USBDM_UP, 30, bidi]
+    - [USBDP_UP, 31, bidi]
+
+  - - [XTALOUT, 32, out]
+    - [XTALIN/CLKIN, 33, in]
+
+  - - [SUS_IND/NON_REM0, 28, bidi]
+    - [SDA/NON_REM1, 22, bidi]
+    - [SCL/CFG_SEL0, 24, bidi]
+    - [HS_IND/CFG_SEL1, 25, bidi]
+
+  - - [TEST, 11, nc]
+    - [~RESET, 26, in]
+    - [RBIAS, 35, passive]
+    - [PLLFILT, 34, passive]
+    - [CRFILT, 14, passive]
+
+
+- - - [USBDM_DN1, 1, bidi]
+    - [USBDP_DN1, 2, bidi]
+  - - [USBDM_DN2, 3, bidi]
+    - [USBDP_DN2, 4, bidi]
+  - - [USBDM_DN3, 6, bidi]
+    - [USBDP_DN3, 7, bidi]
+  - - [USBDM_DN4, 8, bidi]
+    - [USBDP_DN4, 9, bidi]
+
+  - - [PRTPWR1/BC_EN1, 12, bidi]
+    - [~OCS1, 13, in]
+  - - [PRTPWR2/BC_EN2, 16, bidi]
+    - [~OCS2, 17, in]
+  - - [PRTPWR3/BC_EN3, 18, bidi]
+    - [~OCS3, 19, in]
+  - - [PRTPWR4/BC_EN4, 20, bidi]
+    - [~OCS4, 21, in]
+
