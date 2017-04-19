@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP OSCILLATOR_4
+D Packaged crystal oscillator, 4 pins
+$ENDCMP
+#
+#End Doc Library

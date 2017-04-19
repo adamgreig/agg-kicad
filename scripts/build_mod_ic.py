@@ -1168,6 +1168,28 @@ config = {
         "chip_shape": (7.62, 4.58),
         "pin_shape": (1.27, 1.0),
     },
+
+    # Seiko Epson SG7050CxN SPXO
+    "SG7050CxN": {
+        "rows": 2,
+        "pins": 4,
+        "pin_pitch": 5.08,
+        "row_pitch": 4.2,
+        "pad_shape": (2.0, 1.8),
+        "chip_shape": (5.0, 7.0),
+        "pin_shape": (-1.1, 1.4)
+    },
+
+    # Seiko Epson SG5052CxN SPXO
+    "SG5052CxN": {
+        "rows": 2,
+        "pins": 4,
+        "pin_pitch": 2.54,
+        "row_pitch": 2.2,
+        "pad_shape": (1.5, 1.6),
+        "chip_shape": (3.2, 5.0),
+        "pin_shape": (-1.0, 1.2)
+    }
 }
 
 
