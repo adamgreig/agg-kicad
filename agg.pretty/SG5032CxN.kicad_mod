@@ -1,7 +1,7 @@
 
-(module SG5052CxN 
+(module SG5032CxN 
   (layer F.Cu) 
-  (tedit 58C5D5C7) 
+  (tedit 58F751A2) 
   (fp_text reference REF** 
     (at 0 -3.4500) 
     (layer F.Fab) 
@@ -9,7 +9,7 @@
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (fp_text value SG5052CxN 
+  (fp_text value SG5032CxN 
     (at 0 3.4500) 
     (layer F.Fab) 
     (effects 

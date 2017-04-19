@@ -1180,8 +1180,8 @@ config = {
         "pin_shape": (-1.1, 1.4)
     },
 
-    # Seiko Epson SG5052CxN SPXO
-    "SG5052CxN": {
+    # Seiko Epson SG5032CxN SPXO
+    "SG5032CxN": {
         "rows": 2,
         "pins": 4,
         "pin_pitch": 2.54,
