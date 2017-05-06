@@ -100,8 +100,10 @@
     (uvia_drill 0.1)
   )
 
-  (module agg:M2.5_HOLE (layer F.Cu) (tedit 590D9BCB) (tstamp 591E792A)
+  (module agg:M2.5_HOLE locked (layer F.Cu) (tedit 590D9BCB) (tstamp 591E792A)
     (at 115.5 104.5)
+    (solder_mask_margin 1.72)
+    (clearance 1.72)
     (fp_text reference REF** (at 0 -2.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -115,8 +117,10 @@
     (pad "" np_thru_hole circle (at 0 0) (size 2.75 2.75) (drill 2.75) (layers *.Cu F.Mask))
   )
 
-  (module agg:M2.5_HOLE (layer F.Cu) (tedit 590D9BCB) (tstamp 591E78DC)
+  (module agg:M2.5_HOLE locked (layer F.Cu) (tedit 590D9BCB) (tstamp 591E78DC)
     (at 173.5 104.5)
+    (solder_mask_margin 1.72)
+    (clearance 1.72)
     (fp_text reference REF** (at 0 -2.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -130,8 +134,10 @@
     (pad "" np_thru_hole circle (at 0 0) (size 2.75 2.75) (drill 2.75) (layers *.Cu F.Mask))
   )
 
-  (module agg:M2.5_HOLE (layer F.Cu) (tedit 590D9BCB) (tstamp 591E787A)
+  (module agg:M2.5_HOLE locked (layer F.Cu) (tedit 590D9BCB) (tstamp 591E787A)
     (at 173.5 81.5)
+    (solder_mask_margin 1.72)
+    (clearance 1.72)
     (fp_text reference REF** (at 0 -2.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -145,8 +151,10 @@
     (pad "" np_thru_hole circle (at 0 0) (size 2.75 2.75) (drill 2.75) (layers *.Cu F.Mask))
   )
 
-  (module agg:M2.5_HOLE (layer F.Cu) (tedit 590D9BCB) (tstamp 591E77F5)
+  (module agg:M2.5_HOLE locked (layer F.Cu) (tedit 590D9BCB) (tstamp 591E77F5)
     (at 115.5 81.5)
+    (solder_mask_margin 1.72)
+    (clearance 1.72)
     (fp_text reference REF** (at 0 -2.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -160,7 +168,7 @@
     (pad "" np_thru_hole circle (at 0 0) (size 2.75 2.75) (drill 2.75) (layers *.Cu F.Mask))
   )
 
-  (module agg:DIL-254P-40 (layer F.Cu) (tedit 57656D66) (tstamp 5916299A)
+  (module agg:DIL-254P-40 locked (layer F.Cu) (tedit 57656D66) (tstamp 5916299A)
     (at 144.5 81.5)
     (fp_text reference REF** (at 0.4 3.8) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
