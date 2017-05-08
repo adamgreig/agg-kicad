@@ -4,3 +4,5 @@ agg-kicad-cache.lib
 *.bak
 *.bck
 fp-lib-table
+templates/*.pro
+templates/*.kicad_pcb-bak
