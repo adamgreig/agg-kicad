@@ -75,7 +75,7 @@
   (pad "" np_thru_hole circle (at -29 11.5) (size 2.75 2.75) (drill 2.75) (layers *.Cu *.Mask)
     (solder_mask_margin 1.72) (clearance 1.72))
   (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_2x20.wrl
-    (at (xyz 0 -0.4527559055118111 0))
+    (at (xyz 0 0.4527559055118111 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
