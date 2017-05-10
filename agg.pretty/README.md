@@ -9,11 +9,13 @@
 * Reference and Value fields:
     * On the `F.Fab` layer (checked automatically)
     * May only be hidden for non-functional parts such as mounting holes
-    * As close as possible to the part without overlapping
-    * If the part is usually arrayed vertically, place on left and right
-    * If the part is usually arrayed horizontally, place on top and bottom
+    * Place just outside the part courtyard, without overlapping the part
+    * If the part is usually arrayed vertically, place on left and right, with 
+      text running vertically
+    * If the part is usually arrayed horizontally, place on top and bottom, 
+      with text horizontal
     * Otherwise, prefer top and bottom
-    * Reference on top or left
+    * Reference on top or left, value on bottom or right
 * Fabrication Layer:
     * Include reasonably accurate part drawing
 * Courtyard:
