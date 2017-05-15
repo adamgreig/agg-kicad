@@ -6,7 +6,6 @@ Licensed under the MIT licence, see LICENSE file for details.
 Create a range of dual and quad SMD IC packages.
 
 TODO:
-    * Support non-square 4-row packages
     * Support other pad shapes, e.g. oval/half-oval
 """
 
@@ -25,11 +24,18 @@ from __future__ import print_function, division
 #
 # Valid inner keys are:
 #   rows: either 2 or 4, for dual or quad packages.
-#   pins: total number of pins.
+#   pins: total number of pins
+#   pins_first_row: optional when rows is 4, number of pins in row containing
+#                   pin 1, for rectangular chips.
+#                   Must also give row_pitch as a tuple.
+#                   Defaults to pins/rows i.e. a square chip.
+#                   Not applicable to 2-row chips.
 #   skip_pins: optional, list of pin numbers to skip (leaving remaining pins in
 #              sequential order). Generates packages like SOT-23-3.
-#   pin_pitch: spacing between adjacent pins.
-#   row_pitch: spacing between rows of pins.
+#   pin_pitch: spacing between centres of adjacent pins.
+#   row_pitch: spacing between centres of rows of pins, or tuple of
+#              (horizontal pitch, vertical pitch) only if pins_first_row is
+#              given, where horizontal pitch is pin 1 to its opposite pin.
 #   pad_shape: (width, height) of a pad for a pin.
 #   ep_shape: (width, height) of an exposed pad underneath the chip.
 #             Leave out this parameter to skip the exposed pad.
@@ -595,6 +601,21 @@ config = {
             "scale": (1, 1, 1),
             "rotate": (0, 0, 0),
         },
+    },
+
+    # VQFN32-9 for Infineon BGT24MTR family
+    "QFN-32-BGT24MTR": {
+        "rows": 4,
+        "pins": 32,
+        "pins_first_row": 10,
+        "pin_pitch": 0.5,
+        "row_pitch": (4.15, 5.15),
+        "pad_shape": (.85, .3),
+        "ep_shape": (2.9, 3.9),
+        "ep_paste_shape": (1, 1, .5, .5),
+        "ep_vias": (.3, .6, 0.7),
+        "chip_shape": (4.5, 5.5),
+        "pin_shape": (-0.55, 0.25),
     },
 
     # DFN-10 with EP
@@ -1257,21 +1278,33 @@ def pin_centres(conf):
     Generates centres for a 4-row chip, just ignore top/bottom rows if 2 rows.
     Returns (leftrow, bottomrow, rightrow, toprow).
     """
-    pins_per_row = conf['pins'] // conf['rows']
-    row_length = (pins_per_row - 1) * conf['pin_pitch']
+
+    # Handle non-square chips differently
+    if "pins_first_row" in conf:
+        v_pins_per_row = conf['pins_first_row']
+        h_pins_per_row = (conf['pins'] - 2*v_pins_per_row) // 2
+        hx = conf['row_pitch'][0] / 2.0
+        vx = conf['row_pitch'][1] / 2.0
+    else:
+        h_pins_per_row = v_pins_per_row = conf['pins'] // conf['rows']
+        hx = vx = conf['row_pitch'] / 2.0
+    h_row_length = (h_pins_per_row - 1) * conf['pin_pitch']
+    v_row_length = (v_pins_per_row - 1) * conf['pin_pitch']
 
     left_row = []
     bottom_row = []
     right_row = []
     top_row = []
 
-    x = conf['row_pitch'] / 2.0
-    y = -row_length / 2.0
-    for pin in range(pins_per_row):
-        left_row.append((-x, y))
-        right_row.insert(0, (x, y))
-        top_row.insert(0, (y, -x))
-        bottom_row.append((y, x))
+    y = -v_row_length / 2.0
+    for pin in range(v_pins_per_row):
+        left_row.append((-hx, y))
+        right_row.insert(0, (hx, y))
+        y += conf['pin_pitch']
+    y = -h_row_length / 2.0
+    for pin in range(h_pins_per_row):
+        top_row.insert(0, (y, -vx))
+        bottom_row.append((y, vx))
         y += conf['pin_pitch']
 
     return left_row, bottom_row, right_row, top_row
@@ -1368,7 +1401,11 @@ def refs(conf):
     if conf['rows'] == 2:
         ctyd_h = conf['chip_shape'][1] + 2 * ctyd_gap
     elif conf['rows'] == 4:
-        ctyd_h = conf['row_pitch'] + conf['pad_shape'][0] + 2 * ctyd_gap
+        # Handle non-square chips differently
+        if isinstance(conf['row_pitch'], float):
+            ctyd_h = conf['row_pitch'] + conf['pad_shape'][0] + 2 * ctyd_gap
+        else:
+            ctyd_h = conf['row_pitch'][1] + conf['pad_shape'][0] + 2 * ctyd_gap
 
     y = ctyd_h/2.0 + font_halfheight
 
@@ -1498,23 +1535,29 @@ def external_silk(conf):
         out.append(fp_line((-x, y), (x, y), l, w))
         out.append(fp_arc((-x+r, -y), (-x, -y), 180, l, w))
     elif rows == 4:
-        pins = conf['pins'] / rows
-        pin_y = ((pins - 1) * conf['pin_pitch']) / 2.0
-        chip_y = chip_shape[1] / 2.0
-        delta_y = chip_y - pin_y
-        r = delta_y - silk_pad_egap
+        if 'pins_first_row' in conf:
+            v_pins_per_row = conf['pins_first_row']
+            h_pins_per_row = (conf['pins'] - 2*v_pins_per_row) // 2
+            pin_x = ((h_pins_per_row - 1) * conf['pin_pitch']) / 2.0
+            pin_y = ((v_pins_per_row - 1) * conf['pin_pitch']) / 2.0
+        else:
+            pins_per_row = conf['pins'] / rows
+            pin_x = pin_y = ((pins_per_row - 1) * conf['pin_pitch']) / 2.0
+        dx = x - pin_x - silk_pad_egap
+        dy = y - pin_y - silk_pad_egap
 
         # NW
-        out.append(fp_line((-x, -y+r), (-x+r, -y), l, w))
+        d_pin1 = min(dx, dy)
+        out.append(fp_line((-x, -y+d_pin1), (-x+d_pin1, -y), l, w))
         # NE
-        out.append(fp_line((x-r, -y), (x, -y), l, w))
-        out.append(fp_line((x, -y), (x, -y+r), l, w))
+        out.append(fp_line((x-dx, -y), (x, -y), l, w))
+        out.append(fp_line((x, -y), (x, -y+dy), l, w))
         # SE
-        out.append(fp_line((x-r, y), (x, y), l, w))
-        out.append(fp_line((x, y), (x, y-r), l, w))
+        out.append(fp_line((x-dx, y), (x, y), l, w))
+        out.append(fp_line((x, y), (x, y-dy), l, w))
         # SW
-        out.append(fp_line((-x+r, y), (-x, y), l, w))
-        out.append(fp_line((-x, y), (-x, y-r), l, w))
+        out.append(fp_line((-x+dx, y), (-x, y), l, w))
+        out.append(fp_line((-x, y), (-x, y-dy), l, w))
 
     return out
 
@@ -1535,11 +1578,17 @@ def ctyd(conf):
     pad_w, pad_h = conf['pad_shape']
     chip_w, chip_h = conf['chip_shape']
 
-    width = row_pitch + pad_w + 2 * ctyd_gap
     if conf['rows'] == 2:
+        width = row_pitch + pad_w + 2 * ctyd_gap
         height = chip_h + 2 * ctyd_gap
     elif conf['rows'] == 4:
-        height = width
+        # We need to handle non-square chips slightly differently,
+        # depending on whether row_pitch is given as (w, h) or just a scalar.
+        if isinstance(row_pitch, float):
+            height = width = row_pitch + pad_w + 2 * ctyd_gap
+        else:
+            width = row_pitch[0] + pad_w + 2 * ctyd_gap
+            height = row_pitch[1] + pad_w + 2 * ctyd_gap
 
     # Ensure courtyard lies on a specified grid
     # (double the grid since we halve the width/height)
