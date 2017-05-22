@@ -1,0 +1,4 @@
+EESchema-DOCLIB  Version 2.0
+$CMP LAN8720A
+D RMII 10/100 Ethernet Transceiver
+$ENDCMP
