@@ -2,7 +2,7 @@ name: RJMG16x
 datasheet: http://www.farnell.com/datasheets/71713.pdf
 description: Shielded 8P8C Modular Connector with Magnetics and LEDs
 ordercodes: [["Farnell", "1357436"]]
-footprint: agg:RJMG16x
+footprint: agg:RJMG16X
 pins:
 - - - [LED1_C, 7, passive]
     - [LED1_A, 8, passive]
