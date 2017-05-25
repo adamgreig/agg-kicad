@@ -30,27 +30,17 @@ parts = {}
 missing_order_code = []
 missing_footprint = []
 inconsistent_order_code = {}
-filter_parts = False
-included_parts = []
-excluded_parts = []
 quantity_multiplier = 1
 
-if args.include:
-    included_parts = args.include
-    filter_parts = True
-if args.exclude:
-    excluded_parts = args.exclude
-    filter_parts = True
 if args.quantity:
     quantity_multiplier = args.quantity
 
 
 def ignore_part(ref):
-    if filter_parts:
-        if included_parts and ref not in included_parts:
-            return True
-        elif excluded_parts and ref in excluded_parts:
-            return True
+    if args.include and ref not in args.include:
+        return True
+    elif args.exclude and ref in args.exclude:
+        return True
     return False
 
 
