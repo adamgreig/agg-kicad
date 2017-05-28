@@ -1,4 +1,4 @@
-update=Sun 20 Aug 2017 12:19:31 GMT
+update=Tue 22 Aug 2017 08:18:10 GMT
 version=1
 last_client=kicad
 [pcbnew]
@@ -192,6 +192,7 @@ LibName160=lib/passive/usblc6-2p6
 LibName161=lib/passive/xtal
 LibName162=lib/power/power
 LibName163=lib/power/pwr
-LibName164=lib/ui/rotenc
-LibName165=lib/ui/sounder
-LibName166=lib/ui/switch
+LibName164=lib/sensor/bme280
+LibName165=lib/ui/rotenc
+LibName166=lib/ui/sounder
+LibName167=lib/ui/switch
