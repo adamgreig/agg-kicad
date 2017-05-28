@@ -1,0 +1,33 @@
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf
+description: RMII 10/100 Ethernet Transceiver 
+footprint: agg:QFN-24-EP-MICROCHIP
+name: LAN8720A
+ordercodes:
+- [Farnell, '2292577']
+pins:
+- - - [XTAL2, 4, bidi]
+    - [XTAL1/CLKIN, 5, in]
+  - - [~INT~/REFCLKO, 14, bidi]
+    - [~RST~, 15, in]
+  - - [MDIO, 12, bidi]
+    - [MDC, 13, bidi]
+  - - [TXD0, 17, in]
+    - [TXD1, 18, in]
+    - [TXEN, 16, in]
+    - [RXD0/MODE0, 8, bidi]
+    - [RXD1/MODE1, 7, bidi]
+    - [RXER/PHYAD0, 10, bidi]
+    - [CRS_DV/MODE2, 11, bidi]
+- - - [TX+, 21, bidi]
+    - [TX-, 20, bidi]
+    - [RX+, 23, bidi]
+    - [RX-, 22, bidi]
+  - - [LED1/REGOFF, 3, bidi]
+    - [LED2/~INTSEL~, 2, bidi]
+  - - [RBIAS, 24, passive]
+  - - [VDD1A, 19, pwrin]
+    - [VDD2A, 1, pwrin]
+    - [VDDCR, 6, passive]
+    - [VDDIO, 9, pwrin]
+    - [VSS, EP, pwrin]
+
