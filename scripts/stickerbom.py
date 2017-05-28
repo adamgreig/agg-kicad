@@ -335,16 +335,22 @@ class PCB:
 
 
 class BOM:
-    def __init__(self, xmlpath):
+    def __init__(self, xmlpath, include=[], exclude=[]):
         self.tree = ET.parse(xmlpath)
         self.lines = []
         self.suppliers = {}
-        self._find_parts()
+        self._find_parts(include, exclude)
         self._generate_lines()
 
-    def _find_parts(self):
+    def _find_parts(self, include, exclude):
         for comp in self.tree.getroot().iter('comp'):
             ref = comp.get('ref')
+
+            if include and ref not in include:
+                continue
+            if exclude and ref in exclude:
+                continue
+
             val = comp.findtext('value')
             ftp = comp.findtext('footprint')
             fields = {}
@@ -482,13 +488,17 @@ def get_args():
     parser.add_argument("--include-parts-without-footprint",
                         action="store_true",
                         help="Include parts that do not have a footprint.")
+
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument("-i", "--include", nargs='+', help="parts to include")
+    group.add_argument("-e", "--exclude", nargs='+', help="parts to exclude")
     return parser.parse_args()
 
 
 def main():
     args = get_args()
 
-    bom = BOM(args.xmlpath)
+    bom = BOM(args.xmlpath, include=args.include, exclude=args.exclude)
 
     with open(args.xmlpath[:-3] + "kicad_pcb") as f:
         pcb = PCB(sexp.parse(f.read()))
