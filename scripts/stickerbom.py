@@ -27,7 +27,7 @@ class Module:
         # In each layer, store a dict with keys "lines,circs,rects,arcs",
         # each with a list of tuples
         # Note that *.Cu and *.Mask layers need to be handled on render
-        self.graphic_layers = defaultdict(lambda : defaultdict(list))
+        self.graphic_layers = defaultdict(lambda: defaultdict(list))
         self._parse(mod)
 
     def render(self, cr, layers, fallbacklayers=[]):
@@ -59,7 +59,8 @@ class Module:
                     else:
                         cr.stroke()
                 for rect in self.graphic_layers[layer]["rects"]:
-                    cr.rectangle(rect[0][0], rect[0][1], rect[1][0], rect[1][1])
+                    cr.rectangle(rect[0][0], rect[0][1], rect[1][0],
+                                 rect[1][1])
                     if layer.endswith(".Cu"):
                         cr.fill()
                     else:
@@ -164,20 +165,21 @@ class PCB:
         self.edge_arcs = []
         self._parse(board)
 
-    def get_mod_sides(self,refs):
+    def get_mod_sides(self, refs):
         """
         Return a dictionary where the key is a layer name and the value is a
         list of refs on that layer. Normal pcb files should only have modules
         on F.Cu and B.Cu
         """
-        mod_sides=defaultdict(list)
+        mod_sides = defaultdict(list)
         for module in self.modules:
             if module.ref not in refs:
                 continue
             mod_sides[module.layer].append(module.ref)
         return mod_sides
 
-    def render(self, cr, where, max_w, max_h, modlayers=[], modfallbacklayers=[], highlights=None, flip=None):
+    def render(self, cr, where, max_w, max_h, modlayers=[],
+               modfallbacklayers=[], highlights=None, flip=None):
         """
         Render the PCB, with the top left corner at `where`,
         occupying at most `max_w` width and `max_h` height,
@@ -243,7 +245,7 @@ class PCB:
             else:
                 flip_x = -1.0
             cr.scale(flip_x, flip_y)
-            #Scale will flip around current origin, so shift back to TL corner
+            # Scale will flip around current origin, so shift back to TL corner
             cr.translate((2*shift_x - (max_w/scale)) * (-flip_x/2 + 0.5),
                          (2*shift_y - (max_h/scale)) * (-flip_y/2 + 0.5))
 
@@ -259,7 +261,7 @@ class PCB:
         # Render modules
         cr.set_source_rgb(0, 0, 0)
         for module in self.modules:
-            module.render(cr,modlayers,modfallbacklayers)
+            module.render(cr, modlayers, modfallbacklayers)
 
         # Render edge lines
         for line in self.edge_lines:
@@ -563,19 +565,22 @@ def main():
             # if both sides present, split area and draw both
             pcb.render(cr, (label[0]+1, label[1]+14),
                        (args.label_width-4)/2.0, args.label_height-14,
-                       ["F.Fab"], ["F.Cu","*.Cu","F.SilkS"], sides["F.Cu"])
-            pcb.render(cr, (label[0]+3 + (args.label_width-3)/2.0, label[1]+14),
+                       ["F.Fab"], ["F.Cu", "*.Cu", "F.SilkS"], sides["F.Cu"])
+
+            pcb.render(cr, (label[0]+3+(args.label_width-3)/2.0, label[1]+14),
                        (args.label_width-4)/2.0, args.label_height-14,
-                       ["B.Fab"], ["B.Cu","*.Cu","B.SilkS"], sides["B.Cu"], args.flip_vert)
+                       ["B.Fab"], ["B.Cu", "*.Cu", "B.SilkS"], sides["B.Cu"],
+                       args.flip_vert)
 
         elif "F.Cu" in sides:
             pcb.render(cr, (label[0]+1, label[1]+14),
                        args.label_width-2, args.label_height-14,
-                       ["F.Fab"], ["F.Cu","*.Cu","F.SilkS"], sides["F.Cu"])
+                       ["F.Fab"], ["F.Cu", "*.Cu", "F.SilkS"], sides["F.Cu"])
         elif "B.Cu" in sides:
             pcb.render(cr, (label[0]+1, label[1]+14),
                        args.label_width-2, args.label_height-14,
-                       ["B.Fab"], ["B.Cu","*.Cu","B.SilkS"], sides["B.Cu"], args.flip_vert)
+                       ["B.Fab"], ["B.Cu", "*.Cu", "B.SilkS"], sides["B.Cu"],
+                       args.flip_vert)
 
     cr.show_page()
 
