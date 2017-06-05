@@ -6,7 +6,7 @@ Licensed under the MIT licence, see LICENSE file for details.
 """
 
 from __future__ import print_function, division, unicode_literals
-
+from collections import defaultdict
 
 import argparse
 import os
@@ -24,10 +24,14 @@ class Module:
         self.silk_circs = []
         self.rect_pads = []
         self.circ_pads = []
+        # In each layer, store a dict with keys "lines,circs,rects,arcs",
+        # each with a list of tuples
+        # Note that *.Cu and *.Mask layers need to be handled on render
+        self.graphic_layers = defaultdict(lambda : defaultdict(list))
         self._parse(mod)
 
-    def render(self, cr):
-        """"
+    def render(self, cr, layers, fallbacklayers=[]):
+        """
         Render the footprint in the board coordinate system.
         """
         cr.save()
@@ -35,34 +39,31 @@ class Module:
         cr.set_line_width(0.1)
         if len(self.at) == 3:
             cr.rotate(-self.at[2] * math.pi/180)
-        if self.fab_lines or self.fab_circs:
-            for line in self.fab_lines:
-                cr.move_to(*line[0])
-                cr.line_to(*line[1])
-                cr.stroke()
-            for circ in self.fab_circs:
-                r = math.sqrt((circ[0][0] - circ[1][0])**2 +
-                              (circ[0][1] - circ[1][1])**2)
-                cr.new_sub_path()
-                cr.arc(circ[0][0], circ[0][1], r, 0, 2*math.pi)
-        else:
-            for line in self.silk_lines:
-                cr.move_to(*line[0])
-                cr.line_to(*line[1])
-                cr.stroke()
-            for circ in self.silk_circs:
-                r = math.sqrt((circ[0][0] - circ[1][0])**2 +
-                              (circ[0][1] - circ[1][1])**2)
-                cr.new_sub_path()
-                cr.arc(circ[0][0], circ[0][1], r, 0, 2*math.pi)
-                cr.stroke()
-            for rect in self.rect_pads:
-                cr.rectangle(rect[0][0], rect[0][1], rect[1][0], rect[1][1])
-                cr.fill()
-            for circ in self.circ_pads:
-                cr.new_sub_path()
-                cr.arc(circ[0][0], circ[0][1], circ[1], 0, 2*math.pi)
-                cr.fill()
+
+        # Switch to drawing fallback layers if not all drawing layers are
+        # present in graphic_layers
+        if not all(layer in self.graphic_layers for layer in layers):
+            layers = fallbacklayers
+
+        for layer in layers:
+            if layer in self.graphic_layers:
+                for line in self.graphic_layers[layer]["lines"]:
+                    cr.move_to(*line[0])
+                    cr.line_to(*line[1])
+                    cr.stroke()
+                for circ in self.graphic_layers[layer]["circs"]:
+                    cr.new_sub_path()
+                    cr.arc(circ[0][0], circ[0][1], circ[1], 0, 2*math.pi)
+                    if layer.endswith(".Cu"):
+                        cr.fill()
+                    else:
+                        cr.stroke()
+                for rect in self.graphic_layers[layer]["rects"]:
+                    cr.rectangle(rect[0][0], rect[0][1], rect[1][0], rect[1][1])
+                    if layer.endswith(".Cu"):
+                        cr.fill()
+                    else:
+                        cr.stroke()
         cr.restore()
 
     def render_highlight(self, cr):
@@ -93,6 +94,8 @@ class Module:
     def _parse(self, mod):
         self.at = [float(x) for x in sexp.find(mod, "at")[1:]]
         self.bounds = [0, 0, 0, 0]
+        self.layer = sexp.find(mod, "layer")[1]
+
         for text in sexp.find_all(mod, "fp_text"):
             if text[1] == "reference":
                 self.ref = text[2]
@@ -107,33 +110,25 @@ class Module:
 
     def _parse_graphic(self, graphic):
         layer = sexp.find(graphic, "layer")[1]
+        end = [float(x) for x in sexp.find(graphic, "end")[1:]]
+        self._update_bounds(end)
         if graphic[0] == "fp_line":
             start = [float(x) for x in sexp.find(graphic, "start")[1:]]
             self._update_bounds(start)
+            self.graphic_layers[layer]["lines"].append((start, end))
         elif graphic[0] == "fp_circle":
             center = [float(x) for x in sexp.find(graphic, "center")[1:]]
             self._update_bounds(center)
-        end = [float(x) for x in sexp.find(graphic, "end")[1:]]
-        self._update_bounds(end)
-
-        if layer == "F.Fab":
-            if graphic[0] == "fp_line":
-                self.fab_lines.append((start, end))
-            elif graphic[0] == "fp_circle":
-                self.fab_circs.append((center, end))
-        elif layer == "F.SilkS":
-            if graphic[0] == "fp_line":
-                self.silk_lines.append((start, end))
-            elif graphic[0] == "fp_circle":
-                self.silk_circs.append((center, end))
+            r = math.sqrt((center[0] - end[0])**2 +
+                          (center[1] - end[1])**2)
+            self.graphic_layers[layer]["circs"].append((center, r))
 
     def _parse_pad(self, pad):
-        layers = sexp.find(pad, "layers")[1]
-        if "F.Cu" not in layers and "*.Cu" not in layers:
-            return
+        layers = sexp.find(pad, "layers")[1:]
         pad_type = pad[2]
         if pad_type not in ("smd", "thru_hole"):
             return
+
         at = [float(x) for x in sexp.find(pad, "at")[1:]]
         size = [float(x) for x in sexp.find(pad, "size")[1:]]
         drill = sexp.find(pad, "drill")
@@ -145,10 +140,12 @@ class Module:
         topleft = at[0] - size[0]/2, at[1] - size[1]/2
         shape = pad[3]
         if shape in ("rect", "oval"):
-            self.rect_pads.append((topleft, size))
+            for layer in layers:
+                self.graphic_layers[layer]["rects"].append((topleft, size))
             self._update_bounds(at, dx=size[0]/2, dy=size[1]/2)
         elif shape == "circle":
-            self.circ_pads.append((at, size[0]/2))
+            for layer in layers:
+                self.graphic_layers[layer]["circs"].append((at, size[0]/2))
             self._update_bounds(at, dx=size[0]/2, dy=size[0]/2)
         else:
             self._update_bounds(at)
@@ -167,7 +164,20 @@ class PCB:
         self.edge_arcs = []
         self._parse(board)
 
-    def render(self, cr, where, max_w, max_h, highlights=None):
+    def get_mod_sides(self,refs):
+        """
+        Return a dictionary where the key is a layer name and the value is a
+        list of refs on that layer. Normal pcb files should only have modules
+        on F.Cu and B.Cu
+        """
+        mod_sides=defaultdict(list)
+        for module in self.modules:
+            if module.ref not in refs:
+                continue
+            mod_sides[module.layer].append(module.ref)
+        return mod_sides
+
+    def render(self, cr, where, max_w, max_h, modlayers=[], modfallbacklayers=[], highlights=None, flip=None):
         """
         Render the PCB, with the top left corner at `where`,
         occupying at most `max_w` width and `max_h` height,
@@ -188,8 +198,8 @@ class PCB:
         bound_centre_y = hl_bounds[1] + bound_height/2
 
         # Scale to either 1.5:1 or smaller if necessary to fit bounds
-        scale_x = max_w / bound_width
-        scale_y = max_h / bound_height
+        scale_x = max_w / max(bound_width, 0.01)
+        scale_y = max_h / max(bound_height, 0.01)
         scale = min(min(1.5, scale_x), min(1.5, scale_y))
         cr.scale(scale, scale)
 
@@ -223,8 +233,22 @@ class PCB:
 
         cr.translate(shift_x, shift_y)
 
+        # Setting "flip" at all will flip horizontally, specifying "v"
+        # specifically will flip vertically
+        flip_x = 1.0
+        flip_y = 1.0
+        if (flip):
+            if (flip == "v" or flip == "V"):
+                flip_y = -1.0
+            else:
+                flip_x = -1.0
+            cr.scale(flip_x, flip_y)
+            #Scale will flip around current origin, so shift back to TL corner
+            cr.translate((2*shift_x - (max_w/scale)) * (-flip_x/2 + 0.5),
+                         (2*shift_y - (max_h/scale)) * (-flip_y/2 + 0.5))
+
         # Translate our origin to desired position on page
-        cr.translate(where[0]/scale, where[1]/scale)
+        cr.translate(where[0]/(scale*flip_x), where[1]/(scale*flip_y))
 
         # Render highlights below everything else
         cr.set_source_rgb(1.0, 0.5, 0.5)
@@ -235,7 +259,7 @@ class PCB:
         # Render modules
         cr.set_source_rgb(0, 0, 0)
         for module in self.modules:
-            module.render(cr)
+            module.render(cr,modlayers,modfallbacklayers)
 
         # Render edge lines
         for line in self.edge_lines:
@@ -529,10 +553,26 @@ def main():
         line.render(cr,
                     (label[0]+1, label[1]),
                     args.label_width-2, 14)
-        pcb.render(cr,
-                   (label[0]+1, label[1]+14),
-                   args.label_width-2, args.label_height-14,
-                   line.refs)
+        sides = pcb.get_mod_sides(line.refs)
+
+        if "F.Cu" in sides and "B.Cu" in sides:
+            # if both sides present, split area and draw both
+            pcb.render(cr, (label[0]+1, label[1]+14),
+                       (args.label_width-4)/2.0, args.label_height-14,
+                       ["F.Fab"], ["F.Cu","*.Cu","F.SilkS"], sides["F.Cu"])
+            pcb.render(cr, (label[0]+3 + (args.label_width-3)/2.0, label[1]+14),
+                       (args.label_width-4)/2.0, args.label_height-14,
+                       ["B.Fab"], ["B.Cu","*.Cu","B.SilkS"], sides["B.Cu"], True)
+
+        elif "F.Cu" in sides:
+            pcb.render(cr, (label[0]+1, label[1]+14),
+                       args.label_width-2, args.label_height-14,
+                       ["F.Fab"], ["F.Cu","*.Cu","F.SilkS"], sides["F.Cu"])
+        elif "B.Cu" in sides:
+            pcb.render(cr, (label[0]+1, label[1]+14),
+                       args.label_width-2, args.label_height-14,
+                       ["B.Fab"], ["B.Cu","*.Cu","B.SilkS"], sides["B.Cu"], True)
+
     cr.show_page()
 
 
