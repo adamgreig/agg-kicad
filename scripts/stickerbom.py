@@ -501,6 +501,10 @@ def get_args():
                         help="Width of a page (mm).")
     parser.add_argument("--page-height", type=int, default=210,
                         help="Height of a page (mm).")
+    parser.add_argument("--flip-vert", default="h",
+                        action="store_const", const="v",
+                        help="Flip the bottom view of the board vertically "
+                             "rather than horizontally")
 
     parser.add_argument("--suppliers",
                         default="Farnell,RS,DigiKey,Digikey,Mouser",
@@ -562,7 +566,7 @@ def main():
                        ["F.Fab"], ["F.Cu","*.Cu","F.SilkS"], sides["F.Cu"])
             pcb.render(cr, (label[0]+3 + (args.label_width-3)/2.0, label[1]+14),
                        (args.label_width-4)/2.0, args.label_height-14,
-                       ["B.Fab"], ["B.Cu","*.Cu","B.SilkS"], sides["B.Cu"], True)
+                       ["B.Fab"], ["B.Cu","*.Cu","B.SilkS"], sides["B.Cu"], args.flip_vert)
 
         elif "F.Cu" in sides:
             pcb.render(cr, (label[0]+1, label[1]+14),
@@ -571,7 +575,7 @@ def main():
         elif "B.Cu" in sides:
             pcb.render(cr, (label[0]+1, label[1]+14),
                        args.label_width-2, args.label_height-14,
-                       ["B.Fab"], ["B.Cu","*.Cu","B.SilkS"], sides["B.Cu"], True)
+                       ["B.Fab"], ["B.Cu","*.Cu","B.SilkS"], sides["B.Cu"], args.flip_vert)
 
     cr.show_page()
 
