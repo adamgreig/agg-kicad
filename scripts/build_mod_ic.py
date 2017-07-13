@@ -1226,7 +1226,18 @@ config = {
         "pad_shape": (1.5, 1.6),
         "chip_shape": (3.2, 5.0),
         "pin_shape": (-1.0, 1.2)
-    }
+    },
+
+    # ChipFET 1206-8
+    "ChipFET-1206-8": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 0.65,
+        "row_pitch": 1.473,
+        "pad_shape": (.559, .406),
+        "chip_shape": (1.90, 3.05),
+        "pin_shape": (-0.35, 0.30),
+    },
 }
 
 
