@@ -1,0 +1,4 @@
+EESchema-DOCLIB  Version 2.0
+$CMP DS3231MZ
+D I2C integrated RTC/TCXO/Crystal
+$ENDCMP
