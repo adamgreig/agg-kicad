@@ -483,25 +483,25 @@ def get_args():
                         help="Path to the pdf file that will "
                              "contain the stickers.")
 
-    parser.add_argument("--label_width", type=int, default=72,
+    parser.add_argument("--label_width", type=float, default=72,
                         help="Width of a label (mm).")
-    parser.add_argument("--label_height", type=int, default=63.5,
+    parser.add_argument("--label_height", type=float, default=63.5,
                         help="Height of a label (mm).")
     parser.add_argument("--labels-x", type=int, default=4,
                         help="Number of columns of labels on a page.")
     parser.add_argument("--labels-y", type=int, default=3,
                         help="Number of rows of labels on a page.")
-    parser.add_argument("--margin-top", type=int, default=7.75,
+    parser.add_argument("--margin-top", type=float, default=7.75,
                         help="Margin at the top of the page (mm).")
-    parser.add_argument("--margin-left", type=int, default=4.5,
+    parser.add_argument("--margin-left", type=float, default=4.5,
                         help="Margin at the left side of the page (mm).")
-    parser.add_argument("--spacing-x", type=int, default=0.0,
+    parser.add_argument("--spacing-x", type=float, default=0.0,
                         help="Gap between columns of labels (mm).")
-    parser.add_argument("--spacing-y", type=int, default=2.0,
+    parser.add_argument("--spacing-y", type=float, default=2.0,
                         help="Gap between rows of labels (mm).")
-    parser.add_argument("--page-width", type=int, default=297,
+    parser.add_argument("--page-width", type=float, default=297,
                         help="Width of a page (mm).")
-    parser.add_argument("--page-height", type=int, default=210,
+    parser.add_argument("--page-height", type=float, default=210,
                         help="Height of a page (mm).")
     parser.add_argument("--flip-vert", default="h",
                         action="store_const", const="v",
