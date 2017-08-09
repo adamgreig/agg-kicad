@@ -1,0 +1,22 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# USB-A
+#
+DEF USB-A P 0 40 Y Y 1 F N
+F0 "P" -200 300 50 H V L CNN
+F1 "USB-A" -200 -300 50 H V L CNN
+F2 "agg:USB-A-SKT" -400 -400 50 H I L CNN
+F3 "http://www.farnell.com/datasheets/1673634.pdf" -400 -500 50 H I L CNN
+F4 "1696534" -400 -600 50 H I L CNN "Farnell"
+DRAW
+X VBUS 1 -300 200 100 R 50 50 0 0 P
+X D- 2 -300 100 100 R 50 50 0 0 P
+X D+ 3 -300 0 100 R 50 50 0 0 P
+X GND 4 -300 -100 100 R 50 50 0 0 P
+X SHIELD S -300 -200 100 R 50 50 0 0 P
+S -200 250 150 -250 0 1 0 f
+ENDDRAW
+ENDDEF
+#
+#End Library
