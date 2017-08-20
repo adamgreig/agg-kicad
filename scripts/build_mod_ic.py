@@ -270,6 +270,12 @@ config = {
         "pad_shape": (1.2, 0.5),
         "chip_shape": (7.2, 7.2),
         "pin_shape": (1.0, 0.4),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-32_7x7mm_Pitch0.8mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        }
     },
 
     # LQFP-48 from JEDEC MS-026BBC
