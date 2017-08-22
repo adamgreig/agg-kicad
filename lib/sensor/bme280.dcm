@@ -1,0 +1,4 @@
+EESchema-DOCLIB  Version 2.0
+$CMP BME280
+D Digital humidity, pressure, and temperature sensor
+$ENDCMP
