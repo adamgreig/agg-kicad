@@ -1,0 +1,35 @@
+datasheet: http://www.st.com/resource/en/datasheet/stm32f042g6.pdf 
+description: STM32F0 28 pin UQFPN package
+footprint: agg:QFN-28-ST
+name: STM32F0xxGxUx
+ordercodes:
+- [Farnell, '2469551']
+pins:
+- - - [VDD, 17, pwrin]
+    - [VDDIO2, 18, pwrin]
+    - [VDDA, 5, pwrin]
+    - [VSS, 16, pwrin]
+  - - [NRST, 4, in]
+    - [PB8-BOOT0, 1, in]
+  - - [PF0-OSC_IN, 2, bidi]
+    - [PF1-OSC_OUT, 3, bidi]
+  - - [PB0, 14, bidi]
+    - [PB1, 15, bidi]
+    - [PB3, 24, bidi]
+    - [PB4, 25, bidi]
+    - [PB5, 26, bidi]
+    - [PB6, 27, bidi]
+    - [PB7, 28, bidi]
+- - - [PA0, 6, bidi]
+    - [PA1, 7, bidi]
+    - [PA2, 8, bidi]
+    - [PA3, 9, bidi]
+    - [PA4, 10, bidi]
+    - [PA5, 11, bidi]
+    - [PA6, 12, bidi]
+    - [PA7, 13, bidi]
+    - [PA9-PA11, 19, bidi]
+    - [PA10-PA12, 20, bidi]
+    - [PA13, 21, bidi]
+    - [PA14, 22, bidi]
+    - [PA15, 23, bidi]
