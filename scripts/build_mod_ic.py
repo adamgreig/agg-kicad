@@ -6,7 +6,6 @@ Licensed under the MIT licence, see LICENSE file for details.
 Create a range of dual and quad SMD IC packages.
 
 TODO:
-    * Support non-square 4-row packages
     * Support other pad shapes, e.g. oval/half-oval
 """
 
@@ -25,11 +24,18 @@ from __future__ import print_function, division
 #
 # Valid inner keys are:
 #   rows: either 2 or 4, for dual or quad packages.
-#   pins: total number of pins.
+#   pins: total number of pins
+#   pins_first_row: optional when rows is 4, number of pins in row containing
+#                   pin 1, for rectangular chips.
+#                   Must also give row_pitch as a tuple.
+#                   Defaults to pins/rows i.e. a square chip.
+#                   Not applicable to 2-row chips.
 #   skip_pins: optional, list of pin numbers to skip (leaving remaining pins in
 #              sequential order). Generates packages like SOT-23-3.
-#   pin_pitch: spacing between adjacent pins.
-#   row_pitch: spacing between rows of pins.
+#   pin_pitch: spacing between centres of adjacent pins.
+#   row_pitch: spacing between centres of rows of pins, or tuple of
+#              (horizontal pitch, vertical pitch) only if pins_first_row is
+#              given, where horizontal pitch is pin 1 to its opposite pin.
 #   pad_shape: (width, height) of a pad for a pin.
 #   ep_shape: (width, height) of an exposed pad underneath the chip.
 #             Leave out this parameter to skip the exposed pad.
@@ -201,6 +207,23 @@ config = {
         }
     },
 
+    # TSSOP-14 
+    "TSSOP-14": {
+        "rows": 2,
+        "pins": 14,
+        "pin_pitch": 0.65,
+        "row_pitch": 5.75,
+        "pad_shape": (1.35, 0.45),
+        "chip_shape": (4.5, 5.1),
+        "pin_shape": (0.95, .30),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-14_4.4x5mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+    
     # TSSOP-16 from JEDEC MO-153AB
     # IPC-7351B: SOP65P500X120-16N
     "TSSOP-16": {
@@ -264,6 +287,12 @@ config = {
         "pad_shape": (1.2, 0.5),
         "chip_shape": (7.2, 7.2),
         "pin_shape": (1.0, 0.4),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-32_7x7mm_Pitch0.8mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        }
     },
 
     # LQFP-48 from JEDEC MS-026BBC
@@ -509,6 +538,22 @@ config = {
         "ep_vias": (0.35, 0.5, 0.7)
     },
 
+    # QFN-24 from LAN8720A datasheet
+    # For LAN8720A
+    "QFN-24-EP-MICROCHIP": {
+        "rows": 4,
+        "pins": 24,
+        "pin_pitch": 0.5,
+        "row_pitch": 3.74,
+        "pad_shape": (0.69, 0.28),
+        "chip_shape": (4.0, 4.0),
+        "pin_shape": (-0.4, 0.25),
+        "ep_shape": (2.5, 2.5),
+        "ep_mask_shape": (1.0, 1.0, 0.2, 0.2),
+        "ep_paste_shape": (1.0, 1.0, 0.2, 0.2),
+        "ep_vias": (0.35, 0.5, 0.7)
+    },
+
     # QFN-24 from MAXIM. Doc no. 21-0139
     # For MAX17435
     "QFN-24-EP-MAX": {
@@ -584,9 +629,9 @@ config = {
         "row_pitch": 8.80,
         "pad_shape": (0.7, 0.25),
         "ep_shape": (7.15, 7.15),
-        "ep_mask_shape": (0.73, 0.73, 0.5, 0.5),
-        "ep_paste_shape": (0.73, 0.73, 0.5, 0.5),
-        "ep_vias": (0.4, 0.8, 0.43),
+        "ep_mask_shape": (0.7, 0.7, 0.6, 0.6),
+        "ep_paste_shape": (0.7, 0.7, 0.6, 0.6),
+        "ep_vias": (0.4, 0.8, 0.47),
         "chip_shape": (9.0, 9.0),
         "pin_shape": (-0.4, 0.25),
         "model": {
@@ -595,6 +640,21 @@ config = {
             "scale": (1, 1, 1),
             "rotate": (0, 0, 0),
         },
+    },
+
+    # VQFN32-9 for Infineon BGT24MTR family
+    "QFN-32-BGT24MTR": {
+        "rows": 4,
+        "pins": 32,
+        "pins_first_row": 10,
+        "pin_pitch": 0.5,
+        "row_pitch": (4.15, 5.15),
+        "pad_shape": (.85, .3),
+        "ep_shape": (2.9, 3.9),
+        "ep_paste_shape": (1, 1, .5, .5),
+        "ep_vias": (.3, .6, 0.7),
+        "chip_shape": (4.5, 5.5),
+        "pin_shape": (-0.55, 0.25),
     },
 
     # DFN-10 with EP
@@ -651,10 +711,10 @@ config = {
         "pin_shape": (-0.4, 0.2),
     },
 
-    # DFN-12
+    # DFN-12 3mm x 3mm
     # For LTC3535 / LT package DD
     # IPC-7351B: DFN45P300X300X75-13N
-    "DFN-12-EP-LT": {
+    "DFN-12-EP-LT-DD": {
         "rows": 2,
         "pins": 12,
         "pin_pitch": 0.45,
@@ -668,6 +728,27 @@ config = {
             "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-12-1EP_3x3mm_Pitch0.45mm.wrl",
             "offset": (0, 0, 0),
             "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
+    # DFN-12 4mm x 4mm
+    # For LTC3083 / LT package DF
+    # IPC-7351B: DFN45P400X400X75-13N
+    "DFN-12-EP-LT-DF": {
+        "rows": 2,
+        "pins": 12,
+        "pin_pitch": 0.5,
+        "row_pitch": 3.8,
+        "pad_shape": (0.70, 0.25),
+        "ep_shape": (2.65, 3.38),
+        "ep_paste_shape": (2.2, 1.3, 0, 0.4),
+        "chip_shape": (4.1, 4.1),
+        "pin_shape": (-0.40, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-12-1EP_3x3mm_Pitch0.45mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1.33, 1.33, 1),
             "rotate": (0, 0, 0),
         },
     },
@@ -1034,6 +1115,28 @@ config = {
         },
     },
 
+    # SQFN-36 for Microchip USB251xB
+    # IPC-7351B: QFN50P600X600X90-37N
+    "QFN-36-EP-MICROCHIP-SQFN": {
+        "rows": 4,
+        "pins": 36,
+        "pin_pitch": 0.5,
+        "row_pitch": 5.55,
+        "pad_shape": (0.9, 0.28),
+        "ep_shape": (3.7, 3.7),
+        "ep_paste_shape": (1.3, 1.3, 0.3, 0.3),
+        "ep_mask_shape": (3.7, 3.7, 0, 0),
+        "ep_vias": (0.3, 0.4, 1.0),
+        "chip_shape": (6.0, 6.0),
+        "pin_shape": (-0.6, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-36-1EP_5x6mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1.2, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # XTAL 2.0x2.5mm
     "XTAL-25x20": {
         "rows": 2,
@@ -1125,6 +1228,39 @@ config = {
         "chip_shape": (7.62, 4.58),
         "pin_shape": (1.27, 1.0),
     },
+
+    # Seiko Epson SG7050CxN SPXO
+    "SG7050CxN": {
+        "rows": 2,
+        "pins": 4,
+        "pin_pitch": 5.08,
+        "row_pitch": 4.2,
+        "pad_shape": (2.0, 1.8),
+        "chip_shape": (5.0, 7.0),
+        "pin_shape": (-1.1, 1.4)
+    },
+
+    # Seiko Epson SG5032CxN SPXO
+    "SG5032CxN": {
+        "rows": 2,
+        "pins": 4,
+        "pin_pitch": 2.54,
+        "row_pitch": 2.2,
+        "pad_shape": (1.5, 1.6),
+        "chip_shape": (3.2, 5.0),
+        "pin_shape": (-1.0, 1.2)
+    },
+
+    # ChipFET 1206-8
+    "ChipFET-1206-8": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 0.65,
+        "row_pitch": 1.473,
+        "pad_shape": (.559, .406),
+        "chip_shape": (1.90, 3.05),
+        "pin_shape": (-0.35, 0.30),
+    },
 }
 
 
@@ -1192,21 +1328,33 @@ def pin_centres(conf):
     Generates centres for a 4-row chip, just ignore top/bottom rows if 2 rows.
     Returns (leftrow, bottomrow, rightrow, toprow).
     """
-    pins_per_row = conf['pins'] // conf['rows']
-    row_length = (pins_per_row - 1) * conf['pin_pitch']
+
+    # Handle non-square chips differently
+    if "pins_first_row" in conf:
+        v_pins_per_row = conf['pins_first_row']
+        h_pins_per_row = (conf['pins'] - 2*v_pins_per_row) // 2
+        hx = conf['row_pitch'][0] / 2.0
+        vx = conf['row_pitch'][1] / 2.0
+    else:
+        h_pins_per_row = v_pins_per_row = conf['pins'] // conf['rows']
+        hx = vx = conf['row_pitch'] / 2.0
+    h_row_length = (h_pins_per_row - 1) * conf['pin_pitch']
+    v_row_length = (v_pins_per_row - 1) * conf['pin_pitch']
 
     left_row = []
     bottom_row = []
     right_row = []
     top_row = []
 
-    x = conf['row_pitch'] / 2.0
-    y = -row_length / 2.0
-    for pin in range(pins_per_row):
-        left_row.append((-x, y))
-        right_row.insert(0, (x, y))
-        top_row.insert(0, (y, -x))
-        bottom_row.append((y, x))
+    y = -v_row_length / 2.0
+    for pin in range(v_pins_per_row):
+        left_row.append((-hx, y))
+        right_row.insert(0, (hx, y))
+        y += conf['pin_pitch']
+    y = -h_row_length / 2.0
+    for pin in range(h_pins_per_row):
+        top_row.insert(0, (y, -vx))
+        bottom_row.append((y, vx))
         y += conf['pin_pitch']
 
     return left_row, bottom_row, right_row, top_row
@@ -1303,7 +1451,11 @@ def refs(conf):
     if conf['rows'] == 2:
         ctyd_h = conf['chip_shape'][1] + 2 * ctyd_gap
     elif conf['rows'] == 4:
-        ctyd_h = conf['row_pitch'] + conf['pad_shape'][0] + 2 * ctyd_gap
+        # Handle non-square chips differently
+        if isinstance(conf['row_pitch'], float):
+            ctyd_h = conf['row_pitch'] + conf['pad_shape'][0] + 2 * ctyd_gap
+        else:
+            ctyd_h = conf['row_pitch'][1] + conf['pad_shape'][0] + 2 * ctyd_gap
 
     y = ctyd_h/2.0 + font_halfheight
 
@@ -1433,23 +1585,29 @@ def external_silk(conf):
         out.append(fp_line((-x, y), (x, y), l, w))
         out.append(fp_arc((-x+r, -y), (-x, -y), 180, l, w))
     elif rows == 4:
-        pins = conf['pins'] / rows
-        pin_y = ((pins - 1) * conf['pin_pitch']) / 2.0
-        chip_y = chip_shape[1] / 2.0
-        delta_y = chip_y - pin_y
-        r = delta_y - silk_pad_egap
+        if 'pins_first_row' in conf:
+            v_pins_per_row = conf['pins_first_row']
+            h_pins_per_row = (conf['pins'] - 2*v_pins_per_row) // 2
+            pin_x = ((h_pins_per_row - 1) * conf['pin_pitch']) / 2.0
+            pin_y = ((v_pins_per_row - 1) * conf['pin_pitch']) / 2.0
+        else:
+            pins_per_row = conf['pins'] / rows
+            pin_x = pin_y = ((pins_per_row - 1) * conf['pin_pitch']) / 2.0
+        dx = x - pin_x - silk_pad_egap
+        dy = y - pin_y - silk_pad_egap
 
         # NW
-        out.append(fp_line((-x, -y+r), (-x+r, -y), l, w))
+        d_pin1 = min(dx, dy)
+        out.append(fp_line((-x, -y+d_pin1), (-x+d_pin1, -y), l, w))
         # NE
-        out.append(fp_line((x-r, -y), (x, -y), l, w))
-        out.append(fp_line((x, -y), (x, -y+r), l, w))
+        out.append(fp_line((x-dx, -y), (x, -y), l, w))
+        out.append(fp_line((x, -y), (x, -y+dy), l, w))
         # SE
-        out.append(fp_line((x-r, y), (x, y), l, w))
-        out.append(fp_line((x, y), (x, y-r), l, w))
+        out.append(fp_line((x-dx, y), (x, y), l, w))
+        out.append(fp_line((x, y), (x, y-dy), l, w))
         # SW
-        out.append(fp_line((-x+r, y), (-x, y), l, w))
-        out.append(fp_line((-x, y), (-x, y-r), l, w))
+        out.append(fp_line((-x+dx, y), (-x, y), l, w))
+        out.append(fp_line((-x, y), (-x, y-dy), l, w))
 
     return out
 
@@ -1470,11 +1628,17 @@ def ctyd(conf):
     pad_w, pad_h = conf['pad_shape']
     chip_w, chip_h = conf['chip_shape']
 
-    width = row_pitch + pad_w + 2 * ctyd_gap
     if conf['rows'] == 2:
+        width = row_pitch + pad_w + 2 * ctyd_gap
         height = chip_h + 2 * ctyd_gap
     elif conf['rows'] == 4:
-        height = width
+        # We need to handle non-square chips slightly differently,
+        # depending on whether row_pitch is given as (w, h) or just a scalar.
+        if isinstance(row_pitch, float):
+            height = width = row_pitch + pad_w + 2 * ctyd_gap
+        else:
+            width = row_pitch[0] + pad_w + 2 * ctyd_gap
+            height = row_pitch[1] + pad_w + 2 * ctyd_gap
 
     # Ensure courtyard lies on a specified grid
     # (double the grid since we halve the width/height)

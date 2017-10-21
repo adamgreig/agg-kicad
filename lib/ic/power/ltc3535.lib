@@ -6,7 +6,7 @@ EESchema-LIBRARY Version 2.3
 DEF LTC3535 IC 0 40 Y Y 1 F N
 F0 "IC" -400 600 50 H V L CNN
 F1 "LTC3535" -400 -600 50 H V L CNN
-F2 "agg:DFN-12-EP-LT" -400 -700 50 H I L CNN
+F2 "agg:DFN-12-EP-LT-DD" -400 -700 50 H I L CNN
 F3 "http://cds.linear.com/docs/en/datasheet/3535fa.pdf" -400 -800 50 H I L CNN
 F4 "1947922" -400 -900 50 H I L CNN "Farnell"
 DRAW

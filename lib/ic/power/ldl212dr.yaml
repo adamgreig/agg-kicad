@@ -1,0 +1,18 @@
+datasheet: http://www.st.com/resource/en/datasheet/ldl212.pdf
+description: High PSRR 1.2A adjustable LDO
+footprint: agg:SOIC-8
+name: LDL212DR
+ordercodes:
+- [Farnell, '2630956']
+pins:
+- - - [VIN, 4, pwrin]
+  - - [EN, 5, in]
+
+  - - [GND, 2, pwrin]
+    - [GND, 3, pwrin]
+
+- - - [VOUT, 1, pwrout]
+  - - [ADJ, 8, in]
+
+  - - [GND, 6, pwrin]
+    - [GND, 7, pwrin]

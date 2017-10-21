@@ -42,15 +42,15 @@ def checkfont(mod, errs):
             errs.append("Font must be 0.15mm line thickness")
 
 
-def checksilk(mod, errs):
-    silk_types = ("fp_line", "fp_circle", "fp_arc", "fp_poly", "fp_curve")
-    for silk in (node for node in mod if node[0] in silk_types):
-        layer = [n for n in silk if n[0] == "layer"][0]
-        width = [n for n in silk if n[0] == "width"][0]
-        silk_layers = ("F.SilkS", "B.SilkS")
-        if layer[1] in silk_layers:
-            if Decimal(width[1]) != Decimal("0.15"):
-                errs.append("Silk lines must be 0.15mm wide")
+def checklines(mod, errs, check_layers, check_width):
+    line_types = ("fp_line", "fp_circle", "fp_arc", "fp_poly", "fp_curve")
+    for line in (node for node in mod if node[0] in line_types):
+        layer = [n for n in line if n[0] == "layer"][0]
+        width = [n for n in line if n[0] == "width"][0]
+        if layer[1] in check_layers:
+            if Decimal(width[1]) != Decimal(check_width):
+                errs.append("Lines on {} must be {}mm wide"
+                            .format(check_layers, check_width))
 
 
 def checkctyd(mod, errs):
@@ -82,7 +82,8 @@ def checkmod(path, verbose=False):
 
     checkrefval(mod, errs)
     checkfont(mod, errs)
-    checksilk(mod, errs)
+    checklines(mod, errs, ("F.SilkS", "B.SilkS"), "0.15")
+    checklines(mod, errs, ("F.Fab", "B.Fab"), "0.01")
     checkctyd(mod, errs)
 
     if len(errs) == 0:
@@ -108,10 +109,10 @@ def main(prettypath, verbose=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("prettypath", type=str, help=
-                        "Path to footprints")
-    parser.add_argument("--verbose", action="store_true", help=
-                        "Print out every footprint checked even if OK")
+    parser.add_argument("prettypath", type=str,
+                        help="Path to footprints")
+    parser.add_argument("--verbose", action="store_true",
+                        help="Print out every footprint checked even if OK")
     args = vars(parser.parse_args())
     result = main(**args)
     sys.exit(0 if result else 1)

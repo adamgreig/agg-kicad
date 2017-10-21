@@ -1,0 +1,24 @@
+datasheet: http://www.ti.com/lit/ds/symlink/tps62130.pdf
+description: 3A Adjustable Buck Converter
+footprint: agg:QFN-16-EP-TI
+name: TPS62130
+ordercodes:
+- [Farnell, '2361246']
+pins:
+- - - [PVIN, 11, pwrin]
+    - [PVIN, 12, pwrin]
+    - [AVIN, 10, pwrin]
+    - [EN, 13, in]
+  - - [SS/TR, 9, in]
+  - - [DEF, 8, in]
+    - [FSW, 7, in]
+    - [AGND, 6, pwrin]
+    - [PGND, 15, pwrin]
+    - [PGND, 16, pwrin]
+    - [EP, EP, pwrin]
+- - - [SW, 1, passive]
+    - [SW, 2, passive]
+    - [SW, 3, passive]
+  - - [VOS, 14, in]
+    - [PG, 4, od]
+    - [FB, 5, in]

@@ -21,4 +21,4 @@ pins:
     - [SW, 3, passive]
   - - [FSW, 7, in]
     - [VOS, 14, in]
-    - [PG, 4, out]
+    - [PG, 4, od]

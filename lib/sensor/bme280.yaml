@@ -1,0 +1,16 @@
+datasheet: https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf
+description: Digital humidity, pressure, and temperature sensor
+footprint: agg:BME280
+name: BME280
+ordercodes:
+- [Mouser, '262-BME280']
+- [Digi-Key, '828-1063-1-ND']
+pins:
+- - - [VDD, 8, pwrin]
+    - [VDDIO, 6, pwrin]
+    - [GND, 1, pwrin]
+    - [GND, 7, pwrin]
+- - - [CSB, 2, in]
+    - [SCK, 4, in]
+    - [SDI, 3, bidi]
+    - [SDO, 5, bidi]

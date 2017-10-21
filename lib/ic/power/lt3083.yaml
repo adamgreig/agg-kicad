@@ -1,0 +1,20 @@
+datasheet: http://cds.linear.com/docs/en/datasheet/3083fa.pdf
+description: Adjustable 3A single-resistor LDO regulator
+footprint: agg:DFN-12-EP-LT-DF
+name: LT3083
+ordercodes:
+- [Farnell, '2295280']
+pins:
+- - - [IN, 9, pwrin]
+    - [IN, 10, pwrin]
+    - [IN, 11, pwrin]
+    - [IN, 12, pwrin]
+  - - [VCONTROL, 7, in]
+    - [VCONTROL, 8, in]
+  - - [SET, 6, in]
+
+- - - [OUT, 1, pwrout]
+    - [OUT, 2, passive]
+    - [OUT, 3, passive]
+    - [OUT, 4, passive]
+    - [OUT, 5, passive]
