@@ -260,6 +260,23 @@ config = {
         },
     },
 
+    # TSSOP-24
+    "TSSOP-24": {
+        "rows": 2,
+        "pins": 24,
+        "pin_pitch": 0.65,
+        "row_pitch": 5.75,
+        "pad_shape": (1.35, 0.45),
+        "chip_shape": (4.5, 7.8),
+        "pin_shape": (0.95, .30),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-24_4.4x6.5mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # SSOP-20 from JEDEC MO-150AE
     # IPC-7351B: SOP65P780X200-20N
     "SSOP-20": {

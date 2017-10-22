@@ -1,0 +1,31 @@
+datasheet: http://www.ti.com/lit/ds/symlink/sn74lvc4245a.pdf
+description: Logic Level Translator & Buffer
+footprint: agg:TSSOP-24
+name: SN74LVC4245A
+ordercodes:
+- [Farnell, '1236393']
+pins:
+- - - [VCCA, 1, pwrin]
+    - [DIR, 2, in]
+    - [A1, 3, bidi]
+    - [A2, 4, bidi]
+    - [A3, 5, bidi]
+    - [A4, 6, bidi]
+    - [A5, 7, bidi]
+    - [A6, 8, bidi]
+    - [A7, 9, bidi]
+    - [A8, 10, bidi]
+    - [GND, 11, pwrin]
+    - [GND, 12, pwrin]
+- - - [VCCB, 24, pwrin]
+    - [VCCB, 23, pwrin]
+    - [~OE, 22, in]
+    - [B1, 21, bidi]
+    - [B2, 20, bidi]
+    - [B3, 19, bidi]
+    - [B4, 18, bidi]
+    - [B5, 17, bidi]
+    - [B6, 16, bidi]
+    - [B7, 15, bidi]
+    - [B8, 14, bidi]
+    - [GND, 13, pwrin]
