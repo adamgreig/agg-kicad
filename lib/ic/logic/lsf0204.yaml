@@ -1,0 +1,22 @@
+datasheet: http://www.ti.com/lit/ds/symlink/lsf0204.pdf
+description: Logic Level Translator
+footprint: agg:TSSOP-14
+name: LSF0204
+ordercodes:
+- [Digikey, '296-38653-1-ND ']
+pins:
+- - - [VREFA, 1, pwrin]
+  - - [A1, 2, bidi]
+    - [A2, 3, bidi]
+    - [A3, 4, bidi]
+    - [A4, 5, bidi]
+    - [NC, 6, bidi]
+    - [GND, 7, pwrin]
+- - - [VREFB, 14, pwrin]
+  - - [B1, 13, bidi]
+    - [B2, 12, bidi]
+    - [B3, 11, bidi]
+    - [B4, 10, bidi]
+    - [NC, 9, bidi]
+    - [EN, 8, in]
+
