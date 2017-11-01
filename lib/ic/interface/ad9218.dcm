@@ -1,0 +1,4 @@
+EESchema-DOCLIB  Version 2.0
+$CMP AD9218
+D 10bit 105MSPS dual ADC
+$ENDCMP

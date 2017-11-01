@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# AD8041
+#
+DEF AD8041 IC 0 40 Y Y 1 F N
+F0 "IC" -500 400 50 H V L CNN
+F1 "AD8041" -500 -400 50 H V L CNN
+F2 "agg:SOIC-8" -500 -500 50 H I L CNN
+F3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD8041.pdf" -500 -600 50 H I L CNN
+F4 "1660976" -500 -700 50 H I L CNN "Farnell"
+DRAW
+S -500 350 500 -350 0 1 0 f
+X +VS 7 -600 300 100 R 50 50 0 0 W
+X -VS 4 -600 200 100 R 50 50 0 0 W
+X -IN 2 -600 0 100 R 50 50 0 0 I
+X +IN 3 -600 -100 100 R 50 50 0 0 I
+X ~DISABLE 8 600 300 100 L 50 50 0 0 I
+X NC 1 600 100 100 L 50 50 0 0 N
+X NC 5 600 0 100 L 50 50 0 0 N
+X OUT 6 600 -200 100 L 50 50 0 0 O
+ENDDRAW
+ENDDEF
+#
+#End Library
