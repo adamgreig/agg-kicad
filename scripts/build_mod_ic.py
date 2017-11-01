@@ -207,7 +207,8 @@ config = {
         }
     },
 
-    # TSSOP-14 
+    # TSSOP-14 from JEDEC MO-153
+    # IPC-7351B: SOP65P640X120-14N
     "TSSOP-14": {
         "rows": 2,
         "pins": 14,
@@ -223,7 +224,7 @@ config = {
             "rotate": (0, 0, 0),
         },
     },
-    
+
     # TSSOP-16 from JEDEC MO-153AB
     # IPC-7351B: SOP65P500X120-16N
     "TSSOP-16": {
@@ -260,14 +261,15 @@ config = {
         },
     },
 
-    # TSSOP-24
+    # TSSOP-24 from JEDEC MO-153
+    # IPC-7351B: SOP65P640X120-24N
     "TSSOP-24": {
         "rows": 2,
         "pins": 24,
         "pin_pitch": 0.65,
         "row_pitch": 5.75,
         "pad_shape": (1.35, 0.45),
-        "chip_shape": (4.5, 7.8),
+        "chip_shape": (4.5, 7.9),
         "pin_shape": (0.95, .30),
         "model": {
             "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-24_4.4x6.5mm_Pitch0.65mm.wrl",
