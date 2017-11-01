@@ -164,6 +164,26 @@ config = {
         },
     },
 
+    # MSOP-8 from JEDEC MO-187-AA-T, with EP, AD specific RH-8-1
+    # IPC-7351B: SOP65P490X110-9N
+    "MSOP-8-EP-AD": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 0.65,
+        "row_pitch": 4.4,
+        "pad_shape": (1.45, 0.45),
+        "chip_shape": (3.1, 3.1),
+        "pin_shape": (1.0, 0.38),
+        "ep_shape": (1.725, 1.660),
+        "ep_vias": (0.3, 0.65, 0.3),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/MSOP-8_3x3mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # MSOP-10 with 0.5mm pin pitch and an EP, TI specific
     # For the TPS92512, from its datasheet
     # JEDEC MO-187BA-T

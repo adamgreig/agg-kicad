@@ -1,0 +1,4 @@
+EESchema-DOCLIB  Version 2.0
+$CMP ADP124
+D 500mA LDO
+$ENDCMP
