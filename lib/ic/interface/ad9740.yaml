@@ -1,0 +1,35 @@
+datasheet: http://www.analog.com/media/en/technical-documentation/data-sheets/AD9744.pdf
+description: 14bit 210MSPS DAC
+footprint: agg:TSSOP-28
+name: AD9744
+ordercodes:
+  - [Farnell, '2305701']
+pins:
+- - - [DVDD, 27, pwrin]
+    - [DCOM, 26, pwrin]
+  - - [AVDD, 24, pwrin]
+    - [ACOM, 20, pwrin]
+  - - [CLOCK, 28, in]
+  - - [DB0, 14, in]
+    - [DB1, 13, in]
+    - [DB2, 12, in]
+    - [DB3, 11, in]
+    - [DB4, 10, in]
+    - [DB5, 9, in]
+    - [DB6, 8, in]
+    - [DB7, 7, in]
+    - [DB8, 6, in]
+    - [DB9, 5, in]
+    - [DB10, 4, in]
+    - [DB11, 3, in]
+    - [DB12, 2, in]
+    - [DB13, 1, in]
+- - - [REFIO, 17, bidi]
+    - [REFLO, 16, in]
+  - - [FS_ADJ, 18, passive]
+  - - [SLEEP, 15, in]
+    - [MODE, 25, in]
+  - - [NC, 19, nc]
+    - [RESERVED, 23, nc]
+  - - [IOUT_A, 22, out]
+    - [IOUT_B, 21, out]

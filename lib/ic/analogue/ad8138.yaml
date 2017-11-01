@@ -1,0 +1,15 @@
+datasheet: http://www.analog.com/media/en/technical-documentation/data-sheets/AD8138.pdf
+description: Low distortion, differential ADC driver
+footprint: agg:SOIC-8
+name: AD8138
+ordercodes:
+  - [Farnell, '2725700']
+pins:
+- - - [V+, 3, pwrin]
+    - [V-, 6, pwrin]
+  - - [+IN, 8, in]
+    - [VOCM, 2, in]
+    - [-IN, 1, in]
+- - - [NC, 7, nc]
+  - - [-OUT, 5, out]
+    - [+OUT, 4, out]

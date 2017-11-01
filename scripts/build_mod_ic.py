@@ -272,7 +272,25 @@ config = {
         "chip_shape": (4.5, 7.9),
         "pin_shape": (0.95, .30),
         "model": {
-            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-24_4.4x6.5mm_Pitch0.65mm.wrl",
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-24_4.4x7.8mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
+    # TSSOP-28 from JEDEC MO-153-AE
+    # IPC-7351B: SOP65P640X120-28N
+    "TSSOP-28": {
+        "rows": 2,
+        "pins": 28,
+        "pin_pitch": 0.65,
+        "row_pitch": 5.75,
+        "pad_shape": (1.35, 0.45),
+        "chip_shape": (4.5, 9.7),
+        "pin_shape": (0.95, .30),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-28_4.4x9.7mm_Pitch0.65mm.wrl",
             "offset": (0, 0, 0),
             "scale": (1, 1, 1),
             "rotate": (0, 0, 0),

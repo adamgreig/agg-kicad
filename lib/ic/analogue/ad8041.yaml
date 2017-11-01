@@ -1,0 +1,15 @@
+datasheet: http://www.analog.com/media/en/technical-documentation/data-sheets/AD8041.pdf
+description: 160MHz rail-to-rail opamp with disable
+footprint: agg:SOIC-8
+name: AD8041
+ordercodes:
+  - [Farnell, '1660976']
+pins:
+- - - [+VS, 7, pwrin]
+    - [-VS, 4, pwrin]
+  - - [-IN, 2, in]
+    - [+IN, 3, in]
+- - - [~DISABLE, 8, in]
+  - - [NC, 1, nc]
+    - [NC, 5, nc]
+  - - [OUT, 6, out]
