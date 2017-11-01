@@ -1,6 +1,6 @@
 datasheet: http://www.analog.com/media/en/technical-documentation/data-sheets/ADP124_125.pdf
 description: 500mA LDO
-footprint: agg:MSOP-8
+footprint: agg:MSOP-8-EP-AD
 name: ADP124
 ordercodes:
   - [Farnell, '2727437']
