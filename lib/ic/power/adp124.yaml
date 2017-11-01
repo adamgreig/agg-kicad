@@ -11,6 +11,6 @@ pins:
   - - [NC, 6, nc]
 - - - [VOUT, 1, pwrout]
     - [VOUT, 2, pwrout]
-    - [VOUT_SENSE, 3, in]
+    - [SENSE, 3, in]
   - - [GND, 4, pwrin]
     - [GND, EP, pwrin]
