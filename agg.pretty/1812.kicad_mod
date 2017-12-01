@@ -1,0 +1,96 @@
+
+(module 1812 
+  (layer F.Cu) 
+  (tedit 5A21B57D) 
+  (fp_text reference REF** 
+    (at -3.7000 0 90) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value 1812 
+    (at 3.7000 0 90) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_line 
+    (start -2.4000 -1.7000) 
+    (end 2.4000 -1.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.4000 -1.7000) 
+    (end 2.4000 1.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.4000 1.7000) 
+    (end -2.4000 1.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.4000 1.7000) 
+    (end -2.4000 -1.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.5000 -1.7000) 
+    (end -1.5000 1.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 1.5000 -1.7000) 
+    (end 1.5000 1.7000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -1.1500 -1.6250) 
+    (end 1.1500 -1.6250) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 1.1500 -1.6250) 
+    (end 1.1500 1.6250) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 1.1500 1.6250) 
+    (end -1.1500 1.6250) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -1.1500 1.6250) 
+    (end -1.1500 -1.6250) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -3.0000 -1.9500) 
+    (end 3.0000 -1.9500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.0000 -1.9500) 
+    (end 3.0000 1.9500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 3.0000 1.9500) 
+    (end -3.0000 1.9500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -3.0000 1.9500) 
+    (end -3.0000 -1.9500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (pad 1 smd rect 
+    (at -2.0500 0) 
+    (size 1.4000 3.4000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 2 smd rect 
+    (at 2.0500 0) 
+    (size 1.4000 3.4000) 
+    (layers F.Cu F.Mask F.Paste)))
