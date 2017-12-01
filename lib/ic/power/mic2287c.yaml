@@ -1,0 +1,12 @@
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/mic2287c.pdf
+description: 1.2MHz PWM White LED Driver
+footprint: agg:SOT-23-5
+name: MIC2287C
+ordercodes:
+  - [Farnell, '2509928']
+pins:
+- - - [VIN, 5, pwrin]
+    - [EN, 4, in]
+    - [GND, 2, pwrin]
+- - - [SW, 1, passive]
+    - [FB, 3, passive]
