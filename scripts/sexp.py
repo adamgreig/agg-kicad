@@ -29,7 +29,7 @@ def parse(sexp):
             if c == ')':
                 t = r.pop()
                 r[-1].append(t)
-        elif c == '"':
+        elif c == '"' and (token is None or token[-1] != '\\'):
             quote = not quote
             if not token and not quote:
                 token = "~"
