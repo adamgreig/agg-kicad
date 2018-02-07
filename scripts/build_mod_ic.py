@@ -164,6 +164,26 @@ config = {
         },
     },
 
+    # MSOP-8 from JEDEC MO-187-AA-T, with EP, AD specific RH-8-1
+    # IPC-7351B: SOP65P490X110-9N
+    "MSOP-8-EP-AD": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 0.65,
+        "row_pitch": 4.4,
+        "pad_shape": (1.45, 0.45),
+        "chip_shape": (3.1, 3.1),
+        "pin_shape": (1.0, 0.38),
+        "ep_shape": (1.725, 1.660),
+        "ep_vias": (0.3, 0.65, 0.3),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/MSOP-8_3x3mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # MSOP-10 with 0.5mm pin pitch and an EP, TI specific
     # For the TPS92512, from its datasheet
     # JEDEC MO-187BA-T
@@ -207,7 +227,8 @@ config = {
         }
     },
 
-    # TSSOP-14 
+    # TSSOP-14 from JEDEC MO-153
+    # IPC-7351B: SOP65P640X120-14N
     "TSSOP-14": {
         "rows": 2,
         "pins": 14,
@@ -223,7 +244,7 @@ config = {
             "rotate": (0, 0, 0),
         },
     },
-    
+
     # TSSOP-16 from JEDEC MO-153AB
     # IPC-7351B: SOP65P500X120-16N
     "TSSOP-16": {
@@ -260,17 +281,36 @@ config = {
         },
     },
 
-    # TSSOP-24
+    # TSSOP-24 from JEDEC MO-153
+    # IPC-7351B: SOP65P640X120-24N
     "TSSOP-24": {
         "rows": 2,
         "pins": 24,
         "pin_pitch": 0.65,
         "row_pitch": 5.75,
         "pad_shape": (1.35, 0.45),
-        "chip_shape": (4.5, 7.8),
+        "chip_shape": (4.5, 7.9),
         "pin_shape": (0.95, .30),
         "model": {
-            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-24_4.4x6.5mm_Pitch0.65mm.wrl",
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-24_4.4x7.8mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
+    # TSSOP-28 from JEDEC MO-153-AE
+    # IPC-7351B: SOP65P640X120-28N
+    "TSSOP-28": {
+        "rows": 2,
+        "pins": 28,
+        "pin_pitch": 0.65,
+        "row_pitch": 5.75,
+        "pad_shape": (1.35, 0.45),
+        "chip_shape": (4.5, 9.7),
+        "pin_shape": (0.95, .30),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-28_4.4x9.7mm_Pitch0.65mm.wrl",
             "offset": (0, 0, 0),
             "scale": (1, 1, 1),
             "rotate": (0, 0, 0),

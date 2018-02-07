@@ -1,0 +1,16 @@
+datasheet: http://www.analog.com/media/en/technical-documentation/data-sheets/ADP124_125.pdf
+description: 500mA LDO
+footprint: agg:MSOP-8-EP-AD
+name: ADP124
+ordercodes:
+  - [Farnell, '2727437']
+pins:
+- - - [VIN, 8, pwrin]
+    - [VIN, 7, pwrin]
+  - - [EN, 5, in]
+  - - [NC, 6, nc]
+- - - [VOUT, 1, pwrout]
+    - [VOUT, 2, pwrout]
+    - [SENSE, 3, in]
+  - - [GND, 4, pwrin]
+    - [GND, EP, pwrin]

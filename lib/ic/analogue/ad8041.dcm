@@ -1,0 +1,4 @@
+EESchema-DOCLIB  Version 2.0
+$CMP AD8041
+D 160MHz rail-to-rail opamp with disable
+$ENDCMP

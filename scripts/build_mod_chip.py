@@ -181,6 +181,14 @@ config = {
                   "rotate": (0, 0, 0)},
     },
 
+    # 2512 from IPC-7351A: RESC4532X110N
+    "1812": {
+        "pad_shape": (1.40, 3.4),
+        "pitch": 4.1,
+        "chip_shape": (4.8, 3.4),
+        "pin_shape": (-.9, 3.4),
+    },
+
     # 2512 from IPC-7351A: RESC6432X70N
     "2512": {
         "pad_shape": (1.25, 3.4),
