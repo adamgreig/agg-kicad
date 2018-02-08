@@ -200,6 +200,14 @@ config = {
                   "scale": (1, 1, 1),
                   "rotate": (0, 0, 0)},
     },
+    
+    # WE 7443330220 Inductor
+    "WE-HCC-1090 ": {
+        "pad_shape": (2.3, 3.6),
+        "pitch": 9.2,
+        "chip_shape": (10.9, 10),
+        "pin_shape": (-1.6, 3),
+    },    
 
     # SOD-323 from IPC-7351B: SOD2513X100L
     "SOD-323": {
