@@ -1,0 +1,218 @@
+
+(module "TFML-115-02-L-D-LC" 
+  (layer F.Cu) 
+  (tedit 5A7F73FE) 
+  (pad 1 smd rect 
+    (at -8.8900 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 2 smd rect 
+    (at -8.8900 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 3 smd rect 
+    (at -7.6200 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 4 smd rect 
+    (at -7.6200 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 5 smd rect 
+    (at -6.3500 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 6 smd rect 
+    (at -6.3500 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 7 smd rect 
+    (at -5.0800 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 8 smd rect 
+    (at -5.0800 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 9 smd rect 
+    (at -3.8100 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 10 smd rect 
+    (at -3.8100 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 11 smd rect 
+    (at -2.5400 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 12 smd rect 
+    (at -2.5400 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 13 smd rect 
+    (at -1.2700 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 14 smd rect 
+    (at -1.2700 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 15 smd rect 
+    (at -0.0000 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 16 smd rect 
+    (at -0.0000 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 17 smd rect 
+    (at 1.2700 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 18 smd rect 
+    (at 1.2700 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 19 smd rect 
+    (at 2.5400 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 20 smd rect 
+    (at 2.5400 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 21 smd rect 
+    (at 3.8100 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 22 smd rect 
+    (at 3.8100 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 23 smd rect 
+    (at 5.0800 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 24 smd rect 
+    (at 5.0800 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 25 smd rect 
+    (at 6.3500 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 26 smd rect 
+    (at 6.3500 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 27 smd rect 
+    (at 7.6200 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 28 smd rect 
+    (at 7.6200 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 29 smd rect 
+    (at 8.8900 1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 30 smd rect 
+    (at 8.8900 -1.7150) 
+    (size 0.7400 2.9200) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (fp_line 
+    (start -11.1150 -2.8600) 
+    (end 11.1150 -2.8600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 11.1150 -2.8600) 
+    (end 11.1150 2.8600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 11.1150 2.8600) 
+    (end -11.1150 2.8600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -11.1150 2.8600) 
+    (end -11.1150 -2.8600) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -11.7500 -3.4500) 
+    (end 11.7500 -3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 11.7500 -3.4500) 
+    (end 11.7500 3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 11.7500 3.4500) 
+    (end -11.7500 3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -11.7500 3.4500) 
+    (end -11.7500 -3.4500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -9.5400 -2.7850) 
+    (end -11.0400 -2.7850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -11.0400 -2.7850) 
+    (end -11.0400 2.7850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -11.0400 2.7850) 
+    (end -9.5400 2.7850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 9.5400 2.7850) 
+    (end 11.0400 1.2850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 11.0400 1.2850) 
+    (end 11.0400 -1.2850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 11.0400 -1.2850) 
+    (end 9.5400 -2.7850) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_text reference REF** 
+    (at 0 -4.1250) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "TFML-115-02-L-D-LC" 
+    (at 0 4.1250) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (pad "" np_thru_hole circle 
+    (at 10.4800 0) 
+    (size 1.2000 1.2000) 
+    (layers *.Mask) 
+    (drill 1.2000)) 
+  (pad "" np_thru_hole circle 
+    (at -10.4800 0) 
+    (size 1.2000 1.2000) 
+    (layers *.Mask) 
+    (drill 1.2000)))
