@@ -1,7 +1,7 @@
 
-(module "WE-HCC-1090 " 
+(module "WE-HCC-1090" 
   (layer F.Cu) 
-  (tedit 5A7CD599) 
+  (tedit 5A80905C) 
   (fp_text reference REF** 
     (at -6.7000 0 90) 
     (layer F.Fab) 
@@ -9,7 +9,7 @@
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (fp_text value "WE-HCC-1090 " 
+  (fp_text value "WE-HCC-1090" 
     (at 6.7000 0 90) 
     (layer F.Fab) 
     (effects 

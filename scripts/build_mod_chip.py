@@ -202,7 +202,7 @@ config = {
     },
     
     # WE 7443330220 Inductor
-    "WE-HCC-1090 ": {
+    "WE-HCC-1090": {
         "pad_shape": (2.3, 3.6),
         "pitch": 9.2,
         "chip_shape": (10.9, 10),
