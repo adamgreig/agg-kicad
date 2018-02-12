@@ -222,7 +222,7 @@ def sfml_lc(pins):
 
 
 def main(prettypath, verify=False, verbose=False):
-    for pins in (5, 7, 10):
+    for pins in (5, 7, 10, 15):
         for generator in (tfml, tfml_lc, sfml, sfml_lc):
             # Generate footprint
             name, fp = generator(pins)

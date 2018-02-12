@@ -1,0 +1,47 @@
+datasheet: http://www.analog.com/media/en/technical-documentation/data-sheets/ADP2389_2390.pdf
+description: 18 V, 12 A Step-Down Regulator with Programmable Current Limit
+footprint: agg:ADP2389ACPZ-R7
+name: ADP2389
+ordercodes:
+- [Mouser, '584-ADP2389ACPZ-R7']
+pins:
+- - - [VIN, 27, pwrin]
+    - [PVIN, 22, pwrin]
+    - [PVIN, 23, pwrin]
+    - [PVIN, 24, pwrin]
+    - [PVIN, 25, pwrin]
+    - [PVIN, 26, pwrin]
+
+  - - [EN, 28, in]
+    - [PGOOD, 30, od]
+
+  - - [FTW, 29, pwrout]
+    - [ILIM, 31, pwrout]
+    - [RT, 32, pwrout]
+    - [VREG, 4, pwrout]
+    
+  - - [GND, 5, pwrin]
+    - [PGND, 12, pwrin]
+    - [PGND, 13, pwrin]
+    - [PGND, 14, pwrin]
+    - [PGND, 15, pwrin]
+    - [PGND, 16, pwrin]
+    - [PGND, 17, pwrin]
+    - [PGND, 18, pwrin]
+    - [GND, 33, pwrin]
+    
+- - - [BST, 21, pwrout]
+    - [SW, 6, pwrout]
+    - [SW, 7, passive]
+    - [SW, 8, passive]
+    - [SW, 9, passive]
+    - [SW, 10, passive]
+    - [SW, 11, passive]
+    - [SW, 19, passive]
+    - [SW, 20, passive]
+    - [SW, 34, passive]    
+    
+  - - [FB, 3, in]
+  
+  - - [COMP, 2, in]
+    - [SS, 1, in]
