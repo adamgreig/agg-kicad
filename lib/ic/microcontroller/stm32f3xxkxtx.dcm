@@ -1,0 +1,4 @@
+EESchema-DOCLIB  Version 2.0
+$CMP STM32F3xxKxTx
+D STM32F3 32 pin LQFP package
+$ENDCMP
