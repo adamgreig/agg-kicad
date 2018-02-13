@@ -275,6 +275,14 @@ config = {
         "pin_shape": (-1.5, 4),
     },
 
+    # Coilcraft MSS1210 series inductors
+    "MSS1210": {
+        "pad_shape": (3.0, 5.5),
+        "pitch": 9.5,
+        "chip_shape": (12.3, 12.3),
+        "pin_shape": (-2.5, 5.0),
+    },
+
     # DO-214AC (SMA) from Diodes Inc.
     "DO-214AC-SMA": {
         "pad_shape": (2.5, 1.7),
