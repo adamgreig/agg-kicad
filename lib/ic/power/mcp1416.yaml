@@ -1,0 +1,12 @@
+name: MCP1416
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/20002092F.pdf
+footprint: agg:SOT-23-5
+description: 1.5A High Speed Power MOSFET Driver
+ordercodes:
+  - [Farnell, '1630421']
+pins:
+- - - [VDD, 2, pwrin]
+    - [IN, 3, in]
+    - [GND, 4, pwrin]
+- - - [OUT, 5, out]
+  - - [NC, 1, nc]

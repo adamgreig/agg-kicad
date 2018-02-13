@@ -1,0 +1,22 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# MCP1416
+#
+DEF MCP1416 IC 0 40 Y Y 1 F N
+F0 "IC" -200 200 50 H V L CNN
+F1 "MCP1416" -200 -200 50 H V L CNN
+F2 "agg:SOT-23-5" -200 -300 50 H I L CNN
+F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002092F.pdf" -200 -400 50 H I L CNN
+F4 "1630421" -200 -500 50 H I L CNN "Farnell"
+DRAW
+S -200 150 200 -150 0 1 0 f
+X VDD 2 -300 100 100 R 50 50 0 0 W
+X IN 3 -300 0 100 R 50 50 0 0 I
+X GND 4 -300 -100 100 R 50 50 0 0 W
+X OUT 5 300 100 100 L 50 50 0 0 O
+X NC 1 300 -100 100 L 50 50 0 0 N
+ENDDRAW
+ENDDEF
+#
+#End Library
