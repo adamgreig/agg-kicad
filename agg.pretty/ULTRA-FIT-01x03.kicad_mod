@@ -1,4 +1,4 @@
-(module ultra-fit-01x03 (layer F.Cu) (tedit 5A88999B)
+(module ULTRA-FIT-01x03 (layer F.Cu) (tedit 5A88999B)
   (fp_text reference REF** (at 0 -8) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
