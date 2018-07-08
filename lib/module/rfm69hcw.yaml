@@ -1,0 +1,21 @@
+name: RFM69HCW
+description: ISM Transceiver Module from HopeRF
+datasheet: http://www.hoperf.com/upload/rf/RFM69HCW-V1.1.pdf
+footprint: agg:RFM69HCW
+pins:
+- - - [VCC, 13, pwrin]
+    - [DIO0, 14, bidi]
+    - [DIO1, 15, bidi]
+    - [DIO2, 16, bidi]
+    - [DIO3, 11, bidi]
+    - [DIO4, 12, bidi]
+    - [DIO5, 7, bidi]    
+    - [GND, 1, pwrin]
+- - - [RESET, 6, in]
+    - [NSS, 5, in]
+    - [MOSI, 3, in]
+    - [MISO, 2, out]
+    - [SCK, 4, in]
+    - [GND, 8, pwrin]
+    - [ANA, 9, out]
+    - [GND, 10, pwrin]
