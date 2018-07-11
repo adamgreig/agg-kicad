@@ -1,0 +1,11 @@
+datasheet: http://www.ti.com/lit/ds/symlink/tlv760.pdf
+description: Fixed Output LDO Regulator 15v 100mA
+footprint: agg:SOT-23
+name: TLV76015
+ordercodes:
+- [Farnell, '2773544']
+pins:
+- - - [VIN, 2, pwrin]
+    - [GND, 3, pwrin]
+- - - [VOUT, 1, pwrout]
+

@@ -1,0 +1,11 @@
+datasheet: http://www.ti.com/lit/ds/symlink/tlv760.pdf
+description: Fixed Output LDO Regulator 12v 100mA
+footprint: agg:SOT-23
+name: TLV76012
+ordercodes:
+- [Farnell, '2773540']
+pins:
+- - - [VIN, 2, pwrin]
+    - [GND, 3, pwrin]
+- - - [VOUT, 1, pwrout]
+
