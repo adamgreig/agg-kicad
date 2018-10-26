@@ -1,0 +1,12 @@
+datasheet: https://ww2.minicircuits.com/pdfs/BFCN-2450+.pdf
+description: 2400 to 2550 MHz Ceraminc Bandpass Filter
+footprint: agg:FV1206-4
+designator: F
+name: BFCN-2450+
+ordercodes:
+- [Minicircuits, 'BFCN-2450+']
+pins:
+- - - [IN, 1, passive]
+    - [GND, 2, pwrin]
+- - - [OUT, 3, passive]
+    - [GND, 4, pwrin]

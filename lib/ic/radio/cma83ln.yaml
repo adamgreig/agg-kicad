@@ -1,0 +1,17 @@
+datasheet: https://ww2.minicircuits.com/pdfs/CMA-83LN+.pdf
+description: 0.5 to 8.0 GHz RF LNA
+footprint: agg:DL1721
+name: CMA-83LN+
+ordercodes:
+- [Minicircuits, 'CMA-83LN+']
+pins:
+- - - [RF_IN, 2, in]
+    - [GND, 1, pwrin]
+    - [GND, 3, pwrin]
+    - [GND, 5, pwrin]
+    - [GND, EP, pwrin]
+- - - [RF_OUT, 7, out]
+    - [NC, 4, pwrin]
+    - [GND, 6, pwrin]
+    - [GND, 8, pwrin]
+

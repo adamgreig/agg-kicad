@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# BFCN-2450+
+#
+DEF BFCN-2450+ F 0 40 Y Y 1 F N
+F0 "F" -200 200 50 H V L CNN
+F1 "BFCN-2450+" -200 -200 50 H V L CNN
+F2 "agg:FV1206-4" -200 -300 50 H I L CNN
+F3 "https://ww2.minicircuits.com/pdfs/BFCN-2450+.pdf" -200 -400 50 H I L CNN
+F4 "BFCN-2450+" -200 -500 50 H I L CNN "Minicircuits"
+DRAW
+S -200 150 200 -150 0 1 0 f
+X IN 1 -300 100 100 R 50 50 0 0 P
+X GND 2 -300 0 100 R 50 50 0 0 W
+X OUT 3 300 100 100 L 50 50 0 0 P
+X GND 4 300 0 100 L 50 50 0 0 W
+ENDDRAW
+ENDDEF
+#
+#End Library
