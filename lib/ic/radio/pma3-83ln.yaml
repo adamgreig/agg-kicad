@@ -17,6 +17,6 @@ pins:
     - [NC, 7, pwrin]
     - [NC, 9, pwrin]
     - [NC, 10, pwrin]
-    - [NC, 11, pwrin]
-    - [NC, 12, pwrin]
+    - [NC, 11, nc]
+    - [NC, 12, nc]
 
