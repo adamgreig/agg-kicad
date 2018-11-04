@@ -1,0 +1,22 @@
+datasheet: https://ww2.minicircuits.com/pdfs/PMA3-83LN+.pdf
+description: 0.5 to 8.0 GHz RF LNA
+footprint: agg:DQ1225
+name: PMA3-83LN+
+ordercodes:
+- [Minicircuits, 'PMA3-83LN+']
+pins:
+- - - [RF_IN, 2, in]
+    - [GND, EP, pwrin]
+    - [NC, 1, pwrin]
+    - [NC, 3, pwrin]
+    - [NC, 4, pwrin]
+    - [NC, 5, pwrin]
+    - [NC, 6, pwrin]
+    
+- - - [RF_OUT, 8, out]
+    - [NC, 7, pwrin]
+    - [NC, 9, pwrin]
+    - [NC, 10, pwrin]
+    - [NC, 11, nc]
+    - [NC, 12, nc]
+

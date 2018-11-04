@@ -503,6 +503,19 @@ config = {
         },
     },
 
+    # QFN-12 from DQ1225
+    # For PMA3-83LN+
+    "DQ1225": {
+        "rows": 4,
+        "pins": 12,
+        "pin_pitch": 0.51,
+        "row_pitch": 2.71,
+        "pad_shape": (0.51, 0.25),
+        "ep_shape": (1.25, 1.25),
+        "chip_shape": (3, 3),
+        "pin_shape": (-0.41, 0.23),
+    },
+
     # QFN-20 from JEDEC MO-220VGGD-8
     # For Si4460
     # IPC-7351B: QFN50P400X400X85-21V8N
