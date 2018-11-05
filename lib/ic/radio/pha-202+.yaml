@@ -1,0 +1,17 @@
+datasheet: https://ww2.minicircuits.com/pdfs/PHA-202+.pdf
+description: High Dynamic Range MMIC Amplifier, 30 MHz to 2.7 GHz 
+footprint: agg:DL1636
+name: PHA-202+
+ordercodes:
+- [Minicircuits, 'PHA-202+']
+pins:
+- - - [RF_IN, 2, in]
+    - [GND, EP, pwrin]
+    - [NC, 1, pwrin]
+    - [NC, 3, pwrin]
+    - [NC, 4, pwrin]
+    
+- - - [RF_OUT, 7, out]
+    - [NC, 5, pwrin]
+    - [NC, 6, pwrin]
+    - [NC, 8, pwrin]
