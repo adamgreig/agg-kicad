@@ -74,6 +74,24 @@ config = {
         "pin_shape": (0.3, 0.3),
     },
 
+    # SO-8 from Maxim Integrated
+    # Complies to IPC7351A
+    "SO-8": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 1.27,
+        "row_pitch": 4.93,
+        "pad_shape": (1.98, 0.53),
+        "chip_shape": (3.9, 4.9),
+        "pin_shape": (1.05, 0.42),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-8_3.9x4.9mm_Pitch1.27mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+    
     # SOIC-8 from JEDEC MS-012AA
     # IPC-7351B: SOIC127P600X175-8N
     "SOIC-8": {
@@ -502,6 +520,7 @@ config = {
             "rotate": (0, 0, 0),
         },
     },
+<<<<<<< HEAD
 
     # QFN-8 from DL1636
     # For PHA-202+
@@ -529,6 +548,8 @@ config = {
         "chip_shape": (3, 3),
         "pin_shape": (-0.41, 0.23),
     },
+=======
+>>>>>>> added max14787/9
 
     # QFN-20 from JEDEC MO-220VGGD-8
     # For Si4460
