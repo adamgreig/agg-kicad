@@ -1,7 +1,7 @@
 
 (module DL1636 
   (layer F.Cu) 
-  (tedit 5BE38033) 
+  (tedit 5BE4C9C6) 
   (fp_text reference REF** 
     (at 0 -3.4000) 
     (layer F.Fab) 
@@ -230,55 +230,37 @@
     (size 1.0200 0.5100) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad EP thru_hole circle 
-    (at -1.3000 -1.3000) 
+    (at -0.8000 -1.6000) 
     (size 0.8000 0.8000) 
     (layers *.Cu) 
     (drill 0.4000) 
     (zone_connect 2)) 
   (pad EP thru_hole circle 
-    (at -1.3000 0.0000) 
+    (at -0.8000 0.0000) 
     (size 0.8000 0.8000) 
     (layers *.Cu) 
     (drill 0.4000) 
     (zone_connect 2)) 
   (pad EP thru_hole circle 
-    (at -1.3000 1.3000) 
+    (at -0.8000 1.6000) 
     (size 0.8000 0.8000) 
     (layers *.Cu) 
     (drill 0.4000) 
     (zone_connect 2)) 
   (pad EP thru_hole circle 
-    (at 0.0000 -1.3000) 
+    (at 0.8000 -1.6000) 
     (size 0.8000 0.8000) 
     (layers *.Cu) 
     (drill 0.4000) 
     (zone_connect 2)) 
   (pad EP thru_hole circle 
-    (at 0.0000 0.0000) 
+    (at 0.8000 0.0000) 
     (size 0.8000 0.8000) 
     (layers *.Cu) 
     (drill 0.4000) 
     (zone_connect 2)) 
   (pad EP thru_hole circle 
-    (at 0.0000 1.3000) 
-    (size 0.8000 0.8000) 
-    (layers *.Cu) 
-    (drill 0.4000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at 1.3000 -1.3000) 
-    (size 0.8000 0.8000) 
-    (layers *.Cu) 
-    (drill 0.4000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at 1.3000 0.0000) 
-    (size 0.8000 0.8000) 
-    (layers *.Cu) 
-    (drill 0.4000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at 1.3000 1.3000) 
+    (at 0.8000 1.6000) 
     (size 0.8000 0.8000) 
     (layers *.Cu) 
     (drill 0.4000) 

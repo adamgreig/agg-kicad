@@ -502,7 +502,7 @@ config = {
             "rotate": (0, 0, 0),
         },
     },
-    
+
     # QFN-8 from DL1636
     # For PHA-202+
     "DL1636": {
@@ -514,9 +514,9 @@ config = {
         "ep_shape": (3.94, 4.11),
         "chip_shape": (6, 4.90),
         "pin_shape": (-0.6, 0.42),
-        "ep_vias": (0.4, 0.8, 0.5),
+        "ep_vias": (0.4, 0.8, 0.8),
     },
-    
+
     # QFN-12 from DQ1225
     # For PMA3-83LN+
     "DQ1225": {
