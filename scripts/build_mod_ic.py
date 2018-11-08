@@ -503,6 +503,20 @@ config = {
         },
     },
 
+    # QFN-8 from DL1636
+    # For PHA-202+
+    "DL1636": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 1.27,
+        "row_pitch": 5.51,
+        "pad_shape": (1.02, 0.51),
+        "ep_shape": (3.94, 4.11),
+        "chip_shape": (6, 4.90),
+        "pin_shape": (-0.6, 0.42),
+        "ep_vias": (0.4, 0.8, 0.8),
+    },
+
     # QFN-12 from DQ1225
     # For PMA3-83LN+
     "DQ1225": {
