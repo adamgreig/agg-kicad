@@ -74,6 +74,24 @@ config = {
         "pin_shape": (0.3, 0.3),
     },
 
+    # SO-8 from Maxim Integrated
+    # Complies to IPC7351A
+    "SO-8": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 1.27,
+        "row_pitch": 4.93,
+        "pad_shape": (1.98, 0.53),
+        "chip_shape": (3.9, 4.9),
+        "pin_shape": (1.05, 0.42),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-8_3.9x4.9mm_Pitch1.27mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+    
     # SOIC-8 from JEDEC MS-012AA
     # IPC-7351B: SOIC127P600X175-8N
     "SOIC-8": {
@@ -501,33 +519,6 @@ config = {
             "scale": (1, 1, 1),
             "rotate": (0, 0, 0),
         },
-    },
-    
-    # QFN-8 from DL1636
-    # For PHA-202+
-    "DL1636": {
-        "rows": 2,
-        "pins": 8,
-        "pin_pitch": 1.27,
-        "row_pitch": 5.51,
-        "pad_shape": (1.02, 0.51),
-        "ep_shape": (3.94, 4.11),
-        "chip_shape": (6, 4.90),
-        "pin_shape": (-0.6, 0.42),
-        "ep_vias": (0.4, 0.8, 0.5),
-    },
-    
-    # QFN-12 from DQ1225
-    # For PMA3-83LN+
-    "DQ1225": {
-        "rows": 4,
-        "pins": 12,
-        "pin_pitch": 0.51,
-        "row_pitch": 2.71,
-        "pad_shape": (0.51, 0.25),
-        "ep_shape": (1.25, 1.25),
-        "chip_shape": (3, 3),
-        "pin_shape": (-0.41, 0.23),
     },
 
     # QFN-20 from JEDEC MO-220VGGD-8
