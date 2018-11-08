@@ -209,6 +209,14 @@ config = {
         "pin_shape": (-1.6, 3),
     },    
 
+    # Coil Craft WA8514-AE Inductor
+    "WA8514-AE": {
+        "pad_shape": (0.838, 2.413),
+        "pitch": 3.988,
+        "chip_shape": (4.34, 1.98),
+        "pin_shape": (-0.33, 1.65),
+    }, 
+
     # SOD-323 from IPC-7351B: SOD2513X100L
     "SOD-323": {
         "pad_shape": (0.90, 0.50),

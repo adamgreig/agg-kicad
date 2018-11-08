@@ -1,7 +1,7 @@
 
 (module DL1636 
   (layer F.Cu) 
-  (tedit 5BE03EA1) 
+  (tedit 5BE38033) 
   (fp_text reference REF** 
     (at 0 -3.4000) 
     (layer F.Fab) 
@@ -229,6 +229,60 @@
     (at 2.7550 -1.9050) 
     (size 1.0200 0.5100) 
     (layers F.Cu F.Mask F.Paste)) 
+  (pad EP thru_hole circle 
+    (at -1.3000 -1.3000) 
+    (size 0.8000 0.8000) 
+    (layers *.Cu) 
+    (drill 0.4000) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at -1.3000 0.0000) 
+    (size 0.8000 0.8000) 
+    (layers *.Cu) 
+    (drill 0.4000) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at -1.3000 1.3000) 
+    (size 0.8000 0.8000) 
+    (layers *.Cu) 
+    (drill 0.4000) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 0.0000 -1.3000) 
+    (size 0.8000 0.8000) 
+    (layers *.Cu) 
+    (drill 0.4000) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 0.0000 0.0000) 
+    (size 0.8000 0.8000) 
+    (layers *.Cu) 
+    (drill 0.4000) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 0.0000 1.3000) 
+    (size 0.8000 0.8000) 
+    (layers *.Cu) 
+    (drill 0.4000) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 1.3000 -1.3000) 
+    (size 0.8000 0.8000) 
+    (layers *.Cu) 
+    (drill 0.4000) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 1.3000 0.0000) 
+    (size 0.8000 0.8000) 
+    (layers *.Cu) 
+    (drill 0.4000) 
+    (zone_connect 2)) 
+  (pad EP thru_hole circle 
+    (at 1.3000 1.3000) 
+    (size 0.8000 0.8000) 
+    (layers *.Cu) 
+    (drill 0.4000) 
+    (zone_connect 2)) 
   (pad EP smd rect 
     (at 0 0) 
     (size 3.9400 4.1100) 

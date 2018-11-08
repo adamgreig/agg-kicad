@@ -442,7 +442,7 @@ config = {
         "ep_vias": (0.4, 0.6, 1.9),
         "chip_shape": (7.1, 7.1),
         "pin_shape": (-0.5, 0.3),
-       "model": {
+        "model": {
             "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-48-1EP_7x7mm_Pitch0.5mm.wrl",
             "offset": (0, 0, 0),
             "scale": (1, 1, 1),
@@ -514,6 +514,7 @@ config = {
         "ep_shape": (3.94, 4.11),
         "chip_shape": (6, 4.90),
         "pin_shape": (-0.6, 0.42),
+        "ep_vias": (0.4, 0.8, 0.5),
     },
     
     # QFN-12 from DQ1225
