@@ -548,7 +548,7 @@ config = {
         "pin_shape": (-0.41, 0.23),
     },
 
- # QFN-20 from JEDEC MO-220VGGD-8
+    # QFN-20 from JEDEC MO-220VGGD-8
     # For Si4460
     # IPC-7351B: QFN50P400X400X85-21V8N
     "QFN-20-EP-SI": {
