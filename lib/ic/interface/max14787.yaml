@@ -1,6 +1,6 @@
 datasheet: https://datasheets.maximintegrated.com/en/ds/MAX14784E-MAX14789E.pdf
 description: MAX14787E/MAX14789E Full Duplex RS485 Driver
-footprint: agg:SO-8
+footprint: agg:SOIC-8
 name: MAX14787E
 ordercodes:
 - [Farnell, '2528531']
