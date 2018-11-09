@@ -520,7 +520,6 @@ config = {
             "rotate": (0, 0, 0),
         },
     },
-<<<<<<< HEAD
 
     # QFN-8 from DL1636
     # For PHA-202+
@@ -548,10 +547,8 @@ config = {
         "chip_shape": (3, 3),
         "pin_shape": (-0.41, 0.23),
     },
-=======
->>>>>>> added max14787/9
 
-    # QFN-20 from JEDEC MO-220VGGD-8
+ # QFN-20 from JEDEC MO-220VGGD-8
     # For Si4460
     # IPC-7351B: QFN50P400X400X85-21V8N
     "QFN-20-EP-SI": {
