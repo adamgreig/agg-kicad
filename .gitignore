@@ -6,3 +6,4 @@ agg-kicad-cache.lib
 fp-lib-table
 templates/*.pro
 templates/*.kicad_pcb-bak
+fp-info-cache
