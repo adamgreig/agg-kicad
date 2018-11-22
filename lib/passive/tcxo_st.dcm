@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TCXO_ST
+D 4 pin TCXO with Standy
+$ENDCMP
+#
+#End Doc Library
