@@ -1,0 +1,4 @@
+EESchema-DOCLIB  Version 2.0
+$CMP MAX11665AUT
+D 500ksps 12bit ADC
+$ENDCMP
