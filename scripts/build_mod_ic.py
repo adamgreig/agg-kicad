@@ -424,6 +424,25 @@ config = {
         },
     },
 
+    # UFDFN-8 / USON-8 from JEDEC MO-220
+    # AKA Winbond UX
+    "UFDFN-8": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 0.5,
+        "row_pitch": 2.45,
+        "pad_shape": (.30, .25),
+        "chip_shape": (3.0, 2.0),
+        "pin_shape": (-0.45, 0.25),
+        "model": {
+            "path":
+            "${KISYS3DMOD}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm.step",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # UFQFPN-48 from JEDEC MO-220
     # Modified to meet the ST ECOPACK package of the same name:
     #   * Row pitch is 6.75mm instead of 7.0mm
