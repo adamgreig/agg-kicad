@@ -1,0 +1,4 @@
+EESchema-DOCLIB  Version 2.0
+$CMP MAX15062
+D 60V 300mA Step-Down DC-DC Converter
+$ENDCMP

@@ -1113,6 +1113,23 @@ config = {
         },
     },
 
+    # TDFN-8 (MAXIM T822CN+1, 21-0487, 90-0349)
+    "TDFN-8": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 0.5,
+        "row_pitch": 1.9,
+        "pad_shape": (0.85, 0.30),
+        "chip_shape": (2.0, 2.0),
+        "pin_shape": (-0.4, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Package_DFN_QFN.3dshapes/DFN-8_2x2mm_P0.5mm.step",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # DFN-16 from LTC4353
     # IPC-7351B: DFN45P300X400X75-17N
     "DFN-16-EP-LTC-DE": {
