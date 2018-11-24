@@ -545,6 +545,7 @@ config = {
         "pad_shape": (0.7, 0.2),
         "chip_shape": (1.35, 2.60),
         "pin_shape": (-0.5, 0.20),
+        "silk": "external",
     },
 
     # QFN-12 from DQ1225

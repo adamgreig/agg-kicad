@@ -1,7 +1,7 @@
 
 (module "uQFN-10L" 
   (layer F.Cu) 
-  (tedit 5BF95088) 
+  (tedit 5BF9570F) 
   (fp_text reference REF** 
     (at 0 -2.2500) 
     (layer F.Fab) 
@@ -192,28 +192,19 @@
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -0.3250 -1.0000) 
-    (end -0.3250 -1.0000) 
+    (start -0.0750 -1.3000) 
+    (end 0.6750 -1.3000) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start -0.3250 -1.0000) 
-    (end -0.3250 1.0000) 
+    (start -0.6750 1.3000) 
+    (end 0.6750 1.3000) 
     (layer F.SilkS) 
     (width 0.1500)) 
-  (fp_line 
-    (start -0.3250 1.0000) 
-    (end 0.3250 1.0000) 
-    (layer F.SilkS) 
-    (width 0.1500)) 
-  (fp_line 
-    (start 0.3250 1.0000) 
-    (end 0.3250 -1.6500) 
-    (layer F.SilkS) 
-    (width 0.1500)) 
-  (fp_line 
-    (start 0.3250 -1.6500) 
-    (end -0.3250 -1.0000) 
+  (fp_arc 
+    (start -0.3750 -1.3000) 
+    (end -0.6750 -1.3000) 
+    (angle 180) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
