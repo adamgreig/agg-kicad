@@ -109,6 +109,8 @@ def compiledcm(libpath):
         for f in fnmatch.filter(sorted(files), "*.dcm"):
             with open(os.path.join(dirpath, f)) as dcmf:
                 part = dcmf.readlines()[1:]
+                if part[-1].startswith("#End Doc Library"):
+                    part = part[:-1]
                 lines.append("".join(part))
 
     lines.append("# End Doc Library\n")
