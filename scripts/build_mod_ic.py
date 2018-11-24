@@ -536,6 +536,17 @@ config = {
         "ep_vias": (0.4, 0.8, 0.8),
     },
 
+    # uQFN-10L
+    "uQFN-10L": {
+        "rows": 2,
+        "pins": 10,
+        "pin_pitch": 0.5,
+        "row_pitch": 1.05,
+        "pad_shape": (0.7, 0.2),
+        "chip_shape": (1.35, 2.60),
+        "pin_shape": (-0.5, 0.20),
+    },
+
     # QFN-12 from DQ1225
     # For PMA3-83LN+
     "DQ1225": {
