@@ -102,7 +102,7 @@ def compiledcm(libpath):
     lines.append("# on {}\n".format(datetime.datetime.now()))
     lines.append("# using git version {}\n".format(version))
     lines.append("# See github.com/adamgreig/agg-kicad\n")
-    lines.append("#" + "="*78 + "\n\n")
+    lines.append("#" + "="*78 + "\n#\n")
 
     for dirpath, dirnames, files in os.walk(libpath):
         dirnames.sort()
