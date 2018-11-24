@@ -12,4 +12,3 @@ pins:
 - - - [+Vout, 6, pwrout]
     - [COM, 7, pwrout]
     - [-Vout, 8, pwrout]
-    - [NC, 4, nc]
