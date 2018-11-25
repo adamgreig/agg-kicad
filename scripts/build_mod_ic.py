@@ -1279,6 +1279,12 @@ config = {
         "chip_shape": (2.0, 2.5),
         "pin_shape": (-0.7, 0.7),
         "silk": "external",
+        "model": {
+            "path": "${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
+            "offset": (0, 0, 0),
+            "scale": (0.8, 0.8, 1.0),
+            "rotate": (0, 0, 0),
+        },
     },
 
     # RFM69 and friends
