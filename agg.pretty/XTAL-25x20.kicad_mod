@@ -1,7 +1,7 @@
 
 (module "XTAL-25x20" 
   (layer F.Cu) 
-  (tedit 5BFAE058) 
+  (tedit 5BFAE103) 
   (fp_text reference REF** 
     (at 0 -2.2000) 
     (layer F.Fab) 
@@ -159,4 +159,4 @@
     (scale 
       (xyz 0.8000 0.8000 1.0000)) 
     (rotate 
-      (xyz 0 0 0))))
+      (xyz 0 0 90))))

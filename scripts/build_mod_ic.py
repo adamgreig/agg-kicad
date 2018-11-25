@@ -1283,7 +1283,7 @@ config = {
             "path": "${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
             "offset": (0, 0, 0),
             "scale": (0.8, 0.8, 1.0),
-            "rotate": (0, 0, 0),
+            "rotate": (0, 0, 90),
         },
     },
 
