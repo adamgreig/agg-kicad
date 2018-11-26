@@ -1287,6 +1287,17 @@ config = {
         },
     },
 
+    # MB2S diode bridge rectifier in TO-269AA
+    "TO-269AA": {
+        "rows": 2,
+        "pins": 4,
+        "pin_pitch": 2.54,
+        "row_pitch": 5.7,
+        "pad_shape": (1.4, 0.8),
+        "chip_shape": (3.9, 4.75),
+        "pin_shape": (1.4, 0.74),
+    },
+
     # RFM69 and friends
     "RFM69": {
         "rows": 2,
