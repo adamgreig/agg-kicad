@@ -1,0 +1,4 @@
+EESchema-DOCLIB  Version 2.0
+$CMP W25Q80
+D 8Mbit SPI flash memory
+$ENDCMP

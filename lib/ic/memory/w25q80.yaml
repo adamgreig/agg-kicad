@@ -1,0 +1,15 @@
+datasheet: http://www.winbond.com/resource-files/w25q80dv%20dl_revh_10022015.pdf
+footprint: agg:UFDFN-8
+name: W25Q80
+description: 8Mbit SPI flash memory
+ordercodes:
+  - [DigiKey, "W25Q80DVUXIECT-ND"]
+pins:
+- - - [VCC, 8, pwrin]
+    - [GND, 4, pwrin]
+    - [~WP~/IO2, 3, bidi]
+    - [~HOLD~/IO3, 7, bidi]
+- - - [CLK, 6, in]
+    - [~CS, 1, in]
+    - [DI/IO0, 5, bidi]
+    - [DO/IO1, 2, bidi]

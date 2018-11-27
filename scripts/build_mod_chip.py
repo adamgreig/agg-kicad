@@ -291,6 +291,14 @@ config = {
         "pin_shape": (-2.5, 5.0),
     },
 
+    # Coilcraft LPS4018 series inductors
+    "LPS4018": {
+        "pad_shape": (1.45, 3.89),
+        "pitch": 2.95,
+        "chip_shape": (3.9, 3.9),
+        "pin_shape": (-1.1, 3.9),
+    },
+
     # DO-214AC (SMA) from Diodes Inc.
     "DO-214AC-SMA": {
         "pad_shape": (2.5, 1.7),
@@ -328,6 +336,14 @@ config = {
                   "offset": (0, 0, 0),
                   "scale": MM_TO_DIN,
                   "rotate": (0, 0, 180)},
+    },
+
+    # KSR232G tactile switch
+    "KSR232G": {
+        "pad_shape": (1.0, 1.4),
+        "pitch": 7.0,
+        "chip_shape": (6.0, 3.8),
+        "pin_shape": (0.6, 1.0),
     },
 }
 

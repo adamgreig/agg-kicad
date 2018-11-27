@@ -1,7 +1,7 @@
 
 (module "XTAL-25x20" 
   (layer F.Cu) 
-  (tedit 574B7309) 
+  (tedit 5BFAE103) 
   (fp_text reference REF** 
     (at 0 -2.2000) 
     (layer F.Fab) 
@@ -42,63 +42,63 @@
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -0.3000 -1.2500) 
-    (end -1.0000 -1.2500) 
+    (start -0.3000 -1.2000) 
+    (end -1.0000 -1.2000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -1.0000 -0.8500) 
-    (end -0.3000 -0.8500) 
+    (start -1.0000 -0.5000) 
+    (end -0.3000 -0.5000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -0.3000 -0.8500) 
-    (end -0.3000 -1.2500) 
+    (start -0.3000 -0.5000) 
+    (end -0.3000 -1.2000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -0.3000 0.8500) 
-    (end -1.0000 0.8500) 
+    (start -0.3000 0.5000) 
+    (end -1.0000 0.5000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -1.0000 1.2500) 
-    (end -0.3000 1.2500) 
+    (start -1.0000 1.2000) 
+    (end -0.3000 1.2000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -0.3000 1.2500) 
-    (end -0.3000 0.8500) 
+    (start -0.3000 1.2000) 
+    (end -0.3000 0.5000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start 1.0000 0.8500) 
-    (end 0.3000 0.8500) 
+    (start 1.0000 0.5000) 
+    (end 0.3000 0.5000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start 0.3000 0.8500) 
-    (end 0.3000 1.2500) 
+    (start 0.3000 0.5000) 
+    (end 0.3000 1.2000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start 0.3000 1.2500) 
-    (end 1.0000 1.2500) 
+    (start 0.3000 1.2000) 
+    (end 1.0000 1.2000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start 1.0000 -1.2500) 
-    (end 0.3000 -1.2500) 
+    (start 1.0000 -1.2000) 
+    (end 0.3000 -1.2000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start 0.3000 -1.2500) 
-    (end 0.3000 -0.8500) 
+    (start 0.3000 -1.2000) 
+    (end 0.3000 -0.5000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start 0.3000 -0.8500) 
-    (end 1.0000 -0.8500) 
+    (start 0.3000 -0.5000) 
+    (end 1.0000 -0.5000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
@@ -118,38 +118,45 @@
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start -1.4500 -1.5000) 
-    (end 1.4500 -1.5000) 
+    (start -1.5500 -1.5000) 
+    (end 1.5500 -1.5000) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 1.4500 -1.5000) 
-    (end 1.4500 1.5000) 
+    (start 1.5500 -1.5000) 
+    (end 1.5500 1.5000) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 1.4500 1.5000) 
-    (end -1.4500 1.5000) 
+    (start 1.5500 1.5000) 
+    (end -1.5500 1.5000) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start -1.4500 1.5000) 
-    (end -1.4500 -1.5000) 
+    (start -1.5500 1.5000) 
+    (end -1.5500 -1.5000) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (pad 1 smd rect 
-    (at -0.7000 -1.0500) 
+    (at -0.8000 -0.8500) 
     (size 1.0000 0.8000) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 2 smd rect 
-    (at -0.7000 1.0500) 
+    (at -0.8000 0.8500) 
     (size 1.0000 0.8000) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 3 smd rect 
-    (at 0.7000 1.0500) 
+    (at 0.8000 0.8500) 
     (size 1.0000 0.8000) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 4 smd rect 
-    (at 0.7000 -1.0500) 
+    (at 0.8000 -0.8500) 
     (size 1.0000 0.8000) 
-    (layers F.Cu F.Mask F.Paste)))
+    (layers F.Cu F.Mask F.Paste)) 
+  (model "${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 0.8000 0.8000 1.0000)) 
+    (rotate 
+      (xyz 0 0 90))))

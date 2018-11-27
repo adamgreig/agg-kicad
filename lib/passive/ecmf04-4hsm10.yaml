@@ -1,0 +1,17 @@
+datasheet: https://www.st.com/resource/en/datasheet/ecmf04-4hsm10.pdf
+name: ECMF04-4HSM10
+description: Common mode filter with ESD protection for high speed serial interface
+footprint: agg:uQFN-10L
+ordercodes:
+  - [Farnell, '2462664']
+pins:
+- - - [D1+, 1, passive]
+    - [D1-, 2, passive]
+  - - [D2+, 4, passive]
+    - [D2-, 5, passive]
+  - - [GND, 3, pwrin]
+- - - [D1+, 10, passive]
+    - [D1-, 9, passive]
+  - - [D2+, 7, passive]
+    - [D2-, 6, passive]
+  - - [GND, 8, pwrin]
