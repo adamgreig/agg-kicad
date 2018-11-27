@@ -3,7 +3,7 @@ description: iCE40 HX FPGA
 footprint: agg:Lattice-BG121
 name: iCE40HX8K-BG121
 ordercodes:
-  - [Digikey, '220-2148-ND']
+  - [DigiKey, '220-2148-ND']
 
 pins:
 - - - [VCC, D8, pwrin]

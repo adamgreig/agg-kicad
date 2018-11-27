@@ -8,7 +8,7 @@ F0 "IC" -850 3400 50 H V L CNN
 F1 "iCE40HX8K-BG121" -850 -3400 50 H V L CNN
 F2 "agg:Lattice-BG121" -850 -3500 50 H I L CNN
 F3 "http://www.latticesemi.com/view_document?document_id=49312" -850 -3600 50 H I L CNN
-F4 "220-2148-ND" -850 -3700 50 H I L CNN "Digikey"
+F4 "220-2148-ND" -850 -3700 50 H I L CNN "DigiKey"
 DRAW
 S -850 3350 850 -3350 0 1 0 f
 X VCC D8 -1000 3300 150 R 50 50 0 0 W
