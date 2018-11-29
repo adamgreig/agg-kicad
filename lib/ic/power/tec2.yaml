@@ -10,5 +10,5 @@ pins:
     - ["On/Off", 3, in]
     - [NC, 5, nc]
 - - - [+Vout, 6, pwrout]
-    - [COM, 7, pwrout]
+    - [COM, 7, pwrin]
     - [-Vout, 8, pwrout]
