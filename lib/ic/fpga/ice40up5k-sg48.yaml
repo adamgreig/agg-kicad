@@ -1,0 +1,66 @@
+datasheet: http://www.latticesemi.com/view_document?document_id=51968
+description: iCE40 UP5K FPGA
+footprint: agg:Lattice-SG48
+name: iCE40UP5K-SG48
+ordercodes:
+  - [DigiKey, '220-2212-1-ND']
+
+pins:
+
+- - - [VCC, 5, pwrin]
+    - [VCC, 30, pwrin]
+    - [VCCIO_0, 33, pwrin]
+    - [VCCIO_1, 22, pwrin]
+    - [VCCIO_2, 1, pwrin]
+    - [VPP_2V5, 24, pwrin]
+
+  - - [VCCPLL, 29, pwrin]
+
+  - - [GND, EP, pwrin]
+
+  - - [CDONE, 7, out]
+    - [~CRESET, 8, in]
+
+  - - [IOB_32a_SPI_SO, 14, bidi]
+    - [IOB_34a_SPI_SCK, 15, bidi]
+    - [IOB_35b_SPI_SS, 16, bidi]
+    - [IOB_33b_SPI_SI, 17, bidi]
+
+  - - [RGB0, 39, bidi]
+    - [RGB1, 40, bidi]
+    - [RGB2, 41, bidi]
+
+- - - [IOB_3b_G6, 44, bidi]
+    - [IOB_5b, 45, bidi]
+    - [IOB_0a, 46, bidi]
+    - [IOB_2a, 47, bidi]
+    - [IOB_4a, 48, bidi]
+    - [IOB_6a, 2, bidi]
+    - [IOB_9b, 3, bidi]
+    - [IOB_8a, 4, bidi]
+
+  - - [IOB_13b, 6, bidi]
+    - [IOB_16a, 9, bidi]
+    - [IOB_18a, 10, bidi]
+    - [IOB_20a, 11, bidi]
+    - [IOB_22a, 12, bidi]
+    - [IOB_24a, 13, bidi]
+    - [IOB_31b, 18, bidi]
+    - [IOB_29b, 19, bidi]
+    - [IOB_25b_G3, 20, bidi]
+    - [IOB_23b, 21, bidi]
+
+  - - [IOT_37a, 23, bidi]
+    - [IOT_36b, 25, bidi]
+    - [IOT_39a, 26, bidi]
+    - [IOT_38b, 27, bidi]
+    - [IOT_41a, 28, bidi]
+    - [IOT_42b, 31, bidi]
+    - [IOT_43a, 32, bidi]
+    - [IOT_44b, 34, bidi]
+    - [IOT_46b_G0, 35, bidi]
+    - [IOT_48b, 36, bidi]
+    - [IOT_45a_G1, 37, bidi]
+    - [IOT_50b, 38, bidi]
+    - [IOT_51a, 42, bidi]
+    - [IOT_49a, 43, bidi]
