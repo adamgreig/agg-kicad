@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# FUSE
+#
+DEF FUSE F 0 40 N N 1 F N
+F0 "F" 55 60 50 H V C CNN
+F1 "FUSE" 60 -70 50 H V C CNN
+F2 "" 55 60 50 H I C CNN
+F3 "" 55 60 50 H I C CNN
+DRAW
+S 20 10 80 -10 1 1 0 f
+P 2 0 1 0 0 0 100 0 N
+X ~ 1 0 0 20 R 50 50 1 1 P
+X ~ 2 100 0 20 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
