@@ -11,6 +11,8 @@ pins:
     - [LED2_A, 14, passive]
   - - [SHIELD, S1, passive]
     - [SHIELD, S2, passive]
+  - - [NC, 7, nc]
+    - [NC, 8, nc]
 - - - [VC1+, 9, pwrout]
     - [VC1-, 10, pwrout]
   - - [TD+, 5, passive]
