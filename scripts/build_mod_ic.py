@@ -755,6 +755,27 @@ config = {
         },
     },
 
+    # QFN-48 from Lattice iCE40UP5K SG48
+    "Lattice-SG48": {
+        "rows": 4,
+        "pins": 48,
+        "pin_pitch": 0.5,
+        "row_pitch": 6.8,
+        "pad_shape": (0.7, 0.25),
+        "ep_shape": (5.4, 5.4),
+        "ep_mask_shape": (0.8, 0.8, 0.6, 0.6),
+        "ep_paste_shape": (0.8, 0.8, 0.6, 0.6),
+        "ep_vias": (0.4, 0.8, 0.8),
+        "chip_shape": (7, 7),
+        "pin_shape": (-0.4, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm.step",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # QFN-64 from LTC2975 datasheet
     # IPC-7351B: QFN50P900X900X75-64N
     "QFN-64-EP-LTC-UP": {

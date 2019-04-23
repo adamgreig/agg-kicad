@@ -1,0 +1,23 @@
+name: 7499210124A
+datasheet: https://katalog.we-online.de/pbs/datasheet/7499210124A.pdf
+description: Shielded 8P8C Modular Connector with Magnetics, PoE, and LEDs
+designator: J
+ordercodes: [["Farnell", "2356103"]]
+footprint: agg:WE-RJ45LAN-7499210124A
+pins:
+- - - [LED1_C, 11, passive]
+    - [LED1_A, 12, passive]
+  - - [LED2_C, 13, passive]
+    - [LED2_A, 14, passive]
+  - - [SHIELD, S1, passive]
+    - [SHIELD, S2, passive]
+  - - [NC, 7, nc]
+    - [NC, 8, nc]
+- - - [VC1+, 9, pwrout]
+    - [VC1-, 10, pwrout]
+  - - [TD+, 5, passive]
+    - [TCT, 4, passive]
+    - [TD-, 6, passive]
+  - - [RD+, 1, passive]
+    - [RCT, 3, passive]
+    - [RD-, 2, passive]
