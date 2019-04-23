@@ -1,0 +1,4 @@
+EESchema-DOCLIB  Version 2.0
+$CMP TPS2378
+D TPS2378 802.3at PoE PD controller
+$ENDCMP
