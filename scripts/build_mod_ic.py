@@ -92,6 +92,26 @@ config = {
         },
     },
 
+    # SOIC-8 from JEDEC MS-012AA, with exposed pad
+    # IPC-7351B: SOIC127P600X175-8N
+    "SOIC-8-EP": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 1.27,
+        "row_pitch": 5.4,
+        "pad_shape": (1.55, 0.6),
+        "chip_shape": (4.0, 5.0),
+        "pin_shape": (1.1, 0.5),
+        "ep_shape": (2.4, 3.1),
+        "ep_vias": (0.3, 0.65, 0.3),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-8_3.9x4.9mm_Pitch1.27mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # SOIC-14 from JEDEC MS-012AB
     # IPC-7351B: SOIC127P600X175-14N
     "SOIC-14": {
