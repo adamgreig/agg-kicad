@@ -1,4 +1,4 @@
-update=Tue 23 Apr 2019 21:40:09 GMT
+update=Tue 23 Apr 2019 21:45:20 GMT
 version=1
 last_client=kicad
 [pcbnew]
@@ -226,10 +226,11 @@ LibName194=lib/passive/tcxo_st
 LibName195=lib/passive/tlv431
 LibName196=lib/passive/transformer_2x2
 LibName197=lib/passive/usblc6-2p6
-LibName198=lib/passive/xtal
-LibName199=lib/power/power
-LibName200=lib/power/pwr
-LibName201=lib/sensor/bme280
-LibName202=lib/ui/rotenc
-LibName203=lib/ui/sounder
-LibName204=lib/ui/switch
+LibName198=lib/passive/vctcxo
+LibName199=lib/passive/xtal
+LibName200=lib/power/power
+LibName201=lib/power/pwr
+LibName202=lib/sensor/bme280
+LibName203=lib/ui/rotenc
+LibName204=lib/ui/sounder
+LibName205=lib/ui/switch
