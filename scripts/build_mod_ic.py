@@ -92,6 +92,17 @@ config = {
         },
     },
 
+    # DUB0008A SOP package from TI
+    "DUB0008A": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 2.54,
+        "row_pitch": 9.45,
+        "pad_shape": (2.35, 0.65),
+        "chip_shape": (6.87, 9.55),
+        "pin_shape": (1.9, 0.5),
+    },
+
     # SOIC-8 from JEDEC MS-012AA, with exposed pad
     # IPC-7351B: SOIC127P600X175-8N
     "SOIC-8-EP": {
