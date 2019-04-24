@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP BFCN-2450+
 D 2400 to 2550 MHz Ceraminc Bandpass Filter
+F https://ww2.minicircuits.com/pdfs/BFCN-2450+.pdf
 $ENDCMP

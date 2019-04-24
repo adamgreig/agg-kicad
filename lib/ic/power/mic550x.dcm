@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP MIC550x
 D 300mA LDO
+F http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf
 $ENDCMP

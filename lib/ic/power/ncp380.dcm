@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP NCP380
 D Fixed/Adjustable Current-Limiting Power-Distribution Switch
+F http://www.onsemi.com/pub_link/Collateral/NCP380-D.PDF
 $ENDCMP

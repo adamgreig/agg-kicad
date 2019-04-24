@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP MAX15062
 D 60V 300mA Step-Down DC-DC Converter
+F https://datasheets.maximintegrated.com/en/ds/MAX15062.pdf
 $ENDCMP

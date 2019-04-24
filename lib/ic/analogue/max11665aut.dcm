@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP MAX11665AUT
 D 500ksps 12bit ADC
+F https://datasheets.maximintegrated.com/en/ds/MAX11661-MAX11666.pdf
 $ENDCMP

@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP TEC2
 D Isolated DC-DC converter
+F https://assets.tracopower.com/20181123133641/TEC2/documents/tec2-datasheet.pdf
 $ENDCMP

@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP LMx93
 D Dual differential comparator
+F http://www.ti.com/lit/ds/symlink/lm393.pdf
 $ENDCMP

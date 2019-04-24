@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP UCS1002
 D Programmable USB Port Power Controllerwith Charger Emulation
+F http://ww1.microchip.com/downloads/en/DeviceDoc/UCS1002-1%20Data%20Sheet.pdf
 $ENDCMP

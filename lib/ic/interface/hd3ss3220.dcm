@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP HD3SS3220
 D USB Type-C DRP Port Controller with SuperSpeed 2:1 MUX
+F http://www.ti.com/lit/gpn/hd3ss3220
 $ENDCMP

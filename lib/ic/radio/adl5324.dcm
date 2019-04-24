@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP ADL5324
 D 0.5W 400MHz-4GHz RF Driver Amplifier
+F http://www.analog.com/media/en/technical-documentation/data-sheets/ADL5324.pdf
 $ENDCMP

@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP TPS62152
 D 3.3Vout 1A, fixed, Buck Converter
+F http://www.ti.com/lit/ds/symlink/tps62152.pdf
 $ENDCMP

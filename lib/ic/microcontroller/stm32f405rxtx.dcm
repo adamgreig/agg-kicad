@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP STM32F405RxTx
 D STM32F4 64 pin TQFP package
+F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf
 $ENDCMP

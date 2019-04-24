@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP LTC3535
 D LTC3535 Dual DC-DC Converter
+F http://cds.linear.com/docs/en/datasheet/3535fa.pdf
 $ENDCMP

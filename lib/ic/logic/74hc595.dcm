@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP 74HC595
 D 8-bit serial-to-parallel shift register
+F http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf
 $ENDCMP

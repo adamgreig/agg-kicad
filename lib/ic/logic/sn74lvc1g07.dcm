@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP SN74LVC1G07
 D Buffer / Line Driver, Non-Inverting, 1 Gate, 1 Input, 1.65V to 5.5V
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf
 $ENDCMP

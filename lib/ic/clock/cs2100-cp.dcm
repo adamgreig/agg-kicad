@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP CS2100-CP
 D Fractional-N Clock Multiplier
+F https://www.cirrus.com/en/pubs/proDatasheet/CS2100-CP_F3.pdf
 $ENDCMP

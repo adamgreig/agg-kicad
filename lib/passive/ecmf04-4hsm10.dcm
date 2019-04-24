@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP ECMF04-4HSM10
 D Common mode filter with ESD protection for high speed serial interface
+F https://www.st.com/resource/en/datasheet/ecmf04-4hsm10.pdf
 $ENDCMP

@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP BME280
 D Digital humidity, pressure, and temperature sensor
+F https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf
 $ENDCMP

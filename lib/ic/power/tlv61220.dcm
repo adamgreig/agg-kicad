@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP TLV61220
 D Adjustable 200mA Boost Converter
+F http://www.ti.com/lit/ds/symlink/tlv61220.pdf
 $ENDCMP

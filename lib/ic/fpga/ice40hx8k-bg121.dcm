@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP iCE40HX8K-BG121
 D iCE40 HX FPGA
+F http://www.latticesemi.com/view_document?document_id=49312
 $ENDCMP

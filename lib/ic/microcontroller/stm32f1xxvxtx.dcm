@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP STM32F1xxVxTx
 D STM32F105/107 LQFP100 Package
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/e4/f3/1a/89/5a/02/46/ae/CD00220364.pdf/files/CD00220364.pdf/jcr:content/translations/en.CD00220364.pdf
 $ENDCMP

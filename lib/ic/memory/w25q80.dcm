@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP W25Q80
 D 8Mbit SPI flash memory
+F http://www.winbond.com/resource-files/w25q80dv%20dl_revh_10022015.pdf
 $ENDCMP

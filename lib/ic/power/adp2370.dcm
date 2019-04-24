@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP ADP2370
 D 800mA Buck Regulator
+F http://www.analog.com/media/en/technical-documentation/data-sheets/ADP2370_2371.pdf
 $ENDCMP

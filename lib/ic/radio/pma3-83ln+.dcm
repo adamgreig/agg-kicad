@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP PMA3-83LN+
 D 0.5 to 8.0 GHz RF LNA
+F https://ww2.minicircuits.com/pdfs/PMA3-83LN+.pdf
 $ENDCMP

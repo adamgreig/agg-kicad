@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP BGT24MTR12
 D 24GHz Transceiver MMIC
+F http://www.infineon.com/dgdl/?fileId=db3a304339dcf4b10139df108e75025b
 $ENDCMP

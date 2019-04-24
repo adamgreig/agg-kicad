@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP STM32F4xxZxJx
 D STM32F4 144 pin 10x10 UFBGA package
+F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141306.pdf
 $ENDCMP

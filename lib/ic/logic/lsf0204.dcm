@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP LSF0204
 D Logic Level Translator
+F http://www.ti.com/lit/ds/symlink/lsf0204.pdf
 $ENDCMP

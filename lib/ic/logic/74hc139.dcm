@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP 74HC139
 D Dual 2-to-4 line decoder/demultiplexer
+F http://cache.nxp.com/documents/data_sheet/74HC_HCT139.pdf
 $ENDCMP
