@@ -1,0 +1,12 @@
+name: MCP1804
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+footprint: agg:SOT-23-5
+description: 150mA 28V LDO
+ordercodes:
+  - [Farnell, '1825007']
+pins:
+- - - [VIN, 1, pwrin]
+    - [~SHDN, 4, in]
+    - [GND, 2, pwrin]
+- - - [VOUT, 5, pwrout]
+    - [NC, 3, nc]
