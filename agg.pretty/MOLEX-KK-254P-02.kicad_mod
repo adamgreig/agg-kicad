@@ -1,97 +1,102 @@
 
-(module "SIL-254P-03" 
+(module "MOLEX-KK-254P-02" 
   (layer F.Cu) 
-  (tedit 5CCC5112) 
+  (tedit 5CCC5146) 
   (pad 1 thru_hole rect 
-    (at -2.5400 0) 
+    (at -1.2700 0) 
     (size 1.9000 1.9000) 
     (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (pad 2 thru_hole circle 
-    (at 0.0000 0) 
-    (size 1.9000 1.9000) 
-    (layers *.Cu F.SilkS F.Mask B.Mask) 
-    (drill 1.0000)) 
-  (pad 3 thru_hole circle 
-    (at 2.5400 0) 
+    (at 1.2700 0) 
     (size 1.9000 1.9000) 
     (layers *.Cu F.SilkS F.Mask B.Mask) 
     (drill 1.0000)) 
   (fp_line 
-    (start -3.8100 -1.2700) 
-    (end 3.8100 -1.2700) 
+    (start -2.5400 -3.1750) 
+    (end 2.5400 -3.1750) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start 3.8100 -1.2700) 
-    (end 3.8100 1.2700) 
+    (start 2.5400 -3.1750) 
+    (end 2.5400 3.1750) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start 3.8100 1.2700) 
-    (end -3.8100 1.2700) 
+    (start 2.5400 3.1750) 
+    (end -2.5400 3.1750) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -3.8100 1.2700) 
-    (end -3.8100 -1.2700) 
+    (start -2.5400 3.1750) 
+    (end -2.5400 -3.1750) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -3.8100 -1.2700) 
-    (end 3.8100 -1.2700) 
+    (start -2.5400 -1.1750) 
+    (end 2.5400 -1.1750) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.5400 -3.1750) 
+    (end 2.5400 -3.1750) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start 3.8100 -1.2700) 
-    (end 3.8100 1.2700) 
+    (start 2.5400 -3.1750) 
+    (end 2.5400 3.1750) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start 3.8100 1.2700) 
-    (end -3.8100 1.2700) 
+    (start 2.5400 3.1750) 
+    (end -2.5400 3.1750) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start -3.8100 1.2700) 
-    (end -3.8100 -1.2700) 
+    (start -2.5400 3.1750) 
+    (end -2.5400 -3.1750) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start -4.1000 -1.5500) 
-    (end 4.1000 -1.5500) 
+    (start -2.5400 -1.1750) 
+    (end 2.5400 -1.1750) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -2.8000 -3.4500) 
+    (end 2.8000 -3.4500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 4.1000 -1.5500) 
-    (end 4.1000 1.5500) 
+    (start 2.8000 -3.4500) 
+    (end 2.8000 3.4500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start 4.1000 1.5500) 
-    (end -4.1000 1.5500) 
+    (start 2.8000 3.4500) 
+    (end -2.8000 3.4500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_line 
-    (start -4.1000 1.5500) 
-    (end -4.1000 -1.5500) 
+    (start -2.8000 3.4500) 
+    (end -2.8000 -3.4500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
   (fp_text reference REF** 
-    (at 0 -2.2200) 
+    (at 0 -4.1250) 
     (layer F.Fab) 
     (effects 
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (fp_text value "SIL-254P-03" 
-    (at 0 2.2200) 
+  (fp_text value "MOLEX-KK-254P-02" 
+    (at 0 4.1250) 
     (layer F.Fab) 
     (effects 
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (model "${KISYS3DMOD}/Pin_Headers.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step" 
+  (model "${KISYS3DMOD}/Connector_Molex.3dshapes/Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical.step" 
     (at 
       (xyz 0 0 0)) 
     (scale 
