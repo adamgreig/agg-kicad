@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP NCV8460A
+D Self Protected High Side Driver with Temperature Shutdown and Current Limit
+F https://www.onsemi.com/pub/Collateral/NCV8460-D.PDF
+$ENDCMP
