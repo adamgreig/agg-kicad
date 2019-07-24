@@ -10,6 +10,6 @@ pins:
     - [IN, 2, in]
     - [GND, 1, pwrin]
 - - - [OUT, 6, pwrout]
-    - [OUT, 7, pwrout]
+    - [OUT, 7, passive]
     - [STAT, 3, out]
     - [NC, 4, nc]
