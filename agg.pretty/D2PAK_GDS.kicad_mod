@@ -1,4 +1,4 @@
-(module D2PAK_GDS (layer F.Cu) (tedit 5D37DDA0)
+(module D2PAK_GDS (layer F.Cu) (tedit 5D37DE0C)
   (descr TO-263)
   (fp_text reference REF** (at 0 13.3) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -55,4 +55,9 @@
   (pad D smd roundrect (at 0 0) (size 12.2 9.75) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.051))
   (pad G smd roundrect (at -2.54 10.275) (size 1.6 3.5) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.062))
   (pad S smd roundrect (at 2.54 10.275) (size 1.6 3.5) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.062))
+  (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/TO-263-2.step
+    (offset (xyz 0 -3.5 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 -90))
+  )
 )
