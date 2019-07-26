@@ -189,6 +189,14 @@ config = {
         "pin_shape": (-.9, 3.4),
     },
 
+    # 2220 from IPC-7351B: CAPC5750X200N
+    "2220": {
+        "pad_shape": (1.55, 5.4),
+        "pitch": 5.3,
+        "chip_shape": (6.1, 5.4),
+        "pin_shape": (-1.0, 5.4),
+    },
+
     # 2512 from IPC-7351A: RESC6432X70N
     "2512": {
         "pad_shape": (1.25, 3.4),
