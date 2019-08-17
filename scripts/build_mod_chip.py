@@ -208,14 +208,14 @@ config = {
                   "scale": (1, 1, 1),
                   "rotate": (0, 0, 0)},
     },
-    
+
     # WE 7443330220 Inductor
     "WE-HCC-1090": {
         "pad_shape": (2.3, 3.6),
         "pitch": 9.2,
         "chip_shape": (10.9, 10),
         "pin_shape": (-1.6, 3),
-    },    
+    },
 
     # Coil Craft WA8514-AE Inductor
     "WA8514-AE": {
@@ -223,7 +223,7 @@ config = {
         "pitch": 3.988,
         "chip_shape": (4.34, 1.98),
         "pin_shape": (-0.33, 1.65),
-    }, 
+    },
 
     # SOD-323 from IPC-7351B: SOD2513X100L
     "SOD-323": {
@@ -352,6 +352,25 @@ config = {
         "pitch": 7.0,
         "chip_shape": (6.0, 3.8),
         "pin_shape": (0.6, 1.0),
+    },
+
+    # Panasonic SMD electrolytic capacitors, G size code
+    # https://industrial.panasonic.com/content/data/CP/PDF/Alumi/AL_landP_e.pdf
+    "PANASONIC-SMDCAP-G": {
+        "pad_shape": (4.1, 2.0),
+        "pitch": 8.7,
+        "chip_shape": (10.3, 10.3),
+        "pin_shape": (-3.5, 1.2),
+        "silk": "internal_pin1",
+    },
+
+    # Panasonic SMD electrolytic capacitors, K size code
+    "PANASONIC-SMDCAP-K": {
+        "pad_shape": (7.5, 2.5),
+        "pitch": 13.5,
+        "chip_shape": (19, 19),
+        "pin_shape": (-6.7, 1.2),
+        "silk": "internal_pin1",
     },
 }
 
