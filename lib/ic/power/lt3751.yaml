@@ -1,0 +1,28 @@
+name: LT3751
+description: High Voltage Capacitor Charger Controller with Regulation
+datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/LT3751.pdf
+footprint: agg:TSSOP-20-EP
+ordercodes:
+  - [Mouser, '584-LT3751EFE#PBF']
+pins:
+- - - [VCC, 13, pwrin]
+    - [RVTRANS, 1, passive]
+  - - [CLAMP, 9, passive]
+  - - [UVLO1, 2, in]
+    - [OVLO1, 3, in]
+    - [UVLO2, 4, in]
+    - [OVLO2, 5, in]
+  - - [~FAULT, 6, oc]
+    - [~DONE, 7, oc]
+    - [CHARGE, 8, in]
+  - - [GND, EP, pwrin]
+- - - [RDCM, 20, passive]
+    - [RVOUT, 18, passive]
+  - - [HVGATE, 15, out]
+    - [LVGATE, 14, passive]
+  - - [CSP, 12, in]
+    - [CSN, 11, in]
+  - - [FB, 10, in]
+  - - [RBG, 16, passive]
+  - - [NC, 17, nc]
+    - [NC, 19, nc]
