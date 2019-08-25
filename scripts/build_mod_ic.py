@@ -1502,6 +1502,17 @@ config = {
         "chip_shape": (1.90, 3.05),
         "pin_shape": (-0.35, 0.30),
     },
+
+    # Coilcraft GA3459-BL
+    "GA3459-BL": {
+        "rows": 2,
+        "pins": 12,
+        "pin_pitch": 4.0,
+        "row_pitch": 30.95,
+        "pad_shape": (2.75, 2.0),
+        "chip_shape": (26, 26.75),
+        "pin_shape": (3.3, 1.09),
+    },
 }
 
 
