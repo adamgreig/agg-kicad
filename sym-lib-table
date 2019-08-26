@@ -5,4 +5,5 @@
   (lib (name ina139)(type Legacy)(uri ${KIPRJMOD}/lib/ic/analogue/ina139.lib)(options "")(descr ""))
   (lib (name barreljack)(type Legacy)(uri ${KIPRJMOD}/lib/connector/barreljack.lib)(options "")(descr ""))
   (lib (name ga3459-bl)(type Legacy)(uri ${KIPRJMOD}/lib/passive/ga3459-bl.lib)(options "")(descr ""))
+  (lib (name zener)(type Legacy)(uri ${KIPRJMOD}/lib/passive/zener.lib)(options "")(descr ""))
 )

@@ -1,4 +1,4 @@
-update=Sun 25 Aug 2019 22:40:42 GMT
+update=Mon 26 Aug 2019 01:18:18 GMT
 version=1
 last_client=kicad
 [pcbnew]
@@ -245,9 +245,10 @@ LibName213=lib/passive/transformer_2x2
 LibName214=lib/passive/usblc6-2p6
 LibName215=lib/passive/vctcxo
 LibName216=lib/passive/xtal
-LibName217=lib/power/power
-LibName218=lib/power/pwr
-LibName219=lib/sensor/bme280
-LibName220=lib/ui/rotenc
-LibName221=lib/ui/sounder
-LibName222=lib/ui/switch
+LibName217=lib/passive/zener
+LibName218=lib/power/power
+LibName219=lib/power/pwr
+LibName220=lib/sensor/bme280
+LibName221=lib/ui/rotenc
+LibName222=lib/ui/sounder
+LibName223=lib/ui/switch
