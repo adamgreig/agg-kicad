@@ -11,7 +11,8 @@ import os.path
 
 PWR_NAMES = [
     "VCC", "VDD", "AVCC", "AVDD",
-    "1v2", "1v8", "2v5", "3v3", "5v", "12v", "15v", "24v",
+    "1v2", "1v8", "2v5", "3v3", "5v", "12v", "15v", "24v", "48v",
+    "-5v", "-12v", "-15v", "-24v", "-48v",
     "VBATT", "VSHORE",
 ]
 
