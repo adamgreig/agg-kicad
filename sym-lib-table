@@ -8,4 +8,5 @@
   (lib (name zener)(type Legacy)(uri ${KIPRJMOD}/lib/passive/zener.lib)(options "")(descr ""))
   (lib (name ad8605)(type Legacy)(uri ${KIPRJMOD}/lib/ic/analogue/ad8605.lib)(options "")(descr ""))
   (lib (name relay_dpdt_2coil)(type Legacy)(uri ${KIPRJMOD}/lib/passive/relay_dpdt_2coil.lib)(options "")(descr ""))
+  (lib (name psg01550)(type Legacy)(uri ${KIPRJMOD}/lib/connector/psg01550.lib)(options "")(descr ""))
 )
