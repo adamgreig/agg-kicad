@@ -1,0 +1,12 @@
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/mic5270.pdf
+description: 100mA negative LDO
+footprint: agg:SOT-23-5
+name: MIC5270
+ordercodes:
+  - [Farnell, '2510308']
+pins:
+- - - [GND, 2, pwrin]
+  - - [-IN, 5, pwrin]
+- - - [-OUT, 4, pwrout]
+    - [NC, 1, nc]
+    - [NC, 3, nc]
