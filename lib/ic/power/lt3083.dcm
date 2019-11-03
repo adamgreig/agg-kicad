@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP LT3083
 D Adjustable 3A single-resistor LDO regulator
+F http://cds.linear.com/docs/en/datasheet/3083fa.pdf
 $ENDCMP

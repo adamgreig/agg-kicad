@@ -175,6 +175,8 @@ def documentation(conf):
     out.append("EESchema-DOCLIB  Version 2.0")
     out.append("$CMP {}".format(conf['name']))
     out.append("D {}".format(conf['description']))
+    if "datasheet" in conf:
+        out.append("F {}".format(conf['datasheet']))
     out.append("$ENDCMP\n")
     return "\n".join(out)
 

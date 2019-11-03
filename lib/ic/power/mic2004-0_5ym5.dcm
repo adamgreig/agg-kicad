@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP MIC2004-0_5YM5
+D 500mA current limiting power switch in SOT23-5
+F http://ww1.microchip.com/downloads/en/DeviceDoc/mic20xx.pdf
+$ENDCMP

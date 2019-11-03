@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP BQ24232HA
 D USB-friendly 500mA LiPO charger with power-path management
+F http://www.ti.com/lit/ds/symlink/bq24232ha.pdf
 $ENDCMP

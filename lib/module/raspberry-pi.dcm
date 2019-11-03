@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP RASPBERRY-PI
 D Raspberry Pi GPIO Connector
+F https://pinout.xyz/
 $ENDCMP

@@ -1,0 +1,13 @@
+datasheet: https://datasheets.maximintegrated.com/en/ds/MAX11661-MAX11666.pdf
+description: 500ksps 12bit ADC
+footprint: agg:SOT-23-6
+name: MAX11665AUT
+ordercodes:
+  - [Farnell, '2513633']
+pins:
+- - - [VDD, 1, pwrin]
+    - [AIN, 3, in]
+    - [GND, 2, pwrin]
+- - - [~CS, 6, in]
+    - [DOUT, 5, out]
+    - [SCLK, 4, in]

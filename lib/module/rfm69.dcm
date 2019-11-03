@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP RFM69
 D ISM Transceiver Module from HopeRF
+F http://www.hoperf.com/upload/rf/RFM69HW-V1.3.pdf
 $ENDCMP

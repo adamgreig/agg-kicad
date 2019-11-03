@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ZENER
+#
+DEF ZENER D 0 40 N N 1 F N
+F0 "D" 50 70 50 H V C CNN
+F1 "ZENER" 50 -70 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 30 -30 40 -40 N
+P 2 0 1 0 30 30 20 40 N
+P 2 0 1 0 30 30 30 -30 N
+P 4 0 1 0 70 30 30 0 70 -30 70 30 F
+X ~ 1 0 0 30 R 50 50 1 1 P
+X ~ 2 100 0 30 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -92,6 +92,37 @@ config = {
         },
     },
 
+    # DUB0008A SOP package from TI
+    "DUB0008A": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 2.54,
+        "row_pitch": 9.45,
+        "pad_shape": (2.35, 0.65),
+        "chip_shape": (6.87, 9.55),
+        "pin_shape": (1.9, 0.5),
+    },
+
+    # SOIC-8 from JEDEC MS-012AA, with exposed pad
+    # IPC-7351B: SOIC127P600X175-8N
+    "SOIC-8-EP": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 1.27,
+        "row_pitch": 5.4,
+        "pad_shape": (1.55, 0.6),
+        "chip_shape": (4.0, 5.0),
+        "pin_shape": (1.1, 0.5),
+        "ep_shape": (2.4, 3.1),
+        "ep_vias": (0.3, 0.65, 0.3),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-8_3.9x4.9mm_Pitch1.27mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # SOIC-14 from JEDEC MS-012AB
     # IPC-7351B: SOIC127P600X175-14N
     "SOIC-14": {
@@ -281,6 +312,28 @@ config = {
         },
     },
 
+    # TSSOP-20 from JEDEC MO-153AC with EP per LT3751
+    # IPC-7351B: SOP65P640X120-21N
+    "TSSOP-20-EP": {
+        "rows": 2,
+        "pins": 20,
+        "pin_pitch": 0.65,
+        "row_pitch": 5.75,
+        "pad_shape": (1.35, 0.45),
+        "chip_shape": (4.5, 6.6),
+        "pin_shape": (0.95, .30),
+        "ep_shape": (2.74, 3.86),
+        "ep_paste_shape": (2.2, 1.5, 0.0, 0.5),
+        "ep_mask_shape": (2.2, 1.5, 0.0, 0.5),
+        "ep_vias": (0.4, 0.6, 0.5),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-20_4.4x6.5mm_Pitch0.65mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # TSSOP-24 from JEDEC MO-153
     # IPC-7351B: SOP65P640X120-24N
     "TSSOP-24": {
@@ -424,6 +477,25 @@ config = {
         },
     },
 
+    # UFDFN-8 / USON-8 from JEDEC MO-220
+    # AKA Winbond UX
+    "UFDFN-8": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 0.5,
+        "row_pitch": 2.45,
+        "pad_shape": (.30, .25),
+        "chip_shape": (3.0, 2.0),
+        "pin_shape": (-0.45, 0.25),
+        "model": {
+            "path":
+            "${KISYS3DMOD}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm.step",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # UFQFPN-48 from JEDEC MO-220
     # Modified to meet the ST ECOPACK package of the same name:
     #   * Row pitch is 6.75mm instead of 7.0mm
@@ -515,6 +587,18 @@ config = {
         "chip_shape": (6, 4.90),
         "pin_shape": (-0.6, 0.42),
         "ep_vias": (0.4, 0.8, 0.8),
+    },
+
+    # uQFN-10L
+    "uQFN-10L": {
+        "rows": 2,
+        "pins": 10,
+        "pin_pitch": 0.5,
+        "row_pitch": 1.05,
+        "pad_shape": (0.7, 0.2),
+        "chip_shape": (1.35, 2.60),
+        "pin_shape": (-0.5, 0.20),
+        "silk": "external",
     },
 
     # QFN-12 from DQ1225
@@ -698,6 +782,27 @@ config = {
         "pin_shape": (-0.4, 0.25),
         "model": {
             "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-40-1EP_6x6mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
+    # QFN-48 from Lattice iCE40UP5K SG48
+    "Lattice-SG48": {
+        "rows": 4,
+        "pins": 48,
+        "pin_pitch": 0.5,
+        "row_pitch": 6.8,
+        "pad_shape": (0.7, 0.25),
+        "ep_shape": (5.4, 5.4),
+        "ep_mask_shape": (0.8, 0.8, 0.6, 0.6),
+        "ep_paste_shape": (0.8, 0.8, 0.6, 0.6),
+        "ep_vias": (0.4, 0.8, 0.8),
+        "chip_shape": (7, 7),
+        "pin_shape": (-0.4, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm.step",
             "offset": (0, 0, 0),
             "scale": (1, 1, 1),
             "rotate": (0, 0, 0),
@@ -1094,6 +1199,23 @@ config = {
         },
     },
 
+    # TDFN-8 (MAXIM T822CN+1, 21-0487, 90-0349)
+    "TDFN-8": {
+        "rows": 2,
+        "pins": 8,
+        "pin_pitch": 0.5,
+        "row_pitch": 1.9,
+        "pad_shape": (0.85, 0.30),
+        "chip_shape": (2.0, 2.0),
+        "pin_shape": (-0.4, 0.25),
+        "model": {
+            "path": "${KISYS3DMOD}/Package_DFN_QFN.3dshapes/DFN-8_2x2mm_P0.5mm.step",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # DFN-16 from LTC4353
     # IPC-7351B: DFN45P300X400X75-17N
     "DFN-16-EP-LTC-DE": {
@@ -1225,12 +1347,47 @@ config = {
     "XTAL-25x20": {
         "rows": 2,
         "pins": 4,
-        "pin_pitch": 2.1,
-        "row_pitch": 1.4,
+        "pin_pitch": 1.7,
+        "row_pitch": 1.6,
         "pad_shape": (1.0, 0.8),
         "chip_shape": (2.0, 2.5),
-        "pin_shape": (-0.7, 0.4),
+        "pin_shape": (-0.7, 0.7),
         "silk": "external",
+        "model": {
+            "path": "${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
+            "offset": (0, 0, 0),
+            "scale": (0.8, 0.8, 1.0),
+            "rotate": (0, 0, 90),
+        },
+    },
+
+    # XTAL 5.0x3.2mm
+    "XO-50x32": {
+        "rows": 2,
+        "pins": 4,
+        "pin_pitch": 3.8,
+        "row_pitch": 2.6,
+        "pad_shape": (1.0, 1.5),
+        "chip_shape": (3.2, 5.0),
+        "pin_shape": (-0.8, 1.1),
+        "silk": "internal",
+        "model": {
+            "path": "${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
+            "offset": (0, 0, 0),
+            "scale": (1.56, 1.28, 1.0),
+            "rotate": (0, 0, 90),
+        },
+    },
+
+    # MB2S diode bridge rectifier in TO-269AA
+    "TO-269AA": {
+        "rows": 2,
+        "pins": 4,
+        "pin_pitch": 2.54,
+        "row_pitch": 5.7,
+        "pad_shape": (1.4, 0.8),
+        "chip_shape": (3.9, 4.75),
+        "pin_shape": (1.4, 0.74),
     },
 
     # RFM69 and friends
@@ -1344,6 +1501,17 @@ config = {
         "pad_shape": (.559, .406),
         "chip_shape": (1.90, 3.05),
         "pin_shape": (-0.35, 0.30),
+    },
+
+    # Coilcraft GA3459-BL
+    "GA3459-BL": {
+        "rows": 2,
+        "pins": 12,
+        "pin_pitch": 4.0,
+        "row_pitch": 30.95,
+        "pad_shape": (2.75, 2.0),
+        "chip_shape": (26, 26.75),
+        "pin_shape": (3.3, 1.09),
     },
 }
 

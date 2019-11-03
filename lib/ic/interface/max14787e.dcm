@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP MAX14787E
 D MAX14787E/MAX14789E Full Duplex RS485 Driver
+F https://datasheets.maximintegrated.com/en/ds/MAX14784E-MAX14789E.pdf
 $ENDCMP

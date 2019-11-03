@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD8605
+D Precision, Low Noise, CMOS, Rail-to-Rail, Input/Output Operational Amplifier
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD8605_8606_8608.pdf
+$ENDCMP
+#
+#End Doc Library

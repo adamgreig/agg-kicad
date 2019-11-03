@@ -1,0 +1,15 @@
+datasheet: http://www.ti.com/lit/ds/symlink/iso1050.pdf
+description: Isolated CAN transceiver
+footprint: agg:DUB0008A
+name: ISO1050DUB
+ordercodes:
+  - [Farnell, '1755712']
+pins:
+- - - [VCC1, 1, pwrin]
+    - [RXD, 2, out]
+    - [TXD, 3, in]
+    - [GND1, 4, pwrin]
+- - - [VCC2, 8, pwrin]
+    - [CANH, 7, bidi]
+    - [CANL, 6, bidi]
+    - [GND2, 5, pwrin]

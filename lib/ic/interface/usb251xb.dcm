@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP USB251xB
 D USB 2.0 Hi-Speed Hub Controller
+F http://ww1.microchip.com/downloads/en/DeviceDoc/00001692C.pdf
 $ENDCMP

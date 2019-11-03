@@ -1,0 +1,12 @@
+datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/mic20xx.pdf
+description: 500mA current limiting power switch in SOT23-5
+footprint: agg:SOT-23-5
+name: MIC2004-0_5YM5
+ordercodes:
+  - [Farnell, '2509877']
+pins:
+- - - [VIN, 1, pwrin]
+    - [EN, 3, in]
+    - [GND, 2, pwrin]
+- - - [VOUT, 5, pwrout]
+    - [NC, 4, nc]

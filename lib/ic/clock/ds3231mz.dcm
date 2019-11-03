@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP DS3231MZ
 D I2C integrated RTC/TCXO/Crystal
+F https://datasheets.maximintegrated.com/en/ds/DS3231M.pdf
 $ENDCMP

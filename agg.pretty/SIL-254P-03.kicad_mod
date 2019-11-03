@@ -1,7 +1,7 @@
 
 (module "SIL-254P-03" 
   (layer F.Cu) 
-  (tedit 57656D66) 
+  (tedit 5CCC5112) 
   (pad 1 thru_hole rect 
     (at -2.5400 0) 
     (size 1.9000 1.9000) 
@@ -91,7 +91,7 @@
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x03.wrl" 
+  (model "${KISYS3DMOD}/Pin_Headers.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step" 
     (at 
       (xyz 0 0 0)) 
     (scale 

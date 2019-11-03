@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP VTX-214-003-1xx
 D AC/DC PCB Mount Power Supply
+F http://www.farnell.com/datasheets/2060418.pdf
 $ENDCMP

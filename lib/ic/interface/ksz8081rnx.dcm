@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP KSZ8081RNx
 D RMII 100/10Mbps ethernet PHY
+F http://ww1.microchip.com/downloads/en/DeviceDoc/KSZ8081RNA_RND.pdf
 $ENDCMP

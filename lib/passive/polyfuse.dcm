@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP POLYFUSE
+D Positive temperature coefficient polyfuse
+K pptc ptc polyfuse fuse
+$ENDCMP
+#
+#End Doc Library

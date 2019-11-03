@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP MCP1416
 D 1.5A High Speed Power MOSFET Driver
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002092F.pdf
 $ENDCMP

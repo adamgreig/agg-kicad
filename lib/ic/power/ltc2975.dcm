@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP LTC2975
 D 4 Channel PMBus Power System Manager
+F https://cds.linear.com/docs/en/datasheet/2975f.pdf
 $ENDCMP

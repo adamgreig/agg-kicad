@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP LTC2983
 D Digital Temperature Measurement System
+F http://cds.linear.com/docs/en/datasheet/2983fc.pdf
 $ENDCMP

@@ -1,0 +1,16 @@
+datasheet: https://datasheets.maximintegrated.com/en/ds/MAX15062.pdf
+description: 60V 300mA Step-Down DC-DC Converter
+footprint: agg:TDFN-8
+name: MAX15062
+ordercodes:
+  - [Farnell, "2516650"]
+  - [DigiKey, "MAX15062AATA+TCT-ND"]
+pins:
+- - - [VIN, 1, pwrin]
+    - [EN/UVLO, 2, in]
+    - [VCC, 3, passive]
+    - [GND, 7, pwrin]
+- - - [LX, 8, passive]
+    - [FB/VOUT, 4, in]
+    - [~RESET, 6, in]
+    - [MODE, 5, in]

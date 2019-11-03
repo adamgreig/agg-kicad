@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP USBLC6-2P6
 D Single port USB2 ESD protection
+F http://www.st.com/resource/en/datasheet/usblc6-2.pdf
 $ENDCMP

@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# TEC2
+#
+DEF TEC2 IC 0 40 Y Y 1 F N
+F0 "IC" -400 300 50 H V L CNN
+F1 "TEC2" -400 -300 50 H V L CNN
+F2 "agg:SIP-8-DCDC" -400 -400 50 H I L CNN
+F3 "https://assets.tracopower.com/20181123133641/TEC2/documents/tec2-datasheet.pdf" -400 -500 50 H I L CNN
+F4 "2854900" -400 -600 50 H I L CNN "Farnell"
+DRAW
+S -400 250 400 -250 0 1 0 f
+X +Vin 2 -500 200 100 R 50 50 0 0 W
+X -Vin 1 -500 100 100 R 50 50 0 0 W
+X On/Off 3 -500 0 100 R 50 50 0 0 I
+X NC 5 -500 -100 100 R 50 50 0 0 N
+X +Vout 6 500 200 100 L 50 50 0 0 w
+X COM 7 500 100 100 L 50 50 0 0 W
+X -Vout 8 500 0 100 L 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP SSM2305
 D Mono 2.8W Class D Audio Amplifier
+F http://www.analog.com/media/en/technical-documentation/data-sheets/SSM2305.pdf
 $ENDCMP

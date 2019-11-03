@@ -1,6 +1,7 @@
 name: RJHSE-538x
 datasheet: http://www.farnell.com/cad/2167247.pdf
 description: Shielded 8P8C Modular Connector with LEDs
+designator: J
 ordercodes: [["Farnell", "1462758"]]
 footprint: agg:RJHSE-538X
 pins:
@@ -8,7 +9,8 @@ pins:
     - [LED1_A, 10, passive]
   - - [LED2_C, 11, passive]
     - [LED2_A, 12, passive]
-  - - [SHIELD, S, passive]
+  - - [SHIELD, S1, passive]
+    - [SHIELD, S2, passive]
 - - - ["~", 8, passive]
     - ["~", 7, passive]
     - [RX-, 6, passive]

@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP PCA9502
 D I2C 8-bit Port Expander
+F http://cache.nxp.com/documents/data_sheet/PCA9502.pdf
 $ENDCMP

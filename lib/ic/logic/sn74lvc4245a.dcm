@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP SN74LVC4245A
 D Logic Level Translator & Buffer
+F http://www.ti.com/lit/ds/symlink/sn74lvc4245a.pdf
 $ENDCMP

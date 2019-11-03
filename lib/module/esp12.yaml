@@ -1,0 +1,28 @@
+name: ESP-12
+description: ESP8266 WiFi Module
+datasheet: https://www.elecrow.com/download/ESP-12F.pdf
+footprint: agg:ESP-12
+ordercodes: []
+pins:
+- - - [VCC, 8, pwrin]
+    - [GND, 15, pwrin]
+  - - [RST, 1, in]
+    - [EN, 3, in]
+  - - [ADC, 2, in]
+  - - [RXD, 21, in]
+    - [TXD, 22, out]
+- - - [GPIO0, 18, bidi]
+    - [GPIO2, 17, bidi]
+    - [GPIO4, 19, bidi]
+    - [GPIO5, 20, bidi]
+    - [GPIO9, 11, bidi]
+    - [GPIO10, 12, bidi]
+    - [GPIO12, 6, bidi]
+    - [GPIO13, 7, bidi]
+    - [GPIO14, 5, bidi]
+    - [GPIO15, 16, bidi]
+    - [GPIO16, 4, bidi]
+  - - [SCLK, 14, in]
+    - [MISO, 10, out]
+    - [MOSI, 13, in]
+    - [CS0, 9, in]

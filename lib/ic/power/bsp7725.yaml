@@ -1,0 +1,15 @@
+name: BSP772T
+datasheet: https://www.infineon.com/dgdl/Infineon-BSP772T-DS-v01_01-EN.pdf?fileId=5546d4625a888733015aadefb07a4c41
+footprint: agg:SOIC-8
+description: Smart High-Side Power Switch 34V 2.6A
+ordercodes:
+  - [Farnell, '2215486']
+pins:
+- - - [Vbb, 5, pwrin]
+    - [Vbb, 6, pwrin]
+    - [Vbb, 7, pwrin]
+    - [Vbb, 8, pwrin]
+  - - [IN, 2, in]
+- - - [OUT, 3, pwrout]
+  - - [NC, 4, nc]
+  - - [GND, 1, pwrin]

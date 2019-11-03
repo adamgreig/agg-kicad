@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP MAX17435
 D Multi-chemistry battery charger with SMBus communication
+F https://datasheets.maximintegrated.com/en/ds/MAX17435-MAX17535.pdf
 $ENDCMP

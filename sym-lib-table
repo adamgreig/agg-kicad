@@ -1,0 +1,12 @@
+(sym_lib_table
+  (lib (name agg)(type Legacy)(uri "$(KIPRJMOD)/agg-kicad.lib")(options "")(descr ""))
+  (lib (name ad8552)(type Legacy)(uri ${KIPRJMOD}/lib/ic/analogue/ad8552.lib)(options "")(descr ""))
+  (lib (name ad8551)(type Legacy)(uri ${KIPRJMOD}/lib/ic/analogue/ad8551.lib)(options "")(descr ""))
+  (lib (name ina139)(type Legacy)(uri ${KIPRJMOD}/lib/ic/analogue/ina139.lib)(options "")(descr ""))
+  (lib (name barreljack)(type Legacy)(uri ${KIPRJMOD}/lib/connector/barreljack.lib)(options "")(descr ""))
+  (lib (name ga3459-bl)(type Legacy)(uri ${KIPRJMOD}/lib/passive/ga3459-bl.lib)(options "")(descr ""))
+  (lib (name zener)(type Legacy)(uri ${KIPRJMOD}/lib/passive/zener.lib)(options "")(descr ""))
+  (lib (name ad8605)(type Legacy)(uri ${KIPRJMOD}/lib/ic/analogue/ad8605.lib)(options "")(descr ""))
+  (lib (name relay_dpdt_2coil)(type Legacy)(uri ${KIPRJMOD}/lib/passive/relay_dpdt_2coil.lib)(options "")(descr ""))
+  (lib (name psg01550)(type Legacy)(uri ${KIPRJMOD}/lib/connector/psg01550.lib)(options "")(descr ""))
+)

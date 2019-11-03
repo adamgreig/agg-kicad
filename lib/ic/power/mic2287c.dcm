@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP MIC2287C
 D 1.2MHz PWM White LED Driver
+F http://ww1.microchip.com/downloads/en/DeviceDoc/mic2287c.pdf
 $ENDCMP

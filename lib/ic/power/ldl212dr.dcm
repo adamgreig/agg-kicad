@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP LDL212DR
 D High PSRR 1.2A adjustable LDO
+F http://www.st.com/resource/en/datasheet/ldl212.pdf
 $ENDCMP

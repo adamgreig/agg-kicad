@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP LTC4151
 D I2C Power Monitor
+F https://cds.linear.com/docs/en/datasheet/4151ff.pdf
 $ENDCMP

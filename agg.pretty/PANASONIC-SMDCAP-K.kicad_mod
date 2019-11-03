@@ -1,0 +1,126 @@
+
+(module "PANASONIC-SMDCAP-K" 
+  (layer F.Cu) 
+  (tedit 5D581A7E) 
+  (fp_text reference REF** 
+    (at -11.4500 0 90) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_text value "PANASONIC-SMDCAP-K" 
+    (at 11.4500 0 90) 
+    (layer F.Fab) 
+    (effects 
+      (font 
+        (size 1.0000 1.0000) 
+        (thickness 0.1500)))) 
+  (fp_line 
+    (start -9.5000 -9.5000) 
+    (end 9.5000 -9.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 9.5000 -9.5000) 
+    (end 9.5000 9.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 9.5000 9.5000) 
+    (end -9.5000 9.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -9.5000 9.5000) 
+    (end -9.5000 -9.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -4.7500 -9.5000) 
+    (end -4.7500 9.5000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.8000 -0.6000) 
+    (end -2.8000 0.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.8000 -0.6000) 
+    (end -9.5000 -0.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.8000 0.6000) 
+    (end -9.5000 0.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.8000 -0.6000) 
+    (end 2.8000 0.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.8000 -0.6000) 
+    (end 9.5000 -0.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 2.8000 0.6000) 
+    (end 9.5000 0.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -2.8000 -9.4250) 
+    (end 2.8000 -9.4250) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 2.8000 -9.4250) 
+    (end 2.8000 9.4250) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start 2.8000 9.4250) 
+    (end -2.8000 9.4250) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -2.8000 9.4250) 
+    (end -2.8000 -9.4250) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -1.4000 -9.4250) 
+    (end -1.4000 9.4250) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -10.7500 -9.7500) 
+    (end 10.7500 -9.7500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 10.7500 -9.7500) 
+    (end 10.7500 9.7500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start 10.7500 9.7500) 
+    (end -10.7500 9.7500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (fp_line 
+    (start -10.7500 9.7500) 
+    (end -10.7500 -9.7500) 
+    (layer F.CrtYd) 
+    (width 0.0100)) 
+  (pad 1 smd rect 
+    (at -6.7500 0) 
+    (size 7.5000 2.5000) 
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad 2 smd rect 
+    (at 6.7500 0) 
+    (size 7.5000 2.5000) 
+    (layers F.Cu F.Mask F.Paste)))

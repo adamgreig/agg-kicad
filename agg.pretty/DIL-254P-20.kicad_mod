@@ -1,7 +1,7 @@
 
 (module "DIL-254P-20" 
   (layer F.Cu) 
-  (tedit 57656D66) 
+  (tedit 5CCC5112) 
   (pad 1 thru_hole rect 
     (at -11.4300 1.2700) 
     (size 1.9000 1.9000) 
@@ -181,7 +181,7 @@
       (font 
         (size 1.0000 1.0000) 
         (thickness 0.1500)))) 
-  (model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_2x10.wrl" 
+  (model "${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x10_P2.54mm_Vertical.step" 
     (at 
       (xyz 0 0 0)) 
     (scale 

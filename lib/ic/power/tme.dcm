@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP TME
+D Isolated DC-DC converter
+F https://assets.tracopower.com/20190429154235/TME/documents/tme-datasheet.pdf
+$ENDCMP

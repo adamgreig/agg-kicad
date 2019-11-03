@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP ADP124
 D 500mA LDO
+F http://www.analog.com/media/en/technical-documentation/data-sheets/ADP124_125.pdf
 $ENDCMP

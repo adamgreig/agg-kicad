@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP AM26C31
 D Quad RS422 driver
+F http://www.ti.com.cn/cn/lit/ds/symlink/am26c31.pdf
 $ENDCMP

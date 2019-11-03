@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP ESP-12
+D ESP8266 WiFi Module
+F https://www.elecrow.com/download/ESP-12F.pdf
+$ENDCMP

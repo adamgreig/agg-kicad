@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP ER-TFT024-3
 D 2.4in TFT LCD Display
+F http://www.buydisplay.com/download/manual/ER-TFT024-3_Datasheet.pdf
 $ENDCMP

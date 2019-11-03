@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP LTC4353
 D Dual Output Low Voltage Ideal Diode Controller
+F https://cds.linear.com/docs/en/datasheet/4353f.pdf
 $ENDCMP

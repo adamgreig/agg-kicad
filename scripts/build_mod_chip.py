@@ -189,6 +189,14 @@ config = {
         "pin_shape": (-.9, 3.4),
     },
 
+    # 2220 from IPC-7351B: CAPC5750X200N
+    "2220": {
+        "pad_shape": (1.55, 5.4),
+        "pitch": 5.3,
+        "chip_shape": (6.1, 5.4),
+        "pin_shape": (-1.0, 5.4),
+    },
+
     # 2512 from IPC-7351A: RESC6432X70N
     "2512": {
         "pad_shape": (1.25, 3.4),
@@ -200,14 +208,14 @@ config = {
                   "scale": (1, 1, 1),
                   "rotate": (0, 0, 0)},
     },
-    
+
     # WE 7443330220 Inductor
     "WE-HCC-1090": {
         "pad_shape": (2.3, 3.6),
         "pitch": 9.2,
         "chip_shape": (10.9, 10),
         "pin_shape": (-1.6, 3),
-    },    
+    },
 
     # Coil Craft WA8514-AE Inductor
     "WA8514-AE": {
@@ -215,7 +223,7 @@ config = {
         "pitch": 3.988,
         "chip_shape": (4.34, 1.98),
         "pin_shape": (-0.33, 1.65),
-    }, 
+    },
 
     # SOD-323 from IPC-7351B: SOD2513X100L
     "SOD-323": {
@@ -291,6 +299,14 @@ config = {
         "pin_shape": (-2.5, 5.0),
     },
 
+    # Coilcraft LPS4018 series inductors
+    "LPS4018": {
+        "pad_shape": (1.45, 3.89),
+        "pitch": 2.95,
+        "chip_shape": (3.9, 3.9),
+        "pin_shape": (-1.1, 3.9),
+    },
+
     # DO-214AC (SMA) from Diodes Inc.
     "DO-214AC-SMA": {
         "pad_shape": (2.5, 1.7),
@@ -328,6 +344,33 @@ config = {
                   "offset": (0, 0, 0),
                   "scale": MM_TO_DIN,
                   "rotate": (0, 0, 180)},
+    },
+
+    # KSR232G tactile switch
+    "KSR232G": {
+        "pad_shape": (1.0, 1.4),
+        "pitch": 7.0,
+        "chip_shape": (6.0, 3.8),
+        "pin_shape": (0.6, 1.0),
+    },
+
+    # Panasonic SMD electrolytic capacitors, G size code
+    # https://industrial.panasonic.com/content/data/CP/PDF/Alumi/AL_landP_e.pdf
+    "PANASONIC-SMDCAP-G": {
+        "pad_shape": (4.1, 2.0),
+        "pitch": 8.7,
+        "chip_shape": (10.3, 10.3),
+        "pin_shape": (-3.5, 1.2),
+        "silk": "internal_pin1",
+    },
+
+    # Panasonic SMD electrolytic capacitors, K size code
+    "PANASONIC-SMDCAP-K": {
+        "pad_shape": (7.5, 2.5),
+        "pitch": 13.5,
+        "chip_shape": (19, 19),
+        "pin_shape": (-6.7, 1.2),
+        "silk": "internal_pin1",
     },
 }
 

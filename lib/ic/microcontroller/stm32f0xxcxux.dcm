@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP STM32F0xxCxUx
 D STM32F0 48 pin UFQFPN package
+F http://www.st.com/resource/en/datasheet/stm32f051c8.pdf
 $ENDCMP

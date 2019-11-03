@@ -1,0 +1,24 @@
+name: USB4085
+datasheet: https://gct.co/connector/usb4085
+description: Type C USB 2.0 Connector
+designator: J
+ordercodes:
+  - [Farnell, "2924867"]
+footprint: agg:USB4085
+pins:
+- - - [VBUS, A4, passive]
+    - [VBUS, B4, passive]
+    - [VBUS, A9, passive]
+    - [VBUS, B9, passive]
+  - - [GND, A1, passive]
+    - [GND, B1, passive]
+    - [GND, A12, passive]
+    - [GND, B12, passive]
+- - - [D+, A6, passive]
+    - [D+, B6, passive]
+  - - [D-, A7, passive]
+    - [D-, B7, passive]
+  - - [CC1, A5, passive]
+    - [CC1, B5, passive]
+  - - [SBU1, A8, passive]
+    - [SBU1, B8, passive]

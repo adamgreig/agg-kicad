@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP MIC5270
+D 100mA negative LDO
+F http://ww1.microchip.com/downloads/en/DeviceDoc/mic5270.pdf
+$ENDCMP

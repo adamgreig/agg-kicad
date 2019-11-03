@@ -1,0 +1,14 @@
+datasheet: https://assets.tracopower.com/20181123133641/TEC2/documents/tec2-datasheet.pdf
+description: Isolated DC-DC converter
+footprint: agg:SIP-8-DCDC
+name: TEC2
+ordercodes:
+  - [Farnell, '2854900']
+pins:
+- - - [+Vin, 2, pwrin]
+    - [-Vin, 1, pwrin]
+    - ["On/Off", 3, in]
+    - [NC, 5, nc]
+- - - [+Vout, 6, pwrout]
+    - [COM, 7, pwrin]
+    - [-Vout, 8, pwrout]

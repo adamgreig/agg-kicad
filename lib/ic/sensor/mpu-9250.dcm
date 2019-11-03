@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP MPU-9250
 D MPU-9250 9DoF IMU from InvenSense
+F http://43zrtwysvxb2gf29r5o0athu.wpengine.netdna-cdn.com/wp-content/uploads/2015/02/MPU-9250-Datasheet.pdf
 $ENDCMP

@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP BGS12AL7
 D SPDT RF Switch
+F http://www.infineon.com/dgdl/Infineon-BGS12AL7_4-DS-v01_03-en.pdf?fileId=db3a30431b3e89eb011b458d7a767d88
 $ENDCMP

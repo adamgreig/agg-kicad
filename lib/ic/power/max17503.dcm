@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP MAX17503
 D Step-down DC-DC converter
+F https://datasheets.maximintegrated.com/en/ds/MAX17503.pdf
 $ENDCMP

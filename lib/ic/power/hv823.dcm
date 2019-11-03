@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP HV823
 D High voltage EL lamp driver
+F http://ww1.microchip.com/downloads/en/DeviceDoc/HV823%20C082213.pdf
 $ENDCMP

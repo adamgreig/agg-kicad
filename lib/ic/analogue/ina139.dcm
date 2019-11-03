@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP INA139
+D High-Side Measurement Current Shunt Monitor
+F http://www.ti.com/lit/ds/symlink/ina139.pdf
+$ENDCMP
+#
+#End Doc Library

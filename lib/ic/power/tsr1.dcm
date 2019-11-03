@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP TSR1
 D TSR1 Switch Mode Regulators
+F http://www.tracopower.com/products/tsr1.pdf
 $ENDCMP

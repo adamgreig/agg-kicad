@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP ST3232
 D RS-232 driver & receiver
+F www.st.com/resource/en/datasheet/st3232b.pdf
 $ENDCMP

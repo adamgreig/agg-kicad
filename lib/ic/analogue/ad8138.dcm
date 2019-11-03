@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP AD8138
 D Low distortion, differential ADC driver
+F http://www.analog.com/media/en/technical-documentation/data-sheets/AD8138.pdf
 $ENDCMP

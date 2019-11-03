@@ -1,0 +1,12 @@
+name: NCP161
+datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF
+footprint: agg:SOT-23-5
+description: 450 mA, Ultra-Low Noise and High PSRR LDO Regulator for RF and Analog Circuits
+ordercodes:
+  - [Farnell, '3131472']
+pins:
+- - - [IN, 1, pwrin]
+  - - [EN, 3, in]
+  - - [GND, 2, pwrin]
+- - - [OUT, 5, pwrout]
+  - - [NC, 4, nc]

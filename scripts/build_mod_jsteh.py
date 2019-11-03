@@ -43,6 +43,7 @@ import os
 import sys
 import time
 import math
+import argparse
 
 from sexp import parse as sexp_parse, generate as sexp_generate
 from kicad_mod import fp_line, fp_text, pad, draw_square
@@ -134,14 +135,14 @@ def side_pth_fp(pins):
 
 
 
-def main(prettypath, verify=False):
+def main(prettypath, verify=False, verbose=False):
     for pins in range(2, 9):
         for generator in (side_pth_fp,):
             # Generate the footprint
             name, fp = generator(pins)
             path = os.path.join(prettypath, name + ".kicad_mod")
 
-            if verify:
+            if verify and verbose:
                 print("Verifying", path)
 
             # Check if the file already exists and isn't changed
@@ -164,18 +165,21 @@ def main(prettypath, verify=False):
     if verify:
         return True
 
+
 if __name__ == "__main__":
-    if len(sys.argv) == 2:
-        prettypath = sys.argv[1]
-        main(prettypath)
-    elif len(sys.argv) == 3 and sys.argv[2] == "--verify":
-        prettypath = sys.argv[1]
-        if main(prettypath, verify=True):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("prettypath", type=str,
+                        help="Path to footprints to process")
+    parser.add_argument("--verify", action="store_true",
+                        help="Verify libraries are up to date")
+    parser.add_argument("--verbose", action="store_true",
+                        help="Print out every library verified")
+    args = vars(parser.parse_args())
+    result = main(**args)
+    if args['verify']:
+        if result:
             print("OK: all footprints up-to-date.")
             sys.exit(0)
         else:
             print("Error: footprints not up-to-date.", file=sys.stderr)
             sys.exit(1)
-    else:
-        print("Usage: {} <.pretty path>".format(sys.argv[0]))
-        sys.exit(0)

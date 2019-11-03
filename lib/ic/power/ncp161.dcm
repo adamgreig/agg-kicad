@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP NCP161
+D 450 mA, Ultra-Low Noise and High PSRR LDO Regulator for RF and Analog Circuits
+F https://www.onsemi.com/pub/Collateral/NCP161-D.PDF
+$ENDCMP

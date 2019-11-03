@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP ESP-WROOM-32
 D ESP32 (ESP-WROOM-32 module)
+F https://espressif.com/sites/default/files/documentation/esp_wroom_32_datasheet_en.pdf
 $ENDCMP

@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP TPS92512
 D 2.5A constant current buck converter / LED driver
+F http://www.ti.com/lit/ds/symlink/tps92512.pdf
 $ENDCMP

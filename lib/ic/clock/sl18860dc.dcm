@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP SL18860DC
 D 3-Channel Clock Distribution Buffer
+F http://www.silabs.com/Support%20Documents/TechnicalDocs/SL18860.pdf
 $ENDCMP

@@ -10,7 +10,10 @@ import sys
 import os.path
 
 PWR_NAMES = [
-    "VCC", "VDD", "AVCC", "1v2", "1v8", "3v3", "5v",  "12v", "VBATT", "VSHORE",
+    "VCC", "VDD", "AVCC", "AVDD",
+    "1v2", "1v8", "2v5", "3v3", "5v", "9v", "10v", "12v", "15v", "24v", "48v",
+    "-5v", "-9v", "-10v", "-12v", "-15v", "-24v", "-48v",
+    "VBATT", "VSHORE",
 ]
 
 GND_NAMES = [

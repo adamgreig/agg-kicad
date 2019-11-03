@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP TPA301
 D 350mW Mono Audio Power Amplifier
+F http://www.ti.com/lit/ds/symlink/tpa301.pdf
 $ENDCMP

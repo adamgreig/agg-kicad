@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP SNx5176B
 D Differential bus transceiver
+F http://www.ti.com.cn/cn/lit/ds/symlink/sn75176b.pdf
 $ENDCMP

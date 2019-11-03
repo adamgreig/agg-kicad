@@ -1,4 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 $CMP CHIPv1_0
 D CHIP Single Board Computer v1.0
+F http://docs.getchip.com/#chip-hardware
 $ENDCMP
