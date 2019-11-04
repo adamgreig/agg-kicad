@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP ADP7105
+D Low Noise 500mA LDO
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7105.pdf
+$ENDCMP

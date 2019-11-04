@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP ADT7420
+D 16-Bit Digital Temperature Sensor
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADT7420.pdf
+$ENDCMP

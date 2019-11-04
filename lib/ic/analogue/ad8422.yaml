@@ -1,0 +1,16 @@
+datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/AD8422.pdf
+description: High Performance, Low Power, Rail-to-Rail Precision Instrumentation Amplifier
+footprint: agg:MSOP-8
+name: AD8422
+ordercodes:
+  - [Farnell, '2353608']
+pins:
+- - - [+VS, 8, pwrin]
+    - [-VS, 5, pwrin]
+  - - [-IN, 1, in]
+    - [+IN, 4, in]
+  - - [REF, 6, in]
+- - - [RG, 2, bidi]
+    - [RG, 3, bidi]
+  - - [OUT, 7, out]
+  

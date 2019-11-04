@@ -1,0 +1,23 @@
+datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/ADT7420.pdf
+description: 16-Bit Digital Temperature Sensor
+footprint: agg:LFCSP-16-AD
+name: ADT7420
+ordercodes:
+- [Farnell, 2306581]
+pins:
+- - - [VDD, 12, pwrin]
+    - [GND, 11, pwrin]
+  - - [CT, 10, out]
+    - [INT, 9, out]  
+  - - [NC, 13, nc]
+    - [NC, 14, nc]
+    - [NC, 15, nc]
+    - [NC, 16, nc]
+- - - [SCL, 1, in]
+    - [SDA, 2, in]
+    - [A0, 3, bidi]
+    - [A1, 4, bidi]
+  - - [NC, 5, nc]
+    - [NC, 6, nc]
+    - [NC, 7, nc]
+    - [NC, 8, nc]
