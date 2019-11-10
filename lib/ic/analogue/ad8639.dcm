@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP AD8639
+D 16 V Auto-Zero, Rail-to-Rail Operational Amplifiers
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD8638_8639.pdf
+$ENDCMP

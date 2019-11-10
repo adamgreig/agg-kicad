@@ -1,0 +1,16 @@
+datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7105.pdf
+description: Low Noise 500mA LDO
+footprint: agg:SOIC-8-EP
+name: ADP7105
+ordercodes:
+  - [Mouser, '584-ADP7105ARDZ-3.3']
+pins:
+- - - [VIN, 8, pwrin]
+    - [EN, 5, in]
+  - - [SS, 4, in]
+  - - [GND, 3, pwrin]
+- - - [VOUT, 1, pwrout]
+  - - [SENSE/ADJ, 2, in]
+    - [PG, 7, in]
+  - - [GND, 6, pwrin]
+    - [GND, EP, pwrin]

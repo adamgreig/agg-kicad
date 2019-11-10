@@ -1,0 +1,16 @@
+datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/AD8638_8639.pdf
+description: 16 V Auto-Zero, Rail-to-Rail Operational Amplifiers
+footprint: agg:MSOP-8
+name: AD8639
+ordercodes:
+  - [Digikey, 'AD8639ARMZ-ND']
+pins:
+- - - [+VS, 8, pwrin]
+    - [-VS, 4, pwrin]
+  - - [-INA, 2, in]
+    - [+INA, 3, in]
+  - - [-INB, 6, in]
+    - [+INB, 5, in]
+- - - [OUTA, 1, out]
+  - - [OUTB, 7, out]
+  

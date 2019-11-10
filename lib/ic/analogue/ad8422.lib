@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# AD8422
+#
+DEF AD8422 IC 0 40 Y Y 1 F N
+F0 "IC" -200 400 50 H V L CNN
+F1 "AD8422" -200 -400 50 H V L CNN
+F2 "agg:MSOP-8" -200 -500 50 H I L CNN
+F3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8422.pdf" -200 -600 50 H I L CNN
+F4 "2353608" -200 -700 50 H I L CNN "Farnell"
+DRAW
+S -200 350 200 -350 0 1 0 f
+X +VS 8 -300 300 100 R 50 50 0 0 W
+X -VS 5 -300 200 100 R 50 50 0 0 W
+X -IN 1 -300 0 100 R 50 50 0 0 I
+X +IN 4 -300 -100 100 R 50 50 0 0 I
+X REF 6 -300 -300 100 R 50 50 0 0 I
+X RG 2 300 300 100 L 50 50 0 0 B
+X RG 3 300 200 100 L 50 50 0 0 B
+X OUT 7 300 0 100 L 50 50 0 0 O
+ENDDRAW
+ENDDEF
+#
+#End Library

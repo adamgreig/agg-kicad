@@ -1,0 +1,16 @@
+datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/ADR4520_4525_4530_4533_4540_4550.pdf
+description: Ultralow Noise, High Accuracy Voltage Reference
+footprint: agg:SOIC-8
+name: ADR4525
+ordercodes:
+  - [Farnell, '2112686']
+pins:
+- - - [VIN, 2, pwrin]
+  - - [NC, 1, nc]
+    - [NC, 3, nc]
+  - - [GND, 4, pwrin]
+- - - [VOUT, 6, out]
+  - - [NC, 5, nc]
+    - [NC, 7, nc]
+    - [NC, 8, nc]
+

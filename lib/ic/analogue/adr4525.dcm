@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP ADR4525
+D Ultralow Noise, High Accuracy Voltage Reference
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADR4520_4525_4530_4533_4540_4550.pdf
+$ENDCMP
