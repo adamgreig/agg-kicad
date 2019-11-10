@@ -1,7 +1,7 @@
 
 (module "LFCSP-16-AD" 
   (layer F.Cu) 
-  (tedit 5DC07B73) 
+  (tedit 5DC8814C) 
   (fp_text reference REF** 
     (at 0 -3.0500) 
     (layer F.Fab) 
@@ -282,28 +282,38 @@
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
-    (start -0.5000 -1.1000) 
-    (end 1.1000 -1.1000) 
+    (start -2.0000 -1.3750) 
+    (end -1.3750 -2.0000) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start 1.1000 -1.1000) 
-    (end 1.1000 1.1000) 
+    (start 1.3750 -2.0000) 
+    (end 2.0000 -2.0000) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start 1.1000 1.1000) 
-    (end -1.1000 1.1000) 
+    (start 2.0000 -2.0000) 
+    (end 2.0000 -1.3750) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start -1.1000 1.1000) 
-    (end -1.1000 -0.5000) 
+    (start 1.3750 2.0000) 
+    (end 2.0000 2.0000) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
-    (start -1.1000 -0.5000) 
-    (end -0.5000 -1.1000) 
+    (start 2.0000 2.0000) 
+    (end 2.0000 1.3750) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -1.3750 2.0000) 
+    (end -2.0000 2.0000) 
+    (layer F.SilkS) 
+    (width 0.1500)) 
+  (fp_line 
+    (start -2.0000 2.0000) 
+    (end -2.0000 1.3750) 
     (layer F.SilkS) 
     (width 0.1500)) 
   (fp_line 
@@ -389,4 +399,29 @@
   (pad 16 smd rect 
     (at -0.9750 -1.8500) 
     (size 0.3500 0.5000) 
-    (layers F.Cu F.Mask F.Paste)))
+    (layers F.Cu F.Mask F.Paste)) 
+  (pad "" smd rect 
+    (at -0.6000 -0.6000) 
+    (size 1 1) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at -0.6000 0.6000) 
+    (size 1 1) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.6000 -0.6000) 
+    (size 1 1) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.6000 0.6000) 
+    (size 1 1) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad EP smd rect 
+    (at 0 0) 
+    (size 2.6000 2.6000) 
+    (layers F.Cu F.Mask) 
+    (solder_mask_margin 0.0010)))

@@ -1020,6 +1020,8 @@ config = {
         "pin_pitch": 0.65,
         "row_pitch": 3.70,
         "pad_shape": (0.50, 0.35),
+        "ep_shape": (2.6, 2.6),
+        "ep_paste_shape": (1, 1, 0.2, 0.2),
         "chip_shape": (4, 4),
         "pin_shape": (-0.4, 0.3),
     },
