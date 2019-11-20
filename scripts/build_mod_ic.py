@@ -441,6 +441,27 @@ config = {
         },
     },
 
+    # HTQFP-64 (LQFP-64 with Exposed PowerPAD)
+    "HTQFP-64": {
+        "rows": 4,
+        "pins": 64,
+        "pin_pitch": 0.5,
+        "row_pitch": 11.4,
+        "pad_shape": (1.5, 0.3),
+        "chip_shape": (10.2, 10.2),
+        "pin_shape": (1.0, 0.27),
+        "ep_shape": (8, 8),
+        "ep_paste_shape": (7.0, 7.0, 0.0, 0.0),
+        "ep_mask_shape": (7.0, 7.0, 0, 0),
+        "ep_vias": (0.3, 0.6, 1.3),
+        "model": {
+            "path": "${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-64_10x10mm_Pitch0.5mm.wrl",
+            "offset": (0, 0, 0),
+            "scale": (1, 1, 1),
+            "rotate": (0, 0, 0),
+        },
+    },
+
     # LQFP-100 from JEDEC MS-026BED
     # IPC-7351B: QFP50P1600X1600X160-100N
     "LQFP-100": {

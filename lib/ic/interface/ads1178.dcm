@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP ADS1178
+D 16-bit, 52 kSPS, 8 Channel Delta-Sigma ADC
+F https://www.ti.com/lit/ds/symlink/ads1178.pdf
+$ENDCMP
