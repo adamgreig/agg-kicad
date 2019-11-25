@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP TEL10
+D Isolated DC-DC converter
+F http://www.farnell.com/datasheets/2865001.pdf
+$ENDCMP

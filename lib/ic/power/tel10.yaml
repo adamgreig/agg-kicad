@@ -1,0 +1,13 @@
+datasheet: http://www.farnell.com/datasheets/2865001.pdf
+description: Isolated DC-DC converter
+footprint: agg:DIP-16-DCDC
+name: TEL10
+ordercodes:
+  - [RS, '187-5065']
+pins:
+- - - [+Vin, 16, pwrin]
+    - [-Vin, 1, pwrin]
+    - [NC, 7, nc]
+- - - [+Vout, 9, pwrout]
+    - [COM, 8, pwrin]
+    - [-Vout, 10, pwrout]
