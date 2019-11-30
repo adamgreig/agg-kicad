@@ -1,0 +1,5 @@
+chip_shape: [5.2, 5.2]
+name: SRP5030T
+pad_shape: [1.8, 2.0]
+pin_shape: [0.25, 1.5]
+pitch: 4.5

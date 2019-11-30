@@ -1,0 +1,6 @@
+chip_shape: [10.3, 10.3]
+name: PANASONIC-SMDCAP-G
+pad_shape: [4.1, 2.0]
+pin_shape: [-3.5, 1.2]
+pitch: 8.7
+silk: internal_pin1

@@ -1,0 +1,8 @@
+chip_shape: [3.0, 3.0]
+name: QFN-24-MPU9250
+pad_shape: [0.4, 0.2]
+pin_pitch: 0.4
+pin_shape: [-0.3, 0.2]
+pins: 24
+row_pitch: 3.0
+rows: 4

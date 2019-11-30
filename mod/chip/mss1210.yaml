@@ -1,0 +1,5 @@
+chip_shape: [12.3, 12.3]
+name: MSS1210
+pad_shape: [3.0, 5.5]
+pin_shape: [-2.5, 5.0]
+pitch: 9.5
