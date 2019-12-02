@@ -1,4 +1,5 @@
 chip_shape: [5.0, 7.0]
+description: Seiko Epson SG7050CxN SPXO
 name: SG7050CxN
 pad_shape: [2.0, 1.8]
 pin_pitch: 5.08

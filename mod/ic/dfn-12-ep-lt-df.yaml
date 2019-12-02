@@ -1,4 +1,8 @@
 chip_shape: [4.1, 4.1]
+description: |-
+  DFN-12 4mm x 4mm
+  For LTC3083 / LT package DF
+  IPC-7351B: DFN45P400X400X75-13N
 ep_paste_shape: [2.2, 1.3, 0, 0.4]
 ep_shape: [2.65, 3.38]
 model:

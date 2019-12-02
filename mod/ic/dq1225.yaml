@@ -1,4 +1,7 @@
 chip_shape: [3, 3]
+description: |-
+  QFN-12 from DQ1225
+  For PMA3-83LN+
 ep_shape: [1.25, 1.25]
 name: DQ1225
 pad_shape: [0.51, 0.25]

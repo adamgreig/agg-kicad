@@ -1,4 +1,7 @@
 chip_shape: [3.1, 3.1]
+description: |-
+  MSOP-8 from JEDEC MO-187-AA-T, with EP, AD specific RH-8-1
+  IPC-7351B: SOP65P490X110-9N
 ep_shape: [1.725, 1.66]
 ep_vias: [0.3, 0.65, 0.3]
 model:

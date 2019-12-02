@@ -1,4 +1,5 @@
 chip_shape: [2.0, 2.5]
+description: XTAL 2.0x2.5mm
 model:
   offset: [0, 0, 0]
   path: ${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step

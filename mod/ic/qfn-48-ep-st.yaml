@@ -1,4 +1,11 @@
 chip_shape: [7.1, 7.1]
+description: |-
+  UFQFPN-48 from JEDEC MO-220
+  Modified to meet the ST ECOPACK package of the same name:
+  * Row pitch is 6.75mm instead of 7.0mm
+  * Pads are 0.55mm long instead of 0.8mm
+  * EP is 5.6mm
+  IPC-7351B: QFN50P700X700X80-49N
 ep_mask_shape: [2.0, 2.0, 0.5, 0.5]
 ep_paste_shape: [1.0, 1.0, 1.5, 1.5]
 ep_shape: [5.6, 5.6]

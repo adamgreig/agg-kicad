@@ -1,5 +1,6 @@
 chip_shape: [0.6, 0.3]
 courtyard_gap: 0.1
+description: '0201-L from IPC-7351B: CAPC0603X33L'
 model:
   offset: [0, 0, 0]
   path: ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0201.wrl

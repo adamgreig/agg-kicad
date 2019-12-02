@@ -1,4 +1,5 @@
 chip_shape: [3.2, 5.0]
+description: Seiko Epson SG5032CxN SPXO
 name: SG5032CxN
 pad_shape: [1.5, 1.6]
 pin_pitch: 2.54

@@ -1,4 +1,7 @@
 chip_shape: [4.5, 5.1]
+description: |-
+  TSSOP-14 from JEDEC MO-153
+  IPC-7351B: SOP65P640X120-14N
 model:
   offset: [0, 0, 0]
   path: ${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-14_4.4x5mm_Pitch0.65mm.wrl

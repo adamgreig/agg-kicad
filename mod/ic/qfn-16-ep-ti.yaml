@@ -1,4 +1,7 @@
 chip_shape: [3.0, 3.0]
+description: |-
+  VQFN-16 from TPS6215
+  IPC-7351B: QFN26P300X300X100-17N
 ep_paste_shape: [1.5, 1.5, 0.2, 0.2]
 ep_shape: [1.7, 1.7]
 ep_vias: [0.2, 0.3, 0.9]

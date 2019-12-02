@@ -1,4 +1,8 @@
 chip_shape: [4.1, 4.1]
+description: |-
+  QFN-20 from JEDEC MO-220VGGD-8
+  For Si4460
+  IPC-7351B: QFN50P400X400X85-21V8N
 ep_paste_shape: [1.1, 1.1, 0.2, 0.2]
 ep_shape: [2.6, 2.6]
 model:

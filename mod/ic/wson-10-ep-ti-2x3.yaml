@@ -1,4 +1,5 @@
 chip_shape: [2.0, 3.0]
+description: WSON-10 2.0x3.0mm (TI)
 ep_paste_shape: [0.84, 1.0, 0.0, 0.2]
 ep_shape: [0.84, 2.4]
 ep_vias: [0.2, 0.2, 0.75]

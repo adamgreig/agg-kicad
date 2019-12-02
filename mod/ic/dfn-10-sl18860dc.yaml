@@ -1,4 +1,5 @@
 chip_shape: [1.4, 2.0]
+description: DFN-10-SL18860DC
 name: DFN-10-SL18860DC
 pad_shape: [0.6, 0.2]
 pin_pitch: 0.4

@@ -1,4 +1,5 @@
 chip_shape: [6.87, 9.55]
+description: DUB0008A SOP package from TI
 name: DUB0008A
 pad_shape: [2.35, 0.65]
 pin_pitch: 2.54

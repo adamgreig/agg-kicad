@@ -1,4 +1,5 @@
 chip_shape: [8.8, 12.7]
+description: Package for 749010012A ethernet magnetics
 name: 749010012A
 pad_shape: [1.91, 0.64]
 pin_pitch: 1.27

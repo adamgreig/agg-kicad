@@ -1,4 +1,7 @@
 chip_shape: [4.0, 4.0]
+description: |-
+  QFN-24 from MAXIM. Doc no. 21-0139
+  For MAX17435
 ep_mask_shape: [0.9, 0.9, 0.4, 0.4]
 ep_paste_shape: [0.9, 0.9, 0.4, 0.4]
 ep_shape: [2.6, 2.6]

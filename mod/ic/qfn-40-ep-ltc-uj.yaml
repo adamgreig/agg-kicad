@@ -1,4 +1,8 @@
 chip_shape: [6.0, 6.0]
+description: |-
+  QFN-40 from LTC3887 datasheet
+  JEDEC WJJD-2 VARIANT
+  IPC-7351B: QFN50P600X600X75-40N
 ep_mask_shape: [0.73, 0.73, 0.5, 0.5]
 ep_paste_shape: [0.73, 0.73, 0.5, 0.5]
 ep_shape: [4.42, 4.42]

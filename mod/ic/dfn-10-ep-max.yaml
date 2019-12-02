@@ -1,4 +1,7 @@
 chip_shape: [3.0, 3.0]
+description: |-
+  DFN-10 with EP
+  For MAX5969x
 ep_paste_shape: [1.2, 0.8, 0, 0.4]
 ep_shape: [1.58, 2.35]
 model:

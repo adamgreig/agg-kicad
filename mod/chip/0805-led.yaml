@@ -1,4 +1,7 @@
 chip_shape: [2.0, 1.25]
+description: |-
+  0805-LED from IPC-7351B: CAPC2013X100N
+  Modified silkscreen to indicate LED polarity.
 model:
   offset: [-0.006, 0, 0]
   path: ${KISYS3DMOD}/LEDs.3dshapes/LED_0805.wrl

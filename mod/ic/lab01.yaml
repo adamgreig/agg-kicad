@@ -1,4 +1,5 @@
 chip_shape: [20, 25]
+description: LAB01
 name: LAB01
 pad_shape: [3.0, 1.6]
 pin_pitch: 2.0

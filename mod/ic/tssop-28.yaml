@@ -1,4 +1,7 @@
 chip_shape: [4.5, 9.7]
+description: |-
+  TSSOP-28 from JEDEC MO-153-AE
+  IPC-7351B: SOP65P640X120-28N
 model:
   offset: [0, 0, 0]
   path: ${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-28_4.4x9.7mm_Pitch0.65mm.wrl

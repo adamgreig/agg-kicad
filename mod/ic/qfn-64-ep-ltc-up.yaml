@@ -1,4 +1,7 @@
 chip_shape: [9.0, 9.0]
+description: |-
+  QFN-64 from LTC2975 datasheet
+  IPC-7351B: QFN50P900X900X75-64N
 ep_mask_shape: [0.7, 0.7, 0.6, 0.6]
 ep_paste_shape: [0.7, 0.7, 0.6, 0.6]
 ep_shape: [7.15, 7.15]

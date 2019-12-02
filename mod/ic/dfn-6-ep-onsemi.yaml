@@ -1,4 +1,7 @@
 chip_shape: [2.0, 2.0]
+description: |-
+  DFN-6-EP-ONSEMI
+  For NCP380 and others
 ep_paste_shape: [0.5, 0.5, 0.2, 0.2]
 ep_shape: [0.95, 1.7]
 model:

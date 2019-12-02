@@ -1,4 +1,7 @@
 chip_shape: [3.1, 3.1]
+description: |-
+  DFN-8
+  IPC-7351B: DFN65P300X300X90-9N
 ep_mask_shape: [0.8, 0.8, 0, 0.4]
 ep_paste_shape: [0.8, 0.8, 0, 0.4]
 ep_shape: [1.55, 2.4]

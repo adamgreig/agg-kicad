@@ -1,4 +1,7 @@
 chip_shape: [3.0, 2.0]
+description: |-
+  UFDFN-8 / USON-8 from JEDEC MO-220
+  AKA Winbond UX
 model:
   offset: [0, 0, 0]
   path: ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm.step

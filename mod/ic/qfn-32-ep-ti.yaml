@@ -1,4 +1,7 @@
 chip_shape: [5.0, 5.0]
+description: |-
+  VQFN-32 from BQ40Z60
+  IPC-7351B: QFN50P500X500X100-33N
 ep_mask_shape: [3.45, 3.45, 0, 0]
 ep_paste_shape: [1.45, 1.45, 0.3, 0.3]
 ep_shape: [3.45, 3.45]

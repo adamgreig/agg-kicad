@@ -1,4 +1,7 @@
 chip_shape: [3.0, 3.0]
+description: |-
+  HVQFN-16 from PCAL9538A
+  IPC-7351B: QFN50P300X300X100-17N
 ep_paste_shape: [0.3, 0.3, 0.31, 0.31]
 ep_shape: [1.5, 1.5]
 model:

@@ -1,4 +1,5 @@
 chip_shape: [2.0, 2.0]
+description: TDFN-8 (MAXIM T822CN+1, 21-0487, 90-0349)
 model:
   offset: [0, 0, 0]
   path: ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/DFN-8_2x2mm_P0.5mm.step

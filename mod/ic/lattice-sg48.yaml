@@ -1,4 +1,5 @@
 chip_shape: [7, 7]
+description: QFN-48 from Lattice iCE40UP5K SG48
 ep_mask_shape: [0.8, 0.8, 0.6, 0.6]
 ep_paste_shape: [0.8, 0.8, 0.6, 0.6]
 ep_shape: [5.4, 5.4]

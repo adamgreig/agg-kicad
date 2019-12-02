@@ -1,4 +1,9 @@
 chip_shape: [3.0, 3.0]
+description: |-
+  MSOP-10 with 0.5mm pin pitch and an EP, TI specific
+  For the TPS92512, from its datasheet
+  JEDEC MO-187BA-T
+  IPC-7351B: SOP50P490X110-11N
 ep_mask_shape: [1.83, 1.89, 0, 0]
 ep_paste_shape: [1.83, 1.89, 0, 0]
 ep_shape: [2.2, 3.1]

@@ -1,4 +1,8 @@
 chip_shape: [3.0, 3.0]
+description: |-
+  MSOP-10 with 0.5mm pin pitch
+  JEDEC MO-187
+  IPC-7351B: SOP50P490X110-10N
 model:
   offset: [0, 0, 0]
   path: ${KISYS3DMOD}/Housings_SSOP.3dshapes/MSOP-10_3x3mm_Pitch0.5mm.wrl

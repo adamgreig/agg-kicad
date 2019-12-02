@@ -1,4 +1,5 @@
 chip_shape: [12.3, 12.3]
+description: Coilcraft MSS1210 series inductors
 name: MSS1210
 pad_shape: [3.0, 5.5]
 pin_shape: [-2.5, 5.0]

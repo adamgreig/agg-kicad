@@ -1,4 +1,5 @@
 chip_shape: [7.62, 4.58]
+description: Vishay VO718A optocoupler, SMD-4 package, option 7
 name: VO618A-SMD-4-7
 pad_shape: [1.52, 1.78]
 pin_pitch: 2.54

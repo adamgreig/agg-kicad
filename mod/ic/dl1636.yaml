@@ -1,4 +1,7 @@
 chip_shape: [6, 4.9]
+description: |-
+  QFN-8 from DL1636
+  For PHA-202+
 ep_shape: [3.94, 4.11]
 ep_vias: [0.4, 0.8, 0.8]
 name: DL1636

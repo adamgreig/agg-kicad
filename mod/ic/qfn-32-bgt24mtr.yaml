@@ -1,4 +1,5 @@
 chip_shape: [4.5, 5.5]
+description: VQFN32-9 for Infineon BGT24MTR family
 ep_paste_shape: [1, 1, 0.5, 0.5]
 ep_shape: [2.9, 3.9]
 ep_vias: [0.3, 0.6, 0.7]

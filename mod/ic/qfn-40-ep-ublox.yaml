@@ -1,4 +1,12 @@
 chip_shape: [5.1, 5.1]
+description: |-
+  QFN-40 from JEDEC MO-220
+  Modified to meet the UBLOX recommended footprint:
+  * Pads are 0.5mm long instead of 1.0mm
+  * Row pitch is 4.8mm instead of 4.9mm
+  * EP is 3.7mm instead of 3.4mm
+  * EP mask and paste defined by 16 0.55x0.55mm apertures
+  IPC-7351B: QFN40P500X500X80-41N (modified)
 ep_mask_shape: [0.55, 0.55, 0.5, 0.5]
 ep_paste_shape: [0.55, 0.55, 0.5, 0.5]
 ep_shape: [3.7, 3.7]

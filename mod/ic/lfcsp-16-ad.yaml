@@ -1,4 +1,5 @@
 chip_shape: [4, 4]
+description: LFCSP-16, AD specific CP-16-17
 ep_paste_shape: [1, 1, 0.2, 0.2]
 ep_shape: [2.6, 2.6]
 name: LFCSP-16-AD
