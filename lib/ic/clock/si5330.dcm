@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP SI5330
+D Low Jitter Clock Fanout Buffer
+F https://www.silabs.com/documents/public/data-sheets/Si5330.pdf
+$ENDCMP

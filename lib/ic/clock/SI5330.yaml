@@ -1,0 +1,35 @@
+name: SI5330
+datasheet: https://www.silabs.com/documents/public/data-sheets/Si5330.pdf
+description: Low Jitter Clock Fanout Buffer
+ordercodes: [["Mouser", "634-SI5330FB00214-GM"]]
+footprint: agg:QFN-24-EP-SI
+pins:
+- - - [VDD, 7, pwrin]
+    - [VDD, 24, pwrin]
+    - [VDDO0, 20, pwrin]
+    - [VDDO1, 16, pwrin]
+    - [VDDO2, 15, pwrin]
+    - [VDDO3, 11, pwrin]
+
+  - - [IN1, 1, in]
+    - [IN2, 2, in]
+    - [IN3, 3, in]
+
+  - - [LOS, 8, out]
+    - [OEB, 19, in]
+
+  - - [GND, 4, pwrin]
+    - [GND, 5, pwrin]
+    - [GND, 6, pwrin]
+    - [GND, 12, pwrin]
+    - [GND, 23, pwrin]
+    - [GND, EP, pwrin]
+
+- - - [CLK0A, 22, out]
+    - [CLK0B, 21, out]
+  - - [CLK1A, 18, out]
+    - [CLK1B, 17, out]
+  - - [CLK2A, 14, out]
+    - [CLK2B, 13, out]
+  - - [CLK3A, 10, out]
+    - [CLK3B, 9, out]

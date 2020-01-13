@@ -743,6 +743,21 @@ config = {
         "ep_vias": (0.35, 0.5, 0.7)
     },
 
+    # QFN-24 from SI5330 datasheet
+    # For SI5330
+    "QFN-24-EP-SI": {
+        "rows": 4,
+        "pins": 24,
+        "pin_pitch": 0.5,
+        "row_pitch": 3.90,
+        "pad_shape": (0.8, 0.25),
+        "chip_shape": (4.0, 4.0),
+        "pin_shape": (-0.4, 0.25),
+        "ep_shape": (2.55, 2.55),
+        "ep_paste_shape": (1.0, 1.0, 0.25, 0.25),
+        "ep_vias": (0.3, 0.6, 0.7)
+    },
+
     # QFN-24 from MAXIM. Doc no. 21-0139
     # For MAX17435
     "QFN-24-EP-MAX": {
