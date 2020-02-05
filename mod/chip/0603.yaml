@@ -1,0 +1,11 @@
+chip_shape: [1.6, 0.8]
+description: '0603 from IPC-7351B: CAPC1608X90N'
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0603.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: '0603'
+pad_shape: [0.95, 1.0]
+pin_shape: [-0.35, 0.8]
+pitch: 1.6

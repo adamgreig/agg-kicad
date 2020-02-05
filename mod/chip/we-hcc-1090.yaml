@@ -1,0 +1,6 @@
+chip_shape: [10.9, 10]
+description: WE 7443330220 Inductor
+name: WE-HCC-1090
+pad_shape: [2.3, 3.6]
+pin_shape: [-1.6, 3]
+pitch: 9.2

@@ -1,0 +1,16 @@
+chip_shape: [4.0, 8.8]
+description: |-
+  SOIC-14 from JEDEC MS-012AB
+  IPC-7351B: SOIC127P600X175-14N
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-14_3.9x8.7mm_Pitch1.27mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: SOIC-14
+pad_shape: [1.55, 0.6]
+pin_pitch: 1.27
+pin_shape: [1.1, 0.5]
+pins: 14
+row_pitch: 5.4
+rows: 2

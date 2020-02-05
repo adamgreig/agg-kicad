@@ -1,0 +1,11 @@
+chip_shape: [3.2, 2.5]
+description: '1210 from IPC-7351B: CAPC3225X230N'
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_1210.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: '1210'
+pad_shape: [1.15, 2.7]
+pin_shape: [-0.6, 2.3]
+pitch: 3.0

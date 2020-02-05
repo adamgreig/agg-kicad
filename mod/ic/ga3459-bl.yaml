@@ -1,0 +1,9 @@
+chip_shape: [26, 26.75]
+description: Coilcraft GA3459-BL
+name: GA3459-BL
+pad_shape: [2.75, 2.0]
+pin_pitch: 4.0
+pin_shape: [3.3, 1.09]
+pins: 12
+row_pitch: 30.95
+rows: 2

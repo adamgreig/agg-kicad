@@ -1,0 +1,6 @@
+chip_shape: [4.8, 3.4]
+description: '2512 from IPC-7351A: RESC4532X110N'
+name: '1812'
+pad_shape: [1.4, 3.4]
+pin_shape: [-0.9, 3.4]
+pitch: 4.1

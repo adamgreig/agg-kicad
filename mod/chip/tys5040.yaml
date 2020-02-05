@@ -1,0 +1,6 @@
+chip_shape: [5.0, 5.0]
+description: Laird TYS5040 Inductor
+name: TYS5040
+pad_shape: [1.4, 4.2]
+pin_shape: [-1.25, 4.0]
+pitch: 3.7

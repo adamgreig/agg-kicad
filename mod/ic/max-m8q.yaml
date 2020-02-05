@@ -1,0 +1,9 @@
+chip_shape: [9.7, 10.1]
+description: uBlox MAX-M8Q
+name: MAX-M8Q
+pad_shape: [1.8, 0.7]
+pin_pitch: 1.1
+pin_shape: [-1.0, 0.7]
+pins: 18
+row_pitch: 9.5
+rows: 2

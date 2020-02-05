@@ -1,0 +1,16 @@
+chip_shape: [4.0, 10.0]
+description: |-
+  SOIC-16 from JEDEC MS-012AC
+  IPC-7351B: SOIC127P600X175-16N
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-16_3.9x9.9mm_Pitch1.27mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: SOIC-16
+pad_shape: [1.55, 0.6]
+pin_pitch: 1.27
+pin_shape: [1.1, 0.5]
+pins: 16
+row_pitch: 5.4
+rows: 2

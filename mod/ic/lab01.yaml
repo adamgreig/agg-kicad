@@ -1,0 +1,9 @@
+chip_shape: [20, 25]
+description: LAB01
+name: LAB01
+pad_shape: [3.0, 1.6]
+pin_pitch: 2.0
+pin_shape: [-2.0, 1.5]
+pins: 24
+row_pitch: 19.0
+rows: 2

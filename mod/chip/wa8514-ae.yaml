@@ -1,0 +1,6 @@
+chip_shape: [4.34, 1.98]
+description: Coil Craft WA8514-AE Inductor
+name: WA8514-AE
+pad_shape: [0.838, 2.413]
+pin_shape: [-0.33, 1.65]
+pitch: 3.988

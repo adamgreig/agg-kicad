@@ -1,0 +1,20 @@
+chip_shape: [3.1, 3.1]
+description: |-
+  DFN-10 from JEDEC MO-229WEED-2
+  For LTC3105 / LT package DD
+  For LTC4151
+  IPC-7351B: DFN50P300X300X75-11N
+ep_paste_shape: [1.2, 0.8, 0, 0.4]
+ep_shape: [1.65, 2.38]
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-10-1EP_3x3mm_Pitch0.5mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: DFN-10-EP-LT
+pad_shape: [0.7, 0.25]
+pin_pitch: 0.5
+pin_shape: [-0.4, 0.3]
+pins: 10
+row_pitch: 2.85
+rows: 2

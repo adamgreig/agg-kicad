@@ -1,0 +1,6 @@
+chip_shape: [3, 3]
+description: Panasonic ELL-VGG Inductor
+name: ELLVGG
+pad_shape: [1.4, 3.2]
+pin_shape: [-1.1, 3]
+pitch: 2.0

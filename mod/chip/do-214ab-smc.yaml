@@ -1,0 +1,12 @@
+chip_shape: [7.11, 6.22]
+description: DO-214AB (SMC) from Diodes Inc.
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Diodes_SMD.3dshapes/SMC_Standard.wrl
+  rotate: [0, 0, 180]
+  scale: [0.3937, 0.3937, 0.3937]
+name: DO-214AB-SMC
+pad_shape: [2.5, 3.3]
+pin_shape: [0.51, 3.18]
+pitch: 6.9
+silk: triangle

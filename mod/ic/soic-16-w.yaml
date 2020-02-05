@@ -1,0 +1,16 @@
+chip_shape: [7.6, 10.5]
+description: |-
+  SOIC-16-W from JEDEC MS-013AA
+  IPC-7351B: SOIC127P1030X265-16N
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-16_7.5x10.3mm_Pitch1.27mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: SOIC-16-W
+pad_shape: [2.0, 0.6]
+pin_pitch: 1.27
+pin_shape: [1.5, 0.5]
+pins: 16
+row_pitch: 9.3
+rows: 2

@@ -1,0 +1,19 @@
+chip_shape: [3.1, 3.1]
+description: |-
+  DFN-12 3mm x 3mm
+  For LTC3535 / LT package DD
+  IPC-7351B: DFN45P300X300X75-13N
+ep_paste_shape: [1.2, 0.8, 0, 0.4]
+ep_shape: [1.65, 2.38]
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-12-1EP_3x3mm_Pitch0.45mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: DFN-12-EP-LT-DD
+pad_shape: [0.7, 0.25]
+pin_pitch: 0.45
+pin_shape: [-0.4, 0.23]
+pins: 12
+row_pitch: 2.8
+rows: 2

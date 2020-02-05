@@ -1,0 +1,16 @@
+chip_shape: [3.1, 3.1]
+description: |-
+  MSOP-8 from JEDEC MO-187AA
+  IPC-7351B: SOP65P490X110-8N
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_SSOP.3dshapes/MSOP-8_3x3mm_Pitch0.65mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: MSOP-8
+pad_shape: [1.45, 0.45]
+pin_pitch: 0.65
+pin_shape: [1.0, 0.38]
+pins: 8
+row_pitch: 4.4
+rows: 2

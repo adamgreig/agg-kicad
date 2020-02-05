@@ -1,0 +1,7 @@
+chip_shape: [1.8, 1.35]
+description: 'SOD-323 from IPC-7351B: SOD2513X100L'
+name: SOD-323
+pad_shape: [0.9, 0.5]
+pin_shape: [0.45, 0.4]
+pitch: 2.6
+silk: internal_pin1

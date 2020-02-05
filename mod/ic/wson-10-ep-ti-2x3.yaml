@@ -1,0 +1,12 @@
+chip_shape: [2.0, 3.0]
+description: WSON-10 2.0x3.0mm (TI)
+ep_paste_shape: [0.84, 1.0, 0.0, 0.2]
+ep_shape: [0.84, 2.4]
+ep_vias: [0.2, 0.2, 0.75]
+name: WSON-10-EP-TI-2x3
+pad_shape: [0.5, 0.25]
+pin_pitch: 0.5
+pin_shape: [-0.3, 0.2]
+pins: 10
+row_pitch: 1.9
+rows: 2

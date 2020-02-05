@@ -1,0 +1,20 @@
+chip_shape: [6.0, 6.0]
+description: |-
+  SQFN-36 for Microchip USB251xB
+  IPC-7351B: QFN50P600X600X90-37N
+ep_mask_shape: [3.7, 3.7, 0, 0]
+ep_paste_shape: [1.3, 1.3, 0.3, 0.3]
+ep_shape: [3.7, 3.7]
+ep_vias: [0.3, 0.4, 1.0]
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-36-1EP_5x6mm_Pitch0.5mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1.2, 1, 1]
+name: QFN-36-EP-MICROCHIP-SQFN
+pad_shape: [0.9, 0.28]
+pin_pitch: 0.5
+pin_shape: [-0.6, 0.25]
+pins: 36
+row_pitch: 5.55
+rows: 4

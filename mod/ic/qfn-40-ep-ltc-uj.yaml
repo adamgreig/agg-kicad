@@ -1,0 +1,21 @@
+chip_shape: [6.0, 6.0]
+description: |-
+  QFN-40 from LTC3887 datasheet
+  JEDEC WJJD-2 VARIANT
+  IPC-7351B: QFN50P600X600X75-40N
+ep_mask_shape: [0.73, 0.73, 0.5, 0.5]
+ep_paste_shape: [0.73, 0.73, 0.5, 0.5]
+ep_shape: [4.42, 4.42]
+ep_vias: [0.4, 0.8, 0.43]
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-40-1EP_6x6mm_Pitch0.5mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: QFN-40-EP-LTC-UJ
+pad_shape: [0.7, 0.25]
+pin_pitch: 0.5
+pin_shape: [-0.4, 0.25]
+pins: 40
+row_pitch: 5.8
+rows: 4

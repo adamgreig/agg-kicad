@@ -1,0 +1,18 @@
+chip_shape: [4.0, 4.0]
+description: QFN-20-EP-MAX for MAX17503
+ep_mask_shape: [0.85, 0.85, 0.28, 0.28]
+ep_paste_shape: [0.85, 0.85, 0.28, 0.28]
+ep_shape: [2.85, 2.85]
+ep_vias: [0.35, 0.5, 0.65]
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_Pitch0.5mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: QFN-20-EP-MAX
+pad_shape: [0.6, 0.3]
+pin_pitch: 0.5
+pin_shape: [-0.55, 0.25]
+pins: 20
+row_pitch: 3.85
+rows: 4

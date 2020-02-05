@@ -1,0 +1,7 @@
+chip_shape: [2.8, 1.8]
+description: 'SOD-123 from IPC-7351B: SOD3716X135N'
+name: SOD-123
+pad_shape: [1.0, 0.8]
+pin_shape: [0.5, 0.7]
+pitch: 3.6
+silk: internal_pin1

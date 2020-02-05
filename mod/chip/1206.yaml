@@ -1,0 +1,11 @@
+chip_shape: [3.2, 1.6]
+description: '1206 from IPC-7351B: CAPC3216X130N'
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_1206.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: '1206'
+pad_shape: [1.15, 1.8]
+pin_shape: [-0.6, 1.6]
+pitch: 3.0

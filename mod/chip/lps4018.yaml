@@ -1,0 +1,6 @@
+chip_shape: [3.9, 3.9]
+description: Coilcraft LPS4018 series inductors
+name: LPS4018
+pad_shape: [1.45, 3.89]
+pin_shape: [-1.1, 3.9]
+pitch: 2.95

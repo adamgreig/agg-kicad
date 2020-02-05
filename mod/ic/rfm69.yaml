@@ -1,0 +1,9 @@
+chip_shape: [19.7, 16]
+description: RFM69 and friends
+name: RFM69
+pad_shape: [3.0, 1.4]
+pin_pitch: 2.0
+pin_shape: [-2.0, 1.2]
+pins: 16
+row_pitch: 18.7
+rows: 2
