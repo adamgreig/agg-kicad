@@ -51,16 +51,16 @@ verify-lib-power:
 	python scripts/build_lib_power.py lib/power/power.lib --verify
 
 build-mod-chip:
-	python scripts/build_mod_chip.py agg.pretty/
+	python scripts/build_mod_chip.py agg.pretty/ mod/chip
 
 verify-mod-chip:
-	python scripts/build_mod_chip.py agg.pretty/ --verify $(verboseflag)
+	python scripts/build_mod_chip.py agg.pretty/ mod/chip --verify $(verboseflag)
 
 build-mod-ic:
-	python scripts/build_mod_ic.py agg.pretty/
+	python scripts/build_mod_ic.py agg.pretty/ mod/ic
 
 verify-mod-ic:
-	python scripts/build_mod_ic.py agg.pretty/ --verify $(verboseflag)
+	python scripts/build_mod_ic.py agg.pretty/ mod/ic --verify $(verboseflag)
 
 build-mod-jstpa:
 	python scripts/build_mod_jstpa.py agg.pretty/

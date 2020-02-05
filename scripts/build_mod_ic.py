@@ -64,8 +64,8 @@ import time
 import math
 import subprocess
 import argparse
-import glob
 import yaml
+import fnmatch
 
 from sexp import parse as sexp_parse, generate as sexp_generate
 from kicad_mod import fp_line, fp_arc, fp_circle, fp_text, pad, draw_square, model
@@ -467,18 +467,22 @@ def git_version(libpath):
     return git.stdout.read().decode().strip()
 
 
-def load_config():
-    configs = os.path.join(os.path.basename(__file__), '..', 'mod', 'ic', '*.yaml')
+def load_items(modpath):
     config = {}
-    for filename in glob.glob(configs):
-        with open(filename, 'r') as f:
-            data = yaml.load(f)
-        config[data['name']] = data
+    for dirpath, dirnames, files in os.walk(modpath):
+        dirnames.sort()
+        files.sort()
+        for fn in fnmatch.filter(files, "*.yaml"):
+            path = os.path.join(dirpath, fn)
+            with open(path) as f:
+                item = yaml.safe_load(f)
+                item["path"] = dirpath
+                config[item["name"]] = item
     return config
 
 
-def main(prettypath, verify=False, verbose=False):
-    config = load_config()
+def main(prettypath, modpath, verify=False, verbose=False):
+    config = load_items(modpath)
     for name, conf in config.items():
         conf['name'] = name
         assert conf['rows'] in (2, 4), \
@@ -516,6 +520,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("prettypath", type=str, help=
                         "Path to footprints to process")
+    parser.add_argument("modpath", type=str, help=
+                        "Path to .yaml files defining footprints")
     parser.add_argument("--verify", action="store_true", help=
                         "Verify libraries are up to date")
     parser.add_argument("--verbose", action="store_true", help=
