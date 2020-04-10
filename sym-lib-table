@@ -9,4 +9,6 @@
   (lib (name ad8605)(type Legacy)(uri ${KIPRJMOD}/lib/ic/analogue/ad8605.lib)(options "")(descr ""))
   (lib (name relay_dpdt_2coil)(type Legacy)(uri ${KIPRJMOD}/lib/passive/relay_dpdt_2coil.lib)(options "")(descr ""))
   (lib (name psg01550)(type Legacy)(uri ${KIPRJMOD}/lib/connector/psg01550.lib)(options "")(descr ""))
+  (lib (name sj2)(type Legacy)(uri ${KIPRJMOD}/lib/misc/sj2.lib)(options "")(descr ""))
+  (lib (name sj3)(type Legacy)(uri ${KIPRJMOD}/lib/misc/sj3.lib)(options "")(descr ""))
 )
