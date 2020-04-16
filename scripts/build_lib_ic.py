@@ -52,19 +52,32 @@ pin_types = {
 }
 
 
-def geometry(unit):
+def longest_num(units):
+    return max(max(
+        max([0] + [max(len(str(p[1])) for p in grp) for grp in left_pins]),
+        max([0] + [max(len(str(p[1])) for p in grp) for grp in right_pins]))
+        for (left_pins, right_pins) in units)
+
+
+def geometry(unit, longest_num):
     left_pins, right_pins = unit
+
+    length = max(100, longest_num * 50)
+
     # Find longest name of all pins
     longest_name = max(
         max([0] + [max(len(p[0]) for p in grp) for grp in left_pins]),
         max([0] + [max(len(p[0]) for p in grp) for grp in right_pins]))
 
     # Width is either that required for longest name or twice that for
-    # dual-sided parts, rounded to nearest 200.
+    # dual-sided parts, rounded up to nearest 100. If length is not a
+    # multiple of 100, add extra width to ensure pins are on 0.1" grid.
     width = (longest_name + 1) * 50
+    width += width % 100
     if left_pins and right_pins:
         width *= 2
-    width += width % 200
+    if ((width//2)+length) % 100 != 0:
+        width += 2 * (((width//2)+length) % 100)
 
     # Height is maximum required between each side
     n_left_pins = sum(len(grp) for grp in left_pins)
@@ -75,19 +88,10 @@ def geometry(unit):
         n_left_pins + n_left_groups - 1, n_right_pins + n_right_groups - 1)
 
     # Ensure height is an odd multiple of 0.1" to keep everything aligned
-    # to the 0.1" grid
+    # to the 0.1" grid. This is responsible for the unseemly gaps at the
+    # bottom of parts with an even number of pins, but preserves symmetry.
     if (height // 100) % 2 == 0:
         height += 100
-
-    # Pin length based on maximum pin number length
-    longest_num = max(
-        max([0] + [max(len(str(p[1])) for p in grp) for grp in left_pins]),
-        max([0] + [max(len(str(p[1])) for p in grp) for grp in right_pins]))
-    length = max(100, longest_num * 50)
-
-    # Ensure pins will align by making the part wider if required
-    if length % 100 != 0:
-        width += 100
 
     return width, height, length
 
@@ -127,7 +131,8 @@ def normalise_pins(pins):
 
 
 def fields(conf, units):
-    geoms = [geometry(unit) for unit in units]
+    n = longest_num(units)
+    geoms = [geometry(unit, n) for unit in units]
     width = max(g[0] for g in geoms)
     height = max(g[1] for g in geoms)
     field_x = -width//2
@@ -182,12 +187,14 @@ def draw(units):
     out = []
     out.append("DRAW")
 
+    n = longest_num(units)
+
     for unit_idx, unit in enumerate(units):
         if len(units) > 1:
             # For multi-unit parts, unit indices start at 1,
             # while for single-unit parts, everythign is unit 0.
             unit_idx += 1
-        width, height, length = geometry(unit)
+        width, height, length = geometry(unit, n)
 
         # Containing box
         out.append("S {} {} {} {} {} 1 0 f".format(
