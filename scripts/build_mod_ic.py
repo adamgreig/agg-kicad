@@ -451,7 +451,7 @@ config = {
         "chip_shape": (10.2, 10.2),
         "pin_shape": (1.0, 0.27),
         "ep_shape": (8, 8),
-        "ep_paste_shape": (1.5, 1.5, 0.8, 0.8),
+        "ep_paste_shape": (7.0, 7.0, 0.0, 0.0),
         "ep_mask_shape": (7.0, 7.0, 0, 0),
         "ep_vias": (0.3, 0.6, 1.3),
         "model": {
