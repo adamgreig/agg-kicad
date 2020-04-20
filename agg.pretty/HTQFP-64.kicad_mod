@@ -1,7 +1,7 @@
 
 (module "HTQFP-64" 
   (layer F.Cu) 
-  (tedit 5E9E25EA) 
+  (tedit 5E9E2A62) 
   (fp_text reference REF** 
     (at 0 -7.4000) 
     (layer F.Fab) 
@@ -1314,150 +1314,14 @@
     (layers F.Cu F.Mask F.Paste)) 
   (pad "" smd rect 
     (at -0.0000 -0.0000) 
-    (size 7.0000 7.0000) 
+    (size 7 7) 
     (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
   (pad "" smd rect 
-    (at -2.3000 -2.3000) 
-    (size 1.5000 1.5000) 
+    (at -0.0000 -0.0000) 
+    (size 7 7) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
-  (pad "" smd rect 
-    (at -2.3000 0.0000) 
-    (size 1.5000 1.5000) 
-    (layers F.Paste) 
-    (solder_paste_margin 0.0010)) 
-  (pad "" smd rect 
-    (at -2.3000 2.3000) 
-    (size 1.5000 1.5000) 
-    (layers F.Paste) 
-    (solder_paste_margin 0.0010)) 
-  (pad "" smd rect 
-    (at 0.0000 -2.3000) 
-    (size 1.5000 1.5000) 
-    (layers F.Paste) 
-    (solder_paste_margin 0.0010)) 
-  (pad "" smd rect 
-    (at 0.0000 0.0000) 
-    (size 1.5000 1.5000) 
-    (layers F.Paste) 
-    (solder_paste_margin 0.0010)) 
-  (pad "" smd rect 
-    (at 0.0000 2.3000) 
-    (size 1.5000 1.5000) 
-    (layers F.Paste) 
-    (solder_paste_margin 0.0010)) 
-  (pad "" smd rect 
-    (at 2.3000 -2.3000) 
-    (size 1.5000 1.5000) 
-    (layers F.Paste) 
-    (solder_paste_margin 0.0010)) 
-  (pad "" smd rect 
-    (at 2.3000 0.0000) 
-    (size 1.5000 1.5000) 
-    (layers F.Paste) 
-    (solder_paste_margin 0.0010)) 
-  (pad "" smd rect 
-    (at 2.3000 2.3000) 
-    (size 1.5000 1.5000) 
-    (layers F.Paste) 
-    (solder_paste_margin 0.0010)) 
-  (pad EP thru_hole circle 
-    (at -2.8500 -2.8500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at -2.8500 -0.9500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at -2.8500 0.9500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at -2.8500 2.8500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at -0.9500 -2.8500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at -0.9500 -0.9500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at -0.9500 0.9500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at -0.9500 2.8500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at 0.9500 -2.8500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at 0.9500 -0.9500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at 0.9500 0.9500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at 0.9500 2.8500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at 2.8500 -2.8500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at 2.8500 -0.9500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at 2.8500 0.9500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
-  (pad EP thru_hole circle 
-    (at 2.8500 2.8500) 
-    (size 0.6000 0.6000) 
-    (layers *.Cu) 
-    (drill 0.3000) 
-    (zone_connect 2)) 
   (pad EP smd rect 
     (at 0 0) 
     (size 8 8) 

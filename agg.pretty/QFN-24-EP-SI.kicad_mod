@@ -1,7 +1,7 @@
 
 (module "QFN-24-EP-SI" 
   (layer F.Cu) 
-  (tedit 5E1C991A) 
+  (tedit 5E9E2A62) 
   (fp_text reference REF** 
     (at 0 -3.3000) 
     (layer F.Fab) 
@@ -554,22 +554,22 @@
     (layers F.Cu F.Mask F.Paste)) 
   (pad "" smd rect 
     (at -0.6250 -0.6250) 
-    (size 1.0000 1.0000) 
+    (size 1 1) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad "" smd rect 
     (at -0.6250 0.6250) 
-    (size 1.0000 1.0000) 
+    (size 1 1) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad "" smd rect 
     (at 0.6250 -0.6250) 
-    (size 1.0000 1.0000) 
+    (size 1 1) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad "" smd rect 
     (at 0.6250 0.6250) 
-    (size 1.0000 1.0000) 
+    (size 1 1) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad EP thru_hole circle 

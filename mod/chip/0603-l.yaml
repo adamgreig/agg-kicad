@@ -1,0 +1,14 @@
+chip_shape: [1.6, 0.8]
+courtyard_gap: 0.1
+description: |-
+  0603-L from IPC-7351B: CAPC1608X90L
+  This is a LEAST environment
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0603.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: 0603-L
+pad_shape: [0.75, 0.9]
+pin_shape: [-0.35, 0.8]
+pitch: 1.4

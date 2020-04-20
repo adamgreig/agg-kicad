@@ -18,9 +18,9 @@ verify-libs: verify-lib-connector verify-lib-ic verify-lib-power
 
 verify-mods: verify-mod-chip verify-mod-ic verify-mod-jstpa verify-mod-sil-dil verify-mod-jsteh verify-mod-picoblade
 
-compile: compile-lib compile-pro
+compile: compile-lib compile-sym-lib-table
 
-compile-verify: verify-lib verify-pro
+compile-verify: verify-lib verify-sym-lib-table
 
 check: check-lib check-mod
 
@@ -51,16 +51,16 @@ verify-lib-power:
 	python scripts/build_lib_power.py lib/power/power.lib --verify
 
 build-mod-chip:
-	python scripts/build_mod_chip.py agg.pretty/
+	python scripts/build_mod_chip.py agg.pretty/ mod/chip
 
 verify-mod-chip:
-	python scripts/build_mod_chip.py agg.pretty/ --verify $(verboseflag)
+	python scripts/build_mod_chip.py agg.pretty/ mod/chip --verify $(verboseflag)
 
 build-mod-ic:
-	python scripts/build_mod_ic.py agg.pretty/
+	python scripts/build_mod_ic.py agg.pretty/ mod/ic
 
 verify-mod-ic:
-	python scripts/build_mod_ic.py agg.pretty/ --verify $(verboseflag)
+	python scripts/build_mod_ic.py agg.pretty/ mod/ic --verify $(verboseflag)
 
 build-mod-jstpa:
 	python scripts/build_mod_jstpa.py agg.pretty/
@@ -92,11 +92,11 @@ compile-lib:
 verify-lib:
 	python scripts/compile_lib.py lib/ agg-kicad.lib --verify
 
-compile-pro:
-	python scripts/compile_pro.py lib/ agg-kicad.pro
+compile-sym-lib-table:
+	python scripts/compile_sym_lib_table.py lib/ sym-lib-table
 
-verify-pro:
-	python scripts/compile_pro.py lib/ agg-kicad.pro --verify
+verify-sym-lib-table:
+	python scripts/compile_sym_lib_table.py lib/ sym-lib-table --verify
 
 check-lib:
 	python scripts/check_lib.py lib/ agg.pretty/ $(verboseflag)

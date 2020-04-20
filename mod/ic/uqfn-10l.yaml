@@ -1,0 +1,10 @@
+chip_shape: [1.35, 2.6]
+description: uQFN-10L
+name: uQFN-10L
+pad_shape: [0.7, 0.2]
+pin_pitch: 0.5
+pin_shape: [-0.5, 0.2]
+pins: 10
+row_pitch: 1.05
+rows: 2
+silk: external

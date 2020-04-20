@@ -1,0 +1,6 @@
+chip_shape: [4, 4]
+description: Coilcraft XFL4020 series Inductors
+name: XFL4020
+pad_shape: [0.98, 3.4]
+pin_shape: [-1.5, 4]
+pitch: 2.37

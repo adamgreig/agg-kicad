@@ -1,0 +1,11 @@
+chip_shape: [6.6, 3.4]
+description: '2512 from IPC-7351A: RESC6432X70N'
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_2512.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: '2512'
+pad_shape: [1.25, 3.4]
+pin_shape: [-0.8, 3.4]
+pitch: 6.1

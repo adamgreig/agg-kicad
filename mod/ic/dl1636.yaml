@@ -1,0 +1,13 @@
+chip_shape: [6, 4.9]
+description: |-
+  QFN-8 from DL1636
+  For PHA-202+
+ep_shape: [3.94, 4.11]
+ep_vias: [0.4, 0.8, 0.8]
+name: DL1636
+pad_shape: [1.02, 0.51]
+pin_pitch: 1.27
+pin_shape: [-0.6, 0.42]
+pins: 8
+row_pitch: 5.51
+rows: 2

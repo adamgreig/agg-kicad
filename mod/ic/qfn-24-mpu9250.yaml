@@ -1,0 +1,12 @@
+chip_shape: [3.0, 3.0]
+description: |-
+  QFN-24 from MPU-9250 datasheet
+  For MPU-9250
+  IPC-7351B: QFN40P300X300X100-24N
+name: QFN-24-MPU9250
+pad_shape: [0.4, 0.2]
+pin_pitch: 0.4
+pin_shape: [-0.3, 0.2]
+pins: 24
+row_pitch: 3.0
+rows: 4

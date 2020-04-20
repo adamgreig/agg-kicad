@@ -12,7 +12,7 @@ import re
 from decimal import Decimal
 
 
-def parse(sexp):
+def parse(sexp, empty_string_placeholder="~"):
     """
     Parse an S-expression into Python lists.
     """
@@ -32,7 +32,7 @@ def parse(sexp):
         elif c == '"' and (token is None or token[-1] != '\\'):
             quote = not quote
             if not token and not quote:
-                token = "~"
+                token = empty_string_placeholder
         else:
             if token is None:
                 token = ''

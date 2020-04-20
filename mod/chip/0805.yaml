@@ -1,0 +1,11 @@
+chip_shape: [2.0, 1.25]
+description: '0805 from IPC-7351B: CAPC2013X100N'
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0805.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: 0805
+pad_shape: [1.15, 1.45]
+pin_shape: [-0.5, 1.25]
+pitch: 1.8

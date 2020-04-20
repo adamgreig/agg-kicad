@@ -1,0 +1,12 @@
+chip_shape: [4.6, 2.92]
+description: DO-214AC (SMA) from Diodes Inc.
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Diodes_SMD.3dshapes/SMA_Standard.wrl
+  rotate: [0, 0, 180]
+  scale: [0.3937, 0.3937, 0.3937]
+name: DO-214AC-SMA
+pad_shape: [2.5, 1.7]
+pin_shape: [0.5, 1.63]
+pitch: 4.0
+silk: triangle

@@ -1,0 +1,9 @@
+chip_shape: [10.3, 10.3]
+description: |-
+  Panasonic SMD electrolytic capacitors, G size code
+  https://industrial.panasonic.com/content/data/CP/PDF/Alumi/AL_landP_e.pdf
+name: PANASONIC-SMDCAP-G
+pad_shape: [4.1, 2.0]
+pin_shape: [-3.5, 1.2]
+pitch: 8.7
+silk: internal_pin1

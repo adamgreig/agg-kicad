@@ -1,0 +1,12 @@
+description: QFN-24 from Si5330 datasheet
+name: QFN-24-EP-SI
+rows: 4
+pins: 24
+pin_pitch: 0.5
+row_pitch: 3.9
+pad_shape: [0.8, 0.25]
+chip_shape: [4, 4]
+pin_shape: [-0.4, 0.25]
+ep_shape: [2.55, 2.55]
+ep_paste_shape: [1, 1, .25, .25]
+ep_vias: [.3, .6, .7]

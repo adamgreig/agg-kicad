@@ -1,0 +1,6 @@
+chip_shape: [6.1, 5.4]
+description: '2220 from IPC-7351B: CAPC5750X200N'
+name: '2220'
+pad_shape: [1.55, 5.4]
+pin_shape: [-1.0, 5.4]
+pitch: 5.3

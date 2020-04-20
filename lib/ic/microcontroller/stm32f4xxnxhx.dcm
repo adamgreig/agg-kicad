@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP STM32F4xxNxHx
+D STM32F4 216 pin BGA package
+F https://www.st.com/resource/en/datasheet/stm32f439ni.pdf
+$ENDCMP

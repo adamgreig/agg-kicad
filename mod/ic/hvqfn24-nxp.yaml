@@ -1,0 +1,19 @@
+chip_shape: [4.3, 4.3]
+description: |-
+  HVQFN24 from PCA9502
+  IPC-7351B: QFN50P430X430X100-25N
+ep_mask_shape: [0.45, 0.45, 0.4, 0.4]
+ep_paste_shape: [0.45, 0.45, 0.4, 0.4]
+ep_shape: [2.1, 2.1]
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_Pitch0.5mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: HVQFN24-NXP
+pad_shape: [0.9, 0.24]
+pin_pitch: 0.5
+pin_shape: [-0.5, 0.3]
+pins: 24
+row_pitch: 4.1
+rows: 4

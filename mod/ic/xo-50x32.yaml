@@ -1,0 +1,15 @@
+chip_shape: [3.2, 5.0]
+description: XTAL 5.0x3.2mm
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step
+  rotate: [0, 0, 90]
+  scale: [1.56, 1.28, 1.0]
+name: XO-50x32
+pad_shape: [1.0, 1.5]
+pin_pitch: 3.8
+pin_shape: [-0.8, 1.1]
+pins: 4
+row_pitch: 2.6
+rows: 2
+silk: internal

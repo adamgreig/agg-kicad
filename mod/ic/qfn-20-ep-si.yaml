@@ -1,0 +1,19 @@
+chip_shape: [4.1, 4.1]
+description: |-
+  QFN-20 from JEDEC MO-220VGGD-8
+  For Si4460
+  IPC-7351B: QFN50P400X400X85-21V8N
+ep_paste_shape: [1.1, 1.1, 0.2, 0.2]
+ep_shape: [2.6, 2.6]
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_Pitch0.5mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: QFN-20-EP-SI
+pad_shape: [0.75, 0.3]
+pin_pitch: 0.5
+pin_shape: [-0.5, 0.3]
+pins: 20
+row_pitch: 4.0
+rows: 4

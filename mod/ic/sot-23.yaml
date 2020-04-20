@@ -1,0 +1,18 @@
+chip_shape: [1.4, 3.0]
+description: |-
+  SOT-23-3
+  JEDEC TO-236AB
+  IPC-7351B: SOT95P230X110-3N
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-23.wrl
+  rotate: [0, 0, 90]
+  scale: [1, 1, 1]
+name: SOT-23
+pad_shape: [1.0, 0.6]
+pin_pitch: 0.95
+pin_shape: [0.55, 0.48]
+pins: 6
+row_pitch: 2.3
+rows: 2
+skip_pins: [2, 4, 6]

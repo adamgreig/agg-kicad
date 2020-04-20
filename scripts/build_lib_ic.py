@@ -52,42 +52,89 @@ pin_types = {
 }
 
 
-def geometry(conf):
-    # width is twice the width required to accommodate the longest name
-    longest_name = max(max(max(len(pin[0]) for pin in grp) for grp in side)
-                       for side in conf['pins'])
-    width = 2 * (longest_name + 1) * 50
-    width += width % 200
+def longest_num(units):
+    return max(max(
+        max([0] + [max(len(str(p[1])) for p in grp) for grp in left_pins]),
+        max([0] + [max(len(str(p[1])) for p in grp) for grp in right_pins]))
+        for (left_pins, right_pins) in units)
 
-    # height is the maximum required on either side
-    if len(conf['pins']) != 2:
-        raise RuntimeError("IC schematic symbols must list pins on exactly "
-                           "two sides.")
-    left_pins = sum(len(x) for x in conf['pins'][0])
-    right_pins = sum(len(x) for x in conf['pins'][1])
-    left_groups = len(conf['pins'][0])
-    right_groups = len(conf['pins'][1])
 
+def geometry(unit, longest_num):
+    left_pins, right_pins = unit
+
+    length = max(100, longest_num * 50)
+
+    # Find longest name of all pins
+    longest_name = max(
+        max([0] + [max(len(p[0]) for p in grp) for grp in left_pins]),
+        max([0] + [max(len(p[0]) for p in grp) for grp in right_pins]))
+
+    # Width is either that required for longest name or twice that for
+    # dual-sided parts, rounded up to nearest 100. If length is not a
+    # multiple of 100, add extra width to ensure pins are on 0.1" grid.
+    width = (longest_name + 1) * 50
+    width += width % 100
+    if left_pins and right_pins:
+        width *= 2
+    if ((width//2)+length) % 100 != 0:
+        width += 2 * (((width//2)+length) % 100)
+
+    # Height is maximum required between each side
+    n_left_pins = sum(len(grp) for grp in left_pins)
+    n_right_pins = sum(len(grp) for grp in right_pins)
+    n_left_groups = len(left_pins)
+    n_right_groups = len(right_pins)
     height = 100 * max(
-        left_pins + left_groups - 1, right_pins + right_groups - 1)
+        n_left_pins + n_left_groups - 1, n_right_pins + n_right_groups - 1)
 
-    # height must be an odd multiple of 0.1" or the grid breaks
+    # Ensure height is an odd multiple of 0.1" to keep everything aligned
+    # to the 0.1" grid. This is responsible for the unseemly gaps at the
+    # bottom of parts with an even number of pins, but preserves symmetry.
     if (height // 100) % 2 == 0:
         height += 100
 
-    # Pin length based on maximum pin number length
-    longest_num = max(max(max(len(str(pin[1])) for pin in grp) for grp in side)
-                      for side in conf['pins'])
-    length = max(100, longest_num*50)
-    # Ensure pins will align to a 100mil grid by making the part wider
-    if length % 100 != 0:
-        width += 100
-
-    return width, height, length, left_groups
+    return width, height, length
 
 
-def fields(conf):
-    width, height, _, lgroups = geometry(conf)
+def normalise_pins(pins):
+    """
+    Convert YAML representation of pins into a normal structure, which is
+    a list of (left, right) tuples, where each tuple is a symbol unit,
+    and left and right are either empty lists, or lists of groups,
+    where each group is a list of [name, number, type] pins.
+    """
+    output = []
+    # Get what might be either the first pin or the first group of pins,
+    # depending on whether the list is 3 deep (one unit) or 4 (multiple units)
+    first_pin_or_grp = pins[0][0][0]
+    if first_pin_or_grp is None:
+        # For right-hand-only parts, we might need to check the second entry
+        first_pin_or_grp = pins[1][0][0]
+    if isinstance(first_pin_or_grp[0], str):
+        # Str means a name, so this is a pin, so there's only
+        # one unit, so wrap in a new list.
+        pins = [pins]
+    for unit in pins:
+        if len(unit) == 1:
+            # Only one side: left groups only
+            output.append((unit[0], []))
+        elif len(unit) == 2:
+            if unit[0][0][0] is None:
+                # Empty left side: right groups only
+                output.append(([], unit[1]))
+            else:
+                # Both sides
+                output.append((unit[0], unit[1]))
+        else:
+            raise ValueError("Invalid pins")
+    return output
+
+
+def fields(conf, units):
+    n = longest_num(units)
+    geoms = [geometry(unit, n) for unit in units]
+    width = max(g[0] for g in geoms)
+    height = max(g[1] for g in geoms)
     field_x = -width//2
     field_y = height//2 + 50
     out = []
@@ -122,33 +169,45 @@ def fields(conf):
     return out
 
 
-def draw_pins(groups, x0, y0, direction, length):
+def draw_pins(groups, x0, y0, direction, length, unit_idx):
     out = []
     pin_x = x0
     pin_y = y0
     for group in groups:
         for (name, num, t) in group:
-            out.append("X {} {} {} {} {} {} 50 50 0 0 {}".format(
-                name, num, pin_x, pin_y, length, direction, pin_types[t]))
+            out.append("X {} {} {} {} {} {} 50 50 {} 0 {}".format(
+                name, num, pin_x, pin_y, length, direction, unit_idx,
+                pin_types[t]))
             pin_y -= 100
         pin_y -= 100
     return out
 
 
-def draw(conf):
-    width, height, length, lgroups = geometry(conf)
+def draw(units):
     out = []
     out.append("DRAW")
 
-    # Containing box
-    out.append("S {} {} {} {} 0 1 0 f".format(
-        -width//2, height//2, width//2, -height//2))
+    n = longest_num(units)
 
-    # Pins
-    x0 = -width//2 - length
-    y0 = height//2 - 50
-    out += draw_pins(conf['pins'][0], x0, y0, "R", length)
-    out += draw_pins(conf['pins'][1], -x0, y0, "L", length)
+    for unit_idx, unit in enumerate(units):
+        if len(units) > 1:
+            # For multi-unit parts, unit indices start at 1,
+            # while for single-unit parts, everythign is unit 0.
+            unit_idx += 1
+        width, height, length = geometry(unit, n)
+
+        # Containing box
+        out.append("S {} {} {} {} {} 1 0 f".format(
+            -width//2, height//2, width//2, -height//2, unit_idx))
+
+        # Pins
+        x0 = -width//2 - length
+        y0 = height//2 - 50
+        left_pins, right_pins = unit
+        if left_pins:
+            out += draw_pins(left_pins, x0, y0, "R", length, unit_idx)
+        if right_pins:
+            out += draw_pins(right_pins, -x0, y0, "L", length, unit_idx)
 
     out.append("ENDDRAW")
     return out
@@ -157,14 +216,17 @@ def draw(conf):
 def library(conf):
     out = []
 
+    units = normalise_pins(conf['pins'])
+
     out.append("EESchema-LIBRARY Version 2.3")
     out.append("#encoding utf-8")
     out.append("#\n# {}\n#".format(conf['name']))
-    out.append("DEF {} {} 0 40 Y Y 1 F N".format(
-        conf['name'], conf.get('designator', 'IC')))
+    locked = "F" if len(units) == 1 else "L"
+    out.append("DEF {} {} 0 40 Y Y {} {} N".format(
+        conf['name'], conf.get('designator', 'IC'), len(units), locked))
 
-    out += fields(conf)
-    out += draw(conf)
+    out += fields(conf, units)
+    out += draw(units)
 
     out.append("ENDDEF\n#\n#End Library\n")
     return "\n".join(out)

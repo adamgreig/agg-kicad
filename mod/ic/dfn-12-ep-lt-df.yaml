@@ -1,0 +1,19 @@
+chip_shape: [4.1, 4.1]
+description: |-
+  DFN-12 4mm x 4mm
+  For LTC3083 / LT package DF
+  IPC-7351B: DFN45P400X400X75-13N
+ep_paste_shape: [2.2, 1.3, 0, 0.4]
+ep_shape: [2.65, 3.38]
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-12-1EP_3x3mm_Pitch0.45mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1.33, 1.33, 1]
+name: DFN-12-EP-LT-DF
+pad_shape: [0.7, 0.25]
+pin_pitch: 0.5
+pin_shape: [-0.4, 0.25]
+pins: 12
+row_pitch: 3.8
+rows: 2

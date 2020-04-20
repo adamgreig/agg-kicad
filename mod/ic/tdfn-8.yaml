@@ -1,0 +1,14 @@
+chip_shape: [2.0, 2.0]
+description: TDFN-8 (MAXIM T822CN+1, 21-0487, 90-0349)
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/DFN-8_2x2mm_P0.5mm.step
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: TDFN-8
+pad_shape: [0.85, 0.3]
+pin_pitch: 0.5
+pin_shape: [-0.4, 0.25]
+pins: 8
+row_pitch: 1.9
+rows: 2

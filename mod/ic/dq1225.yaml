@@ -1,0 +1,12 @@
+chip_shape: [3, 3]
+description: |-
+  QFN-12 from DQ1225
+  For PMA3-83LN+
+ep_shape: [1.25, 1.25]
+name: DQ1225
+pad_shape: [0.51, 0.25]
+pin_pitch: 0.51
+pin_shape: [-0.41, 0.23]
+pins: 12
+row_pitch: 2.71
+rows: 4

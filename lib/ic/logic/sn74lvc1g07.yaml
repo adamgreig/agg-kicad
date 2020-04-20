@@ -3,7 +3,7 @@ description: Buffer / Line Driver, Non-Inverting, 1 Gate, 1 Input, 1.65V to 5.5V
 footprint: agg:SOT-23-5
 name: SN74LVC1G07
 ordercodes:
-- [Farnell, '1102969']
+- [Farnell, '3119596']
 pins:
 - - - [VCC, 5, pwrin]
     - [A, 2, in]

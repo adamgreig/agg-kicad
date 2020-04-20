@@ -1,0 +1,16 @@
+chip_shape: [7.2, 7.2]
+description: |-
+  LQFP-48 from JEDEC MS-026BBC
+  IPC-7351B: QFP50P900X900X160-48N
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-48_7x7mm_Pitch0.5mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: LQFP-48
+pad_shape: [1.5, 0.3]
+pin_pitch: 0.5
+pin_shape: [1.0, 0.27]
+pins: 48
+row_pitch: 8.4
+rows: 4

@@ -1,0 +1,7 @@
+chip_shape: [19, 19]
+description: Panasonic SMD electrolytic capacitors, K size code
+name: PANASONIC-SMDCAP-K
+pad_shape: [7.5, 2.5]
+pin_shape: [-6.7, 1.2]
+pitch: 13.5
+silk: internal_pin1

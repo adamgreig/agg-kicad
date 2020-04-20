@@ -1,0 +1,16 @@
+chip_shape: [4.5, 6.6]
+description: |-
+  TSSOP-20 from JEDEC MO-153AC
+  IPC-7351B: SOP65P640X120-20N
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-20_4.4x6.5mm_Pitch0.65mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: TSSOP-20
+pad_shape: [1.35, 0.45]
+pin_pitch: 0.65
+pin_shape: [0.95, 0.3]
+pins: 20
+row_pitch: 5.75
+rows: 2

@@ -1,0 +1,9 @@
+chip_shape: [3.9, 4.75]
+description: MB2S diode bridge rectifier in TO-269AA
+name: TO-269AA
+pad_shape: [1.4, 0.8]
+pin_pitch: 2.54
+pin_shape: [1.4, 0.74]
+pins: 4
+row_pitch: 5.7
+rows: 2

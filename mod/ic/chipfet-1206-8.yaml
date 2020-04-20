@@ -1,0 +1,9 @@
+chip_shape: [1.9, 3.05]
+description: ChipFET 1206-8
+name: ChipFET-1206-8
+pad_shape: [0.559, 0.406]
+pin_pitch: 0.65
+pin_shape: [-0.35, 0.3]
+pins: 8
+row_pitch: 1.473
+rows: 2

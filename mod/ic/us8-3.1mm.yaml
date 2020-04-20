@@ -1,0 +1,9 @@
+chip_shape: [2.3, 2.0]
+description: US8 JEDEC MO-187 Variation CA 3.1mm Wide
+name: US8-3.1mm
+pad_shape: [0.7, 0.3]
+pin_pitch: 0.5
+pin_shape: [0.4, 0.33]
+pins: 8
+row_pitch: 2.7
+rows: 2

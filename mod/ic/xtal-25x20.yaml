@@ -1,0 +1,15 @@
+chip_shape: [2.0, 2.5]
+description: XTAL 2.0x2.5mm
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step
+  rotate: [0, 0, 90]
+  scale: [0.8, 0.8, 1.0]
+name: XTAL-25x20
+pad_shape: [1.0, 0.8]
+pin_pitch: 1.7
+pin_shape: [-0.7, 0.7]
+pins: 4
+row_pitch: 1.6
+rows: 2
+silk: external

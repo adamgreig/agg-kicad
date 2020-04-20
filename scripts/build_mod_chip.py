@@ -7,373 +7,6 @@ Create two-terminal chip packages.
 """
 from __future__ import print_function, division
 
-# Package Configuration =======================================================
-# Top keys are package names.
-# Format is SIZE[-SPECIAL]. Examples: 0402, 0603-LED
-# Valid inner keys are:
-#   * pad_shape: (width, height) of the pads
-#   * pitch: spacing between pad centres
-#   * chip_shape: (width, height) of the chip (for Fab layer)
-#   * pin_shape: (width, height) of chip pins (for Fab layer).
-#                Use negative widths for internal pins (e.g., chip resistors)
-#   * silk: "internal", "external", "triangle",
-#           "internal_pin1", "external_pin1", or None.
-#           What sort of silk to draw. Default is "internal".
-#   * courtyard_gap: minimum distance from footprint extreme to courtyard.
-#                    If not specified, the default ctyd_gap set below is used.
-#   * model: {"path": str,
-#             "offset": (x,y,z),
-#             "scale": (x,y,z),
-#             "rotate":(x,y,z)}
-#            Defines which 3D model to associate with the footprint.
-#
-# Except where otherwise noted, all packages are in IPC nominal environment.
-# Chip drawings are nominal sizes rather than maximum sizes.
-# All lengths are in millimetres.
-
-# Model Constants
-# Scale factor for models in mm
-MM_TO_DIN = (0.3937, 0.3937, 0.3937)
-
-config = {
-    # 0201 from IPC-7351B: CAPC0603X33N
-    "0201": {
-        "pad_shape": (0.46, 0.42),
-        "pitch": 0.66,
-        "chip_shape": (0.6, 0.3),
-        "pin_shape": (-0.15, 0.3),
-        "silk": None,
-        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0201.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 0)},
-    },
-
-    # 0201-L from IPC-7351B: CAPC0603X33L
-    "0201-L": {
-        "pad_shape": (0.36, 0.32),
-        "pitch": 0.56,
-        "chip_shape": (0.6, 0.3),
-        "pin_shape": (-0.15, 0.3),
-        "silk": None,
-        "courtyard_gap": 0.10,
-        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0201.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 0)},
-    },
-
-    # 0402 from IPC-7351B: CAPC1005X55N
-    "0402": {
-        "pad_shape": (0.62, 0.62),
-        "pitch": 0.90,
-        "chip_shape": (1.00, 0.50),
-        "pin_shape": (-0.30, 0.50),
-        "silk": None,
-        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0402.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 0)},
-    },
-
-    # 0402-L from IPC-7351B: CAPC1005X55L
-    # This is a LEAST environment
-    "0402-L": {
-        "pad_shape": (0.52, 0.52),
-        "pitch": 0.80,
-        "chip_shape": (1.00, 0.50),
-        "pin_shape": (-0.30, 0.50),
-        "silk": None,
-        "courtyard_gap": 0.10,
-        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0402.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 0)},
-    },
-
-    # 0603 from IPC-7351B: CAPC1608X90N
-    "0603": {
-        "pad_shape": (0.95, 1.00),
-        "pitch": 1.60,
-        "chip_shape": (1.60, 0.80),
-        "pin_shape": (-0.35, 0.80),
-        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0603.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 0)},
-    },
-
-    # 0603-L from IPC-7351B: CAPC1608X90L
-    # This is a LEAST environment
-    "0603-L": {
-        "pad_shape": (0.75, 0.90),
-        "pitch": 1.40,
-        "chip_shape": (1.60, 0.80),
-        "pin_shape": (-0.35, 0.80),
-        "courtyard_gap": 0.10,
-        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0603.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 0)},
-    },
-
-    # 0603-LED from IPC-7351B: CAPC1608X90N
-    # Modified silkscreen to indicate LED polarity.
-    "0603-LED": {
-        "pad_shape": (0.95, 1.00),
-        "pitch": 1.60,
-        "chip_shape": (1.60, 0.80),
-        "pin_shape": (-0.25, 0.80),
-        "silk": "triangle",
-        "model": {"path": "${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 180)},
-    },
-
-    # 0805 from IPC-7351B: CAPC2013X100N
-    "0805": {
-        "pad_shape": (1.15, 1.45),
-        "pitch": 1.80,
-        "chip_shape": (2.00, 1.25),
-        "pin_shape": (-0.50, 1.25),
-        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0805.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 0)},
-    },
-
-    # 0805-LED from IPC-7351B: CAPC2013X100N
-    # Modified silkscreen to indicate LED polarity.
-    "0805-LED": {
-        "pad_shape": (1.15, 1.45),
-        "pitch": 1.80,
-        "chip_shape": (2.00, 1.25),
-        "pin_shape": (-0.50, 1.25),
-        "silk": "triangle",
-        "model": {"path": "${KISYS3DMOD}/LEDs.3dshapes/LED_0805.wrl",
-                  "offset": (-0.006, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 0)},
-    },
-
-    # 1206 from IPC-7351B: CAPC3216X130N
-    "1206": {
-        "pad_shape": (1.15, 1.80),
-        "pitch": 3.00,
-        "chip_shape": (3.20, 1.60),
-        "pin_shape": (-0.60, 1.60),
-        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_1206.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 0)},
-    },
-
-    # 1210 from IPC-7351B: CAPC3225X230N
-    "1210": {
-        "pad_shape": (1.15, 2.70),
-        "pitch": 3.0,
-        "chip_shape": (3.20, 2.50),
-        "pin_shape": (-0.60, 2.30),
-        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_1210.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 0)},
-    },
-
-    # 2512 from IPC-7351A: RESC4532X110N
-    "1812": {
-        "pad_shape": (1.40, 3.4),
-        "pitch": 4.1,
-        "chip_shape": (4.8, 3.4),
-        "pin_shape": (-.9, 3.4),
-    },
-
-    # 2220 from IPC-7351B: CAPC5750X200N
-    "2220": {
-        "pad_shape": (1.55, 5.4),
-        "pitch": 5.3,
-        "chip_shape": (6.1, 5.4),
-        "pin_shape": (-1.0, 5.4),
-    },
-
-    # 2512 from IPC-7351A: RESC6432X70N
-    "2512": {
-        "pad_shape": (1.25, 3.4),
-        "pitch": 6.1,
-        "chip_shape": (6.6, 3.4),
-        "pin_shape": (-.8, 3.4),
-        "model": {"path": "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_2512.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": (1, 1, 1),
-                  "rotate": (0, 0, 0)},
-    },
-
-    # WE 7443330220 Inductor
-    "WE-HCC-1090": {
-        "pad_shape": (2.3, 3.6),
-        "pitch": 9.2,
-        "chip_shape": (10.9, 10),
-        "pin_shape": (-1.6, 3),
-    },
-
-    # Coil Craft WA8514-AE Inductor
-    "WA8514-AE": {
-        "pad_shape": (0.838, 2.413),
-        "pitch": 3.988,
-        "chip_shape": (4.34, 1.98),
-        "pin_shape": (-0.33, 1.65),
-    },
-
-    # SOD-323 from IPC-7351B: SOD2513X100L
-    "SOD-323": {
-        "pad_shape": (0.90, 0.50),
-        "pitch": 2.60,
-        "chip_shape": (1.80, 1.35),
-        "pin_shape": (0.45, 0.40),
-        "silk": "internal_pin1",
-    },
-
-    # SOD-123 from IPC-7351B: SOD3716X135N
-    "SOD-123": {
-        "pad_shape": (1.0, 0.8),
-        "pitch": 3.6,
-        "chip_shape": (2.8, 1.8),
-        "pin_shape": (.5, .7),
-        "silk": "internal_pin1",
-    },
-
-    # 5.0 x 3.2 mm 2-pin crystal
-    "XTAL-50x32": {
-        "pad_shape": (1.9, 2.4),
-        "pitch": 4.1,
-        "chip_shape": (5.0, 3.2),
-        "pin_shape": (-1.3, 2.0),
-    },
-
-    # Panasonic ELL-VGG Inductor
-    "ELLVGG": {
-        "pad_shape": (1.4, 3.2),
-        "pitch": 2.0,
-        "chip_shape": (3, 3),
-        "pin_shape": (-1.1, 3),
-    },
-
-    # Laird TYS5040 Inductor
-    "TYS5040": {
-        "pad_shape": (1.4, 4.2),
-        "pitch": 3.7,
-        "chip_shape": (5.0, 5.0),
-        "pin_shape": (-1.25, 4.0),
-    },
-
-    # Bourns SRP5030T Inductor
-    "SRP5030T": {
-        "pad_shape": (1.8, 2.0),
-        "pitch": 4.5,
-        "chip_shape": (5.2, 5.2),
-        "pin_shape": (0.25, 1.5),
-    },
-
-    # TDK VLS-201610HBX-1 series Inductor
-    "VLS201610HBX-1": {
-        "pad_shape": (0.5, 1.6),
-        "pitch": 1.5,
-        "chip_shape": (2, 1.6),
-        "pin_shape": (-0.5, 1.6),
-    },
-
-    # Coilcraft XFL4020 series Inductors
-    "XFL4020": {
-        "pad_shape": (0.98, 3.4),
-        "pitch": 2.37,
-        "chip_shape": (4, 4),
-        "pin_shape": (-1.5, 4),
-    },
-
-    # Coilcraft MSS1210 series inductors
-    "MSS1210": {
-        "pad_shape": (3.0, 5.5),
-        "pitch": 9.5,
-        "chip_shape": (12.3, 12.3),
-        "pin_shape": (-2.5, 5.0),
-    },
-
-    # Coilcraft LPS4018 series inductors
-    "LPS4018": {
-        "pad_shape": (1.45, 3.89),
-        "pitch": 2.95,
-        "chip_shape": (3.9, 3.9),
-        "pin_shape": (-1.1, 3.9),
-    },
-
-    # DO-214AC (SMA) from Diodes Inc.
-    "DO-214AC-SMA": {
-        "pad_shape": (2.5, 1.7),
-        "pitch": 4.0,
-        "chip_shape": (4.6, 2.92),
-        "pin_shape": (0.5, 1.63),
-        "silk": "triangle",
-        "model": {"path": "${KISYS3DMOD}/Diodes_SMD.3dshapes/SMA_Standard.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": MM_TO_DIN,
-                  "rotate": (0, 0, 180)},
-    },
-
-    # DO-214AA (SMB) from Diodes Inc.
-    "DO-214AA-SMB": {
-        "pad_shape": (2.5, 2.3),
-        "pitch": 4.3,
-        "chip_shape": (4.6, 3.94),
-        "pin_shape": (0.5, 2.21),
-        "silk": "triangle",
-        "model": {"path": "${KISYS3DMOD}/Diodes_SMD.3dshapes/SMB_Standard.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": MM_TO_DIN,
-                  "rotate": (0, 0, 180)},
-    },
-
-    # DO-214AB (SMC) from Diodes Inc.
-    "DO-214AB-SMC": {
-        "pad_shape": (2.5, 3.3),
-        "pitch": 6.9,
-        "chip_shape": (7.11, 6.22),
-        "pin_shape": (0.51, 3.18),
-        "silk": "triangle",
-        "model": {"path": "${KISYS3DMOD}/Diodes_SMD.3dshapes/SMC_Standard.wrl",
-                  "offset": (0, 0, 0),
-                  "scale": MM_TO_DIN,
-                  "rotate": (0, 0, 180)},
-    },
-
-    # KSR232G tactile switch
-    "KSR232G": {
-        "pad_shape": (1.0, 1.4),
-        "pitch": 7.0,
-        "chip_shape": (6.0, 3.8),
-        "pin_shape": (0.6, 1.0),
-    },
-
-    # Panasonic SMD electrolytic capacitors, G size code
-    # https://industrial.panasonic.com/content/data/CP/PDF/Alumi/AL_landP_e.pdf
-    "PANASONIC-SMDCAP-G": {
-        "pad_shape": (4.1, 2.0),
-        "pitch": 8.7,
-        "chip_shape": (10.3, 10.3),
-        "pin_shape": (-3.5, 1.2),
-        "silk": "internal_pin1",
-    },
-
-    # Panasonic SMD electrolytic capacitors, K size code
-    "PANASONIC-SMDCAP-K": {
-        "pad_shape": (7.5, 2.5),
-        "pitch": 13.5,
-        "chip_shape": (19, 19),
-        "pin_shape": (-6.7, 1.2),
-        "silk": "internal_pin1",
-    },
-}
-
 # Other constants =============================================================
 
 # Courtyard clearance
@@ -414,6 +47,8 @@ import sys
 import time
 import math
 import argparse
+import yaml
+import fnmatch
 
 from sexp import parse as sexp_parse, generate as sexp_generate
 from kicad_mod import fp_line, fp_text, pad, draw_square, model
@@ -561,7 +196,22 @@ def footprint(conf):
     return sexp_generate(sexp)
 
 
-def main(prettypath, verify=False, verbose=False):
+def load_items(modpath):
+    config = {}
+    for dirpath, dirnames, files in os.walk(modpath):
+        dirnames.sort()
+        files.sort()
+        for fn in fnmatch.filter(files, "*.yaml"):
+            path = os.path.join(dirpath, fn)
+            with open(path) as f:
+                item = yaml.safe_load(f)
+                item["path"] = dirpath
+                config[item["name"]] = item
+    return config
+
+
+def main(prettypath, modpath, verify=False, verbose=False):
+    config = load_items(modpath)
     for name, conf in config.items():
         # Generate footprint
         conf['name'] = name
@@ -596,6 +246,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("prettypath", type=str, help=
                         "Path to footprints to process")
+    parser.add_argument("modpath", type=str, help=
+                        "Path to .yaml files defining footprints")
     parser.add_argument("--verify", action="store_true", help=
                         "Verify libraries are up to date")
     parser.add_argument("--verbose", action="store_true", help=

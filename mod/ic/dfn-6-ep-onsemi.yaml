@@ -1,0 +1,18 @@
+chip_shape: [2.0, 2.0]
+description: |-
+  DFN-6-EP-ONSEMI
+  For NCP380 and others
+ep_paste_shape: [0.5, 0.5, 0.2, 0.2]
+ep_shape: [0.95, 1.7]
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/DFN-6-1EP_2x2mm_Pitch0.65mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: DFN-6-EP-ONSEMI
+pad_shape: [0.47, 0.4]
+pin_pitch: 0.65
+pin_shape: [-0.35, 0.35]
+pins: 6
+row_pitch: 1.83
+rows: 2

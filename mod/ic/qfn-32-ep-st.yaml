@@ -1,0 +1,24 @@
+chip_shape: [5.1, 5.1]
+description: |-
+  UFQFPN-32 from JEDEC MO-220
+  Modified to meet the ST ECOPACK package of the same name:
+  * Row pitch is 6.75mm instead of 7.0mm
+  * Pads are 0.55mm long instead of 0.8mm
+  * EP is 5.6mm
+  IPC-7351B: QFN50P700X700X80-33N
+ep_mask_shape: [2.0, 2.0, 0.5, 0.5]
+ep_paste_shape: [1.0, 1.0, 1.5, 1.5]
+ep_shape: [3.45, 3.45]
+ep_vias: [0.4, 0.6, 1.9]
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_Pitch0.5mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: QFN-32-EP-ST
+pad_shape: [0.6, 0.3]
+pin_pitch: 0.5
+pin_shape: [-0.5, 0.28]
+pins: 32
+row_pitch: 4.7
+rows: 4
