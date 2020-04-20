@@ -1,7 +1,7 @@
 
 (module "HTQFP-64" 
   (layer F.Cu) 
-  (tedit 5DD52B46) 
+  (tedit 5E9E25EA) 
   (fp_text reference REF** 
     (at 0 -7.4000) 
     (layer F.Fab) 
@@ -1318,8 +1318,48 @@
     (layers F.Mask) 
     (solder_mask_margin 0.0010)) 
   (pad "" smd rect 
-    (at -0.0000 -0.0000) 
-    (size 7.0000 7.0000) 
+    (at -2.3000 -2.3000) 
+    (size 1.5000 1.5000) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at -2.3000 0.0000) 
+    (size 1.5000 1.5000) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at -2.3000 2.3000) 
+    (size 1.5000 1.5000) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.0000 -2.3000) 
+    (size 1.5000 1.5000) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.0000 0.0000) 
+    (size 1.5000 1.5000) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 0.0000 2.3000) 
+    (size 1.5000 1.5000) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 2.3000 -2.3000) 
+    (size 1.5000 1.5000) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 2.3000 0.0000) 
+    (size 1.5000 1.5000) 
+    (layers F.Paste) 
+    (solder_paste_margin 0.0010)) 
+  (pad "" smd rect 
+    (at 2.3000 2.3000) 
+    (size 1.5000 1.5000) 
     (layers F.Paste) 
     (solder_paste_margin 0.0010)) 
   (pad EP thru_hole circle 
