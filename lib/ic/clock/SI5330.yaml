@@ -15,7 +15,7 @@ pins:
     - [IN2, 2, in]
     - [IN3, 3, in]
 
-  - - [LOS, 8, out]
+  - - [LOS, 8, od]
     - [OEB, 19, in]
 
   - - [GND, 4, pwrin]
