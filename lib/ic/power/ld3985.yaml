@@ -7,6 +7,6 @@ ordercodes:
 pins:
 - - - [VIN, 1, pwrin]
     - [EN, 3, in]
-  - - [GND, 2, pwrin]
+    - [GND, 2, pwrin]
 - - - [VOUT, 5, pwrout]
   - - [BYP, 4, passive]
