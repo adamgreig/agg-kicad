@@ -667,6 +667,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name ld3985) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/power/ld3985.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name ldl212dr) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/power/ldl212dr.lib") 

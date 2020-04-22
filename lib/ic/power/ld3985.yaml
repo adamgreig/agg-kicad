@@ -1,0 +1,12 @@
+name: LD3985
+description: 150mA ultra low dropout voltage regulator
+datasheet: https://www.st.com/resource/en/datasheet/ld3985.pdf
+footprint: agg:SOT-23-5
+ordercodes:
+  - [Farnell, "3130019"]
+pins:
+- - - [VIN, 1, pwrin]
+    - [EN, 3, in]
+  - - [GND, 2, pwrin]
+- - - [VOUT, 5, pwrout]
+  - - [BYP, 4, passive]

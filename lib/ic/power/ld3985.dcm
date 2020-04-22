@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP LD3985
+D 150mA ultra low dropout voltage regulator
+F https://www.st.com/resource/en/datasheet/ld3985.pdf
+$ENDCMP
