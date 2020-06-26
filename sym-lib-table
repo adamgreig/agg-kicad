@@ -277,6 +277,18 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name "lfe5u-25f-xbg256") 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/fpga/lfe5u-25f-xbg256.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
+    (name "lfe5u-45f-xbg256") 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/fpga/lfe5u-45f-xbg256.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name ad9218) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/interface/ad9218.lib") 

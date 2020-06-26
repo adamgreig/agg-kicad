@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP LFE5U-25F-xBG256
+D LFE5U-12F,-25F in caBGA256 package
+F http://www.latticesemi.com/Products/FPGAandCPLD/ECP5
+$ENDCMP
