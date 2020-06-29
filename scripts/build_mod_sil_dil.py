@@ -208,7 +208,7 @@ def kk(pins):
 
 
 def main(prettypath, verify=False, verbose=False):
-    for pins in range(1, 21):
+    for pins in list(range(1, 21)) + [25, 32, 36]:
         for generator in (sil, dil, kk):
             if generator == kk and (pins == 1 or pins > 16):
                 continue
