@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP LFE5U-85F-xBG381
+D ECP5 FPGA LFE5U-85F in caBGA381 package
+F http://www.latticesemi.com/Products/FPGAandCPLD/ECP5
+$ENDCMP

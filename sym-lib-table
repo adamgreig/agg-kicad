@@ -289,6 +289,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name "lfe5u-85f-xbg381") 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/fpga/lfe5u-85f-xbg381.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name ad9218) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/interface/ad9218.lib") 
