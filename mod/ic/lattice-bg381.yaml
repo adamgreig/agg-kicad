@@ -1,0 +1,10 @@
+name: Lattice-BG381
+description: Lattice 381-ball 0.8mm pitch caBGA package
+rows: 20
+cols: 20
+chip_shape: [17, 17]
+pin_pitch: 0.8
+pad_shape: 0.35
+mask_shape: 0.45
+pin_shape: 0.40
+skip_pins: [A1, A20, R6-15, Y1, Y4, Y9-10, Y13, Y18, Y20]

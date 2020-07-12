@@ -1,0 +1,9 @@
+name: BGA-144-08P-ST
+description: ST 144-ball 0.8mm pitch BGA package
+rows: 12
+cols: 12
+chip_shape: [10, 10]
+pin_pitch: 0.8
+pad_shape: 0.4
+mask_shape: 0.47
+pin_shape: 0.35

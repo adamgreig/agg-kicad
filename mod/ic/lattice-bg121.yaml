@@ -1,0 +1,9 @@
+name: Lattice-BG121
+description: Lattice 121-ball 0.8mm pitch caBGA package
+rows: 11
+cols: 11
+chip_shape: [9, 9]
+pin_pitch: 0.8
+pad_shape: 0.35
+mask_shape: 0.45
+pin_shape: 0.40

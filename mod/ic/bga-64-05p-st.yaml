@@ -1,0 +1,9 @@
+name: BGA-64-05P-ST
+description: ST 64-ball 0.5mm pitch BGA package
+rows: 8
+cols: 8
+chip_shape: [5, 5]
+pin_pitch: 0.5
+pad_shape: 0.28
+mask_shape: 0.37
+pin_shape: 0.30

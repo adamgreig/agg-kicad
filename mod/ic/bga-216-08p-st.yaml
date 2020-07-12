@@ -1,0 +1,10 @@
+name: BGA-216-08P-ST
+description: ST 216-ball 0.8mm pitch BGA package
+rows: 15
+cols: 15
+chip_shape: [13, 13]
+pin_pitch: 0.8
+pad_shape: 0.4
+mask_shape: 0.47
+pin_shape: 0.35
+skip_pins: [G-J7-9]

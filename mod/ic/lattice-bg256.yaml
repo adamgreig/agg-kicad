@@ -1,0 +1,9 @@
+name: Lattice-BG256
+description: Lattice 256-ball 0.8mm pitch caBGA package
+rows: 16
+cols: 16
+chip_shape: [14, 14]
+pin_pitch: 0.8
+pad_shape: 0.40
+mask_shape: 0.50
+pin_shape: 0.45

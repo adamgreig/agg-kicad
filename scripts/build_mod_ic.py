@@ -3,15 +3,12 @@ build_mod_ic.py
 Copyright 2015 Adam Greig
 Licensed under the MIT licence, see LICENSE file for details.
 
-Create a range of dual and quad SMD IC packages.
-
-TODO:
-    * Support other pad shapes, e.g. oval/half-oval
+Create DFN, DFP, QFN, QFP, and BGA footprints from descriptions.
 """
 
 from __future__ import print_function, division
 
-# Other constants =============================================================
+# Style constants =============================================================
 
 # Courtyard clearance
 # Use 0.25 for IPC nominal and 0.10 for IPC least.
@@ -59,6 +56,7 @@ font_halfheight = 0.7
 # End Constants ===============================================================
 
 import os
+import re
 import sys
 import time
 import math
@@ -107,6 +105,74 @@ def pin_centres(conf):
         y += conf['pin_pitch']
 
     return left_row, bottom_row, right_row, top_row
+
+
+def expand_skips(conf, letters=None):
+    """
+    Computes list of all pins to skip given a list of specifiers which
+    may be either specific pins or ranges of pins.
+
+    Optional letters gives expanded list of BGA pin letters in use.
+
+    Returned list always contains strings.
+    """
+    if letters is None:
+        letters = []
+    skips = conf.get("skip_pins", [])
+    out = []
+    for skip in skips:
+        skip = str(skip)
+        if "-" not in skip:
+            out.append(skip)
+            continue
+        match = re.search(r"^([A-Z]+(?:-[A-Z]+)?)?([0-9]+(?:-[0-9]+)?)$", skip)
+        if not match:
+            raise ValueError("Unknown skip specifier {}".format(skip))
+        let, num = match.groups()
+        if "-" in num:
+            num_start, num_stop = [int(x) for x in num.split("-")]
+            nums = list(range(num_start, num_stop+1))
+        else:
+            nums = [num]
+        if "-" in let:
+            let_start, let_stop = let.split("-")
+            let_start_idx = letters.index(let_start)
+            let_stop_idx = letters.index(let_stop)
+            lets = letters[let_start_idx:let_stop_idx+1]
+        else:
+            lets = [let]
+        for let in lets:
+            for num in nums:
+                out.append(let + str(num))
+    return out
+
+
+def bga_pin_centres(conf):
+    """
+    Compute the location of pin centres for BGA parts,
+    including skipping any in `skip_pins`.
+    Rows are labelled with letters and columns with numbers.
+    Returns a dictionary of pin numbers to (x, y) positions.
+    """
+    default_letters = "ABCDEFGHJKLMNPRTUVWY"
+    letters = conf.get("letters", default_letters)
+    letters = list(letters) + [a+b for a in letters for b in letters]
+    skips = expand_skips(conf, letters)
+    pitch = float(conf["pin_pitch"])
+    out = {}
+    rows = int(conf['rows'])
+    cols = int(conf['cols'])
+    for row in range(rows):
+        for col in range(cols):
+            rowid = letters[row]
+            colid = col + 1
+            padid = rowid + str(colid)
+            if padid in skips:
+                continue
+            x = (col * pitch) - ((cols-1)/2.0 * pitch)
+            y = (row * pitch) - ((rows-1)/2.0 * pitch)
+            out[padid] = (x, y)
+    return out
 
 
 def inner_apertures(ep, apertures):
@@ -197,7 +263,7 @@ def refs(conf):
     """Generate val and ref labels."""
     out = []
 
-    if conf['rows'] == 2:
+    if conf['rows'] == 2 or 'cols' in conf:
         ctyd_h = conf['chip_shape'][1] + 2 * ctyd_gap
     elif conf['rows'] == 4:
         # Handle non-square chips differently
@@ -221,8 +287,16 @@ def fab(conf):
     Generate a drawing of the chip on the Fab layer, including its outline,
     the outline of the pins, and a pin 1 indicator.
     """
+    if 'rows' in conf and 'cols' in conf:
+        bga = True
+    else:
+        bga = False
+
     chip_w, chip_h = conf['chip_shape']
-    pin_w, pin_h = conf['pin_shape']
+    if bga:
+        pin_r = conf['pin_shape']
+    else:
+        pin_w, pin_h = conf['pin_shape']
     out = []
 
     # Chip outline
@@ -235,37 +309,43 @@ def fab(conf):
     out.append(fp_circle(centre, end, "F.Fab", fab_width))
 
     # Pins
-    leftr, bottomr, rightr, topr = pin_centres(conf)
-    idx = 1
-    for pin in leftr:
-        idx += 1
-        if idx - 1 in conf.get('skip_pins', []):
-            continue
-        xy = -(chip_w + pin_w) / 2.0, pin[1]
-        _, _, _, _, sq = draw_square(pin_w, pin_h, xy, "F.Fab", fab_width)
-        out += [sq[0], sq[2], sq[3]]
-    for pin in rightr:
-        idx += 1
-        if idx - 1 in conf.get('skip_pins', []):
-            continue
-        xy = (chip_w + pin_w) / 2.0, pin[1]
-        _, _, _, _, sq = draw_square(pin_w, pin_h, xy, "F.Fab", fab_width)
-        out += [sq[0], sq[1], sq[2]]
-    if conf['rows'] == 4:
-        for pin in topr:
+    if bga:
+        centres = bga_pin_centres(conf)
+        for x, y in centres.values():
+            out += [fp_circle((x, y), (x, y+pin_r/2), "F.Fab", fab_width)]
+    else:
+        leftr, bottomr, rightr, topr = pin_centres(conf)
+        skips = [int(x) for x in expand_skips(conf)]
+        idx = 1
+        for pin in leftr:
             idx += 1
-            if idx - 1 in conf.get('skip_pins', []):
+            if idx - 1 in skips:
                 continue
-            xy = pin[0], -(chip_h + pin_w) / 2.0
-            _, _, _, _, sq = draw_square(pin_h, pin_w, xy, "F.Fab", fab_width)
-            out += [sq[0], sq[1], sq[3]]
-        for pin in bottomr:
+            xy = -(chip_w + pin_w) / 2.0, pin[1]
+            _, _, _, _, sq = draw_square(pin_w, pin_h, xy, "F.Fab", fab_width)
+            out += [sq[0], sq[2], sq[3]]
+        for pin in rightr:
             idx += 1
-            if idx - 1 in conf.get('skip_pins', []):
+            if idx - 1 in skips:
                 continue
-            xy = pin[0], (chip_h + pin_w) / 2.0
-            _, _, _, _, sq = draw_square(pin_h, pin_w, xy, "F.Fab", fab_width)
-            out += [sq[1], sq[2], sq[3]]
+            xy = (chip_w + pin_w) / 2.0, pin[1]
+            _, _, _, _, sq = draw_square(pin_w, pin_h, xy, "F.Fab", fab_width)
+            out += [sq[0], sq[1], sq[2]]
+        if conf['rows'] == 4:
+            for pin in topr:
+                idx += 1
+                if idx - 1 in skips:
+                    continue
+                xy = pin[0], -(chip_h + pin_w) / 2.0
+                _, _, _, _, sq = draw_square(pin_h, pin_w, xy, "F.Fab", fab_width)
+                out += [sq[0], sq[1], sq[3]]
+            for pin in bottomr:
+                idx += 1
+                if idx - 1 in skips:
+                    continue
+                xy = pin[0], (chip_h + pin_w) / 2.0
+                _, _, _, _, sq = draw_square(pin_h, pin_w, xy, "F.Fab", fab_width)
+                out += [sq[1], sq[2], sq[3]]
 
     return out
 
@@ -327,27 +407,38 @@ def external_silk(conf):
     l = "F.SilkS"
     x = chip_shape[0]/2.0
     y = chip_shape[1]/2.0
+    bga = 'cols' in conf
 
-    if rows == 2:
+    if rows == 2 and not bga:
         r = silk_pin1_er
         out.append(fp_line((-x+2*r, -y), (x, -y), l, w))
         out.append(fp_line((-x, y), (x, y), l, w))
         out.append(fp_arc((-x+r, -y), (-x, -y), 180, l, w))
-    elif rows == 4:
-        if 'pins_first_row' in conf:
-            v_pins_per_row = conf['pins_first_row']
-            h_pins_per_row = (conf['pins'] - 2*v_pins_per_row) // 2
-            pin_x = ((h_pins_per_row - 1) * conf['pin_pitch']) / 2.0
-            pin_y = ((v_pins_per_row - 1) * conf['pin_pitch']) / 2.0
+    elif rows == 4 or bga:
+        if bga:
+            dx = x//2
+            dy = y//2
         else:
-            pins_per_row = conf['pins'] / rows
-            pin_x = pin_y = ((pins_per_row - 1) * conf['pin_pitch']) / 2.0
-        dx = x - pin_x - silk_pad_egap
-        dy = y - pin_y - silk_pad_egap
+            if 'pins_first_row' in conf:
+                v_pins_per_row = conf['pins_first_row']
+                h_pins_per_row = (conf['pins'] - 2*v_pins_per_row) // 2
+                pin_x = ((h_pins_per_row - 1) * conf['pin_pitch']) / 2.0
+                pin_y = ((v_pins_per_row - 1) * conf['pin_pitch']) / 2.0
+            else:
+                pins_per_row = conf['pins'] / rows
+                pin_x = pin_y = ((pins_per_row - 1) * conf['pin_pitch']) / 2.0
+            dx = x - pin_x - silk_pad_egap
+            dy = y - pin_y - silk_pad_egap
 
         # NW
-        d_pin1 = min(dx, dy)
-        out.append(fp_line((-x, -y+d_pin1), (-x+d_pin1, -y), l, w))
+        if bga:
+            dp1 = 1.0
+            out.append(fp_line((-x, -y+dy), (-x, -y+dp1), l, w))
+            out.append(fp_line((-x, -y+dp1), (-x+dp1, -y), l, w))
+            out.append(fp_line((-x+dx, -y), (-x+dp1, -y), l, w))
+        else:
+            dp1 = min(dx, dy)
+            out.append(fp_line((-x, -y+dp1), (-x+dp1, -y), l, w))
         # NE
         out.append(fp_line((x-dx, -y), (x, -y), l, w))
         out.append(fp_line((x, -y), (x, -y+dy), l, w))
@@ -362,7 +453,10 @@ def external_silk(conf):
 
 
 def silk(conf):
-    default = 'internal' if 'ep_shape' not in conf else 'external'
+    if 'ep_shape' in conf or 'cols' in conf:
+        default = 'external'
+    else:
+        default = 'internal'
     silk = conf.get('silk', default)
     if silk == 'external':
         return external_silk(conf)
@@ -373,14 +467,18 @@ def silk(conf):
 
 
 def ctyd(conf):
-    row_pitch = conf['row_pitch']
-    pad_w, pad_h = conf['pad_shape']
     chip_w, chip_h = conf['chip_shape']
 
-    if conf['rows'] == 2:
+    if 'cols' in conf:
+        width, height = chip_w + 2*ctyd_gap, chip_h + 2*ctyd_gap
+    elif conf['rows'] == 2:
+        pad_w, pad_h = conf['pad_shape']
+        row_pitch = conf['row_pitch']
         width = row_pitch + pad_w + 2 * ctyd_gap
         height = chip_h + 2 * ctyd_gap
     elif conf['rows'] == 4:
+        pad_w, pad_h = conf['pad_shape']
+        row_pitch = conf['row_pitch']
         # We need to handle non-square chips slightly differently,
         # depending on whether row_pitch is given as (w, h) or just a scalar.
         if isinstance(row_pitch, float):
@@ -442,6 +540,18 @@ def pads(conf):
     return out
 
 
+def bga_pads(conf):
+    out = []
+    layers = ["F.Cu", "F.Mask", "F.Paste"]
+    size = [conf['pad_shape']]*2
+    margin = (conf['mask_shape'] - conf['pad_shape']) / 2.0
+    for num, centre in bga_pin_centres(conf).items():
+        p = pad(num, "smd", "circle", centre, size, layers)
+        p.append(["solder_mask_margin", margin])
+        out.append(p)
+    return out
+
+
 def _3d(conf):
     if "model" in conf:
         return [model(**conf["model"])]
@@ -457,6 +567,18 @@ def footprint(conf):
     sexp += silk(conf)
     sexp += ctyd(conf)
     sexp += pads(conf)
+    sexp += _3d(conf)
+    return sexp_generate(sexp)
+
+
+def bga_footprint(conf):
+    tedit = format(int(time.time()), 'X')
+    sexp = ["module", conf['name'], ("layer", "F.Cu"), ("tedit", tedit)]
+    sexp += refs(conf)
+    sexp += fab(conf)
+    sexp += silk(conf)
+    sexp += ctyd(conf)
+    sexp += bga_pads(conf)
     sexp += _3d(conf)
     return sexp_generate(sexp)
 
@@ -485,11 +607,16 @@ def main(prettypath, modpath, verify=False, verbose=False):
     config = load_items(modpath)
     for name, conf in config.items():
         conf['name'] = name
-        assert conf['rows'] in (2, 4), \
-            "Must have either two or four rows"
-        assert conf['pins'] % conf['rows'] == 0, \
-            "Pins must equally divide among rows"
-        fp = footprint(conf)
+        if 'rows' in conf and 'pins' in conf:
+            assert conf['rows'] in (2, 4), \
+                "Must have either two or four rows"
+            assert conf['pins'] % conf['rows'] == 0, \
+                "Pins must equally divide among rows"
+            fp = footprint(conf)
+        elif 'rows' in conf and 'cols' in conf:
+            fp = bga_footprint(conf)
+        else:
+            raise ValueError("Must specify either rows+pins or rows+cols")
         path = os.path.join(prettypath, name+".kicad_mod")
 
         if verify and verbose:

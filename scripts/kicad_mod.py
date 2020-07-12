@@ -90,7 +90,13 @@ def draw_square(width, height, centre, layer, thickness):
     return nw, ne, se, sw, out
 
 
-def model(path, offset, scale, rotate):
+def model(path, offset=None, scale=None, rotate=None):
+    if offset is None:
+        offset = [0, 0, 0]
+    if scale is None:
+        scale = [1.0, 1.0, 1.0]
+    if rotate is None:
+        rotate = [0, 0, 0]
     return ["model", path,
             ["at", ["xyz", offset[0], offset[1], offset[2]]],
             ["scale", ["xyz", scale[0], scale[1], scale[2]]],
