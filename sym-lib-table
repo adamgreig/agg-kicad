@@ -499,6 +499,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name s27kl0641) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/memory/s27kl0641.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name w25q80) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/memory/w25q80.lib") 

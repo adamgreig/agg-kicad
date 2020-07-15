@@ -1,0 +1,10 @@
+name: VAA024
+description: HyperRAM FPGA 24-ball 5x5 array
+rows: 5
+cols: 5
+chip_shape: [6, 8]
+pin_pitch: 1.0
+pad_shape: 0.35
+mask_shape: 0.42
+pin_shape: 0.35
+skip_pins: [A1]
