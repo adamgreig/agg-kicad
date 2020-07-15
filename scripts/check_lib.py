@@ -16,7 +16,7 @@ import argparse
 
 
 EXCLUSIONS = ("agg-kicad.lib", "conn.lib", "power.lib", "switch.lib",
-              "tec2.lib", "tel10.lib")
+              "tec2.lib", "tel10.lib", "siz340dt.lib")
 
 
 re_defs = re.compile("^DEF (?P<name>[^ ]*) (?P<des>[^ ]*) ", re.MULTILINE)
@@ -65,6 +65,7 @@ def checkdefs(contents, libf, errs):
 def checkpins(contents, designator, errs):
     pins = re_pins.findall(contents)
     nums = []
+    nums_numeric = []
     for name, num, x, y, length, numsize, namesize in pins:
         # Check pins lie on 100mil grid
         if int(x) % 100 != 0 or int(y) % 100 != 0:
@@ -77,15 +78,17 @@ def checkpins(contents, designator, errs):
         if int(namesize) != 50 or (int(numsize) != 50 and num.isdigit()):
             errs.append("Pin '{}' font size not 50mil".format(name))
         # Collect numeric pins
+        nums.append(num)
         if num.isdigit():
-            nums.append(int(num))
+            nums_numeric.append(int(num))
 
-    if nums:
-        expected = set(range(min(nums), max(nums)+1))
-        if set(nums) != expected:
-            missing = [str(x) for x in set(expected) - set(nums)]
+    if nums_numeric:
+        expected = set(range(min(nums_numeric), max(nums_numeric)+1))
+        if set(nums_numeric) != expected:
+            missing = [str(x) for x in set(expected) - set(nums_numeric)]
             errs.append("Missing pins {}".format(", ".join(missing)))
 
+    if nums:
         duplicates = set([str(x) for x in nums if nums.count(x) > 1])
         if duplicates:
             errs.append("Duplicated pins {}".format(", ".join(duplicates)))
