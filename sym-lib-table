@@ -1021,6 +1021,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name bme680) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/sensor/bme680.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name hmc5883l) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/sensor/hmc5883l.lib") 

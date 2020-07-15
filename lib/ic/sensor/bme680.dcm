@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP BME680
+D Low power gas, pressure, temperature, and humidity sensor
+F https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf
+$ENDCMP

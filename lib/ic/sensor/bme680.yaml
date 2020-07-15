@@ -1,0 +1,15 @@
+name: BME680
+datasheet: https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf
+description: Low power gas, pressure, temperature, and humidity sensor
+footprint: agg:BME680
+ordercodes:
+  - [DigiKey, '828-1077-1-ND']
+pins:
+- - - [VDD, 8, pwrin]
+    - [VDDIO, 6, pwrin]
+    - [GND, 1, pwrin]
+    - [GND, 7, pwrin]
+- - - [~CS, 2, in]
+    - [SCK, 4, in]
+    - [SDI, 3, bidi]
+    - [SDO, 5, bidi]
