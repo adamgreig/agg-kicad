@@ -325,6 +325,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name ft2232h) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/interface/ft2232h.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name hd3ss3220) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/interface/hd3ss3220.lib") 
