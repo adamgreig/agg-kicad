@@ -1,0 +1,13 @@
+name: TPS563200DDCT
+description: DC-DC Switching Buck Step Down Regulator, Adj, 4.5-18Vin, .76-7Vout, 3Aout, SOT-23-6
+datasheet: https://www.ti.com/lit/ds/symlink/tps563200.pdf
+footprint: agg:SOT-23-6
+ordercodes:
+  - [Farnell, '2450170']
+pins:
+- - - [VIN, 3, pwrin]
+    - [EN, 5, in]
+    - [GND, 1, pwrin]
+- - - [SW, 2, passive]
+    - [VBST, 6, passive]
+    - [VFB, 4, in]

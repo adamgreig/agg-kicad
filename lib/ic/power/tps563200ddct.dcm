@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP TPS563200DDCT
+D DC-DC Switching Buck Step Down Regulator, Adj, 4.5-18Vin, .76-7Vout, 3Aout, SOT-23-6
+F https://www.ti.com/lit/ds/symlink/tps563200.pdf
+$ENDCMP
