@@ -505,6 +505,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name "93lc46b-ot") 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/memory/93lc46b-ot.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name s27kl0641) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/memory/s27kl0641.lib") 

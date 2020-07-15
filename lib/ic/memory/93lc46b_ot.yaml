@@ -1,0 +1,13 @@
+name: 93LC46B-OT
+description: 1K Microwire Compatible Serial EEPROM, 16-bit, SOT-23-6
+datasheet: https://ww1.microchip.com/downloads/en/DeviceDoc/20001749K.pdf
+footprint: agg:SOT-23-6
+ordercodes:
+  - [Farnell, '1556164']
+pins:
+- - - [VCC, 6, pwrin]
+  - - [VSS, 2, pwrin]
+- - - [CS, 5, in]
+    - [CLK, 4, in]
+    - [DO, 1, out]
+    - [DI, 3, in]
