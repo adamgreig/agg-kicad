@@ -1,0 +1,12 @@
+name: TLV62569DBV
+description: DC-DC Switching Step Down Buck Regulator, Adj, 2.5-5.5Vin, 1.5MHz, 0.6-5.5V/2Aout, SOT-23-5
+datasheet: https://www.ti.com/lit/ds/symlink/tlv62569.pdf
+footprint: agg:SOT-23-5
+ordercodes:
+- [Farnell, '3121687']
+pins:
+- - - [VIN, 4, pwrin]
+    - [EN, 1, in]
+    - [GND, 2, pwrin]
+- - - [SW, 3, passive]
+  - - [FB, 5, in]

@@ -877,6 +877,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name tlv62569dbv) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/power/tlv62569dbv.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name tlv76012) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/power/tlv76012.lib") 
