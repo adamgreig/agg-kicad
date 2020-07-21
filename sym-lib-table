@@ -1093,6 +1093,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name sj2_nc) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/misc/sj2_nc.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name sj3) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/misc/sj3.lib") 

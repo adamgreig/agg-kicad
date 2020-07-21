@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# SJ2_NC
+# #invisiblename
+#
+DEF SJ2_NC J 0 0 N N 1 F N
+F0 "J" 0 70 50 H V C CNN
+F1 "SJ2_NC" 0 -80 50 H I C CNN
+F2 "agg:SJ2_NC" 0 180 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -10 0 30 901 -901 0 1 0 F -10 30 -10 -30
+A 10 0 30 -899 899 0 1 0 F 10 -30 10 30
+P 2 0 1 20 -10 0 10 0 N
+X 1 1 -100 0 60 R 50 50 1 1 P
+X 2 2 100 0 60 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
