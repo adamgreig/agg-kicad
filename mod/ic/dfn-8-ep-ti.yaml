@@ -1,0 +1,15 @@
+name: DFN-8-EP-TI
+description: DFN-8 aka VSON-8 from TI with EP
+model:
+  path: ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_P0.65mm_EP1.7x2.05mm.step
+chip_shape: [3.1, 3.1]
+pin_shape: [-0.5, 0.30]
+pins: 8
+rows: 2
+pin_pitch: 0.65
+row_pitch: 2.90
+pad_shape: [0.7, 0.3]
+ep_shape: [1.65, 2.4]
+ep_vias: [0.3, 0.6, 1.2]
+ep_mask_shape: [1.5, 1.4, 1, 2]
+ep_paste_shape: [1.0, 1.0, 1, 2]

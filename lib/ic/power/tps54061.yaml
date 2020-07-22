@@ -1,0 +1,16 @@
+name: TPS54061
+description: Wide input 60V 200mA synchronous step-down DCDC converter
+datasheet: https://www.ti.com/lit/ds/symlink/tps54061.pdf
+footprint: agg:DFN-8-EP-TI
+ordercodes:
+  - [Farnell, '3007306']
+pins:
+- - - [VIN, 2, pwrin]
+    - [EN, 3, in]
+    - [RT/CLK, 4, in]
+  - - [COMP, 6, passive]
+- - - [BOOT, 1, passive]
+    - [PH, 8, out]
+    - [VSNS, 5, in]
+    - [GND, 7, pwrin]
+    - [GND, EP, pwrin]

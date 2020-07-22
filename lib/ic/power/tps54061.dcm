@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP TPS54061
+D Wide input 60V 200mA synchronous step-down DCDC converter
+F https://www.ti.com/lit/ds/symlink/tps54061.pdf
+$ENDCMP

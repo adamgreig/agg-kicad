@@ -913,6 +913,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name tps54061) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/power/tps54061.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name tps54386) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/power/tps54386.lib") 
