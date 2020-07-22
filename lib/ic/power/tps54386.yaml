@@ -1,0 +1,22 @@
+name: TPS54386
+description: Dual 3A Non-Synchronous Converters with Integrated High-Side MOSFET
+datasheet: https://www.ti.com/lit/ds/symlink/tps54386.pdf
+footprint: agg:HTSSOP-14
+ordercodes:
+  - [Farnell, '3123008']
+pins:
+- - - [PVDD1, 1, pwrin]
+    - [BOOT1, 2, passive]
+    - [SW1, 3, passive]
+    - [FB1, 7, in]
+  - - [~EN1, 5, in]
+    - [~EN2, 6, in]
+  - - [GND, 4, pwrin]
+    - [GND, EP, pwrin]
+- - - [PVDD2, 14, pwrin]
+    - [BOOT2, 13, passive]
+    - [SW2, 12, passive]
+    - [FB2, 8, in]
+  - - [BP, 11, passive]
+    - [SEQ, 10, in]
+    - [ILIM2, 9, in]

@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP TPS54386
+D Dual 3A Non-Synchronous Converters with Integrated High-Side MOSFET
+F https://www.ti.com/lit/ds/symlink/tps54386.pdf
+$ENDCMP
