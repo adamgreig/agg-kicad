@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP LTM8078
+D Dual 1.4A Step-Down Silent Switcher uModule Regulator
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ltm8078.pdf
+$ENDCMP

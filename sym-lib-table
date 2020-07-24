@@ -763,6 +763,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name ltm8078) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/power/ltm8078.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name max14521) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/power/max14521.lib") 

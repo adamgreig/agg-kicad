@@ -1,0 +1,12 @@
+name: LTM8078
+description: LT 49-pin 0.8mm pitch BGA for LTM8078 module
+rows: 7
+cols: 7
+chip_shape: [6.25, 6.25]
+pin_pitch: 0.8
+pad_shape: 0.4
+mask_shape: 0.47
+pin_shape: 0.5
+model:
+  path: ${KISYS3DMOD}/Package_BGA.3dshapes/VFBGA-49_5.0x5.0mm_Layout7x7_P0.65mm.step
+  scale: [1.25, 1.25, 1.0]
