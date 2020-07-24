@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP NUF8401MN
+D 8-channel EMI filter with integrated ESD protection
+F https://www.onsemi.com/pub/Collateral/NUF8401MN-D.PDF
+$ENDCMP

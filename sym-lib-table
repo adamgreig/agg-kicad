@@ -1297,6 +1297,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name esd7004) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/passive/esd7004.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name esd_diode) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/passive/esd_diode.lib") 
@@ -1354,6 +1360,12 @@
     (name npn) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/passive/npn.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
+    (name nuf8401mn) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/passive/nuf8401mn.lib") 
     (options "") 
     (descr "")) 
   (lib 

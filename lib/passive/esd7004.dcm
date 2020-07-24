@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP ESD7004
+D 4-channel low capacitance ESD protection diode
+F https://www.onsemi.com/pub/Collateral/ESD7004-D.PDF
+$ENDCMP

@@ -1,0 +1,11 @@
+name: NUF8401MN
+description: DFN-16, Onsemi case 506AC, for NUF8401MN
+chip_shape: [1.6, 4.0]
+rows: 2
+pins: 16
+pin_shape: [-0.3, 0.25]
+pin_pitch: 0.5
+row_pitch: 1.4
+pad_shape: [0.51, 0.28]
+ep_shape: [0.5, 4.1]
+ep_paste_shape: [0.4, 0.6, 0.5, 0.4]

@@ -1,0 +1,17 @@
+name: ESD7004
+description: 4-channel low capacitance ESD protection diode
+datasheet: https://www.onsemi.com/pub/Collateral/ESD7004-D.PDF
+footprint: agg:ESD7004
+ordercodes:
+  - [Farnell, '1961708']
+pins:
+- - - [IO1, 1, passive]
+    - [IO2, 2, passive]
+    - [IO3, 4, passive]
+    - [IO4, 5, passive]
+  - - [GND, 3, passive]
+- - - [IO1, 10, passive]
+    - [IO2, 9, passive]
+    - [IO3, 7, passive]
+    - [IO4, 6, passive]
+  - - [GND, 8, passive]

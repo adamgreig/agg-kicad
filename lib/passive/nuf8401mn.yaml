@@ -1,0 +1,24 @@
+name: NUF8401MN
+description: 8-channel EMI filter with integrated ESD protection
+datasheet: https://www.onsemi.com/pub/Collateral/NUF8401MN-D.PDF
+footprint: agg:NUF8401MN
+ordercodes:
+  - [Farnell, '2844911']
+pins:
+- - - [IO1, 1, passive]
+    - [IO2, 2, passive]
+    - [IO3, 3, passive]
+    - [IO4, 4, passive]
+    - [IO5, 5, passive]
+    - [IO6, 6, passive]
+    - [IO7, 7, passive]
+    - [IO8, 8, passive]
+  - - [GND, EP, pwrin]
+- - - [IO1, 16, passive]
+    - [IO2, 15, passive]
+    - [IO3, 14, passive]
+    - [IO4, 13, passive]
+    - [IO5, 12, passive]
+    - [IO6, 11, passive]
+    - [IO7, 10, passive]
+    - [IO8, 9, passive]
