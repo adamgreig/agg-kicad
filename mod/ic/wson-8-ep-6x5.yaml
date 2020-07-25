@@ -1,0 +1,11 @@
+name: WSON-8-EP-6x5
+description: WSON-8 6x5mm 1.27mm pitch Winbond package ZP
+chip_shape: [6, 5]
+pins: 8
+rows: 2
+pin_shape: [-0.6, 0.4]
+pin_pitch: 1.27
+row_pitch: 6.0
+pad_shape: [1.2, 0.5]
+ep_shape: [3.4, 4.3]
+ep_paste_shape: [2.0, 1.4, 0, 0.6]
