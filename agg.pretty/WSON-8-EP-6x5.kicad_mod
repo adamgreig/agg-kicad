@@ -1,7 +1,7 @@
 
 (module "WSON-8-EP-6x5" 
   (layer F.Cu) 
-  (tedit 5F1B882C) 
+  (tedit 5F1FFF6D) 
   (fp_text reference REF** 
     (at 0 -3.4500) 
     (layer F.Fab) 
@@ -243,4 +243,11 @@
     (at 0 0) 
     (size 3.4000 4.3000) 
     (layers F.Cu F.Mask) 
-    (solder_mask_margin 0.0010)))
+    (solder_mask_margin 0.0010)) 
+  (model "${KISYS3DMOD}/Package_DFN_QFN.3dshapes/DFN-8-1EP_6x5mm_Pitch1.27mm.step" 
+    (at 
+      (xyz 0 0 0)) 
+    (scale 
+      (xyz 1.0000 1.0000 1.0000)) 
+    (rotate 
+      (xyz 0 0 0))))
