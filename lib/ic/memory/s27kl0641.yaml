@@ -1,7 +1,7 @@
 name: S27KL0641
 description: HyperRAM Self-Refresh DRAM 64Mb 3V
 datasheet: https://www.cypress.com/file/183506/download
-footprint: ael:VAA024
+footprint: agg:VAA024
 ordercodes:
   - [Farnell, '2749800']
 pins:
