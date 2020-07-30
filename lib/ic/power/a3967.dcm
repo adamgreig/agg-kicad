@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP A3967
+D Microstepping Motor Driver, 5-30V DC, 750 mA
+F https://www.allegromicro.com/-/media/files/datasheets/a3967-datasheet.ashx
+$ENDCMP

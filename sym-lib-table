@@ -643,6 +643,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name a3967) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/power/a3967.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name adp124) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/power/adp124.lib") 
@@ -1084,6 +1090,12 @@
     (name l3g4200d) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/sensor/l3g4200d.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
+    (name max31855) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/sensor/max31855.lib") 
     (options "") 
     (descr "")) 
   (lib 
