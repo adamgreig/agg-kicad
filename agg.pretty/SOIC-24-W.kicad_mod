@@ -1,7 +1,7 @@
 
 (module "SOIC-24-W" 
   (layer F.Cu) 
-  (tedit 5F22FA4D) 
+  (tedit 5F31B11E) 
   (fp_text reference REF** 
     (at 0 -8.6500) 
     (layer F.Fab) 
@@ -448,99 +448,99 @@
     (width 0.0100)) 
   (pad 1 smd rect 
     (at -4.8000 -6.9850) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 2 smd rect 
     (at -4.8000 -5.7150) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 3 smd rect 
     (at -4.8000 -4.4450) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 4 smd rect 
     (at -4.8000 -3.1750) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 5 smd rect 
     (at -4.8000 -1.9050) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 6 smd rect 
     (at -4.8000 -0.6350) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 7 smd rect 
     (at -4.8000 0.6350) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 8 smd rect 
     (at -4.8000 1.9050) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 9 smd rect 
     (at -4.8000 3.1750) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 10 smd rect 
     (at -4.8000 4.4450) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 11 smd rect 
     (at -4.8000 5.7150) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 12 smd rect 
     (at -4.8000 6.9850) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 13 smd rect 
     (at 4.8000 6.9850) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 14 smd rect 
     (at 4.8000 5.7150) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 15 smd rect 
     (at 4.8000 4.4450) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 16 smd rect 
     (at 4.8000 3.1750) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 17 smd rect 
     (at 4.8000 1.9050) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 18 smd rect 
     (at 4.8000 0.6350) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 19 smd rect 
     (at 4.8000 -0.6350) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 20 smd rect 
     (at 4.8000 -1.9050) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 21 smd rect 
     (at 4.8000 -3.1750) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 22 smd rect 
     (at 4.8000 -4.4450) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 23 smd rect 
     (at 4.8000 -5.7150) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (pad 24 smd rect 
     (at 4.8000 -6.9850) 
-    (size 2.2000 0.6000) 
+    (size 2.2000 0.6500) 
     (layers F.Cu F.Mask F.Paste)) 
   (model "${KISYS3DMOD}/Package_SO.3dshapes/SOIC-24W_7.5x15.4mm_P1.27mm.wrl" 
     (at 
