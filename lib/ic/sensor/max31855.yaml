@@ -1,0 +1,15 @@
+name: MAX31855
+datasheet: https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf
+description: Cold-Junction Compensated Thermocouple-to-Digital Converter
+footprint: agg:SOIC-8
+ordercodes:
+  - [Farnell, '2515562']
+pins:
+- - - [VDD, 4, pwrin]
+    - [TC+, 3, in]
+    - [TC-, 2, in]
+    - [GND, 1, pwrin]
+- - - [SDO, 7, out]
+    - [SCK, 5, in]
+    - [~CS, 6, in]
+    - [NC, 8, nc]

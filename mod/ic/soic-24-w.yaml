@@ -1,0 +1,14 @@
+chip_shape: [7.5, 15.4]
+description: SOIC-24-W
+model:
+  offset: [0, 0, 0]
+  path: ${KISYS3DMOD}/Package_SO.3dshapes/SOIC-24W_7.5x15.4mm_P1.27mm.wrl
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: SOIC-24-W
+pad_shape: [2.20, 0.65]
+pin_pitch: 1.27
+pin_shape: [1.4, 0.5]
+pins: 24
+row_pitch: 9.6
+rows: 2

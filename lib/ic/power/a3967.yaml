@@ -1,0 +1,31 @@
+name: A3967
+datasheet: https://www.allegromicro.com/-/media/files/datasheets/a3967-datasheet.ashx
+description: Microstepping Motor Driver, 5-30V DC, 750 mA
+footprint: agg:SOIC-24-W
+ordercodes:
+  - [Farnell, '2980863']
+pins:
+- - - [VCC, 14, pwrin]
+    - [REF, 1, in]
+  - - [STEP, 10, in]
+    - [DIR, 11, in]
+    - [MS1, 12, in]
+    - [MS2, 13, in]
+    - [~RESET, 22, in]
+    - [~SLEEP, 3, in]
+    - [~ENABLE, 15, in]
+  - - [RC1, 23, in]
+    - [RC2, 2, in]
+    - [PFD, 24, in]
+- - - [VBB1, 20, pwrin]
+    - [VBB2, 5, pwrin]
+  - - [OUT1A, 16, out]
+    - [OUT1B, 21, out]
+  - - [OUT2A, 9, out]
+    - [OUT2B, 4, out]
+  - - [SENSE1, 17, in]
+    - [SENSE2, 8, in]
+  - - [GND, 6, pwrin]
+    - [GND, 7, pwrin]
+    - [GND, 18, pwrin]
+    - [GND, 19, pwrin]  
