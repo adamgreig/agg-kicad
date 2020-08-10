@@ -6,7 +6,7 @@ model:
   rotate: [0, 0, 0]
   scale: [1, 1, 1]
 name: SOIC-24-W
-pad_shape: [2.20, 0.60]
+pad_shape: [2.20, 0.65]
 pin_pitch: 1.27
 pin_shape: [1.4, 0.5]
 pins: 24

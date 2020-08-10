@@ -9,7 +9,7 @@ pins:
     - [TC+, 3, in]
     - [TC-, 2, in]
     - [GND, 1, pwrin]
-- - - [SDO, 7, bidi]
+- - - [SDO, 7, out]
     - [SCK, 5, in]
     - [~CS, 6, in]
     - [NC, 8, nc]
