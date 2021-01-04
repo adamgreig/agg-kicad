@@ -451,6 +451,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name 74hc4514) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/logic/74hc4514.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name 74hc595) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/logic/74hc595.lib") 

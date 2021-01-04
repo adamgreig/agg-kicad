@@ -1,0 +1,31 @@
+name: 74HC4514
+description: 4-to-16 line decoder/demultiplexer with input latches
+datasheet: http://www.farnell.com/datasheets/1870944.pdf
+footprint: agg:SOIC-24-W
+ordercodes:
+- [Farnell, '2444987']
+pins:
+- - - [VCC, 24, pwrin]
+    - [GND, 12, pwrin]
+  - - [LE, 1, in]
+  - - [~E, 23, in]
+  - - [A0, 2, in]
+    - [A1, 3, in]
+    - [A2, 21, in]
+    - [A3, 22, in]
+- - - [Q0, 11, out]
+    - [Q1, 9, out]
+    - [Q2, 10, out]
+    - [Q3, 8, out]
+    - [Q4, 7, out]
+    - [Q5, 6, out]
+    - [Q6, 5, out]
+    - [Q7, 4, out]
+    - [Q8, 18, out]
+    - [Q9, 17, out]
+    - [Q10, 20, out]
+    - [Q11, 19, out]
+    - [Q12, 14, out]
+    - [Q13, 13, out]
+    - [Q14, 16, out]
+    - [Q15, 15, out]
