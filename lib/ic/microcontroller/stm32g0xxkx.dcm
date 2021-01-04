@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP STM32G0xxKx
+D STM32G0 32 pin LQFP package
+F https://www.st.com/resource/en/datasheet/stm32g070kb.pdf
+$ENDCMP

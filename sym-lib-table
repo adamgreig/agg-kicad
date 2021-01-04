@@ -637,6 +637,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name stm32g0xxkx) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32g0xxkx.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name stm32l4xxjxyx) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32l4xxjxyx.lib") 
