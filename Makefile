@@ -27,79 +27,79 @@ check: check-lib check-mod
 verify: build-verify compile-verify
 
 build-lib-connector:
-	python scripts/build_lib_connector.py lib/connector/conn.lib
+	python3 scripts/build_lib_connector.py lib/connector/conn.lib
 
 verify-lib-connector:
-	python scripts/build_lib_connector.py lib/connector/conn.lib --verify
+	python3 scripts/build_lib_connector.py lib/connector/conn.lib --verify
 
 build-lib-switch:
-	python scripts/build_lib_switch.py lib/ui/switch.lib
+	python3 scripts/build_lib_switch.py lib/ui/switch.lib
 
 verify-lib-switch:
-	python scripts/build_lib_switch.py lib/ui/switch.lib --verify $(verboseflag)
+	python3 scripts/build_lib_switch.py lib/ui/switch.lib --verify $(verboseflag)
 
 build-lib-ic:
-	python scripts/build_lib_ic.py lib/
+	python3 scripts/build_lib_ic.py lib/
 
 verify-lib-ic:
-	python scripts/build_lib_ic.py lib/ --verify $(verboseflag)
+	python3 scripts/build_lib_ic.py lib/ --verify $(verboseflag)
 
 build-lib-power:
-	python scripts/build_lib_power.py lib/power/power.lib
+	python3 scripts/build_lib_power.py lib/power/power.lib
 
 verify-lib-power:
-	python scripts/build_lib_power.py lib/power/power.lib --verify
+	python3 scripts/build_lib_power.py lib/power/power.lib --verify
 
 build-mod-chip:
-	python scripts/build_mod_chip.py agg.pretty/ mod/chip
+	python3 scripts/build_mod_chip.py agg.pretty/ mod/chip
 
 verify-mod-chip:
-	python scripts/build_mod_chip.py agg.pretty/ mod/chip --verify $(verboseflag)
+	python3 scripts/build_mod_chip.py agg.pretty/ mod/chip --verify $(verboseflag)
 
 build-mod-ic:
-	python scripts/build_mod_ic.py agg.pretty/ mod/ic
+	python3 scripts/build_mod_ic.py agg.pretty/ mod/ic
 
 verify-mod-ic:
-	python scripts/build_mod_ic.py agg.pretty/ mod/ic --verify $(verboseflag)
+	python3 scripts/build_mod_ic.py agg.pretty/ mod/ic --verify $(verboseflag)
 
 build-mod-jstpa:
-	python scripts/build_mod_jstpa.py agg.pretty/
+	python3 scripts/build_mod_jstpa.py agg.pretty/
 
 verify-mod-jstpa:
-	python scripts/build_mod_jstpa.py agg.pretty/ --verify $(verboseflag)
+	python3 scripts/build_mod_jstpa.py agg.pretty/ --verify $(verboseflag)
 
 build-mod-jsteh:
-	python scripts/build_mod_jsteh.py agg.pretty/
+	python3 scripts/build_mod_jsteh.py agg.pretty/
 
 verify-mod-jsteh:
-	python scripts/build_mod_jsteh.py agg.pretty/ --verify $(verboseflag)
+	python3 scripts/build_mod_jsteh.py agg.pretty/ --verify $(verboseflag)
 
 build-mod-sil-dil:
-	python scripts/build_mod_sil_dil.py agg.pretty/
+	python3 scripts/build_mod_sil_dil.py agg.pretty/
 
 verify-mod-sil-dil:
-	python scripts/build_mod_sil_dil.py agg.pretty/ --verify $(verboseflag)
+	python3 scripts/build_mod_sil_dil.py agg.pretty/ --verify $(verboseflag)
 
 build-mod-picoblade:
-	python scripts/build_mod_picoblade.py agg.pretty/
+	python3 scripts/build_mod_picoblade.py agg.pretty/
 
 verify-mod-picoblade:
-	python scripts/build_mod_picoblade.py agg.pretty/ --verify $(verboseflag)
+	python3 scripts/build_mod_picoblade.py agg.pretty/ --verify $(verboseflag)
 
 compile-lib:
-	python scripts/compile_lib.py lib/ agg-kicad.lib
+	python3 scripts/compile_lib.py lib/ agg-kicad.lib
 
 verify-lib:
-	python scripts/compile_lib.py lib/ agg-kicad.lib --verify
+	python3 scripts/compile_lib.py lib/ agg-kicad.lib --verify
 
 compile-sym-lib-table:
-	python scripts/compile_sym_lib_table.py lib/ sym-lib-table
+	python3 scripts/compile_sym_lib_table.py lib/ sym-lib-table
 
 verify-sym-lib-table:
-	python scripts/compile_sym_lib_table.py lib/ sym-lib-table --verify
+	python3 scripts/compile_sym_lib_table.py lib/ sym-lib-table --verify
 
 check-lib:
-	python scripts/check_lib.py lib/ agg.pretty/ $(verboseflag)
+	python3 scripts/check_lib.py lib/ agg.pretty/ $(verboseflag)
 
 check-mod:
-	python scripts/check_mod.py agg.pretty/ $(verboseflag)
+	python3 scripts/check_mod.py agg.pretty/ $(verboseflag)

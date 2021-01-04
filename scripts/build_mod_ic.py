@@ -152,14 +152,14 @@ def bga_pin_centres(conf):
     Compute the location of pin centres for BGA parts,
     including skipping any in `skip_pins`.
     Rows are labelled with letters and columns with numbers.
-    Returns a dictionary of pin numbers to (x, y) positions.
+    Returns a list of (pin number, x, y) positions.
     """
     default_letters = "ABCDEFGHJKLMNPRTUVWY"
     letters = conf.get("letters", default_letters)
     letters = list(letters) + [a+b for a in letters for b in letters]
     skips = expand_skips(conf, letters)
     pitch = float(conf["pin_pitch"])
-    out = {}
+    out = []
     rows = int(conf['rows'])
     cols = int(conf['cols'])
     for row in range(rows):
@@ -171,7 +171,7 @@ def bga_pin_centres(conf):
                 continue
             x = (col * pitch) - ((cols-1)/2.0 * pitch)
             y = (row * pitch) - ((rows-1)/2.0 * pitch)
-            out[padid] = (x, y)
+            out.append((padid, x, y))
     return out
 
 
@@ -311,8 +311,8 @@ def fab(conf):
     # Pins
     if bga:
         centres = bga_pin_centres(conf)
-        for x, y in centres.values():
-            out += [fp_circle((x, y), (x, y+pin_r/2), "F.Fab", fab_width)]
+        for _, x, y in centres:
+            out += [fp_circle((x, y), (x, y+pin_r//2), "F.Fab", fab_width)]
     else:
         leftr, bottomr, rightr, topr = pin_centres(conf)
         skips = [int(x) for x in expand_skips(conf)]
@@ -365,7 +365,7 @@ def internal_silk(conf):
 
     width = row_pitch - pad_shape[0] - 2 * silk_pad_igap
     if rows == 2:
-        height = (((pins / rows) - 1) * pin_pitch)
+        height = (((pins // rows) - 1) * pin_pitch)
     elif rows == 4:
         height = width
 
@@ -425,7 +425,7 @@ def external_silk(conf):
                 pin_x = ((h_pins_per_row - 1) * conf['pin_pitch']) / 2.0
                 pin_y = ((v_pins_per_row - 1) * conf['pin_pitch']) / 2.0
             else:
-                pins_per_row = conf['pins'] / rows
+                pins_per_row = conf['pins'] // rows
                 pin_x = pin_y = ((pins_per_row - 1) * conf['pin_pitch']) / 2.0
             dx = x - pin_x - silk_pad_egap
             dy = y - pin_y - silk_pad_egap
@@ -545,8 +545,8 @@ def bga_pads(conf):
     layers = ["F.Cu", "F.Mask", "F.Paste"]
     size = [conf['pad_shape']]*2
     margin = (conf['mask_shape'] - conf['pad_shape']) / 2.0
-    for num, centre in bga_pin_centres(conf).items():
-        p = pad(num, "smd", "circle", centre, size, layers)
+    for num, x, y in bga_pin_centres(conf):
+        p = pad(num, "smd", "circle", (x, y), size, layers)
         p.append(["solder_mask_margin", margin])
         out.append(p)
     return out

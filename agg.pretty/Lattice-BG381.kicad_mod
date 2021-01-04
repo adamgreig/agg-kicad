@@ -1,7 +1,7 @@
 
 (module "Lattice-BG381" 
   (layer F.Cu) 
-  (tedit 5F0B93DD) 
+  (tedit 5FF3164B) 
   (fp_text reference REF** 
     (at 0 -9.4500) 
     (layer F.Fab) 
@@ -42,1908 +42,1908 @@
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center 7.6000 -2.8000) 
-    (end 7.6000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 -2.8000) 
-    (end -2.8000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 -2.8000) 
-    (end -3.6000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 -2.8000) 
-    (end -4.4000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 -2.8000) 
-    (end -5.2000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 -2.8000) 
-    (end -6.0000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 -2.8000) 
-    (end -6.8000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 -2.8000) 
-    (end -7.6000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 -2.8000) 
-    (end -1.2000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 -2.8000) 
-    (end -2.0000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 7.6000) 
-    (end 6.8000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 7.6000) 
-    (end 3.6000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 7.6000) 
-    (end 2.8000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 7.6000) 
-    (end 5.2000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 7.6000) 
-    (end 4.4000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 7.6000) 
-    (end 0.4000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 7.6000) 
-    (end 1.2000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 -6.8000) 
-    (end 7.6000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 -1.2000) 
-    (end 7.6000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 1.2000) 
-    (end -4.4000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 1.2000) 
-    (end -5.2000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 1.2000) 
-    (end -2.8000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 1.2000) 
-    (end -3.6000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 1.2000) 
-    (end -7.6000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 1.2000) 
-    (end -6.0000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 1.2000) 
-    (end -6.8000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 1.2000) 
-    (end -1.2000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 1.2000) 
-    (end -2.0000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 2.8000) 
-    (end -0.4000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 2.8000) 
-    (end 0.4000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 2.8000) 
-    (end 1.2000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 2.8000) 
-    (end 2.0000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 2.8000) 
-    (end 2.8000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 2.8000) 
-    (end 3.6000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 2.8000) 
-    (end 4.4000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 2.8000) 
-    (end 5.2000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 2.8000) 
-    (end 6.0000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 2.8000) 
-    (end 6.8000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 -2.0000) 
-    (end 6.0000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 -2.0000) 
-    (end 6.8000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 -2.0000) 
-    (end -0.4000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 -2.0000) 
-    (end 0.4000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 -2.0000) 
-    (end 1.2000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 -2.0000) 
-    (end 2.0000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 -2.0000) 
-    (end 2.8000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 -2.0000) 
-    (end 3.6000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 -2.0000) 
-    (end 4.4000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 -2.0000) 
-    (end 5.2000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 5.2000) 
-    (end 7.6000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 6.8000) 
-    (end 7.6000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 -4.4000) 
-    (end 7.6000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 -2.8000) 
-    (end 6.8000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 -2.8000) 
-    (end 6.0000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 -2.8000) 
-    (end 5.2000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 -2.8000) 
-    (end 4.4000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 -2.8000) 
-    (end 3.6000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 -2.8000) 
-    (end 2.8000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 -2.8000) 
-    (end 2.0000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 -2.8000) 
-    (end 1.2000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 -2.8000) 
-    (end 0.4000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 -2.8000) 
-    (end -0.4000 -2.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 -3.6000) 
-    (end -7.6000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 -3.6000) 
-    (end -6.8000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 -3.6000) 
-    (end -6.0000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 -3.6000) 
-    (end -5.2000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 -3.6000) 
-    (end -4.4000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 -3.6000) 
-    (end -3.6000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 -3.6000) 
-    (end -2.8000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 -3.6000) 
-    (end -2.0000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 -3.6000) 
-    (end -1.2000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 0.4000) 
-    (end -3.6000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 0.4000) 
-    (end -2.8000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 0.4000) 
-    (end -5.2000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 0.4000) 
-    (end -4.4000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 0.4000) 
-    (end -6.8000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 0.4000) 
-    (end -6.0000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 0.4000) 
-    (end -7.6000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 0.4000) 
-    (end -2.0000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 0.4000) 
-    (end -1.2000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 7.6000) 
-    (end -2.0000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 7.6000) 
-    (end -6.0000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 7.6000) 
-    (end -6.8000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 7.6000) 
-    (end -4.4000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 7.6000) 
-    (end -2.8000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 7.6000) 
-    (end -3.6000 7.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 3.6000) 
-    (end -5.2000 3.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 3.6000) 
-    (end -4.4000 3.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 3.6000) 
-    (end -7.6000 3.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 3.6000) 
-    (end -6.8000 3.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 3.6000) 
-    (end -6.0000 3.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 5.2000) 
-    (end 6.8000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 6.8000) 
-    (end 6.8000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 5.2000) 
-    (end 6.0000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 6.8000) 
-    (end 5.2000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 6.8000) 
-    (end 4.4000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 6.8000) 
-    (end 3.6000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 6.8000) 
-    (end 2.8000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 6.8000) 
-    (end 2.0000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 6.8000) 
-    (end 1.2000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 6.8000) 
-    (end 0.4000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 6.8000) 
-    (end -0.4000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 -0.4000) 
-    (end -1.2000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 -0.4000) 
-    (end -2.0000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 -4.4000) 
-    (end -1.2000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 -4.4000) 
-    (end -2.0000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 -4.4000) 
-    (end -4.4000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 -4.4000) 
-    (end -5.2000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 -4.4000) 
-    (end -2.8000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 -4.4000) 
-    (end -3.6000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 -4.4000) 
-    (end -7.6000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 -4.4000) 
-    (end -6.0000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 -4.4000) 
-    (end -6.8000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 -3.6000) 
-    (end 6.0000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 -3.6000) 
-    (end 6.8000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 -3.6000) 
-    (end 1.2000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 -3.6000) 
-    (end 2.0000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 -3.6000) 
-    (end -0.4000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 -3.6000) 
-    (end 0.4000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 -3.6000) 
-    (end 4.4000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 -3.6000) 
-    (end 5.2000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 -3.6000) 
-    (end 2.8000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 -3.6000) 
-    (end 3.6000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 2.0000) 
-    (end 1.2000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 2.0000) 
-    (end 2.0000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 2.0000) 
-    (end -0.4000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 2.0000) 
-    (end 0.4000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 2.0000) 
-    (end 4.4000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 2.0000) 
-    (end 5.2000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 2.0000) 
-    (end 2.8000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 2.0000) 
-    (end 3.6000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 2.0000) 
-    (end 6.0000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 2.0000) 
-    (end 6.8000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 2.8000) 
-    (end 7.6000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 -2.0000) 
-    (end 7.6000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 -0.4000) 
-    (end -6.0000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 -0.4000) 
-    (end -6.8000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 -0.4000) 
-    (end -7.6000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 -0.4000) 
-    (end -2.8000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 -0.4000) 
-    (end -3.6000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 -0.4000) 
-    (end -4.4000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 -0.4000) 
-    (end -5.2000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 5.2000) 
-    (end 0.4000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 5.2000) 
-    (end -0.4000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 5.2000) 
-    (end 2.0000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 5.2000) 
-    (end 1.2000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 5.2000) 
-    (end 3.6000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 5.2000) 
-    (end 2.8000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 5.2000) 
-    (end 5.2000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 5.2000) 
-    (end 4.4000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 1.2000) 
-    (end 0.4000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 1.2000) 
-    (end -0.4000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 1.2000) 
-    (end 2.0000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 1.2000) 
-    (end 1.2000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 1.2000) 
-    (end 3.6000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 1.2000) 
-    (end 2.8000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 1.2000) 
-    (end 5.2000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 1.2000) 
-    (end 4.4000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 1.2000) 
-    (end 6.8000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 1.2000) 
-    (end 6.0000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 -4.4000) 
-    (end 6.8000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 -4.4000) 
-    (end 6.0000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 -4.4000) 
-    (end 0.4000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 -4.4000) 
-    (end -0.4000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 -4.4000) 
-    (end 2.0000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 -4.4000) 
-    (end 1.2000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 -4.4000) 
-    (end 3.6000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 -4.4000) 
-    (end 2.8000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 -4.4000) 
-    (end 5.2000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 -4.4000) 
-    (end 4.4000 -4.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 -0.4000) 
-    (end 7.6000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 6.0000) 
-    (end 6.0000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 6.0000) 
-    (end 6.8000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 6.0000) 
-    (end 1.2000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 6.0000) 
-    (end 2.0000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 6.0000) 
-    (end -0.4000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 6.0000) 
-    (end 0.4000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 6.0000) 
-    (end 4.4000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 6.0000) 
-    (end 5.2000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 6.0000) 
-    (end 2.8000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 6.0000) 
-    (end 3.6000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 -5.2000) 
-    (end -2.0000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 -5.2000) 
-    (end -1.2000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 -5.2000) 
-    (end -3.6000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 -5.2000) 
-    (end -2.8000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 -5.2000) 
-    (end -5.2000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 -5.2000) 
-    (end -4.4000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 -5.2000) 
-    (end -6.8000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 -5.2000) 
-    (end -6.0000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 -5.2000) 
-    (end -7.6000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 -3.6000) 
-    (end 7.6000 -3.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 2.0000) 
-    (end 7.6000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 -6.0000) 
-    (end 7.6000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 -1.2000) 
-    (end -2.0000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 -1.2000) 
-    (end -1.2000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 -1.2000) 
-    (end -5.2000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 -1.2000) 
-    (end -4.4000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 -1.2000) 
-    (end -3.6000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 -1.2000) 
-    (end -2.8000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 -1.2000) 
-    (end -7.6000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 -1.2000) 
-    (end -6.8000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 -1.2000) 
-    (end -6.0000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 6.8000) 
-    (end -2.8000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 6.8000) 
-    (end -3.6000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 6.8000) 
-    (end -4.4000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 6.8000) 
-    (end -5.2000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 6.8000) 
-    (end -6.0000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 6.8000) 
-    (end -6.8000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 6.8000) 
-    (end -7.6000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 6.8000) 
-    (end -1.2000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 6.8000) 
-    (end -2.0000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 0.4000) 
-    (end 6.0000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 0.4000) 
-    (end 6.8000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 0.4000) 
-    (end 2.8000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 0.4000) 
-    (end 3.6000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 0.4000) 
-    (end 4.4000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 0.4000) 
-    (end 5.2000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 0.4000) 
-    (end -0.4000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 0.4000) 
-    (end 0.4000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 0.4000) 
-    (end 1.2000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 0.4000) 
-    (end 2.0000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 4.4000) 
-    (end 2.8000 4.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 4.4000) 
-    (end 3.6000 4.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 4.4000) 
-    (end 4.4000 4.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 4.4000) 
-    (end 5.2000 4.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 4.4000) 
-    (end -0.4000 4.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 4.4000) 
-    (end 0.4000 4.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 4.4000) 
-    (end 1.2000 4.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 4.4000) 
-    (end 2.0000 4.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 4.4000) 
-    (end 6.0000 4.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 4.4000) 
-    (end 6.8000 4.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 2.8000) 
-    (end -6.8000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 2.8000) 
-    (end -6.0000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 2.8000) 
-    (end -7.6000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 2.8000) 
-    (end -3.6000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 2.8000) 
-    (end -2.8000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 2.8000) 
-    (end -5.2000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 2.8000) 
-    (end -4.4000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 1.2000) 
-    (end 7.6000 1.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 2.8000) 
-    (end -2.0000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 2.8000) 
-    (end -1.2000 3.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 -0.4000) 
-    (end 2.0000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 -0.4000) 
-    (end 1.2000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 -0.4000) 
-    (end 0.4000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 -5.2000) 
-    (end 5.2000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 -0.4000) 
-    (end 5.2000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 -0.4000) 
-    (end 4.4000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 -0.4000) 
-    (end 3.6000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 -0.4000) 
-    (end 2.8000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 -0.4000) 
-    (end 6.8000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 -0.4000) 
-    (end 6.0000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 -5.2000) 
-    (end 6.0000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 -5.2000) 
-    (end 6.8000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 6.0000) 
-    (end 7.6000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 -6.0000) 
-    (end -1.2000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 -6.0000) 
-    (end -2.0000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 -6.0000) 
-    (end -6.0000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 -6.0000) 
-    (end -6.8000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 -6.0000) 
-    (end -7.6000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 -6.0000) 
-    (end -2.8000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 -6.0000) 
-    (end -3.6000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 -6.0000) 
-    (end -4.4000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 -6.0000) 
-    (end -5.2000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 -6.0000) 
-    (end 6.8000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 -6.0000) 
-    (end 6.0000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 -6.0000) 
-    (end 2.0000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 -6.0000) 
-    (end 1.2000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 -6.0000) 
-    (end 0.4000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 -6.0000) 
-    (end -0.4000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 -6.0000) 
-    (end 5.2000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 -6.0000) 
-    (end 4.4000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 -6.0000) 
-    (end 3.6000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 -6.0000) 
-    (end 2.8000 -5.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 6.0000) 
-    (end -7.6000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 6.0000) 
-    (end -6.8000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 6.0000) 
-    (end -6.0000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 6.0000) 
-    (end -5.2000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 6.0000) 
-    (end -4.4000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 6.0000) 
-    (end -3.6000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 6.0000) 
-    (end -2.8000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 6.0000) 
-    (end -2.0000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 6.0000) 
-    (end -1.2000 6.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 -5.2000) 
-    (end 2.8000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 -5.2000) 
-    (end 3.6000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 -5.2000) 
-    (end 4.4000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 -0.4000) 
-    (end -0.4000 -0.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 -5.2000) 
-    (end -0.4000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 -5.2000) 
-    (end 0.4000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 -5.2000) 
-    (end 1.2000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 -5.2000) 
-    (end 2.0000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 6.8000) 
-    (end 6.0000 7.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 -6.8000) 
-    (end -5.2000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 -6.8000) 
-    (end -4.4000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 -6.8000) 
-    (end -3.6000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 -6.8000) 
-    (end -2.8000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 -6.8000) 
-    (end -7.6000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 -6.8000) 
-    (end -6.8000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 -6.8000) 
-    (end -6.0000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 -6.8000) 
-    (end -2.0000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 -6.8000) 
-    (end -1.2000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 5.2000) 
-    (end -1.2000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 5.2000) 
-    (end -2.0000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 5.2000) 
-    (end -4.4000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 5.2000) 
-    (end -5.2000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 5.2000) 
-    (end -2.8000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 5.2000) 
-    (end -3.6000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 5.2000) 
-    (end -7.6000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 5.2000) 
-    (end -6.0000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 5.2000) 
-    (end -6.8000 5.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 3.6000) 
-    (end 4.4000 3.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 3.6000) 
-    (end 5.2000 3.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 3.6000) 
-    (end 6.0000 3.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 3.6000) 
-    (end 6.8000 3.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 4.4000) 
-    (end 7.6000 4.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 -2.0000) 
-    (end -2.0000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 -2.0000) 
-    (end -1.2000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 -2.0000) 
-    (end -6.8000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 -2.0000) 
-    (end -6.0000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 -2.0000) 
-    (end -7.6000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 -2.0000) 
-    (end -3.6000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 -2.0000) 
-    (end -2.8000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 -2.0000) 
-    (end -5.2000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 -2.0000) 
-    (end -4.4000 -1.8000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 -6.8000) 
-    (end 4.4000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 -6.8000) 
-    (end 5.2000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 -6.8000) 
-    (end 2.8000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 -6.8000) 
-    (end 3.6000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 -6.8000) 
-    (end 1.2000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 -6.8000) 
-    (end 2.0000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 -6.8000) 
-    (end -0.4000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 -6.8000) 
-    (end 0.4000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 -6.8000) 
-    (end 6.0000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 -6.8000) 
-    (end 6.8000 -6.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 0.4000) 
-    (end 7.6000 0.6000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 -1.2000) 
-    (end 6.0000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 -1.2000) 
-    (end 6.8000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 -1.2000) 
-    (end 4.4000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 -1.2000) 
-    (end 5.2000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 -1.2000) 
-    (end 2.8000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 -1.2000) 
-    (end 3.6000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 -1.2000) 
-    (end 1.2000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 -1.2000) 
-    (end 2.0000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 -1.2000) 
-    (end -0.4000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 -1.2000) 
-    (end 0.4000 -1.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 7.6000 -5.2000) 
-    (end 7.6000 -5.0000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.0000 2.0000) 
-    (end -2.0000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -1.2000 2.0000) 
-    (end -1.2000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -7.6000 2.0000) 
-    (end -7.6000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 2.0000) 
-    (end -6.8000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.0000 2.0000) 
-    (end -6.0000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -5.2000 2.0000) 
-    (end -5.2000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 2.0000) 
-    (end -4.4000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -3.6000 2.0000) 
-    (end -3.6000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -2.8000 2.0000) 
-    (end -2.8000 2.2000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 3.6000 -7.6000) 
-    (end 3.6000 -7.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.8000 -7.6000) 
-    (end 2.8000 -7.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 5.2000 -7.6000) 
-    (end 5.2000 -7.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 4.4000 -7.6000) 
-    (end 4.4000 -7.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 0.4000 -7.6000) 
-    (end 0.4000 -7.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -0.4000 -7.6000) 
-    (end -0.4000 -7.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 2.0000 -7.6000) 
-    (end 2.0000 -7.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 1.2000 -7.6000) 
-    (end 1.2000 -7.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.8000 -7.6000) 
-    (end 6.8000 -7.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center 6.0000 -7.6000) 
-    (end 6.0000 -7.4000) 
+    (center -6.8000 -7.6000) 
+    (end -6.8000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
     (center -6.0000 -7.6000) 
-    (end -6.0000 -7.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -6.8000 -7.6000) 
-    (end -6.8000 -7.4000) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_circle 
-    (center -4.4000 -7.6000) 
-    (end -4.4000 -7.4000) 
+    (end -6.0000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
     (center -5.2000 -7.6000) 
-    (end -5.2000 -7.4000) 
+    (end -5.2000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center -2.8000 -7.6000) 
-    (end -2.8000 -7.4000) 
+    (center -4.4000 -7.6000) 
+    (end -4.4000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
     (center -3.6000 -7.6000) 
-    (end -3.6000 -7.4000) 
+    (end -3.6000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center -1.2000 -7.6000) 
-    (end -1.2000 -7.4000) 
+    (center -2.8000 -7.6000) 
+    (end -2.8000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
     (center -2.0000 -7.6000) 
-    (end -2.0000 -7.4000) 
+    (end -2.0000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center -2.0000 4.4000) 
-    (end -2.0000 4.6000) 
+    (center -1.2000 -7.6000) 
+    (end -1.2000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center -1.2000 4.4000) 
-    (end -1.2000 4.6000) 
+    (center -0.4000 -7.6000) 
+    (end -0.4000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center -3.6000 4.4000) 
-    (end -3.6000 4.6000) 
+    (center 0.4000 -7.6000) 
+    (end 0.4000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center -2.8000 4.4000) 
-    (end -2.8000 4.6000) 
+    (center 1.2000 -7.6000) 
+    (end 1.2000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center -5.2000 4.4000) 
-    (end -5.2000 4.6000) 
+    (center 2.0000 -7.6000) 
+    (end 2.0000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center -4.4000 4.4000) 
-    (end -4.4000 4.6000) 
+    (center 2.8000 -7.6000) 
+    (end 2.8000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center -6.8000 4.4000) 
-    (end -6.8000 4.6000) 
+    (center 3.6000 -7.6000) 
+    (end 3.6000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center -6.0000 4.4000) 
-    (end -6.0000 4.6000) 
+    (center 4.4000 -7.6000) 
+    (end 4.4000 -7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
-    (center -7.6000 4.4000) 
-    (end -7.6000 4.6000) 
+    (center 5.2000 -7.6000) 
+    (end 5.2000 -7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 -7.6000) 
+    (end 6.0000 -7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 -7.6000) 
+    (end 6.8000 -7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 -6.8000) 
+    (end -7.6000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 -6.8000) 
+    (end -6.8000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 -6.8000) 
+    (end -6.0000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 -6.8000) 
+    (end -5.2000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 -6.8000) 
+    (end -4.4000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 -6.8000) 
+    (end -3.6000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 -6.8000) 
+    (end -2.8000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 -6.8000) 
+    (end -2.0000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 -6.8000) 
+    (end -1.2000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 -6.8000) 
+    (end -0.4000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 -6.8000) 
+    (end 0.4000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 -6.8000) 
+    (end 1.2000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 -6.8000) 
+    (end 2.0000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 -6.8000) 
+    (end 2.8000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 -6.8000) 
+    (end 3.6000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 -6.8000) 
+    (end 4.4000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 -6.8000) 
+    (end 5.2000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 -6.8000) 
+    (end 6.0000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 -6.8000) 
+    (end 6.8000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 -6.8000) 
+    (end 7.6000 -6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 -6.0000) 
+    (end -7.6000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 -6.0000) 
+    (end -6.8000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 -6.0000) 
+    (end -6.0000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 -6.0000) 
+    (end -5.2000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 -6.0000) 
+    (end -4.4000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 -6.0000) 
+    (end -3.6000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 -6.0000) 
+    (end -2.8000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 -6.0000) 
+    (end -2.0000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 -6.0000) 
+    (end -1.2000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 -6.0000) 
+    (end -0.4000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 -6.0000) 
+    (end 0.4000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 -6.0000) 
+    (end 1.2000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 -6.0000) 
+    (end 2.0000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 -6.0000) 
+    (end 2.8000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 -6.0000) 
+    (end 3.6000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 -6.0000) 
+    (end 4.4000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 -6.0000) 
+    (end 5.2000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 -6.0000) 
+    (end 6.0000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 -6.0000) 
+    (end 6.8000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 -6.0000) 
+    (end 7.6000 -6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 -5.2000) 
+    (end -7.6000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 -5.2000) 
+    (end -6.8000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 -5.2000) 
+    (end -6.0000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 -5.2000) 
+    (end -5.2000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 -5.2000) 
+    (end -4.4000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 -5.2000) 
+    (end -3.6000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 -5.2000) 
+    (end -2.8000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 -5.2000) 
+    (end -2.0000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 -5.2000) 
+    (end -1.2000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 -5.2000) 
+    (end -0.4000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 -5.2000) 
+    (end 0.4000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 -5.2000) 
+    (end 1.2000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 -5.2000) 
+    (end 2.0000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 -5.2000) 
+    (end 2.8000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 -5.2000) 
+    (end 3.6000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 -5.2000) 
+    (end 4.4000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 -5.2000) 
+    (end 5.2000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 -5.2000) 
+    (end 6.0000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 -5.2000) 
+    (end 6.8000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 -5.2000) 
+    (end 7.6000 -5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 -4.4000) 
+    (end -7.6000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 -4.4000) 
+    (end -6.8000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 -4.4000) 
+    (end -6.0000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 -4.4000) 
+    (end -5.2000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 -4.4000) 
+    (end -4.4000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 -4.4000) 
+    (end -3.6000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 -4.4000) 
+    (end -2.8000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 -4.4000) 
+    (end -2.0000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 -4.4000) 
+    (end -1.2000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 -4.4000) 
+    (end -0.4000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 -4.4000) 
+    (end 0.4000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 -4.4000) 
+    (end 1.2000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 -4.4000) 
+    (end 2.0000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 -4.4000) 
+    (end 2.8000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 -4.4000) 
+    (end 3.6000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 -4.4000) 
+    (end 4.4000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 -4.4000) 
+    (end 5.2000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 -4.4000) 
+    (end 6.0000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 -4.4000) 
+    (end 6.8000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 -4.4000) 
+    (end 7.6000 -4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 -3.6000) 
+    (end -7.6000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 -3.6000) 
+    (end -6.8000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 -3.6000) 
+    (end -6.0000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 -3.6000) 
+    (end -5.2000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 -3.6000) 
+    (end -4.4000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 -3.6000) 
+    (end -3.6000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 -3.6000) 
+    (end -2.8000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 -3.6000) 
+    (end -2.0000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 -3.6000) 
+    (end -1.2000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 -3.6000) 
+    (end -0.4000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 -3.6000) 
+    (end 0.4000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 -3.6000) 
+    (end 1.2000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 -3.6000) 
+    (end 2.0000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 -3.6000) 
+    (end 2.8000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 -3.6000) 
+    (end 3.6000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 -3.6000) 
+    (end 4.4000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 -3.6000) 
+    (end 5.2000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 -3.6000) 
+    (end 6.0000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 -3.6000) 
+    (end 6.8000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 -3.6000) 
+    (end 7.6000 -3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 -2.8000) 
+    (end -7.6000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 -2.8000) 
+    (end -6.8000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 -2.8000) 
+    (end -6.0000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 -2.8000) 
+    (end -5.2000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 -2.8000) 
+    (end -4.4000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 -2.8000) 
+    (end -3.6000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 -2.8000) 
+    (end -2.8000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 -2.8000) 
+    (end -2.0000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 -2.8000) 
+    (end -1.2000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 -2.8000) 
+    (end -0.4000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 -2.8000) 
+    (end 0.4000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 -2.8000) 
+    (end 1.2000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 -2.8000) 
+    (end 2.0000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 -2.8000) 
+    (end 2.8000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 -2.8000) 
+    (end 3.6000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 -2.8000) 
+    (end 4.4000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 -2.8000) 
+    (end 5.2000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 -2.8000) 
+    (end 6.0000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 -2.8000) 
+    (end 6.8000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 -2.8000) 
+    (end 7.6000 -2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 -2.0000) 
+    (end -7.6000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 -2.0000) 
+    (end -6.8000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 -2.0000) 
+    (end -6.0000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 -2.0000) 
+    (end -5.2000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 -2.0000) 
+    (end -4.4000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 -2.0000) 
+    (end -3.6000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 -2.0000) 
+    (end -2.8000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 -2.0000) 
+    (end -2.0000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 -2.0000) 
+    (end -1.2000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 -2.0000) 
+    (end -0.4000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 -2.0000) 
+    (end 0.4000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 -2.0000) 
+    (end 1.2000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 -2.0000) 
+    (end 2.0000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 -2.0000) 
+    (end 2.8000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 -2.0000) 
+    (end 3.6000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 -2.0000) 
+    (end 4.4000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 -2.0000) 
+    (end 5.2000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 -2.0000) 
+    (end 6.0000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 -2.0000) 
+    (end 6.8000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 -2.0000) 
+    (end 7.6000 -2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 -1.2000) 
+    (end -7.6000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 -1.2000) 
+    (end -6.8000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 -1.2000) 
+    (end -6.0000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 -1.2000) 
+    (end -5.2000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 -1.2000) 
+    (end -4.4000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 -1.2000) 
+    (end -3.6000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 -1.2000) 
+    (end -2.8000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 -1.2000) 
+    (end -2.0000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 -1.2000) 
+    (end -1.2000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 -1.2000) 
+    (end -0.4000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 -1.2000) 
+    (end 0.4000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 -1.2000) 
+    (end 1.2000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 -1.2000) 
+    (end 2.0000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 -1.2000) 
+    (end 2.8000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 -1.2000) 
+    (end 3.6000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 -1.2000) 
+    (end 4.4000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 -1.2000) 
+    (end 5.2000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 -1.2000) 
+    (end 6.0000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 -1.2000) 
+    (end 6.8000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 -1.2000) 
+    (end 7.6000 -1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 -0.4000) 
+    (end -7.6000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 -0.4000) 
+    (end -6.8000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 -0.4000) 
+    (end -6.0000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 -0.4000) 
+    (end -5.2000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 -0.4000) 
+    (end -4.4000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 -0.4000) 
+    (end -3.6000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 -0.4000) 
+    (end -2.8000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 -0.4000) 
+    (end -2.0000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 -0.4000) 
+    (end -1.2000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 -0.4000) 
+    (end -0.4000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 -0.4000) 
+    (end 0.4000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 -0.4000) 
+    (end 1.2000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 -0.4000) 
+    (end 2.0000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 -0.4000) 
+    (end 2.8000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 -0.4000) 
+    (end 3.6000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 -0.4000) 
+    (end 4.4000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 -0.4000) 
+    (end 5.2000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 -0.4000) 
+    (end 6.0000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 -0.4000) 
+    (end 6.8000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 -0.4000) 
+    (end 7.6000 -0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 0.4000) 
+    (end -7.6000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 0.4000) 
+    (end -6.8000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 0.4000) 
+    (end -6.0000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 0.4000) 
+    (end -5.2000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 0.4000) 
+    (end -4.4000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 0.4000) 
+    (end -3.6000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 0.4000) 
+    (end -2.8000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 0.4000) 
+    (end -2.0000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 0.4000) 
+    (end -1.2000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 0.4000) 
+    (end -0.4000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 0.4000) 
+    (end 0.4000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 0.4000) 
+    (end 1.2000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 0.4000) 
+    (end 2.0000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 0.4000) 
+    (end 2.8000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 0.4000) 
+    (end 3.6000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 0.4000) 
+    (end 4.4000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 0.4000) 
+    (end 5.2000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 0.4000) 
+    (end 6.0000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 0.4000) 
+    (end 6.8000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 0.4000) 
+    (end 7.6000 0.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 1.2000) 
+    (end -7.6000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 1.2000) 
+    (end -6.8000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 1.2000) 
+    (end -6.0000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 1.2000) 
+    (end -5.2000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 1.2000) 
+    (end -4.4000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 1.2000) 
+    (end -3.6000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 1.2000) 
+    (end -2.8000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 1.2000) 
+    (end -2.0000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 1.2000) 
+    (end -1.2000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 1.2000) 
+    (end -0.4000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 1.2000) 
+    (end 0.4000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 1.2000) 
+    (end 1.2000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 1.2000) 
+    (end 2.0000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 1.2000) 
+    (end 2.8000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 1.2000) 
+    (end 3.6000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 1.2000) 
+    (end 4.4000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 1.2000) 
+    (end 5.2000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 1.2000) 
+    (end 6.0000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 1.2000) 
+    (end 6.8000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 1.2000) 
+    (end 7.6000 1.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 2.0000) 
+    (end -7.6000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 2.0000) 
+    (end -6.8000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 2.0000) 
+    (end -6.0000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 2.0000) 
+    (end -5.2000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 2.0000) 
+    (end -4.4000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 2.0000) 
+    (end -3.6000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 2.0000) 
+    (end -2.8000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 2.0000) 
+    (end -2.0000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 2.0000) 
+    (end -1.2000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 2.0000) 
+    (end -0.4000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 2.0000) 
+    (end 0.4000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 2.0000) 
+    (end 1.2000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 2.0000) 
+    (end 2.0000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 2.0000) 
+    (end 2.8000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 2.0000) 
+    (end 3.6000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 2.0000) 
+    (end 4.4000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 2.0000) 
+    (end 5.2000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 2.0000) 
+    (end 6.0000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 2.0000) 
+    (end 6.8000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 2.0000) 
+    (end 7.6000 2.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 2.8000) 
+    (end -7.6000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 2.8000) 
+    (end -6.8000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 2.8000) 
+    (end -6.0000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 2.8000) 
+    (end -5.2000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 2.8000) 
+    (end -4.4000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 2.8000) 
+    (end -3.6000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 2.8000) 
+    (end -2.8000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 2.8000) 
+    (end -2.0000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 2.8000) 
+    (end -1.2000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 2.8000) 
+    (end -0.4000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 2.8000) 
+    (end 0.4000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 2.8000) 
+    (end 1.2000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 2.8000) 
+    (end 2.0000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 2.8000) 
+    (end 2.8000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 2.8000) 
+    (end 3.6000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 2.8000) 
+    (end 4.4000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 2.8000) 
+    (end 5.2000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 2.8000) 
+    (end 6.0000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 2.8000) 
+    (end 6.8000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 2.8000) 
+    (end 7.6000 2.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 3.6000) 
+    (end -7.6000 3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 3.6000) 
+    (end -6.8000 3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 3.6000) 
+    (end -6.0000 3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 3.6000) 
+    (end -5.2000 3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 3.6000) 
+    (end -4.4000 3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 3.6000) 
+    (end 4.4000 3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 3.6000) 
+    (end 5.2000 3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 3.6000) 
+    (end 6.0000 3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 3.6000) 
+    (end 6.8000 3.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_circle 
     (center 7.6000 3.6000) 
-    (end 7.6000 3.8000) 
+    (end 7.6000 3.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 4.4000) 
+    (end -7.6000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 4.4000) 
+    (end -6.8000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 4.4000) 
+    (end -6.0000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 4.4000) 
+    (end -5.2000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 4.4000) 
+    (end -4.4000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 4.4000) 
+    (end -3.6000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 4.4000) 
+    (end -2.8000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 4.4000) 
+    (end -2.0000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 4.4000) 
+    (end -1.2000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 4.4000) 
+    (end -0.4000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 4.4000) 
+    (end 0.4000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 4.4000) 
+    (end 1.2000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 4.4000) 
+    (end 2.0000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 4.4000) 
+    (end 2.8000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 4.4000) 
+    (end 3.6000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 4.4000) 
+    (end 4.4000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 4.4000) 
+    (end 5.2000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 4.4000) 
+    (end 6.0000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 4.4000) 
+    (end 6.8000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 4.4000) 
+    (end 7.6000 4.4000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 5.2000) 
+    (end -7.6000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 5.2000) 
+    (end -6.8000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 5.2000) 
+    (end -6.0000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 5.2000) 
+    (end -5.2000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 5.2000) 
+    (end -4.4000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 5.2000) 
+    (end -3.6000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 5.2000) 
+    (end -2.8000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 5.2000) 
+    (end -2.0000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 5.2000) 
+    (end -1.2000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 5.2000) 
+    (end -0.4000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 5.2000) 
+    (end 0.4000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 5.2000) 
+    (end 1.2000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 5.2000) 
+    (end 2.0000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 5.2000) 
+    (end 2.8000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 5.2000) 
+    (end 3.6000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 5.2000) 
+    (end 4.4000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 5.2000) 
+    (end 5.2000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 5.2000) 
+    (end 6.0000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 5.2000) 
+    (end 6.8000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 5.2000) 
+    (end 7.6000 5.2000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 6.0000) 
+    (end -7.6000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 6.0000) 
+    (end -6.8000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 6.0000) 
+    (end -6.0000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 6.0000) 
+    (end -5.2000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 6.0000) 
+    (end -4.4000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 6.0000) 
+    (end -3.6000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 6.0000) 
+    (end -2.8000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 6.0000) 
+    (end -2.0000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 6.0000) 
+    (end -1.2000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 6.0000) 
+    (end -0.4000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 6.0000) 
+    (end 0.4000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 6.0000) 
+    (end 1.2000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 6.0000) 
+    (end 2.0000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 6.0000) 
+    (end 2.8000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 6.0000) 
+    (end 3.6000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 6.0000) 
+    (end 4.4000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 6.0000) 
+    (end 5.2000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 6.0000) 
+    (end 6.0000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 6.0000) 
+    (end 6.8000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 6.0000) 
+    (end 7.6000 6.0000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -7.6000 6.8000) 
+    (end -7.6000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 6.8000) 
+    (end -6.8000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 6.8000) 
+    (end -6.0000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -5.2000 6.8000) 
+    (end -5.2000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 6.8000) 
+    (end -4.4000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 6.8000) 
+    (end -3.6000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 6.8000) 
+    (end -2.8000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 6.8000) 
+    (end -2.0000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -1.2000 6.8000) 
+    (end -1.2000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -0.4000 6.8000) 
+    (end -0.4000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 6.8000) 
+    (end 0.4000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 6.8000) 
+    (end 1.2000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.0000 6.8000) 
+    (end 2.0000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 6.8000) 
+    (end 2.8000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 6.8000) 
+    (end 3.6000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 6.8000) 
+    (end 4.4000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 6.8000) 
+    (end 5.2000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.0000 6.8000) 
+    (end 6.0000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 6.8000) 
+    (end 6.8000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 7.6000 6.8000) 
+    (end 7.6000 6.8000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.8000 7.6000) 
+    (end -6.8000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -6.0000 7.6000) 
+    (end -6.0000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -4.4000 7.6000) 
+    (end -4.4000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -3.6000 7.6000) 
+    (end -3.6000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.8000 7.6000) 
+    (end -2.8000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center -2.0000 7.6000) 
+    (end -2.0000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 0.4000 7.6000) 
+    (end 0.4000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 1.2000 7.6000) 
+    (end 1.2000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 2.8000 7.6000) 
+    (end 2.8000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 3.6000 7.6000) 
+    (end 3.6000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 4.4000 7.6000) 
+    (end 4.4000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 5.2000 7.6000) 
+    (end 5.2000 7.6000) 
+    (layer F.Fab) 
+    (width 0.0100)) 
+  (fp_circle 
+    (center 6.8000 7.6000) 
+    (end 6.8000 7.6000) 
     (layer F.Fab) 
     (width 0.0100)) 
   (fp_line 
@@ -2011,88 +2011,188 @@
     (end -8.7500 -8.7500) 
     (layer F.CrtYd) 
     (width 0.0100)) 
-  (pad G20 smd circle 
-    (at 7.6000 -2.8000) 
+  (pad A2 smd circle 
+    (at -6.8000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad G7 smd circle 
-    (at -2.8000 -2.8000) 
+  (pad A3 smd circle 
+    (at -6.0000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad G6 smd circle 
-    (at -3.6000 -2.8000) 
+  (pad A4 smd circle 
+    (at -5.2000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad G5 smd circle 
-    (at -4.4000 -2.8000) 
+  (pad A5 smd circle 
+    (at -4.4000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad G4 smd circle 
-    (at -5.2000 -2.8000) 
+  (pad A6 smd circle 
+    (at -3.6000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad G3 smd circle 
-    (at -6.0000 -2.8000) 
+  (pad A7 smd circle 
+    (at -2.8000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad G2 smd circle 
-    (at -6.8000 -2.8000) 
+  (pad A8 smd circle 
+    (at -2.0000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad G1 smd circle 
-    (at -7.6000 -2.8000) 
+  (pad A9 smd circle 
+    (at -1.2000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad G9 smd circle 
-    (at -1.2000 -2.8000) 
+  (pad A10 smd circle 
+    (at -0.4000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad G8 smd circle 
-    (at -2.0000 -2.8000) 
+  (pad A11 smd circle 
+    (at 0.4000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad Y19 smd circle 
-    (at 6.8000 7.6000) 
+  (pad A12 smd circle 
+    (at 1.2000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad Y15 smd circle 
-    (at 3.6000 7.6000) 
+  (pad A13 smd circle 
+    (at 2.0000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad Y14 smd circle 
-    (at 2.8000 7.6000) 
+  (pad A14 smd circle 
+    (at 2.8000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad Y17 smd circle 
-    (at 5.2000 7.6000) 
+  (pad A15 smd circle 
+    (at 3.6000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad Y16 smd circle 
-    (at 4.4000 7.6000) 
+  (pad A16 smd circle 
+    (at 4.4000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad Y11 smd circle 
-    (at 0.4000 7.6000) 
+  (pad A17 smd circle 
+    (at 5.2000 -7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad Y12 smd circle 
-    (at 1.2000 7.6000) 
+  (pad A18 smd circle 
+    (at 6.0000 -7.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad A19 smd circle 
+    (at 6.8000 -7.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B1 smd circle 
+    (at -7.6000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B2 smd circle 
+    (at -6.8000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B3 smd circle 
+    (at -6.0000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B4 smd circle 
+    (at -5.2000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B5 smd circle 
+    (at -4.4000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B6 smd circle 
+    (at -3.6000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B7 smd circle 
+    (at -2.8000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B8 smd circle 
+    (at -2.0000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B9 smd circle 
+    (at -1.2000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B10 smd circle 
+    (at -0.4000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B11 smd circle 
+    (at 0.4000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B12 smd circle 
+    (at 1.2000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B13 smd circle 
+    (at 2.0000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B14 smd circle 
+    (at 2.8000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B15 smd circle 
+    (at 3.6000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B16 smd circle 
+    (at 4.4000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B17 smd circle 
+    (at 5.2000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B18 smd circle 
+    (at 6.0000 -6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad B19 smd circle 
+    (at 6.8000 -6.8000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
@@ -2101,28 +2201,903 @@
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
+  (pad C1 smd circle 
+    (at -7.6000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C2 smd circle 
+    (at -6.8000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C3 smd circle 
+    (at -6.0000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C4 smd circle 
+    (at -5.2000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C5 smd circle 
+    (at -4.4000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C6 smd circle 
+    (at -3.6000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C7 smd circle 
+    (at -2.8000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C8 smd circle 
+    (at -2.0000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C9 smd circle 
+    (at -1.2000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C10 smd circle 
+    (at -0.4000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C11 smd circle 
+    (at 0.4000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C12 smd circle 
+    (at 1.2000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C13 smd circle 
+    (at 2.0000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C14 smd circle 
+    (at 2.8000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C15 smd circle 
+    (at 3.6000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C16 smd circle 
+    (at 4.4000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C17 smd circle 
+    (at 5.2000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C18 smd circle 
+    (at 6.0000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C19 smd circle 
+    (at 6.8000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad C20 smd circle 
+    (at 7.6000 -6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D1 smd circle 
+    (at -7.6000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D2 smd circle 
+    (at -6.8000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D3 smd circle 
+    (at -6.0000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D4 smd circle 
+    (at -5.2000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D5 smd circle 
+    (at -4.4000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D6 smd circle 
+    (at -3.6000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D7 smd circle 
+    (at -2.8000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D8 smd circle 
+    (at -2.0000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D9 smd circle 
+    (at -1.2000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D10 smd circle 
+    (at -0.4000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D11 smd circle 
+    (at 0.4000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D12 smd circle 
+    (at 1.2000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D13 smd circle 
+    (at 2.0000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D14 smd circle 
+    (at 2.8000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D15 smd circle 
+    (at 3.6000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D16 smd circle 
+    (at 4.4000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D17 smd circle 
+    (at 5.2000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D18 smd circle 
+    (at 6.0000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D19 smd circle 
+    (at 6.8000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad D20 smd circle 
+    (at 7.6000 -5.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E1 smd circle 
+    (at -7.6000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E2 smd circle 
+    (at -6.8000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E3 smd circle 
+    (at -6.0000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E4 smd circle 
+    (at -5.2000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E5 smd circle 
+    (at -4.4000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E6 smd circle 
+    (at -3.6000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E7 smd circle 
+    (at -2.8000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E8 smd circle 
+    (at -2.0000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E9 smd circle 
+    (at -1.2000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E10 smd circle 
+    (at -0.4000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E11 smd circle 
+    (at 0.4000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E12 smd circle 
+    (at 1.2000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E13 smd circle 
+    (at 2.0000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E14 smd circle 
+    (at 2.8000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E15 smd circle 
+    (at 3.6000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E16 smd circle 
+    (at 4.4000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E17 smd circle 
+    (at 5.2000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E18 smd circle 
+    (at 6.0000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E19 smd circle 
+    (at 6.8000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad E20 smd circle 
+    (at 7.6000 -4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F1 smd circle 
+    (at -7.6000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F2 smd circle 
+    (at -6.8000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F3 smd circle 
+    (at -6.0000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F4 smd circle 
+    (at -5.2000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F5 smd circle 
+    (at -4.4000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F6 smd circle 
+    (at -3.6000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F7 smd circle 
+    (at -2.8000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F8 smd circle 
+    (at -2.0000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F9 smd circle 
+    (at -1.2000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F10 smd circle 
+    (at -0.4000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F11 smd circle 
+    (at 0.4000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F12 smd circle 
+    (at 1.2000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F13 smd circle 
+    (at 2.0000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F14 smd circle 
+    (at 2.8000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F15 smd circle 
+    (at 3.6000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F16 smd circle 
+    (at 4.4000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F17 smd circle 
+    (at 5.2000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F18 smd circle 
+    (at 6.0000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F19 smd circle 
+    (at 6.8000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad F20 smd circle 
+    (at 7.6000 -3.6000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G1 smd circle 
+    (at -7.6000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G2 smd circle 
+    (at -6.8000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G3 smd circle 
+    (at -6.0000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G4 smd circle 
+    (at -5.2000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G5 smd circle 
+    (at -4.4000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G6 smd circle 
+    (at -3.6000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G7 smd circle 
+    (at -2.8000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G8 smd circle 
+    (at -2.0000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G9 smd circle 
+    (at -1.2000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G10 smd circle 
+    (at -0.4000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G11 smd circle 
+    (at 0.4000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G12 smd circle 
+    (at 1.2000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G13 smd circle 
+    (at 2.0000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G14 smd circle 
+    (at 2.8000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G15 smd circle 
+    (at 3.6000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G16 smd circle 
+    (at 4.4000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G17 smd circle 
+    (at 5.2000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G18 smd circle 
+    (at 6.0000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G19 smd circle 
+    (at 6.8000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad G20 smd circle 
+    (at 7.6000 -2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H1 smd circle 
+    (at -7.6000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H2 smd circle 
+    (at -6.8000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H3 smd circle 
+    (at -6.0000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H4 smd circle 
+    (at -5.2000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H5 smd circle 
+    (at -4.4000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H6 smd circle 
+    (at -3.6000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H7 smd circle 
+    (at -2.8000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H8 smd circle 
+    (at -2.0000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H9 smd circle 
+    (at -1.2000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H10 smd circle 
+    (at -0.4000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H11 smd circle 
+    (at 0.4000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H12 smd circle 
+    (at 1.2000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H13 smd circle 
+    (at 2.0000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H14 smd circle 
+    (at 2.8000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H15 smd circle 
+    (at 3.6000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H16 smd circle 
+    (at 4.4000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H17 smd circle 
+    (at 5.2000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H18 smd circle 
+    (at 6.0000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H19 smd circle 
+    (at 6.8000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad H20 smd circle 
+    (at 7.6000 -2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J1 smd circle 
+    (at -7.6000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J2 smd circle 
+    (at -6.8000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J3 smd circle 
+    (at -6.0000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J4 smd circle 
+    (at -5.2000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J5 smd circle 
+    (at -4.4000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J6 smd circle 
+    (at -3.6000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J7 smd circle 
+    (at -2.8000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J8 smd circle 
+    (at -2.0000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J9 smd circle 
+    (at -1.2000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J10 smd circle 
+    (at -0.4000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J11 smd circle 
+    (at 0.4000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J12 smd circle 
+    (at 1.2000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J13 smd circle 
+    (at 2.0000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J14 smd circle 
+    (at 2.8000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J15 smd circle 
+    (at 3.6000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J16 smd circle 
+    (at 4.4000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J17 smd circle 
+    (at 5.2000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J18 smd circle 
+    (at 6.0000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad J19 smd circle 
+    (at 6.8000 -1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
   (pad J20 smd circle 
     (at 7.6000 -1.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad M5 smd circle 
-    (at -4.4000 1.2000) 
+  (pad K1 smd circle 
+    (at -7.6000 -0.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad M4 smd circle 
-    (at -5.2000 1.2000) 
+  (pad K2 smd circle 
+    (at -6.8000 -0.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad M7 smd circle 
-    (at -2.8000 1.2000) 
+  (pad K3 smd circle 
+    (at -6.0000 -0.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad M6 smd circle 
-    (at -3.6000 1.2000) 
+  (pad K4 smd circle 
+    (at -5.2000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K5 smd circle 
+    (at -4.4000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K6 smd circle 
+    (at -3.6000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K7 smd circle 
+    (at -2.8000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K8 smd circle 
+    (at -2.0000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K9 smd circle 
+    (at -1.2000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K10 smd circle 
+    (at -0.4000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K11 smd circle 
+    (at 0.4000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K12 smd circle 
+    (at 1.2000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K13 smd circle 
+    (at 2.0000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K14 smd circle 
+    (at 2.8000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K15 smd circle 
+    (at 3.6000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K16 smd circle 
+    (at 4.4000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K17 smd circle 
+    (at 5.2000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K18 smd circle 
+    (at 6.0000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K19 smd circle 
+    (at 6.8000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad K20 smd circle 
+    (at 7.6000 -0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L1 smd circle 
+    (at -7.6000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L2 smd circle 
+    (at -6.8000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L3 smd circle 
+    (at -6.0000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L4 smd circle 
+    (at -5.2000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L5 smd circle 
+    (at -4.4000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L6 smd circle 
+    (at -3.6000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L7 smd circle 
+    (at -2.8000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L8 smd circle 
+    (at -2.0000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L9 smd circle 
+    (at -1.2000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L10 smd circle 
+    (at -0.4000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L11 smd circle 
+    (at 0.4000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L12 smd circle 
+    (at 1.2000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L13 smd circle 
+    (at 2.0000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L14 smd circle 
+    (at 2.8000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L15 smd circle 
+    (at 3.6000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L16 smd circle 
+    (at 4.4000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L17 smd circle 
+    (at 5.2000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L18 smd circle 
+    (at 6.0000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L19 smd circle 
+    (at 6.8000 0.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad L20 smd circle 
+    (at 7.6000 0.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
@@ -2131,13 +3106,38 @@
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
+  (pad M2 smd circle 
+    (at -6.8000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
   (pad M3 smd circle 
     (at -6.0000 1.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad M2 smd circle 
-    (at -6.8000 1.2000) 
+  (pad M4 smd circle 
+    (at -5.2000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M5 smd circle 
+    (at -4.4000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M6 smd circle 
+    (at -3.6000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M7 smd circle 
+    (at -2.8000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M8 smd circle 
+    (at -2.0000 1.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
@@ -2146,8 +3146,203 @@
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad M8 smd circle 
-    (at -2.0000 1.2000) 
+  (pad M10 smd circle 
+    (at -0.4000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M11 smd circle 
+    (at 0.4000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M12 smd circle 
+    (at 1.2000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M13 smd circle 
+    (at 2.0000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M14 smd circle 
+    (at 2.8000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M15 smd circle 
+    (at 3.6000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M16 smd circle 
+    (at 4.4000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M17 smd circle 
+    (at 5.2000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M18 smd circle 
+    (at 6.0000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M19 smd circle 
+    (at 6.8000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad M20 smd circle 
+    (at 7.6000 1.2000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N1 smd circle 
+    (at -7.6000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N2 smd circle 
+    (at -6.8000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N3 smd circle 
+    (at -6.0000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N4 smd circle 
+    (at -5.2000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N5 smd circle 
+    (at -4.4000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N6 smd circle 
+    (at -3.6000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N7 smd circle 
+    (at -2.8000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N8 smd circle 
+    (at -2.0000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N9 smd circle 
+    (at -1.2000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N10 smd circle 
+    (at -0.4000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N11 smd circle 
+    (at 0.4000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N12 smd circle 
+    (at 1.2000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N13 smd circle 
+    (at 2.0000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N14 smd circle 
+    (at 2.8000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N15 smd circle 
+    (at 3.6000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N16 smd circle 
+    (at 4.4000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N17 smd circle 
+    (at 5.2000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N18 smd circle 
+    (at 6.0000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N19 smd circle 
+    (at 6.8000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad N20 smd circle 
+    (at 7.6000 2.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad P1 smd circle 
+    (at -7.6000 2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad P2 smd circle 
+    (at -6.8000 2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad P3 smd circle 
+    (at -6.0000 2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad P4 smd circle 
+    (at -5.2000 2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad P5 smd circle 
+    (at -4.4000 2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad P6 smd circle 
+    (at -3.6000 2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad P7 smd circle 
+    (at -2.8000 2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad P8 smd circle 
+    (at -2.0000 2.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad P9 smd circle 
+    (at -1.2000 2.8000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
@@ -2201,248 +3396,8 @@
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad H18 smd circle 
-    (at 6.0000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H19 smd circle 
-    (at 6.8000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H10 smd circle 
-    (at -0.4000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H11 smd circle 
-    (at 0.4000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H12 smd circle 
-    (at 1.2000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H13 smd circle 
-    (at 2.0000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H14 smd circle 
-    (at 2.8000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H15 smd circle 
-    (at 3.6000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H16 smd circle 
-    (at 4.4000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H17 smd circle 
-    (at 5.2000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U20 smd circle 
-    (at 7.6000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad W20 smd circle 
-    (at 7.6000 6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E20 smd circle 
-    (at 7.6000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad G19 smd circle 
-    (at 6.8000 -2.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad G18 smd circle 
-    (at 6.0000 -2.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad G17 smd circle 
-    (at 5.2000 -2.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad G16 smd circle 
-    (at 4.4000 -2.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad G15 smd circle 
-    (at 3.6000 -2.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad G14 smd circle 
-    (at 2.8000 -2.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad G13 smd circle 
-    (at 2.0000 -2.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad G12 smd circle 
-    (at 1.2000 -2.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad G11 smd circle 
-    (at 0.4000 -2.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad G10 smd circle 
-    (at -0.4000 -2.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F1 smd circle 
-    (at -7.6000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F2 smd circle 
-    (at -6.8000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F3 smd circle 
-    (at -6.0000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F4 smd circle 
-    (at -5.2000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F5 smd circle 
-    (at -4.4000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F6 smd circle 
-    (at -3.6000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F7 smd circle 
-    (at -2.8000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F8 smd circle 
-    (at -2.0000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F9 smd circle 
-    (at -1.2000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L6 smd circle 
-    (at -3.6000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L7 smd circle 
-    (at -2.8000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L4 smd circle 
-    (at -5.2000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L5 smd circle 
-    (at -4.4000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L2 smd circle 
-    (at -6.8000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L3 smd circle 
-    (at -6.0000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L1 smd circle 
-    (at -7.6000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L8 smd circle 
-    (at -2.0000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L9 smd circle 
-    (at -1.2000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad Y8 smd circle 
-    (at -2.0000 7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad Y3 smd circle 
-    (at -6.0000 7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad Y2 smd circle 
-    (at -6.8000 7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad Y5 smd circle 
-    (at -4.4000 7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad Y7 smd circle 
-    (at -2.8000 7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad Y6 smd circle 
-    (at -3.6000 7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad R4 smd circle 
-    (at -5.2000 3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad R5 smd circle 
-    (at -4.4000 3.6000) 
+  (pad P20 smd circle 
+    (at 7.6000 2.8000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
@@ -2461,673 +3416,83 @@
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad U19 smd circle 
-    (at 6.8000 5.2000) 
+  (pad R4 smd circle 
+    (at -5.2000 3.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad W19 smd circle 
-    (at 6.8000 6.8000) 
+  (pad R5 smd circle 
+    (at -4.4000 3.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad U18 smd circle 
-    (at 6.0000 5.2000) 
+  (pad R16 smd circle 
+    (at 4.4000 3.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad W17 smd circle 
-    (at 5.2000 6.8000) 
+  (pad R17 smd circle 
+    (at 5.2000 3.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad W16 smd circle 
-    (at 4.4000 6.8000) 
+  (pad R18 smd circle 
+    (at 6.0000 3.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad W15 smd circle 
-    (at 3.6000 6.8000) 
+  (pad R19 smd circle 
+    (at 6.8000 3.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad W14 smd circle 
-    (at 2.8000 6.8000) 
+  (pad R20 smd circle 
+    (at 7.6000 3.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad W13 smd circle 
-    (at 2.0000 6.8000) 
+  (pad T1 smd circle 
+    (at -7.6000 4.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad W12 smd circle 
-    (at 1.2000 6.8000) 
+  (pad T2 smd circle 
+    (at -6.8000 4.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad W11 smd circle 
-    (at 0.4000 6.8000) 
+  (pad T3 smd circle 
+    (at -6.0000 4.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad W10 smd circle 
-    (at -0.4000 6.8000) 
+  (pad T4 smd circle 
+    (at -5.2000 4.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K9 smd circle 
-    (at -1.2000 -0.4000) 
+  (pad T5 smd circle 
+    (at -4.4000 4.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K8 smd circle 
-    (at -2.0000 -0.4000) 
+  (pad T6 smd circle 
+    (at -3.6000 4.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad E9 smd circle 
-    (at -1.2000 -4.4000) 
+  (pad T7 smd circle 
+    (at -2.8000 4.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad E8 smd circle 
-    (at -2.0000 -4.4000) 
+  (pad T8 smd circle 
+    (at -2.0000 4.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad E5 smd circle 
-    (at -4.4000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E4 smd circle 
-    (at -5.2000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E7 smd circle 
-    (at -2.8000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E6 smd circle 
-    (at -3.6000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E1 smd circle 
-    (at -7.6000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E3 smd circle 
-    (at -6.0000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E2 smd circle 
-    (at -6.8000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F18 smd circle 
-    (at 6.0000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F19 smd circle 
-    (at 6.8000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F12 smd circle 
-    (at 1.2000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F13 smd circle 
-    (at 2.0000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F10 smd circle 
-    (at -0.4000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F11 smd circle 
-    (at 0.4000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F16 smd circle 
-    (at 4.4000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F17 smd circle 
-    (at 5.2000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F14 smd circle 
-    (at 2.8000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F15 smd circle 
-    (at 3.6000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N12 smd circle 
-    (at 1.2000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N13 smd circle 
-    (at 2.0000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N10 smd circle 
-    (at -0.4000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N11 smd circle 
-    (at 0.4000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N16 smd circle 
-    (at 4.4000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N17 smd circle 
-    (at 5.2000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N14 smd circle 
-    (at 2.8000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N15 smd circle 
-    (at 3.6000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N18 smd circle 
-    (at 6.0000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N19 smd circle 
-    (at 6.8000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad P20 smd circle 
-    (at 7.6000 2.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H20 smd circle 
-    (at 7.6000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad K3 smd circle 
-    (at -6.0000 -0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad K2 smd circle 
-    (at -6.8000 -0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad K1 smd circle 
-    (at -7.6000 -0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad K7 smd circle 
-    (at -2.8000 -0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad K6 smd circle 
-    (at -3.6000 -0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad K5 smd circle 
-    (at -4.4000 -0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad K4 smd circle 
-    (at -5.2000 -0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U11 smd circle 
-    (at 0.4000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U10 smd circle 
-    (at -0.4000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U13 smd circle 
-    (at 2.0000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U12 smd circle 
-    (at 1.2000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U15 smd circle 
-    (at 3.6000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U14 smd circle 
-    (at 2.8000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U17 smd circle 
-    (at 5.2000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U16 smd circle 
-    (at 4.4000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad M11 smd circle 
-    (at 0.4000 1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad M10 smd circle 
-    (at -0.4000 1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad M13 smd circle 
-    (at 2.0000 1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad M12 smd circle 
-    (at 1.2000 1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad M15 smd circle 
-    (at 3.6000 1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad M14 smd circle 
-    (at 2.8000 1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad M17 smd circle 
-    (at 5.2000 1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad M16 smd circle 
-    (at 4.4000 1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad M19 smd circle 
-    (at 6.8000 1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad M18 smd circle 
-    (at 6.0000 1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E19 smd circle 
-    (at 6.8000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E18 smd circle 
-    (at 6.0000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E11 smd circle 
-    (at 0.4000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E10 smd circle 
-    (at -0.4000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E13 smd circle 
-    (at 2.0000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E12 smd circle 
-    (at 1.2000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E15 smd circle 
-    (at 3.6000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E14 smd circle 
-    (at 2.8000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E17 smd circle 
-    (at 5.2000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad E16 smd circle 
-    (at 4.4000 -4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad K20 smd circle 
-    (at 7.6000 -0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad V18 smd circle 
-    (at 6.0000 6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad V19 smd circle 
-    (at 6.8000 6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad V12 smd circle 
-    (at 1.2000 6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad V13 smd circle 
-    (at 2.0000 6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad V10 smd circle 
-    (at -0.4000 6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad V11 smd circle 
-    (at 0.4000 6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad V16 smd circle 
-    (at 4.4000 6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad V17 smd circle 
-    (at 5.2000 6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad V14 smd circle 
-    (at 2.8000 6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad V15 smd circle 
-    (at 3.6000 6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad D8 smd circle 
-    (at -2.0000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad D9 smd circle 
-    (at -1.2000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad D6 smd circle 
-    (at -3.6000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad D7 smd circle 
-    (at -2.8000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad D4 smd circle 
-    (at -5.2000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad D5 smd circle 
-    (at -4.4000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad D2 smd circle 
-    (at -6.8000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad D3 smd circle 
-    (at -6.0000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad D1 smd circle 
-    (at -7.6000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad F20 smd circle 
-    (at 7.6000 -3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N20 smd circle 
-    (at 7.6000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C20 smd circle 
-    (at 7.6000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J8 smd circle 
-    (at -2.0000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J9 smd circle 
-    (at -1.2000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J4 smd circle 
-    (at -5.2000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J5 smd circle 
-    (at -4.4000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J6 smd circle 
-    (at -3.6000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J7 smd circle 
-    (at -2.8000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J1 smd circle 
-    (at -7.6000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J2 smd circle 
-    (at -6.8000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J3 smd circle 
-    (at -6.0000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad W7 smd circle 
-    (at -2.8000 6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad W6 smd circle 
-    (at -3.6000 6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad W5 smd circle 
-    (at -4.4000 6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad W4 smd circle 
-    (at -5.2000 6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad W3 smd circle 
-    (at -6.0000 6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad W2 smd circle 
-    (at -6.8000 6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad W1 smd circle 
-    (at -7.6000 6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad W9 smd circle 
-    (at -1.2000 6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad W8 smd circle 
-    (at -2.0000 6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L18 smd circle 
-    (at 6.0000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L19 smd circle 
-    (at 6.8000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L14 smd circle 
-    (at 2.8000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L15 smd circle 
-    (at 3.6000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L16 smd circle 
-    (at 4.4000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L17 smd circle 
-    (at 5.2000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L10 smd circle 
-    (at -0.4000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L11 smd circle 
-    (at 0.4000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L12 smd circle 
-    (at 1.2000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L13 smd circle 
-    (at 2.0000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T14 smd circle 
-    (at 2.8000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T15 smd circle 
-    (at 3.6000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T16 smd circle 
-    (at 4.4000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T17 smd circle 
-    (at 5.2000 4.4000) 
+  (pad T9 smd circle 
+    (at -1.2000 4.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
@@ -3151,6 +3516,26 @@
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
+  (pad T14 smd circle 
+    (at 2.8000 4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad T15 smd circle 
+    (at 3.6000 4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad T16 smd circle 
+    (at 4.4000 4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad T17 smd circle 
+    (at 5.2000 4.4000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
   (pad T18 smd circle 
     (at 6.0000 4.4000) 
     (size 0.3500 0.3500) 
@@ -3161,213 +3546,108 @@
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad P2 smd circle 
-    (at -6.8000 2.8000) 
+  (pad T20 smd circle 
+    (at 7.6000 4.4000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad P3 smd circle 
-    (at -6.0000 2.8000) 
+  (pad U1 smd circle 
+    (at -7.6000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad P1 smd circle 
-    (at -7.6000 2.8000) 
+  (pad U2 smd circle 
+    (at -6.8000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad P6 smd circle 
-    (at -3.6000 2.8000) 
+  (pad U3 smd circle 
+    (at -6.0000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad P7 smd circle 
-    (at -2.8000 2.8000) 
+  (pad U4 smd circle 
+    (at -5.2000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad P4 smd circle 
-    (at -5.2000 2.8000) 
+  (pad U5 smd circle 
+    (at -4.4000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad P5 smd circle 
-    (at -4.4000 2.8000) 
+  (pad U6 smd circle 
+    (at -3.6000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad M20 smd circle 
-    (at 7.6000 1.2000) 
+  (pad U7 smd circle 
+    (at -2.8000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad P8 smd circle 
-    (at -2.0000 2.8000) 
+  (pad U8 smd circle 
+    (at -2.0000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad P9 smd circle 
-    (at -1.2000 2.8000) 
+  (pad U9 smd circle 
+    (at -1.2000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K13 smd circle 
-    (at 2.0000 -0.4000) 
+  (pad U10 smd circle 
+    (at -0.4000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K12 smd circle 
-    (at 1.2000 -0.4000) 
+  (pad U11 smd circle 
+    (at 0.4000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K11 smd circle 
-    (at 0.4000 -0.4000) 
+  (pad U12 smd circle 
+    (at 1.2000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad D17 smd circle 
-    (at 5.2000 -5.2000) 
+  (pad U13 smd circle 
+    (at 2.0000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K17 smd circle 
-    (at 5.2000 -0.4000) 
+  (pad U14 smd circle 
+    (at 2.8000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K16 smd circle 
-    (at 4.4000 -0.4000) 
+  (pad U15 smd circle 
+    (at 3.6000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K15 smd circle 
-    (at 3.6000 -0.4000) 
+  (pad U16 smd circle 
+    (at 4.4000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K14 smd circle 
-    (at 2.8000 -0.4000) 
+  (pad U17 smd circle 
+    (at 5.2000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K19 smd circle 
-    (at 6.8000 -0.4000) 
+  (pad U18 smd circle 
+    (at 6.0000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K18 smd circle 
-    (at 6.0000 -0.4000) 
+  (pad U19 smd circle 
+    (at 6.8000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad D18 smd circle 
-    (at 6.0000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad D19 smd circle 
-    (at 6.8000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad V20 smd circle 
-    (at 7.6000 6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C9 smd circle 
-    (at -1.2000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C8 smd circle 
-    (at -2.0000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C3 smd circle 
-    (at -6.0000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C2 smd circle 
-    (at -6.8000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C1 smd circle 
-    (at -7.6000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C7 smd circle 
-    (at -2.8000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C6 smd circle 
-    (at -3.6000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C5 smd circle 
-    (at -4.4000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C4 smd circle 
-    (at -5.2000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C19 smd circle 
-    (at 6.8000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C18 smd circle 
-    (at 6.0000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C13 smd circle 
-    (at 2.0000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C12 smd circle 
-    (at 1.2000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C11 smd circle 
-    (at 0.4000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C10 smd circle 
-    (at -0.4000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C17 smd circle 
-    (at 5.2000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C16 smd circle 
-    (at 4.4000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C15 smd circle 
-    (at 3.6000 -6.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad C14 smd circle 
-    (at 2.8000 -6.0000) 
+  (pad U20 smd circle 
+    (at 7.6000 5.2000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
@@ -3416,43 +3696,143 @@
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad D14 smd circle 
-    (at 2.8000 -5.2000) 
+  (pad V10 smd circle 
+    (at -0.4000 6.0000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad D15 smd circle 
-    (at 3.6000 -5.2000) 
+  (pad V11 smd circle 
+    (at 0.4000 6.0000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad D16 smd circle 
-    (at 4.4000 -5.2000) 
+  (pad V12 smd circle 
+    (at 1.2000 6.0000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad K10 smd circle 
-    (at -0.4000 -0.4000) 
+  (pad V13 smd circle 
+    (at 2.0000 6.0000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad D10 smd circle 
-    (at -0.4000 -5.2000) 
+  (pad V14 smd circle 
+    (at 2.8000 6.0000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad D11 smd circle 
-    (at 0.4000 -5.2000) 
+  (pad V15 smd circle 
+    (at 3.6000 6.0000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad D12 smd circle 
-    (at 1.2000 -5.2000) 
+  (pad V16 smd circle 
+    (at 4.4000 6.0000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad D13 smd circle 
-    (at 2.0000 -5.2000) 
+  (pad V17 smd circle 
+    (at 5.2000 6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad V18 smd circle 
+    (at 6.0000 6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad V19 smd circle 
+    (at 6.8000 6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad V20 smd circle 
+    (at 7.6000 6.0000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W1 smd circle 
+    (at -7.6000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W2 smd circle 
+    (at -6.8000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W3 smd circle 
+    (at -6.0000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W4 smd circle 
+    (at -5.2000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W5 smd circle 
+    (at -4.4000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W6 smd circle 
+    (at -3.6000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W7 smd circle 
+    (at -2.8000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W8 smd circle 
+    (at -2.0000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W9 smd circle 
+    (at -1.2000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W10 smd circle 
+    (at -0.4000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W11 smd circle 
+    (at 0.4000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W12 smd circle 
+    (at 1.2000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W13 smd circle 
+    (at 2.0000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W14 smd circle 
+    (at 2.8000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W15 smd circle 
+    (at 3.6000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W16 smd circle 
+    (at 4.4000 6.8000) 
+    (size 0.3500 0.3500) 
+    (layers F.Cu F.Mask F.Paste) 
+    (solder_mask_margin 0.0500)) 
+  (pad W17 smd circle 
+    (at 5.2000 6.8000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
@@ -3461,458 +3841,78 @@
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad B4 smd circle 
-    (at -5.2000 -6.8000) 
+  (pad W19 smd circle 
+    (at 6.8000 6.8000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad B5 smd circle 
-    (at -4.4000 -6.8000) 
+  (pad W20 smd circle 
+    (at 7.6000 6.8000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad B6 smd circle 
-    (at -3.6000 -6.8000) 
+  (pad Y2 smd circle 
+    (at -6.8000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad B7 smd circle 
-    (at -2.8000 -6.8000) 
+  (pad Y3 smd circle 
+    (at -6.0000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad B1 smd circle 
-    (at -7.6000 -6.8000) 
+  (pad Y5 smd circle 
+    (at -4.4000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad B2 smd circle 
-    (at -6.8000 -6.8000) 
+  (pad Y6 smd circle 
+    (at -3.6000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad B3 smd circle 
-    (at -6.0000 -6.8000) 
+  (pad Y7 smd circle 
+    (at -2.8000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad B8 smd circle 
-    (at -2.0000 -6.8000) 
+  (pad Y8 smd circle 
+    (at -2.0000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad B9 smd circle 
-    (at -1.2000 -6.8000) 
+  (pad Y11 smd circle 
+    (at 0.4000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad U9 smd circle 
-    (at -1.2000 5.2000) 
+  (pad Y12 smd circle 
+    (at 1.2000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad U8 smd circle 
-    (at -2.0000 5.2000) 
+  (pad Y14 smd circle 
+    (at 2.8000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad U5 smd circle 
-    (at -4.4000 5.2000) 
+  (pad Y15 smd circle 
+    (at 3.6000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad U4 smd circle 
-    (at -5.2000 5.2000) 
+  (pad Y16 smd circle 
+    (at 4.4000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad U7 smd circle 
-    (at -2.8000 5.2000) 
+  (pad Y17 smd circle 
+    (at 5.2000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)) 
-  (pad U6 smd circle 
-    (at -3.6000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U1 smd circle 
-    (at -7.6000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U3 smd circle 
-    (at -6.0000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad U2 smd circle 
-    (at -6.8000 5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad R16 smd circle 
-    (at 4.4000 3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad R17 smd circle 
-    (at 5.2000 3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad R18 smd circle 
-    (at 6.0000 3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad R19 smd circle 
-    (at 6.8000 3.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T20 smd circle 
-    (at 7.6000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H8 smd circle 
-    (at -2.0000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H9 smd circle 
-    (at -1.2000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H2 smd circle 
-    (at -6.8000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H3 smd circle 
-    (at -6.0000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H1 smd circle 
-    (at -7.6000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H6 smd circle 
-    (at -3.6000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H7 smd circle 
-    (at -2.8000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H4 smd circle 
-    (at -5.2000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad H5 smd circle 
-    (at -4.4000 -2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad B16 smd circle 
-    (at 4.4000 -6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad B17 smd circle 
-    (at 5.2000 -6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad B14 smd circle 
-    (at 2.8000 -6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad B15 smd circle 
-    (at 3.6000 -6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad B12 smd circle 
-    (at 1.2000 -6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad B13 smd circle 
-    (at 2.0000 -6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad B10 smd circle 
-    (at -0.4000 -6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad B11 smd circle 
-    (at 0.4000 -6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad B18 smd circle 
-    (at 6.0000 -6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad B19 smd circle 
-    (at 6.8000 -6.8000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad L20 smd circle 
-    (at 7.6000 0.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J18 smd circle 
-    (at 6.0000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J19 smd circle 
-    (at 6.8000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J16 smd circle 
-    (at 4.4000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J17 smd circle 
-    (at 5.2000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J14 smd circle 
-    (at 2.8000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J15 smd circle 
-    (at 3.6000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J12 smd circle 
-    (at 1.2000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J13 smd circle 
-    (at 2.0000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J10 smd circle 
-    (at -0.4000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad J11 smd circle 
-    (at 0.4000 -1.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad D20 smd circle 
-    (at 7.6000 -5.2000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N8 smd circle 
-    (at -2.0000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N9 smd circle 
-    (at -1.2000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N1 smd circle 
-    (at -7.6000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N2 smd circle 
-    (at -6.8000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N3 smd circle 
-    (at -6.0000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N4 smd circle 
-    (at -5.2000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N5 smd circle 
-    (at -4.4000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N6 smd circle 
-    (at -3.6000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad N7 smd circle 
-    (at -2.8000 2.0000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A15 smd circle 
-    (at 3.6000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A14 smd circle 
-    (at 2.8000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A17 smd circle 
-    (at 5.2000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A16 smd circle 
-    (at 4.4000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A11 smd circle 
-    (at 0.4000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A10 smd circle 
-    (at -0.4000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A13 smd circle 
-    (at 2.0000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A12 smd circle 
-    (at 1.2000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A19 smd circle 
-    (at 6.8000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A18 smd circle 
-    (at 6.0000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A3 smd circle 
-    (at -6.0000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A2 smd circle 
-    (at -6.8000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A5 smd circle 
-    (at -4.4000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A4 smd circle 
-    (at -5.2000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A7 smd circle 
-    (at -2.8000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A6 smd circle 
-    (at -3.6000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A9 smd circle 
-    (at -1.2000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad A8 smd circle 
-    (at -2.0000 -7.6000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T8 smd circle 
-    (at -2.0000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T9 smd circle 
-    (at -1.2000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T6 smd circle 
-    (at -3.6000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T7 smd circle 
-    (at -2.8000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T4 smd circle 
-    (at -5.2000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T5 smd circle 
-    (at -4.4000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T2 smd circle 
-    (at -6.8000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T3 smd circle 
-    (at -6.0000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad T1 smd circle 
-    (at -7.6000 4.4000) 
-    (size 0.3500 0.3500) 
-    (layers F.Cu F.Mask F.Paste) 
-    (solder_mask_margin 0.0500)) 
-  (pad R20 smd circle 
-    (at 7.6000 3.6000) 
+  (pad Y19 smd circle 
+    (at 6.8000 7.6000) 
     (size 0.3500 0.3500) 
     (layers F.Cu F.Mask F.Paste) 
     (solder_mask_margin 0.0500)))
