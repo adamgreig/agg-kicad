@@ -1,0 +1,9 @@
+name: BlackPill
+description: STM32F411 with USB-C
+pad_shape: [2.0, 1.2]
+pin_pitch: 2.54
+pin_shape: [-2.54, 1.60]
+pins: 40
+rows: 2
+row_pitch: 15.24
+chip_shape: [20.78, 52.81]

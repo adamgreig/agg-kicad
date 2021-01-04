@@ -1141,6 +1141,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name blackpill) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/module/blackpill.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name chipv1_0) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/module/chipv1_0.lib") 
