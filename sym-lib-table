@@ -1009,6 +1009,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name zsrxg) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/power/zsrxg.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name adl5320) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/radio/adl5320.lib") 

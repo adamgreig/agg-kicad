@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP ZSRxG
+D 3V to 12V Fixed Voltage Regulator, Input Voltage upto 20V.
+F https://www.diodes.com/assets/Datasheets/ZSR.pdf
+$ENDCMP

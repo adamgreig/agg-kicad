@@ -1,0 +1,11 @@
+name: ZSRxG
+datasheet: https://www.diodes.com/assets/Datasheets/ZSR.pdf
+footprint: agg:SOT-223
+description: 3V to 12V Fixed Voltage Regulator, Input Voltage upto 20V.
+ordercodes:
+  - [Farnell, '3483147']
+pins:
+- - - [IN, 3, pwrin]
+  - - [GND, 2, pwrin]
+- - - [OUT, 1, pwrout]
+  - - [GND, 4, pwrin]
