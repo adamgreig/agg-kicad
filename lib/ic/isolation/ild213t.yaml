@@ -1,0 +1,16 @@
+datasheet: https://www.vishay.com/docs/83647/ild205t.pdf
+description: Dual Channel Optocoupler, Phototransistor Output
+footprint: agg:SOIC-8
+name: ILD213T
+ordercodes:
+  - [Farnell, '1045451']
+pins:
+- - - [IN1_A, 1, passive]
+    - [IN1_C, 2, passive]
+  - - [IN2_A, 3, passive]
+    - [IN2_C, 4, passive]
+- - - [OUT1_C, 8, passive]
+    - [OUT1_E, 7, passive]
+  - - [OUT2_C, 6, passive]
+    - [OUT2_E, 5, passive]
+   

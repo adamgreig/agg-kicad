@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP ILD213T
+D Dual Channel Optocoupler, Phototransistor Output
+F https://www.vishay.com/docs/83647/ild205t.pdf
+$ENDCMP
