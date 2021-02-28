@@ -427,6 +427,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name ild213t) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/isolation/ild213t.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name vo618a) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/isolation/vo618a.lib") 
