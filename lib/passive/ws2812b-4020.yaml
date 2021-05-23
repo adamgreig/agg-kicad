@@ -1,6 +1,7 @@
 datasheet: https://datasheet.lcsc.com/szlcsc/2012110135_Worldsemi-WS2812B-4020_C965557.pdf
 description: Side-view RGB LED
 footprint: agg:WS2812B-4020
+designator: LED
 name: WS2812B-4020
 pins:
 - - - [VDD, 2, pwrin]
