@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP WS2812B-4020
+D Side-view RGB LED
+F https://datasheet.lcsc.com/szlcsc/2012110135_Worldsemi-WS2812B-4020_C965557.pdf
+$ENDCMP
