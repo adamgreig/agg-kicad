@@ -103,6 +103,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name usb4105) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/connector/usb4105.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name ad8041) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/analogue/ad8041.lib") 

@@ -1,0 +1,21 @@
+name: USB4105
+datasheet: https://gct.co/connector/usb4105
+description: Type C USB 2.0 Connector
+designator: J
+ordercodes:
+  - [DigiKey, "2073-USB4105-GF-ACT-ND"]
+footprint: ael:USB4105
+pins:
+- - - [VBUS, A4B9, passive]
+    - [VBUS, B4A9, passive]
+  - - [GND, A1B12, passive]
+    - [GND, B1A12, passive]
+  - - [SHIELD, S, passive]
+- - - [D+, A6, passive]
+    - [D+, B6, passive]
+  - - [D-, A7, passive]
+    - [D-, B7, passive]
+  - - [CC1, A5, passive]
+    - [CC2, B5, passive]
+  - - [SBU1, A8, passive]
+    - [SBU2, B8, passive]
