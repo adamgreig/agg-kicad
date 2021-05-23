@@ -625,6 +625,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name stm32f411vxtx) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32f411vxtx.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name stm32f4xxnxhx) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32f4xxnxhx.lib") 

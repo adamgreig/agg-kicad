@@ -1,0 +1,5 @@
+EESchema-DOCLIB  Version 2.0
+$CMP STM32F411VxTx
+D STM32F411 100 pin LQFP package
+F https://www.st.com/resource/en/datasheet/stm32f411ve.pdf
+$ENDCMP
