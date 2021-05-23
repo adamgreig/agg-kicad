@@ -1,0 +1,10 @@
+datasheet: https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
+description: RGB LED with onboard driver IC
+footprint: ael:WS2812B
+designator: LED
+name: WS2812B
+pins:
+- - - [GND, 3, pwrin]
+  - - [DIN, 4, in]
+- - - [DOUT, 2, out]
+  - - [VCC, 1, pwrin]

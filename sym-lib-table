@@ -1549,6 +1549,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name ws2812b) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/passive/ws2812b.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name xtal) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/passive/xtal.lib") 
