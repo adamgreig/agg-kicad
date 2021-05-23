@@ -1,0 +1,11 @@
+datasheet: https://datasheet.lcsc.com/szlcsc/2010221806_Everlight-Elec-IRM-H638T-TR2-DX_C390031.pdf
+description: Infrared Receiver Module
+footprint: agg:IRM-H6XXT
+name: IRM-H6xxT
+ordercodes:
+  - [LCSC, 'C390031']
+pins:
+- - - [VCC, 4, pwrin]
+    - [GND, 1, pwrin]
+    - [GND, 2, pwrin]
+- - - [OUT, 3, out]

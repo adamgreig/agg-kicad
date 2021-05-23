@@ -343,6 +343,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name "irm-h6xxt") 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/interface/irm-h6xxt.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name iso1050dub) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/interface/iso1050dub.lib") 
