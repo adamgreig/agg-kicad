@@ -71,7 +71,7 @@ def main(libpath, verify=False):
     out.append("#============================================================")
     out.append("")
 
-    for pincount in list(range(1, 21)) + [25, 32, 36]:
+    for pincount in list(range(1, 21)) + [22, 25, 32, 36]:
         out += onerow(pincount)
         out += tworow(pincount)
 
