@@ -517,6 +517,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name txu0104pwr) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/ic/logic/txu0104pwr.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name 24aa01) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/ic/memory/24aa01.lib") 

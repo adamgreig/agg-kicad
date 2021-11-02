@@ -1,0 +1,21 @@
+name: TXU0104PWR
+description: 4-bit fixed direction voltage-level translator
+datasheet: https://www.ti.com/lit/ds/symlink/txu0104.pdf
+footprint: agg:TSSOP-14
+ordercodes:
+  - ['Mouser', '595-TXU0104PWR']
+pins:
+- - - [VCCA, 1, pwrin]
+    - [A1, 2, in]
+    - [A2, 3, in]
+    - [A3, 4, in]
+    - [A4, 5, in]
+    - [NC, 6, nc]
+    - [GND, 7, pwrin]
+- - - [VCCB, 14, pwrin]
+    - [B1Y, 13, out]
+    - [B2Y, 12, out]
+    - [B3Y, 11, out]
+    - [B4Y, 10, out]
+    - [NC, 9, nc]
+    - [OE, 8, in]
