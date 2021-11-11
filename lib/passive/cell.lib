@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# CELL
+#
+DEF CELL BT 0 40 Y Y 1 F N
+F0 "BT" 50 100 50 H V L CNN
+F1 "CELL" 50 -100 50 H V L CNN
+F2 "" 0 -40 50 H I C CNN
+F3 "" 0 -40 50 H I C CNN
+DRAW
+P 2 0 1 0 -70 10 70 10 N
+P 2 0 1 0 -50 -10 50 -10 N
+X ~ + 0 100 87 D 50 50 1 1 w
+X ~ - 0 -100 87 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

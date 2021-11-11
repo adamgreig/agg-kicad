@@ -1339,6 +1339,12 @@
     (options "") 
     (descr "")) 
   (lib 
+    (name cell) 
+    (type Legacy) 
+    (uri "${KIPRJMOD}/lib/passive/cell.lib") 
+    (options "") 
+    (descr "")) 
+  (lib 
     (name cp) 
     (type Legacy) 
     (uri "${KIPRJMOD}/lib/passive/cp.lib") 
