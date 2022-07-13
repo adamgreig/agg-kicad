@@ -1,97 +1,123 @@
 """
-build_lib_connector.py
-Copyright 2015 Adam Greig
+build_lib_connector6.py
+Copyright 2022 Adam Greig
 Licensed under the MIT licence, see LICENSE file for details.
 
-Generate conn.lib, generic multi-pin connector symbols,
-in a range of number of rows and pins.
+Generates conn.lib, generic connector symbols in a range of number of
+rows and pins.
 """
 
-from __future__ import print_function, division
 import sys
 import os.path
+import sexp
 
-
-def onerow(pincount):
-    out = []
-    name = "CONN_01x{:02d}".format(pincount)
-    out.append('#\n# {}\n#'.format(name))
-    out.append('DEF {} J 0 1 Y N 1 F N'.format(name))
-    out.append('F0 "J" -50 100 50 H V L CNN')
-    name_y = -pincount * 100
-    out.append('F1 "{}" -50 {} 50 H V L CNN'.format(name, name_y))
-    out.append('F2 "" 0 0 50 H I C CNN')
-    out.append('F3 "" 0 0 50 H I C CNN')
-    out.append('DRAW')
-    box_y = -(((pincount - 1) * 100) + 50)
-    out.append('S 0 50 -50 {} 0 1 0 f'.format(box_y))
-    for pin in range(pincount):
-        pin_y = -pin * 100
-        out.append('S 0 {} -25 {} 0 1 0 F'.format(pin_y+5, pin_y-5))
-        out.append('X {} {} 100 {} 100 L 50 50 1 1 P'
-                   .format(pin+1, pin+1, pin_y))
-    out.append('ENDDRAW\nENDDEF\n')
+def onerow(n):
+    name = f'CONN_01x{n:02}'
+    out = ['symbol', name,
+        ['pin_names', 'hide'],
+        ['in_bom', 'yes'],
+        ['on_board', 'yes'],
+        ['property', 'Reference', 'J', ['id', 0], ['at', -0.635, 2.54, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]]]],
+        ['property', 'Value', name, ['id', 1], ['at', -2.54, -(n-1)/2 * 2.54, 90],
+         ['effects', ['font', ['size', 1.27, 1.27]]]],
+        ['property', 'Footprint', '', ['id', 2], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['property', 'Datasheet', '', ['id', 3], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['rectangle', ['start', 0, -(n-1)*2.54 - 1.27], ['end', -1.27, 1.27],
+         ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+         ['fill', ['type', 'background']]],
+    ]
+    boxes = []
+    pins = []
+    for pin in range(n):
+        y = -pin * 2.54
+        boxes.append(
+            ['rectangle', ['start', 0, y+0.127], ['end', -0.635, y-0.127],
+             ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+             ['fill', ['type', 'outline']],
+            ]
+        )
+        pins.append(
+            ['pin', 'passive', 'line', ['at', 2.54, y, 180], ['length', 2.54],
+             ['name', str(pin+1), ['effects', ['font', ['size', 1.27, 1.27]]]],
+             ['number', str(pin+1), ['effects', ['font', ['size', 1.27, 1.27]]]],
+            ]
+        )
+    out += boxes
+    out += pins
     return out
 
-
-def tworow(pincount):
-    out = []
-    name = "CONN_02x{:02d}".format(pincount)
-    out.append('#\n# {}\n#'.format(name))
-    out.append('DEF {} J 0 1 Y N 1 F N'.format(name))
-    out.append('F0 "J" -100 100 50 H V L CNN')
-    name_y = -pincount * 100
-    out.append('F1 "{}" -100 {} 50 H V L CNN'.format(name, name_y))
-    out.append('F2 "" 0 0 50 H I C CNN')
-    out.append('F3 "" 0 0 50 H I C CNN')
-    out.append('DRAW')
-    box_y = -(((pincount - 1) * 100) + 50)
-    out.append('S 0 50 -100 {} 0 1 0 f'.format(box_y))
-    for pin in range(pincount):
-        pin_y = -pin * 100
-        out.append('S 0 {} -25 {} 0 1 0 F'.format(pin_y+5, pin_y-5))
-        out.append('S -100 {} -75 {} 0 1 0 F'.format(pin_y+5, pin_y-5))
-        pin_left = 2*pin + 1
-        pin_right = 2*pin + 2
-        out.append('X {} {} -200 {} 100 R 50 50 1 1 P'
-                   .format(pin_left, pin_left, pin_y))
-        out.append('X {} {} 100 {} 100 L 50 50 1 1 P'
-                   .format(pin_right, pin_right, pin_y))
-    out.append('ENDDRAW\nENDDEF\n')
+def tworow(n):
+    name = f'CONN_02x{n:02}'
+    out = ['symbol', name,
+        ['pin_names', 'hide'],
+        ['in_bom', 'yes'],
+        ['on_board', 'yes'],
+        ['property', 'Reference', 'J', ['id', 0], ['at', -1.27, 2.54, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]]]],
+        ['property', 'Value', name, ['id', 1], ['at', -1.27, -n * 2.54, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]]]],
+        ['property', 'Footprint', '', ['id', 2], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['property', 'Datasheet', '', ['id', 3], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['rectangle', ['start', 0, -(n-1)*2.54 - 1.27], ['end', -2.54, 1.27],
+         ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+         ['fill', ['type', 'background']]],
+    ]
+    boxes = []
+    pins = []
+    for pin in range(n):
+        y = -pin * 2.54
+        boxes += [
+            ['rectangle', ['start', 0, y+0.127], ['end', -0.635, y-0.127],
+             ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+             ['fill', ['type', 'outline']],
+            ],
+            ['rectangle', ['start', -2.54, y+0.127], ['end', -1.905, y-0.127],
+             ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+             ['fill', ['type', 'outline']],
+            ],
+        ]
+        pins += [
+            ['pin', 'passive', 'line', ['at', 2.54, y, 180], ['length', 2.54],
+             ['name', str(2*pin+2), ['effects', ['font', ['size', 1.27, 1.27]]]],
+             ['number', str(2*pin+2), ['effects', ['font', ['size', 1.27, 1.27]]]],
+            ],
+            ['pin', 'passive', 'line', ['at', -5.08, y, 0], ['length', 2.54],
+             ['name', str(2*pin+1), ['effects', ['font', ['size', 1.27, 1.27]]]],
+             ['number', str(2*pin+1), ['effects', ['font', ['size', 1.27, 1.27]]]],
+            ],
+        ]
+    out += boxes
+    out += pins
     return out
-
 
 def main(libpath, verify=False):
-    out = []
-    out.append("EESchema-LIBRARY Version 2.3")
-    out.append("#encoding utf-8\n")
-    out.append("#============================================================")
-    out.append("# Automatically generated by agg-kicad build_lib_connector.py")
-    out.append("# See github.com/adamgreig/agg-kicad")
-    out.append("#============================================================")
-    out.append("")
+    out = ['kicad_symbol_lib',
+        ['version', 20211014],
+        ['generator', 'agg-kicad.build_lib_connector']
+    ]
 
-    for pincount in list(range(1, 26)) + [32, 36]:
-        out += onerow(pincount)
-        out += tworow(pincount)
+    for pincount in list(range(1, 26)) + [32, 36, 40]:
+        out.append(onerow(pincount))
+        out.append(tworow(pincount))
 
-    out.append('# End Library\n')
-    lib = "\n".join(out)
+    lib = sexp.generate(out)
 
-    # Check if the library has changed
     if os.path.isfile(libpath):
         with open(libpath) as f:
             oldlib = f.read()
             if lib == oldlib:
                 return True
 
-    # If so, validation has failed or update the library file
     if verify:
         return False
     else:
-        with open(libpath, "w") as f:
+        with open(libpath, 'w') as f:
             f.write(lib)
-
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
