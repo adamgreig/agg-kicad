@@ -42,10 +42,10 @@ def parse(sexp, empty_string_placeholder="~"):
 
 def generate(sexp, depth=0):
     """Turn a list of lists into an s-expression."""
-    single_word = re.compile("^-?[a-zA-Z0-9_*\.]+$")
+    single_word = re.compile("^-?[a-zA-Z_*\.]+$")
     parts = []
-    for node in sexp:
-        if isinstance(node, str) and not single_word.match(node):
+    for idx, node in enumerate(sexp):
+        if isinstance(node, str) and idx > 0 and not single_word.match(node):
             node.replace("\"", "\\\"")
             node.replace("\n", "\\n")
             node = "\"{}\"".format(node)
@@ -56,7 +56,8 @@ def generate(sexp, depth=0):
         if isinstance(node, (list, tuple)):
             node = generate(node, depth+1)
         parts.append(node)
-    return "\n{}({})".format(" "*depth*2, " ".join(parts))
+    out = "\n{}({})".format(" "*depth*2, " ".join(parts)).splitlines()
+    return "\n".join(l.rstrip() for l in out)
 
 
 def find(sexp, *names):
