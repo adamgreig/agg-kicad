@@ -98,7 +98,7 @@ def tworow(n):
 def main(libpath, verify=False):
     out = ['kicad_symbol_lib',
         ['version', 20211014],
-        ['generator', 'agg-kicad.build_lib_connector']
+        ['generator', 'agg_kicad.build_lib_connector']
     ]
 
     for pincount in list(range(1, 26)) + [32, 36, 40]:
