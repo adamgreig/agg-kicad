@@ -1,13 +1,15 @@
 """
 build_lib_power.py
-Copyright 2015 Adam Greig
+Copyright 2015-2022 Adam Greig
 Licensed under the MIT licence, see LICENSE file for details.
 
 Generate generic power symbols for supply and ground nets.
 """
-from __future__ import print_function, division
+
 import sys
 import os.path
+
+import sexp
 
 PWR_NAMES = [
     "VCC", "VDD", "AVCC", "AVDD",
@@ -23,49 +25,93 @@ GND_NAMES = [
 
 
 def gnd(name):
-    out = []
-    out.append('#\n# {}\n#'.format(name))
-    out.append('DEF {} #PWR 0 40 N N 1 F P'.format(name))
-    out.append('F0 "#PWR" -130 40 50 H I L CNN')
-    out.append('F1 "{}" 0 -100 50 H V C CNN'.format(name))
-    out.append('DRAW')
-    out.append('P 2 0 1 0 0 0 0 -30 N')
-    out.append('P 4 0 1 0 -30 -30 30 -30 0 -60 -30 -30 f')
-    out.append('X {} 1 0 0 0 L 50 50 1 1 W N'.format(name))
-    out.append('ENDDRAW\nENDDEF\n#\n')
-    return out
+    return [
+        'symbol', name, ['power'],
+        ['pin_numbers', 'hide'], ['pin_names', ['offset', 0], 'hide'],
+        ['in_bom', 'no'], ['on_board', 'no'],
+        ['property', 'Reference', '#PWR', ['id', 0], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['property', 'Value', name, ['id', 1], ['at', 0, -2.54, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]]]],
+        ['property', 'Footprint', '', ['id', 2], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['property', 'Datasheet', '', ['id', 3], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['polyline', ['pts', ['xy', 0, 0], ['xy', 0, -0.762]],
+         ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+         ['fill', ['type', 'none']]],
+        ['polyline', ['pts', ['xy', -0.762, -0.762], ['xy', 0.762, -0.762],
+                             ['xy', 0, -1.524], ['xy', -0.762, -0.762]],
+         ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+         ['fill', ['type', 'background']]],
+        ['pin', 'power_in', 'line', ['at', 0, 0, 180], ['length', 0], 'hide',
+         ['name', name, ['effects', ['font', ['size', 1.27, 1.27]]]],
+         ['number', '1', ['effects', ['font', ['size', 1.27, 1.27]]]]],
+    ]
 
 
 def pwr(name):
-    out = []
-    out.append('#\n# {}\n#'.format(name))
-    out.append('DEF {} #PWR 0 40 N N 1 F P'.format(name))
-    out.append('F0 "#PWR" 0 110 50 H I L CNN')
-    out.append('F1 "{}" 0 90 50 H V C CNN'.format(name))
-    out.append('DRAW')
-    out.append('P 2 0 1 0 0 50 20 20 N')
-    out.append('P 3 0 1 0 0 0 0 50 -20 20 N')
-    out.append('X {} 1 0 0 0 L 50 50 1 1 W N'.format(name))
-    out.append('ENDDRAW\nENDDEF\n#\n')
-    return out
+    return [
+        'symbol', name, ['power'],
+        ['pin_numbers', 'hide'], ['pin_names', ['offset', 0], 'hide'],
+        ['in_bom', 'no'], ['on_board', 'no'],
+        ['property', 'Reference', '#PWR', ['id', 0], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['property', 'Value', name, ['id', 1], ['at', 0, 2.286, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]]]],
+        ['property', 'Footprint', '', ['id', 2], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['property', 'Datasheet', '', ['id', 3], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['polyline', ['pts', ['xy', 0, 1.27], ['xy', 0.508, 0.508]],
+         ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+         ['fill', ['type', 'none']]],
+        ['polyline', ['pts', ['xy', 0, 0], ['xy', 0, 1.27], ['xy', -0.508, 0.508]],
+         ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+         ['fill', ['type', 'none']]],
+        ['pin', 'power_in', 'line', ['at', 0, 0, 180], ['length', 0], 'hide',
+         ['name', name, ['effects', ['font', ['size', 1.27, 1.27]]]],
+         ['number', '1', ['effects', ['font', ['size', 1.27, 1.27]]]]],
+    ]
+
+
+def flag():
+    return [
+        'symbol', 'FLAG', ['power'],
+        ['pin_numbers', 'hide'], ['pin_names', ['offset', 0], 'hide'],
+        ['in_bom', 'no'], ['on_board', 'no'],
+        ['property', 'Reference', '#FLG', ['id', 0], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['property', 'Value', 'FLAG', ['id', 1], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['property', 'Footprint', '', ['id', 2], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['property', 'Datasheet', '', ['id', 3], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['property', 'ki_description', 'Power flag. Adds power output to nets.',
+         ['id', 4], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['polyline', ['pts', ['xy', 0, 0.508], ['xy', -0.508, 1.016],
+                             ['xy', 0, 1.524], ['xy', 0.508, 1.016],
+                             ['xy', 0, 0.508]],
+         ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+         ['fill', ['type', 'background']]],
+        ['pin', 'power_out', 'line', ['at', 0, 0, 90], ['length', 0.508],
+         ['name', 'FLAG', ['effects', ['font', ['size', 1.27, 1.27]]]],
+         ['number', '1', ['effects', ['font', ['size', 1.27, 1.27]]]]],
+    ]
 
 
 def main(libpath, verify=False):
-    out = []
-    out.append("EESchema-LIBRARY Version 2.3")
-    out.append("#encoding utf-8\n")
-    out.append("#========================================================")
-    out.append("# Automatically generated by agg-kicad build_lib_power.py")
-    out.append("# See github.com/adamgreig/agg-kicad")
-    out.append("#========================================================\n")
-
+    out = ['kicad_symbol_lib',
+           ['version', 20211014], ['generator', 'agg_kicad.build_lib_power']]
     for name in PWR_NAMES:
-        out += pwr(name)
+        out.append(pwr(name))
     for name in GND_NAMES:
-        out += gnd(name)
+        out.append(gnd(name))
+    out.append(flag())
 
-    out.append('# End Library\n')
-    lib = "\n".join(out)
+    lib = sexp.generate(out)
 
     # Check if the library has changed
     if os.path.isfile(libpath):

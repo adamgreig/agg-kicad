@@ -1,6 +1,6 @@
 """
-build_lib_connector6.py
-Copyright 2022 Adam Greig
+build_lib_connector.py
+Copyright 2015-2022 Adam Greig
 Licensed under the MIT licence, see LICENSE file for details.
 
 Generates conn.lib, generic connector symbols in a range of number of
