@@ -15,23 +15,23 @@ import sexp
 
 
 EXCLUDE = {
-    'one_symbol': [],
+    'one_symbol': ['power', 'conn'],
     'pin_grid': [],
     'pin_length': [],
     'pin_font': [],
-    'missing_pins': [],
+    'missing_pins': ['tec2', 'tel10'],
     'duplicate_pins': [],
     'missing_box': [],
-    'invisible_ref': [],
-    'invisible_val': [],
-    'property_horizontal': [],
+    'invisible_ref': ['power'],
+    'invisible_val': ['power'],
+    'property_horizontal': ['conn'],
     'property_font': [],
-    'ref_above_val': [],
+    'ref_above_val': ['power'],
 }
 
 
 def excludes(libf):
-    name = os.path.basename(libf)
+    name = os.path.splitext(os.path.basename(libf))[0].lower()
     return [k for k in EXCLUDE if name in EXCLUDE[k]]
 
 
@@ -40,13 +40,13 @@ class Property:
         self.cfg = cfg
         self.key = cfg[1]
         self.val = cfg[2]
-        self.effects = [p for p in cfg if p[0] == 'effects'][0]
-        self.font = [p for p in self.effects if p[0] == 'font'][0]
+        self.effects = [p for p in cfg if p and p[0] == 'effects'][0]
+        self.font = [p for p in self.effects if p and p[0] == 'font'][0]
         self.font_size = [(float(p[1]), float(p[2])) for p in self.font
                           if p[0] == 'size'][0]
         self.hidden = any(p == 'hide' for p in self.effects)
-        if any(p[0] == 'at' for p in cfg):
-            self.at = [p[1:] for p in cfg if p[0] == 'at'][0]
+        if any(p and p[0] == 'at' for p in cfg):
+            self.at = [p[1:] for p in cfg if p and p[0] == 'at'][0]
             self.x = float(self.at[0])
             self.y = float(self.at[1])
             self.rot = float(self.at[2])
@@ -59,13 +59,13 @@ class Pin:
         self.cfg = cfg
         self.etype = cfg[1]
         self.style = cfg[2]
-        self.at = [c[1:] for c in cfg if c[0] == 'at'][0]
+        self.at = [c[1:] for c in cfg if c and c[0] == 'at'][0]
         self.x = float(self.at[0])
         self.y = float(self.at[1])
         self.rot = float(self.at[2])
-        self.length = [float(c[1]) for c in cfg if c[0] == 'length'][0]
-        self.prop_name = [Property(c) for c in cfg if c[0] == 'name'][0]
-        self.prop_num = [Property(c) for c in cfg if c[0] == 'number'][0]
+        self.length = [float(c[1]) for c in cfg if c and c[0] == 'length'][0]
+        self.prop_name = [Property(c) for c in cfg if c and c[0] == 'name'][0]
+        self.prop_num = [Property(c) for c in cfg if c and c[0] == 'number'][0]
         self.name = self.prop_name.key
         self.num = self.prop_num.key
 
@@ -75,20 +75,20 @@ class Symbol:
         assert cfg[0] == 'symbol'
         self.cfg = cfg
         self.name = cfg[1]
-        self.props = [Property(p) for p in cfg if p[0] == 'property']
+        self.props = [Property(p) for p in cfg if p and p[0] == 'property']
         self.prop_ref = [p for p in self.props if p.key == 'Reference'][0]
         self.prop_val = [p for p in self.props if p.key == 'Value'][0]
         self.prop_fp  = [p for p in self.props if p.key == 'Footprint'][0]
         self.ref = self.prop_ref.val
         self.val = self.prop_val.val
         self.fp = self.prop_fp.val
-        self.pins = [Pin(p) for p in cfg if p[0] == 'pin']
-        self.polys = [p for p in cfg if p[0] == 'polyline']
-        self.rects = [p for p in cfg if p[0] == 'rectangle']
-        for subsym in [s for s in cfg if s[0] == 'symbol']:
-            self.pins += [Pin(p) for p in subsym if p[0] == 'pin']
-            self.polys += [p for p in subsym if p[0] == 'polyline']
-            self.rects += [p for p in subsym if p[0] == 'rectangle']
+        self.pins = [Pin(p) for p in cfg if p and p[0] == 'pin']
+        self.polys = [p for p in cfg if p and p[0] == 'polyline']
+        self.rects = [p for p in cfg if p and p[0] == 'rectangle']
+        for subsym in [s for s in cfg if s and s[0] == 'symbol']:
+            self.pins += [Pin(p) for p in subsym if p and p[0] == 'pin']
+            self.polys += [p for p in subsym if p and p[0] == 'polyline']
+            self.rects += [p for p in subsym if p and p[0] == 'rectangle']
 
 
 def is_multiple(n, m):
@@ -134,12 +134,12 @@ def check_pins(symbol, exclusions, errs):
         expected = set(range(min(nums_numeric), max(nums_numeric)+1))
         if set(nums_numeric) != expected:
             missing = [str(x) for x in set(expected) - set(nums_numeric)]
-            errs.append(f"{sym.name} missing pins {missing}")
+            errs.append(f"{symbol.name} missing pins {missing}")
 
     if 'duplicate_pins' not in exclusions and nums:
         duplicates = set([str(x) for x in nums if nums.count(x) > 1])
         if duplicates:
-            errs.append(f"{sym.name} has duplicate pins {duplicates}")
+            errs.append(f"{symbol.name} has duplicate pins {duplicates}")
 
 
 
@@ -176,8 +176,8 @@ def check_fields(symbol, exclusions, errs, prettypath):
         path = os.path.join(prettypath, fp)
         if not os.path.exists(path):
             errs.append(f"Component references non-existant footprint {fp}")
-    elif len(fp) > 0 and ":" not in fp:
-        errs.append(f"Footprint {fp} doesn't specify a library name")
+    elif len(symbol.fp) > 0 and ":" not in symbol.fp:
+        errs.append(f"Footprint {symbol.fp} doesn't specify a library name")
 
 
 def checklib(libf, prettypath, verbose=False):

@@ -12,7 +12,7 @@ import re
 from decimal import Decimal
 
 
-def parse(sexp, empty_string_placeholder="~"):
+def parse(sexp, empty_string_placeholder=""):
     """
     Parse an S-expression into Python lists.
     """
