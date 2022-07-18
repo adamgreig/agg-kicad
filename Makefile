@@ -48,7 +48,7 @@ build-lib-power:
 	python3 scripts/build_lib_power.py lib/power/power.kicad_sym
 
 verify-lib-power:
-	python3 scripts/build_lib_power.py lib/power/power.kicad_sym --verkicad_sym
+	python3 scripts/build_lib_power.py lib/power/power.kicad_sym --verify
 
 build-mod-chip:
 	python3 scripts/build_mod_chip.py agg.pretty/ mod/chip

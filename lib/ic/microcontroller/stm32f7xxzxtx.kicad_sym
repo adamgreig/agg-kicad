@@ -1,0 +1,1644 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "STM32F7xxZxTx"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -13.9700 109.2200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "STM32F7xxZxTx"
+      (id 1)
+      (at -13.9700 -109.2200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:LQFP-144"
+      (id 2)
+      (at -13.9700 -111.7600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00273119.pdf"
+      (id 3)
+      (at -13.9700 -114.3000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "2535499"
+      (id 4)
+      (at -13.9700 -116.8400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "STM32F7 144 pin LQFP package"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "STM32F7xxZxTx_0_0"
+      (rectangle
+        (start -13.9700 107.9500)
+        (end 13.9700 -107.9500)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -17.7800 106.6800 0)
+        (length 3.8100)
+        (name VBAT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 104.1400 0)
+        (length 3.8100)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "17"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 101.6000 0)
+        (length 3.8100)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "30"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 99.0600 0)
+        (length 3.8100)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "39"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 96.5200 0)
+        (length 3.8100)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "52"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 93.9800 0)
+        (length 3.8100)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "62"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 91.4400 0)
+        (length 3.8100)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "72"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 88.9000 0)
+        (length 3.8100)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "84"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 86.3600 0)
+        (length 3.8100)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "108"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 83.8200 0)
+        (length 3.8100)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "131"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 81.2800 0)
+        (length 3.8100)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "144"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 78.7400 0)
+        (length 3.8100)
+        (name VDDSDMMC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "121"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 76.2000 0)
+        (length 3.8100)
+        (name VDDUSB
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "95"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 73.6600 0)
+        (length 3.8100)
+        (name VDDA
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "33"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -17.7800 71.1200 0)
+        (length 3.8100)
+        (name "VREF+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "32"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -17.7800 66.0400 0)
+        (length 3.8100)
+        (name "VCAP1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "71"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -17.7800 63.5000 0)
+        (length 3.8100)
+        (name "VCAP2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "106"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 58.4200 0)
+        (length 3.8100)
+        (name VSS
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "16"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 55.8800 0)
+        (length 3.8100)
+        (name VSS
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "38"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 53.3400 0)
+        (length 3.8100)
+        (name VSS
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "51"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 50.8000 0)
+        (length 3.8100)
+        (name VSS
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "61"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 48.2600 0)
+        (length 3.8100)
+        (name VSS
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "83"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 45.7200 0)
+        (length 3.8100)
+        (name VSS
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "94"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 43.1800 0)
+        (length 3.8100)
+        (name VSS
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "107"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 40.6400 0)
+        (length 3.8100)
+        (name VSS
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "120"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 38.1000 0)
+        (length 3.8100)
+        (name VSS
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "130"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 35.5600 0)
+        (length 3.8100)
+        (name VSSA
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "31"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -17.7800 30.4800 0)
+        (length 3.8100)
+        (name PDR_ON
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "143"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -17.7800 27.9400 0)
+        (length 3.8100)
+        (name "BOOT0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "138"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -17.7800 25.4000 0)
+        (length 3.8100)
+        (name NRST
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "25"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 20.3200 0)
+        (length 3.8100)
+        (name "PH0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "23"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 17.7800 0)
+        (length 3.8100)
+        (name "PH1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "24"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 12.7000 0)
+        (length 3.8100)
+        (name "PA0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "34"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 10.1600 0)
+        (length 3.8100)
+        (name "PA1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "35"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 7.6200 0)
+        (length 3.8100)
+        (name "PA2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "36"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 5.0800 0)
+        (length 3.8100)
+        (name "PA3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "37"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 2.5400 0)
+        (length 3.8100)
+        (name "PA4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "40"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -0.0000 0)
+        (length 3.8100)
+        (name "PA5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "41"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -2.5400 0)
+        (length 3.8100)
+        (name "PA6"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "42"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -5.0800 0)
+        (length 3.8100)
+        (name "PA7"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "43"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -7.6200 0)
+        (length 3.8100)
+        (name "PA8"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "100"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -10.1600 0)
+        (length 3.8100)
+        (name "PA9"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "101"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -12.7000 0)
+        (length 3.8100)
+        (name "PA10"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "102"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -15.2400 0)
+        (length 3.8100)
+        (name "PA11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "103"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -17.7800 0)
+        (length 3.8100)
+        (name "PA12"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "104"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -20.3200 0)
+        (length 3.8100)
+        (name "PA13"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "105"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -22.8600 0)
+        (length 3.8100)
+        (name "PA14"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "109"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -25.4000 0)
+        (length 3.8100)
+        (name "PA15"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "110"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -30.4800 0)
+        (length 3.8100)
+        (name "PB0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "46"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -33.0200 0)
+        (length 3.8100)
+        (name "PB1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "47"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -35.5600 0)
+        (length 3.8100)
+        (name "PB2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "48"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -38.1000 0)
+        (length 3.8100)
+        (name "PB3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "133"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -40.6400 0)
+        (length 3.8100)
+        (name "PB4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "134"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -43.1800 0)
+        (length 3.8100)
+        (name "PB5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "135"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -45.7200 0)
+        (length 3.8100)
+        (name "PB6"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "136"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -48.2600 0)
+        (length 3.8100)
+        (name "PB7"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "137"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -50.8000 0)
+        (length 3.8100)
+        (name "PB8"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "139"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -53.3400 0)
+        (length 3.8100)
+        (name "PB9"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "140"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -55.8800 0)
+        (length 3.8100)
+        (name "PB10"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "69"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -58.4200 0)
+        (length 3.8100)
+        (name "PB11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "70"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -60.9600 0)
+        (length 3.8100)
+        (name "PB12"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "73"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -63.5000 0)
+        (length 3.8100)
+        (name "PB13"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "74"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -66.0400 0)
+        (length 3.8100)
+        (name "PB14"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "75"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -17.7800 -68.5800 0)
+        (length 3.8100)
+        (name "PB15"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "76"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 106.6800 180)
+        (length 3.8100)
+        (name "PC0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "26"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 104.1400 180)
+        (length 3.8100)
+        (name "PC1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "27"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 101.6000 180)
+        (length 3.8100)
+        (name "PC2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "28"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 99.0600 180)
+        (length 3.8100)
+        (name "PC3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "29"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 96.5200 180)
+        (length 3.8100)
+        (name "PC4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "44"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 93.9800 180)
+        (length 3.8100)
+        (name "PC5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "45"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 91.4400 180)
+        (length 3.8100)
+        (name "PC6"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "96"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 88.9000 180)
+        (length 3.8100)
+        (name "PC7"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "97"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 86.3600 180)
+        (length 3.8100)
+        (name "PC8"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "98"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 83.8200 180)
+        (length 3.8100)
+        (name "PC9"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "99"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 81.2800 180)
+        (length 3.8100)
+        (name "PC10"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "111"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 78.7400 180)
+        (length 3.8100)
+        (name "PC11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "112"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 76.2000 180)
+        (length 3.8100)
+        (name "PC12"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "113"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 73.6600 180)
+        (length 3.8100)
+        (name "PC13"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 71.1200 180)
+        (length 3.8100)
+        (name "PC14"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 68.5800 180)
+        (length 3.8100)
+        (name "PC15"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 63.5000 180)
+        (length 3.8100)
+        (name "PD0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "114"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 60.9600 180)
+        (length 3.8100)
+        (name "PD1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "115"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 58.4200 180)
+        (length 3.8100)
+        (name "PD2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "116"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 55.8800 180)
+        (length 3.8100)
+        (name "PD3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "117"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 53.3400 180)
+        (length 3.8100)
+        (name "PD4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "118"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 50.8000 180)
+        (length 3.8100)
+        (name "PD5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "119"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 48.2600 180)
+        (length 3.8100)
+        (name "PD6"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "122"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 45.7200 180)
+        (length 3.8100)
+        (name "PD7"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "123"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 43.1800 180)
+        (length 3.8100)
+        (name "PD8"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "77"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 40.6400 180)
+        (length 3.8100)
+        (name "PD9"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "78"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 38.1000 180)
+        (length 3.8100)
+        (name "PD10"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "79"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 35.5600 180)
+        (length 3.8100)
+        (name "PD11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "80"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 33.0200 180)
+        (length 3.8100)
+        (name "PD12"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "81"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 30.4800 180)
+        (length 3.8100)
+        (name "PD13"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "82"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 27.9400 180)
+        (length 3.8100)
+        (name "PD14"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "85"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 25.4000 180)
+        (length 3.8100)
+        (name "PD15"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "86"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 20.3200 180)
+        (length 3.8100)
+        (name "PE0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "141"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 17.7800 180)
+        (length 3.8100)
+        (name "PE1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "142"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 15.2400 180)
+        (length 3.8100)
+        (name "PE2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 12.7000 180)
+        (length 3.8100)
+        (name "PE3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 10.1600 180)
+        (length 3.8100)
+        (name "PE4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 7.6200 180)
+        (length 3.8100)
+        (name "PE5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 5.0800 180)
+        (length 3.8100)
+        (name "PE6"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 2.5400 180)
+        (length 3.8100)
+        (name "PE7"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "58"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -0.0000 180)
+        (length 3.8100)
+        (name "PE8"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "59"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -2.5400 180)
+        (length 3.8100)
+        (name "PE9"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "60"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -5.0800 180)
+        (length 3.8100)
+        (name "PE10"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "63"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -7.6200 180)
+        (length 3.8100)
+        (name "PE11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "64"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -10.1600 180)
+        (length 3.8100)
+        (name "PE12"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "65"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -12.7000 180)
+        (length 3.8100)
+        (name "PE13"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "66"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -15.2400 180)
+        (length 3.8100)
+        (name "PE14"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "67"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -17.7800 180)
+        (length 3.8100)
+        (name "PE15"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "68"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -22.8600 180)
+        (length 3.8100)
+        (name "PF0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -25.4000 180)
+        (length 3.8100)
+        (name "PF1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -27.9400 180)
+        (length 3.8100)
+        (name "PF2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -30.4800 180)
+        (length 3.8100)
+        (name "PF3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -33.0200 180)
+        (length 3.8100)
+        (name "PF4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -35.5600 180)
+        (length 3.8100)
+        (name "PF5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "15"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -38.1000 180)
+        (length 3.8100)
+        (name "PF6"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "18"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -40.6400 180)
+        (length 3.8100)
+        (name "PF7"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "19"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -43.1800 180)
+        (length 3.8100)
+        (name "PF8"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "20"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -45.7200 180)
+        (length 3.8100)
+        (name "PF9"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "21"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -48.2600 180)
+        (length 3.8100)
+        (name "PF10"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "22"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -50.8000 180)
+        (length 3.8100)
+        (name "PF11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "49"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -53.3400 180)
+        (length 3.8100)
+        (name "PF12"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "50"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -55.8800 180)
+        (length 3.8100)
+        (name "PF13"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "53"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -58.4200 180)
+        (length 3.8100)
+        (name "PF14"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "54"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -60.9600 180)
+        (length 3.8100)
+        (name "PF15"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "55"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -66.0400 180)
+        (length 3.8100)
+        (name "PG0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "56"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -68.5800 180)
+        (length 3.8100)
+        (name "PG1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "57"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -71.1200 180)
+        (length 3.8100)
+        (name "PG2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "87"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -73.6600 180)
+        (length 3.8100)
+        (name "PG3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "88"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -76.2000 180)
+        (length 3.8100)
+        (name "PG4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "89"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -78.7400 180)
+        (length 3.8100)
+        (name "PG5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "90"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -81.2800 180)
+        (length 3.8100)
+        (name "PG6"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "91"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -83.8200 180)
+        (length 3.8100)
+        (name "PG7"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "92"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -86.3600 180)
+        (length 3.8100)
+        (name "PG8"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "93"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -88.9000 180)
+        (length 3.8100)
+        (name "PG9"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "124"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -91.4400 180)
+        (length 3.8100)
+        (name "PG10"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "125"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -93.9800 180)
+        (length 3.8100)
+        (name "PG11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "126"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -96.5200 180)
+        (length 3.8100)
+        (name "PG12"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "127"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -99.0600 180)
+        (length 3.8100)
+        (name "PG13"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "128"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -101.6000 180)
+        (length 3.8100)
+        (name "PG14"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "129"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 -104.1400 180)
+        (length 3.8100)
+        (name "PG15"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "132"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))
