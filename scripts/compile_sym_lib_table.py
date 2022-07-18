@@ -1,15 +1,14 @@
 """
 compile_sym_lib_table.py
-Copyright 2020 Adam Greig
+Copyright 2020-2022 Adam Greig
 Licensed under the MIT licence, see LICENSE file for details.
 
 Generates a KiCad sym-lib-table file with all libraries in agg-kicad,
 for use with the symbol editor. The generated file is for agg-kicad use
 and should not generally be copied into other projects, which can instead
-use the aggregate agg.lib file.
+use the aggregate agg-kicad.lib file.
 """
 
-from __future__ import print_function, division
 import sys
 import os
 import fnmatch
@@ -20,11 +19,11 @@ def maketable(libpath):
     libs = []
     for dirpath, dirnames, files in os.walk(libpath):
         dirnames.sort()
-        for f in fnmatch.filter(sorted(files), "*.lib"):
+        for f in fnmatch.filter(sorted(files), "*.kicad_sym"):
             path = os.path.join(dirpath, f)
             name = os.path.splitext(os.path.basename(path))[0]
             path = path.replace("\\", "/")
-            libs.append(["lib", ["name", name], ["type", "Legacy"],
+            libs.append(["lib", ["name", name], ["type", "KiCad"],
                         ["uri", os.path.join("${KIPRJMOD}", path)],
                         ["options", ""], ["descr", ""]])
     return ["sym_lib_table"] + libs
