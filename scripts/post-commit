@@ -4,7 +4,6 @@ if [ $? -ne 0 ]
 then
     echo "Note: Compiled files outdated, recompiling and committing."
     make compile
-    git add agg-kicad.lib
-    git add agg-kicad.pro
+    git add agg-kicad.kicad_sym
     git commit -m "Rebuild compiled files"
 fi

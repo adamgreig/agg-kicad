@@ -6,8 +6,8 @@ Licensed under the MIT licence, see LICENSE file for details.
 Generate symbols for generic black-box ICs etc.
 
 Symbols configuration:
-Each symbol is defined by a .yaml file in the same path that the .lib file
-should be placed. Each file contains the following keys:
+Each symbol is defined by a .yaml file in the same path that the .kicad_sym
+file should be placed. Each file contains the following keys:
 designator: optional, default "IC", the default reference designator
 footprint: optional, an associated footprint to autofill
 datasheet: optional, a URL or path to a datasheet

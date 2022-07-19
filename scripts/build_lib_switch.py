@@ -3,7 +3,7 @@ build_lib_switch.py
 Copyright 2016-2022 Adam Greig
 Licensed under the MIT licence, see LICENSE file for details.
 
-Generate switch.lib, generic nPmT switch symbols.
+Generate switch.kicad_sym, generic nPmT switch symbols.
 """
 
 import sys

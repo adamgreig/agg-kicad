@@ -11,14 +11,14 @@ Directory                |  Contents
 [`ui`](ui)               | User interface elements including buzzers, switches, etc
 
 
-The file `agg-kicad.lib` contains all of the symbols in this library.
+The file `agg-kicad.kicad_sym` contains all of the symbols in this library.
 
 ## General Guidelines
 
 ### Enforced automatically
 
 * One symbol per library
-    * Exception for automatically generated libraries such as `conn.lib`
+    * Exception for automatically generated libraries such as `conn.kicad_sym`
 * Library filename the same as the part name
 * All pins on 100mil grid
 * 100mil pin length for ICs and similar symbols

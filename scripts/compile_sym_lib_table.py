@@ -6,7 +6,7 @@ Licensed under the MIT licence, see LICENSE file for details.
 Generates a KiCad sym-lib-table file with all libraries in agg-kicad,
 for use with the symbol editor. The generated file is for agg-kicad use
 and should not generally be copied into other projects, which can instead
-use the aggregate agg-kicad.lib file.
+use the aggregate agg-kicad.kicad_sym file.
 """
 
 import sys

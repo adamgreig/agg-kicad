@@ -6,33 +6,33 @@ You'll probably need to install PyYAML first:
 
 ## Builders
 
-These scripts generate `.lib` and `.kicad_mod` files based on parameters inside 
-the script. They typically are used to automate creation of tedious or similar 
-parts.
+These scripts generate `.kicad_sym` and `.kicad_mod` files based on parameters
+inside the script. They typically are used to automate creation of tedious or
+similar parts.
 
 Run with `--verify` as the final argument to instead verify that the existing 
 compiled file is up-to-date (returns exit status 0 if up to date, 1 otherwise).
 
 ### build_lib_connector.py
 
-This script generates `conn.lib` containing a number of similar connectors with 
-different numbers of pins.
+This script generates `conn.kicad_sym` containing a number of similar
+connectors with different numbers of pins.
 
-`python3 build_lib_connector.py ../lib/connectors/conn.lib`
+`python3 build_lib_connector.py ../lib/connectors/conn.kicad_sym`
 
 ### build_lib_ic.py
 
-This script generates multiple `.lib` files, one per IC, configured by `.yaml`
-files inside the library path you point it at.
+This script generates multiple `.kicad_sym` files, one per IC, configured by
+`.yaml` files inside the library path you point it at.
 
 `python3 build_lib_ic.py ../lib/`
 
 ### build_lib_power.py
 
-This script generates `power.lib` containing a number of power symbols with 
-different names, such as `VCC`, `VDD`, `3v3`, `GND`, `DGND`, etc.
+This script generates `power.kicad_sym` containing a number of power symbols
+with different names, such as `VCC`, `VDD`, `3v3`, `GND`, `DGND`, etc.
 
-`python3 powerlib.py ../lib/power/power.lib`
+`python3 powerlib.py ../lib/power/power.kicad_sym`
 
 ### build_mod_chip.py
 
@@ -57,13 +57,14 @@ different pin counts.
 
 ## Checkers
 
-These scripts check `.lib` and `.kicad_mod` files against a set of rules. They 
-return with exit code 0 if all checks passed.
+These scripts check `.kicad_sym` and `.kicad_mod` files against a set of rules.
+They return with exit code 0 if all checks passed.
 
 ### check_lib.py
 
-This script checks all the `.lib` files in a directory and validates that they 
-conform to as many of the rules as can reasonably be automatically checked.
+This script checks all the `.kicad_sym` files in a directory and validates that
+they conform to as many of the rules as can reasonably be automatically
+checked.
 
 The top of the file includes a list of library files that are automatically 
 generated, which are allowed to include more than one part per library.
@@ -90,21 +91,13 @@ compiled file is up-to-date (returns exit status 0 if up to date, 1 otherwise).
 
 ### compile_lib.py
 
-This script generates a single `agg-kicad.lib` file containing all the 
-schematic symbols in all the individual `.lib` files.
+This script generates a single `agg-kicad.kicad_sym` file containing all the 
+schematic symbols in all the individual `.kicad_sym` files.
 
 Run with `--verify` as the final argument to instead verify that the existing 
 compiled library is up-to-date.
 
-`python3 compilelib.py ../lib ../agg-kicad.lib`
-
-### compile_pro.py
-
-This script creates a blank KiCAD project file containing all the schematic 
-libraries in the given directory. Useful for generating a development project 
-for editing schematic symbols.
-
-`python3 genproject.py ../lib ../agg-kicad.pro`
+`python3 compilelib.py ../lib ../agg-kicad.kicad_sym`
 
 ## Other Scripts
 
