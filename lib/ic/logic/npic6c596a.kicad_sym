@@ -83,7 +83,7 @@
       (pin input line
         (at -10.1600 5.0800 0)
         (length 2.5400)
-        (name "~MR"
+        (name "~{MR}"
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -94,7 +94,7 @@
       (pin input line
         (at -10.1600 2.5400 0)
         (length 2.5400)
-        (name "~OE"
+        (name "~{OE}"
           (effects
             (font
               (size 1.2700 1.2700))))

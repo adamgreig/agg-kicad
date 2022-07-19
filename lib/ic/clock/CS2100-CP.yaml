@@ -13,4 +13,4 @@ pins:
     - [AUX_OUT, 4, out]
   - - [SDA/CDIN, 10, bidi]
     - [SCL/CCLK, 9, in]
-    - [AD0/~CS, 8, in]
+    - ["AD0/~{CS}", 8, in]

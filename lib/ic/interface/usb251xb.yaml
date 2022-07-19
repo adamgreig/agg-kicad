@@ -27,7 +27,7 @@ pins:
     - [HS_IND/CFG_SEL1, 25, bidi]
 
   - - [TEST, 11, nc]
-    - [~RESET, 26, in]
+    - ["~{RESET}", 26, in]
     - [RBIAS, 35, passive]
     - [PLLFILT, 34, passive]
     - [CRFILT, 14, passive]
@@ -43,11 +43,11 @@ pins:
     - [USBDP_DN4, 9, bidi]
 
   - - [PRTPWR1/BC_EN1, 12, bidi]
-    - [~OCS1, 13, in]
+    - ["~{OCS1}", 13, in]
   - - [PRTPWR2/BC_EN2, 16, bidi]
-    - [~OCS2, 17, in]
+    - ["~{OCS2}", 17, in]
   - - [PRTPWR3/BC_EN3, 18, bidi]
-    - [~OCS3, 19, in]
+    - ["~{OCS3}", 19, in]
   - - [PRTPWR4/BC_EN4, 20, bidi]
-    - [~OCS4, 21, in]
+    - ["~{OCS4}", 21, in]
 

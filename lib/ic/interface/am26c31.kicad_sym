@@ -9,35 +9,35 @@
     (on_board yes)
     (property Reference IC
       (id 0)
-      (at -5.0800 17.7800 0)
+      (at -7.6200 17.7800 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left)))
     (property Value "AM26C31"
       (id 1)
-      (at -5.0800 -17.7800 0)
+      (at -7.6200 -17.7800 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left)))
     (property Footprint "agg:SOIC-16"
       (id 2)
-      (at -5.0800 -20.3200 0)
+      (at -7.6200 -20.3200 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left) hide))
     (property Datasheet "http://www.ti.com.cn/cn/lit/ds/symlink/am26c31.pdf"
       (id 3)
-      (at -5.0800 -22.8600 0)
+      (at -7.6200 -22.8600 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left) hide))
     (property Farnell "4975637"
       (id 4)
-      (at -5.0800 -25.4000 0)
+      (at -7.6200 -25.4000 0)
       (effects
         (font
           (size 1.2700 1.2700))
@@ -50,8 +50,8 @@
           (size 1.2700 1.2700)) hide))
     (symbol "AM26C31_0_0"
       (rectangle
-        (start -5.0800 16.5100)
-        (end 5.0800 -16.5100)
+        (start -7.6200 16.5100)
+        (end 7.6200 -16.5100)
         (stroke
           (width 0)
           (type default)
@@ -59,7 +59,7 @@
         (fill
           (type background)))
       (pin power_in line
-        (at -7.6200 15.2400 0)
+        (at -10.1600 15.2400 0)
         (length 2.5400)
         (name VCC
           (effects
@@ -70,7 +70,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_in line
-        (at -7.6200 12.7000 0)
+        (at -10.1600 12.7000 0)
         (length 2.5400)
         (name GND
           (effects
@@ -81,7 +81,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -7.6200 7.6200 0)
+        (at -10.1600 7.6200 0)
         (length 2.5400)
         (name G
           (effects
@@ -92,9 +92,9 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -7.6200 5.0800 0)
+        (at -10.1600 5.0800 0)
         (length 2.5400)
-        (name "~G"
+        (name "~{G}"
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -103,7 +103,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -7.6200 0.0000 0)
+        (at -10.1600 0.0000 0)
         (length 2.5400)
         (name "1A"
           (effects
@@ -114,7 +114,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -7.6200 -5.0800 0)
+        (at -10.1600 -5.0800 0)
         (length 2.5400)
         (name "2A"
           (effects
@@ -125,7 +125,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -7.6200 -10.1600 0)
+        (at -10.1600 -10.1600 0)
         (length 2.5400)
         (name "3A"
           (effects
@@ -136,7 +136,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -7.6200 -15.2400 0)
+        (at -10.1600 -15.2400 0)
         (length 2.5400)
         (name "4A"
           (effects
@@ -147,7 +147,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin output line
-        (at 7.6200 15.2400 180)
+        (at 10.1600 15.2400 180)
         (length 2.5400)
         (name "1Y"
           (effects
@@ -158,7 +158,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin output line
-        (at 7.6200 12.7000 180)
+        (at 10.1600 12.7000 180)
         (length 2.5400)
         (name "1Z"
           (effects
@@ -169,7 +169,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin output line
-        (at 7.6200 7.6200 180)
+        (at 10.1600 7.6200 180)
         (length 2.5400)
         (name "2Y"
           (effects
@@ -180,7 +180,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin output line
-        (at 7.6200 5.0800 180)
+        (at 10.1600 5.0800 180)
         (length 2.5400)
         (name "2Z"
           (effects
@@ -191,7 +191,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin output line
-        (at 7.6200 0.0000 180)
+        (at 10.1600 0.0000 180)
         (length 2.5400)
         (name "3Y"
           (effects
@@ -202,7 +202,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin output line
-        (at 7.6200 -2.5400 180)
+        (at 10.1600 -2.5400 180)
         (length 2.5400)
         (name "3Z"
           (effects
@@ -213,7 +213,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin output line
-        (at 7.6200 -7.6200 180)
+        (at 10.1600 -7.6200 180)
         (length 2.5400)
         (name "4Y"
           (effects
@@ -224,7 +224,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin output line
-        (at 7.6200 -10.1600 180)
+        (at 10.1600 -10.1600 180)
         (length 2.5400)
         (name "4Z"
           (effects

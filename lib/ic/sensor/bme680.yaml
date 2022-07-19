@@ -9,7 +9,7 @@ pins:
     - [VDDIO, 6, pwrin]
     - [GND, 1, pwrin]
     - [GND, 7, pwrin]
-- - - [~CS, 2, in]
+- - - ["~{CS}", 2, in]
     - [SCK, 4, in]
     - [SDI, 3, bidi]
     - [SDO, 5, bidi]

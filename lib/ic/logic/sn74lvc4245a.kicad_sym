@@ -215,7 +215,7 @@
       (pin input line
         (at 10.1600 10.1600 180)
         (length 2.5400)
-        (name "~OE"
+        (name "~{OE}"
           (effects
             (font
               (size 1.2700 1.2700))))

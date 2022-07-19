@@ -94,7 +94,7 @@
       (pin passive line
         (at -15.2400 35.5600 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -105,7 +105,7 @@
       (pin passive line
         (at -15.2400 33.0200 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -127,7 +127,7 @@
       (pin passive line
         (at -15.2400 27.9400 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -138,7 +138,7 @@
       (pin passive line
         (at -15.2400 25.4000 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -182,7 +182,7 @@
       (pin passive line
         (at -15.2400 12.7000 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -193,7 +193,7 @@
       (pin passive line
         (at -15.2400 10.1600 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -215,7 +215,7 @@
       (pin passive line
         (at -15.2400 5.0800 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -226,7 +226,7 @@
       (pin passive line
         (at -15.2400 2.5400 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -270,7 +270,7 @@
       (pin passive line
         (at -15.2400 -10.1600 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -281,7 +281,7 @@
       (pin passive line
         (at -15.2400 -12.7000 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -303,7 +303,7 @@
       (pin passive line
         (at -15.2400 -17.7800 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -314,7 +314,7 @@
       (pin passive line
         (at -15.2400 -20.3200 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -358,7 +358,7 @@
       (pin passive line
         (at -15.2400 -33.0200 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -369,7 +369,7 @@
       (pin passive line
         (at -15.2400 -35.5600 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -391,7 +391,7 @@
       (pin passive line
         (at -15.2400 -40.6400 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -402,7 +402,7 @@
       (pin passive line
         (at -15.2400 -43.1800 0)
         (length 5.0800)
-        (name "~"
+        (name ""
           (effects
             (font
               (size 1.2700 1.2700))))

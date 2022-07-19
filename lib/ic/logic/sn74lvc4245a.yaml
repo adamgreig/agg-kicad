@@ -19,7 +19,7 @@ pins:
     - [GND, 12, pwrin]
 - - - [VCCB, 24, pwrin]
     - [VCCB, 23, pwrin]
-    - [~OE, 22, in]
+    - ["~{OE}", 22, in]
     - [B1, 21, bidi]
     - [B2, 20, bidi]
     - [B3, 19, bidi]

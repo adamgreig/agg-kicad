@@ -8,7 +8,7 @@ pins:
 - - - [VCC, 24, pwrin]
     - [GND, 12, pwrin]
   - - [LE, 1, in]
-  - - [~E, 23, in]
+  - - ["~{E}", 23, in]
   - - [A0, 2, in]
     - [A1, 3, in]
     - [A2, 21, in]

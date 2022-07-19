@@ -21,7 +21,7 @@ pins:
     - [NC, 16, nc]
     - [NC, 17, nc]
     - [RESV_NC, 19, nc]
-- - - [~CS, 22, in]
+- - - ["~{CS}", 22, in]
     - [AD0/SD0, 9, bidi]
     - [SCL/SCLK, 23, in]
     - [SDA/SDI, 24, in]

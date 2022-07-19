@@ -15,7 +15,7 @@ pins:
   - - [NC, 3, nc]
     - [IC, 4, nc]
 
-- - - [~2EC, 9, out]
+- - - ["~{2EC}", 9, out]
     - [WAD, 7, in]
 
   - - [PG, 8, out]

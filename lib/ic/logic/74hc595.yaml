@@ -7,10 +7,10 @@ ordercodes:
 pins:
 - - - [VCC, 16, pwrin]
     - [GND, 8, pwrin]
-  - - [~MR, 10, in]
+  - - ["~{MR}", 10, in]
     - [SHCP, 11, in]
     - [STCP, 12, in]
-    - [~OE, 13, in]
+    - ["~{OE}", 13, in]
     - [DS, 14, in]
 - - - [Q0, 15, out]
     - [Q1, 1, out]

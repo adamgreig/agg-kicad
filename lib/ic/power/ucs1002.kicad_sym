@@ -270,7 +270,7 @@
       (pin open_collector line
         (at 20.3200 -10.1600 180)
         (length 2.5400)
-        (name "~ALERT"
+        (name "~{ALERT}"
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -281,7 +281,7 @@
       (pin open_collector line
         (at 20.3200 -12.7000 180)
         (length 2.5400)
-        (name "~A_DET"
+        (name "~{A_DET}"
           (effects
             (font
               (size 1.2700 1.2700))))

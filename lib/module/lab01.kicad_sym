@@ -120,7 +120,7 @@
       (pin input line
         (at -15.2400 0.0000 0)
         (length 2.5400)
-        (name "~RST"
+        (name "~{RST}"
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -186,7 +186,7 @@
       (pin input line
         (at -15.2400 -17.7800 0)
         (length 2.5400)
-        (name "~CS"
+        (name "~{CS}"
           (effects
             (font
               (size 1.2700 1.2700))))

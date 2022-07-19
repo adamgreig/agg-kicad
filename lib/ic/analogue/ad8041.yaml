@@ -9,7 +9,7 @@ pins:
     - [-VS, 4, pwrin]
   - - [-IN, 2, in]
     - [+IN, 3, in]
-- - - [~DISABLE, 8, in]
+- - - ["~{DISABLE}", 8, in]
   - - [NC, 1, nc]
     - [NC, 5, nc]
   - - [OUT, 6, out]

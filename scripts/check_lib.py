@@ -15,15 +15,15 @@ import sexp
 
 
 EXCLUDE = {
-    'one_symbol': ['power', 'conn'],
+    'one_symbol': ['power', 'conn', 'switch'],
     'pin_grid': [],
     'pin_length': [],
     'pin_font': [],
     'missing_pins': ['tec2', 'tel10'],
-    'duplicate_pins': [],
+    'duplicate_pins': ['siz340dt'],
     'missing_box': [],
     'invisible_ref': ['power'],
-    'invisible_val': ['power'],
+    'invisible_val': ['power', 'sj2', 'sj2_nc', 'sj3', 'testpad', 'esd_diode'],
     'property_horizontal': ['conn'],
     'property_font': [],
     'ref_above_val': ['power'],

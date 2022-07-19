@@ -193,7 +193,7 @@
       (pin input line
         (at -22.8600 10.1600 0)
         (length 2.5400)
-        (name "~RST"
+        (name "~{RST}"
           (effects
             (font
               (size 1.2700 1.2700))))

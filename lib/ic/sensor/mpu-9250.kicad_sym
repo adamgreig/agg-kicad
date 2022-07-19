@@ -233,7 +233,7 @@
       (pin input line
         (at 17.7800 20.3200 180)
         (length 2.5400)
-        (name "~CS"
+        (name "~{CS}"
           (effects
             (font
               (size 1.2700 1.2700))))

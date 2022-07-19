@@ -160,7 +160,7 @@
       (pin input line
         (at -15.2400 7.6200 0)
         (length 2.5400)
-        (name "~RESET"
+        (name "~{RESET}"
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -215,7 +215,7 @@
       (pin input line
         (at -15.2400 -5.0800 0)
         (length 2.5400)
-        (name "~CS"
+        (name "~{CS}"
           (effects
             (font
               (size 1.2700 1.2700))))

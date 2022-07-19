@@ -160,7 +160,7 @@
       (pin input line
         (at 17.7800 -5.0800 180)
         (length 2.5400)
-        (name "AD0/~CS"
+        (name "AD0/~{CS}"
           (effects
             (font
               (size 1.2700 1.2700))))

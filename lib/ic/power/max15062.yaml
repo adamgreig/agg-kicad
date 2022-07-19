@@ -12,5 +12,5 @@ pins:
     - [GND, 7, pwrin]
 - - - [LX, 8, passive]
     - [FB/VOUT, 4, in]
-    - [~RESET, 6, in]
+    - ["~{RESET}", 6, in]
     - [MODE, 5, in]

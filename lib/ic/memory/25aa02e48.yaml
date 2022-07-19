@@ -7,7 +7,7 @@ ordercodes:
 pins:
 - - - [VDD, 6, pwrin]
     - [VSS, 2, pwrin]
-- - - [~CS, 5, in]
+- - - ["~{CS}", 5, in]
     - [SCK, 1, in]
     - [SO, 4, tri]
     - [SI, 3, in]

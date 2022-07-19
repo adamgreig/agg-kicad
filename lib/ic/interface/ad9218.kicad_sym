@@ -248,7 +248,7 @@
       (pin input line
         (at -15.2400 -12.7000 0)
         (length 2.5400)
-        (name "~AIN_A"
+        (name "~{AIN_A}"
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -270,7 +270,7 @@
       (pin input line
         (at -15.2400 -20.3200 0)
         (length 2.5400)
-        (name "~AIN_B"
+        (name "~{AIN_B}"
           (effects
             (font
               (size 1.2700 1.2700))))

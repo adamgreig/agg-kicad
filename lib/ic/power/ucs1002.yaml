@@ -24,5 +24,5 @@ pins:
     - [DPOUT, 17, bidi]
   - - [SMDATA/LATCH, 11, bidi]
     - [SMCLK/S0, 12, bidi]
-    - [~ALERT, 13, oc]
-    - [~A_DET, 18, oc]
+    - ["~{ALERT}", 13, oc]
+    - ["~{A_DET}", 18, oc]

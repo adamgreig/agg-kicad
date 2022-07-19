@@ -35,4 +35,4 @@ pins:
   - - [REXT, 9, in]
     - [INTRP, 18, out]
     - [LED0, 23, out]
-    - [~RST, 24, in]
+    - ["~{RST}", 24, in]

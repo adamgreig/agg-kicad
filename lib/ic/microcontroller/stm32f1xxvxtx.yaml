@@ -21,7 +21,7 @@ pins:
   - - [VREF-, 20, in]
     - [VREF+, 21, in]
   - - [BOOT0, 94, in]
-    - [~RST, 14, in]
+    - ["~{RST}", 14, in]
   - - [NC, 73, nc]
   - - [OSC_IN, 12, bidi]
     - [OSC_OUT, 13, bidi]

@@ -9,35 +9,35 @@
     (on_board yes)
     (property Reference IC
       (id 0)
-      (at -7.6200 12.7000 0)
+      (at -10.1600 12.7000 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left)))
     (property Value "MAX5969x"
       (id 1)
-      (at -7.6200 -12.7000 0)
+      (at -10.1600 -12.7000 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left)))
     (property Footprint "agg:DFN-10-EP-MAX"
       (id 2)
-      (at -7.6200 -15.2400 0)
+      (at -10.1600 -15.2400 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left) hide))
     (property Datasheet "https://datasheets.maximintegrated.com/en/ds/MAX5969A-MAX5969B.pdf"
       (id 3)
-      (at -7.6200 -17.7800 0)
+      (at -10.1600 -17.7800 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left) hide))
     (property Farnell "2514586"
       (id 4)
-      (at -7.6200 -20.3200 0)
+      (at -10.1600 -20.3200 0)
       (effects
         (font
           (size 1.2700 1.2700))
@@ -50,8 +50,8 @@
           (size 1.2700 1.2700)) hide))
     (symbol "MAX5969x_0_0"
       (rectangle
-        (start -7.6200 11.4300)
-        (end 7.6200 -11.4300)
+        (start -10.1600 11.4300)
+        (end 10.1600 -11.4300)
         (stroke
           (width 0)
           (type default)
@@ -59,7 +59,7 @@
         (fill
           (type background)))
       (pin power_in line
-        (at -10.1600 10.1600 0)
+        (at -12.7000 10.1600 0)
         (length 2.5400)
         (name VDD
           (effects
@@ -70,7 +70,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_in line
-        (at -10.1600 7.6200 0)
+        (at -12.7000 7.6200 0)
         (length 2.5400)
         (name VSS
           (effects
@@ -81,7 +81,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_in line
-        (at -10.1600 5.0800 0)
+        (at -12.7000 5.0800 0)
         (length 2.5400)
         (name VSS
           (effects
@@ -92,7 +92,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -10.1600 0.0000 0)
+        (at -12.7000 0.0000 0)
         (length 2.5400)
         (name DET
           (effects
@@ -103,7 +103,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -10.1600 -2.5400 0)
+        (at -12.7000 -2.5400 0)
         (length 2.5400)
         (name CLS
           (effects
@@ -114,7 +114,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin no_connect line
-        (at -10.1600 -7.6200 0)
+        (at -12.7000 -7.6200 0)
         (length 2.5400)
         (name NC
           (effects
@@ -125,7 +125,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin no_connect line
-        (at -10.1600 -10.1600 0)
+        (at -12.7000 -10.1600 0)
         (length 2.5400)
         (name IC
           (effects
@@ -136,9 +136,9 @@
             (font
               (size 1.2700 1.2700)))))
       (pin output line
-        (at 10.1600 10.1600 180)
+        (at 12.7000 10.1600 180)
         (length 2.5400)
-        (name "~2EC"
+        (name "~{2EC}"
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -147,7 +147,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at 10.1600 7.6200 180)
+        (at 12.7000 7.6200 180)
         (length 2.5400)
         (name WAD
           (effects
@@ -158,7 +158,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin output line
-        (at 10.1600 2.5400 180)
+        (at 12.7000 2.5400 180)
         (length 2.5400)
         (name PG
           (effects
@@ -169,7 +169,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_out line
-        (at 10.1600 0.0000 180)
+        (at 12.7000 0.0000 180)
         (length 2.5400)
         (name RTN
           (effects

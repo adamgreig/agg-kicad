@@ -8,8 +8,8 @@ pins:
 - - - [VCC, 1, pwrin]
     - [GND, 16, pwrin]
 
-  - - [~MR, 7, in]
-    - [~OE, 8, in]
+  - - ["~{MR}", 7, in]
+    - ["~{OE}", 8, in]
 
   - - [DS, 2, in]
     - [SHCP, 15, in]

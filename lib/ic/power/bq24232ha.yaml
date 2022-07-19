@@ -13,7 +13,7 @@ pins:
     - [ILIM, 12, in]
     - [ISET, 16, in]
 
-  - - [~CE, 4, in]
+  - - ["~{CE}", 4, in]
     - [TMR, 14, in]
 
 - - - [OUT, 10, pwrout]
@@ -26,5 +26,5 @@ pins:
     - [BAT, 3, passive]
     - [TS, 1, in]
 
-  - - [~PGOOD, 7, od]
-    - [~CHG, 9, od]
+  - - ["~{PGOOD}", 7, od]
+    - ["~{CHG}", 9, od]

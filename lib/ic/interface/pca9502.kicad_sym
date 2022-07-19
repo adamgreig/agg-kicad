@@ -9,35 +9,35 @@
     (on_board yes)
     (property Reference IC
       (id 0)
-      (at -12.7000 20.3200 0)
+      (at -15.2400 20.3200 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left)))
     (property Value "PCA9502"
       (id 1)
-      (at -12.7000 -20.3200 0)
+      (at -15.2400 -20.3200 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left)))
     (property Footprint "agg:HVQFN24-NXP"
       (id 2)
-      (at -12.7000 -22.8600 0)
+      (at -15.2400 -22.8600 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left) hide))
     (property Datasheet "http://cache.nxp.com/documents/data_sheet/PCA9502.pdf"
       (id 3)
-      (at -12.7000 -25.4000 0)
+      (at -15.2400 -25.4000 0)
       (effects
         (font
           (size 1.2700 1.2700))
         (justify left) hide))
     (property Farnell "2212086"
       (id 4)
-      (at -12.7000 -27.9400 0)
+      (at -15.2400 -27.9400 0)
       (effects
         (font
           (size 1.2700 1.2700))
@@ -50,8 +50,8 @@
           (size 1.2700 1.2700)) hide))
     (symbol "PCA9502_0_0"
       (rectangle
-        (start -12.7000 19.0500)
-        (end 12.7000 -19.0500)
+        (start -15.2400 19.0500)
+        (end 15.2400 -19.0500)
         (stroke
           (width 0)
           (type default)
@@ -59,7 +59,7 @@
         (fill
           (type background)))
       (pin power_in line
-        (at -15.2400 17.7800 0)
+        (at -17.7800 17.7800 0)
         (length 2.5400)
         (name VDD
           (effects
@@ -70,7 +70,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_in line
-        (at -15.2400 15.2400 0)
+        (at -17.7800 15.2400 0)
         (length 2.5400)
         (name VDD
           (effects
@@ -81,7 +81,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_in line
-        (at -15.2400 12.7000 0)
+        (at -17.7800 12.7000 0)
         (length 2.5400)
         (name VDD
           (effects
@@ -92,7 +92,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_in line
-        (at -15.2400 10.1600 0)
+        (at -17.7800 10.1600 0)
         (length 2.5400)
         (name VDD
           (effects
@@ -103,7 +103,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_in line
-        (at -15.2400 7.6200 0)
+        (at -17.7800 7.6200 0)
         (length 2.5400)
         (name VDD
           (effects
@@ -114,9 +114,9 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -15.2400 2.5400 0)
+        (at -17.7800 2.5400 0)
         (length 2.5400)
-        (name "A0/~CS"
+        (name "A0/~{CS}"
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -125,7 +125,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -15.2400 0.0000 0)
+        (at -17.7800 0.0000 0)
         (length 2.5400)
         (name "A1/MOSI"
           (effects
@@ -136,7 +136,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin output line
-        (at -15.2400 -2.5400 0)
+        (at -17.7800 -2.5400 0)
         (length 2.5400)
         (name MISO
           (effects
@@ -147,7 +147,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin open_collector line
-        (at -15.2400 -5.0800 0)
+        (at -17.7800 -5.0800 0)
         (length 2.5400)
         (name SDA
           (effects
@@ -158,7 +158,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin open_collector line
-        (at -15.2400 -7.6200 0)
+        (at -17.7800 -7.6200 0)
         (length 2.5400)
         (name "SCL/SCLK"
           (effects
@@ -169,9 +169,9 @@
             (font
               (size 1.2700 1.2700)))))
       (pin open_collector line
-        (at -15.2400 -12.7000 0)
+        (at -17.7800 -12.7000 0)
         (length 2.5400)
-        (name "~IRQ"
+        (name "~{IRQ}"
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -180,9 +180,9 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -15.2400 -17.7800 0)
+        (at -17.7800 -17.7800 0)
         (length 2.5400)
-        (name "I2C/~SPI"
+        (name "I2C/~{SPI}"
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -191,9 +191,9 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at 15.2400 17.7800 180)
+        (at 17.7800 17.7800 180)
         (length 2.5400)
-        (name "~RESET"
+        (name "~{RESET}"
           (effects
             (font
               (size 1.2700 1.2700))))
@@ -202,7 +202,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin bidirectional line
-        (at 15.2400 12.7000 180)
+        (at 17.7800 12.7000 180)
         (length 2.5400)
         (name "GPIO0"
           (effects
@@ -213,7 +213,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin bidirectional line
-        (at 15.2400 10.1600 180)
+        (at 17.7800 10.1600 180)
         (length 2.5400)
         (name "GPIO1"
           (effects
@@ -224,7 +224,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin bidirectional line
-        (at 15.2400 7.6200 180)
+        (at 17.7800 7.6200 180)
         (length 2.5400)
         (name "GPIO2"
           (effects
@@ -235,7 +235,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin bidirectional line
-        (at 15.2400 5.0800 180)
+        (at 17.7800 5.0800 180)
         (length 2.5400)
         (name "GPIO3"
           (effects
@@ -246,7 +246,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin bidirectional line
-        (at 15.2400 2.5400 180)
+        (at 17.7800 2.5400 180)
         (length 2.5400)
         (name "GPIO4"
           (effects
@@ -257,7 +257,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin bidirectional line
-        (at 15.2400 0.0000 180)
+        (at 17.7800 0.0000 180)
         (length 2.5400)
         (name "GPIO5"
           (effects
@@ -268,7 +268,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin bidirectional line
-        (at 15.2400 -2.5400 180)
+        (at 17.7800 -2.5400 180)
         (length 2.5400)
         (name "GPIO6"
           (effects
@@ -279,7 +279,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin bidirectional line
-        (at 15.2400 -5.0800 180)
+        (at 17.7800 -5.0800 180)
         (length 2.5400)
         (name "GPIO7"
           (effects
@@ -290,7 +290,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_in line
-        (at 15.2400 -10.1600 180)
+        (at 17.7800 -10.1600 180)
         (length 2.5400)
         (name VSS
           (effects
@@ -301,7 +301,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_in line
-        (at 15.2400 -12.7000 180)
+        (at 17.7800 -12.7000 180)
         (length 2.5400)
         (name VSS
           (effects
@@ -312,7 +312,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_in line
-        (at 15.2400 -15.2400 180)
+        (at 17.7800 -15.2400 180)
         (length 2.5400)
         (name VSS
           (effects
@@ -323,7 +323,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin power_in line
-        (at 15.2400 -17.7800 180)
+        (at 17.7800 -17.7800 180)
         (length 2.5400)
         (name VSS
           (effects

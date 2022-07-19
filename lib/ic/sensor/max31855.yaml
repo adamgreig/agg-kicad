@@ -11,5 +11,5 @@ pins:
     - [GND, 1, pwrin]
 - - - [SDO, 7, out]
     - [SCK, 5, in]
-    - [~CS, 6, in]
+    - ["~{CS}", 6, in]
     - [NC, 8, nc]

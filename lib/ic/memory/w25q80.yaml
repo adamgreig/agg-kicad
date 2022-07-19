@@ -7,9 +7,9 @@ ordercodes:
 pins:
 - - - [VCC, 8, pwrin]
     - [GND, 4, pwrin]
-    - [~WP~/IO2, 3, bidi]
-    - [~HOLD~/IO3, 7, bidi]
+    - ["~{WP}/IO2", 3, bidi]
+    - ["~{HOLD}/IO3", 7, bidi]
 - - - [CLK, 6, in]
-    - [~CS, 1, in]
+    - ["~{CS}", 1, in]
     - [DI/IO0, 5, bidi]
     - [DO/IO1, 2, bidi]

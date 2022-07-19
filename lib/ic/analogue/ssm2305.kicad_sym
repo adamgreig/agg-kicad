@@ -138,7 +138,7 @@
       (pin input line
         (at 10.1600 -5.0800 180)
         (length 2.5400)
-        (name "~SD"
+        (name "~{SD}"
           (effects
             (font
               (size 1.2700 1.2700))))

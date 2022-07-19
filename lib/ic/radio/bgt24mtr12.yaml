@@ -17,7 +17,7 @@ pins:
     - [VEE, 24, pwrin]
     - [VEE, 32, pwrin]
     - [VEE, EP, pwrin]
-  - - [~CS, 18, in]
+  - - ["~{CS}", 18, in]
     - [CLK, 19, in]
     - [SI, 20, in]
   - - [FINE, 5, in]
