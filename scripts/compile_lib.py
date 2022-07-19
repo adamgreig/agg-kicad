@@ -57,7 +57,7 @@ def compilelib(libpath):
         dirnames.sort()
         for f in fnmatch.filter(sorted(files), "*.kicad_sym"):
             with open(os.path.join(dirpath, f)) as libf:
-                part = sexp.parse(libf.read())
+                part = sexp.parse(libf.read(), parse_nums=True)
                 if not part[2][1].startswith("agg-kicad-compiled"):
                     out += part[3:]
 

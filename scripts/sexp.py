@@ -1,36 +1,46 @@
 """
 sexp.py
-Copyright 2015 Adam Greig
+Copyright 2015-2022 Adam Greig
 Licensed under the MIT licence, see LICENSE file for details.
 
 S-Expression parser/emitter
 """
 
-from __future__ import print_function, division
-
 import re
 from decimal import Decimal
 
 
-def parse(sexp, empty_string_placeholder=""):
+def parse(sexp, empty_string_placeholder="", parse_nums=False):
     """
     Parse an S-expression into Python lists.
     """
     r = [[]]
     token = None
     quote = False
+    quoted = False
     for c in sexp:
         if c == '(' and not quote:
             r.append([])
         elif c in (')', ' ', '\n') and not quote:
             if token is not None:
+                if parse_nums and not quoted:
+                    if re.match("^[\+\-]?[0-9]+$", token):
+                        token = int(token)
+                    elif re.match("^[\+\-]?[0-9]+\.?[0-9]*$", token):
+                        try:
+                            token = float(token)
+                        except ValueError:
+                            pass
                 r[-1].append(token)
             token = None
+            quoted = False
             if c == ')':
                 t = r.pop()
                 r[-1].append(t)
         elif c == '"' and (token is None or token[-1] != '\\'):
             quote = not quote
+            if token and not quote:
+                quoted = True
             if not token and not quote:
                 token = empty_string_placeholder
         else:
