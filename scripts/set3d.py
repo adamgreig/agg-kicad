@@ -57,7 +57,7 @@ def process_pcb(fname):
             pkg = line.split()[1][1:-1]
         if "(fp_text reference" in line:
             ref = line.split()[2][1:-1]
-        if "(model" in line:
+        if "(model" in line and ref is not None:
             if ref[0] in MODELS and pkg in MODELS[ref[0]]:
                 current_model = line.split()[1].strip()
                 new_model = MODELS[ref[0]][pkg]
