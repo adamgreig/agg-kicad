@@ -1,0 +1,335 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "KSZ8081RNx"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -12.7000 22.8600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "KSZ8081RNx"
+      (id 1)
+      (at -12.7000 -22.8600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:QFN-24-EP-MICREL"
+      (id 2)
+      (at -12.7000 -25.4000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "http://ww1.microchip.com/downloads/en/DeviceDoc/KSZ8081RNA_RND.pdf"
+      (id 3)
+      (at -12.7000 -27.9400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "2509802"
+      (id 4)
+      (at -12.7000 -30.4800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "RMII 100/10Mbps ethernet PHY"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "KSZ8081RNx_0_0"
+      (rectangle
+        (start -12.7000 21.5900)
+        (end 12.7000 -21.5900)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -15.2400 20.3200 0)
+        (length 2.5400)
+        (name "VDDA_3v3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 17.7800 0)
+        (length 2.5400)
+        (name VDDIO
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_out line
+        (at -15.2400 12.7000 0)
+        (length 2.5400)
+        (name "VDD_1v2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 7.6200 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "22"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 5.0800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number EP
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -15.2400 0.0000 0)
+        (length 2.5400)
+        (name RXM
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -15.2400 -2.5400 0)
+        (length 2.5400)
+        (name RXP
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -15.2400 -5.0800 0)
+        (length 2.5400)
+        (name TXM
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -15.2400 -7.6200 0)
+        (length 2.5400)
+        (name TXP
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at -15.2400 -12.7000 0)
+        (length 2.5400)
+        (name XO
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -15.2400 0)
+        (length 2.5400)
+        (name XI
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 20.3200 180)
+        (length 2.5400)
+        (name "RXD1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 17.7800 180)
+        (length 2.5400)
+        (name "RXD0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 15.2400 15.2400 180)
+        (length 2.5400)
+        (name CRS_DV
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "15"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 12.7000 180)
+        (length 2.5400)
+        (name REF_CLK
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "16"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 10.1600 180)
+        (length 2.5400)
+        (name RXER
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "17"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 7.6200 180)
+        (length 2.5400)
+        (name TXEN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "19"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 5.0800 180)
+        (length 2.5400)
+        (name "TXD0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "20"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 2.5400 180)
+        (length 2.5400)
+        (name "TXD1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "21"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 15.2400 -2.5400 180)
+        (length 2.5400)
+        (name MDIO
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 -5.0800 180)
+        (length 2.5400)
+        (name MDC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 -10.1600 180)
+        (length 2.5400)
+        (name REXT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -12.7000 180)
+        (length 2.5400)
+        (name INTRP
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "18"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -15.2400 180)
+        (length 2.5400)
+        (name "LED0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "23"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 -17.7800 180)
+        (length 2.5400)
+        (name "~{RST}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "24"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

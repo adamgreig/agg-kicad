@@ -1,0 +1,214 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "TXU0104PWR"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -7.6200 10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "TXU0104PWR"
+      (id 1)
+      (at -7.6200 -10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:TSSOP-14"
+      (id 2)
+      (at -7.6200 -12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://www.ti.com/lit/ds/symlink/txu0104.pdf"
+      (id 3)
+      (at -7.6200 -15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Mouser "595-TXU0104PWR"
+      (id 4)
+      (at -7.6200 -17.7800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "4-bit fixed direction voltage-level translator"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "TXU0104PWR_0_0"
+      (rectangle
+        (start -7.6200 8.8900)
+        (end 7.6200 -8.8900)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -10.1600 7.6200 0)
+        (length 2.5400)
+        (name VCCA
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -10.1600 5.0800 0)
+        (length 2.5400)
+        (name "A1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -10.1600 2.5400 0)
+        (length 2.5400)
+        (name "A2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -10.1600 -0.0000 0)
+        (length 2.5400)
+        (name "A3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -10.1600 -2.5400 0)
+        (length 2.5400)
+        (name "A4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -10.1600 -5.0800 0)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -10.1600 -7.6200 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at 10.1600 7.6200 180)
+        (length 2.5400)
+        (name VCCB
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 5.0800 180)
+        (length 2.5400)
+        (name "B1Y"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 2.5400 180)
+        (length 2.5400)
+        (name "B2Y"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 -0.0000 180)
+        (length 2.5400)
+        (name "B3Y"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 -2.5400 180)
+        (length 2.5400)
+        (name "B4Y"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at 10.1600 -5.0800 180)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 10.1600 -7.6200 180)
+        (length 2.5400)
+        (name OE
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

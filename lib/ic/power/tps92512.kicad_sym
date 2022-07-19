@@ -1,0 +1,181 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "TPS92512"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -10.1600 12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "TPS92512"
+      (id 1)
+      (at -10.1600 -12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:MSOP-10-EP-TI"
+      (id 2)
+      (at -10.1600 -15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "http://www.ti.com/lit/ds/symlink/tps92512.pdf"
+      (id 3)
+      (at -10.1600 -17.7800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "2471141"
+      (id 4)
+      (at -10.1600 -20.3200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "2.5A constant current buck converter / LED driver"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "TPS92512_0_0"
+      (rectangle
+        (start -10.1600 11.4300)
+        (end 10.1600 -11.4300)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -12.7000 10.1600 0)
+        (length 2.5400)
+        (name VIN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -12.7000 5.0800 0)
+        (length 2.5400)
+        (name UVLO
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -12.7000 0.0000 0)
+        (length 2.5400)
+        (name PDIM
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -12.7000 -2.5400 0)
+        (length 2.5400)
+        (name IADJ
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -12.7000 -7.6200 0)
+        (length 2.5400)
+        (name "RT/CLK"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at -12.7000 -10.1600 0)
+        (length 2.5400)
+        (name COMP
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 12.7000 10.1600 180)
+        (length 2.5400)
+        (name BOOT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 12.7000 7.6200 180)
+        (length 2.5400)
+        (name PH
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 12.7000 5.0800 180)
+        (length 2.5400)
+        (name ISENSE
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 12.7000 0.0000 180)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 12.7000 -2.5400 180)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number EP
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

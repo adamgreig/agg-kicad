@@ -6,8 +6,8 @@ ordercodes:
   - [Farnell, '2464412']
 pins:
 - - - [IN, 6, pwrin]
-  - - [~EN, 4, in]
-    - [~FLAG, 3, od]
+  - - ["~{EN}", 4, in]
+    - ["~{FLAG}", 3, od]
   - - [GND, 5, pwrin]
     - [GND, EP, pwrin]
 - - - [OUT, 1, pwrout]

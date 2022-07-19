@@ -1,0 +1,170 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "USB-A-SS"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference P
+      (id 0)
+      (at -12.7000 7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "USB-A-SS"
+      (id 1)
+      (at -12.7000 -7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint ""
+      (id 2)
+      (at -12.7000 -10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "http://www.te.com/usa-en/product-1932258-1.html"
+      (id 3)
+      (at -12.7000 -12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "1841902"
+      (id 4)
+      (at -12.7000 -15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "USB Type A SuperSpeed Connector"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "USB-A-SS_0_0"
+      (rectangle
+        (start -12.7000 6.3500)
+        (end 12.7000 -6.3500)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -15.2400 5.0800 0)
+        (length 2.5400)
+        (name VBUS
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -15.2400 2.5400 0)
+        (length 2.5400)
+        (name "D-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -15.2400 0.0000 0)
+        (length 2.5400)
+        (name "D+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 -2.5400 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -5.0800 0)
+        (length 2.5400)
+        (name SHIELD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number S
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 15.2400 5.0800 180)
+        (length 2.5400)
+        (name "SSRX-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 15.2400 2.5400 180)
+        (length 2.5400)
+        (name "SSRX+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at 15.2400 0.0000 180)
+        (length 2.5400)
+        (name GND_DRAIN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 15.2400 -2.5400 180)
+        (length 2.5400)
+        (name "SSTX-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 15.2400 -5.0800 180)
+        (length 2.5400)
+        (name "SSTX+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

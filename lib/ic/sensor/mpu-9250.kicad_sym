@@ -1,0 +1,331 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "MPU-9250"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -15.2400 22.8600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "MPU-9250"
+      (id 1)
+      (at -15.2400 -22.8600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:QFN-24-MPU9250"
+      (id 2)
+      (at -15.2400 -25.4000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "http://43zrtwysvxb2gf29r5o0athu.wpengine.netdna-cdn.com/wp-content/uploads/2015/02/MPU-9250-Datasheet.pdf"
+      (id 3)
+      (at -15.2400 -27.9400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property RS "883-7942"
+      (id 4)
+      (at -15.2400 -30.4800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property DigiKey "1428-1019-1-ND"
+      (id 5)
+      (at -15.2400 -33.0200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "MPU-9250 9DoF IMU from InvenSense"
+      (id 7)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "MPU-9250_0_0"
+      (rectangle
+        (start -15.2400 21.5900)
+        (end 15.2400 -21.5900)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -17.7800 20.3200 0)
+        (length 2.5400)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 17.7800 0)
+        (length 2.5400)
+        (name VDDIO
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -17.7800 15.2400 0)
+        (length 2.5400)
+        (name RESV_VDDIO
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 10.1600 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "18"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -17.7800 7.6200 0)
+        (length 2.5400)
+        (name RESV_GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "20"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -17.7800 2.5400 0)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -17.7800 0.0000 0)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -17.7800 -2.5400 0)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -17.7800 -5.0800 0)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -17.7800 -7.6200 0)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -17.7800 -10.1600 0)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -17.7800 -12.7000 0)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "15"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -17.7800 -15.2400 0)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "16"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -17.7800 -17.7800 0)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "17"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -17.7800 -20.3200 0)
+        (length 2.5400)
+        (name RESV_NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "19"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 17.7800 20.3200 180)
+        (length 2.5400)
+        (name "~{CS}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "22"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 17.7800 180)
+        (length 2.5400)
+        (name "AD0/SD0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 17.7800 15.2400 180)
+        (length 2.5400)
+        (name "SCL/SCLK"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "23"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 17.7800 12.7000 180)
+        (length 2.5400)
+        (name "SDA/SDI"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "24"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 17.7800 7.6200 180)
+        (length 2.5400)
+        (name REGOUT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin open_collector line
+        (at 17.7800 5.0800 180)
+        (length 2.5400)
+        (name INT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 17.7800 2.5400 180)
+        (length 2.5400)
+        (name FSYNC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin tri_state line
+        (at 17.7800 -2.5400 180)
+        (length 2.5400)
+        (name AUX_CL
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin tri_state line
+        (at 17.7800 -5.0800 180)
+        (length 2.5400)
+        (name AUX_DA
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "21"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

@@ -1,0 +1,148 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "AD8041"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -15.2400 10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "AD8041"
+      (id 1)
+      (at -15.2400 -10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:SOIC-8"
+      (id 2)
+      (at -15.2400 -12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "http://www.analog.com/media/en/technical-documentation/data-sheets/AD8041.pdf"
+      (id 3)
+      (at -15.2400 -15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "1660976"
+      (id 4)
+      (at -15.2400 -17.7800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "160MHz rail-to-rail opamp with disable"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "AD8041_0_0"
+      (rectangle
+        (start -15.2400 8.8900)
+        (end 15.2400 -8.8900)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -17.7800 7.6200 0)
+        (length 2.5400)
+        (name "+VS"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 5.0800 0)
+        (length 2.5400)
+        (name -VS
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -17.7800 -0.0000 0)
+        (length 2.5400)
+        (name -IN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -17.7800 -2.5400 0)
+        (length 2.5400)
+        (name "+IN"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 17.7800 7.6200 180)
+        (length 2.5400)
+        (name "~{DISABLE}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at 17.7800 2.5400 180)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at 17.7800 -0.0000 180)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 17.7800 -5.0800 180)
+        (length 2.5400)
+        (name OUT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

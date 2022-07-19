@@ -7,10 +7,10 @@ ordercodes:
 pins:
 - - - [VIN1, 10, pwrin]
     - [SW1, 2, passive]
-    - [~SHDN1, 11, in]
+    - ["~{SHDN1}", 11, in]
   - - [VIN2, 7, pwrin]
     - [SW2, 5, passive]
-    - [~SHDN2, 8, in]
+    - ["~{SHDN2}", 8, in]
   - - [GND, 6, pwrin]
     - [GND, 3, pwrin]
     - [GND, EP, pwrin]

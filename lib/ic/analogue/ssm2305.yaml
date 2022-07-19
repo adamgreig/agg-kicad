@@ -12,4 +12,4 @@ pins:
 - - - [OUT+, 5, out]
     - [OUT-, 8, out]
   - - [NC, 2, nc]
-    - [~SD, 1, in]
+    - ["~{SD}", 1, in]

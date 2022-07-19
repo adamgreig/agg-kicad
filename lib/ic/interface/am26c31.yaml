@@ -8,7 +8,7 @@ pins:
 - - - [VCC, 16, pwrin]
     - [GND, 8, pwrin]
   - - [G, 4, in]
-    - [~G, 12, in]
+    - ["~{G}", 12, in]
   - - [1A, 1, in]
   - - [2A, 7, in]
   - - [3A, 9, in]

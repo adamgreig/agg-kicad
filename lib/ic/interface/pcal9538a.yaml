@@ -6,8 +6,8 @@ ordercodes:
 - [Farnell, '2428172']
 pins:
 - - - [VDD, 14, pwrin]
-  - - [~RESET, 1, in]
-  - - [~INT, 11, oc]
+  - - ["~{RESET}", 1, in]
+  - - ["~{INT}", 11, oc]
     - [SCL, 12, oc]
     - [SDA, 13, oc]
   - - [A0, 15, in]

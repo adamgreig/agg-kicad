@@ -23,12 +23,12 @@ each commit by the build system. The current status is:
 
 ## Schematic Symbols
 
-To use, add relevant `.lib` files to your project libraries. There is one 
-`.lib` file per symbol.
+To use, add relevant `.kicad_sym` files to your project libraries. There is one 
+`.kicad_sym` file per symbol.
 
-Alternatively add `agg-kicad.lib` from the root directory, which includes all 
-symbols. This file is built using `scripts/compile_lib.py` and kept up-to-date 
-automatically.
+Alternatively add `agg-kicad.kicad_sym` from the root directory, which includes
+all symbols. This file is built using `scripts/compile_lib.py` and kept
+up-to-date automatically.
 
 Each part contains supplier order codes and manufacturer part numbers where 
 possible and sensible. Parts are drawn as per the conventions in 
@@ -77,8 +77,7 @@ You can use the Makefile to:
     * Just libraries with `make build-libs`
     * Just modules (footprints) with `make build-mods`
 * Verify all built-from-parameter files are up-to-date with `make build-verify`
-* Recompile all compiled outputs (the combined `.lib` and the `.pro`) with 
-  `make compile`
+* Recompile all compiled outputs with `make compile`
 * Verify all compiled outputs are up-to-date with `make compile-verify`
 * Verify both built and compiled outputs with `make verify`
 * Check all files against rules with `make check`

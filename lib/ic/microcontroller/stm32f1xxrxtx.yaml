@@ -17,7 +17,7 @@ pins:
     - [VSS, 63, pwrin]
     - [VSS, 18, pwrin]
   - - [BOOT0, 60, in]
-    - [~RST, 7, in]
+    - ["~{RST}", 7, in]
   - - [OSC_IN, 5, bidi]
     - [OSC_OUT, 6, bidi]
   - - [PA0-WKUP, 14, bidi]

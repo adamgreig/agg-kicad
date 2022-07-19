@@ -1,0 +1,251 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "MAX-M8Q"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -15.2400 15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "MAX-M8Q"
+      (id 1)
+      (at -15.2400 -15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:MAX-M8Q"
+      (id 2)
+      (at -15.2400 -17.7800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://www.u-blox.com/sites/default/files/MAX-M8-FW3_DataSheet_%28UBX-15031506%29.pdf"
+      (id 3)
+      (at -15.2400 -20.3200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "uBlox MAX-M8Q GPS Receiver"
+      (id 5)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "MAX-M8Q_0_0"
+      (rectangle
+        (start -15.2400 13.9700)
+        (end 15.2400 -13.9700)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -17.7800 12.7000 0)
+        (length 2.5400)
+        (name VCC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 10.1600 0)
+        (length 2.5400)
+        (name VCC_IO
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 7.6200 0)
+        (length 2.5400)
+        (name V_BCKP
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 5.0800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 2.5400 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -17.7800 0.0000 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -17.7800 -5.0800 0)
+        (length 2.5400)
+        (name "~{RESET}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -17.7800 -7.6200 0)
+        (length 2.5400)
+        (name "~{SAFEBOOT}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "18"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -17.7800 -10.1600 0)
+        (length 2.5400)
+        (name EXTINT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at -17.7800 -12.7000 0)
+        (length 2.5400)
+        (name TIMEPULSE
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 12.7000 180)
+        (length 2.5400)
+        (name SDA
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "16"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 17.7800 10.1600 180)
+        (length 2.5400)
+        (name SCL
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "17"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 17.7800 5.0800 180)
+        (length 2.5400)
+        (name RXD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 17.7800 2.5400 180)
+        (length 2.5400)
+        (name TXD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 17.7800 -2.5400 180)
+        (length 2.5400)
+        (name LNA_EN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at 17.7800 -5.0800 180)
+        (length 2.5400)
+        (name V_ANT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "15"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_out line
+        (at 17.7800 -7.6200 180)
+        (length 2.5400)
+        (name VCC_RF
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 17.7800 -12.7000 180)
+        (length 2.5400)
+        (name RF_IN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

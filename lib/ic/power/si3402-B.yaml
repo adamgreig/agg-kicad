@@ -21,7 +21,7 @@ pins:
   - - [VDD, 3, pwrin]
   - - [EROUT, 1, out]
     - [HSO, 7, out]
-    - [~PLOSS, 5, od]
+    - ["~{PLOSS}", 5, od]
   - - [VSS1, 17, nc]
     - [VSS2, 19, pwrin]
     - [VSSA, 15, pwrin]

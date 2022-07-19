@@ -6,7 +6,7 @@ ordercodes:
   - [Farnell, '1825007']
 pins:
 - - - [VIN, 1, pwrin]
-    - [~SHDN, 4, in]
+    - ["~{SHDN}", 4, in]
     - [GND, 2, pwrin]
 - - - [VOUT, 5, pwrout]
     - [NC, 3, nc]

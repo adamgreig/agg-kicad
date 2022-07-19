@@ -5,7 +5,7 @@ name: MAX17435
 ordercodes:
 - [Farnell, '2516688']
 pins:
-- - - [~ACOK, 10, out]
+- - - ["~{ACOK}", 10, out]
     - [LDO, 4, pwrout]
     - [EN, 24, in]
     - [ADAPTLIM, 6, out]

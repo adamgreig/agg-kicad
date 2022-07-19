@@ -1,0 +1,2866 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_switch)
+  (symbol SWITCH_SPST
+    (pin_names hide)
+    (in_bom yes)
+    (on_board yes)
+    (property Reference SW
+      (id 0)
+      (at 0 3.8100 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Value SWITCH_SPST
+      (id 1)
+      (at 0 -2.5400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy -1.2700 0.2540)
+        (xy 1.2700 2.2860))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -2.5400 0.0000 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "2"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 0.0000 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol SWITCH_SPDT
+    (pin_names hide)
+    (in_bom yes)
+    (on_board yes)
+    (property Reference SW
+      (id 0)
+      (at 0 5.0800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Value SWITCH_SPDT
+      (id 1)
+      (at 0 -2.5400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy -1.2700 0.2540)
+        (xy 1.2700 2.2860))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -2.5400 0.0000 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "2"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 0.0000 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "3"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "SWITCH_SP3T"
+    (pin_names hide)
+    (in_bom yes)
+    (on_board yes)
+    (property Reference SW
+      (id 0)
+      (at 0 5.0800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Value "SWITCH_SP3T"
+      (id 1)
+      (at 0 -5.0800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy -1.2700 0.2540)
+        (xy 1.2700 2.2860))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -2.5400 0.0000 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "2"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 0.0000 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "3"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "4"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol SWITCH_DPST
+    (pin_names hide)
+    (in_bom yes)
+    (on_board yes)
+    (property Reference SW
+      (id 0)
+      (at 0 6.3500 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Value SWITCH_DPST
+      (id 1)
+      (at 0 -5.0800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy -1.2700 2.7940)
+        (xy 1.2700 4.8260))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.2700 -2.2860)
+        (xy 1.2700 -0.2540))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 -2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.8100)
+        (xy 0 3.6830))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.3020)
+        (xy 0 3.1750))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.7940)
+        (xy 0 2.6670))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.2860)
+        (xy 0 2.1590))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.7780)
+        (xy 0 1.6510))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0 1.1430))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.7620)
+        (xy 0 0.6350))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.2540)
+        (xy 0 0.1270))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.2540)
+        (xy 0 -0.3810))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.7620)
+        (xy 0 -0.8890))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -2.5400 2.5400 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "2"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at -2.5400 -2.5400 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "4"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "3"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol SWITCH_DPDT
+    (pin_names hide)
+    (in_bom yes)
+    (on_board yes)
+    (property Reference SW
+      (id 0)
+      (at 0 7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Value SWITCH_DPDT
+      (id 1)
+      (at 0 -7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy -1.2700 2.7940)
+        (xy 1.2700 4.8260))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.2700 -4.8260)
+        (xy 1.2700 -2.7940))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 -5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.8100)
+        (xy 0 3.6830))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.3020)
+        (xy 0 3.1750))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.7940)
+        (xy 0 2.6670))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.2860)
+        (xy 0 2.1590))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.7780)
+        (xy 0 1.6510))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0 1.1430))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.7620)
+        (xy 0 0.6350))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.2540)
+        (xy 0 0.1270))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.2540)
+        (xy 0 -0.3810))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.7620)
+        (xy 0 -0.8890))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -1.2700)
+        (xy 0 -1.3970))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -1.7780)
+        (xy 0 -1.9050))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -2.2860)
+        (xy 0 -2.4130))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -2.7940)
+        (xy 0 -2.9210))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -3.3020)
+        (xy 0 -3.4290))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -2.5400 2.5400 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "2"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 5.0800 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "3"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at -2.5400 -5.0800 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "5"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "4"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -5.0800 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "6"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "SWITCH_DP3T"
+    (pin_names hide)
+    (in_bom yes)
+    (on_board yes)
+    (property Reference SW
+      (id 0)
+      (at 0 10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Value "SWITCH_DP3T"
+      (id 1)
+      (at 0 -10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy -1.2700 5.3340)
+        (xy 1.2700 7.3660))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 7.6200)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.2700 -4.8260)
+        (xy 1.2700 -2.7940))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 -5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -7.6200)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 6.3500)
+        (xy 0 6.2230))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 5.8420)
+        (xy 0 5.7150))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 5.3340)
+        (xy 0 5.2070))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 4.8260)
+        (xy 0 4.6990))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 4.3180)
+        (xy 0 4.1910))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.8100)
+        (xy 0 3.6830))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.3020)
+        (xy 0 3.1750))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.7940)
+        (xy 0 2.6670))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.2860)
+        (xy 0 2.1590))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.7780)
+        (xy 0 1.6510))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0 1.1430))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.7620)
+        (xy 0 0.6350))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.2540)
+        (xy 0 0.1270))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.2540)
+        (xy 0 -0.3810))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.7620)
+        (xy 0 -0.8890))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -1.2700)
+        (xy 0 -1.3970))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -1.7780)
+        (xy 0 -1.9050))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -2.2860)
+        (xy 0 -2.4130))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -2.7940)
+        (xy 0 -2.9210))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -3.3020)
+        (xy 0 -3.4290))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -2.5400 5.0800 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "2"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 7.6200 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 5.0800 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "3"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "4"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at -2.5400 -5.0800 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "6"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "5"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -5.0800 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "7"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -7.6200 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "8"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "SWITCH_3PST"
+    (pin_names hide)
+    (in_bom yes)
+    (on_board yes)
+    (property Reference SW
+      (id 0)
+      (at 0 8.8900 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Value "SWITCH_3PST"
+      (id 1)
+      (at 0 -7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy -1.2700 5.3340)
+        (xy 1.2700 7.3660))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.2700 0.2540)
+        (xy 1.2700 2.2860))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.2700 -4.8260)
+        (xy 1.2700 -2.7940))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 -5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 6.3500)
+        (xy 0 6.2230))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 5.8420)
+        (xy 0 5.7150))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 5.3340)
+        (xy 0 5.2070))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 4.8260)
+        (xy 0 4.6990))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 4.3180)
+        (xy 0 4.1910))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.8100)
+        (xy 0 3.6830))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.3020)
+        (xy 0 3.1750))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.7940)
+        (xy 0 2.6670))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.2860)
+        (xy 0 2.1590))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.7780)
+        (xy 0 1.6510))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0 1.1430))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.7620)
+        (xy 0 0.6350))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.2540)
+        (xy 0 0.1270))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.2540)
+        (xy 0 -0.3810))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.7620)
+        (xy 0 -0.8890))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -1.2700)
+        (xy 0 -1.3970))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -1.7780)
+        (xy 0 -1.9050))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -2.2860)
+        (xy 0 -2.4130))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -2.7940)
+        (xy 0 -2.9210))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -3.3020)
+        (xy 0 -3.4290))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -2.5400 5.0800 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "2"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 5.0800 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at -2.5400 0.0000 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "4"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 0.0000 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "3"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at -2.5400 -5.0800 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "6"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -5.0800 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "5"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "SWITCH_3PDT"
+    (pin_names hide)
+    (in_bom yes)
+    (on_board yes)
+    (property Reference SW
+      (id 0)
+      (at 0 12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Value "SWITCH_3PDT"
+      (id 1)
+      (at 0 -10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy -1.2700 7.8740)
+        (xy 1.2700 9.9060))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 7.6200)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 10.1600)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 7.6200)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.2700 0.2540)
+        (xy 1.2700 2.2860))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.2700 -7.3660)
+        (xy 1.2700 -5.3340))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 -7.6200)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -5.0800)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -7.6200)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 8.8900)
+        (xy 0 8.7630))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 8.3820)
+        (xy 0 8.2550))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 7.8740)
+        (xy 0 7.7470))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 7.3660)
+        (xy 0 7.2390))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 6.8580)
+        (xy 0 6.7310))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 6.3500)
+        (xy 0 6.2230))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 5.8420)
+        (xy 0 5.7150))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 5.3340)
+        (xy 0 5.2070))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 4.8260)
+        (xy 0 4.6990))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 4.3180)
+        (xy 0 4.1910))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.8100)
+        (xy 0 3.6830))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.3020)
+        (xy 0 3.1750))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.7940)
+        (xy 0 2.6670))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.2860)
+        (xy 0 2.1590))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.7780)
+        (xy 0 1.6510))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0 1.1430))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.7620)
+        (xy 0 0.6350))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.2540)
+        (xy 0 0.1270))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.2540)
+        (xy 0 -0.3810))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.7620)
+        (xy 0 -0.8890))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -1.2700)
+        (xy 0 -1.3970))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -1.7780)
+        (xy 0 -1.9050))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -2.2860)
+        (xy 0 -2.4130))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -2.7940)
+        (xy 0 -2.9210))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -3.3020)
+        (xy 0 -3.4290))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -3.8100)
+        (xy 0 -3.9370))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -4.3180)
+        (xy 0 -4.4450))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -4.8260)
+        (xy 0 -4.9530))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -5.3340)
+        (xy 0 -5.4610))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -5.8420)
+        (xy 0 -5.9690))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -2.5400 7.6200 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "2"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 10.1600 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 7.6200 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "3"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at -2.5400 0.0000 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "5"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "4"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 0.0000 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "6"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at -2.5400 -7.6200 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "8"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -5.0800 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "7"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -7.6200 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "9"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "SWITCH_3P3T"
+    (pin_names hide)
+    (in_bom yes)
+    (on_board yes)
+    (property Reference SW
+      (id 0)
+      (at 0 15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Value "SWITCH_3P3T"
+      (id 1)
+      (at 0 -15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy -1.2700 10.4140)
+        (xy 1.2700 12.4460))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 10.1600)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 12.7000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 10.1600)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 7.6200)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.2700 0.2540)
+        (xy 1.2700 2.2860))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 0.0000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -2.5400)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.2700 -9.9060)
+        (xy 1.2700 -7.8740))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center -1.2700 -10.1600)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -7.6200)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -10.1600)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (circle
+      (center 1.2700 -12.7000)
+      (radius 0.2540)
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 11.4300)
+        (xy 0 11.3030))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 10.9220)
+        (xy 0 10.7950))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 10.4140)
+        (xy 0 10.2870))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 9.9060)
+        (xy 0 9.7790))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 9.3980)
+        (xy 0 9.2710))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 8.8900)
+        (xy 0 8.7630))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 8.3820)
+        (xy 0 8.2550))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 7.8740)
+        (xy 0 7.7470))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 7.3660)
+        (xy 0 7.2390))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 6.8580)
+        (xy 0 6.7310))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 6.3500)
+        (xy 0 6.2230))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 5.8420)
+        (xy 0 5.7150))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 5.3340)
+        (xy 0 5.2070))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 4.8260)
+        (xy 0 4.6990))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 4.3180)
+        (xy 0 4.1910))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.8100)
+        (xy 0 3.6830))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 3.3020)
+        (xy 0 3.1750))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.7940)
+        (xy 0 2.6670))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 2.2860)
+        (xy 0 2.1590))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.7780)
+        (xy 0 1.6510))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0 1.1430))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.7620)
+        (xy 0 0.6350))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0.2540)
+        (xy 0 0.1270))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.2540)
+        (xy 0 -0.3810))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -0.7620)
+        (xy 0 -0.8890))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -1.2700)
+        (xy 0 -1.3970))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -1.7780)
+        (xy 0 -1.9050))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -2.2860)
+        (xy 0 -2.4130))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -2.7940)
+        (xy 0 -2.9210))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -3.3020)
+        (xy 0 -3.4290))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -3.8100)
+        (xy 0 -3.9370))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -4.3180)
+        (xy 0 -4.4450))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -4.8260)
+        (xy 0 -4.9530))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -5.3340)
+        (xy 0 -5.4610))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -5.8420)
+        (xy 0 -5.9690))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -6.3500)
+        (xy 0 -6.4770))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -6.8580)
+        (xy 0 -6.9850))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -7.3660)
+        (xy 0 -7.4930))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -7.8740)
+        (xy 0 -8.0010))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -8.3820)
+        (xy 0 -8.5090))
+      (stroke
+        (width 0)
+        (type dot)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -2.5400 10.1600 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "2"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 12.7000 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 10.1600 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "3"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 7.6200 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "4"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at -2.5400 0.0000 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "6"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "5"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 0.0000 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "7"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -2.5400 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "8"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at -2.5400 -10.1600 0)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "10"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -7.6200 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "9"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -10.1600 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "11"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))
+    (pin passive line
+      (at 2.5400 -12.7000 180)
+      (length 1.0160)
+      (name ""
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "12"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))))

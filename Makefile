@@ -27,16 +27,16 @@ check: check-lib check-mod
 verify: build-verify compile-verify
 
 build-lib-connector:
-	python3 scripts/build_lib_connector.py lib/connector/conn.lib
+	python3 scripts/build_lib_connector.py lib/connector/conn.kicad_sym
 
 verify-lib-connector:
-	python3 scripts/build_lib_connector.py lib/connector/conn.lib --verify
+	python3 scripts/build_lib_connector.py lib/connector/conn.kicad_sym --verify
 
 build-lib-switch:
-	python3 scripts/build_lib_switch.py lib/ui/switch.lib
+	python3 scripts/build_lib_switch.py lib/ui/switch.kicad_sym
 
 verify-lib-switch:
-	python3 scripts/build_lib_switch.py lib/ui/switch.lib --verify $(verboseflag)
+	python3 scripts/build_lib_switch.py lib/ui/switch.kicad_sym --verify $(verboseflag)
 
 build-lib-ic:
 	python3 scripts/build_lib_ic.py lib/
@@ -45,10 +45,10 @@ verify-lib-ic:
 	python3 scripts/build_lib_ic.py lib/ --verify $(verboseflag)
 
 build-lib-power:
-	python3 scripts/build_lib_power.py lib/power/power.lib
+	python3 scripts/build_lib_power.py lib/power/power.kicad_sym
 
 verify-lib-power:
-	python3 scripts/build_lib_power.py lib/power/power.lib --verify
+	python3 scripts/build_lib_power.py lib/power/power.kicad_sym --verify
 
 build-mod-chip:
 	python3 scripts/build_mod_chip.py agg.pretty/ mod/chip
@@ -87,10 +87,10 @@ verify-mod-picoblade:
 	python3 scripts/build_mod_picoblade.py agg.pretty/ --verify $(verboseflag)
 
 compile-lib:
-	python3 scripts/compile_lib.py lib/ agg-kicad.lib
+	python3 scripts/compile_lib.py lib/ agg-kicad.kicad_sym
 
 verify-lib:
-	python3 scripts/compile_lib.py lib/ agg-kicad.lib --verify
+	python3 scripts/compile_lib.py lib/ agg-kicad.kicad_sym --verify
 
 compile-sym-lib-table:
 	python3 scripts/compile_sym_lib_table.py lib/ sym-lib-table

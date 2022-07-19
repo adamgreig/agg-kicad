@@ -14,5 +14,5 @@ pins:
     - [SENSE-, 10, in]
   - - [SDA, 7, oc]
     - [SCL, 6, oc]
-  - - [~SHDN, 8, in]
+  - - ["~{SHDN}", 8, in]
     - [ADIN, 5, in]

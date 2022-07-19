@@ -1,0 +1,632 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "RJHSE-538x-04"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference J
+      (id 0)
+      (at -10.1600 45.7200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "RJHSE-538x-04"
+      (id 1)
+      (at -10.1600 -45.7200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:RJHSE-538X-04"
+      (id 2)
+      (at -10.1600 -48.2600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/rjhse538x04.pdf"
+      (id 3)
+      (at -10.1600 -50.8000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "1860606"
+      (id 4)
+      (at -10.1600 -53.3400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "4-Port Shielded 8P8C Modular Connector with LEDs"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "RJHSE-538x-04_0_0"
+      (rectangle
+        (start -10.1600 44.4500)
+        (end 10.1600 -44.4500)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin passive line
+        (at -15.2400 43.1800 0)
+        (length 5.0800)
+        (name "TX+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 40.6400 0)
+        (length 5.0800)
+        (name "TX-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 38.1000 0)
+        (length 5.0800)
+        (name "RX+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 35.5600 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 33.0200 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 30.4800 0)
+        (length 5.0800)
+        (name "RX-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 27.9400 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 25.4000 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 20.3200 0)
+        (length 5.0800)
+        (name "TX+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 17.7800 0)
+        (length 5.0800)
+        (name "TX-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 15.2400 0)
+        (length 5.0800)
+        (name "RX+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 12.7000 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 10.1600 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 7.6200 0)
+        (length 5.0800)
+        (name "RX-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 5.0800 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 2.5400 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -2.5400 0)
+        (length 5.0800)
+        (name "TX+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -5.0800 0)
+        (length 5.0800)
+        (name "TX-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -7.6200 0)
+        (length 5.0800)
+        (name "RX+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -10.1600 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -12.7000 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -15.2400 0)
+        (length 5.0800)
+        (name "RX-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -17.7800 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -20.3200 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -25.4000 0)
+        (length 5.0800)
+        (name "TX+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -27.9400 0)
+        (length 5.0800)
+        (name "TX-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -30.4800 0)
+        (length 5.0800)
+        (name "RX+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -33.0200 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -35.5600 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -38.1000 0)
+        (length 5.0800)
+        (name "RX-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -40.6400 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -15.2400 -43.1800 0)
+        (length 5.0800)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 43.1800 180)
+        (length 5.0800)
+        (name "LED1+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 40.6400 180)
+        (length 5.0800)
+        (name "LED1-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 35.5600 180)
+        (length 5.0800)
+        (name "LED2+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 33.0200 180)
+        (length 5.0800)
+        (name "LED2-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1P11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 27.9400 180)
+        (length 5.0800)
+        (name "LED1+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 25.4000 180)
+        (length 5.0800)
+        (name "LED1-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 20.3200 180)
+        (length 5.0800)
+        (name "LED2+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 17.7800 180)
+        (length 5.0800)
+        (name "LED2-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2P11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 12.7000 180)
+        (length 5.0800)
+        (name "LED1+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 10.1600 180)
+        (length 5.0800)
+        (name "LED1-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 5.0800 180)
+        (length 5.0800)
+        (name "LED2+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 2.5400 180)
+        (length 5.0800)
+        (name "LED2-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3P11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 -2.5400 180)
+        (length 5.0800)
+        (name "LED1+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 -5.0800 180)
+        (length 5.0800)
+        (name "LED1-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 -10.1600 180)
+        (length 5.0800)
+        (name "LED2+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 -12.7000 180)
+        (length 5.0800)
+        (name "LED2-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4P11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 -17.7800 180)
+        (length 5.0800)
+        (name SHIELD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "S1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 -20.3200 180)
+        (length 5.0800)
+        (name SHIELD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "S2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 -22.8600 180)
+        (length 5.0800)
+        (name SHIELD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "S3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 -25.4000 180)
+        (length 5.0800)
+        (name SHIELD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "S4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

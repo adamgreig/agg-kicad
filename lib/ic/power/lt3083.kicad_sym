@@ -1,0 +1,192 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "LT3083"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -12.7000 12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "LT3083"
+      (id 1)
+      (at -12.7000 -12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:DFN-12-EP-LT-DF"
+      (id 2)
+      (at -12.7000 -15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "http://cds.linear.com/docs/en/datasheet/3083fa.pdf"
+      (id 3)
+      (at -12.7000 -17.7800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "2295280"
+      (id 4)
+      (at -12.7000 -20.3200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "Adjustable 3A single-resistor LDO regulator"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "LT3083_0_0"
+      (rectangle
+        (start -12.7000 11.4300)
+        (end 12.7000 -11.4300)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -15.2400 10.1600 0)
+        (length 2.5400)
+        (name IN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 7.6200 0)
+        (length 2.5400)
+        (name IN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 5.0800 0)
+        (length 2.5400)
+        (name IN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 2.5400 0)
+        (length 2.5400)
+        (name IN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -2.5400 0)
+        (length 2.5400)
+        (name VCONTROL
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -5.0800 0)
+        (length 2.5400)
+        (name VCONTROL
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -10.1600 0)
+        (length 2.5400)
+        (name SET
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_out line
+        (at 15.2400 10.1600 180)
+        (length 2.5400)
+        (name OUT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 7.6200 180)
+        (length 2.5400)
+        (name OUT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 5.0800 180)
+        (length 2.5400)
+        (name OUT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 2.5400 180)
+        (length 2.5400)
+        (name OUT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 15.2400 0.0000 180)
+        (length 2.5400)
+        (name OUT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

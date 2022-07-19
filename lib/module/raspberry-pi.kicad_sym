@@ -1,0 +1,493 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "RASPBERRY-PI"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference J
+      (id 0)
+      (at -22.8600 33.0200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "RASPBERRY-PI"
+      (id 1)
+      (at -22.8600 -33.0200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:DIL-254P-40"
+      (id 2)
+      (at -22.8600 -35.5600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://pinout.xyz/"
+      (id 3)
+      (at -22.8600 -38.1000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "Raspberry Pi GPIO Connector"
+      (id 5)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "RASPBERRY-PI_0_0"
+      (rectangle
+        (start -22.8600 31.7500)
+        (end 22.8600 -31.7500)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_out line
+        (at -25.4000 30.4800 0)
+        (length 2.5400)
+        (name "VCC-3V3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -25.4000 27.9400 0)
+        (length 2.5400)
+        (name "VCC-3V3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "17"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -25.4000 25.4000 0)
+        (length 2.5400)
+        (name "VCC-5V"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -25.4000 22.8600 0)
+        (length 2.5400)
+        (name "VCC-5V"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -25.4000 17.7800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -25.4000 15.2400 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -25.4000 12.7000 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -25.4000 10.1600 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "20"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -25.4000 7.6200 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "25"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -25.4000 5.0800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "30"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -25.4000 2.5400 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "34"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -25.4000 0.0000 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "39"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -25.4000 -5.0800 0)
+        (length 2.5400)
+        (name "GPIO22"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "15"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -25.4000 -7.6200 0)
+        (length 2.5400)
+        (name "GPIO23"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "16"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -25.4000 -10.1600 0)
+        (length 2.5400)
+        (name "GPIO24"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "18"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -25.4000 -12.7000 0)
+        (length 2.5400)
+        (name "GPIO25"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "22"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -25.4000 -15.2400 0)
+        (length 2.5400)
+        (name "GPIO26"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "37"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -25.4000 -17.7800 0)
+        (length 2.5400)
+        (name "GPIO27"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -25.4000 -22.8600 0)
+        (length 2.5400)
+        (name "ID_SD-GPIO0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "27"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -25.4000 -25.4000 0)
+        (length 2.5400)
+        (name "ID_SC-GPIO1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "28"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 30.4800 180)
+        (length 2.5400)
+        (name "SDA-GPIO2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 27.9400 180)
+        (length 2.5400)
+        (name "SCL-GPIO3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 22.8600 180)
+        (length 2.5400)
+        (name "TXD-GPIO14"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 20.3200 180)
+        (length 2.5400)
+        (name "RXD-GPIO15"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 15.2400 180)
+        (length 2.5400)
+        (name "PWM0-GPIO12"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "32"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 12.7000 180)
+        (length 2.5400)
+        (name "PWM1-GPIO13"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "33"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 7.6200 180)
+        (length 2.5400)
+        (name "SPI0-MOSI-GPIO10"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "19"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 5.0800 180)
+        (length 2.5400)
+        (name "SPI0-MISO-GPIO9"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "21"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 2.5400 180)
+        (length 2.5400)
+        (name "SPI0-SCLK-GPIO11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "23"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 0.0000 180)
+        (length 2.5400)
+        (name "SPI0-CE0-GPIO8"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "24"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 -2.5400 180)
+        (length 2.5400)
+        (name "SPI0-CE1-GPIO7"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "26"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 -7.6200 180)
+        (length 2.5400)
+        (name "SPI1-MOSI-GPIO20"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "38"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 -10.1600 180)
+        (length 2.5400)
+        (name "SPI1-MISO-GPIO19"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "35"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 -12.7000 180)
+        (length 2.5400)
+        (name "SPI1-SCLK-GPIO21"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "40"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 -15.2400 180)
+        (length 2.5400)
+        (name "SPI1-CE0-GPIO18"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 -17.7800 180)
+        (length 2.5400)
+        (name "SPI1-CE1-GPIO17"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 -20.3200 180)
+        (length 2.5400)
+        (name "SPI1-CE2-GPIO16"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "36"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 -25.4000 180)
+        (length 2.5400)
+        (name "GPCLK0-GPIO4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 -27.9400 180)
+        (length 2.5400)
+        (name "GPCLK1-GPIO5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "29"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 25.4000 -30.4800 180)
+        (length 2.5400)
+        (name "GPCLK2-GPIO6"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "31"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

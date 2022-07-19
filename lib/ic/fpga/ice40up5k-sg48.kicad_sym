@@ -1,0 +1,599 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "iCE40UP5K-SG48"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -20.3200 45.7200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "iCE40UP5K-SG48"
+      (id 1)
+      (at -20.3200 -45.7200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:Lattice-SG48"
+      (id 2)
+      (at -20.3200 -48.2600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "http://www.latticesemi.com/view_document?document_id=51968"
+      (id 3)
+      (at -20.3200 -50.8000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property DigiKey "220-2212-1-ND"
+      (id 4)
+      (at -20.3200 -53.3400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "iCE40 UP5K FPGA"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "iCE40UP5K-SG48_0_0"
+      (rectangle
+        (start -20.3200 44.4500)
+        (end 20.3200 -44.4500)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -22.8600 43.1800 0)
+        (length 2.5400)
+        (name VCC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -22.8600 40.6400 0)
+        (length 2.5400)
+        (name VCC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "30"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -22.8600 38.1000 0)
+        (length 2.5400)
+        (name "VCCIO_0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "33"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -22.8600 35.5600 0)
+        (length 2.5400)
+        (name "VCCIO_1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "22"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -22.8600 33.0200 0)
+        (length 2.5400)
+        (name "VCCIO_2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -22.8600 30.4800 0)
+        (length 2.5400)
+        (name "VPP_2V5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "24"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -22.8600 25.4000 0)
+        (length 2.5400)
+        (name VCCPLL
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "29"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -22.8600 20.3200 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number EP
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at -22.8600 15.2400 0)
+        (length 2.5400)
+        (name CDONE
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -22.8600 12.7000 0)
+        (length 2.5400)
+        (name "~{CRESET}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -22.8600 7.6200 0)
+        (length 2.5400)
+        (name "IOB_32a_SPI_SO"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -22.8600 5.0800 0)
+        (length 2.5400)
+        (name "IOB_34a_SPI_SCK"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "15"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -22.8600 2.5400 0)
+        (length 2.5400)
+        (name "IOB_35b_SPI_SS"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "16"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -22.8600 0.0000 0)
+        (length 2.5400)
+        (name "IOB_33b_SPI_SI"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "17"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -22.8600 -5.0800 0)
+        (length 2.5400)
+        (name "RGB0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "39"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -22.8600 -7.6200 0)
+        (length 2.5400)
+        (name "RGB1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "40"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -22.8600 -10.1600 0)
+        (length 2.5400)
+        (name "RGB2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "41"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 43.1800 180)
+        (length 2.5400)
+        (name "IOB_3b_G6"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "44"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 40.6400 180)
+        (length 2.5400)
+        (name "IOB_5b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "45"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 38.1000 180)
+        (length 2.5400)
+        (name "IOB_0a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "46"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 35.5600 180)
+        (length 2.5400)
+        (name "IOB_2a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "47"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 33.0200 180)
+        (length 2.5400)
+        (name "IOB_4a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "48"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 30.4800 180)
+        (length 2.5400)
+        (name "IOB_6a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 27.9400 180)
+        (length 2.5400)
+        (name "IOB_9b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 25.4000 180)
+        (length 2.5400)
+        (name "IOB_8a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 20.3200 180)
+        (length 2.5400)
+        (name "IOB_13b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 17.7800 180)
+        (length 2.5400)
+        (name "IOB_16a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 15.2400 180)
+        (length 2.5400)
+        (name "IOB_18a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 12.7000 180)
+        (length 2.5400)
+        (name "IOB_20a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 10.1600 180)
+        (length 2.5400)
+        (name "IOB_22a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 7.6200 180)
+        (length 2.5400)
+        (name "IOB_24a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 5.0800 180)
+        (length 2.5400)
+        (name "IOB_31b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "18"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 2.5400 180)
+        (length 2.5400)
+        (name "IOB_29b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "19"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 0.0000 180)
+        (length 2.5400)
+        (name "IOB_25b_G3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "20"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -2.5400 180)
+        (length 2.5400)
+        (name "IOB_23b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "21"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -7.6200 180)
+        (length 2.5400)
+        (name "IOT_37a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "23"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -10.1600 180)
+        (length 2.5400)
+        (name "IOT_36b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "25"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -12.7000 180)
+        (length 2.5400)
+        (name "IOT_39a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "26"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -15.2400 180)
+        (length 2.5400)
+        (name "IOT_38b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "27"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -17.7800 180)
+        (length 2.5400)
+        (name "IOT_41a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "28"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -20.3200 180)
+        (length 2.5400)
+        (name "IOT_42b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "31"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -22.8600 180)
+        (length 2.5400)
+        (name "IOT_43a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "32"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -25.4000 180)
+        (length 2.5400)
+        (name "IOT_44b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "34"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -27.9400 180)
+        (length 2.5400)
+        (name "IOT_46b_G0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "35"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -30.4800 180)
+        (length 2.5400)
+        (name "IOT_48b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "36"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -33.0200 180)
+        (length 2.5400)
+        (name "IOT_45a_G1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "37"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -35.5600 180)
+        (length 2.5400)
+        (name "IOT_50b"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "38"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -38.1000 180)
+        (length 2.5400)
+        (name "IOT_51a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "42"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 22.8600 -40.6400 180)
+        (length 2.5400)
+        (name "IOT_49a"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "43"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

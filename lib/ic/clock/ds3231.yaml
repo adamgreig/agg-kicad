@@ -13,5 +13,5 @@ pins:
 
 - - - [32KHZ, 1, od]
 
-  - - [~INT~/SQW, 3, od]
-    - [~RST, 4, bidi]
+  - - ["~{INT}/SQW", 3, od]
+    - ["~{RST}", 4, bidi]

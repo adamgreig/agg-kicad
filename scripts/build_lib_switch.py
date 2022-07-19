@@ -1,14 +1,15 @@
 """
 build_lib_switch.py
-Copyright 2015 Adam Greig
+Copyright 2016-2022 Adam Greig
 Licensed under the MIT licence, see LICENSE file for details.
 
-Generate switch.lib, generic nPmT switch symbols.
+Generate switch.kicad_sym, generic nPmT switch symbols.
 """
 
-from __future__ import print_function, division
 import sys
 import os.path
+
+import sexp
 
 
 def switch(n, m):
@@ -16,7 +17,6 @@ def switch(n, m):
     Generates a generic switch symbol for an nPsT sort of switch.
     Probably won't generate a useful pin numbering when T>2.
     """
-    out = []
 
     # Convert to stupid letters for 1 and 2
     name_letters = {1: "S", 2: "D"}
@@ -44,39 +44,74 @@ def switch(n, m):
     if n % 2 == 1 and m % 2 == 0:
         valheight += 100
 
+    refheight *= 2.54/100
+    valheight *= 2.54/100
+
     # Output component header
     name = "SWITCH_{}P{}T".format(name_n, name_m)
-    out.append("#\n# {}\n#".format(name))
-    out.append('DEF {} SW 0 1 Y N 1 F N'.format(name))
-    out.append('F0 "SW" 0 {} 50 H V C CNN'.format(refheight))
-    out.append('F1 "{}" 0 {} 50 H V C CNN'.format(name, valheight))
-    out.append('F2 "" 0 0 50 H I C CNN')
-    out.append('F3 "" 0 0 50 H I C CNN')
-    out.append('DRAW')
+    out = [
+        'symbol', name,
+        ['pin_names', 'hide'],
+        ['in_bom', 'yes'],
+        ['on_board', 'yes'],
+        ['property', 'Reference', 'SW', ['id', 0], ['at', 0, refheight, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]]]],
+        ['property', 'Value', name, ['id', 1], ['at', 0, valheight, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]]]],
+        ['property', 'Footprint', '', ['id', 2], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+        ['property', 'Datasheet', '', ['id', 3], ['at', 0, 0, 0],
+         ['effects', ['font', ['size', 1.27, 1.27]], 'hide']],
+    ]
 
     # Output drawing
+    drawing = []
+    pins = []
     pole_top = hheight
     for pole in range(n):
+
         # Draw pole
         pole_num = pole*(m+1) + 2
         pole_y = pole_top - (100 * (m - 1))//2
         if m % 2 == 0:
             pole_y -= 50
-        out.append('X "~" {} -100 {} 40 R 50 50 1 1 P'
-                   .format(pole_num, pole_y))
-        out.append('C -50 {} 10 1 1 0 N'.format(pole_y))
-        out.append('P 2 1 1 0 -50 {} 50 {} N'
-                   .format(pole_y + 10, pole_y + 90))
+        pole_y *= 2.54/100
+        drawing.append([
+            'polyline',
+            ['pts', ['xy', -1.27, pole_y + .254], ['xy', 1.27, pole_y + 2.286]],
+            ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+            ['fill', ['type', 'none']],
+        ])
+        drawing.append([
+            'circle', ['center', -1.27, pole_y], ['radius', .254],
+            ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+            ['fill', ['type', 'none']],
+        ])
+        pins.append([
+            'pin', 'passive', 'line', ['at', -2.54, pole_y, 0], ['length', 1.016],
+            ['name', '', ['effects', ['font', ['size', 1.27, 1.27]]]],
+            ['number', str(pole_num),
+             ['effects', ['font', ['size', 1.27, 1.27]]]],
+        ])
 
         for throw in range(m):
             # Draw throws
             throw_num = pole_num + throw - 1
             throw_y = pole_top - 100 * throw
+            throw_y *= 2.54/100
             if throw > 0:
                 throw_num += 1
-            out.append('X "~" {} 100 {} 40 L 50 50 1 1 P'
-                       .format(throw_num, throw_y))
-            out.append('C 50 {} 10 1 1 0 N'.format(throw_y))
+            drawing.append([
+                'circle', ['center', 1.27, throw_y], ['radius', .254],
+                ['stroke', ['width', 0], ['type', 'default'], ['color', 0, 0, 0, 0]],
+                ['fill', ['type', 'none']],
+            ])
+            pins.append([
+                'pin', 'passive', 'line', ['at', 2.54, throw_y, 180], ['length', 1.016],
+                ['name', '', ['effects', ['font', ['size', 1.27, 1.27]]]],
+                ['number', str(throw_num),
+                 ['effects', ['font', ['size', 1.27, 1.27]]]],
+            ])
 
         # Move down for next pole
         pole_top -= 100 * (m + 1)
@@ -87,32 +122,32 @@ def switch(n, m):
         if m % 2 == 0:
             pole_y -= 50
         for _ in range(5*(m+1)*(n-1)):
-            out.append('P 2 1 1 0 0 {} 0 {} N'
-                       .format(pole_y, pole_y - 5))
+            dash_start = pole_y * 2.54/100
+            dash_end = dash_start - 0.127
+            drawing.append([
+                'polyline',
+                ['pts', ['xy', 0, dash_start], ['xy', 0, dash_end]],
+                ['stroke', ['width', 0], ['type', 'dot'], ['color', 0, 0, 0, 0]],
+                ['fill', ['type', 'none']],
+            ])
             pole_y -= 20
 
-    # Done
-    out.append('ENDDRAW\nENDDEF\n')
-
+    out += drawing
+    out += pins
     return out
 
 
 def main(libpath, verify=False):
-    out = []
-    out.append("EESchema-LIBRARY Version 2.3")
-    out.append("#encoding utf-8\n")
-    out.append("#============================================================")
-    out.append("# Automatically generated by agg-kicad build_lib_switch.py")
-    out.append("# See github.com/adamgreig/agg-kicad")
-    out.append("#============================================================")
-    out.append("")
+    out = ['kicad_symbol_lib',
+        ['version', 20211014],
+        ['generator', 'agg_kicad.build_lib_switch'],
+    ]
 
     for n in (1, 2, 3):
         for m in (1, 2, 3):
-            out += switch(n, m)
+            out.append(switch(n, m))
 
-    out.append('# End Library\n')
-    lib = "\n".join(out)
+    lib = sexp.generate(out)
 
     # Check if the library has changed
     if os.path.isfile(libpath):

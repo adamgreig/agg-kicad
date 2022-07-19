@@ -1,7 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP XTAL
-D Crystal oscillator
-$ENDCMP
-#
-#End Doc Library

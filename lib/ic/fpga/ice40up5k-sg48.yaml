@@ -19,7 +19,7 @@ pins:
   - - [GND, EP, pwrin]
 
   - - [CDONE, 7, out]
-    - [~CRESET, 8, in]
+    - ["~{CRESET}", 8, in]
 
   - - [IOB_32a_SPI_SO, 14, bidi]
     - [IOB_34a_SPI_SCK, 15, bidi]

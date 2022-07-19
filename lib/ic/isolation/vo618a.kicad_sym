@@ -1,0 +1,197 @@
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "VO618A" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (property "Reference" "IC" (id 0) (at 0 2.286 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "VO618A" (id 1) (at 0 -5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "agg:VO618A-SMD-4-7" (id 2) (at 0 -6.858 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.vishay.com/docs/83432/vo618a.pdf" (id 3) (at 0 -8.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Farnell" "2251561" (id 4) (at 0 -10.922 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "VO618A_0_1"
+      (rectangle (start -2.54 1.27) (end 2.54 -3.81)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (polyline
+        (pts
+          (xy -2.54 -2.54)
+          (xy -1.27 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 0)
+          (xy -1.27 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 -1.778)
+          (xy -0.762 -1.778)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.27 -1.778)
+          (xy -1.27 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.27 -0.762)
+          (xy -1.27 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -0.508 -1.016)
+          (xy 0.254 -1.524)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -0.508 -0.254)
+          (xy 0.254 -0.762)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 -1.778)
+          (xy 0.762 -2.032)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 -0.762)
+          (xy 0.762 -1.778)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 -0.762)
+          (xy 0.762 -0.508)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 -2.54)
+          (xy 2.032 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 0)
+          (xy 2.032 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 -1.778)
+          (xy 1.524 -2.54)
+          (xy 2.032 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 -0.762)
+          (xy 1.524 0)
+          (xy 2.032 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.778 -0.762)
+          (xy -0.762 -0.762)
+          (xy -1.27 -1.778)
+          (xy -1.778 -0.762)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.254 -1.524)
+          (xy 0.254 -1.27)
+          (xy 0 -1.524)
+          (xy 0.254 -1.524)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.254 -0.762)
+          (xy 0.254 -0.508)
+          (xy 0 -0.762)
+          (xy 0.254 -0.762)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.016 -2.286)
+          (xy 1.27 -2.032)
+          (xy 1.524 -2.54)
+          (xy 1.016 -2.286)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "VO618A_1_1"
+      (pin passive line (at -5.08 0 0) (length 2.54)
+        (name "LED_A" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -5.08 -2.54 0) (length 2.54)
+        (name "LED_C" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 5.08 -2.54 180) (length 2.54)
+        (name "BJT_E" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 5.08 0 180) (length 2.54)
+        (name "BJT_C" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+)

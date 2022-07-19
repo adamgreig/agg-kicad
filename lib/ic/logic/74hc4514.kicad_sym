@@ -1,0 +1,324 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "74HC4514"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -7.6200 22.8600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "74HC4514"
+      (id 1)
+      (at -7.6200 -22.8600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:SOIC-24-W"
+      (id 2)
+      (at -7.6200 -25.4000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "http://www.farnell.com/datasheets/1870944.pdf"
+      (id 3)
+      (at -7.6200 -27.9400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "2444987"
+      (id 4)
+      (at -7.6200 -30.4800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "4-to-16 line decoder/demultiplexer with input latches"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "74HC4514_0_0"
+      (rectangle
+        (start -7.6200 21.5900)
+        (end 7.6200 -21.5900)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -10.1600 20.3200 0)
+        (length 2.5400)
+        (name VCC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "24"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -10.1600 17.7800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -10.1600 12.7000 0)
+        (length 2.5400)
+        (name LE
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -10.1600 7.6200 0)
+        (length 2.5400)
+        (name "~{E}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "23"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -10.1600 2.5400 0)
+        (length 2.5400)
+        (name "A0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -10.1600 0.0000 0)
+        (length 2.5400)
+        (name "A1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -10.1600 -2.5400 0)
+        (length 2.5400)
+        (name "A2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "21"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -10.1600 -5.0800 0)
+        (length 2.5400)
+        (name "A3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "22"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 20.3200 180)
+        (length 2.5400)
+        (name "Q0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 17.7800 180)
+        (length 2.5400)
+        (name "Q1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 15.2400 180)
+        (length 2.5400)
+        (name "Q2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 12.7000 180)
+        (length 2.5400)
+        (name "Q3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 10.1600 180)
+        (length 2.5400)
+        (name "Q4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 7.6200 180)
+        (length 2.5400)
+        (name "Q5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 5.0800 180)
+        (length 2.5400)
+        (name "Q6"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 2.5400 180)
+        (length 2.5400)
+        (name "Q7"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 0.0000 180)
+        (length 2.5400)
+        (name "Q8"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "18"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 -2.5400 180)
+        (length 2.5400)
+        (name "Q9"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "17"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 -5.0800 180)
+        (length 2.5400)
+        (name "Q10"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "20"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 -7.6200 180)
+        (length 2.5400)
+        (name "Q11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "19"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 -10.1600 180)
+        (length 2.5400)
+        (name "Q12"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 -12.7000 180)
+        (length 2.5400)
+        (name "Q13"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 -15.2400 180)
+        (length 2.5400)
+        (name "Q14"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "16"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 10.1600 -17.7800 180)
+        (length 2.5400)
+        (name "Q15"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "15"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

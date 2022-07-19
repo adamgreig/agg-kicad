@@ -1,5 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-$CMP 74HC4514
-D 4-to-16 line decoder/demultiplexer with input latches
-F http://www.farnell.com/datasheets/1870944.pdf
-$ENDCMP

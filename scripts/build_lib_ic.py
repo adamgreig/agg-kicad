@@ -1,13 +1,13 @@
 """
 build_lib_ic.py
-Copyright 2016 Adam Greig
+Copyright 2016-2022 Adam Greig
 Licensed under the MIT licence, see LICENSE file for details.
 
 Generate symbols for generic black-box ICs etc.
 
 Symbols configuration:
-Each symbol is defined by a .yaml file in the same path that the .lib file
-should be placed. Each file contains the following keys:
+Each symbol is defined by a .yaml file in the same path that the .kicad_sym
+file should be placed. Each file contains the following keys:
 designator: optional, default "IC", the default reference designator
 footprint: optional, an associated footprint to autofill
 datasheet: optional, a URL or path to a datasheet
@@ -27,28 +27,29 @@ pins: list of lists of left and right pin groups
 
 """
 
-from __future__ import print_function, division
-
 import os
 import sys
 import yaml
 import fnmatch
 import argparse
 
+import sexp
+
 pin_types = {
-    "in": "I",
-    "out": "O",
-    "bidi": "B",
-    "tri": "T",
-    "passive": "P",
-    "unspec": "U",
-    "pwrin": "W",
-    "pwrout": "w",
-    "oc": "C",
-    "od": "C",
-    "oe": "E",
-    "os": "E",
-    "nc": "N",
+    "in": "input",
+    "out": "output",
+    "bidi": "bidirectional",
+    "tri": "tri_state",
+    "passive": "passive",
+    "unspec": "unspecified",
+    "pwrin": "power_in",
+    "pwrout": "power_out",
+    "oc": "open_collector",
+    "od": "open_collector",
+    "oe": "open_emitter",
+    "os": "open_emitter",
+    "nc": "no_connect",
+    "free": "free",
 }
 
 
@@ -70,7 +71,7 @@ def geometry(unit, longest_num):
         max([0] + [max(len(p[0]) for p in grp) for grp in right_pins]))
 
     # Width is either that required for longest name or twice that for
-    # dual-sided parts, rounded up to nearest 100. If length is not a
+    # dual-sided parts, rounded up to nearest 2.54. If length is not a
     # multiple of 100, add extra width to ensure pins are on 0.1" grid.
     width = (longest_name + 1) * 50
     width += width % 100
@@ -92,6 +93,11 @@ def geometry(unit, longest_num):
     # bottom of parts with an even number of pins, but preserves symmetry.
     if (height // 100) % 2 == 0:
         height += 100
+
+    # Convert to millimetres.
+    height *= (2.54/100)
+    width *= (2.54/100)
+    length *= (2.54/100)
 
     return width, height, length
 
@@ -135,112 +141,124 @@ def fields(conf, units):
     geoms = [geometry(unit, n) for unit in units]
     width = max(g[0] for g in geoms)
     height = max(g[1] for g in geoms)
-    field_x = -width//2
-    field_y = height//2 + 50
+    field_x = -width/2
+    field_y = height/2 + 1.27
     out = []
 
-    # Designator at top
-    out.append("F0 \"{}\" {} {} 50 H V L CNN".format(
-        conf.get('designator', 'IC'), field_x, field_y))
+    out.append([
+        'property', 'Reference', conf.get('designator', 'IC'),
+        ['id', 0], ['at', field_x, field_y, 0],
+        ['effects', ['font', ['size', 1.27, 1.27]], ['justify', 'left']],
+    ])
+    out.append([
+        'property', 'Value', conf['name'],
+        ['id', 1], ['at', field_x, -field_y, 0],
+        ['effects', ['font', ['size', 1.27, 1.27]], ['justify', 'left']],
+    ])
+    out.append([
+        'property', 'Footprint', conf.get('footprint', ''),
+        ['id', 2], ['at', field_x, -field_y-2.54, 0],
+        ['effects', ['font', ['size', 1.27, 1.27]], ['justify', 'left'],
+         'hide'],
+    ])
+    out.append([
+        'property', 'Datasheet', conf.get('datasheet', ''),
+        ['id', 3], ['at', field_x, -field_y-5.08, 0],
+        ['effects', ['font', ['size', 1.27, 1.27]], ['justify', 'left'],
+         'hide'],
+    ])
 
-    # Value/name at bottom
-    out.append("F1 \"{}\" {} {} 50 H V L CNN".format(
-        conf['name'], field_x, -field_y))
-
-    # Either specify a footprint or just set its size, position, invisibility
-    if "footprint" in conf:
-        out.append("F2 \"{}\" {} {} 50 H I L CNN".format(
-            conf['footprint'], field_x, -field_y-100))
-    else:
-        out.append("F2 \"\" {} {} 50 H I L CNN".format(field_x, -field_y-100))
-
-    # Specify a datasheet if given
-    if "datasheet" in conf:
-        out.append("F3 \"{}\" {} {} 50 H I L CNN".format(
-            conf['datasheet'], field_x, -field_y-200))
-    else:
-        out.append("F3 \"\" {} {} 50 H I L CNN".format(field_x, -field_y-200))
-
-    # Order codes
     for idx, (supplier, code) in enumerate(conf.get("ordercodes", [])):
-        out.append("F{} \"{}\" {} {} 50 H I L CNN \"{}\"".format(
-            idx+4, code, field_x, -field_y-(300+idx*100), supplier))
+        out.append([
+            'property', supplier, code, ['id', idx+4],
+            ['at', field_x, -field_y-(7.62+idx*2.54), 0],
+            ['effects', ['font', ['size', 1.27, 1.27]], ['justify', 'left'],
+             'hide']
+        ])
+
+    n = 4 + len(conf.get('ordercodes', []))
+    out.append([
+        'property', 'ki_description', conf.get('description', ''),
+        ['id', n+1], ['at', 0, 0, 0],
+        ['effects', ['font', ['size', 1.27, 1.27]], 'hide'],
+    ])
+    if len(units) > 1:
+        out.append([
+            'property', 'ki_locked', '',
+            ['id', n+2], ['at', 0, 0, 0],
+            ['effects', ['font', ['size', 1.27, 1.27]], 'hide'],
+        ])
 
     return out
 
 
-def draw_pins(groups, x0, y0, direction, length, unit_idx):
+def draw_pins(groups, x0, y0, direction, length):
     out = []
+    angle = 0 if direction == 'R' else 180
     pin_x = x0
     pin_y = y0
     for group in groups:
         for (name, num, t) in group:
-            out.append("X {} {} {} {} {} {} 50 50 {} 0 {}".format(
-                name, num, pin_x, pin_y, length, direction, unit_idx,
-                pin_types[t]))
-            pin_y -= 100
-        pin_y -= 100
+            out.append([
+                'pin', pin_types[t], 'line', ['at', pin_x, pin_y, angle],
+                ['length', length],
+                ['name', str(name), ['effects', ['font', ['size', 1.27, 1.27]]]],
+                ['number', str(num), ['effects', ['font', ['size', 1.27, 1.27]]]],
+            ])
+            pin_y -= 2.54
+        pin_y -= 2.54
     return out
 
 
-def draw(units):
+def draw(conf, units):
     out = []
-    out.append("DRAW")
 
     n = longest_num(units)
 
     for unit_idx, unit in enumerate(units):
         if len(units) > 1:
             # For multi-unit parts, unit indices start at 1,
-            # while for single-unit parts, everythign is unit 0.
+            # while for single-unit parts, everything is unit 0.
             unit_idx += 1
+        sym = ['symbol', f"{conf['name']}_{unit_idx}_0"]
         width, height, length = geometry(unit, n)
 
         # Containing box
-        out.append("S {} {} {} {} {} 1 0 f".format(
-            -width//2, height//2, width//2, -height//2, unit_idx))
+        sym.append(['rectangle',
+            ['start', -width/2, height/2],
+            ['end', width/2, -height/2],
+            ['stroke', ['width', 0], ['type', 'default'],
+             ['color', 0, 0, 0, 0]],
+            ['fill', ['type', 'background']]
+        ])
 
         # Pins
-        x0 = -width//2 - length
-        y0 = height//2 - 50
+        x0 = -width/2 - length
+        y0 = height/2 - 1.27
         left_pins, right_pins = unit
         if left_pins:
-            out += draw_pins(left_pins, x0, y0, "R", length, unit_idx)
+            sym += draw_pins(left_pins, x0, y0, "R", length)
         if right_pins:
-            out += draw_pins(right_pins, -x0, y0, "L", length, unit_idx)
+            sym += draw_pins(right_pins, -x0, y0, "L", length)
+        out.append(sym)
 
-    out.append("ENDDRAW")
     return out
 
 
 def library(conf):
-    out = []
-
     units = normalise_pins(conf['pins'])
+    out = [
+        'kicad_symbol_lib',
+        ['version', 20211014],
+        ['generator', 'agg_kicad.build_lib_ic'],
+        ['symbol', conf['name'], ['pin_names', ['offset', 1.016]],
+         ['in_bom', 'yes'], ['on_board', 'yes']],
+    ]
 
-    out.append("EESchema-LIBRARY Version 2.3")
-    out.append("#encoding utf-8")
-    out.append("#\n# {}\n#".format(conf['name']))
-    locked = "F" if len(units) == 1 else "L"
-    out.append("DEF {} {} 0 40 Y Y {} {} N".format(
-        conf['name'], conf.get('designator', 'IC'), len(units), locked))
+    out[-1] += fields(conf, units)
+    out[-1] += draw(conf, units)
 
-    out += fields(conf, units)
-    out += draw(units)
-
-    out.append("ENDDEF\n#\n#End Library\n")
-    return "\n".join(out)
-
-
-def documentation(conf):
-    out = []
-    out.append("EESchema-DOCLIB  Version 2.0")
-    out.append("$CMP {}".format(conf['name']))
-    out.append("D {}".format(conf['description']))
-    if "datasheet" in conf:
-        out.append("F {}".format(conf['datasheet']))
-    out.append("$ENDCMP\n")
-    return "\n".join(out)
+    return sexp.generate(out)
 
 
 def load_items(libpath):
@@ -261,11 +279,9 @@ def main(libpath, verify=False, verbose=False):
     config = load_items(libpath)
     for name, conf in config.items():
         conf['name'] = name
-        path = os.path.join(conf.get("path", ""), name.lower()+".lib")
-        dcmpath = os.path.splitext(path)[0] + ".dcm"
+        path = os.path.join(conf.get("path", ""), name.lower()+".kicad_sym")
 
         lib = library(conf)
-        dcm = documentation(conf)
 
         if verify and verbose:
             print("Verifying", path)
@@ -274,10 +290,7 @@ def main(libpath, verify=False, verbose=False):
         if os.path.isfile(path):
             with open(path) as f:
                 oldlib = f.read()
-            if os.path.isfile(dcmpath):
-                with open(dcmpath) as f:
-                    olddcm = f.read()
-                if lib == oldlib and dcm == olddcm:
+                if lib == oldlib:
                     continue
 
         # If so, either verification failed or write the new files
@@ -286,8 +299,6 @@ def main(libpath, verify=False, verbose=False):
         else:
             with open(path, "w") as f:
                 f.write(lib)
-            with open(dcmpath, "w") as f:
-                f.write(dcm)
 
     # If we finished and didn't return yet, verification has succeeded
     if verify:

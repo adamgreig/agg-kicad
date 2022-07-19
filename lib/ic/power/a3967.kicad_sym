@@ -1,0 +1,324 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "A3967"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -12.7000 22.8600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "A3967"
+      (id 1)
+      (at -12.7000 -22.8600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:SOIC-24-W"
+      (id 2)
+      (at -12.7000 -25.4000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://www.allegromicro.com/-/media/files/datasheets/a3967-datasheet.ashx"
+      (id 3)
+      (at -12.7000 -27.9400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "2980863"
+      (id 4)
+      (at -12.7000 -30.4800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "Microstepping Motor Driver, 5-30V DC, 750 mA"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "A3967_0_0"
+      (rectangle
+        (start -12.7000 21.5900)
+        (end 12.7000 -21.5900)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -15.2400 20.3200 0)
+        (length 2.5400)
+        (name VCC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 17.7800 0)
+        (length 2.5400)
+        (name REF
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 12.7000 0)
+        (length 2.5400)
+        (name STEP
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 10.1600 0)
+        (length 2.5400)
+        (name DIR
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 7.6200 0)
+        (length 2.5400)
+        (name "MS1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 5.0800 0)
+        (length 2.5400)
+        (name "MS2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 2.5400 0)
+        (length 2.5400)
+        (name "~{RESET}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "22"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 0.0000 0)
+        (length 2.5400)
+        (name "~{SLEEP}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -2.5400 0)
+        (length 2.5400)
+        (name "~{ENABLE}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "15"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -7.6200 0)
+        (length 2.5400)
+        (name "RC1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "23"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -10.1600 0)
+        (length 2.5400)
+        (name "RC2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -12.7000 0)
+        (length 2.5400)
+        (name PFD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "24"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at 15.2400 20.3200 180)
+        (length 2.5400)
+        (name "VBB1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "20"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at 15.2400 17.7800 180)
+        (length 2.5400)
+        (name "VBB2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 12.7000 180)
+        (length 2.5400)
+        (name "OUT1A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "16"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 10.1600 180)
+        (length 2.5400)
+        (name "OUT1B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "21"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 5.0800 180)
+        (length 2.5400)
+        (name "OUT2A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 2.5400 180)
+        (length 2.5400)
+        (name "OUT2B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 -2.5400 180)
+        (length 2.5400)
+        (name "SENSE1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "17"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 -5.0800 180)
+        (length 2.5400)
+        (name "SENSE2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at 15.2400 -10.1600 180)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at 15.2400 -12.7000 180)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at 15.2400 -15.2400 180)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "18"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at 15.2400 -17.7800 180)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "19"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

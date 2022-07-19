@@ -30,7 +30,7 @@ pins:
 
   - - [CF, 8, passive]
 
-  - - [~RESET, 5, out]
+  - - ["~{RESET}", 5, out]
 
   - - [VCC, 12, pwrout]
     - [SGND, 13, pwrin]

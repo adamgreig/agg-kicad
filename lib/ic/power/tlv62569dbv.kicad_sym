@@ -1,0 +1,115 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "TLV62569DBV"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -5.0800 5.0800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "TLV62569DBV"
+      (id 1)
+      (at -5.0800 -5.0800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:SOT-23-5"
+      (id 2)
+      (at -5.0800 -7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://www.ti.com/lit/ds/symlink/tlv62569.pdf"
+      (id 3)
+      (at -5.0800 -10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "3121687"
+      (id 4)
+      (at -5.0800 -12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "DC-DC Switching Step Down Buck Regulator, Adj, 2.5-5.5Vin, 1.5MHz, 0.6-5.5V/2Aout, SOT-23-5"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "TLV62569DBV_0_0"
+      (rectangle
+        (start -5.0800 3.8100)
+        (end 5.0800 -3.8100)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -7.6200 2.5400 0)
+        (length 2.5400)
+        (name VIN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -7.6200 0.0000 0)
+        (length 2.5400)
+        (name EN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -7.6200 -2.5400 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 7.6200 2.5400 180)
+        (length 2.5400)
+        (name SW
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 7.6200 -2.5400 180)
+        (length 2.5400)
+        (name FB
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

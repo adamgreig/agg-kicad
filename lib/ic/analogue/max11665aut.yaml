@@ -8,6 +8,6 @@ pins:
 - - - [VDD, 1, pwrin]
     - [AIN, 3, in]
     - [GND, 2, pwrin]
-- - - [~CS, 6, in]
+- - - ["~{CS}", 6, in]
     - [DOUT, 5, out]
     - [SCLK, 4, in]

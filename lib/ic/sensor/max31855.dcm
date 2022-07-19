@@ -1,5 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-$CMP MAX31855
-D Cold-Junction Compensated Thermocouple-to-Digital Converter
-F https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf
-$ENDCMP

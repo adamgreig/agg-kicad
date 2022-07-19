@@ -1,0 +1,588 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "AD9218"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -12.7000 38.1000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "AD9218"
+      (id 1)
+      (at -12.7000 -38.1000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:LQFP-48"
+      (id 2)
+      (at -12.7000 -40.6400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "http://www.analog.com/media/en/technical-documentation/data-sheets/AD9218.pdf"
+      (id 3)
+      (at -12.7000 -43.1800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "2376664"
+      (id 4)
+      (at -12.7000 -45.7200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "10bit 105MSPS dual ADC"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "AD9218_0_0"
+      (rectangle
+        (start -12.7000 36.8300)
+        (end 12.7000 -36.8300)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -15.2400 35.5600 0)
+        (length 2.5400)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "15"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 33.0200 0)
+        (length 2.5400)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "28"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 30.4800 0)
+        (length 2.5400)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "33"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 27.9400 0)
+        (length 2.5400)
+        (name VDD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "46"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 25.4000 0)
+        (length 2.5400)
+        (name VD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 22.8600 0)
+        (length 2.5400)
+        (name VD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "30"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 20.3200 0)
+        (length 2.5400)
+        (name VD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "31"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 17.7800 0)
+        (length 2.5400)
+        (name VD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "48"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 12.7000 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 10.1600 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 7.6200 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "16"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 5.0800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "27"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 2.5400 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "29"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 0.0000 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "32"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 -2.5400 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "34"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -15.2400 -5.0800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "45"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -10.1600 0)
+        (length 2.5400)
+        (name AIN_A
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -12.7000 0)
+        (length 2.5400)
+        (name "~{AIN_A}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -17.7800 0)
+        (length 2.5400)
+        (name AIN_B
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -20.3200 0)
+        (length 2.5400)
+        (name "~{AIN_B}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -25.4000 0)
+        (length 2.5400)
+        (name REFIN_A
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at -15.2400 -27.9400 0)
+        (length 2.5400)
+        (name REFOUT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -15.2400 -30.4800 0)
+        (length 2.5400)
+        (name REFIN_B
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 35.5600 180)
+        (length 2.5400)
+        (name ENC_A
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "47"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 30.4800 180)
+        (length 2.5400)
+        (name "D0_A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "35"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 27.9400 180)
+        (length 2.5400)
+        (name "D1_A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "36"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 25.4000 180)
+        (length 2.5400)
+        (name "D2_A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "37"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 22.8600 180)
+        (length 2.5400)
+        (name "D3_A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "38"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 20.3200 180)
+        (length 2.5400)
+        (name "D4_A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "39"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 17.7800 180)
+        (length 2.5400)
+        (name "D5_A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "40"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 15.2400 180)
+        (length 2.5400)
+        (name "D6_A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "41"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 12.7000 180)
+        (length 2.5400)
+        (name "D7_A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "42"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 10.1600 180)
+        (length 2.5400)
+        (name "D8_A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "43"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 7.6200 180)
+        (length 2.5400)
+        (name "D9_A"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "44"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 2.5400 180)
+        (length 2.5400)
+        (name ENC_B
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -2.5400 180)
+        (length 2.5400)
+        (name "D0_B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "26"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -5.0800 180)
+        (length 2.5400)
+        (name "D1_B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "25"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -7.6200 180)
+        (length 2.5400)
+        (name "D2_B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "24"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -10.1600 180)
+        (length 2.5400)
+        (name "D3_B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "23"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -12.7000 180)
+        (length 2.5400)
+        (name "D4_B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "22"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -15.2400 180)
+        (length 2.5400)
+        (name "D5_B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "21"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -17.7800 180)
+        (length 2.5400)
+        (name "D6_B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "20"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -20.3200 180)
+        (length 2.5400)
+        (name "D7_B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "19"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -22.8600 180)
+        (length 2.5400)
+        (name "D8_B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "18"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 15.2400 -25.4000 180)
+        (length 2.5400)
+        (name "D9_B"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "17"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 -30.4800 180)
+        (length 2.5400)
+        (name "DFS/GAIN"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 -33.0200 180)
+        (length 2.5400)
+        (name "S1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 15.2400 -35.5600 180)
+        (length 2.5400)
+        (name "S2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

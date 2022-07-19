@@ -1,0 +1,775 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "LTC2975"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -17.7800 53.3400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "LTC2975"
+      (id 1)
+      (at -17.7800 -53.3400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:QFN-64-EP-LTC-UP"
+      (id 2)
+      (at -17.7800 -55.8800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://cds.linear.com/docs/en/datasheet/2975f.pdf"
+      (id 3)
+      (at -17.7800 -58.4200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "2461150"
+      (id 4)
+      (at -17.7800 -60.9600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "4 Channel PMBus Power System Manager"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "LTC2975_0_0"
+      (rectangle
+        (start -17.7800 52.0700)
+        (end 17.7800 -52.0700)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -20.3200 50.8000 0)
+        (length 2.5400)
+        (name VPWR
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -20.3200 48.2600 0)
+        (length 2.5400)
+        (name VIN_SENSE
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -20.3200 45.7200 0)
+        (length 2.5400)
+        (name "IIN_SENSE+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "55"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -20.3200 43.1800 0)
+        (length 2.5400)
+        (name "IIN_SENSE-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "56"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -20.3200 38.1000 0)
+        (length 2.5400)
+        (name SHARE_CLK
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "18"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at -20.3200 35.5600 0)
+        (length 2.5400)
+        (name "~{AUXFAULT}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin open_collector line
+        (at -20.3200 33.0200 0)
+        (length 2.5400)
+        (name PWR_GOOD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "17"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_out line
+        (at -20.3200 27.9400 0)
+        (length 2.5400)
+        (name VIN_SENSE_CAP
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "51"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -20.3200 25.4000 0)
+        (length 2.5400)
+        (name "VDD_33"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -20.3200 22.8600 0)
+        (length 2.5400)
+        (name "VDD_33_IN"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_out line
+        (at -20.3200 20.3200 0)
+        (length 2.5400)
+        (name "VDD_25_OUT"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -20.3200 17.7800 0)
+        (length 2.5400)
+        (name "VDD_25_IN"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -20.3200 12.7000 0)
+        (length 2.5400)
+        (name "WDI/~{RESET}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "24"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -20.3200 10.1600 0)
+        (length 2.5400)
+        (name "~{FAULT0}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "25"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at -20.3200 7.6200 0)
+        (length 2.5400)
+        (name "~{FAULT1}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "26"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -20.3200 5.0800 0)
+        (length 2.5400)
+        (name WP
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "28"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin tri_state line
+        (at -20.3200 0.0000 0)
+        (length 2.5400)
+        (name SDA
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "29"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin tri_state line
+        (at -20.3200 -2.5400 0)
+        (length 2.5400)
+        (name SCL
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "30"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin open_collector line
+        (at -20.3200 -5.0800 0)
+        (length 2.5400)
+        (name "~{ALERT}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "31"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -20.3200 -10.1600 0)
+        (length 2.5400)
+        (name "CONTROL0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "32"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -20.3200 -12.7000 0)
+        (length 2.5400)
+        (name "CONTROL1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "33"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -20.3200 -15.2400 0)
+        (length 2.5400)
+        (name "CONTROL2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "22"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -20.3200 -17.7800 0)
+        (length 2.5400)
+        (name "CONTROL3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "23"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -20.3200 -22.8600 0)
+        (length 2.5400)
+        (name DNC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -20.3200 -27.9400 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "19"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -20.3200 -30.4800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "20"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -20.3200 -33.0200 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "21"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -20.3200 -35.5600 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "37"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -20.3200 -38.1000 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "39"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -20.3200 -40.6400 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "52"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -20.3200 -43.1800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "59"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -20.3200 -45.7200 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "60"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -20.3200 -48.2600 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number EP
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 50.8000 180)
+        (length 2.5400)
+        (name "V_SENSE_0+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 48.2600 180)
+        (length 2.5400)
+        (name "V_SENSE_0-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 20.3200 45.7200 180)
+        (length 2.5400)
+        (name "VOUT_EN0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 20.3200 43.1800 180)
+        (length 2.5400)
+        (name "V_DAC0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "53"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 40.6400 180)
+        (length 2.5400)
+        (name "I_SENSE_0+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "41"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 38.1000 180)
+        (length 2.5400)
+        (name "I_SENSE_0-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "42"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 20.3200 35.5600 180)
+        (length 2.5400)
+        (name "TSENSE_0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "15"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 30.4800 180)
+        (length 2.5400)
+        (name "V_SENSE_1+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "63"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 27.9400 180)
+        (length 2.5400)
+        (name "V_SENSE_1-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "64"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 20.3200 25.4000 180)
+        (length 2.5400)
+        (name "VOUT_EN1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 20.3200 22.8600 180)
+        (length 2.5400)
+        (name "V_DAC1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "54"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 20.3200 180)
+        (length 2.5400)
+        (name "I_SENSE_1+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "43"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 17.7800 180)
+        (length 2.5400)
+        (name "I_SENSE_1-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "44"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 20.3200 15.2400 180)
+        (length 2.5400)
+        (name "TSENSE_1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "16"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 10.1600 180)
+        (length 2.5400)
+        (name "V_SENSE_2+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "61"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 7.6200 180)
+        (length 2.5400)
+        (name "V_SENSE_2-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "62"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 20.3200 5.0800 180)
+        (length 2.5400)
+        (name "VOUT_EN2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 20.3200 2.5400 180)
+        (length 2.5400)
+        (name "V_DAC2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "57"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 0.0000 180)
+        (length 2.5400)
+        (name "I_SENSE_2+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "45"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 -2.5400 180)
+        (length 2.5400)
+        (name "I_SENSE_2-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "46"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 20.3200 -5.0800 180)
+        (length 2.5400)
+        (name "TSENSE_2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "27"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 -10.1600 180)
+        (length 2.5400)
+        (name "V_SENSE_3+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "49"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 -12.7000 180)
+        (length 2.5400)
+        (name "V_SENSE_3-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "50"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 20.3200 -15.2400 180)
+        (length 2.5400)
+        (name "VOUT_EN3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 20.3200 -17.7800 180)
+        (length 2.5400)
+        (name "V_DAC3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "58"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 -20.3200 180)
+        (length 2.5400)
+        (name "I_SENSE_3+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "47"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 -22.8600 180)
+        (length 2.5400)
+        (name "I_SENSE_3-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "48"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 20.3200 -25.4000 180)
+        (length 2.5400)
+        (name "TSENSE_3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "34"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 20.3200 -30.4800 180)
+        (length 2.5400)
+        (name "REF+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "38"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 20.3200 -33.0200 180)
+        (length 2.5400)
+        (name "REF-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "40"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 -38.1000 180)
+        (length 2.5400)
+        (name "ASEL0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "35"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 20.3200 -40.6400 180)
+        (length 2.5400)
+        (name "ASEL1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "36"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

@@ -1,9 +1,11 @@
 agg-kicad.kicad_pcb
-agg-kicad.sch
+agg-kicad.kicad_sch
+agg-kicad.kicad_prl
 agg-kicad-cache.lib
+agg-kicad-backups/
 *.bak
 *.bck
 fp-lib-table
-templates/*.pro
+templates/*.kicad_pro
 templates/*.kicad_pcb-bak
 fp-info-cache

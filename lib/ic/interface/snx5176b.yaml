@@ -7,7 +7,7 @@ ordercodes:
 pins:
 - - - [VCC, 8, pwrin]
     - [GND, 5, pwrin]
-  - - [~RE, 2, in]
+  - - ["~{RE}", 2, in]
     - [DE, 3, in]
   - - [R, 1, out]
     - [D, 4, in]

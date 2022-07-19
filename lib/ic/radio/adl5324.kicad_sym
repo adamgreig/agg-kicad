@@ -1,0 +1,93 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "ADL5324"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -10.1600 5.0800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "ADL5324"
+      (id 1)
+      (at -10.1600 -5.0800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:SOT-89-3"
+      (id 2)
+      (at -10.1600 -7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "http://www.analog.com/media/en/technical-documentation/data-sheets/ADL5324.pdf"
+      (id 3)
+      (at -10.1600 -10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "2099794"
+      (id 4)
+      (at -10.1600 -12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "0.5W 400MHz-4GHz RF Driver Amplifier"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "ADL5324_0_0"
+      (rectangle
+        (start -10.1600 3.8100)
+        (end 10.1600 -3.8100)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin input line
+        (at -12.7000 2.5400 0)
+        (length 2.5400)
+        (name RF_IN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -12.7000 0.0000 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 12.7000 2.5400 180)
+        (length 2.5400)
+        (name RF_OUT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

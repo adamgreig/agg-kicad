@@ -1,0 +1,2087 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_power)
+  (symbol VCC
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value VCC
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name VCC
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol VDD
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value VDD
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name VDD
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol AVCC
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value AVCC
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name AVCC
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol AVDD
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value AVDD
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name AVDD
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "1v1"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "1v1"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "1v1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "1v2"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "1v2"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "1v2"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "1v8"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "1v8"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "1v8"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "2v5"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "2v5"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "2v5"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "3v3"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "3v3"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "3v3"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "5v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "5v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "5v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "6v5"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "6v5"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "6v5"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "9v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "9v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "9v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "10v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "10v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "10v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "12v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "12v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "12v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "15v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "15v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "15v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "24v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "24v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "24v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "48v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "48v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "48v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "-5v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "-5v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "-5v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "-9v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "-9v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "-9v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "-10v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "-10v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "-10v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "-12v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "-12v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "-12v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "-15v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "-15v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "-15v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "-24v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "-24v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "-24v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol "-48v"
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value "-48v"
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name "-48v"
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol VBATT
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value VBATT
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name VBATT
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol VSHORE
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value VSHORE
+      (id 1)
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 1.2700)
+        (xy 0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 1.2700)
+        (xy -0.5080 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name VSHORE
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol GND
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value GND
+      (id 1)
+      (at 0 -2.5400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -0.7620 -0.7620)
+        (xy 0.7620 -0.7620)
+        (xy 0 -1.5240)
+        (xy -0.7620 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type background)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name GND
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol AGND
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value AGND
+      (id 1)
+      (at 0 -2.5400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -0.7620 -0.7620)
+        (xy 0.7620 -0.7620)
+        (xy 0 -1.5240)
+        (xy -0.7620 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type background)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name AGND
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol DGND
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value DGND
+      (id 1)
+      (at 0 -2.5400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -0.7620 -0.7620)
+        (xy 0.7620 -0.7620)
+        (xy 0 -1.5240)
+        (xy -0.7620 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type background)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name DGND
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol PGND
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value PGND
+      (id 1)
+      (at 0 -2.5400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -0.7620 -0.7620)
+        (xy 0.7620 -0.7620)
+        (xy 0 -1.5240)
+        (xy -0.7620 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type background)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name PGND
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol CHASSIS
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value CHASSIS
+      (id 1)
+      (at 0 -2.5400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -0.7620 -0.7620)
+        (xy 0.7620 -0.7620)
+        (xy 0 -1.5240)
+        (xy -0.7620 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type background)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name CHASSIS
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol EARTH
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#PWR"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value EARTH
+      (id 1)
+      (at 0 -2.5400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 0)
+        (xy 0 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -0.7620 -0.7620)
+        (xy 0.7620 -0.7620)
+        (xy 0 -1.5240)
+        (xy -0.7620 -0.7620))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type background)))
+    (pin power_in line
+      (at 0 0 180)
+      (length 0) hide
+      (name EARTH
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700))))))
+  (symbol FLAG
+    (power)
+    (pin_numbers hide)
+    (pin_names
+      (offset 0) hide)
+    (in_bom no)
+    (on_board no)
+    (property Reference "#FLG"
+      (id 0)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Value FLAG
+      (id 1)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Footprint ""
+      (id 2)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property ki_description "Power flag. Adds power output to nets."
+      (id 4)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (polyline
+      (pts
+        (xy 0 0.5080)
+        (xy -0.5080 1.0160)
+        (xy 0 1.5240)
+        (xy 0.5080 1.0160)
+        (xy 0 0.5080))
+      (stroke
+        (width 0)
+        (type default)
+        (color 0 0 0 0))
+      (fill
+        (type background)))
+    (pin power_out line
+      (at 0 0 90)
+      (length 0.5080)
+      (name FLAG
+        (effects
+          (font
+            (size 1.2700 1.2700))))
+      (number "1"
+        (effects
+          (font
+            (size 1.2700 1.2700)))))))
