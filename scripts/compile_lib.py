@@ -43,6 +43,8 @@ def checklib(libpath, outpath):
     with open(outpath) as f:
         old = f.read().split("\n")
         new = compilelib(libpath).split("\n")
+        # Don't compare git versions
+        old[3] = new[3] = ""
         return old == new
 
 
