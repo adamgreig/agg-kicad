@@ -1,83 +1,84 @@
 
-(module "0201-L" 
-  (layer F.Cu) 
-  (tedit 57654490) 
-  (fp_text reference REF** 
-    (at -1.4100 0 90) 
-    (layer F.Fab) 
-    (effects 
-      (font 
-        (size 1.0000 1.0000) 
-        (thickness 0.1500)))) 
-  (fp_text value "0201-L" 
-    (at 1.4100 0 90) 
-    (layer F.Fab) 
-    (effects 
-      (font 
-        (size 1.0000 1.0000) 
-        (thickness 0.1500)))) 
-  (fp_line 
-    (start -0.3000 -0.1500) 
-    (end 0.3000 -0.1500) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_line 
-    (start 0.3000 -0.1500) 
-    (end 0.3000 0.1500) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_line 
-    (start 0.3000 0.1500) 
-    (end -0.3000 0.1500) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_line 
-    (start -0.3000 0.1500) 
-    (end -0.3000 -0.1500) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_line 
-    (start -0.1500 -0.1500) 
-    (end -0.1500 0.1500) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_line 
-    (start 0.1500 -0.1500) 
-    (end 0.1500 0.1500) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_line 
-    (start -0.6000 -0.3000) 
-    (end 0.6000 -0.3000) 
-    (layer F.CrtYd) 
-    (width 0.0100)) 
-  (fp_line 
-    (start 0.6000 -0.3000) 
-    (end 0.6000 0.3000) 
-    (layer F.CrtYd) 
-    (width 0.0100)) 
-  (fp_line 
-    (start 0.6000 0.3000) 
-    (end -0.6000 0.3000) 
-    (layer F.CrtYd) 
-    (width 0.0100)) 
-  (fp_line 
-    (start -0.6000 0.3000) 
-    (end -0.6000 -0.3000) 
-    (layer F.CrtYd) 
-    (width 0.0100)) 
-  (pad 1 smd rect 
-    (at -0.2800 0) 
-    (size 0.3600 0.3200) 
-    (layers F.Cu F.Mask F.Paste)) 
-  (pad 2 smd rect 
-    (at 0.2800 0) 
-    (size 0.3600 0.3200) 
-    (layers F.Cu F.Mask F.Paste)) 
-  (model "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0201.wrl" 
-    (at 
-      (xyz 0 0 0)) 
-    (scale 
-      (xyz 1 1 1)) 
-    (rotate 
+(module "0201-L"
+  (layer F.Cu)
+  (tedit "62FCEBA6")
+  (attr smd)
+  (fp_text reference REF**
+    (at -1.4100 0 90)
+    (layer F.Fab)
+    (effects
+      (font
+        (size 1.0000 1.0000)
+        (thickness 0.1500))))
+  (fp_text value "0201-L"
+    (at 1.4100 0 90)
+    (layer F.Fab)
+    (effects
+      (font
+        (size 1.0000 1.0000)
+        (thickness 0.1500))))
+  (fp_line
+    (start -0.3000 -0.1500)
+    (end 0.3000 -0.1500)
+    (layer F.Fab)
+    (width 0.0100))
+  (fp_line
+    (start 0.3000 -0.1500)
+    (end 0.3000 0.1500)
+    (layer F.Fab)
+    (width 0.0100))
+  (fp_line
+    (start 0.3000 0.1500)
+    (end -0.3000 0.1500)
+    (layer F.Fab)
+    (width 0.0100))
+  (fp_line
+    (start -0.3000 0.1500)
+    (end -0.3000 -0.1500)
+    (layer F.Fab)
+    (width 0.0100))
+  (fp_line
+    (start -0.1500 -0.1500)
+    (end -0.1500 0.1500)
+    (layer F.Fab)
+    (width 0.0100))
+  (fp_line
+    (start 0.1500 -0.1500)
+    (end 0.1500 0.1500)
+    (layer F.Fab)
+    (width 0.0100))
+  (fp_line
+    (start -0.6000 -0.3000)
+    (end 0.6000 -0.3000)
+    (layer F.CrtYd)
+    (width 0.0100))
+  (fp_line
+    (start 0.6000 -0.3000)
+    (end 0.6000 0.3000)
+    (layer F.CrtYd)
+    (width 0.0100))
+  (fp_line
+    (start 0.6000 0.3000)
+    (end -0.6000 0.3000)
+    (layer F.CrtYd)
+    (width 0.0100))
+  (fp_line
+    (start -0.6000 0.3000)
+    (end -0.6000 -0.3000)
+    (layer F.CrtYd)
+    (width 0.0100))
+  (pad 1 smd rect
+    (at -0.2800 0)
+    (size 0.3600 0.3200)
+    (layers F.Cu F.Mask F.Paste))
+  (pad 2 smd rect
+    (at 0.2800 0)
+    (size 0.3600 0.3200)
+    (layers F.Cu F.Mask F.Paste))
+  (model "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0201.wrl"
+    (at
+      (xyz 0 0 0))
+    (scale
+      (xyz 1 1 1))
+    (rotate
       (xyz 0 0 0))))

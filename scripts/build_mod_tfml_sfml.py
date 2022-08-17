@@ -176,6 +176,7 @@ def refs(name):
 def tfml_base(name, pins):
     tedit = format(int(time.time()), 'X')
     sexp = ["module", name, ("layer", "F.Cu"), ("tedit", tedit)]
+    sexp += [["attr", "smd"]]
     sexp += tfml_pads(pins)
     sexp += tfml_fab(pins)
     sexp += ctyd(pins)
@@ -200,6 +201,7 @@ def tfml_lc(pins):
 def sfml_base(name, pins):
     tedit = format(int(time.time()), 'X')
     sexp = ["module", name, ("layer", "F.Cu"), ("tedit", tedit)]
+    sexp += [["attr", "smd"]]
     sexp += sfml_pads(pins)
     sexp += sfml_fab(pins)
     sexp += ctyd(pins)

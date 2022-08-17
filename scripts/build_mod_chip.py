@@ -187,6 +187,7 @@ def _3d(conf):
 def footprint(conf):
     tedit = format(int(time.time()), 'X')
     sexp = ["module", conf['name'], ("layer", "F.Cu"), ("tedit", tedit)]
+    sexp += [["attr", "smd"]]
     sexp += refs(conf)
     sexp += fab(conf)
     sexp += silk(conf)

@@ -385,6 +385,7 @@ def top_smd_fp(pins):
     name = "BM{:02d}B-PASS".format(pins)
     tedit = format(int(time.time()), 'X')
     sexp = ["module", name, ("layer", "F.Cu"), ("tedit", tedit)]
+    sexp += [["attr", "smd"]]
     sexp += top_smd_refs(name)
     sexp += top_smd_silk(pins)
     sexp += top_smd_fab(pins)
@@ -398,6 +399,7 @@ def side_smd_fp(pins):
     name = "SM{:02d}B-PASS".format(pins)
     tedit = format(int(time.time()), 'X')
     sexp = ["module", name, ("layer", "F.Cu"), ("tedit", tedit)]
+    sexp += [["attr", "smd"]]
     sexp += side_smd_refs(name)
     sexp += side_smd_silk(pins)
     sexp += side_smd_fab(pins)
