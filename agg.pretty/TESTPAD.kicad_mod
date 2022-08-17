@@ -1,13 +1,18 @@
-(module TESTPAD (layer F.Cu) (tedit 5695CD9A)
-  (fp_text reference REF** (at 0 -1.4) (layer F.Fab) hide
+(footprint "TESTPAD" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 5695CD9A)
+  (attr exclude_from_pos_files exclude_from_bom)
+  (fp_text reference "REF**" (at 0 -1.4) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 49dd9d46-6a8f-41e4-b958-41f41e456920)
   )
-  (fp_text value TESTPAD (at 0 1.6) (layer F.Fab) hide
+  (fp_text value "TESTPAD" (at 0 1.6) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp c57d39ab-ada3-45a9-a1ed-0cc67e31e671)
   )
-  (fp_line (start -0.75 0.75) (end 0.75 0.75) (layer F.CrtYd) (width 0.01))
-  (fp_line (start -0.75 -0.75) (end -0.75 0.75) (layer F.CrtYd) (width 0.01))
-  (fp_line (start 0.75 -0.75) (end -0.75 -0.75) (layer F.CrtYd) (width 0.01))
-  (fp_line (start 0.75 0.75) (end 0.75 -0.75) (layer F.CrtYd) (width 0.01))
-  (pad 1 smd circle (at 0 0) (size 1 1) (layers F.Cu F.Mask))
+  (fp_line (start 0.75 -0.75) (end -0.75 -0.75) (layer "F.CrtYd") (width 0.01) (tstamp 34a83a04-458f-4dd2-ada8-2d29bde3113d))
+  (fp_line (start -0.75 -0.75) (end -0.75 0.75) (layer "F.CrtYd") (width 0.01) (tstamp a3a1241a-9ac4-446c-aa5e-0722735c099f))
+  (fp_line (start -0.75 0.75) (end 0.75 0.75) (layer "F.CrtYd") (width 0.01) (tstamp e0e222da-c2d5-4441-a360-7e6e5bf2cd03))
+  (fp_line (start 0.75 0.75) (end 0.75 -0.75) (layer "F.CrtYd") (width 0.01) (tstamp fb96092c-508a-488b-9306-543b4d668cee))
+  (pad "1" smd circle (at 0 0) (size 1 1) (layers "F.Cu" "F.Mask") (tstamp 6dd20558-fc2f-444f-9ae2-6bafe5cabbfe))
 )

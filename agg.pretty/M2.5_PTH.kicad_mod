@@ -1,13 +1,18 @@
-(module M2.5_PTH (layer F.Cu) (tedit 5F235E73)
-  (fp_text reference REF** (at 0 -3.5) (layer F.Fab) hide
+(footprint "M2.5_PTH" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 5F235E73)
+  (attr exclude_from_pos_files)
+  (fp_text reference "REF**" (at 0 -3.5) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 1ba4ad2a-969b-4b8d-8447-c4710624ffe9)
   )
-  (fp_text value M2.5_PTH (at 0 3.5) (layer F.Fab) hide
+  (fp_text value "M2.5_PTH" (at 0 3.5) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 19ea261a-4b98-4d5b-85c1-dba683a7bc82)
   )
-  (fp_line (start -2.75 -2.75) (end 2.75 -2.75) (layer F.CrtYd) (width 0.01))
-  (fp_line (start 2.75 -2.75) (end 2.75 2.75) (layer F.CrtYd) (width 0.01))
-  (fp_line (start 2.75 2.75) (end -2.75 2.75) (layer F.CrtYd) (width 0.01))
-  (fp_line (start -2.75 2.75) (end -2.75 -2.75) (layer F.CrtYd) (width 0.01))
-  (pad "" thru_hole circle (at 0 0) (size 5 5) (drill 2.75) (layers *.Cu *.Mask))
+  (fp_line (start -2.75 -2.75) (end 2.75 -2.75) (layer "F.CrtYd") (width 0.01) (tstamp 0002e5d9-9916-464a-bfb5-edea02da34e1))
+  (fp_line (start 2.75 2.75) (end -2.75 2.75) (layer "F.CrtYd") (width 0.01) (tstamp 2fa41202-e47a-448b-b122-f998a7a1e816))
+  (fp_line (start -2.75 2.75) (end -2.75 -2.75) (layer "F.CrtYd") (width 0.01) (tstamp 7e3ae1af-ada8-4409-be07-7f5598a37bc0))
+  (fp_line (start 2.75 -2.75) (end 2.75 2.75) (layer "F.CrtYd") (width 0.01) (tstamp c13899dd-654c-4613-bca2-0730121f47a1))
+  (pad "" thru_hole circle (at 0 0) (size 5 5) (drill 2.75) (layers *.Cu *.Mask) (tstamp b4605cb3-ad17-4132-9f19-0c2e13624480))
 )

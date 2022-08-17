@@ -1,13 +1,18 @@
-(module WIREPAD (layer F.Cu) (tedit 5684A84E)
-  (fp_text reference REF** (at 0 2.75) (layer F.Fab) hide
+(footprint "WIREPAD" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 5684A84E)
+  (attr exclude_from_pos_files exclude_from_bom)
+  (fp_text reference "REF**" (at 0 2.75) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 68206def-f4f8-4f78-875e-3c4fbaf4c3d8)
   )
-  (fp_text value WIREPAD (at 0 -2.75) (layer F.Fab) hide
+  (fp_text value "WIREPAD" (at 0 -2.75) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 3fb7376e-8ea8-4bde-8a25-6f04f073e400)
   )
-  (fp_line (start -2 -2) (end 2 -2) (layer F.CrtYd) (width 0.01))
-  (fp_line (start -2 2) (end -2 -2) (layer F.CrtYd) (width 0.01))
-  (fp_line (start 2 2) (end -2 2) (layer F.CrtYd) (width 0.01))
-  (fp_line (start 2 -2) (end 2 2) (layer F.CrtYd) (width 0.01))
-  (pad 1 smd circle (at 0 0) (size 3 3) (layers F.Cu F.Mask))
+  (fp_line (start -2 2) (end -2 -2) (layer "F.CrtYd") (width 0.01) (tstamp 1a2a420c-3c26-4e50-bb32-84feb3541b34))
+  (fp_line (start 2 -2) (end 2 2) (layer "F.CrtYd") (width 0.01) (tstamp 48e70bd5-8931-4f95-8915-0257bd5b3f40))
+  (fp_line (start 2 2) (end -2 2) (layer "F.CrtYd") (width 0.01) (tstamp 85646256-d26d-425d-bf02-410780a4f10b))
+  (fp_line (start -2 -2) (end 2 -2) (layer "F.CrtYd") (width 0.01) (tstamp be53b9f6-2430-44b1-90d9-63e58d778d09))
+  (pad "1" smd circle (at 0 0) (size 3 3) (layers "F.Cu" "F.Mask") (tstamp eb7c4bc3-51f0-4fb7-a3b1-5e49d7914bb3))
 )
