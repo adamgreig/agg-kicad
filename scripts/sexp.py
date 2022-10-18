@@ -73,7 +73,7 @@ def generate(sexp, depth=0):
 def find(sexp, *names):
     """Return the first node in `sexp` whose name is in `names`"""
     for child in sexp:
-        if child[0] in names:
+        if len(child) and child[0] in names:
             return child
 
 

@@ -296,7 +296,7 @@ class PCB:
         return hl_bounds
 
     def _parse(self, board):
-        for module in sexp.find_all(board, "module"):
+        for module in sexp.find_all(board, "footprint"):
             self.modules.append(Module(module))
 
         # We compute the PCB bounds ourselves rather than relying on the file's
@@ -333,18 +333,29 @@ class PCB:
                 self._update_bounds(start)
                 self._update_bounds(end)
             elif graphic[0] == "gr_arc":
-                center = [float(x) for x in sexp.find(graphic, "start")[1:]]
-                start = [float(x) for x in sexp.find(graphic, "end")[1:]]
-                r = math.sqrt((center[0] - start[0])**2 +
-                              (center[1] - start[1])**2)
-                angle = float(sexp.find(graphic, "angle")[1]) * math.pi/180.0
-                dx = start[0] - center[0]
-                dy = start[1] - center[1]
-                start_angle = math.atan2(dy, dx)
-                end_angle = start_angle + angle
-                self.edge_arcs.append((center[0], center[1], r,
+                a = [float(x) for x in sexp.find(graphic, "start")[1:]]
+                b = [float(x) for x in sexp.find(graphic, "mid")[1:]]
+                c = [float(x) for x in sexp.find(graphic, "end")[1:]]
+                # KiCad 6.0 specifies arcs by start, mid, and end, instead of
+                # the previous centre, start, and angle.
+                # Convert to Cairo's centre, radius, start angle, end angle.
+                mid_ab = [(a[0] + b[0])/2.0, (a[1] + b[1])/2.0]
+                grad_ab = (b[1] - a[1]) / (b[0] - a[0])
+                grad_bc = (c[1] - b[1]) / (c[0] - b[0])
+                centre_x = (
+                    (grad_ab * grad_bc * (a[1] - c[1]))
+                    + (grad_bc * (a[0] + b[0]))
+                    - grad_ab * (b[0] + c[0])
+                ) / (2 * (grad_bc - grad_ab))
+                centre_y = -1/grad_ab * (centre_x - mid_ab[0]) + mid_ab[1]
+                centre = [centre_x, centre_y]
+                rad = math.sqrt((centre[0] - a[0])**2 +
+                                (centre[1] - a[1])**2)
+                start_angle = math.atan2(a[1] - centre[1], a[0] - centre[0])
+                end_angle = math.atan2(c[1] - centre[1], c[0] - centre[0])
+                self.edge_arcs.append((centre[0], centre[1], rad,
                                        start_angle, end_angle))
-                self._update_bounds(center, dx=r, dy=r)
+                self._update_bounds(centre, dx=rad, dy=rad)
             elif graphic[0] == "gr_circle":
                 center = [float(x) for x in sexp.find(graphic, "center")[1:]]
                 end = [float(x) for x in sexp.find(graphic, "end")[1:]]
