@@ -147,6 +147,7 @@ def top_smd_fp(pins):
     name = "MOLEX-PICOBLADE-53398-{:02d}71".format(pins)
     tedit = format(int(time.time()), 'X')
     sexp = ["module", name, ("layer", "F.Cu"), ("tedit", tedit)]
+    sexp += [["attr", "smd"]]
     sexp += top_smd_refs(name)
     sexp += top_smd_silk(pins)
     sexp += top_smd_fab(pins)

@@ -10,7 +10,7 @@ build: build-libs build-mods
 
 build-libs: build-lib-connector build-lib-ic build-lib-power build-lib-switch
 
-build-mods: build-mod-chip build-mod-ic build-mod-jstpa build-mod-sil-dil build-mod-jsteh build-mod-picoblade
+build-mods: build-mod-chip build-mod-ic build-mod-jstpa build-mod-sil-dil build-mod-jsteh build-mod-picoblade build-mod-tfml-sfml
 
 build-verify: verify-libs verify-mods
 
@@ -85,6 +85,12 @@ build-mod-picoblade:
 
 verify-mod-picoblade:
 	python3 scripts/build_mod_picoblade.py agg.pretty/ --verify $(verboseflag)
+
+build-mod-tfml-sfml:
+	python3 scripts/build_mod_tfml_sfml.py agg.pretty/
+
+verify-mod-tfml-sfml:
+	python3 scripts/build_mod_tfml_sfml.py agg.pretty/ --verify $(verboseflag)
 
 compile-lib:
 	python3 scripts/compile_lib.py lib/ agg-kicad.kicad_sym
