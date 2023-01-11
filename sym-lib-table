@@ -1513,6 +1513,12 @@
     (options "")
     (descr ""))
   (lib
+    (name relay_no)
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/passive/relay_no.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name schottky)
     (type KiCad)
     (uri "${KIPRJMOD}/lib/passive/schottky.kicad_sym")

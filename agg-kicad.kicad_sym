@@ -1,7 +1,7 @@
 
 (kicad_symbol_lib
   (version 20211014)
-  (generator "agg-kicad-compiled-e76bad62-dirty")
+  (generator "agg-kicad-compiled-1490c5a5-dirty")
   (symbol "7499210124A"
     (pin_names
       (offset 1.0160))
@@ -106244,6 +106244,211 @@
             (font
               (size 1.2700 1.2700))))
         (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))))
+  (symbol RELAY_NO
+    (pin_names
+      (offset 1.0160) hide)
+    (in_bom yes)
+    (on_board yes)
+    (property Reference K
+      (id 0)
+      (at 0 8.8900 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Value RELAY_NO
+      (id 1)
+      (at 0 -3.8100 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (id 2)
+      (at 0 -19.0500 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Datasheet ""
+      (id 3)
+      (at -29.7180 21.8440 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (property Farnell ""
+      (id 4)
+      (at 0 -16.5100 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "RELAY_NO_0_1"
+      (rectangle
+        (start -2.5400 7.6200)
+        (end 2.5400 -2.5400)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (polyline
+        (pts
+          (xy -2.5400 0)
+          (xy -1.5240 0))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -0.7620 -0.5080)
+          (xy 0.7620 0.5080))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 0 1.2700)
+          (xy 0 0.7620))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 0 2.2860)
+          (xy 0 1.7780))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 0 3.3020)
+          (xy 0 2.7940))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 0 4.3180)
+          (xy 0 3.8100))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 0 5.3340)
+          (xy 0 4.8260))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 1.5240 0)
+          (xy 2.5400 0))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -2.5400 5.0800)
+          (xy -1.5240 5.0800)
+          (xy 1.5240 6.8580))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 2.5400 5.0800)
+          (xy 1.5240 5.0800)
+          (xy 1.5240 5.5880))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 1.5240 0.5080)
+          (xy 1.5240 -0.5080)
+          (xy -1.5240 -0.5080)
+          (xy -1.5240 0.5080)
+          (xy 1.5240 0.5080))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type none))))
+    (symbol "RELAY_NO_1_1"
+      (pin passive line
+        (at -5.0800 5.0800 0)
+        (length 2.5400)
+        (name "11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 5.0800 5.0800 180)
+        (length 2.5400)
+        (name "14"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -5.0800 0 0)
+        (length 2.5400)
+        (name "A1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "A1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 5.0800 0 180)
+        (length 2.5400)
+        (name "A2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "A2"
           (effects
             (font
               (size 1.2700 1.2700)))))))

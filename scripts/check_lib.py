@@ -19,7 +19,7 @@ EXCLUDE = {
     'pin_grid': [],
     'pin_length': [],
     'pin_font': [],
-    'missing_pins': ['tec2', 'tel10'],
+    'missing_pins': ['tec2', 'tel10', 'relay_no'],
     'duplicate_pins': ['siz340dt'],
     'missing_box': [],
     'invisible_ref': ['power'],
