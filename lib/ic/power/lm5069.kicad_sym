@@ -1,0 +1,170 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "LM5069"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -10.1600 7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "LM5069"
+      (id 1)
+      (at -10.1600 -7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:MSOP-10"
+      (id 2)
+      (at -10.1600 -10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://www.ti.com/lit/gpn/lm5069"
+      (id 3)
+      (at -10.1600 -12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Mouser "926-LM5069MM-2/NOPB"
+      (id 4)
+      (at -10.1600 -15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "9 to 80V hot swap controller"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "LM5069_0_0"
+      (rectangle
+        (start -10.1600 6.3500)
+        (end 10.1600 -6.3500)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -12.7000 5.0800 0)
+        (length 2.5400)
+        (name VIN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -12.7000 2.5400 0)
+        (length 2.5400)
+        (name "UVLO/EN"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -12.7000 0.0000 0)
+        (length 2.5400)
+        (name OVLO
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -12.7000 -2.5400 0)
+        (length 2.5400)
+        (name TIMER
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -12.7000 -5.0800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 12.7000 5.0800 180)
+        (length 2.5400)
+        (name SENSE
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin output line
+        (at 12.7000 2.5400 180)
+        (length 2.5400)
+        (name GATE
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 12.7000 0.0000 180)
+        (length 2.5400)
+        (name OUT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin open_collector line
+        (at 12.7000 -2.5400 180)
+        (length 2.5400)
+        (name PGD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 12.7000 -5.0800 180)
+        (length 2.5400)
+        (name PWR
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

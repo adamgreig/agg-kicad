@@ -763,6 +763,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "lm5069")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/power/lm5069.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "lt3083")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/power/lt3083.kicad_sym")
@@ -916,6 +922,12 @@
     (name "tel10")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/power/tel10.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
+    (name "tls125d0ej")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/power/tls125d0ej.kicad_sym")
     (options "")
     (descr ""))
   (lib
@@ -1408,6 +1420,12 @@
     (name led)
     (type KiCad)
     (uri "${KIPRJMOD}/lib/passive/led.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
+    (name mov)
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/passive/mov.kicad_sym")
     (options "")
     (descr ""))
   (lib

@@ -1,0 +1,17 @@
+name: LM5069
+description: 9 to 80V hot swap controller
+datasheet: https://www.ti.com/lit/gpn/lm5069
+footprint: agg:MSOP-10
+ordercodes:
+  - [Mouser, "926-LM5069MM-2/NOPB"]
+pins:
+- - - [VIN, 2, pwrin]
+    - ["UVLO/EN", 3, in]
+    - [OVLO, 4, in]
+    - [TIMER, 6, passive]
+    - [GND, 5, pwrin]
+- - - [SENSE, 1, in]
+    - [GATE, 10, out]
+    - [OUT, 9, in]
+    - [PGD, 8, od]
+    - [PWR, 7, passive]

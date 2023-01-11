@@ -1,0 +1,16 @@
+name: TLS125D0EJ
+description: Adjustable LDO voltage regulator, 40Vin, 2-40V 250mA out
+footprint: agg:SOIC-8-EP
+datasheet: https://www.infineon.com/dgdl/Infineon-TLS125D0EJ-DataSheet-v01_03-EN.pdf?fileId=5546d46279a6fbb20179ba922605737e
+ordercodes:
+  - [Farnell, '3807525']
+pins:
+- - - ["V_{IN}", 8, pwrin]
+    - [EN, 7, in]
+    - [NC, 6, nc]
+    - [GND, 3, pwrin]
+    - [GND, EP, pwrin]
+- - - ["V_{OUT}", 1, pwrout]
+    - [ADJ, 5, in]
+    - [NC, 2, nc]
+    - [PG, 4, od]

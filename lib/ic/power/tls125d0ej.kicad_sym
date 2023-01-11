@@ -1,0 +1,159 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "TLS125D0EJ"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -10.1600 7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "TLS125D0EJ"
+      (id 1)
+      (at -10.1600 -7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:SOIC-8-EP"
+      (id 2)
+      (at -10.1600 -10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://www.infineon.com/dgdl/Infineon-TLS125D0EJ-DataSheet-v01_03-EN.pdf?fileId=5546d46279a6fbb20179ba922605737e"
+      (id 3)
+      (at -10.1600 -12.7000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Farnell "3807525"
+      (id 4)
+      (at -10.1600 -15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "Adjustable LDO voltage regulator, 40Vin, 2-40V 250mA out"
+      (id 6)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "TLS125D0EJ_0_0"
+      (rectangle
+        (start -10.1600 6.3500)
+        (end 10.1600 -6.3500)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -12.7000 5.0800 0)
+        (length 2.5400)
+        (name "V_{IN}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -12.7000 2.5400 0)
+        (length 2.5400)
+        (name EN
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at -12.7000 0.0000 0)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -12.7000 -2.5400 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -12.7000 -5.0800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number EP
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_out line
+        (at 12.7000 5.0800 180)
+        (length 2.5400)
+        (name "V_{OUT}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at 12.7000 2.5400 180)
+        (length 2.5400)
+        (name ADJ
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin no_connect line
+        (at 12.7000 0.0000 180)
+        (length 2.5400)
+        (name NC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin open_collector line
+        (at 12.7000 -2.5400 180)
+        (length 2.5400)
+        (name PG
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))
