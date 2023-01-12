@@ -1,7 +1,7 @@
 
 (kicad_symbol_lib
   (version 20211014)
-  (generator "agg-kicad-compiled-1490c5a5-dirty")
+  (generator "agg-kicad-compiled-9fc6321f")
   (symbol "7499210124A"
     (pin_names
       (offset 1.0160))
