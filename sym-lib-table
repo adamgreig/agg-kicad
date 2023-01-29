@@ -241,6 +241,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "opa455")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/analogue/opa455.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "ssm2305")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/analogue/ssm2305.kicad_sym")
