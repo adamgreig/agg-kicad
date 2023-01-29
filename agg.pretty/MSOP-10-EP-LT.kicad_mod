@@ -1,7 +1,7 @@
 
 (module "MSOP-10-EP-LT"
   (layer F.Cu)
-  (tedit "63D69921")
+  (tedit "63D69AD7")
   (attr smd)
   (fp_text reference REF**
     (at 0 -2.4500)
@@ -209,64 +209,64 @@
     (layer F.SilkS)
     (width 0.1500))
   (fp_line
-    (start -3.2000 -1.7500)
-    (end 3.2000 -1.7500)
+    (start -2.9000 -1.7500)
+    (end 2.9000 -1.7500)
     (layer F.CrtYd)
     (width 0.0100))
   (fp_line
-    (start 3.2000 -1.7500)
-    (end 3.2000 1.7500)
+    (start 2.9000 -1.7500)
+    (end 2.9000 1.7500)
     (layer F.CrtYd)
     (width 0.0100))
   (fp_line
-    (start 3.2000 1.7500)
-    (end -3.2000 1.7500)
+    (start 2.9000 1.7500)
+    (end -2.9000 1.7500)
     (layer F.CrtYd)
     (width 0.0100))
   (fp_line
-    (start -3.2000 1.7500)
-    (end -3.2000 -1.7500)
+    (start -2.9000 1.7500)
+    (end -2.9000 -1.7500)
     (layer F.CrtYd)
     (width 0.0100))
   (pad 1 smd rect
-    (at -2.2000 -1.0000)
-    (size 1.4500 0.3000)
+    (at -2.1500 -1.0000)
+    (size 1.0000 0.3000)
     (layers F.Cu F.Mask F.Paste))
   (pad 2 smd rect
-    (at -2.2000 -0.5000)
-    (size 1.4500 0.3000)
+    (at -2.1500 -0.5000)
+    (size 1.0000 0.3000)
     (layers F.Cu F.Mask F.Paste))
   (pad 3 smd rect
-    (at -2.2000 0.0000)
-    (size 1.4500 0.3000)
+    (at -2.1500 0.0000)
+    (size 1.0000 0.3000)
     (layers F.Cu F.Mask F.Paste))
   (pad 4 smd rect
-    (at -2.2000 0.5000)
-    (size 1.4500 0.3000)
+    (at -2.1500 0.5000)
+    (size 1.0000 0.3000)
     (layers F.Cu F.Mask F.Paste))
   (pad 5 smd rect
-    (at -2.2000 1.0000)
-    (size 1.4500 0.3000)
+    (at -2.1500 1.0000)
+    (size 1.0000 0.3000)
     (layers F.Cu F.Mask F.Paste))
   (pad 6 smd rect
-    (at 2.2000 1.0000)
-    (size 1.4500 0.3000)
+    (at 2.1500 1.0000)
+    (size 1.0000 0.3000)
     (layers F.Cu F.Mask F.Paste))
   (pad 7 smd rect
-    (at 2.2000 0.5000)
-    (size 1.4500 0.3000)
+    (at 2.1500 0.5000)
+    (size 1.0000 0.3000)
     (layers F.Cu F.Mask F.Paste))
   (pad 8 smd rect
-    (at 2.2000 0.0000)
-    (size 1.4500 0.3000)
+    (at 2.1500 0.0000)
+    (size 1.0000 0.3000)
     (layers F.Cu F.Mask F.Paste))
   (pad 9 smd rect
-    (at 2.2000 -0.5000)
-    (size 1.4500 0.3000)
+    (at 2.1500 -0.5000)
+    (size 1.0000 0.3000)
     (layers F.Cu F.Mask F.Paste))
   (pad 10 smd rect
-    (at 2.2000 -1.0000)
-    (size 1.4500 0.3000)
+    (at 2.1500 -1.0000)
+    (size 1.0000 0.3000)
     (layers F.Cu F.Mask F.Paste))
   (pad "" smd rect
     (at -0.0000 -0.0000)
