@@ -11,6 +11,6 @@ pins:
   - - [GND, EP, pwrin]
 - - - ["C+", 3, passive]
   - - ["V_{OUT}", 10, pwrout]
-  - - [FB, 8, in]
   - - ["V_{SET}", 9, in]
+  - - [FB, 8, in]
   - - [PGOOD, 7, od]
