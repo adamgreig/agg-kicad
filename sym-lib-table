@@ -205,6 +205,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "ina293a")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/analogue/ina293a.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "lmx93")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/analogue/lmx93.kicad_sym")

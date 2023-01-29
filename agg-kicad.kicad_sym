@@ -1,7 +1,7 @@
 
 (kicad_symbol_lib
   (version 20211014)
-  (generator "agg-kicad-compiled-9fc6321f")
+  (generator "agg-kicad-compiled-9e435522")
   (symbol "7499210124A"
     (pin_names
       (offset 1.0160))
@@ -33944,6 +33944,124 @@
           (xy -2.5400 5.0800)
           (xy 7.6200 0)
           (xy -2.5400 -5.0800)
+          (xy -2.5400 5.0800))
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))))
+  (symbol "INA293A"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at 3.8100 5.0800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "INA293A"
+      (id 1)
+      (at 3.8100 -5.0800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:SOT-23-5"
+      (id 2)
+      (at 3.8100 -7.6200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://www.ti.com/lit/ds/symlink/ina293.pdf"
+      (id 3)
+      (at 3.8100 -10.1600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "-4V to 110V Ultra-Precise Current Sense Amplifier (pinout A)"
+      (id 4)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "INA293A_0_0"
+      (text "V+"
+        (at 1.2700 5.0800 0)
+        (effects
+          (font
+            (size 0.7620 0.7620))))
+      (text "V-"
+        (at 1.2700 -5.0800 0)
+        (effects
+          (font
+            (size 0.7620 0.7620))))
+      (pin output line
+        (at 10.1600 0 180)
+        (length 2.5400)
+        (name "~"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at 0 -7.6200 90)
+        (length 3.8100)
+        (name "~"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -5.0800 2.5400 0)
+        (length 2.5400)
+        (name "+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -5.0800 -2.5400 0)
+        (length 2.5400)
+        (name "-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at 0 7.6200 270)
+        (length 3.8100)
+        (name "~"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))
+    (symbol "INA293A_0_1"
+      (polyline
+        (pts
+          (xy -2.5400 5.0800)
+          (xy -2.5400 -5.0800)
+          (xy 7.6200 0)
           (xy -2.5400 5.0800))
         (stroke
           (width 0)
