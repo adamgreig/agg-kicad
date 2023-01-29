@@ -805,6 +805,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "ltc3290")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/power/ltc3290.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "ltc3535")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/power/ltc3535.kicad_sym")

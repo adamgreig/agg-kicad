@@ -1,0 +1,16 @@
+name: LTC3290
+datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/LTC3290.pdf
+description: High Voltage Boost Charge Pump
+footprint: agg:MSOP-10-EP-LT
+pins:
+- - - ["C-", 4, passive]
+  - - ["V_{IN}", 5, pwrin]
+    - ["V_{AUX}", 1, pwrin]
+    - [EN, 2, in]
+  - - [BIAS, 6, passive]
+  - - [GND, EP, pwrin]
+- - - ["C+", 3, passive]
+  - - ["V_{OUT}", 10, pwrout]
+  - - [FB, 8, in]
+  - - ["V_{SET}", 9, in]
+  - - [PGOOD, 7, od]
