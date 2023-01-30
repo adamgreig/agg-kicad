@@ -1,7 +1,7 @@
 
 (kicad_symbol_lib
   (version 20211014)
-  (generator "agg-kicad-compiled-cb8dd977")
+  (generator "agg-kicad-compiled-dbcfcd01")
   (symbol "7499210124A"
     (pin_names
       (offset 1.0160))
@@ -35277,17 +35277,17 @@
         (justify left) hide))
     (symbol "OPA455_0_0"
       (text COM
-        (at 6.3500 -3.8100 0)
-        (effects
-          (font
-            (size 0.7620 0.7620))))
-      (text "E/D"
         (at 3.8100 -3.8100 0)
         (effects
           (font
             (size 0.7620 0.7620))))
       (text "E/D"
-        (at 6.3500 -2.5400 0)
+        (at 3.8100 -2.5400 0)
+        (effects
+          (font
+            (size 0.7620 0.7620))))
+      (text "E/D"
+        (at 6.3500 -3.8100 0)
         (effects
           (font
             (size 0.7620 0.7620))))
@@ -35312,8 +35312,8 @@
           (font
             (size 0.7620 0.7620))))
       (pin power_in line
-        (at 5.0800 -5.0800 90)
-        (length 4.0640)
+        (at 2.5400 -5.0800 90)
+        (length 3.0480)
         (name "~"
           (effects
             (font
@@ -35389,8 +35389,8 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at 2.5400 -5.0800 90)
-        (length 3.0480)
+        (at 5.0800 -5.0800 90)
+        (length 4.0640)
         (name "~"
           (effects
             (font
