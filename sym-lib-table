@@ -1045,6 +1045,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "tps6217x")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/power/tps6217x.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "tps92512")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/power/tps92512.kicad_sym")

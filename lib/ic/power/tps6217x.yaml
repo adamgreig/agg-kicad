@@ -1,0 +1,16 @@
+name: TPS6217X
+description: 3V to 17Vin, 0.5A step down buck converter
+datasheet: https://www.ti.com/lit/ds/symlink/tps62171.pdf
+footprint: agg:WSON-8-EP-TI
+ordercodes:
+  - [Mouser, '595-TPS62172QDSGRQ1']
+pins:
+- - - ["V_{IN}", 2, pwrin]
+    - [EN, 3, in]
+    - [AGND, 4, pwrin]
+    - [AGND, EP, pwrin]
+    - [PGND, 1, pwrin]
+- - - [SW, 7, out]
+    - [VOS, 6, in]
+    - [FB, 5, in]
+  - - [PG, 8, od]
