@@ -697,6 +697,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "stm32g4xxux")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32g4xxux.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "stm32l4xxjxyx")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32l4xxjxyx.kicad_sym")
