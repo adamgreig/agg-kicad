@@ -1,7 +1,7 @@
 
 (module "SOIC-8-PowerPAD"
   (layer F.Cu)
-  (tedit "63D694AA")
+  (tedit "63DB18A2")
   (attr smd)
   (fp_text reference REF**
     (at 0 -3.4500)
@@ -242,49 +242,49 @@
     (solder_paste_margin 0.0010))
   (pad EP thru_hole circle
     (at -0.7000 -2.1000)
-    (size 0.3000 0.3000)
+    (size 0.6000 0.6000)
     (layers *.Cu)
     (drill 0.3000)
     (zone_connect 2))
   (pad EP thru_hole circle
     (at -0.7000 -0.7000)
-    (size 0.3000 0.3000)
+    (size 0.6000 0.6000)
     (layers *.Cu)
     (drill 0.3000)
     (zone_connect 2))
   (pad EP thru_hole circle
     (at -0.7000 0.7000)
-    (size 0.3000 0.3000)
+    (size 0.6000 0.6000)
     (layers *.Cu)
     (drill 0.3000)
     (zone_connect 2))
   (pad EP thru_hole circle
     (at -0.7000 2.1000)
-    (size 0.3000 0.3000)
+    (size 0.6000 0.6000)
     (layers *.Cu)
     (drill 0.3000)
     (zone_connect 2))
   (pad EP thru_hole circle
     (at 0.7000 -2.1000)
-    (size 0.3000 0.3000)
+    (size 0.6000 0.6000)
     (layers *.Cu)
     (drill 0.3000)
     (zone_connect 2))
   (pad EP thru_hole circle
     (at 0.7000 -0.7000)
-    (size 0.3000 0.3000)
+    (size 0.6000 0.6000)
     (layers *.Cu)
     (drill 0.3000)
     (zone_connect 2))
   (pad EP thru_hole circle
     (at 0.7000 0.7000)
-    (size 0.3000 0.3000)
+    (size 0.6000 0.6000)
     (layers *.Cu)
     (drill 0.3000)
     (zone_connect 2))
   (pad EP thru_hole circle
     (at 0.7000 2.1000)
-    (size 0.3000 0.3000)
+    (size 0.6000 0.6000)
     (layers *.Cu)
     (drill 0.3000)
     (zone_connect 2))

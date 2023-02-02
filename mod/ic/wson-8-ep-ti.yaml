@@ -8,5 +8,5 @@ pin_pitch: 0.5
 row_pitch: 1.9
 pad_shape: [0.5, 0.25]
 ep_shape: [0.9, 1.6]
-ep_vias: [0.3, 0.1, 1.0]
+ep_vias: [0.3, 0.6, 0.4]
 ep_paste_shape: [0.9, 0.7, 0.2, 0.2]

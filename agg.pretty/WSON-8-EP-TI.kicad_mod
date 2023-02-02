@@ -1,7 +1,7 @@
 
 (module "WSON-8-EP-TI"
   (layer F.Cu)
-  (tedit "63D71278")
+  (tedit "63DB184D")
   (attr smd)
   (fp_text reference REF**
     (at 0 -1.9500)
@@ -241,14 +241,14 @@
     (layers F.Paste)
     (solder_paste_margin 0.0010))
   (pad EP thru_hole circle
-    (at -0.0000 -0.5500)
-    (size 0.1000 0.1000)
+    (at -0.0000 -0.5000)
+    (size 0.6000 0.6000)
     (layers *.Cu)
     (drill 0.3000)
     (zone_connect 2))
   (pad EP thru_hole circle
-    (at -0.0000 0.5500)
-    (size 0.1000 0.1000)
+    (at -0.0000 0.5000)
+    (size 0.6000 0.6000)
     (layers *.Cu)
     (drill 0.3000)
     (zone_connect 2))
