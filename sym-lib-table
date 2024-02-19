@@ -397,6 +397,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "nau88c22yg")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/interface/nau88c22yg.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "pca9502")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/interface/pca9502.kicad_sym")
