@@ -709,6 +709,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "stm32h750vxtx")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32h750vxtx.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "stm32l4xxjxyx")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32l4xxjxyx.kicad_sym")
