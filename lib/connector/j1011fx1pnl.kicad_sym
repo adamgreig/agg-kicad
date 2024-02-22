@@ -1,0 +1,207 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "J1011Fx1PNL"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference J
+      (id 0)
+      (at -10.1600 15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "J1011Fx1PNL"
+      (id 1)
+      (at -10.1600 -15.2400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:PULSE-J1"
+      (id 2)
+      (at -10.1600 -17.7800 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://datasheet.octopart.com/J1011F01PNL-Pulse-datasheet-33294.pdf"
+      (id 3)
+      (at -10.1600 -20.3200 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "Shielded 8P8C modular connector with magnetics and LEDs"
+      (id 5)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "J1011Fx1PNL_0_0"
+      (rectangle
+        (start -10.1600 13.9700)
+        (end 10.1600 -13.9700)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin passive line
+        (at -12.7000 12.7000 0)
+        (length 2.5400)
+        (name "TD+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -12.7000 10.1600 0)
+        (length 2.5400)
+        (name TCT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -12.7000 7.6200 0)
+        (length 2.5400)
+        (name "TD-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -12.7000 2.5400 0)
+        (length 2.5400)
+        (name "RD+"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -12.7000 0.0000 0)
+        (length 2.5400)
+        (name RCT
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -12.7000 -2.5400 0)
+        (length 2.5400)
+        (name "RD-"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -12.7000 -7.6200 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -12.7000 -10.1600 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 12.7000 12.7000 180)
+        (length 2.5400)
+        (name LEDY_A
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 12.7000 10.1600 180)
+        (length 2.5400)
+        (name LEDY_C
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 12.7000 5.0800 180)
+        (length 2.5400)
+        (name LEDG_C
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 12.7000 2.5400 180)
+        (length 2.5400)
+        (name LEDG_A
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 12.7000 -2.5400 180)
+        (length 2.5400)
+        (name SHIELD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "S1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 12.7000 -5.0800 180)
+        (length 2.5400)
+        (name SHIELD
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "S2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

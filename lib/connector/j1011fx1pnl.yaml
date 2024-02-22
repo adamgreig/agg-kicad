@@ -1,0 +1,20 @@
+name: J1011Fx1PNL
+datasheet: https://datasheet.octopart.com/J1011F01PNL-Pulse-datasheet-33294.pdf
+description: Shielded 8P8C modular connector with magnetics and LEDs
+designator: J
+footprint: agg:PULSE-J1
+pins:
+- - - [TD+, 1, passive]
+    - [TCT, 3, passive]
+    - [TD-, 2, passive]
+  - - [RD+, 7, passive]
+    - [RCT, 6, passive]
+    - [RD-, 8, passive]
+  - - [GND, 4, passive]
+    - [GND, 5, passive]
+- - - [LEDY_A, 9, passive]
+    - [LEDY_C, 10, passive]
+  - - [LEDG_C, 11, passive]
+    - [LEDG_A, 12, passive]
+  - - [SHIELD, S1, passive]
+    - [SHIELD, S2, passive]

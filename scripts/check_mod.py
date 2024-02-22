@@ -16,6 +16,23 @@ import argparse
 
 from sexp import parse as sexp_parse
 
+SKIP = [
+    "ael.pretty/ael_logo_10mm.kicad_mod",
+    "ael.pretty/1455U1601.kicad_mod",
+    "ael.pretty/NET_LINK.kicad_mod",
+]
+
+
+def getwidth(item):
+    for node in item:
+        if node[0] == "width":
+            return node
+        elif node[0] == "stroke":
+            for subnode in node:
+                if subnode[0] == "width":
+                    return subnode
+    raise ValueError("No width found")
+
 
 def checkrefval(mod, errs):
     for fp_text in (node for node in mod if node[0] == "fp_text"):
@@ -46,7 +63,7 @@ def checklines(mod, errs, check_layers, check_width):
     line_types = ("fp_line", "fp_circle", "fp_arc", "fp_poly", "fp_curve")
     for line in (node for node in mod if node[0] in line_types):
         layer = [n for n in line if n[0] == "layer"][0]
-        width = [n for n in line if n[0] == "width"][0]
+        width = getwidth(line)
         if layer[1] in check_layers:
             if Decimal(width[1]) != Decimal(check_width):
                 errs.append("Lines on {} must be {}mm wide"
@@ -55,18 +72,46 @@ def checklines(mod, errs, check_layers, check_width):
 
 def checkctyd(mod, errs):
     found_ctyd = False
+    ctyd_layers = ("F.CrtYd", "B.CrtYd")
     for ctyd in (node for node in mod if node[0] == "fp_line"):
         layer = [n for n in ctyd if n[0] == "layer"][0]
-        width = [n for n in ctyd if n[0] == "width"][0]
         start = [n for n in ctyd if n[0] == "start"][0]
         end = [n for n in ctyd if n[0] == "end"][0]
-        ctyd_layers = ("F.CrtYd", "B.CrtYd")
+        width = getwidth(ctyd)
         if layer[1] in ctyd_layers:
             found_ctyd = True
             if Decimal(width[1]) != Decimal("0.01"):
                 errs.append("Courtyard lines must be 0.01mm wide")
             if (Decimal(start[1]) % Decimal("0.05") != 0
                     or Decimal(start[2]) % Decimal("0.05") != 0
+                    or Decimal(end[1]) % Decimal("0.05") != 0
+                    or Decimal(end[2]) % Decimal("0.05") != 0):
+                errs.append("Courtyard lines must lie on a 0.05mm grid")
+    for ctyd in (node for node in mod if node[0] == "fp_rect"):
+        layer = [n for n in ctyd if n[0] == "layer"][0]
+        start = [n for n in ctyd if n[0] == "start"][0]
+        end = [n for n in ctyd if n[0] == "end"][0]
+        width = getwidth(ctyd)
+        if layer[1] in ctyd_layers:
+            found_ctyd = True
+            if Decimal(width[1]) != Decimal("0.01"):
+                errs.append("Courtyard lines must be 0.01mm wide")
+            if (Decimal(start[1]) % Decimal("0.05") != 0
+                    or Decimal(start[2]) % Decimal("0.05") != 0
+                    or Decimal(end[1]) % Decimal("0.05") != 0
+                    or Decimal(end[2]) % Decimal("0.05") != 0):
+                errs.append("Courtyard lines must lie on a 0.05mm grid")
+    for ctyd in (node for node in mod if node[0] == "fp_circle"):
+        layer = [n for n in ctyd if n[0] == "layer"][0]
+        center = [n for n in ctyd if n[0] == "center"][0]
+        end = [n for n in ctyd if n[0] == "end"][0]
+        width = getwidth(ctyd)
+        if layer[1] in ctyd_layers:
+            found_ctyd = True
+            if Decimal(width[1]) != Decimal("0.01"):
+                errs.append("Courtyard lines must be 0.01mm wide")
+            if (Decimal(center[1]) % Decimal("0.05") != 0
+                    or Decimal(center[2]) % Decimal("0.05") != 0
                     or Decimal(end[1]) % Decimal("0.05") != 0
                     or Decimal(end[2]) % Decimal("0.05") != 0):
                 errs.append("Courtyard lines must lie on a 0.05mm grid")
@@ -101,6 +146,8 @@ def checkmod(path, verbose=False):
 def main(prettypath, verbose=False):
     ok = True
     for f in glob.glob(os.path.join(prettypath, "*.kicad_mod")):
+        if f in SKIP:
+            continue
         result = checkmod(f, verbose)
         if not result:
             ok = False

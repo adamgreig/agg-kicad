@@ -31,6 +31,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "j1011fx1pnl")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/connector/j1011fx1pnl.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name microsd)
     (type KiCad)
     (uri "${KIPRJMOD}/lib/connector/microsd.kicad_sym")
