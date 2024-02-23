@@ -15,7 +15,7 @@ import sexp
 
 
 EXCLUDE = {
-    'one_symbol': ['power', 'conn', 'switch'],
+    'one_symbol': ['power', 'conn', 'switch', 'switch_mom'],
     'pin_grid': [],
     'pin_length': ['opa455'],
     'pin_font': [],

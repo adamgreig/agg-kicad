@@ -1709,4 +1709,10 @@
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ui/switch.kicad_sym")
     (options "")
+    (descr ""))
+  (lib
+    (name switch_mom)
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ui/switch_mom.kicad_sym")
+    (options "")
     (descr "")))
