@@ -1,0 +1,317 @@
+
+(kicad_symbol_lib
+  (version 20211014)
+  (generator agg_kicad.build_lib_ic)
+  (symbol "XL9555"
+    (pin_names
+      (offset 1.0160))
+    (in_bom yes)
+    (on_board yes)
+    (property Reference IC
+      (id 0)
+      (at -10.1600 22.8600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Value "XL9555"
+      (id 1)
+      (at -10.1600 -22.8600 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left)))
+    (property Footprint "agg:TSSOP-24"
+      (id 2)
+      (at -10.1600 -25.4000 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property Datasheet "https://datasheet.lcsc.com/lcsc/2211110930_XINLUDA-XL9555_C609791.pdf"
+      (id 3)
+      (at -10.1600 -27.9400 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (justify left) hide))
+    (property ki_description "16-bit I²C I/O port expander"
+      (id 5)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700)) hide))
+    (symbol "XL9555_0_0"
+      (rectangle
+        (start -10.1600 21.5900)
+        (end 10.1600 -21.5900)
+        (stroke
+          (width 0)
+          (type default)
+          (color 0 0 0 0))
+        (fill
+          (type background)))
+      (pin power_in line
+        (at -12.7000 20.3200 0)
+        (length 2.5400)
+        (name VCC
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "24"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -12.7000 17.7800 0)
+        (length 2.5400)
+        (name GND
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "12"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin open_collector line
+        (at -12.7000 12.7000 0)
+        (length 2.5400)
+        (name "~{INT}"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -12.7000 7.6200 0)
+        (length 2.5400)
+        (name "A0"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "21"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -12.7000 5.0800 0)
+        (length 2.5400)
+        (name "A1"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin input line
+        (at -12.7000 2.5400 0)
+        (length 2.5400)
+        (name "A2"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin open_collector line
+        (at -12.7000 -2.5400 0)
+        (length 2.5400)
+        (name SCL
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "22"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin open_collector line
+        (at -12.7000 -5.0800 0)
+        (length 2.5400)
+        (name SDA
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "23"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 20.3200 180)
+        (length 2.5400)
+        (name "P00"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 17.7800 180)
+        (length 2.5400)
+        (name "P01"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "5"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 15.2400 180)
+        (length 2.5400)
+        (name "P02"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "6"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 12.7000 180)
+        (length 2.5400)
+        (name "P03"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "7"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 10.1600 180)
+        (length 2.5400)
+        (name "P04"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "8"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 7.6200 180)
+        (length 2.5400)
+        (name "P05"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "9"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 5.0800 180)
+        (length 2.5400)
+        (name "P06"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "10"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 2.5400 180)
+        (length 2.5400)
+        (name "P07"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "11"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 -2.5400 180)
+        (length 2.5400)
+        (name "P10"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "13"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 -5.0800 180)
+        (length 2.5400)
+        (name "P11"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "14"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 -7.6200 180)
+        (length 2.5400)
+        (name "P12"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "15"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 -10.1600 180)
+        (length 2.5400)
+        (name "P13"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "16"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 -12.7000 180)
+        (length 2.5400)
+        (name "P14"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "17"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 -15.2400 180)
+        (length 2.5400)
+        (name "P15"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "18"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 -17.7800 180)
+        (length 2.5400)
+        (name "P16"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "19"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin bidirectional line
+        (at 12.7000 -20.3200 180)
+        (length 2.5400)
+        (name "P17"
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "20"
+          (effects
+            (font
+              (size 1.2700 1.2700))))))))

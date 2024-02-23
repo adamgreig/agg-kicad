@@ -31,6 +31,12 @@
     (options "")
     (descr ""))
   (lib
+    (name headphone_jack)
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/connector/headphone_jack.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "j1011fx1pnl")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/connector/j1011fx1pnl.kicad_sym")
@@ -544,6 +550,12 @@
     (name "txu0104pwr")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/logic/txu0104pwr.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
+    (name "xl9555")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/logic/xl9555.kicad_sym")
     (options "")
     (descr ""))
   (lib
@@ -1672,6 +1684,12 @@
     (name "bme280")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/sensor/bme280.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
+    (name "lma2718t421-oa5")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/sensor/lma2718t421-oa5.kicad_sym")
     (options "")
     (descr ""))
   (lib

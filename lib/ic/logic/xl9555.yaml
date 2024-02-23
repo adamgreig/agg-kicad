@@ -1,0 +1,29 @@
+name: XL9555
+description: 16-bit I²C I/O port expander
+footprint: agg:TSSOP-24
+datasheet: https://datasheet.lcsc.com/lcsc/2211110930_XINLUDA-XL9555_C609791.pdf
+pins:
+- - - [VCC, 24, pwrin]
+    - [GND, 12, pwrin]
+  - - ["~{INT}", 1, od]
+  - - [A0, 21, in]
+    - [A1, 2, in]
+    - [A2, 3, in]
+  - - [SCL, 22, od]
+    - [SDA, 23, od]
+- - - [P00, 4, bidi]
+    - [P01, 5, bidi]
+    - [P02, 6, bidi]
+    - [P03, 7, bidi]
+    - [P04, 8, bidi]
+    - [P05, 9, bidi]
+    - [P06, 10, bidi]
+    - [P07, 11, bidi]
+  - - [P10, 13, bidi]
+    - [P11, 14, bidi]
+    - [P12, 15, bidi]
+    - [P13, 16, bidi]
+    - [P14, 17, bidi]
+    - [P15, 18, bidi]
+    - [P16, 19, bidi]
+    - [P17, 20, bidi]
