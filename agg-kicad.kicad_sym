@@ -1,7 +1,7 @@
 
 (kicad_symbol_lib
   (version 20211014)
-  (generator "agg-kicad-compiled-2c5d5a0a-dirty")
+  (generator "agg-kicad-compiled-3fd02c8f-dirty")
   (symbol "7499210124A"
     (pin_names
       (offset 1.0160))
@@ -53861,7 +53861,7 @@
           (effects
             (font
               (size 1.2700 1.2700)))))
-      (pin output line
+      (pin power_out line
         (at -12.7000 0.0000 0)
         (length 2.5400)
         (name MICBIAS

@@ -11,7 +11,7 @@ pins:
   - - [VDDSPK, 26, pwrin]
     - [VSSSPK, 24, pwrin]
   - - [VREF, 27, in]
-  - - [MICBIAS, 32, out]
+  - - [MICBIAS, 32, pwrout]
   - - [MCLK, 11, in]
     - [BCLK, 8, bidi]
     - [FS, 7, bidi]
