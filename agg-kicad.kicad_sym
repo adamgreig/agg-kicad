@@ -1,7 +1,7 @@
 
 (kicad_symbol_lib
   (version 20211014)
-  (generator "agg-kicad-compiled-3fd02c8f-dirty")
+  (generator "agg-kicad-compiled-4d0f3ecd-dirty")
   (symbol "7499210124A"
     (pin_names
       (offset 1.0160))
@@ -117961,9 +117961,11 @@
         (effects
           (font
             (size 1.2700 1.2700))))))
+  (generator_version "8.0")
   (symbol SWITCH_MOM_SPST
     (pin_numbers hide)
     (pin_names hide)
+    (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
     (property Reference SW
@@ -117980,12 +117982,20 @@
       (at 0 0 0)
       (effects
         (font
-          (size 1.2700 1.2700)) hide))
+          (size 1.2700 1.2700))
+        (hide yes)))
     (property Datasheet ""
       (at 0 0 0)
       (effects
         (font
-          (size 1.2700 1.2700)) hide))
+          (size 1.2700 1.2700))
+        (hide yes)))
+    (property Description ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (hide yes)))
     (symbol "SWITCH_MOM_SPST_0_1"
       (polyline
         (pts
@@ -118050,6 +118060,147 @@
             (font
               (size 1.2700 1.2700))))
         (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))))
+  (symbol "SWITCH_MOM_SPST_4P"
+    (pin_numbers hide)
+    (pin_names hide)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property Reference SW
+      (at 0 2.2860 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Value "SWITCH_MOM_SPST_4P"
+      (at -0.2540 -5.8420 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))))
+    (property Footprint ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (hide yes)))
+    (property Datasheet ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (hide yes)))
+    (property Description ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.2700 1.2700))
+        (hide yes)))
+    (symbol "SWITCH_MOM_SPST_4P_0_1"
+      (polyline
+        (pts
+          (xy -1.5240 -2.5400)
+          (xy -1.5240 0))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -1.2700 0.7620)
+          (xy 1.2700 0.7620))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -0.3810 1.1430)
+          (xy 0.3810 1.1430))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 0 0.7620)
+          (xy 0 1.1430))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 1.5240 -2.5400)
+          (xy 1.5240 0))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none))))
+    (symbol "SWITCH_MOM_SPST_4P_1_1"
+      (circle
+        (center -1.2700 0)
+        (radius 0.2540)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (circle
+        (center 1.2700 0)
+        (radius 0.2540)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (pin passive line
+        (at -2.5400 0 0)
+        (length 1.0160)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "1"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 2.5400 0 180)
+        (length 1.0160)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "2"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at -2.5400 -2.5400 0)
+        (length 1.0160)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "3"
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 2.5400 -2.5400 180)
+        (length 1.0160)
+        (name ""
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number "4"
           (effects
             (font
               (size 1.2700 1.2700))))))))

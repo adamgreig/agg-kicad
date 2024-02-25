@@ -10,7 +10,7 @@ import re
 from decimal import Decimal
 
 
-def parse(sexp, empty_string_placeholder="", parse_nums=False):
+def parse(sexp, parse_nums=False):
     """
     Parse an S-expression into Python lists.
     """
@@ -18,11 +18,16 @@ def parse(sexp, empty_string_placeholder="", parse_nums=False):
     token = None
     quote = False
     quoted = False
+    empty_string = object()
     for c in sexp:
         if c == '(' and not quote:
             r.append([])
         elif c in (')', ' ', '\n') and not quote:
-            if token is not None:
+            if token is not None and (token == empty_string or token.strip() != ""):
+                if token == empty_string:
+                    token = ""
+                else:
+                    token = token.strip()
                 if parse_nums and not quoted:
                     if re.match("^[\+\-]?[0-9]+$", token):
                         token = int(token)
@@ -42,7 +47,7 @@ def parse(sexp, empty_string_placeholder="", parse_nums=False):
             if token and not quote:
                 quoted = True
             if not token and not quote:
-                token = empty_string_placeholder
+                token = empty_string
         else:
             if token is None:
                 token = ''

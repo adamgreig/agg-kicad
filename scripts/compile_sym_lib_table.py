@@ -38,7 +38,7 @@ def writetable(libpath, tblpath):
 def checktable(libpath, tblpath):
     tbl = maketable(libpath)
     with open(tblpath, "r") as f:
-        old_tbl = sexp.parse(f.read(), empty_string_placeholder="")
+        old_tbl = sexp.parse(f.read())
     return tbl == old_tbl
 
 
