@@ -402,4 +402,15 @@
         (number "29"
           (effects
             (font
+              (size 1.2700 1.2700)))))
+      (pin passive line
+        (at 12.7000 -20.3200 180)
+        (length 2.5400)
+        (name EP
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number EP
+          (effects
+            (font
               (size 1.2700 1.2700))))))))

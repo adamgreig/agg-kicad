@@ -35,3 +35,4 @@ pins:
     - [RSPKOUT, 23, out]
   - - [LHP, 30, out]
     - [RHP, 29, out]
+  - - [EP, EP, passive]
