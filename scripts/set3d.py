@@ -27,6 +27,7 @@ MODELS = {
     },
     "D": {
         "agg:0402": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+        "agg:0603": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
         "agg:0603-LED":
             "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric_Castellated.step",
     },
