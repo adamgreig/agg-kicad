@@ -85,5 +85,5 @@ def find(sexp, *names):
 def find_all(sexp, *names):
     """Yield all nodes in `sexp` whose name is in `names`."""
     for child in sexp:
-        if child[0] in names:
+        if len(child) and child[0] in names:
             yield child
