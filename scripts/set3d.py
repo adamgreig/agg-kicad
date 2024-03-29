@@ -7,78 +7,50 @@ Assigns 3d footprints to passives on a PCB.
 """
 
 import argparse
+import pcbnew
 
 MODELS = {
     "R": {
-        "agg:0402": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
-        "agg:0603": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
-        "agg:0805": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "agg:0402": "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+        "agg:0603": "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "agg:0805": "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
     },
     "C": {
-        "agg:0402": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
-        "agg:0603": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
-        "agg:0805": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
-        "agg:1206": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
-        "agg:1210": "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "agg:0402": "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "agg:0603": "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "agg:0805": "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+        "agg:1206": "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+        "agg:1210": "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
     },
     "L": {
-        "agg:0603": "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step",
-        "agg:0805": "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0805_2012Metric.step",
+        "agg:0603": "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step",
+        "agg:0805": "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0805_2012Metric.step",
     },
     "D": {
-        "agg:0402": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
-        "agg:0603": "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "agg:0402": "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+        "agg:0603": "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
         "agg:0603-LED":
-            "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric_Castellated.step",
+            "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric_Castellated.step",
     },
 }
-
-ADD_MODEL_SPEC = """\
-    (model "{}"
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-  )
-"""
 
 
 def process_pcb(fname):
     print(f"Processing {fname}")
-    with open(fname, "r") as f:
-        lines = f.readlines()
-
-    ref = None
-    pkg = None
-    changed = False
-
-    for (idx, line) in enumerate(lines):
-        if "(module" in line or "(footprint" in line:
-            ref = None
-            pkg = line.split()[1][1:-1]
-        if "(fp_text reference" in line:
-            ref = line.split()[2][1:-1]
-        if "(model" in line and ref is not None:
-            if ref[0] in MODELS and pkg in MODELS[ref[0]]:
-                current_model = line.split()[1].strip()
-                new_model = MODELS[ref[0]][pkg]
-                if current_model != new_model:
-                    print(f"Replacing {ref} {pkg} with {new_model}")
-                    lines[idx] = f"    (model \"{new_model}\"\n"
-                    changed = True
-                ref = None
-        if ref is not None and line == "  )\n":
-            if ref[0] in MODELS and pkg in MODELS[ref[0]]:
-                new_model = MODELS[ref[0]][pkg]
-                print(f"Adding new model {ref} {pkg} {new_model}")
-                lines[idx] = ADD_MODEL_SPEC.format(new_model)
-                changed = True
-
-    if changed:
-        with open(fname, "w") as f:
-            f.write("".join(lines))
-    else:
-        print("No replacements made")
+    board = pcbnew.LoadBoard(fname)
+    for fp in board.GetFootprints():
+        ref = fp.Reference().GetText()
+        pkg = fp.Footprint().GetText()
+        if ref[0] in MODELS and pkg in MODELS[ref[0]]:
+            if fp.Models().size() > 0:
+                if fp.Models()[0].m_Filename == MODELS[ref[0]][pkg]:
+                    continue
+            print(f"Setting {ref} to {MODELS[ref[0]][pkg]}")
+            fp.Models().clear()
+            model = pcbnew.FP_3DMODEL()
+            model.m_Filename = MODELS[ref[0]][pkg]
+            fp.Add3DModel(model)
+    board.Save(fname)
 
 
 if __name__ == "__main__":
