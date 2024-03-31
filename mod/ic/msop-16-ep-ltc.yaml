@@ -1,0 +1,19 @@
+name: MSOP-16-EP-LTC
+chip_shape: [3.0, 4.0]
+description: |-
+  MSOP-16 with 0.5mm pin pitch and an EP, LTC specific
+  MSE-16 for LTC7000 DWG 05-08-1667 Rev F
+model:
+  offset: [0, 0, 0]
+  path: ${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-16_3x4mm_P0.5mm.step
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+rows: 2
+pins: 16
+pad_shape: [0.889, .305]
+pin_pitch: 0.5
+pin_shape: [0.95, 0.22]
+row_pitch: 4.4
+ep_shape: [1.65, 2.85]
+ep_paste_shape: [1.0, 0.7, 0, 0.4]
+ep_vias: [0.3, 0.5, 0.6]

@@ -1,7 +1,7 @@
 
 (module "LQFP-32"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -5.7500)
@@ -695,7 +695,7 @@
     (at -2.8000 -4.2000)
     (size 0.5000 1.2000)
     (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-32_7x7mm_Pitch0.8mm.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-32_7x7mm_P0.8mm.step"
     (at
       (xyz 0 0 0))
     (scale

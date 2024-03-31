@@ -9,7 +9,7 @@ ep_shape: [4.42, 4.42]
 ep_vias: [0.4, 0.8, 0.43]
 model:
   offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-40-1EP_6x6mm_Pitch0.5mm.wrl
+  path: ${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-40-1EP_6x6mm_P0.5mm.step
   rotate: [0, 0, 0]
   scale: [1, 1, 1]
 name: QFN-40-EP-LTC-UJ

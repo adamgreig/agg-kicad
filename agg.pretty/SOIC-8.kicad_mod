@@ -1,7 +1,7 @@
 
 (module "SOIC-8"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -3.4500)
@@ -239,7 +239,7 @@
     (at 2.7000 -1.9050)
     (size 1.5500 0.6000)
     (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-8_3.9x4.9mm_Pitch1.27mm.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
     (at
       (xyz 0 0 0))
     (scale

@@ -1,7 +1,7 @@
 
 (module "SOT-666"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -1.8000)
@@ -200,4 +200,11 @@
   (pad 6 smd rect
     (at 0.7200 -0.5000)
     (size 0.7100 0.3000)
-    (layers F.Cu F.Mask F.Paste)))
+    (layers F.Cu F.Mask F.Paste))
+  (model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-666.step"
+    (at
+      (xyz 0 0 0))
+    (scale
+      (xyz 1 1 1))
+    (rotate
+      (xyz 0 0 0))))

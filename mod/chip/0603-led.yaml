@@ -4,7 +4,7 @@ description: |-
   Modified silkscreen to indicate LED polarity.
 model:
   offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl
+  path: ${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step
   rotate: [0, 0, 180]
   scale: [1, 1, 1]
 name: 0603-LED

@@ -1,0 +1,18 @@
+chip_shape: [4.5, 5.1]
+description: |-
+  TSSOP-16 from JEDEC MO-153AB
+  with exposed pad per MAX6968
+  IPC-7351B: SOP65P500X120-16N
+model:
+  offset: [0, 0, 0]
+  path: ${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: TSSOP-16-EP
+pad_shape: [1.35, 0.45]
+pin_pitch: 0.65
+pin_shape: [0.95, 0.3]
+pins: 16
+row_pitch: 5.75
+rows: 2
+ep_shape: [3.0, 3.0]

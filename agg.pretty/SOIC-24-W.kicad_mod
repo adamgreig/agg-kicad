@@ -1,7 +1,7 @@
 
 (module "SOIC-24-W"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -8.6500)
@@ -543,7 +543,7 @@
     (at 4.8000 -6.9850)
     (size 2.2000 0.6500)
     (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/Package_SO.3dshapes/SOIC-24W_7.5x15.4mm_P1.27mm.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-24W_7.5x15.4mm_P1.27mm.step"
     (at
       (xyz 0 0 0))
     (scale

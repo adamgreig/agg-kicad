@@ -4,7 +4,7 @@ description: |-
   IPC-7351B: SOIC127P600X175-8N
 model:
   offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-8_3.9x4.9mm_Pitch1.27mm.wrl
+  path: ${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step
   rotate: [0, 0, 0]
   scale: [1, 1, 1]
 name: SOIC-8

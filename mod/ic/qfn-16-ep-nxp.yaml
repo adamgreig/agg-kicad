@@ -6,7 +6,7 @@ ep_paste_shape: [0.3, 0.3, 0.31, 0.31]
 ep_shape: [1.5, 1.5]
 model:
   offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-16-1EP_3x3mm_Pitch0.5mm.wrl
+  path: ${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm.step
   rotate: [0, 0, 0]
   scale: [1, 1, 1]
 name: QFN-16-EP-NXP

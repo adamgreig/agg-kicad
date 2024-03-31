@@ -7,7 +7,7 @@ ep_paste_shape: [0.9, 0.9, 0.4, 0.4]
 ep_shape: [2.6, 2.6]
 model:
   offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_Pitch0.5mm.wrl
+  path: ${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-24_4x4mm_P0.5mm.step
   rotate: [0, 0, 0]
   scale: [1, 1, 1]
 name: QFN-24-EP-MAX

@@ -1,0 +1,13 @@
+name: QFN-56-FTDI
+description: QFN-56 for FTDI FT600Q
+chip_shape: [7, 7]
+pins: 56
+rows: 4
+model:
+  path: ${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm.step
+pad_shape: [0.8, 0.24]
+pin_pitch: 0.4
+pin_shape: [-0.4, 0.2]
+row_pitch: 7.0
+ep_shape: [3.9, 4.7]
+ep_paste_shape: [1.2, 1.5, 0.75, 0.85]

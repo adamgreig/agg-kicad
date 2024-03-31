@@ -1,105 +1,105 @@
 
-(module "SIL-254P-04" 
-  (layer F.Cu) 
-  (tedit 5CCC5112) 
-  (pad 1 thru_hole rect 
-    (at -3.8100 0) 
-    (size 1.9000 1.9000) 
-    (layers *.Cu F.SilkS F.Mask B.Mask) 
-    (drill 1.0000)) 
-  (pad 2 thru_hole circle 
-    (at -1.2700 0) 
-    (size 1.9000 1.9000) 
-    (layers *.Cu F.SilkS F.Mask B.Mask) 
-    (drill 1.0000)) 
-  (pad 3 thru_hole circle 
-    (at 1.2700 0) 
-    (size 1.9000 1.9000) 
-    (layers *.Cu F.SilkS F.Mask B.Mask) 
-    (drill 1.0000)) 
-  (pad 4 thru_hole circle 
-    (at 3.8100 0) 
-    (size 1.9000 1.9000) 
-    (layers *.Cu F.SilkS F.Mask B.Mask) 
-    (drill 1.0000)) 
-  (fp_line 
-    (start -5.0800 -1.2700) 
-    (end 5.0800 -1.2700) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_line 
-    (start 5.0800 -1.2700) 
-    (end 5.0800 1.2700) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_line 
-    (start 5.0800 1.2700) 
-    (end -5.0800 1.2700) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_line 
-    (start -5.0800 1.2700) 
-    (end -5.0800 -1.2700) 
-    (layer F.Fab) 
-    (width 0.0100)) 
-  (fp_line 
-    (start -5.0800 -1.2700) 
-    (end 5.0800 -1.2700) 
-    (layer F.SilkS) 
-    (width 0.1500)) 
-  (fp_line 
-    (start 5.0800 -1.2700) 
-    (end 5.0800 1.2700) 
-    (layer F.SilkS) 
-    (width 0.1500)) 
-  (fp_line 
-    (start 5.0800 1.2700) 
-    (end -5.0800 1.2700) 
-    (layer F.SilkS) 
-    (width 0.1500)) 
-  (fp_line 
-    (start -5.0800 1.2700) 
-    (end -5.0800 -1.2700) 
-    (layer F.SilkS) 
-    (width 0.1500)) 
-  (fp_line 
-    (start -5.3500 -1.5500) 
-    (end 5.3500 -1.5500) 
-    (layer F.CrtYd) 
-    (width 0.0100)) 
-  (fp_line 
-    (start 5.3500 -1.5500) 
-    (end 5.3500 1.5500) 
-    (layer F.CrtYd) 
-    (width 0.0100)) 
-  (fp_line 
-    (start 5.3500 1.5500) 
-    (end -5.3500 1.5500) 
-    (layer F.CrtYd) 
-    (width 0.0100)) 
-  (fp_line 
-    (start -5.3500 1.5500) 
-    (end -5.3500 -1.5500) 
-    (layer F.CrtYd) 
-    (width 0.0100)) 
-  (fp_text reference REF** 
-    (at 0 -2.2200) 
-    (layer F.Fab) 
-    (effects 
-      (font 
-        (size 1.0000 1.0000) 
-        (thickness 0.1500)))) 
-  (fp_text value "SIL-254P-04" 
-    (at 0 2.2200) 
-    (layer F.Fab) 
-    (effects 
-      (font 
-        (size 1.0000 1.0000) 
-        (thickness 0.1500)))) 
-  (model "${KISYS3DMOD}/Pin_Headers.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step" 
-    (at 
-      (xyz 0 0 0)) 
-    (scale 
-      (xyz 1 1 1)) 
-    (rotate 
+(module "SIL-254P-04"
+  (layer F.Cu)
+  (tedit "6608C72B")
+  (pad 1 thru_hole rect
+    (at -3.8100 0)
+    (size 1.9000 1.9000)
+    (layers *.Cu F.SilkS F.Mask B.Mask)
+    (drill 1.0000))
+  (pad 2 thru_hole circle
+    (at -1.2700 0)
+    (size 1.9000 1.9000)
+    (layers *.Cu F.SilkS F.Mask B.Mask)
+    (drill 1.0000))
+  (pad 3 thru_hole circle
+    (at 1.2700 0)
+    (size 1.9000 1.9000)
+    (layers *.Cu F.SilkS F.Mask B.Mask)
+    (drill 1.0000))
+  (pad 4 thru_hole circle
+    (at 3.8100 0)
+    (size 1.9000 1.9000)
+    (layers *.Cu F.SilkS F.Mask B.Mask)
+    (drill 1.0000))
+  (fp_line
+    (start -5.0800 -1.2700)
+    (end 5.0800 -1.2700)
+    (layer F.Fab)
+    (width 0.0100))
+  (fp_line
+    (start 5.0800 -1.2700)
+    (end 5.0800 1.2700)
+    (layer F.Fab)
+    (width 0.0100))
+  (fp_line
+    (start 5.0800 1.2700)
+    (end -5.0800 1.2700)
+    (layer F.Fab)
+    (width 0.0100))
+  (fp_line
+    (start -5.0800 1.2700)
+    (end -5.0800 -1.2700)
+    (layer F.Fab)
+    (width 0.0100))
+  (fp_line
+    (start -5.0800 -1.2700)
+    (end 5.0800 -1.2700)
+    (layer F.SilkS)
+    (width 0.1500))
+  (fp_line
+    (start 5.0800 -1.2700)
+    (end 5.0800 1.2700)
+    (layer F.SilkS)
+    (width 0.1500))
+  (fp_line
+    (start 5.0800 1.2700)
+    (end -5.0800 1.2700)
+    (layer F.SilkS)
+    (width 0.1500))
+  (fp_line
+    (start -5.0800 1.2700)
+    (end -5.0800 -1.2700)
+    (layer F.SilkS)
+    (width 0.1500))
+  (fp_line
+    (start -5.3500 -1.5500)
+    (end 5.3500 -1.5500)
+    (layer F.CrtYd)
+    (width 0.0100))
+  (fp_line
+    (start 5.3500 -1.5500)
+    (end 5.3500 1.5500)
+    (layer F.CrtYd)
+    (width 0.0100))
+  (fp_line
+    (start 5.3500 1.5500)
+    (end -5.3500 1.5500)
+    (layer F.CrtYd)
+    (width 0.0100))
+  (fp_line
+    (start -5.3500 1.5500)
+    (end -5.3500 -1.5500)
+    (layer F.CrtYd)
+    (width 0.0100))
+  (fp_text reference REF**
+    (at 0 -2.2200)
+    (layer F.Fab)
+    (effects
+      (font
+        (size 1.0000 1.0000)
+        (thickness 0.1500))))
+  (fp_text value "SIL-254P-04"
+    (at 0 2.2200)
+    (layer F.Fab)
+    (effects
+      (font
+        (size 1.0000 1.0000)
+        (thickness 0.1500))))
+  (model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes//PinHeader_1x04_P2.54mm_Vertical.step"
+    (at
+      (xyz 0 0 0))
+    (scale
+      (xyz 1 1 1))
+    (rotate
       (xyz 0 0 0))))

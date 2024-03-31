@@ -1,7 +1,7 @@
 
 (module "TSSOP-24"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -4.9000)
@@ -543,7 +543,7 @@
     (at 2.8750 -3.5750)
     (size 1.3500 0.4500)
     (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-24_4.4x7.8mm_Pitch0.65mm.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-24_4.4x7.8mm_P0.65mm.step"
     (at
       (xyz 0 0 0))
     (scale

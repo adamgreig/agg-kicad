@@ -1,7 +1,7 @@
 
 (module "LQFP-144"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -12.4000)
@@ -2823,7 +2823,7 @@
     (at -8.7500 -10.7000)
     (size 0.3000 1.5000)
     (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-144_20x20mm_Pitch0.5mm.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-144_20x20mm_P0.5mm.step"
     (at
       (xyz 0 0 0))
     (scale

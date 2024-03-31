@@ -1,7 +1,7 @@
 
 (module "QFN-32-BGT24MTR"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -3.9500)
@@ -765,4 +765,11 @@
     (at 0 0)
     (size 2.9000 3.9000)
     (layers F.Cu F.Mask)
-    (solder_mask_margin 0.0010)))
+    (solder_mask_margin 0.0010))
+  (model "${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.3x3.3mm.step"
+    (at
+      (xyz 0 0 0))
+    (scale
+      (xyz 1 1 1))
+    (rotate
+      (xyz 0 0 0))))

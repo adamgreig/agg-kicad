@@ -1,7 +1,7 @@
 
 (module "QFN-20-EP-SI"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -3.3250)
@@ -502,7 +502,7 @@
     (size 2.6000 2.6000)
     (layers F.Cu F.Mask)
     (solder_mask_margin 0.0010))
-  (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_Pitch0.5mm.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_P0.5mm.step"
     (at
       (xyz 0 0 0))
     (scale

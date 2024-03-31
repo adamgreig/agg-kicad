@@ -8,7 +8,7 @@ ep_shape: [2.74, 3.86]
 ep_vias: [0.4, 0.6, 0.5]
 model:
   offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/Housings_SSOP.3dshapes/TSSOP-20_4.4x6.5mm_Pitch0.65mm.wrl
+  path: ${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-20_4.4x5mm_P0.5mm.step
   rotate: [0, 0, 0]
   scale: [1, 1, 1]
 name: TSSOP-20-EP

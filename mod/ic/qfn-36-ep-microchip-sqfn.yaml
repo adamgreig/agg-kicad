@@ -8,7 +8,7 @@ ep_shape: [3.7, 3.7]
 ep_vias: [0.3, 0.4, 1.0]
 model:
   offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-36-1EP_5x6mm_Pitch0.5mm.wrl
+  path: ${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-36-1EP_5x6mm_P0.5mm_EP3.6x4.6mm.step
   rotate: [0, 0, 0]
   scale: [1.2, 1, 1]
 name: QFN-36-EP-MICROCHIP-SQFN

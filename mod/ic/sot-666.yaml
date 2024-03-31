@@ -12,3 +12,8 @@ pin_shape: [0.35, 0.25]
 pins: 6
 row_pitch: 1.44
 rows: 2
+model:
+  offset: [0, 0, 0]
+  path: ${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-666.step
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]

@@ -1,7 +1,7 @@
 
 (module "SOT-23-6"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -2.4750)
@@ -201,7 +201,7 @@
     (at 1.3000 -0.9500)
     (size 1.1000 0.6000)
     (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-23-6.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
     (at
       (xyz 0 0 0))
     (scale

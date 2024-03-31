@@ -1,7 +1,7 @@
 
 (module "DO-214AC-SMA"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72A")
   (attr smd)
   (fp_text reference REF**
     (at -4.2000 0 90)
@@ -115,7 +115,7 @@
     (at 2.0000 0)
     (size 2.5000 1.7000)
     (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/Diodes_SMD.3dshapes/SMA_Standard.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.step"
     (at
       (xyz 0 0 0))
     (scale

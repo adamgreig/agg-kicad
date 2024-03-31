@@ -1,7 +1,7 @@
 
 (module "QFN-32-EP-TI"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -3.8500)
@@ -788,7 +788,7 @@
     (at 0 0)
     (size 3.4500 3.4500)
     (layers F.Cu))
-  (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_Pitch0.5mm.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.3x3.3mm.step"
     (at
       (xyz 0 0 0))
     (scale

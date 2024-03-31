@@ -1,7 +1,7 @@
 
 (module "SSOP-20"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -4.5500)
@@ -467,7 +467,7 @@
     (at 3.5000 -2.9250)
     (size 1.8500 0.4500)
     (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/Housings_SSOP.3dshapes/SSOP-20_5.3x7.2mm_Pitch0.65mm.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SSOP-20_5.3x7.2mm_P0.65mm.step"
     (at
       (xyz 0 0 0))
     (scale

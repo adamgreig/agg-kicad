@@ -1,7 +1,7 @@
 
 (module "QFN-24-EP-MICROCHIP"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -3.1650)
@@ -620,4 +620,11 @@
   (pad EP smd rect
     (at 0 0)
     (size 2.5000 2.5000)
-    (layers F.Cu)))
+    (layers F.Cu))
+  (model "${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-24_4x4mm_P0.5mm.step"
+    (at
+      (xyz 0 0 0))
+    (scale
+      (xyz 1 1 1))
+    (rotate
+      (xyz 0 0 0))))

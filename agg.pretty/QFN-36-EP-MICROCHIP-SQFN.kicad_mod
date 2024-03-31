@@ -1,7 +1,7 @@
 
 (module "QFN-36-EP-MICROCHIP-SQFN"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -4.1750)
@@ -864,7 +864,7 @@
     (at 0 0)
     (size 3.7000 3.7000)
     (layers F.Cu))
-  (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-36-1EP_5x6mm_Pitch0.5mm.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-36-1EP_5x6mm_P0.5mm_EP3.6x4.6mm.step"
     (at
       (xyz 0 0 0))
     (scale

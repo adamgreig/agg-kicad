@@ -4,7 +4,7 @@ description: |-
   IPC-7351B: SOP65P780X200-20N
 model:
   offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/Housings_SSOP.3dshapes/SSOP-20_5.3x7.2mm_Pitch0.65mm.wrl
+  path: ${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SSOP-20_5.3x7.2mm_P0.65mm.step
   rotate: [0, 0, 0]
   scale: [1, 1, 1]
 name: SSOP-20

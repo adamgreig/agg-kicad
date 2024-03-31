@@ -6,7 +6,7 @@ ep_shape: [2.4, 3.1]
 ep_vias: [0.3, 0.65, 0.3]
 model:
   offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/Housings_SOIC.3dshapes/SOIC-8_3.9x4.9mm_Pitch1.27mm.wrl
+  path: ${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step
   rotate: [0, 0, 0]
   scale: [1, 1, 1]
 name: SOIC-8-EP

@@ -137,7 +137,7 @@ def refs(name, h):
 
 def sil_model(pins):
     if pins <= 20:
-        return [model("${KISYS3DMOD}/Pin_Headers.3dshapes/" +
+        return [model("${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes//" +
                       "PinHeader_1x{:02d}_P2.54mm_Vertical.step".format(pins),
                       (0, 0, 0),
                       (1, 1, 1),
@@ -148,7 +148,7 @@ def sil_model(pins):
 
 def dil_model(pins):
     if pins <= 40:
-        return [model("${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/" +
+        return [model("${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes//" +
                       "PinHeader_2x{:02d}_P2.54mm_Vertical.step".format(pins),
                       (0, 0, 0),
                       (1, 1, 1),
@@ -159,7 +159,7 @@ def dil_model(pins):
 
 def kk_model(pins):
     if pins <= 16:
-        return [model("${KISYS3DMOD}/Connector_Molex.3dshapes/" +
+        return [model("${KICAD8_3DMODEL_DIR}/Connector_Molex.3dshapes/" +
                       "Molex_KK-254_AE-6410-" +
                       "{:02d}A_1x{:02d}".format(pins, pins) +
                       "_P2.54mm_Vertical.step",
@@ -208,7 +208,7 @@ def kk(pins):
 
 
 def main(prettypath, verify=False, verbose=False):
-    for pins in list(range(1, 26)) + [32, 36]:
+    for pins in list(range(1, 21)) + [25, 32, 36]:
         for generator in (sil, dil, kk):
             if generator == kk and (pins == 1 or pins > 16):
                 continue

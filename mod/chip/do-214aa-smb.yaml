@@ -2,8 +2,8 @@ chip_shape: [4.6, 3.94]
 description: DO-214AA (SMB) from Diodes Inc.
 model:
   offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/Diodes_SMD.3dshapes/SMB_Standard.wrl
   rotate: [0, 0, 180]
+  path: ${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step
   scale: [0.3937, 0.3937, 0.3937]
 name: DO-214AA-SMB
 pad_shape: [2.5, 2.3]

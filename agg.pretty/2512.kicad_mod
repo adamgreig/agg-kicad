@@ -1,7 +1,7 @@
 
 (module "2512"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72A")
   (attr smd)
   (fp_text reference REF**
     (at -4.6250 0 90)
@@ -94,11 +94,4 @@
   (pad 2 smd rect
     (at 3.0500 0)
     (size 1.2500 3.4000)
-    (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/Resistors_SMD.3dshapes/R_2512.wrl"
-    (at
-      (xyz 0 0 0))
-    (scale
-      (xyz 1 1 1))
-    (rotate
-      (xyz 0 0 0))))
+    (layers F.Cu F.Mask F.Paste)))

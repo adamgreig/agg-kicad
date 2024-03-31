@@ -1,7 +1,7 @@
 
 (module "0603-LED"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72A")
   (attr smd)
   (fp_text reference REF**
     (at -2.2250 0 90)
@@ -95,7 +95,7 @@
     (at 0.8000 0)
     (size 0.9500 1.0000)
     (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step"
     (at
       (xyz 0 0 0))
     (scale

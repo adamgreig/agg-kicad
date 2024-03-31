@@ -1,7 +1,7 @@
 
 (module "QFN-40-EP-LTC-UJ"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -4.2000)
@@ -1075,7 +1075,7 @@
     (at 0 0)
     (size 4.4200 4.4200)
     (layers F.Cu))
-  (model "${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-40-1EP_6x6mm_Pitch0.5mm.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-40-1EP_6x6mm_P0.5mm.step"
     (at
       (xyz 0 0 0))
     (scale

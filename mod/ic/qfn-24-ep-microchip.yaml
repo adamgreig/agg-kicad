@@ -13,3 +13,8 @@ pin_shape: [-0.4, 0.25]
 pins: 24
 row_pitch: 3.74
 rows: 4
+model:
+  offset: [0, 0, 0]
+  path: ${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-24_4x4mm_P0.5mm.step
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]

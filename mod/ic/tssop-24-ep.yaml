@@ -1,0 +1,18 @@
+chip_shape: [4.5, 7.9]
+description: |-
+  TSSOP-24 from JEDEC MO-153
+  IPC-7351B: SOP65P640X120-24N
+model:
+  offset: [0, 0, 0]
+  path: ${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-24_4.4x7.8mm_P0.65mm.step
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: TSSOP-24-EP
+pad_shape: [1.35, 0.45]
+pin_pitch: 0.65
+pin_shape: [0.95, 0.3]
+pins: 24
+row_pitch: 5.75
+rows: 2
+ep_shape: [3.2, 5]
+ep_paste_shape: [2, 1, 1, 1]

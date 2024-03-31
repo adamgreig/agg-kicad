@@ -4,7 +4,7 @@ description: |-
   IPC-7351B: QFP50P2200X2200X160-144N
 model:
   offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/Housings_QFP.3dshapes/LQFP-144_20x20mm_Pitch0.5mm.wrl
+  path: ${KICAD8_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-144_20x20mm_P0.5mm.step
   rotate: [0, 0, 0]
   scale: [1, 1, 1]
 name: LQFP-144

@@ -1,7 +1,7 @@
 
 (module "SOT-323"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -2.0000)
@@ -144,7 +144,7 @@
     (at 1.0500 0.0000)
     (size 0.8500 0.5500)
     (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-323.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step"
     (at
       (xyz 0 0 0))
     (scale

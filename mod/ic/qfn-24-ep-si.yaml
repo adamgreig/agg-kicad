@@ -10,3 +10,8 @@ pin_shape: [-0.4, 0.25]
 ep_shape: [2.55, 2.55]
 ep_paste_shape: [1, 1, .25, .25]
 ep_vias: [.3, .6, .7]
+model:
+  offset: [0, 0, 0]
+  path: ${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-24_4x4mm_P0.5mm.step
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]

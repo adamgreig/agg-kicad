@@ -1,7 +1,7 @@
 
 (module "MSOP-10-EP-TI"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -2.4500)
@@ -354,7 +354,7 @@
     (at 0 0)
     (size 2.2000 3.1000)
     (layers F.Cu))
-  (model "${KISYS3DMOD}/Housings_SSOP.3dshapes/MSOP-10-1EP_3x3mm_Pitch0.5mm.wrl"
+  (model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step"
     (at
       (xyz 0 0 0))
     (scale

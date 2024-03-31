@@ -5,11 +5,6 @@ description: |-
   IPC-7351B: QFN80P500X500X85-21N
 ep_paste_shape: [1.1, 1.1, 0.2, 0.2]
 ep_shape: [2.75, 2.75]
-model:
-  offset: [0, 0, 0]
-  path: ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-20-1EP_5x5mm_Pitch0.65mm.wrl
-  rotate: [0, 0, 0]
-  scale: [1, 1, 1]
 name: QFN-20-EP-SI3402-B
 pad_shape: [0.95, 0.3]
 pin_pitch: 0.8

@@ -1,7 +1,7 @@
 
 (module "HTSSOP-14"
   (layer F.Cu)
-  (tedit "62FCEBA6")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -3.5000)
@@ -394,7 +394,7 @@
     (at 0 0)
     (size 3.4000 5.0000)
     (layers F.Cu))
-  (model "${KISYS3DMOD}/Package_SO.3dshapes/TSSOP-14-1EP_4.4x5mm_P0.65mm.step"
+  (model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3.1mm.step"
     (at
       (xyz 0 0 0))
     (scale

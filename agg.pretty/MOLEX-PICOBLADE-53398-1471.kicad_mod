@@ -1,7 +1,7 @@
 
 (module "MOLEX-PICOBLADE-53398-1471"
   (layer F.Cu)
-  (tedit "62FCEC83")
+  (tedit "6608C72B")
   (attr smd)
   (fp_text reference REF**
     (at 0 -1.6000)
@@ -466,7 +466,7 @@
     (at 8.1250 0)
     (size 0.8000 1.3000)
     (layers F.Cu F.Mask F.Paste))
-  (model "${KISYS3DMOD}/Connector_Molex.3dshapes/Molex_PicoBlade_53398-1471_1x14-1MP_P1.25mm_Vertical.step"
+  (model "${KICAD8_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_PicoBlade_53398-1471_1x14-1MP_P1.25mm_Vertical.step"
     (at
       (xyz 0 -0.0512 0))
     (scale
