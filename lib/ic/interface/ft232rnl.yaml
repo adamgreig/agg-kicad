@@ -1,0 +1,35 @@
+name: FT232RNL
+description: USB FULL SPEED TO SERIAL UART IC
+datasheet: https://ftdichip.com/wp-content/uploads/2024/09/DS_FT232RN.pdf
+footprint: agg:TSSOP-28
+ordercodes:
+  - [Farnell, '4064605']
+pins:
+- - - [VCCIO, 4, pwrin]
+    - [VCC, 20, pwrin]
+  - - [DM, 16, bidi]
+    - [DP, 15, bidi]
+  - - [NC, 8, nc]
+    - ["~{RESET}", 19, in]
+    - [NC, 24, nc]
+  - - [OSCI, 27, in]
+    - [OSCO, 28, out]
+  - - [3V3OUT, 17, pwrin]
+    - [AGND, 25, pwrin]
+    - [GND, 7, pwrin]
+    - [GND, 18, pwrin]
+    - [GND, 21, pwrin]
+- - - [TXD, 1, bidi]
+    - [RXD, 5, bidi]
+    - ["~{RTS}", 3, bidi]
+    - ["~{CTS}", 11, bidi]
+    - ["~{DTR}", 2, bidi]
+    - ["~{DSR}", 9, bidi]
+    - ["~{DCD}", 10, bidi]
+    - ["~{RI}", 6, bidi]
+  - - [CBUS0, 23, bidi]
+    - [CBUS1, 22, bidi]
+    - [CBUS2, 13, bidi]
+    - [CBUS3, 14, bidi]
+    - [CBUS4, 12, bidi]
+  - - [GND, 26, pwrin]

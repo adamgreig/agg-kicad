@@ -1,0 +1,13 @@
+datasheet: https://www.ti.com/lit/ds/symlink/tps22929d.pdf
+description: 5.5-V, 1.8-A, 115-mΩ Load Switch
+footprint: agg:SOT-23-6
+name: TPS22929D
+ordercodes:
+- [Farnell, '3124068']
+pins:
+- - - [VIN, 4, pwrin]
+    - [VIN, 6, pwrin]
+  - - [EN, 3, in]
+- - - [VOUT, 1, pwrin]
+  - - [GND, 2, pwrin]
+    - [GND, 5, pwrin]

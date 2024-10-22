@@ -1,0 +1,16 @@
+name: HDC3021
+datasheet: https://www.ti.com/lit/ds/symlink/hdc3021.pdf
+description: 0.5% RH Digital Humidity Sensor
+footprint: agg:WSON-8-EP-TI-2x3
+ordercodes:
+  - [Digikey, '296-HDC3021DEHRCT-ND']
+pins:
+- - - [VDD, 5, pwrin]
+  - - [ALERT, 3, out]
+    - ["~{RESET}", 6, in]
+  - - [EP, EP, pwrin]
+    - [GND, 8, pwrin]
+- - - [SDA, 1, bidi]
+    - [SCL, 4, in]
+  - - [ADDR, 2, in]
+    - [ADDR1, 7, in]
