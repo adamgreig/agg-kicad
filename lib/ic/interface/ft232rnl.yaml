@@ -1,7 +1,7 @@
 name: FT232RNL
 description: USB FULL SPEED TO SERIAL UART IC
 datasheet: https://ftdichip.com/wp-content/uploads/2024/09/DS_FT232RN.pdf
-footprint: agg:TSSOP-28
+footprint: agg:SSOP-28
 ordercodes:
   - [Farnell, '4064605']
 pins:
