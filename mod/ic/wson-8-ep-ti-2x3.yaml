@@ -1,0 +1,11 @@
+name: WSON-8-EP-TI-2x3
+description: WSON-8 2x3mm 0.5mm pitch TI
+chip_shape: [2.5, 2.5]
+pins: 8
+rows: 2
+pin_shape: [-0.4, 0.3]
+pin_pitch: 0.5
+row_pitch: 2.3
+pad_shape: [0.6, 0.25]
+ep_shape: [1.2, 1.9]
+ep_paste_shape: [0.9, 0.7, 0.2, 0.2]

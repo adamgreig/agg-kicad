@@ -361,6 +361,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "ft232rnl")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/interface/ft232rnl.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "hd3ss3220")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/interface/hd3ss3220.kicad_sym")
@@ -526,6 +532,12 @@
     (name "npic6c596a")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/logic/npic6c596a.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
+    (name "sn74axc4t774pwr")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/logic/sn74axc4t774pwr.kicad_sym")
     (options "")
     (descr ""))
   (lib
@@ -736,6 +748,12 @@
     (name "stm32l4xxjxyx")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32l4xxjxyx.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
+    (name "stm32wl5moch6tr")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32wl5moch6tr.kicad_sym")
     (options "")
     (descr ""))
   (lib
@@ -1039,6 +1057,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "tps22929d")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/power/tps22929d.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "tps54061")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/power/tps54061.kicad_sym")
@@ -1084,6 +1108,12 @@
     (name "tps6217x")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/power/tps6217x.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
+    (name "tps63001")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/power/tps63001.kicad_sym")
     (options "")
     (descr ""))
   (lib
@@ -1204,6 +1234,12 @@
     (name "bme680")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/sensor/bme680.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
+    (name "hdc3021")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/sensor/hdc3021.kicad_sym")
     (options "")
     (descr ""))
   (lib

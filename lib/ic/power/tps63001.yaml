@@ -1,0 +1,18 @@
+datasheet: https://www.ti.com/lit/ds/symlink/tps63001.pdf
+description: Fixed 3.3V Buck-Boost Converter with 1.7A Switch
+footprint: agg:WSON-10-EP-TI-3x3
+name: TPS63001
+ordercodes:
+- [Digikey, '296-19643-1-ND']
+pins:
+- - - [L1, 4, passive]
+  - - [VIN, 5, pwrin]
+    - [VINA, 8, pwrin]
+  - - [EN, 6, in]
+    - [PS/SYNC, 7, in]
+  - - [GND, 9, pwrin]
+    - [PGND, 3, pwrin]
+    - [EP, EP, pwrin]
+- - - [L2, 2, passive]
+  - - [VOUT, 1, pwrin]
+  - - [FB, 10, pwrin]

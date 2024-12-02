@@ -1,0 +1,23 @@
+datasheet: https://www.ti.com/lit/ds/symlink/sn74axc4t774.pdf
+description: 4-Bit Dual-Supply Bus Transceiver
+footprint: agg:TSSOP-16
+name: SN74AXC4T774PWR
+ordercodes:
+- [Digikey, '296-SN74AXC4T774PWRCT-ND']
+pins:
+- - - [VCCA, 16, pwrin]
+  - - ["~{OE}", 9, in]
+  - - [A1, 3, bidi]
+    - [A2, 4, bidi]
+    - [A3, 5, bidi]
+    - [A4, 6, bidi]
+  - - [GND, 10, pwrin]
+- - - [VCCB, 15, pwrin]
+  - - [B1, 14, bidi]
+    - [B2, 13, bidi]
+    - [B3, 12, bidi]
+    - [B4, 11, bidi]
+  - - [DIR1, 1, bidi]
+    - [DIR2, 2, bidi]
+    - [DIR3, 7, bidi]
+    - [DIR4, 8, bidi]
