@@ -361,12 +361,6 @@
     (options "")
     (descr ""))
   (lib
-    (name "ft2232rnl")
-    (type KiCad)
-    (uri "${KIPRJMOD}/lib/ic/interface/ft2232rnl.kicad_sym")
-    (options "")
-    (descr ""))
-  (lib
     (name "ft232rnl")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/interface/ft232rnl.kicad_sym")
@@ -538,6 +532,12 @@
     (name "npic6c596a")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/logic/npic6c596a.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
+    (name "sn74axc4t774pwr")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/logic/sn74axc4t774pwr.kicad_sym")
     (options "")
     (descr ""))
   (lib

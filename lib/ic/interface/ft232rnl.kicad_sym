@@ -21,7 +21,7 @@
         (font
           (size 1.2700 1.2700))
         (justify left)))
-    (property Footprint "agg:TSSOP-28"
+    (property Footprint "agg:SSOP-28"
       (id 2)
       (at -12.7000 -27.9400 0)
       (effects
