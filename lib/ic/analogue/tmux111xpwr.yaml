@@ -1,0 +1,21 @@
+datasheet: https://www.ti.com/lit/ds/symlink/tmux1112.pdf
+description: Low leakage current precision switches
+footprint: agg:TSSOP-16
+name: TMUX111xPWR
+pins:
+- - - [VDD, 13, pwrin]
+    - [GND, 5, pwrin]
+  - - [SEL1, 1, in]
+    - [D1, 2, passive]
+    - [S1, 3, passive]
+  - - [SEL2, 16, in]
+    - [D2, 15, passive]
+    - [S2, 14, passive]
+- - - [SEL3, 9, in]
+    - [D3, 10, passive]
+    - [S3, 11, passive]
+  - - [SEL4, 8, in]
+    - [D4, 7, passive]
+    - [S4, 6, passive]
+  - - [NC, 4, nc]
+    - [NC, 12, nc]

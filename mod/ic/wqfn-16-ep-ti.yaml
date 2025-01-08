@@ -1,0 +1,19 @@
+chip_shape: [4.1, 4.1]
+description: |-
+  WQFN-16 from FDC2214 / RGH0016A
+  IPC-7351B: QFN16P300X300X100-17N
+ep_paste_shape: [1.1, 1.1, 0.2, 0.2]
+ep_shape: [2.6, 2.6]
+ep_vias: [0.2, 0.3, 1.0]
+model:
+  offset: [0, 0, 0]
+  path: ${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-16-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step
+  rotate: [0, 0, 0]
+  scale: [1, 1, 1]
+name: WQFN-16-EP-TI
+pad_shape: [0.6, 0.25]
+pin_pitch: 0.5
+pin_shape: [-0.4, 0.25]
+pins: 16
+row_pitch: 3.8
+rows: 4

@@ -211,6 +211,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "fdc2x1x")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/analogue/fdc2x1x.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "ina139")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/analogue/ina139.kicad_sym")
@@ -262,6 +268,12 @@
     (name "ssm2305")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/analogue/ssm2305.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
+    (name "tmux111xpwr")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/analogue/tmux111xpwr.kicad_sym")
     (options "")
     (descr ""))
   (lib
@@ -712,6 +724,12 @@
     (name "stm32g0xxkx")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32g0xxkx.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
+    (name "stm32g4xxcxtx")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/microcontroller/stm32g4xxcxtx.kicad_sym")
     (options "")
     (descr ""))
   (lib

@@ -1,0 +1,21 @@
+datasheet: https://www.ti.com/lit/ds/symlink/fdc2214.pdf
+description: Multi-channel capacitance-to-digital converter
+footprint: agg:WQFN-16-EP-TI
+name: FDC2x1x
+pins:
+- - - [VDD, 7, pwrin]
+    - [GND, 8, pwrin]
+  - - [SCL, 1, od]
+    - [SDA, 2, od]
+  - - [CLKIN, 3, in]
+    - [ADDR, 4, in]
+    - [INTB, 5, od]
+    - [SD, 6, in]
+- - - [IN0A, 9, in]
+    - [IN0B, 10, in]
+  - - [IN1A, 11, in]
+    - [IN1B, 12, in]
+  - - [IN2A, 13, in]
+    - [IN2B, 14, in]
+  - - [IN3A, 15, in]
+    - [IN3B, 16, in]
