@@ -409,6 +409,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "max3485eesa")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/interface/max3485eesa.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "max5969x")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/interface/max5969x.kicad_sym")

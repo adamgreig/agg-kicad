@@ -1,0 +1,13 @@
+datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/MAX3483-MAX3491.pdf
+description: RS-485 transceiver
+footprint: agg:SOIC-8
+name: MAX3485EESA
+pins:
+- - - [VCC, 8, pwrin]
+    - [GND, 5, pwrin]
+  - - [A, 6, bidi]
+    - [B, 7, bidi]
+- - - [RO, 1, out]
+    - ["~{RE}", 2, in]
+  - - [DI, 4, in]
+    - [DE, 3, in]
