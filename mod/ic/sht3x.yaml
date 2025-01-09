@@ -1,0 +1,11 @@
+name: SHT3X
+description: SHT3X DFN-8
+chip_shape: [2.5, 2.5]
+pin_shape: [-0.35, 0.25]
+pins: 8
+rows: 2
+pin_pitch: 0.5
+row_pitch: 2.35
+pad_shape: [0.55, 0.25]
+ep_shape: [1.0, 1.7]
+ep_paste_shape: [0.9, 1.6, 1, 1]

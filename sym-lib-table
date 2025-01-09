@@ -1261,6 +1261,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "sht3x")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/sensor/sht3x.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name part)
     (type KiCad)
     (uri "${KIPRJMOD}/lib/misc/part.kicad_sym")

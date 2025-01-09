@@ -1,0 +1,14 @@
+datasheet: https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf
+description: Humidity and temperature sensor
+name: SHT3x
+footprint: agg:SHT3X
+pins:
+- - - [VDD, 5, pwrin]
+  - - [GND, 8, pwrin]
+    - [EP, EP, pwrin]
+    - [R, 7, passive]
+- - - [SDA, 1, bidi]
+    - [SCL, 4, bidi]
+    - [ADDR, 2, in]
+    - [ALERT, 3, od]
+    - ["~{RST}", 6, in]
