@@ -1,7 +1,7 @@
 
 (kicad_symbol_lib
   (version 20211014)
-  (generator "agg-kicad-compiled-e837bbc5-dirty")
+  (generator "agg-kicad-compiled-ce84d118-dirty")
   (symbol "7499210124A"
     (pin_names
       (offset 1.0160))
@@ -34250,8 +34250,19 @@
           (effects
             (font
               (size 1.2700 1.2700)))))
+      (pin power_in line
+        (at -10.1600 7.6200 0)
+        (length 2.5400)
+        (name EP
+          (effects
+            (font
+              (size 1.2700 1.2700))))
+        (number EP
+          (effects
+            (font
+              (size 1.2700 1.2700)))))
       (pin open_collector line
-        (at -10.1600 5.0800 0)
+        (at -10.1600 2.5400 0)
         (length 2.5400)
         (name SCL
           (effects
@@ -34262,7 +34273,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin open_collector line
-        (at -10.1600 2.5400 0)
+        (at -10.1600 0.0000 0)
         (length 2.5400)
         (name SDA
           (effects
@@ -34273,7 +34284,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -10.1600 -2.5400 0)
+        (at -10.1600 -5.0800 0)
         (length 2.5400)
         (name CLKIN
           (effects
@@ -34284,7 +34295,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -10.1600 -5.0800 0)
+        (at -10.1600 -7.6200 0)
         (length 2.5400)
         (name ADDR
           (effects
@@ -34295,7 +34306,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin open_collector line
-        (at -10.1600 -7.6200 0)
+        (at -10.1600 -10.1600 0)
         (length 2.5400)
         (name INTB
           (effects
@@ -34306,7 +34317,7 @@
             (font
               (size 1.2700 1.2700)))))
       (pin input line
-        (at -10.1600 -10.1600 0)
+        (at -10.1600 -12.7000 0)
         (length 2.5400)
         (name SD
           (effects

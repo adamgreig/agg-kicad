@@ -5,6 +5,7 @@ name: FDC2x1x
 pins:
 - - - [VDD, 7, pwrin]
     - [GND, 8, pwrin]
+    - [EP, EP, pwrin]
   - - [SCL, 1, od]
     - [SDA, 2, od]
   - - [CLKIN, 3, in]
