@@ -1,0 +1,15 @@
+name: TPS259630
+description: eFuse with current monitor and fast overvoltage protection
+datasheet: https://www.ti.com/lit/ds/symlink/tps2596.pdf
+footprint: agg:SOIC-8-PowerPAD
+pins:
+- - - [IN, 4, pwrin]
+    - [EN/UVLO, 3, in]
+    - [OVLO, 8, in]
+    - [GND, 1, pwrin]
+    - [GND, EP, pwrin]
+
+- - - [OUT, 5, pwrout]
+  - - ["~{FLT}", 6, od]
+    - [dVdt, 2, in]
+    - [ILM, 7, out]
