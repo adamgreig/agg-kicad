@@ -1,0 +1,30 @@
+name: LM5148
+datasheet: https://www.ti.com/lit/ds/symlink/lm5148.pdf
+description: 80V synchronous buck dc/dc controller
+footprint: agg:LM5148
+pins:
+- - - [VIN, 12, pwrin]
+    - [EN, 19, in]
+    - [VCC, 9, pwrout]
+    - [VDDA, 8, pwrout]
+  - - [CNFG, 3, in]
+    - [PG/SYNCOUT, 17, out]
+    - [PFM/SYNC, 18, in]
+  - - [FB, 6, in]
+    - [EXTCOMP, 5, out]
+    - [RT, 4, in]
+  - - [AGND, 7, pwrin]
+
+- - - [CBOOT, 15, passive]
+    - [HO, 13, out]
+    - [SW, 14, passive]
+    - [LO, 11, out]
+    - [PGND, 10, pwrin]
+    - [ISNS+, 20, in]
+    - [VOUT, 21, in]
+    - [VCCX, 16, passive]
+  - - [NC, 1, pwrin]
+    - [NC, 2, pwrin]
+    - [NC, 22, pwrin]
+    - [NC, 23, pwrin]
+    - [NC, 24, pwrin]

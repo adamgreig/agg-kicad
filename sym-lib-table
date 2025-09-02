@@ -847,6 +847,12 @@
     (options "")
     (descr ""))
   (lib
+    (name "lm5148")
+    (type KiCad)
+    (uri "${KIPRJMOD}/lib/ic/power/lm5148.kicad_sym")
+    (options "")
+    (descr ""))
+  (lib
     (name "lt3083")
     (type KiCad)
     (uri "${KIPRJMOD}/lib/ic/power/lt3083.kicad_sym")
